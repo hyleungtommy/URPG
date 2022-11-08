@@ -1,0 +1,13 @@
+- set party management btn to appear only when party have more than 4 members
+- rebalancing enemy (agi , atk to high)
+- disable skip button at the last dialog
+-all skill cooldown is 0
+- skill can learn exceed max skill lv
+
+-TODO Features:
+    -Daily Quest (2nd play thorugh)
+    -Support Member System
+    -Crafting System (2nd play thorugh)
+    -Equipment Reinforce & Enchant (2nd play thorugh)
+    -Side Quest
+    -Claim Land System (2nd play thorugh)

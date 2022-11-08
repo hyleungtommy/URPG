@@ -1,0 +1,338 @@
+{
+    "Items": [
+        {
+            "name": "Healing Potion I",
+            "desc": "Recover 10% Max HP, at minimum recover 500 HP",
+            "type": "HP Potion",
+            "img": "I001",
+            "raraity": 0,
+            "price": 50,
+            "sellPrice": 5,
+            "buyPlace": "Shop",
+            "healPercentage": 0.1,
+            "minHealAmount": 500
+        },
+        {
+            "name": "Healing Potion II",
+            "desc": "Recover 20% Max HP, at minimum recover 2000 HP",
+            "type": "HP Potion",
+            "img": "I002",
+            "raraity": 0,
+            "price": 200,
+            "sellPrice": 20,
+            "buyPlace": "Shop",
+            "healPercentage": 0.2,
+            "minHealAmount": 2000
+        },
+        {
+            "name": "Healing Potion III",
+            "desc": "Recover 30% Max HP, at minimum recover 10000 HP",
+            "type": "HP Potion",
+            "img": "I003",
+            "raraity": 0,
+            "price": 500,
+            "sellPrice": 50,
+            "buyPlace": "Shop",
+            "healPercentage": 0.3,
+            "minHealAmount": 10000
+        },
+        {
+            "name": "Healing Potion IV",
+            "desc": "Recover 40% Max HP, at minimum recover 50000 HP",
+            "type": "HP Potion",
+            "img": "I004",
+            "raraity": 0,
+            "price": 1000,
+            "sellPrice": 1000,
+            "buyPlace": "Shop",
+            "healPercentage": 0.4,
+            "minHealAmount": 50000
+        },
+        {
+            "name": "Healing Potion V",
+            "desc": "Recover 50% Max HP, at minimum recover 100000 HP",
+            "type": "HP Potion",
+            "img": "I005",
+            "raraity": 0,
+            "price": 5000,
+            "sellPrice": 5000,
+            "buyPlace": "Shop",
+            "healPercentage": 0.5,
+            "minHealAmount": 100000
+        },
+        {
+            "name": "MP Potion I",
+            "desc": "Recover 10% Max MP, at minimum recover 500 MP",
+            "type": "MP Potion",
+            "img": "I006",
+            "raraity": 0,
+            "price": 50,
+            "sellPrice": 5,
+            "buyPlace": "Shop",
+            "healPercentage": 0.1,
+            "minHealAmount": 500
+        },
+        {
+            "name": "MP Potion II",
+            "desc": "Recover 20% Max MP, at minimum recover 2000 MP",
+            "type": "MP Potion",
+            "img": "I007",
+            "raraity": 0,
+            "price": 200,
+            "sellPrice": 200,
+            "buyPlace": "Shop",
+            "healPercentage": 0.2,
+            "minHealAmount": 2000
+        },
+        {
+            "name": "MP Potion III",
+            "desc": "Recover 30% Max MP, at minimum recover 10000 MP",
+            "type": "MP Potion",
+            "img": "I008",
+            "raraity": 0,
+            "price": 500,
+            "sellPrice": 50,
+            "buyPlace": "Shop",
+            "healPercentage": 0.3,
+            "minHealAmount": 10000
+        },
+        {
+            "name": "MP Potion V",
+            "desc": "Recover 40% Max HP, at minimum recover 50000 HP",
+            "type": "MP Potion",
+            "img": "I009",
+            "raraity": 0,
+            "price": 1000,
+            "sellPrice": 100,
+            "buyPlace": "Shop",
+            "healPercentage": 0.4,
+            "minHealAmount": 50000
+        },
+        {
+            "name": "MP Potion V",
+            "desc": "Recover 50% Max MP, at minimum recover 100000 MP",
+            "type": "MP Potion",
+            "img": "I010",
+            "raraity": 0,
+            "price": 5000,
+            "sellPrice": 500,
+            "buyPlace": "Shop",
+            "healPercentage": 0.5,
+            "minHealAmount": 100000
+        },
+        {
+            "name": "Slimeball",
+            "desc": "A ball of slimy liquid",
+            "type": "Resources",
+            "img": "I011",
+            "raraity": 0,
+            "sellPrice": 10
+        },
+        {
+            "name": "Stink",
+            "desc": "Pointy stink",
+            "type": "Resources",
+            "img": "I012",
+            "raraity": 0,
+            "sellPrice": 15
+        },
+        {
+            "name": "Magic powder",
+            "desc": "A pile of shiny powder, may be useful in many area...",
+            "type": "Resources",
+            "img": "I013",
+            "raraity": 0,
+            "sellPrice": 50
+        },
+        {
+            "name": "Horn",
+            "desc": "Hard and Pointy Horn",
+            "type": "Resources",
+            "img": "I014",
+            "raraity": 1,
+            "sellPrice": 250
+        },
+        {
+            "name": "Feather",
+            "desc": "Beautiful feather",
+            "type": "Resources",
+            "img": "I015",
+            "raraity": 0,
+            "sellPrice": 30
+        },
+        {
+            "name": "Fur",
+            "desc": "Warm fur from animals",
+            "type": "Resources",
+            "img": "I016",
+            "raraity": 0,
+            "sellPrice": 40
+        },
+        {
+            "name": "Large Hammer",
+            "desc": "Broken large hammer that is too large for human to wield",
+            "type": "Resources",
+            "img": "I017",
+            "raraity": 1,
+            "sellPrice": 1000
+        },
+        {
+            "name": "Leaf",
+            "desc": "A board leaf",
+            "type": "Resources",
+            "img": "I018",
+            "raraity": 0,
+            "sellPrice": 50
+        },
+        {
+            "name": "Flower",
+            "desc": "Beautiful Flower",
+            "type": "Resources",
+            "img": "I019",
+            "raraity": 0,
+            "sellPrice": 55
+        },
+        {
+            "name": "Mushroom",
+            "desc": "I wonder if this is eatible...",
+            "type": "Resources",
+            "img": "I020",
+            "raraity": 0,
+            "sellPrice": 60
+        },
+        {
+            "name": "Dragon Egg",
+            "desc": "Dragon Egg from Earth Dragon, very precious",
+            "type": "Resources",
+            "img": "I021",
+            "raraity": 1,
+            "sellPrice": 5000
+        },
+        {
+            "name": "Strength Potion",
+            "desc": "Increase user's attack power for 10 rounds",
+            "type": "Buff Potion",
+            "raraity": 1,
+            "price": 500,
+            "sellPrice": 100,
+            "buyPlace": "Shop",
+            "buff": [
+                {
+                    "type": "ATK",
+                    "modifier": 1.25,
+                    "rounds": 10
+                },
+                {
+                    "type": "MATK",
+                    "modifier": 1.25,
+                    "rounds": 10
+                }
+            ]
+        },
+        {
+            "name": "Hi-Strength Potion",
+            "desc": "Increase user's attack power largely for 10 rounds",
+            "type": "Buff Potion",
+            "raraity": 1,
+            "price": 1500,
+            "sellPrice": 250,
+            "buyPlace": "Shop",
+            "buff": [
+                {
+                    "type": "ATK",
+                    "modifier": 2.0,
+                    "rounds": 10
+                },
+                {
+                    "type": "MATK",
+                    "modifier": 2.0,
+                    "rounds": 10
+                }
+            ]
+        },
+        {
+            "name": "Defense Potion",
+            "desc": "Increase user's defense power for 10 rounds",
+            "type": "Buff Potion",
+            "raraity": 1,
+            "price": 500,
+            "sellPrice": 100,
+            "buyPlace": "Shop",
+            "buff": [
+                {
+                    "type": "DEF",
+                    "modifier": 1.25,
+                    "rounds": 10
+                },
+                {
+                    "type": "MDEF",
+                    "modifier": 1.25,
+                    "rounds": 10
+                }
+            ]
+        },
+        {
+            "name": "Hi-Defense Potion",
+            "desc": "Increase user's defense power largely for 10 rounds",
+            "type": "Buff Potion",
+            "raraity": 1,
+            "price": 1500,
+            "sellPrice": 250,
+            "buyPlace": "Shop",
+            "buff": [
+                {
+                    "type": "DEF",
+                    "modifier": 2.0,
+                    "rounds": 10
+                },
+                {
+                    "type": "MDEF",
+                    "modifier": 2.0,
+                    "rounds": 10
+                }
+            ]
+        },
+        {
+            "name": "Agility Potion",
+            "desc": "Increase user's speed for 10 rounds",
+            "type": "Buff Potion",
+            "raraity": 1,
+            "price": 500,
+            "sellPrice": 100,
+            "buyPlace": "Shop",
+            "buff": [
+                {
+                    "type": "AGI",
+                    "modifier": 1.25,
+                    "rounds": 10
+                },
+                {
+                    "type": "DEX",
+                    "modifier": 1.25,
+                    "rounds": 10
+                }
+            ]
+        },
+        {
+            "name": "Hi-Agility Potion",
+            "desc": "Increase user's speed largely for 10 rounds",
+            "type": "Buff Potion",
+            "raraity": 1,
+            "price": 1500,
+            "sellPrice": 250,
+            "buyPlace": "Shop",
+            "buff": [
+                {
+                    "type": "AGI",
+                    "modifier": 2.0,
+                    "rounds": 10
+                },
+                {
+                    "type": "DEX",
+                    "modifier": 2.0,
+                    "rounds": 10
+                }
+            ]
+        }
+    ]
+}

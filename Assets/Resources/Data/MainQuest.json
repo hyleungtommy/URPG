@@ -1,0 +1,211 @@
+{
+    "Items": [{
+            "desc": "You and Anson are going to explore the forest",
+            "instruction": "Explore Emerald Forest (Choose Progressive Mode)."
+        },
+        {
+            "desc": "You and Anson got into the forest ,continue to explore",
+            "instruction": "Continue to explore Emerald Forest."
+        },
+        {
+            "desc": "There are some strange traces on the floor, what could that be...?",
+            "instruction": "Continue to explore Emerald Forest."
+        },
+        {
+            "desc": "You found a giant monster! You can't leave it alone as it may destroy the village!",
+            "instruction": "Heads to the final area of Emerald Forest and defeat the boss."
+        },
+        {
+            "desc": "",
+            "instruction": ""
+        },
+        {
+            "desc": "",
+            "instruction": ""
+        },
+        {
+            "desc": "You and Anson decided to leave the village and go out to explore. The first destination would be Falone City.",
+            "instruction": "Heads to The Great Plain"
+        },
+        {
+            "desc": "Heads to Falone City",
+            "instruction": "Heads to the City"
+        },
+        {
+            "desc": "Simon the knight joined the party. The party then accepted a quest from Conrad to defeat the ogre in the Great Plain.",
+            "instruction": "Prepare supply and explore The Great Plain (Choose Progressive Mode). "
+        },
+        {
+            "desc": "",
+            "instruction": "Continue to explore The Great Plain."
+        },
+        {
+            "desc": "The party is heading close to the ogre's cave",
+            "instruction": "Continue to explore The Great Plain."
+        },
+        {
+            "desc": "",
+            "instruction": "Continue to explore The Great Plain."
+        },
+        {
+            "desc": "You guys found the ogre! Defeat it!",
+            "instruction": "Heads to the final area of The Great Plain and defeat the boss."
+        },
+        {
+            "desc": "",
+            "instruction": ""
+        },
+        {
+            "desc": "",
+            "instruction": ""
+        },
+        {
+            "desc": "The party got a good relax after defeating the ogre, now you guys accepted a new quest : to help deal with the pollution in Magical Forest",
+            "instruction": "Heads to Magical Forest"
+        },
+        {
+            "desc": "The party reached Magical Forest",
+            "instruction": "Heads to Magical Forest Research Camp"
+        },
+        {
+            "desc": "Ivan joined the party. The party is heading into the forest to found out the source of the pollution",
+            "instruction": "Explore Magical Forest (Choose Progressive Mode)."
+        },
+        {
+            "desc": "The party discovered that a Green Dragon could be the source of the pollution. You guys decided to heads to deep into the forest to defeat the dragon.",
+            "instruction": "Continue to explore Magical Forest"
+        },
+        {
+            "desc": "",
+            "instruction": "Continue to explore Magical Forest."
+        },
+        {
+            "desc": "The party found Green Dragon's cave.",
+            "instruction": "Heads to the final area of Magical Forest and defeat the boss."
+        },
+        {
+            "desc": "",
+            "instruction": ""
+        },
+        {
+            "desc": "The party successfully defeated the dragon. Ivan suggested to go to the Southern Islands as there are said to be attacked by a large sea monster.",
+            "instruction": "Heads to Southern Islands"
+        },
+        {
+            "desc": "After a long journey the party has arrived the Southern Islands",
+            "instruction": "Heads to Port Arugia"
+        },
+        {
+            "desc": "Jimmy joined the party.",
+            "instruction": "Explore Southern Islands (Choose Progressive Mode)."
+        },
+        {
+            "desc": "",
+            "instruction": "Continue to explore Southern Islands"
+        },
+        {
+            "desc": "",
+            "instruction": "Continue to explore Southern Islands"
+        },
+        {
+            "desc": "The party found the true identity sea monster.It's a Hydra.",
+            "instruction": "Heads to the final area of Southern Islands and defeat the boss."
+        },
+        {
+            "desc": "",
+            "instruction": ""
+        },
+        {
+            "desc": "",
+            "instruction": ""
+        },
+        {
+            "desc": "Conrad was missing! The last place he was spotted was heading to Oakville. Since the road to Oakville was blocked due to an earthquake, the only way to get there is to through a cave system.",
+            "instruction": "Heads to Crystal Cave"
+        },
+        {
+            "desc": "Ivan seems to see someone. Continue to chase him.",
+            "instruction": "Explore Crystal Cave (Choose Progressive Mode)."
+        },
+        {
+            "desc": "Andy the Necromancer joined the team. He said that he can help the party to find the exit",
+            "instruction": "Continue to explore Crystal Cave"
+        },
+        {
+            "desc": "Andy said the the Minotaur is trapping people inside the cave, one cannot leave the cave unless defeat it.",
+            "instruction": "Continue to explore Crystal Cave"
+        },
+        {
+            "desc": "The party found Minotaur. It's time to defeat it!",
+            "instruction": "Heads to the final area of Crystal Cave and defeat the boss."
+        },
+        {
+            "desc": "The party defeated Minotaur and found the cave exit.",
+            "instruction": "Heads to Haunted Wood"
+        },
+        {
+            "desc": "The once beautiful ville is now filled with undeads, what happened?",
+            "instruction": "Explore Haunted Wood (Choose Progressive Mode)."
+        },
+        {
+            "desc": "It seems like the villager and the knights are killed by dark magic.",
+            "instruction": "Continue to explore Haunted Wood"
+        },
+        {
+            "desc": "",
+            "instruction": "Continue to explore Haunted Wood"
+        },
+        {
+            "desc": "",
+            "instruction": "Continue to explore Haunted Wood"
+        },
+        {
+            "desc": "Conrad seems to have been mind-controlled. Defeat him",
+            "instruction": "Heads to the final area of Haunted Wood and defeat the boss."
+        },
+        {
+            "desc": "",
+            "instruction": ""
+        },
+        {
+            "desc": "After buried Conrad, the party decided to continue chase Matius",
+            "instruction": "Heads to Buring Desert"
+        },
+        {
+            "desc": "",
+            "instruction": "Explore Buring Desert (Choose Progressive Mode)."
+        },
+        {
+            "desc": "",
+            "instruction": ""
+        },
+        {
+            "desc": "The party met Chi Ka and Katie inside a cave. They agree to go with the party. But first they want to go back to the city and prepare",
+            "instruction": "Heads to Sakamat"
+        },
+        {
+            "desc": "",
+            "instruction": ""
+        },
+        {
+            "desc": "",
+            "instruction": ""
+        },
+        {
+            "desc": "After some relax, the team again headed out to the desert to chase Matius.",
+            "instruction": "Continue to explore Buring Desert"
+        },
+        {
+            "desc": "The team finally arrived The ruin of Anzor",
+            "instruction": "Continue to explore Buring Desert"
+        },
+        {
+            "desc": "The party found Matius, it's time to take revenage!",
+            "instruction": "Heads to the final area of Buring Desert and defeat the boss."
+        },
+        {
+            "desc": "The party defeated Fossil Dragon, but Matius has once again escaped.The patry decided to follow him to Vulkan Volcano",
+            "instruction": "Heads to Vulkan Volcano"
+        }
+    ]
+}
