@@ -53,7 +53,7 @@ public class StatusScene : BasicScene
 
     public void onClickGrowth()
     {
-
+        jumpToScene(SceneName.Growth);
     }
 
     public void onClickMember()

@@ -15,12 +15,14 @@ namespace RPG
         public static StorageSystem inventory;
         public static int plotPt = 0;
         public static int selectedCharacterInStatusScene = 0;
+        public static CraftSkillManager craftSkillManager;
 
 
         static Game()
         {
             party = new Party();
             inventory = new StorageSystem(50);
+            craftSkillManager = new CraftSkillManager();
         }
 
         public static void saveGame()

@@ -29,6 +29,7 @@ namespace RPG
 
         public static PlotData[] plots;
         public static MainQuestTemplate[] mainQuests;
+        public static ExploreSite[]exploreSites;
 
 
         static DB()
@@ -97,6 +98,16 @@ namespace RPG
                 elist.Add(equipmentTemplates[i].toGeneralEquipment());
             }
             equipments = elist.ToArray();
+
+            //get exploresite
+            List<ExploreSite> eslist = new List<ExploreSite>();
+            TextAsset exploreSiteJSON = Resources.Load<TextAsset>("Data/ExploreSite");
+            ExploreSiteTemplate[]exploreSiteTemplates = JsonHelper.FromJson<ExploreSiteTemplate>(exploreSiteJSON.text);
+            for (int i = 0; i < exploreSiteTemplates.Length; i++)
+            {
+                eslist.Add(exploreSiteTemplates[i].toExploreSite());
+            }
+            exploreSites = eslist.ToArray();
 
             //get Plot data
             TextAsset plotJSON = Resources.Load<TextAsset>("Data/Plot");

@@ -50,8 +50,10 @@ public class BasicScene : MonoBehaviour
 
     }
 
+    /*
     public virtual void onSelectSupportCharacter(int id, SupportCharacter character)
     {
 
     }
+    */
 }

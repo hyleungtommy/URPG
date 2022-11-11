@@ -3,364 +3,1532 @@
             "name": "Standard Sword",
             "desc": "Basic sword used by newbies ",
             "type": "Sword",
-            "img": "E001",
+            "img": "E000",
             "reqLv": 10,
             "power": 120,
             "magicPower": 50,
             "price": 500,
-            "buyPlace": "Blacksmith"
-        },
-        {
+            "buyPlace": "Blacksmith",
+            "craftRecipe": {
+                "requireItem": ["I032", "I050"],
+                "requireQty": [5, 1],
+                "requireMoney": 50,
+                "requireLevel": 1,
+                "craftTime": 10
+            },
+            "reinforceRecipe": {
+                "requireItem": ["I032", "I050"],
+                "requireQtyStart": [1, 1],
+                "requireMoneyStart": 20,
+                "requireLevelStart": 1,
+                "craftTimeStart": 10,
+                "requireQtyIncrement": [1, 1],
+                "requireMoneyIncrement": 10,
+                "requireLevelIncrement": 0.1,
+                "craftTimeIncrement": 1,
+                "maxReinforceLv": 3,
+                "powerIncrementPerLevel":10,
+                "magicPowerIncrementPerLevel":5
+            },
+            "enchantRecipe": {
+                "requireItem": ["I041"],
+                "requireQty": [1],
+                "requireMoney": 50,
+                "requireLevel": 1,
+                "craftTime": 10
+            },
+            "recycleRecipe": {
+                "obtainableItem": ["I032", "I050"],
+                "obtainChance": [50, 30],
+                "minAmount": [1, 1],
+                "maxAmount": [3, 2],
+                "requireMoney": 20,
+                "requireLevel": 1,
+                "craftTime": 10
+            }
+        }, {
             "name": "Iron Sword",
             "desc": "Standard strudy iron sword ",
             "type": "Sword",
-            "img": "E002",
+            "img": "E001",
             "reqLv": 20,
             "power": 220,
             "magicPower": 100,
             "price": 1000,
-            "buyPlace": "Blacksmith"
-        },
-        {
+            "buyPlace": "Blacksmith",
+            "craftRecipe": {
+                "requireItem": ["I033", "I051"],
+                "requireQty": [5, 1],
+                "requireMoney": 100,
+                "requireLevel": 1,
+                "craftTime": 10
+            },
+            "reinforceRecipe": {
+                "requireItem": ["I033", "I051"],
+                "requireQtyStart": [1, 1],
+                "requireMoneyStart": 20,
+                "requireLevel": 1,
+                "craftTimeStart": 10,
+                "requireQtyIncrement": [1, 1],
+                "requireMoneyIncrement": 10,
+                "craftTimeIncrement": 1,
+                "maxReinforceLv": 3,
+                "powerIncrementPerLevel":20,
+                "magicPowerIncrementPerLevel":10
+            },
+            "enchantRecipe": {
+                "requireItem": ["I041"],
+                "requireQty": [1],
+                "requireMoney": 50,
+                "requireLevel": 1,
+                "craftTime": 10
+            },
+            "recycleRecipe": {
+                "obtainableItem": ["I033", "I051"],
+                "obtainChance": [50, 30],
+                "minAmount": [1, 1],
+                "maxAmount": [3, 2],
+                "requireMoney": 20,
+                "requireLevel": 1,
+                "craftTime": 10
+            }
+        }, {
             "name": "Steel Sword",
             "desc": "Very durable steel sword, very sharp as well",
             "type": "Sword",
-            "img": "E003",
+            "img": "E002",
             "reqLv": 30,
             "power": 410,
             "magicPower": 250,
             "price": 2000,
-            "buyPlace": "Blacksmith"
-        },
-        {
+            "buyPlace": "Blacksmith",
+            "craftRecipe": {
+                "requireItem": ["I034", "I051"],
+                "requireQty": [5, 1],
+                "requireMoney": 150,
+                "requireLevel": 2,
+                "craftTime": 10
+            },
+            "reinforceRecipe": {
+                "requireItem": ["I034", "I051"],
+                "requireQtyStart": [1, 1],
+                "requireMoneyStart": 20,
+                "requireLevelStart": 1,
+                "craftTimeStart": 10,
+                "requireQtyIncrement": [1, 1],
+                "requireMoneyIncrement": 10,
+                "requireLevelIncrement": 0.1,
+                "craftTimeIncrement": 5,
+                "maxReinforceLv": 6,
+                "powerIncrementPerLevel":50,
+                "magicPowerIncrementPerLevel":20
+            },
+            "enchantRecipe": {
+                "requireItem": ["I042"],
+                "requireQty": [1],
+                "requireMoney": 50,
+                "requireLevel": 1,
+                "craftTime": 10
+            },
+            "recycleRecipe": {
+                "obtainableItem": ["I034", "I051"],
+                "obtainChance": [50, 30],
+                "minAmount": [1, 1],
+                "maxAmount": [3, 2],
+                "requireMoney": 20,
+                "requireLevel": 1,
+                "craftTime": 10
+            }
+        }, {
             "name": "Wood Shield",
             "desc": "Weak shield made by wood",
             "type": "Shield",
-            "img": "E004",
+            "img": "E003",
             "reqLv": 10,
             "power": 50,
             "magicPower": 30,
             "price": 500,
             "buyPlace": "Blacksmith"
-        },
-        {
+        }, {
             "name": "Iron Shield",
             "desc": "Standard strudy iron shield",
             "type": "Shield",
-            "img": "E005",
+            "img": "E004",
             "reqLv": 20,
             "power": 80,
             "magicPower": 50,
             "price": 1000,
             "buyPlace": "Blacksmith"
-        },
-        {
+        }, {
             "name": "Steel Shield",
             "desc": "Strong steel shield that provide good protection",
             "type": "Shield",
-            "img": "E006",
+            "img": "E005",
             "reqLv": 30,
             "power": 150,
             "magicPower": 100,
             "price": 2000,
             "buyPlace": "Blacksmith"
-        },
-        {
+        }, {
             "name": "Lumber Axe",
             "desc": "Just the axe used by the lumber",
             "type": "Axe",
-            "img": "E007",
+            "img": "E006",
             "reqLv": 10,
             "power": 280,
             "magicPower": 100,
             "price": 750,
             "buyPlace": "Blacksmith"
-        },
-        {
+        }, {
             "name": "Battleaxe",
             "desc": "Double blade axe that used by guardians",
             "type": "Axe",
-            "img": "E008",
+            "img": "E007",
             "reqLv": 20,
             "power": 450,
             "magicPower": 200,
             "price": 1500,
             "buyPlace": "Blacksmith"
-        },
-        {
+        }, {
             "name": "Steel Axe",
             "desc": "Very sharp steel axe, it can cause very huge damage",
             "type": "Axe",
-            "img": "E009",
+            "img": "E008",
             "reqLv": 30,
             "power": 925,
             "magicPower": 400,
             "price": 3000,
             "buyPlace": "Blacksmith"
-        },
-        {
+        }, {
             "name": "Pratice Wand",
             "desc": "Wand used by apprentice mages",
             "type": "Wand",
-            "img": "E010",
+            "img": "E009",
             "reqLv": 10,
             "power": 50,
             "magicPower": 120,
             "price": 500,
             "buyPlace": "Blacksmith"
-        },
-        {
+        }, {
             "name": "Basic Wand",
             "desc": "Standard wand used by mage",
             "type": "Wand",
-            "img": "E011",
+            "img": "E010",
             "reqLv": 20,
             "power": 100,
             "magicPower": 250,
             "price": 1000,
             "buyPlace": "Blacksmith"
-        },
-        {
+        }, {
             "name": "Magical Wand",
             "desc": "A sightly better wand for mages ",
             "type": "Wand",
-            "img": "E012",
+            "img": "E011",
             "reqLv": 30,
             "power": 250,
             "magicPower": 450,
             "price": 2000,
             "buyPlace": "Blacksmith"
-        },
-        {
+        }, {
             "name": "Pratice Spellbook",
             "desc": "A spellbook that used by apprentices",
             "type": "Spellbook",
-            "img": "E013",
+            "img": "E012",
             "reqLv": 10,
             "power": 30,
             "magicPower": 50,
             "price": 500,
             "buyPlace": "Blacksmith"
-        },
-        {
+        }, {
             "name": "Basic Spellbook",
             "desc": "A spellbook that includes basic spells only",
             "type": "Spellbook",
-            "img": "E014",
+            "img": "E013",
             "reqLv": 20,
             "power": 50,
             "magicPower": 80,
             "price": 1000,
             "buyPlace": "Blacksmith"
-        },
-        {
+        }, {
             "name": "Advance Spellbook",
             "desc": "A spellbook that include more advance spells",
             "type": "Spellbook",
-            "img": "E015",
+            "img": "E014",
             "reqLv": 30,
             "power": 100,
             "magicPower": 150,
             "price": 2000,
             "buyPlace": "Blacksmith"
-        },
-        {
+        }, {
             "name": "Pratice Staff",
             "desc": "Large staff used by apprentices",
             "type": "Staff",
-            "img": "E016",
+            "img": "E015",
             "reqLv": 10,
             "power": 80,
             "magicPower": 280,
             "price": 750,
             "buyPlace": "Blacksmith"
-        },
-        {
+        }, {
             "name": "Basic Staff",
             "desc": "Magical staff used by mages",
             "type": "Staff",
-            "img": "E017",
+            "img": "E016",
             "reqLv": 20,
             "power": 120,
             "magicPower": 450,
             "price": 1500,
             "buyPlace": "Blacksmith"
-        },
-        {
+        }, {
             "name": "Magical Staff",
             "desc": "More powerful than the basic one",
             "type": "Staff",
-            "img": "E018",
+            "img": "E017",
             "reqLv": 30,
             "power": 300,
             "magicPower": 925,
             "price": 3000,
             "buyPlace": "Blacksmith"
-        },
-        {
+        }, {
             "name": "Wood Bow",
             "desc": "Bow made by just wood",
             "type": "Bow",
-            "img": "E019",
+            "img": "E018",
             "reqLv": 10,
             "power": 150,
             "magicPower": 150,
             "price": 500,
             "buyPlace": "Blacksmith"
-        },
-        {
+        }, {
             "name": "Enchanted Wood Bow",
             "desc": "A strengthened wood bow, more durable",
             "type": "Bow",
-            "img": "E020",
+            "img": "E019",
             "reqLv": 20,
             "power": 350,
             "magicPower": 350,
             "price": 1000,
             "buyPlace": "Blacksmith"
-        },
-        {
+        }, {
             "name": "Reinforce Bow",
             "desc": "Strengthened steel bow",
             "type": "Bow",
-            "img": "E021",
+            "img": "E020",
             "reqLv": 30,
             "power": 650,
             "magicPower": 650,
             "price": 2000,
             "buyPlace": "Blacksmith"
-        },
-        {
+        }, {
             "name": "Basic Dagger",
             "desc": "Dagger used by crappy thief",
             "type": "Dagger",
-            "img": "E022",
+            "img": "E021",
             "reqLv": 10,
             "power": 100,
             "magicPower": 100,
             "price": 500,
             "buyPlace": "Blacksmith"
-        },
-        {
+        }, {
             "name": "Curved Dagger",
             "desc": "Curved-blade dagger",
             "type": "Dagger",
-            "img": "E023",
+            "img": "E022",
             "reqLv": 20,
             "power": 200,
             "magicPower": 200,
             "price": 1000,
             "buyPlace": "Blacksmith"
-        },
-        {
+        }, {
             "name": "Steel Dagger",
             "desc": "Very strong and durable dagger",
             "type": "Dagger",
-            "img": "E024",
+            "img": "E023",
             "reqLv": 30,
             "power": 400,
             "magicPower": 400,
             "price": 2000,
             "buyPlace": "Blacksmith"
-        },
-        {
+        }, {
             "name": "Basic Armor",
             "desc": "Basic Armor for warrior-type classes,provide limited protection",
             "type": "Metal Armor",
-            "img": "E025",
+            "img": "E024",
             "reqLv": 10,
             "power": 90,
             "magicPower": 50,
             "price": 500,
             "buyPlace": "Blacksmith"
-        },
-        {
+        }, {
             "name": "Standard Armor",
             "desc": "Armor used by empire army",
             "type": "Metal Armor",
-            "img": "E026",
+            "img": "E025",
             "reqLv": 20,
             "power": 175,
             "magicPower": 100,
             "price": 1000,
             "buyPlace": "Blacksmith"
-        },
-        {
+        }, {
             "name": "Enchanted Iron Armor",
             "desc": "Strengthened armor, provide more protection",
             "type": "Metal Armor",
-            "img": "E027",
+            "img": "E026",
             "reqLv": 30,
             "power": 300,
             "magicPower": 200,
             "price": 1500,
             "buyPlace": "Blacksmith"
-        },
-        {
+        }, {
             "name": "Apprentice Cloth",
             "desc": "Silk cloth for apprentice mage and priest, do not provide much protection",
             "type": "Silk Armor",
-            "img": "E028",
+            "img": "E027",
             "reqLv": 10,
             "power": 50,
             "magicPower": 90,
             "price": 500,
             "buyPlace": "Blacksmith"
-        },
-        {
+        }, {
             "name": "Mage Robe",
             "desc": "Silk cloth for mage and priest, provide little more protection",
             "type": "Silk Armor",
-            "img": "E029",
+            "img": "E028",
             "reqLv": 20,
             "power": 100,
             "magicPower": 175,
             "price": 1000,
             "buyPlace": "Blacksmith"
-        },
-        {
+        }, {
             "name": "Magical Robe",
             "desc": "This robe is enchanted with magical power that is able to absorb more damage",
             "type": "Silk Armor",
-            "img": "E030",
+            "img": "E029",
             "reqLv": 30,
             "power": 200,
             "magicPower": 300,
             "price": 1500,
             "buyPlace": "Blacksmith"
-        },
-        {
+        }, {
             "name": "Leather Cloth",
             "desc": "Cloth for archer and assassin",
             "type": "Leather Armor",
-            "img": "E031",
+            "img": "E030",
             "reqLv": 10,
             "power": 75,
             "magicPower": 75,
             "price": 500,
             "buyPlace": "Blacksmith"
-        },
-        {
+        }, {
             "name": "Enchanted Cloth",
             "desc": "Cloth made with stronger leather",
             "type": "Leather Armor",
-            "img": "E032",
+            "img": "E031",
             "reqLv": 20,
             "power": 150,
             "magicPower": 150,
             "price": 1000,
             "buyPlace": "Blacksmith"
-        },
-        {
+        }, {
             "name": "Robinhood Cloth",
             "desc": "This cloth is said to be used by the legend archer Robinhood",
             "type": "Leather Armor",
-            "img": "E033",
+            "img": "E032",
             "reqLv": 30,
             "power": 250,
             "magicPower": 250,
             "price": 1500,
             "buyPlace": "Blacksmith"
+        }, {
+            "name": "Sword of Reif",
+            "desc": "The sword that proceed the element of fire",
+            "type": "Sword",
+            "img": "E033",
+            "reqLv": 30,
+            "power": 700,
+            "magicPower": 180,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Sword of Ice",
+            "desc": "The sword that proceed the element of ice",
+            "type": "Sword",
+            "img": "E034",
+            "reqLv": 30,
+            "power": 500,
+            "magicPower": 500,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Royal Knight’s Shield",
+            "desc": "A big shield that is used by royal knight",
+            "type": "Shield",
+            "img": "E035",
+            "reqLv": 30,
+            "power": 250,
+            "magicPower": 180,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Ice Elemental Shield",
+            "desc": "A big shield that made in ice",
+            "type": "Shield",
+            "img": "E036",
+            "reqLv": 30,
+            "power": 180,
+            "magicPower": 250,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Barberian Axe",
+            "desc": "You can almost taste the blood on this axe",
+            "type": "Axe",
+            "img": "E037",
+            "reqLv": 30,
+            "power": 1600,
+            "magicPower": 400,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Golden Axe",
+            "desc": "A fancy axe made by gold",
+            "type": "Axe",
+            "img": "E038",
+            "reqLv": 30,
+            "power": 1150,
+            "magicPower": 900,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Rainbow wand",
+            "desc": "A wand made with ranbow gem",
+            "type": "Wand",
+            "img": "E039",
+            "reqLv": 30,
+            "power": 200,
+            "magicPower": 450,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Necromancer’s Wand",
+            "desc": "A wand for necromancer",
+            "type": "Wand",
+            "img": "E040",
+            "reqLv": 30,
+            "power": 200,
+            "magicPower": 450,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Dark Spellbook",
+            "desc": "This spellbook looks evil",
+            "type": "Spellbook",
+            "img": "E041",
+            "reqLv": 30,
+            "power": 75,
+            "magicPower": 120,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Ancient Tablet",
+            "desc": "Ancient words inscribed on it",
+            "type": "Spellbook",
+            "img": "E042",
+            "reqLv": 30,
+            "power": 75,
+            "magicPower": 120,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Ice Staff",
+            "desc": "A staff that suit ice mage",
+            "type": "Staff",
+            "img": "E043",
+            "reqLv": 30,
+            "power": 400,
+            "magicPower": 1100,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Fire Staff",
+            "desc": "A staff that suit fire mage",
+            "type": "Staff",
+            "img": "E044",
+            "reqLv": 30,
+            "power": 400,
+            "magicPower": 1100,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Flaming Bow",
+            "desc": "A bow that shoot fire arrow",
+            "type": "Bow",
+            "img": "E045",
+            "reqLv": 30,
+            "power": 380,
+            "magicPower": 380,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Frozen Bow",
+            "desc": "A bow that shoot frozen arrow",
+            "type": "Bow",
+            "img": "E046",
+            "reqLv": 30,
+            "power": 380,
+            "magicPower": 380,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Flaming Dragger",
+            "desc": "A dagger that can light target on fire",
+            "type": "Dagger",
+            "img": "E047",
+            "reqLv": 30,
+            "power": 300,
+            "magicPower": 300,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Frozen Dragger",
+            "desc": "A dagger that can freeze target",
+            "type": "Dagger",
+            "img": "E048",
+            "reqLv": 30,
+            "power": 300,
+            "magicPower": 300,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Infused Iron Armor",
+            "desc": "A normal iron armor but is infused with mana to make it stronger",
+            "type": "Metal Armor",
+            "img": "E049",
+            "reqLv": 30,
+            "power": 260,
+            "magicPower": 180,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Infused Magical Robe",
+            "desc": "A normal robe but is infused with mana to make it stronger",
+            "type": "Silk Armor",
+            "img": "E050",
+            "reqLv": 30,
+            "power": 180,
+            "magicPower": 260,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Infused Robinhood Cloth",
+            "desc": "A normal hood but is infused with mana to make it stronger",
+            "type": "Leather Armor",
+            "img": "E051",
+            "reqLv": 30,
+            "power": 200,
+            "magicPower": 200,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Elemental Sword",
+            "desc": "A sword made by mana steel, very capable of infusing with magic energy",
+            "type": "Sword",
+            "img": "E052",
+            "reqLv": 40,
+            "power": 800,
+            "magicPower": 250,
+            "price": 3500,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Hardwood Shield",
+            "desc": "A shield made by extra durable wood",
+            "type": "Shield",
+            "img": "E053",
+            "reqLv": 40,
+            "power": 300,
+            "magicPower": 150,
+            "price": 2500,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Elemental Axe",
+            "desc": "An axe made by mana steel, very capable of infusing with magic energy",
+            "type": "Axe",
+            "img": "E054",
+            "reqLv": 40,
+            "power": 1800,
+            "magicPower": 600,
+            "price": 5000,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Arcane Wand",
+            "desc": "A wand for greater mage",
+            "type": "Wand",
+            "img": "E055",
+            "reqLv": 40,
+            "power": 85,
+            "magicPower": 520,
+            "price": 3500,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Adapt Spellbook",
+            "desc": "A spellbook for greater mage",
+            "type": "Spellbook",
+            "img": "E056",
+            "reqLv": 40,
+            "power": 70,
+            "magicPower": 120,
+            "price": 2500,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Arcane Staff",
+            "desc": "A staff for greater mage",
+            "type": "Staff",
+            "img": "E057",
+            "reqLv": 40,
+            "power": 180,
+            "magicPower": 1200,
+            "price": 5000,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Magicwood Bow",
+            "desc": "A bow made by mana wood, very capable of infusing with magic energy",
+            "type": "Bow",
+            "img": "E058",
+            "reqLv": 40,
+            "power": 700,
+            "magicPower": 700,
+            "price": 3500,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Elemental Dagger",
+            "desc": "A dagger made by mana steel, very capable of infusing with magic energy",
+            "type": "Dagger",
+            "img": "E059",
+            "reqLv": 40,
+            "power": 400,
+            "magicPower": 400,
+            "price": 3500,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Knight's Armor",
+            "desc": "An amror that belongs to a true knight",
+            "type": "Metal Armor",
+            "img": "E124",
+            "reqLv": 40,
+            "power": 300,
+            "magicPower": 225,
+            "price": 2500,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Adapt's Cloth",
+            "desc": "A cloth that belongs to a great mage",
+            "type": "Silk Armor",
+            "img": "E125",
+            "reqLv": 40,
+            "power": 225,
+            "magicPower": 300,
+            "price": 2500,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Archer's Armor",
+            "desc": "An amror that belongs to a true sniper",
+            "type": "Leather Armor",
+            "img": "E126",
+            "reqLv": 40,
+            "power": 250,
+            "magicPower": 250,
+            "price": 2500,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Sword of Thor",
+            "desc": "A sword that proceed with lighting energy",
+            "type": "Sword",
+            "img": "E060",
+            "reqLv": 40,
+            "power": 1250,
+            "magicPower": 250,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Sword of Aya",
+            "desc": "A sword that proceed with wind energy",
+            "type": "Sword",
+            "img": "E061",
+            "reqLv": 40,
+            "power": 900,
+            "magicPower": 900,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Bloody Shield",
+            "desc": "A shield that is decrorated with blood",
+            "type": "Shield",
+            "img": "E062",
+            "reqLv": 40,
+            "power": 450,
+            "magicPower": 200,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Spiking Shield",
+            "desc": "A shield with a huge spike",
+            "type": "Shield",
+            "img": "E063",
+            "reqLv": 40,
+            "power": 350,
+            "magicPower": 450,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Flaming Axe",
+            "desc": "An axe that have fire on its head",
+            "type": "Axe",
+            "img": "E064",
+            "reqLv": 40,
+            "power": 2600,
+            "magicPower": 600,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Frozen Axe",
+            "desc": "An axe that have ice on its head",
+            "type": "Axe",
+            "img": "E065",
+            "reqLv": 40,
+            "power": 2000,
+            "magicPower": 1500,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Wand of Thor",
+            "desc": "A wand that proceed with lighting energy",
+            "type": "Wand",
+            "img": "E066",
+            "reqLv": 40,
+            "power": 85,
+            "magicPower": 700,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Wand of Aya",
+            "desc": "A wand that proceed with wind energy",
+            "type": "Wand",
+            "img": "E067",
+            "reqLv": 40,
+            "power": 120,
+            "magicPower": 675,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Noble Spellbook",
+            "desc": "A nice-looking spellbook that suits a noble mage",
+            "type": "Spellbook",
+            "img": "E068",
+            "reqLv": 40,
+            "power": 90,
+            "magicPower": 180,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Onmis Spellbook",
+            "desc": "A omnious looking spellbook",
+            "type": "Spellbook",
+            "img": "E069",
+            "reqLv": 40,
+            "power": 130,
+            "magicPower": 150,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Staff of Wind",
+            "desc": "A staff that proceed with wind energy",
+            "type": "Staff",
+            "img": "E070",
+            "reqLv": 40,
+            "power": 180,
+            "magicPower": 1600,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Staff of Dark",
+            "desc": "A staff that proceed with dark energy",
+            "type": "Staff",
+            "img": "E071",
+            "reqLv": 40,
+            "power": 250,
+            "magicPower": 1500,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Extra Frozen Bow",
+            "desc": "",
+            "type": "Bow",
+            "img": "E072",
+            "reqLv": 40,
+            "power": 950,
+            "magicPower": 800,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Extra Windy Bow",
+            "desc": "",
+            "type": "Bow",
+            "img": "E073",
+            "reqLv": 40,
+            "power": 800,
+            "magicPower": 950,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Extra Flaming Dragger",
+            "desc": "",
+            "type": "Dagger",
+            "img": "E074",
+            "reqLv": 40,
+            "power": 600,
+            "magicPower": 450,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Extra Frozen Dragger",
+            "desc": "",
+            "type": "Dagger",
+            "img": "E075",
+            "reqLv": 40,
+            "power": 450,
+            "magicPower": 600,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Elite Knight's Armor",
+            "desc": "",
+            "type": "Metal Armor",
+            "img": "E127",
+            "reqLv": 40,
+            "power": 450,
+            "magicPower": 350,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Flaming Archmage Cloth",
+            "desc": "",
+            "type": "Silk Armor",
+            "img": "E128",
+            "reqLv": 40,
+            "power": 350,
+            "magicPower": 450,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Enchanted Archer Armor",
+            "desc": "",
+            "type": "Leather Armor",
+            "img": "E129",
+            "reqLv": 40,
+            "power": 375,
+            "magicPower": 375,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Runic Sword",
+            "desc": "",
+            "type": "Sword",
+            "img": "E076",
+            "reqLv": 50,
+            "power": 1650,
+            "magicPower": 400,
+            "price": 4500,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Tower Shield",
+            "desc": "",
+            "type": "Shield",
+            "img": "E077",
+            "reqLv": 50,
+            "power": 600,
+            "magicPower": 250,
+            "price": 3500,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Extreme Elemental Axe",
+            "desc": "",
+            "type": "Axe",
+            "img": "E078",
+            "reqLv": 50,
+            "power": 3400,
+            "magicPower": 800,
+            "price": 6200,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Golden Flaming Wand",
+            "desc": "",
+            "type": "Wand",
+            "img": "E079",
+            "reqLv": 50,
+            "power": 120,
+            "magicPower": 750,
+            "price": 4500,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Master Spellbook",
+            "desc": "",
+            "type": "Spellbook",
+            "img": "E080",
+            "reqLv": 50,
+            "power": 100,
+            "magicPower": 175,
+            "price": 3500,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Spiral Staff",
+            "desc": "",
+            "type": "Staff",
+            "img": "E081",
+            "reqLv": 50,
+            "power": 300,
+            "magicPower": 1650,
+            "price": 6200,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Metallic Crossbow",
+            "desc": "",
+            "type": "Bow",
+            "img": "E082",
+            "reqLv": 50,
+            "power": 900,
+            "magicPower": 900,
+            "price": 4500,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Katana",
+            "desc": "",
+            "type": "Dagger",
+            "img": "E083",
+            "reqLv": 50,
+            "power": 550,
+            "magicPower": 550,
+            "price": 4500,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Royal Knight's Armor",
+            "desc": "",
+            "type": "Metal Armor",
+            "img": "E130",
+            "reqLv": 50,
+            "power": 420,
+            "magicPower": 350,
+            "price": 4000,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Master's Cloth",
+            "desc": "",
+            "type": "Silk Armor",
+            "img": "E131",
+            "reqLv": 50,
+            "power": 350,
+            "magicPower": 420,
+            "price": 4000,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Royal Archer's Armor",
+            "desc": "",
+            "type": "Leather Armor",
+            "img": "E132",
+            "reqLv": 50,
+            "power": 375,
+            "magicPower": 375,
+            "price": 4000,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Ancient Sword",
+            "desc": "",
+            "type": "Sword",
+            "img": "E084",
+            "reqLv": 50,
+            "power": 2450,
+            "magicPower": 400,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Toture Sword",
+            "desc": "",
+            "type": "Sword",
+            "img": "E085",
+            "reqLv": 50,
+            "power": 1900,
+            "magicPower": 1900,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Royal Tower Shield",
+            "desc": "",
+            "type": "Shield",
+            "img": "E086",
+            "reqLv": 50,
+            "power": 900,
+            "magicPower": 350,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Enhanted Tower Shield",
+            "desc": "",
+            "type": "Shield",
+            "img": "E087",
+            "reqLv": 50,
+            "power": 700,
+            "magicPower": 900,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Extreme Flaming Axe",
+            "desc": "",
+            "type": "Axe",
+            "img": "E088",
+            "reqLv": 50,
+            "power": 5150,
+            "magicPower": 2000,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Extreme Frozen Axe",
+            "desc": "",
+            "type": "Axe",
+            "img": "E089",
+            "reqLv": 50,
+            "power": 4100,
+            "magicPower": 4500,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Otherworldly Flame",
+            "desc": "",
+            "type": "Wand",
+            "img": "E090",
+            "reqLv": 50,
+            "power": 180,
+            "magicPower": 1050,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Bloody Skull Wand",
+            "desc": "",
+            "type": "Wand",
+            "img": "E091",
+            "reqLv": 50,
+            "power": 250,
+            "magicPower": 900,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Extra Noble Spellbook",
+            "desc": "",
+            "type": "Spellbook",
+            "img": "E092",
+            "reqLv": 50,
+            "power": 150,
+            "magicPower": 350,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Extra Onmis Spellbook",
+            "desc": "",
+            "type": "Spellbook",
+            "img": "E093",
+            "reqLv": 50,
+            "power": 250,
+            "magicPower": 300,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Windy Spiral",
+            "desc": "",
+            "type": "Staff",
+            "img": "E094",
+            "reqLv": 50,
+            "power": 350,
+            "magicPower": 2500,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Dark Spiral",
+            "desc": "",
+            "type": "Staff",
+            "img": "E095",
+            "reqLv": 50,
+            "power": 800,
+            "magicPower": 2100,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Frozen Crossbow",
+            "desc": "",
+            "type": "Bow",
+            "img": "E096",
+            "reqLv": 50,
+            "power": 1400,
+            "magicPower": 1000,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Windy Crossbow",
+            "desc": "",
+            "type": "Bow",
+            "img": "E097",
+            "reqLv": 50,
+            "power": 1000,
+            "magicPower": 1400,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Windy Katana",
+            "desc": "",
+            "type": "Dagger",
+            "img": "E098",
+            "reqLv": 50,
+            "power": 750,
+            "magicPower": 600,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Thunder Katana",
+            "desc": "",
+            "type": "Dagger",
+            "img": "E099",
+            "reqLv": 50,
+            "power": 600,
+            "magicPower": 750,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "King Guard's Armor",
+            "desc": "",
+            "type": "Metal Armor",
+            "img": "E133",
+            "reqLv": 50,
+            "power": 575,
+            "magicPower": 450,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Forzen Archmage Cloth",
+            "desc": "",
+            "type": "Silk Armor",
+            "img": "E134",
+            "reqLv": 50,
+            "power": 450,
+            "magicPower": 575,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Elite Archer's Armor",
+            "desc": "",
+            "type": "Leather Armor",
+            "img": "E135",
+            "reqLv": 50,
+            "power": 525,
+            "magicPower": 525,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Hero's Sword",
+            "desc": "",
+            "type": "Sword",
+            "img": "E100",
+            "reqLv": 60,
+            "power": 4000,
+            "magicPower": 2000,
+            "price": 6000,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Hero's Shield",
+            "desc": "",
+            "type": "Shield",
+            "img": "E101",
+            "reqLv": 60,
+            "power": 1000,
+            "magicPower": 500,
+            "price": 4500,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Machical Axe",
+            "desc": "",
+            "type": "Axe",
+            "img": "E102",
+            "reqLv": 60,
+            "power": 9000,
+            "magicPower": 4000,
+            "price": 8000,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Double Wand",
+            "desc": "",
+            "type": "Wand",
+            "img": "E103",
+            "reqLv": 60,
+            "power": 180,
+            "magicPower": 925,
+            "price": 6000,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Ancient Spellbook",
+            "desc": "",
+            "type": "Spellbook",
+            "img": "E104",
+            "reqLv": 60,
+            "power": 125,
+            "magicPower": 220,
+            "price": 4500,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Bright Crystal Wand",
+            "desc": "",
+            "type": "Staff",
+            "img": "E105",
+            "reqLv": 60,
+            "power": 400,
+            "magicPower": 2200,
+            "price": 8000,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Eagle's Bow",
+            "desc": "",
+            "type": "Bow",
+            "img": "E106",
+            "reqLv": 60,
+            "power": 1100,
+            "magicPower": 1100,
+            "price": 6000,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Kunai",
+            "desc": "",
+            "type": "Dagger",
+            "img": "E107",
+            "reqLv": 60,
+            "power": 700,
+            "magicPower": 700,
+            "price": 6000,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Hero's Armor",
+            "desc": "",
+            "type": "Metal Armor",
+            "img": "E136",
+            "reqLv": 60,
+            "power": 550,
+            "magicPower": 450,
+            "price": 6000,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Lab Mem's Cloth",
+            "desc": "",
+            "type": "Silk Armor",
+            "img": "E137",
+            "reqLv": 60,
+            "power": 450,
+            "magicPower": 550,
+            "price": 6000,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Sniper Armor",
+            "desc": "",
+            "type": "Leather Armor",
+            "img": "E138",
+            "reqLv": 60,
+            "power": 500,
+            "magicPower": 500,
+            "price": 6000,
+            "buyPlace": "Blacksmith"
+        }, {
+            "name": "Magma Lord's Anger",
+            "desc": "",
+            "type": "Sword",
+            "img": "E108",
+            "reqLv": 60,
+            "power": 6500,
+            "magicPower": 1000,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Devil's Sight",
+            "desc": "",
+            "type": "Sword",
+            "img": "E109",
+            "reqLv": 60,
+            "power": 5000,
+            "magicPower": 5000,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Nature's Protector",
+            "desc": "",
+            "type": "Shield",
+            "img": "E110",
+            "reqLv": 60,
+            "power": 1500,
+            "magicPower": 650,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Thunder Protector",
+            "desc": "",
+            "type": "Shield",
+            "img": "E111",
+            "reqLv": 60,
+            "power": 1150,
+            "magicPower": 1500,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Robotal Axe",
+            "desc": "",
+            "type": "Axe",
+            "img": "E112",
+            "reqLv": 60,
+            "power": 15000,
+            "magicPower": 6000,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Mice of Pain",
+            "desc": "",
+            "type": "Axe",
+            "img": "E113",
+            "reqLv": 60,
+            "power": 11000,
+            "magicPower": 12500,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Double Frozen Wand",
+            "desc": "",
+            "type": "Wand",
+            "img": "E114",
+            "reqLv": 60,
+            "power": 250,
+            "magicPower": 1500,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Double Hellish Wand",
+            "desc": "",
+            "type": "Wand",
+            "img": "E115",
+            "reqLv": 60,
+            "power": 500,
+            "magicPower": 1300,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Ice Spirit Staff",
+            "desc": "",
+            "type": "Spellbook",
+            "img": "E116",
+            "reqLv": 60,
+            "power": 600,
+            "magicPower": 3800,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Magma Spirit Staff",
+            "desc": "",
+            "type": "Spellbook",
+            "img": "E117",
+            "reqLv": 60,
+            "power": 1050,
+            "magicPower": 3500,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Mini Spellbook",
+            "desc": "",
+            "type": "Staff",
+            "img": "E118",
+            "reqLv": 60,
+            "power": 160,
+            "magicPower": 400,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Dark Acrane Art",
+            "desc": "",
+            "type": "Staff",
+            "img": "E119",
+            "reqLv": 60,
+            "power": 275,
+            "magicPower": 325,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Icy Runner",
+            "desc": "",
+            "type": "Bow",
+            "img": "E120",
+            "reqLv": 60,
+            "power": 1900,
+            "magicPower": 1250,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Windy Runner",
+            "desc": "",
+            "type": "Bow",
+            "img": "E121",
+            "reqLv": 60,
+            "power": 1250,
+            "magicPower": 1900,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Ninjato",
+            "desc": "",
+            "type": "Dagger",
+            "img": "E122",
+            "reqLv": 60,
+            "power": 1200,
+            "magicPower": 900,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Cross Knife",
+            "desc": "",
+            "type": "Dagger",
+            "img": "E123",
+            "reqLv": 60,
+            "power": 900,
+            "magicPower": 1200,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Ultra Hero's Armor",
+            "desc": "",
+            "type": "Metal Armor",
+            "img": "E139",
+            "reqLv": 60,
+            "power": 750,
+            "magicPower": 550,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Shadow Walker",
+            "desc": "",
+            "type": "Silk Armor",
+            "img": "E140",
+            "reqLv": 60,
+            "power": 550,
+            "magicPower": 750,
+            "price": 0,
+            "buyPlace": "Craft"
+        }, {
+            "name": "Heroic Sniper Armor",
+            "desc": "",
+            "type": "Leather Armor",
+            "img": "E141",
+            "reqLv": 60,
+            "power": 600,
+            "magicPower": 600,
+            "price": 0,
+            "buyPlace": "Craft"
         }
     ]
 }

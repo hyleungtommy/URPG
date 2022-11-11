@@ -1,0 +1,67 @@
+{
+    "Items": [
+        {
+			"id":1,
+            "name": "Abondened Mine",
+            "desc": "An Abondened Mine",
+            "type": "Mining",
+            "requireMoney":100,
+            "requireLevel":1,
+            "requireTime":15,
+            "obtainableItems":[
+                "I032","I033","I041"
+            ],
+            "obtainChance":[
+                100,10,30
+            ],
+            "minAmount":[
+                2,1,1
+            ],
+            "maxAmount":[
+                5,3,5
+            ]
+        },
+        {
+			"id":2,
+            "name": "Nearby Forest",
+            "desc": "A Nearby Forest",
+            "type": "Forging",
+            "requireMoney":100,
+            "requireLevel":1,
+            "requireTime":15,
+            "obtainableItems":[
+                "I050","I055","I058","I059","I060"
+            ],
+            "obtainChance":[
+                100,10,15,15,15
+            ],
+            "minAmount":[
+                2,1,1,1,1
+            ],
+            "maxAmount":[
+                5,3,2,2,2
+            ]
+        },
+        {
+			"id":3,
+            "name": "Great Plain",
+            "desc": "A Great Plain",
+            "type": "Hunting",
+            "requireMoney":100,
+            "requireLevel":1,
+            "requireTime":70,
+            "obtainableItems":[
+                "I064","I069","I014"
+            ],
+            "obtainChance":[
+                100,10,15
+            ],
+            "minAmount":[
+                2,1,1
+            ],
+            "maxAmount":[
+                5,3,2
+            ]
+        }
+    ]
+}

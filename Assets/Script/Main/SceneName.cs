@@ -22,5 +22,7 @@ namespace RPG
         public const string Setting = "Setting";
         public const string Quest = "Quest";
         public const string SupportStatus = "SupportStatus";
+        public const string Growth = "Growth";
+        public const string ExploreSite = "Explore";
     }
 }

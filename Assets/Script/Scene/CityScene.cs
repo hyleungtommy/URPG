@@ -42,6 +42,9 @@ public class CityScene : BasicScene
             case 2:
                 jumpToScene(SceneName.Blacksmith);
                 break;
+            case 4:
+                jumpToScene(SceneName.ExploreSite);
+                break;
             default:
                 break;
         }

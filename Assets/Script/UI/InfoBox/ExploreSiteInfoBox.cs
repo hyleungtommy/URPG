@@ -1,0 +1,38 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using RPG;
+
+public class ExploreSiteInfoBox : BasicInfoBox
+{
+    public Text textHeader;
+    public Text textBasicInfo;
+    public Text textDesc1;
+    public Text textPrice;
+    public Image imgExploreSite;
+    public ObtainableGroupCtrl obtainableGroupCtrl;
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    protected override void showContent()
+    {
+        base.showContent();
+        ExploreSite exploreSite = base.obj as ExploreSite;
+        textHeader.text = exploreSite.name;
+        textBasicInfo.text = exploreSite.type.ToString();
+        textDesc1.text = exploreSite.desc;
+        textPrice.text = exploreSite.requireTime.ToString();
+        imgExploreSite.sprite = exploreSite.img;
+        obtainableGroupCtrl.render(exploreSite.obtainableItems);
+    }
+}

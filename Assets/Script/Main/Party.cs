@@ -7,7 +7,7 @@ namespace RPG
     public class Party
     {
         private BattleCharacter[] battleParty;
-        private SupportCharacter[] supportParty;
+        //private SupportCharacter[] supportParty;
 
         public Party()
         {
@@ -28,11 +28,13 @@ namespace RPG
                 if (Param.unlockAllCharacter) battleParty[i].unlocked = true;
                 //battleParty[i].onload("1|0|0|0|0|0|0|0|0");
             }
+            /*
             supportParty = new SupportCharacter[]{
                 new SupportCharacter("Jack",Resources.LoadAll<Sprite>("Characters/Dialog Face/Berserker_Face1")[0]),
                 new SupportCharacter("Ann",Resources.LoadAll<Sprite>("Characters/Dialog Face/Assassin_Face1")[0]),
                 null,null,null,null,null,null
             };
+            */
 
         }
 
@@ -162,7 +164,7 @@ namespace RPG
                 }
             }
         }
-
+        /*
         public SupportCharacter[] getSupportCharacterList()
         {
             return supportParty;
@@ -208,5 +210,6 @@ namespace RPG
         {
             return supportParty.Where(a => a != null).ToArray().Length;
         }
+        */
     }
 }

@@ -120,6 +120,13 @@ namespace RPG
             return false;
         }
 
+        public void assignUPPT(int[] upptTempAlloc){
+            for(int i = 0 ; i < 5 ; i++){
+                upptAlloc[i] += upptTempAlloc[i];
+            }
+            getBattleCharacterStat();
+        }
+
         private void levelUp()
         {
             lv++;

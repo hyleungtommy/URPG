@@ -35,6 +35,18 @@ public class BarCtrl : MonoBehaviour
         barRightEnd.gameObject.SetActive(bar.value >= bar.maxValue);
     }
 
+    public void noAnimationRenderTime(float maxValue, float currValue,string formatTime)
+    {
+        this.maxValue = maxValue;
+        this.barValue = currValue;
+        if (textBarVlaue != null && textBarVlaue.IsActive() && !isATBBar)
+            textBarVlaue.text = formatTime;
+        bar.value = (maxValue-currValue) / maxValue;
+        //		Debug.Log ("bar v" + bar.value);
+        barLeftEnd.gameObject.SetActive(bar.value > 0);
+        barRightEnd.gameObject.SetActive(bar.value >= bar.maxValue);
+    }
+
     IEnumerator animateBarChange()
     {
         float passedTime = 0.5f;

@@ -53,7 +53,7 @@ namespace RPG
         public static int[] mapUnlockAt = { 0, 6, 15, 23, 30, 35, 42 };
 
         public static readonly string[] craftSkillTypes = {
-            "Mining","Forging","Hunting","Smithing","Reinforcing","Arcane Crafting","Brewing","Enchanting","Crafting"
+            "Mining","Gathering","Hunting","Smithing","Arcane Crafting","Jewel Crafting","Reinforcing","Enchanting","Brewing"
         };
         public const int craftSkillMiningId = 0;
         public const int craftSkillForgingId = 1;
