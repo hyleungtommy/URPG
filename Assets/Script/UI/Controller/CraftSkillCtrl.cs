@@ -23,8 +23,9 @@ public class CraftSkillCtrl : MonoBehaviour
     public void render(SkillCraft skill)
     {
         if(skill != null){
-            Debug.Log(skill.typeName);
+            Debug.Log(skill.reqexp + "," + skill.currexp);
             textSkillName.text = skill.typeName + " Lv." + skill.lv;
+
             expBar.noAnimationRender(skill.reqexp, skill.currexp);
         }
     }

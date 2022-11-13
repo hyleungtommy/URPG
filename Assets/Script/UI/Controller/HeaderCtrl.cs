@@ -76,7 +76,7 @@ public class HeaderCtrl : BasicScene
                 jumpToScene(SceneName.Quest);
                 break;
             case 5:
-                jumpToScene(SceneName.SupportStatus);
+                jumpToScene(SceneName.CraftMenu);
                 break;
             case 6:
                 jumpToScene(SceneName.Setting);

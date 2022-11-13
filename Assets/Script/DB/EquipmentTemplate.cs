@@ -17,6 +17,8 @@ namespace RPG
         public int magicPower;
         public int price;
         public string buyPlace;
+        public CraftRecipeTemplate craftRecipe;
+        public ReinforceRecipeTemplate reinforceRecipe; 
 
         public override string ToString()
         {
@@ -36,6 +38,7 @@ namespace RPG
             e.magicPower = magicPower;
             e.price = price;
             e.buyPlace = buyPlace;
+            
             return e;
 
         }

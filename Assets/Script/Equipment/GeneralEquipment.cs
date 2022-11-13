@@ -63,5 +63,10 @@ namespace RPG
             return e;
         }
 
+        public override string ToString()
+        {
+            return "name=" + name;
+        }
+
     }
 }

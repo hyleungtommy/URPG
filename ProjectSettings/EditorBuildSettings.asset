@@ -59,4 +59,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Explore.unity
     guid: 2d5c8f46a11b35f4a8e93bac463b77a1
+  - enabled: 1
+    path: Assets/Scenes/CraftMenu.unity
+    guid: d3b5131e1c7e1dd49b96a8aef27418a6
+  - enabled: 1
+    path: Assets/Scenes/Smithing.unity
+    guid: 47903a8566985ad4cb00290a025b1962
+  - enabled: 1
+    path: Assets/Scenes/Brewing.unity
+    guid: 3deef3186bebbef469cdbbe38bc20758
   m_configObjects: {}

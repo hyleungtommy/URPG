@@ -30,6 +30,8 @@ namespace RPG
         public static PlotData[] plots;
         public static MainQuestTemplate[] mainQuests;
         public static ExploreSite[]exploreSites;
+        public static CraftRecipe[]craftRecipeItems;
+        public static CraftRecipe[]craftRecipeEquipments;
 
 
         static DB()
@@ -98,6 +100,26 @@ namespace RPG
                 elist.Add(equipmentTemplates[i].toGeneralEquipment());
             }
             equipments = elist.ToArray();
+
+            //get craft recipe for item
+            List<CraftRecipe> cilist = new List<CraftRecipe>();
+            for (int i = 0; i < items.Length; i++)
+            {
+                //Debug.Log("item " + i);
+                if(items[i].craftRecipe.requireItem != null)
+                    cilist.Add(items[i].craftRecipe.toCraftRecipe(items[i].toItem()));
+            }
+            craftRecipeItems = cilist.ToArray();
+
+            //get craft recipe for equipment
+            List<CraftRecipe> celist = new List<CraftRecipe>();
+            for (int i = 0; i < equipmentTemplates.Length; i++)
+            {
+                //Debug.Log("Equip " + i);
+                if(equipmentTemplates[i].craftRecipe.requireItem != null)
+                    celist.Add(equipmentTemplates[i].craftRecipe.toCraftRecipe(equipmentTemplates[i].toGeneralEquipment()));
+            }
+            craftRecipeEquipments = celist.ToArray();
 
             //get exploresite
             List<ExploreSite> eslist = new List<ExploreSite>();

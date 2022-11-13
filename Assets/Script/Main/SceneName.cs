@@ -21,8 +21,12 @@ namespace RPG
         public const string PartyManagement = "PartyManagement";
         public const string Setting = "Setting";
         public const string Quest = "Quest";
-        public const string SupportStatus = "SupportStatus";
         public const string Growth = "Growth";
         public const string ExploreSite = "Explore";
+        public const string CraftMenu = "CraftMenu";
+        public const string Smithing = "Smithing";
+        public const string Brewing = "Brewing";
+        public const string Reinforcing = "Reinforcing";
+        public const string Enchanting = "Enchanting";
     }
 }

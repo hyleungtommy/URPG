@@ -24,7 +24,9 @@ public class EquipmentBox : BasicLargeBox
     protected override void boxHaveItem(Displayable obj)
     {
         base.boxHaveItem(obj);
+        //Debug.Log(obj);
         Equipment e = obj as Equipment;
+        Debug.Log(e);
         powerText.render(e);
         textEquipName.text = e.fullName;
     }

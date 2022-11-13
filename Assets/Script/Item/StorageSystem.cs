@@ -313,6 +313,26 @@ namespace RPG
             }
             return list.OrderBy(o => o.item.id).ToList(); ;
         }
+
+        public int searchTotalQtyOfItemInInventory(int itemId){
+            int totalQty = 0;
+            foreach (StorageSlot slot in content){
+                if(slot.getContainment() != null && slot.getContainment().id == itemId && !(slot.getContainment() is Equipment)){
+                    totalQty += slot.getQty();
+                }
+            }
+            return totalQty;
+        }
+
+        public int searchTotalQtyOfEquipmentInInventory(int itemId){
+            int totalQty = 0;
+            foreach (StorageSlot slot in content){
+                if(slot.getContainment() != null && slot.getContainment().id == itemId && slot.getContainment() is Equipment){
+                    totalQty += slot.getQty();
+                }
+            }
+            return totalQty;
+        }
     }
 }
 

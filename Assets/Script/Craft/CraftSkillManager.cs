@@ -19,6 +19,12 @@ namespace RPG{
             miningSkill = new SkillCraft(0);
             gatheringSkill = new SkillCraft(1);
             huntingSkill = new SkillCraft(2);
+            smithingSkill = new SkillCraft(3);
+            arcaneCraftingSkill = new SkillCraft(4);
+            jewelCraftingSkill = new SkillCraft(5);
+            reinforcingSkill = new SkillCraft(6);
+            enchantingSkill = new SkillCraft(7);
+            brewingSkill = new SkillCraft(8);
         }
     }
 }
