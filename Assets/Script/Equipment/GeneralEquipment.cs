@@ -83,6 +83,8 @@ namespace RPG
                 if (type == "Heavy Armor") e.equipmentType = Constant.EquipmentType.HeavyArmor;
                 if (type == "Light Armor") e.equipmentType = Constant.EquipmentType.LightArmor;
                 if (type == "Robe Armor") e.equipmentType = Constant.EquipmentType.RobeArmor;
+            }else if(type == "Accessory"){
+                e = new Accessory(img);
             }
             return e;
         }

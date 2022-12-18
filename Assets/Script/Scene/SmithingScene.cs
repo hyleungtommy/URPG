@@ -30,7 +30,7 @@ public class SmithingScene : BasicScene{
                 smthingRecipeList.Add(DB.craftRecipeEquipments[i]);
             }else if(equipType == "Staff" || equipType == "Wand" || equipType == "Spellbook" || equipType == "Robe Armor"){
                 arcaneCraftingRecipeList.Add(DB.craftRecipeEquipments[i]);
-            }else{
+            }else if(equipType == "Accessory"){
                 jewelCraftingRecipeList.Add(DB.craftRecipeEquipments[i]);
             }
         }

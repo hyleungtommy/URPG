@@ -35,6 +35,11 @@ public class EquipmentPowerText : MonoBehaviour
             mdef.gameObject.SetActive(true);
             textDEF.text = e.power.ToString();
             textMDEF.text = e.magicPower.ToString();
+        }else{
+            atk.gameObject.SetActive(false);
+            matk.gameObject.SetActive(false);
+            def.gameObject.SetActive(false);
+            mdef.gameObject.SetActive(false);
         }
     }
 
@@ -58,6 +63,11 @@ public class EquipmentPowerText : MonoBehaviour
             mdef.gameObject.SetActive(true);
             textDEF.text = e.power.ToString();
             textMDEF.text = e.magicPower.ToString();
+        }else{
+            atk.gameObject.SetActive(false);
+            matk.gameObject.SetActive(false);
+            def.gameObject.SetActive(false);
+            mdef.gameObject.SetActive(false);
         }
     }
 }

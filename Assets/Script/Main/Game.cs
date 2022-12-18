@@ -21,7 +21,7 @@ namespace RPG
         static Game()
         {
             party = new Party();
-            inventory = new StorageSystem(50);
+            inventory = new StorageSystem(Param.invSize);
             craftSkillManager = new CraftSkillManager();
         }
 

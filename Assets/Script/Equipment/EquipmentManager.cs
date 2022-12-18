@@ -7,6 +7,7 @@ namespace RPG
         public Weapon weaponEquipped;
         public Armor armorEquipped;
         public Shield shieldEquipped;
+        public Accessory accessoryEquipped;
         public EquipmentManager()
         {
             //weaponEquipped = EquipmentDB.get (0).create(2) as Weapon;
@@ -47,6 +48,10 @@ namespace RPG
             if (armorEquipped != null){
                 equipStat = equipStat.plus(armorEquipped.getEnchantmentMatrix());
             }
+
+            if(accessoryEquipped != null){
+                equipStat = equipStat.plus(accessoryEquipped.getEnchantmentMatrix());
+            }
                 
             return equipStat;
         }
@@ -83,10 +88,11 @@ namespace RPG
                 removeArmor();
                 armorEquipped = equipment as Armor;
             }
-            else
+            else if (equipment is Accessory)
             {
-                //removeAccessory();
-                //equippedAccessory = equipment as Accessory;
+                slot.remove(1);
+                removeAccessory();
+                accessoryEquipped = equipment as Accessory;
             }
         }
 
@@ -98,6 +104,8 @@ namespace RPG
                 removeShield();
             else if (id == 2)
                 removeArmor();
+            else if (id == 3)
+                removeAccessory();
         }
 
         public void removeWeapon()
@@ -124,6 +132,13 @@ namespace RPG
             {
                 Game.inventory.smartInsert(armorEquipped, 1);
                 armorEquipped = null;
+            }
+        }
+
+        public void removeAccessory(){
+            if(accessoryEquipped != null){
+                Game.inventory.smartInsert(accessoryEquipped,1);
+                accessoryEquipped = null;
             }
         }
 

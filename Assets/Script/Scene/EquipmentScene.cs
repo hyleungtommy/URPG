@@ -29,7 +29,7 @@ public class EquipmentScene : BasicScene
         //Game.inventory.smartInsert(DB.equipments[13].toEquipment(0), 1);
         //Game.inventory.smartInsert(DB.equipments[15].toEquipment(0), 1);
         //Game.inventory.smartInsert(DB.equipments[17].toEquipment(0), 1);
-        //Game.inventory.smartInsert(DB.equipments[19].toEquipment(0), 1);
+        //Game.inventory.smartInsert(DB.equipments[146].toEquipment(0), 1);
 
         header.render();
         infoBox.scene = this;
@@ -69,6 +69,7 @@ public class EquipmentScene : BasicScene
             equippedItemBoxes[0].render(character.equipmentManager.weaponEquipped);
             equippedItemBoxes[1].render(character.equipmentManager.shieldEquipped);
             equippedItemBoxes[2].render(character.equipmentManager.armorEquipped);
+            equippedItemBoxes[3].render(character.equipmentManager.accessoryEquipped);
             imgCharacter.gameObject.SetActive(true);
             imgCharacter.sprite = character.faceImg[0];
         }
@@ -78,9 +79,8 @@ public class EquipmentScene : BasicScene
             equippedItemBoxes[0].render(null);
             equippedItemBoxes[1].render(null);
             equippedItemBoxes[2].render(null);
+            equippedItemBoxes[3].render(null);
         }
-
-        equippedItemBoxes[3].render(null);
     }
 
     // Update is called once per frame
@@ -108,6 +108,7 @@ public class EquipmentScene : BasicScene
         if (slotId == 0) e = character.equipmentManager.weaponEquipped;
         else if (slotId == 1) e = character.equipmentManager.shieldEquipped;
         else if (slotId == 2) e = character.equipmentManager.armorEquipped;
+        else if (slotId == 3) e = character.equipmentManager.accessoryEquipped;
         if (e != null)
         {
             this.selectedEquipmentId = e.id;

@@ -23,6 +23,9 @@ public class CraftRecipe:Displayable
         TaskCompleteMsg taskCompleteMsg;
         if(resultItem is GeneralEquipment){
             Equipment resultEquipment = (resultItem as GeneralEquipment).toEquipment(Random.Range(0,5));
+            if(resultEquipment is Accessory){
+                resultEquipment.enchant();
+            }
             Game.inventory.smartInsert(resultEquipment,qty);
             taskCompleteMsg = new TaskCompleteMsg(resultEquipment,qty);
         }else{
