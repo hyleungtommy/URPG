@@ -12,8 +12,11 @@ public class RewardPanelCtrl : MonoBehaviour
     public Button btnRebattle;
     public Button btnNextArea;
     public EXPGainCtrl[] expGain;
+    public ItemBox[] enemyDropDisplays;
     BattleCtrl battleCtrl;
     BattleScene scene;
+    List<ItemAndQty>drops;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +33,10 @@ public class RewardPanelCtrl : MonoBehaviour
     {
         this.battleCtrl = battleCtrl;
         this.scene = scene;
+    }
+
+    public void setEnemyDrop(List<ItemAndQty>drops){
+        this.drops = drops;
     }
 
     public void show()
@@ -51,6 +58,14 @@ public class RewardPanelCtrl : MonoBehaviour
                 expGain[i].setCharacter(characters[i], battleCtrl.levelUps[i]);
                 expGain[i].render();
             }
+            for(int i = 0; i < enemyDropDisplays.Length ; i++){
+                if(i >= drops.Count){
+                    enemyDropDisplays[i].gameObject.SetActive(false);
+                }else{
+                    enemyDropDisplays[i].gameObject.SetActive(true);
+                    enemyDropDisplays[i].render(drops[i].item);
+                }
+            }
         }
         else
         {
@@ -60,6 +75,9 @@ public class RewardPanelCtrl : MonoBehaviour
             for (int i = 0; i < expGain.Length; i++)
             {
                 expGain[i].gameObject.SetActive(false);
+            }
+            for(int i = 0; i < enemyDropDisplays.Length ; i++){
+                enemyDropDisplays[i].gameObject.SetActive(false);
             }
         }
         btnRebattle.gameObject.SetActive(Game.currentMapMode == Constant.MapModeExplore);

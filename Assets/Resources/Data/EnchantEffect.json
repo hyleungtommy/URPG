@@ -61,7 +61,7 @@
             "name":"Bulleye",
             "desc":"Increase DEX by %m %",
             "maxLv":5,
-            "modifierStart":1.05,
+            "modifierStart":0.05,
             "modifierIncrement":0.05
         }
     ]

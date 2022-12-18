@@ -19,7 +19,7 @@ namespace RPG
         {
         }
 
-        public Equipment toEquipment(int quality)
+        public Equipment toEquipment(int rarity)
         {
             Equipment e = getEquipmentType();
             e.id = id;
@@ -31,7 +31,7 @@ namespace RPG
             e.price = price;
             if (buyPlace == "Blacksmith") e.buyPlace = Constant.buyPlace.blacksmith;
             else e.buyPlace = Constant.buyPlace.none;
-            e.quality = quality;
+            e.rarity = rarity;
             if(reinforceRecipeTemplate != null && reinforceRecipeTemplate.requireItem != null){
                 e.reinforceRecipe = new ReinforceRecipe(e,
                 reinforceRecipeTemplate.requireItem,

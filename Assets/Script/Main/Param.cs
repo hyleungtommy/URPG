@@ -17,6 +17,7 @@ namespace RPG
         public const int startLv = 20;
         public static bool unlockAllCharacter = true;
         public static float maxMapEnemyModifier = 1.5f;
+        public static int equipmentDropRate = 15;
 
         public static int[] characterStartingLv = new int[]{
             1,1,10,20,30,40,50,50

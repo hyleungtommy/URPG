@@ -168,7 +168,8 @@ namespace RPG
                     int reinLv = int.Parse(data[3]);
                     string enchatmentText = data[4];
                     e = equipments[id].toEquipment(quality);
-                    e.reinforceRecipe.reinforceLv = reinLv;
+                    if(reinLv > 0 && e.reinforceRecipe != null)
+                        e.reinforceRecipe.reinforceLv = reinLv;
                     if(e.enchantment != null)
                         e.enchantment.onLoad(enchatmentText);
                 }catch(Exception ex){
@@ -176,6 +177,11 @@ namespace RPG
                 }
             }           
             return e;
+        }
+
+        public static List<int>getEquipmentDropList(int mapLv){
+            List<int>equipmentIds = DB.equipments.Where(e=>e.reqLv == mapLv).Select(e=>e.id).ToList();
+            return equipmentIds;
         }
 
     }

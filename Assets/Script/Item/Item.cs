@@ -13,7 +13,7 @@ namespace RPG
         public int rarity { get; set; }
         public int price { get; set; }
         public int sellPrice { get; set; }
-        public int quality { get; set; }
+
 
         public override string ToString()
         {

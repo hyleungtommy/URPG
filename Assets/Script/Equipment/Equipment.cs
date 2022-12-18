@@ -10,10 +10,10 @@ namespace RPG
         public int reqLv { get; set; }
         public int basePower { get; set; }
         public int baseMagicPower { get; set; }
-        public int power { get { return basePower + getReinforcePower(); } }
-        public int magicPower { get { return baseMagicPower + getReinforceMagicPower(); } }
+        public int power { get { return (int)(basePower * Constant.equipmentRarityPowerModifier[rarity] + getReinforcePower()); } }
+        public int magicPower { get { return (int)(baseMagicPower * Constant.equipmentRarityPowerModifier[rarity] + getReinforceMagicPower()); } }
 
-        public string fullName { get { return name + getReinforceLevelString(); } }
+        public string fullName { get { return Constant.equipmentRarityPrefix[rarity] + " " + name + getReinforceLevelString(); } }
         public ReinforceRecipe reinforceRecipe {get; set;}
         public EnchantmentData enchantment {get; set;}
 
@@ -54,7 +54,7 @@ namespace RPG
 
         public override string onSave()
         {
-            return "E|" + id + "|" + quality + "|" + reinforceRecipe.onSave() + "|" + enchantment.onSave();
+            return "E|" + id + "|" + rarity + "|" + (reinforceRecipe == null ? "0" : reinforceRecipe.onSave()) + "|" + (enchantment == null? "" : enchantment.onSave());
         }
         
 
@@ -69,7 +69,7 @@ namespace RPG
             qty.Add(1);
             return new TaskCompleteMsg(items,qty);
         }
-
+        //Give equipment a random enchantment with random level
         public TaskCompleteMsg enchant(){
             if(enchantment != null){
                 int rndLevel = Random.Range(1,5);

@@ -299,7 +299,7 @@ namespace RPG
 
         private void postBattleHandler()
         {
-
+            List<ItemAndQty> drops = new List<ItemAndQty>();
             if (battleState == PLAYER_WIN)
             {
                 Game.money += getTotalMoneyGain();
@@ -314,6 +314,11 @@ namespace RPG
                     }
                     i++;
                 }
+                drops = getEnemyDrop();
+                //put into inventory
+                foreach(ItemAndQty item in drops){
+                    Game.inventory.smartInsert(item.item,item.qty);
+                }
                 //handleEnemyDrops();
                 //Debug.Log("insert drop=" + RPGSystem.inventory.onSave());
                 //Debug.Log (playerLevelUp.ToString ());
@@ -323,7 +328,7 @@ namespace RPG
             {
 
             }
-            scene.showRewardPanel();
+            scene.showRewardPanel(drops);
 
 
         }
@@ -361,6 +366,31 @@ namespace RPG
                 totalMoney += Mathf.FloorToInt((enemyParty[i] as EntityEnemy).dropMoney * (1 + Game.currLoc.currArea * Param.areaRewardMultiplier));
             //Debug.Log ("getTotalMoneyGain() =" + totalMoney);
             return totalMoney;
+        }
+
+        public List<ItemAndQty> getEnemyDrop(){
+            List<ItemAndQty> drops = new List<ItemAndQty>();
+            //global drop
+            if(Random.Range(0,100) < Param.equipmentDropRate){
+                //restrict equipment level to be same level as the map
+                List<int>equipDropList = DB.getEquipmentDropList(Game.currLoc.reqLv);
+                if(equipDropList.Count > 0){
+                    //generate equipment with random rein lv and enchantment
+                    int rndEquipId = Util.getRandomIndexFrom(equipDropList.ToArray());
+                    int rndRarity = Random.Range(0,5);
+                    Equipment equip = DB.equipments[rndEquipId].toEquipment(rndRarity);
+                    if(equip.reinforceRecipe != null){
+                        int rndReinLv = Random.Range(0,equip.reinforceRecipe.maxReinforceLv + 1);
+                        equip.reinforceRecipe.reinforceLv = rndReinLv;
+                    }
+                    if(equip.enchantment != null){
+                        equip.enchant();
+                    }
+                    drops.Add(new ItemAndQty(equip,1));
+                }
+                
+            }
+            return drops;
         }
 
         public void skipBattle()

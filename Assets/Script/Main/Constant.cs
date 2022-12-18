@@ -24,6 +24,22 @@ namespace RPG
             new Color32(230,126,34,255)
         };
 
+        public static string[] equipmentRarityPrefix = {
+            "",
+            "Good",
+            "Elite",
+            "Legendary",
+            "Heroic"
+        };
+
+        public static float[] equipmentRarityPowerModifier = {
+            1.0f,
+            1.2f,
+            1.5f,
+            2f,
+            3f
+        };
+
         public const string attackSkill = "Attack";
         public const string attackSkillAOE = "AttackAOE";
         public const string defenseSkill = "Defense";

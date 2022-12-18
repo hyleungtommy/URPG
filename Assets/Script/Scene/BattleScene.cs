@@ -346,13 +346,14 @@ public class BattleScene : BasicScene
         }
     }
 
-    public void showRewardPanel()
+    public void showRewardPanel(List<ItemAndQty>drops)
     {
         if (!showingRewardPanel)
         {
             showingRewardPanel = true;
             //rewardPanel.showRewardPanel(this, battleCtrl);
             rewardPanel.setBattleCtrl(this, this.battleCtrl);
+            rewardPanel.setEnemyDrop(drops);
             rewardPanel.show();
             Game.saveGame();
             //RPGSystem.saveGame();
