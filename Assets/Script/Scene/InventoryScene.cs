@@ -10,6 +10,7 @@ public class InventoryScene : BasicScene
     public GameObject invBoxPrefab;
     public HeaderCtrl header;
     public InvItemInfoBox itemInfoBox;
+    public InvEquipmentInfoBox equipmentInfoBox;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +37,7 @@ public class InventoryScene : BasicScene
             invBox.GetComponent<Button>().onClick.AddListener(() => this.onClickItem(j));
         }
         itemInfoBox.hide();
+        equipmentInfoBox.hide();
     }
 
     // Update is called once per frame
@@ -49,8 +51,13 @@ public class InventoryScene : BasicScene
         //Debug.Log(Game.inventory.getSlot(slotId).getContainment());
         if (Game.inventory.getSlot(slotId) != null && Game.inventory.getSlot(slotId).getContainment() != null)
         {
-            itemInfoBox.setStoageSlot(Game.inventory.getSlot(slotId));
-            itemInfoBox.show();
+            if(Game.inventory.getSlot(slotId).getContainment() is Equipment){
+                equipmentInfoBox.setStoageSlot(Game.inventory.getSlot(slotId));
+                equipmentInfoBox.show();
+            }else{
+                itemInfoBox.setStoageSlot(Game.inventory.getSlot(slotId));
+                itemInfoBox.show();
+            }
         }
     }
 
