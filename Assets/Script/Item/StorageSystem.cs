@@ -333,6 +333,21 @@ namespace RPG
             }
             return totalQty;
         }
+
+        public List<StorageSlot> searchEquipmentForReinforce(){
+            return content.Where(slot=>slot.getContainment() != null && 
+                slot.getContainment() is Equipment && 
+                (slot.getContainment() as Equipment).reinforceRecipe != null &&
+                (slot.getContainment() as Equipment).canReinforce()
+            ).ToList();
+        }
+
+        public List<StorageSlot> searchEquipmentForEnchant(){
+            return content.Where(slot => slot.getContainment() != null && 
+                slot.getContainment() is Equipment && 
+                (slot.getContainment() as Equipment).canEnchant()
+            ).ToList();
+        }
     }
 }
 

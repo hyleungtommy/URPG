@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace RPG
 {
@@ -8,10 +10,12 @@ namespace RPG
         public int reqLv { get; set; }
         public int basePower { get; set; }
         public int baseMagicPower { get; set; }
-        public int power { get { return basePower; } }
-        public int magicPower { get { return baseMagicPower; } }
+        public int power { get { return basePower + getReinforcePower(); } }
+        public int magicPower { get { return baseMagicPower + getReinforceMagicPower(); } }
 
-        public string fullName { get { return name; } }
+        public string fullName { get { return name + getReinforceLevelString(); } }
+        public ReinforceRecipe reinforceRecipe {get; set;}
+        public EnchantmentData enchantment {get; set;}
 
         public Equipment(Sprite img) : base(img)
         {
@@ -50,7 +54,71 @@ namespace RPG
 
         public override string onSave()
         {
-            return "E|" + id + "|" + quality;
+            return "E|" + id + "|" + quality + "|" + reinforceRecipe.onSave() + "|" + enchantment.onSave();
+        }
+        
+
+        public TaskCompleteMsg reinforce(){
+            
+            if(reinforceRecipe.reinforceLv < reinforceRecipe.maxReinforceLv){
+                reinforceRecipe.reinforceLv ++;
+            }
+            List<Item>items = new List<Item>();
+            items.Add(this);
+            List<int>qty = new List<int>();
+            qty.Add(1);
+            return new TaskCompleteMsg(items,qty);
+        }
+
+        public TaskCompleteMsg enchant(){
+            if(enchantment != null){
+                int rndLevel = Random.Range(1,5);
+                int rndEnchantmentId = Random.Range(0,DB.enchantmentEffects.Length);
+                EnchantmentEffect effect = DB.enchantmentEffects[rndEnchantmentId].toEnchantmentEffect(rndLevel);
+                enchantment.effects.Add(effect);
+            }
+            List<Item>items = new List<Item>();
+            items.Add(this);
+            List<int>qty = new List<int>();
+            qty.Add(1);
+            return new TaskCompleteMsg(items,qty);
+        }
+
+        public bool canReinforce(){
+            return (reinforceRecipe.reinforceLv <  reinforceRecipe.maxReinforceLv);
+        }
+
+        public bool canEnchant(){
+            //Debug.Log("enchant=" + enchantment);
+            return enchantment != null && enchantment.effects.Count == 0;
+        }
+
+        private string getReinforceLevelString(){
+            if(reinforceRecipe != null && reinforceRecipe.reinforceLv > 0){
+                return " +" + reinforceRecipe.reinforceLv;
+            }
+            return "";
+        }
+
+        private int getReinforcePower(){
+            if(reinforceRecipe != null && reinforceRecipe.reinforceLv > 0){
+                return reinforceRecipe.reinforceLv * reinforceRecipe.powerIncrementPerLevel;
+            }
+            return 0;
+        }
+
+        private int getReinforceMagicPower(){
+            if(reinforceRecipe != null && reinforceRecipe.reinforceLv > 0){
+                return reinforceRecipe.reinforceLv * reinforceRecipe.magicPowerIncrementPerLevel;
+            }
+            return 0;
+        }
+        
+        public BasicStat getEnchantmentMatrix(){
+            if(enchantment != null && enchantment.effects.Count > 0){
+                return enchantment.getEnchantmentMatrix();
+            }
+            return new BasicStat(0f,0f,0f,0f,0f,0f,0f,0f);
         }
 
     }

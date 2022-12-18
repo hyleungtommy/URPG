@@ -1,0 +1,68 @@
+{
+    "Items":[
+        {
+            "id":1,
+            "name":"Health",
+            "desc":"Increase HP by %m %",
+            "maxLv":5,
+            "modifierStart":0.1,
+            "modifierIncrement":0.05
+        },
+        {
+            "id":2,
+            "name":"Mana",
+            "desc":"Increase MP by %m %",
+            "maxLv":5,
+            "modifierStart":0.1,
+            "modifierIncrement":0.05
+        },
+        {
+            "id":3,
+            "name":"Power",
+            "desc":"Increase ATK by %m %",
+            "maxLv":5,
+            "modifierStart":0.05,
+            "modifierIncrement":0.05
+        },
+        {
+            "id":4,
+            "name":"Protection",
+            "desc":"Increase DEF by %m %",
+            "maxLv":5,
+            "modifierStart":0.05,
+            "modifierIncrement":0.05
+        },
+        {
+            "id":5,
+            "name":"Magic",
+            "desc":"Increase MATK by %m %",
+            "maxLv":5,
+            "modifierStart":0.05,
+            "modifierIncrement":0.05
+        },
+        {
+            "id":6,
+            "name":"Magic Shell",
+            "desc":"Increase MDEF by %m %",
+            "maxLv":5,
+            "modifierStart":0.05,
+            "modifierIncrement":0.05
+        },
+        {
+            "id":7,
+            "name":"Swift",
+            "desc":"Increase AGI by %m %",
+            "maxLv":5,
+            "modifierStart":0.05,
+            "modifierIncrement":0.05
+        },
+        {
+            "id":8,
+            "name":"Bulleye",
+            "desc":"Increase DEX by %m %",
+            "maxLv":5,
+            "modifierStart":1.05,
+            "modifierIncrement":0.05
+        }
+    ]
+}

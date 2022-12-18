@@ -7,7 +7,7 @@ namespace RPG
     [Serializable]
     public class ReinforceRecipeTemplate
     {
-        public string[]requireItem;
+        public int[]requireItem;
         public int[]requireQtyStart;
         public int requireMoneyStart;
         public int requireLevel;

@@ -26,7 +26,7 @@ public class EquipmentBox : BasicLargeBox
         base.boxHaveItem(obj);
         //Debug.Log(obj);
         Equipment e = obj as Equipment;
-        Debug.Log(e);
+        //Debug.Log(e);
         powerText.render(e);
         textEquipName.text = e.fullName;
     }

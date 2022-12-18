@@ -40,6 +40,15 @@ public class EquipmentInfoBox : BasicInfoBox
         textHeader.text = e.fullName;
         textBasicInfo.text = e.getTypeName() + "\n" + "Req Lv.:" + e.reqLv;
         textDesc1.text = e.desc;
+        if(e.enchantment != null && e.enchantment.effects.Count > 0){
+            string enchantmentText = "";
+            foreach(EnchantmentEffect effect in e.enchantment.effects){
+                enchantmentText += effect.name + " Lv." + effect.lv + " : " + effect.desc;
+            }
+            textDesc2.text = enchantmentText;
+        }else{
+            textDesc2.text = "";
+        }
         powerText.render(e);
         if (isEquippedItem)
         {
@@ -50,7 +59,7 @@ public class EquipmentInfoBox : BasicInfoBox
         else
         {
             string errorMsg = canEquip();
-            Debug.Log("errorMsg" + errorMsg);
+            //Debug.Log("errorMsg" + errorMsg);
             if (errorMsg != "")
             {
                 textError.text = errorMsg;

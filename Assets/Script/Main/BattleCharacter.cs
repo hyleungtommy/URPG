@@ -102,7 +102,9 @@ namespace RPG
             //Debug.Log(name + "=" + stat);
             BasicStat statt = this.stat.toBasicStat();
             statt = statt.plus(equipmentManager.getEquipmentStat());
-            Debug.Log(name + " stat:" + statt.ToString() + " equip stat: " + equipmentManager.getEquipmentStat().ToString());
+            statt = statt.multiply(equipmentManager.getEquipmentEnchantmentStat());
+            
+            Debug.Log(name + " stat:" + statt.ToString() + " equip stat: " + equipmentManager.getEquipmentStat().ToString() + " enchant stat=" + equipmentManager.getEquipmentEnchantmentStat().ToString());
             EntityPlayer player = new EntityPlayer(name, statt, faceImg[0], job.createSkillList());
             return player;
         }

@@ -19,12 +19,35 @@ namespace RPG
         {
 
             BasicStat equipStat = new BasicStat(0, 0, 0, 0, 0, 0, 0, 0);
-            if (weaponEquipped != null)
+            if (weaponEquipped != null){
                 equipStat = equipStat.plus(weaponEquipped.getBasicStat());
-            if (shieldEquipped != null)
+            }
+                
+            if (shieldEquipped != null){
                 equipStat = equipStat.plus(shieldEquipped.getBasicStat());
-            if (armorEquipped != null)
+            }
+                
+            if (armorEquipped != null){
                 equipStat = equipStat.plus(armorEquipped.getBasicStat());
+            }
+                
+            return equipStat;
+        }
+
+        public BasicStat getEquipmentEnchantmentStat(){
+            BasicStat equipStat = new BasicStat(1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f);
+            if (weaponEquipped != null){
+                equipStat = equipStat.plus(weaponEquipped.getEnchantmentMatrix());
+            }
+                
+            if (shieldEquipped != null){
+                equipStat = equipStat.plus(shieldEquipped.getEnchantmentMatrix());
+            }
+                
+            if (armorEquipped != null){
+                equipStat = equipStat.plus(armorEquipped.getEnchantmentMatrix());
+            }
+                
             return equipStat;
         }
 
@@ -124,12 +147,18 @@ namespace RPG
             string[] saveStrArray = saveStr.Split(';');
             if (saveStrArray.Length == 3)
             {
-                weaponEquipped = DB.createEquipmentFormSaveStr(saveStrArray[0]) as Weapon;
-                shieldEquipped = DB.createEquipmentFormSaveStr(saveStrArray[1]) as Shield;
-                armorEquipped = DB.createEquipmentFormSaveStr(saveStrArray[2]) as Armor;
-
+                Equipment weapon = DB.createEquipmentFormSaveStr(saveStrArray[0]);
+                Equipment shield = DB.createEquipmentFormSaveStr(saveStrArray[1]);
+                Equipment armor = DB.createEquipmentFormSaveStr(saveStrArray[2]);
+                if(weapon != null)
+                    weaponEquipped = weapon as Weapon;
+                if(shield != null)
+                    shieldEquipped = shield as Shield;
+                if(armor != null)
+                    armorEquipped = armor as Armor;
             }
         }
+
     }
 }
 

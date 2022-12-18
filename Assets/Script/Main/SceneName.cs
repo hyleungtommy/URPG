@@ -26,7 +26,7 @@ namespace RPG
         public const string CraftMenu = "CraftMenu";
         public const string Smithing = "Smithing";
         public const string Brewing = "Brewing";
-        public const string Reinforcing = "Reinforcing";
-        public const string Enchanting = "Enchanting";
+        public const string Reinforcing = "Reinforce";
+        public const string Enchanting = "Enchant";
     }
 }

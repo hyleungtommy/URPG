@@ -13,6 +13,7 @@ namespace RPG
         public int magicPower { get; set; }
         public int price { get; set; }
         public string buyPlace { get; set; }
+        public ReinforceRecipeTemplate reinforceRecipeTemplate {get; set;}
 
         public GeneralEquipment(Sprite img) : base(img)
         {
@@ -31,6 +32,29 @@ namespace RPG
             if (buyPlace == "Blacksmith") e.buyPlace = Constant.buyPlace.blacksmith;
             else e.buyPlace = Constant.buyPlace.none;
             e.quality = quality;
+            if(reinforceRecipeTemplate != null && reinforceRecipeTemplate.requireItem != null){
+                e.reinforceRecipe = new ReinforceRecipe(e,
+                reinforceRecipeTemplate.requireItem,
+                reinforceRecipeTemplate.requireQtyStart,
+                reinforceRecipeTemplate.requireMoneyStart,
+                reinforceRecipeTemplate.requireLevel,
+                reinforceRecipeTemplate.requireQtyIncrement,
+                reinforceRecipeTemplate.requireMoneyIncrement,
+                reinforceRecipeTemplate.maxReinforceLv,
+                reinforceRecipeTemplate.powerIncrementPerLevel,
+                reinforceRecipeTemplate.magicPowerIncrementPerLevel);
+            }
+
+            //create enchantment data
+            EnchantmentData ed = null;
+            foreach(EnchantRecipeTemplate t in DB.enchantRecipeTemplates){
+                if(t.equipmentLv == reqLv){
+                    ed = t.toEnchantmentData();
+                }
+            }
+
+            e.enchantment = ed;
+            
             return e;
         }
 

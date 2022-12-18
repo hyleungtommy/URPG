@@ -21,7 +21,7 @@ public class CraftRecipeTemplate
                 requireDisplayable[i] = equipment;
             }
         }
-        Debug.Log("create recipe:" + resultItem);
+        //Debug.Log("create recipe:" + resultItem);
         return new CraftRecipe(requireDisplayable,requireQty,requireMoney,requireLevel,resultItem);
     }
 }

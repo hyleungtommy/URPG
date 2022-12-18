@@ -32,7 +32,8 @@ namespace RPG
         public static ExploreSite[]exploreSites;
         public static CraftRecipe[]craftRecipeItems;
         public static CraftRecipe[]craftRecipeEquipments;
-
+        public static EnchantEffectTemplate[]enchantmentEffects;
+        public static EnchantRecipeTemplate[]enchantRecipeTemplates;
 
         static DB()
         {
@@ -144,19 +145,37 @@ namespace RPG
             //get Main Quest
             TextAsset mainQuestJSON = Resources.Load<TextAsset>("Data/MainQuest");
             mainQuests = JsonHelper.FromJson<MainQuestTemplate>(mainQuestJSON.text);
+
+            //get enchantment effect
+            TextAsset enchantmentEffectJSON = Resources.Load<TextAsset>("Data/EnchantEffect");
+            enchantmentEffects = JsonHelper.FromJson<EnchantEffectTemplate>(enchantmentEffectJSON.text);
+
+            //get enchantment recipe
+            TextAsset enchantmentRecipeJSON = Resources.Load<TextAsset>("Data/EnchantRecipe");
+            enchantRecipeTemplates = JsonHelper.FromJson<EnchantRecipeTemplate>(enchantmentRecipeJSON.text);
+            
         }
 
         public static Equipment createEquipmentFormSaveStr(string saveStr)
         {
             string[] data = saveStr.Split('|');
-            if (data.Length == 3)
+            Equipment e = null;
+            if (data.Length == 5)
             {
-                int id = int.Parse(data[1]);
-                int quality = int.Parse(data[2]);
-                Equipment e = equipments[id].toEquipment(quality);
-                return e;
-            }
-            return null;
+                try{
+                    int id = int.Parse(data[1]);
+                    int quality = int.Parse(data[2]);
+                    int reinLv = int.Parse(data[3]);
+                    string enchatmentText = data[4];
+                    e = equipments[id].toEquipment(quality);
+                    e.reinforceRecipe.reinforceLv = reinLv;
+                    if(e.enchantment != null)
+                        e.enchantment.onLoad(enchatmentText);
+                }catch(Exception ex){
+                    Debug.Log("error during loading equipment save string :" + saveStr + " exception=" + ex.Message);
+                }
+            }           
+            return e;
         }
 
     }

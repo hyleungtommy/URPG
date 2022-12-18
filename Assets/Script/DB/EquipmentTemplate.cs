@@ -38,6 +38,7 @@ namespace RPG
             e.magicPower = magicPower;
             e.price = price;
             e.buyPlace = buyPlace;
+            e.reinforceRecipeTemplate = reinforceRecipe;
             
             return e;
 

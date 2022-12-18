@@ -64,7 +64,9 @@
         "requireItem": ["I021", "I022", "I050"],
         "requireQty": [5, 1, 3],
         "requireMoney": 100
-      }
+      },
+      "reinforceRecipe":{"maxReinforceLv":3,"requireItem":[22,50],"requireQtyStart":[3,1],"requireMoneyStart":50,"requireLevel":1,"requireQtyIncrement":[2,1],"requireMoneyIncrement":50,"powerIncrementPerLevel":10,"magicPowerIncrementPerLevel":5}
+      
     },
     {
       "id": 6,
@@ -82,7 +84,8 @@
         "requireItem": ["I021", "I050"],
         "requireQty": [3, 3],
         "requireMoney": 100
-      }
+      },
+      "reinforceRecipe":{"maxReinforceLv":3,"requireItem":[22,50],"requireQtyStart":[1,3],"requireMoneyStart":50,"requireLevel":1,"requireQtyIncrement":[1,2],"requireMoneyIncrement":50,"powerIncrementPerLevel":10,"magicPowerIncrementPerLevel":5}
     },
     {
       "id": 7,
@@ -100,7 +103,8 @@
         "requireItem": ["I021", "I022", "I050"],
         "requireQty": [10, 1, 3],
         "requireMoney": 150
-      }
+      },
+      "reinforceRecipe":{"maxReinforceLv":3,"requireItem":[22,50],"requireQtyStart":[5,1],"requireMoneyStart":100,"requireLevel":1,"requireQtyIncrement":[3,1],"requireMoneyIncrement":50,"powerIncrementPerLevel":25,"magicPowerIncrementPerLevel":10}
     },
     {
       "id": 8,
@@ -118,7 +122,8 @@
         "requireItem": ["I050", "I051", "I032"],
         "requireQty": [5, 1, 3],
         "requireMoney": 100
-      }
+      },
+      "reinforceRecipe":{"maxReinforceLv":3,"requireItem":[51,32],"requireQtyStart":[3,1],"requireMoneyStart":50,"requireLevel":1,"requireQtyIncrement":[2,1],"requireMoneyIncrement":50,"powerIncrementPerLevel":10,"magicPowerIncrementPerLevel":5}
     },
     {
       "id": 9,
@@ -136,7 +141,8 @@
         "requireItem": ["I051", "I032"],
         "requireQty": [3, 3],
         "requireMoney": 100
-      }
+      },"reinforceRecipe":{"maxReinforceLv":3,"requireItem":[32],"requireQtyStart":[2],"requireMoneyStart":50,"requireLevel":1,"requireQtyIncrement":[1],"requireMoneyIncrement":50,"powerIncrementPerLevel":10,"magicPowerIncrementPerLevel":5}
+
     },
     {
       "id": 10,
@@ -154,7 +160,8 @@
         "requireItem": ["I050", "I051", "I032"],
         "requireQty": [10, 1, 3],
         "requireMoney": 150
-      }
+      },
+      "reinforceRecipe":{"maxReinforceLv":3,"requireItem":[51,32],"requireQtyStart":[5,1],"requireMoneyStart":100,"requireLevel":1,"requireQtyIncrement":[3,1],"requireMoneyIncrement":50,"powerIncrementPerLevel":25,"magicPowerIncrementPerLevel":10}
     },
     {
       "id": 11,
@@ -172,7 +179,8 @@
         "requireItem": ["I021", "I050"],
         "requireQty": [5, 5],
         "requireMoney": 150
-      }
+      },
+      "reinforceRecipe":{"maxReinforceLv":3,"requireItem":[50],"requireQtyStart":[5],"requireMoneyStart":100,"requireLevel":1,"requireQtyIncrement":[3],"requireMoneyIncrement":50,"powerIncrementPerLevel":25,"magicPowerIncrementPerLevel":10}
     },
     {
       "id": 12,
@@ -190,7 +198,8 @@
         "requireItem": ["I021", "I050"],
         "requireQty": [7, 2],
         "requireMoney": 150
-      }
+      },
+      "reinforceRecipe":{"maxReinforceLv":3,"requireItem":[22],"requireQtyStart":[5],"requireMoneyStart":100,"requireLevel":1,"requireQtyIncrement":[3],"requireMoneyIncrement":50,"powerIncrementPerLevel":25,"magicPowerIncrementPerLevel":10}
     },
     {
       "id": 13,
@@ -208,7 +217,8 @@
         "requireItem": ["I021", "I022", "I065", "I071"],
         "requireQty": [10, 1, 3, 3],
         "requireMoney": 150
-      }
+      },
+      "reinforceRecipe":{"maxReinforceLv":3,"requireItem":[22],"requireQtyStart":[5],"requireMoneyStart":100,"requireLevel":1,"requireQtyIncrement":[3],"requireMoneyIncrement":50,"powerIncrementPerLevel":20,"magicPowerIncrementPerLevel":10}
     },
     {
       "id": 14,
@@ -226,7 +236,8 @@
         "requireItem": ["I071", "I077", "I032"],
         "requireQty": [10, 5, 3],
         "requireMoney": 150
-      }
+      },
+      "reinforceRecipe":{"maxReinforceLv":3,"requireItem":[71],"requireQtyStart":[5],"requireMoneyStart":100,"requireLevel":1,"requireQtyIncrement":[3],"requireMoneyIncrement":50,"powerIncrementPerLevel":10,"magicPowerIncrementPerLevel":20}
     },
     {
       "id": 15,
@@ -244,7 +255,8 @@
         "requireItem": ["I065", "I071", "I077"],
         "requireQty": [10, 5, 5],
         "requireMoney": 150
-      }
+      },
+      "reinforceRecipe":{"maxReinforceLv":3,"requireItem":[65],"requireQtyStart":[5],"requireMoneyStart":100,"requireLevel":1,"requireQtyIncrement":[3],"requireMoneyIncrement":50,"powerIncrementPerLevel":10,"magicPowerIncrementPerLevel":20}
     },
     {
       "id": 16,
