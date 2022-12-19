@@ -44,10 +44,6 @@ namespace RPG
             //get enemy data from json
             TextAsset enemyJSON = Resources.Load<TextAsset>("Data/Enemy");
             enemyTemplates = JsonHelper.FromJson<EnemyTemplate>(enemyJSON.text);
-            for (int i = 0; i < enemyTemplates.Length; i++)
-            {
-                enemyTemplates[i].id = i;
-            }
 
             //get map data
             List<Map> mlist = new List<Map>();

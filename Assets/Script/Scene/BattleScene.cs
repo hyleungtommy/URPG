@@ -56,7 +56,7 @@ public class BattleScene : BasicScene
             }
             areaPanel.gameObject.SetActive(Game.currentMapMode == Constant.MapModeProgressive);
 
-            if (battleCtrl.bossFight)
+            if (battleCtrl.bossFight || Game.rareEnemyAppeared)
             {
                 bossStat.gameObject.SetActive(true);
                 bossStat.setEntity(battleCtrl.enemyParty[0]);
@@ -67,6 +67,7 @@ public class BattleScene : BasicScene
             }
             else
             {
+                bossStat.gameObject.SetActive(false);
                 for (int i = 0; i < enemyStats.Length; i++)
                 {
                     if (i < battleCtrl.enemyParty.Length)
@@ -104,7 +105,7 @@ public class BattleScene : BasicScene
 
     void render()
     {
-        if (battleCtrl.bossFight)
+        if (battleCtrl.bossFight || Game.rareEnemyAppeared)
         {
             bossStat.render();
         }
@@ -147,7 +148,7 @@ public class BattleScene : BasicScene
 
     public void onEnemyDefeated(int index)
     {
-        if (battleCtrl.bossFight)
+        if (battleCtrl.bossFight || Game.rareEnemyAppeared)
         {
             bossStat.gameObject.SetActive(false);
         }
@@ -170,7 +171,7 @@ public class BattleScene : BasicScene
                 {
                     //StartCoroutine(changeCharacterFace(battleCtrl.ActionEntity.Id));
 
-                    if (battleCtrl.bossFight)
+                    if (battleCtrl.bossFight || Game.rareEnemyAppeared)
                     {
                         bossStat.render();
                     }
@@ -333,7 +334,7 @@ public class BattleScene : BasicScene
         //setPlayerSelectionArrowActive(false);
         //setEnemySelectionArrowActive(false);
         topBar.gameObject.SetActive(false);
-        if (battleCtrl.bossFight)
+        if (battleCtrl.bossFight || Game.rareEnemyAppeared)
         {
             bossStat.render();
         }
@@ -431,7 +432,7 @@ public class BattleScene : BasicScene
                 if ((message.sender is EntityPlayer && message.isAttackMessage()) || (message.sender is EntityEnemy && !message.isAttackMessage()))
                 {
                     //Debug.Log("message.receiver.Id=" + message.receiver.Id + "enemyImg.Lengt=" + enemyImg.Length);
-                    if (battleCtrl.bossFight)
+                    if (battleCtrl.bossFight || Game.rareEnemyAppeared)
                     {
                         trans = bossStat.transform;
                     }
@@ -454,7 +455,7 @@ public class BattleScene : BasicScene
 
             if ((bundle[0].AOE && bundle[0].sender is EntityPlayer && bundle[0].isAttackMessage()) || (bundle[0].AOE && bundle[0].sender is EntityEnemy && !bundle[0].isAttackMessage()))
             {
-                if (battleCtrl.bossFight)
+                if (battleCtrl.bossFight || Game.rareEnemyAppeared)
                 {
                     GetComponent<BattleAnimator>().createSkillAnimation(bundle[0], bossStat.transform);
                 }

@@ -40,6 +40,22 @@ namespace RPG
             3f
         };
 
+        public static string[] enemyStrengthString = {
+            "Very Weak ",
+            "Weak ",
+            "",
+            "Strong ",
+            "Very Strong "
+        };
+
+        public static float[] enemyStrengthModifier = {
+            0.75f,
+            0.9f,
+            1.0f,
+            1.1f,
+            1.25f
+        };
+
         public const string attackSkill = "Attack";
         public const string attackSkillAOE = "AttackAOE";
         public const string defenseSkill = "Defense";

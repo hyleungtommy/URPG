@@ -17,12 +17,13 @@ namespace RPG
         public EnemyTemplate[] enemyList { get; }
         public int[] appearChance { get; }
         public EnemyTemplate boss { get; }
+        public EnemyTemplate rareEnemy {get;}
         public int currArea { get; set; }
         public string townName { get; set; }
         public Sprite townbg { get; set; }
         public string[] townFacility { get; set; }
         public bool unlocked { get; set; }
-        public Map(int id, string name, string desc, Sprite bgImg, Sprite battleImg, int reqLv, int maxLv, int maxArea, EnemyTemplate[] enemyList, int[] appearChance, EnemyTemplate boss)
+        public Map(int id, string name, string desc, Sprite bgImg, Sprite battleImg, int reqLv, int maxLv, int maxArea, EnemyTemplate[] enemyList, int[] appearChance, EnemyTemplate boss,EnemyTemplate rareEnemy)
         {
             this.id = id;
             this.name = name;
@@ -36,6 +37,7 @@ namespace RPG
             this.enemyList = enemyList;
             this.boss = boss;
             this.currArea = 1;
+            this.rareEnemy = rareEnemy;
         }
 
         public override string ToString()
@@ -52,21 +54,28 @@ namespace RPG
             }
             else
             {
-                int maxEnemy = 5;
-                int enemyNum = UnityEngine.Random.Range(1, maxEnemy);
-                float mapEnemyModifier = (currArea - 1) * 0.02f;
-                if (mapEnemyModifier > Param.maxMapEnemyModifier)
-                {
-                    mapEnemyModifier = Param.maxMapEnemyModifier;
-                }
+                //determine if a rare enemy will be generated
+                int rndRareEnemy = UnityEngine.Random.Range(0,100);
+                if(rareEnemy != null && rndRareEnemy <= Param.rareEnemyAppearChance){
+                    Game.rareEnemyAppeared = true;
+                    generatedEnemyList.Add(rareEnemy.toEntity());
+                }else{
+                    int maxEnemy = 5;
+                    int enemyNum = UnityEngine.Random.Range(1, maxEnemy);
+                    float mapEnemyModifier = (currArea - 1) * 0.02f;
+                    if (mapEnemyModifier > Param.maxMapEnemyModifier)
+                    {
+                        mapEnemyModifier = Param.maxMapEnemyModifier;
+                    }
 
-                for (int i = 0; i < enemyNum; i++)
-                {
-                    //int enemyStrength = RPGUtil.getRandomIndexFrom(RPGParameter.DIFFICULTY_ENEMY_STRENGTH_CHANCE[RPGSystem.difficulty], 100f);
-
-                    EntityEnemy enemy = enemyList[Util.getRandomIndexFrom(appearChance, 100f)].toEntity(0, mapEnemyModifier);
-                    generatedEnemyList.Add(enemy);
+                    for (int i = 0; i < enemyNum; i++)
+                    {
+                        int rndEnemyStrength = UnityEngine.Random.Range(0,5);
+                        EntityEnemy enemy = enemyList[Util.getRandomIndexFrom(appearChance, 100f)].toEntity(rndEnemyStrength, mapEnemyModifier);
+                        generatedEnemyList.Add(enemy);
+                    }
                 }
+                
             }
 
             return generatedEnemyList.ToArray();

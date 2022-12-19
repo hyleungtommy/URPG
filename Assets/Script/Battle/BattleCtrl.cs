@@ -299,6 +299,7 @@ namespace RPG
 
         private void postBattleHandler()
         {
+            Game.rareEnemyAppeared = false;
             List<ItemAndQty> drops = new List<ItemAndQty>();
             if (battleState == PLAYER_WIN)
             {

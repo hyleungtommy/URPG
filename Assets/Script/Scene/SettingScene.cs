@@ -47,4 +47,8 @@ public class SettingScene : BasicScene
     {
         resetPopbox.gameObject.SetActive(false);
     }
+
+    public void onClickDifficulty(){
+        jumpToScene(SceneName.Difficulty);
+    }
 }

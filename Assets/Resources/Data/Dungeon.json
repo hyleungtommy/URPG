@@ -1,0 +1,73 @@
+{
+    "Items": [{
+        "id":1,
+        "name":"Abandoned Mine",
+        "bg":"001-Abandoned Mine",
+        "minFloor":10,
+        "maxFloor":15,
+        "enemyList":[69,70,71,72,73],
+        "appearChance":[20,20,20,20,20],
+        "boss":75,
+        "rareEnemy":74
+    },
+    {
+        "id":2,
+        "name":"Deep Wood",
+        "bg":"002-Deep Wood",
+        "minFloor":15,
+        "maxFloor":20,
+        "enemyList":[],
+        "appearChance":[],
+        "boss":0
+    },
+    {
+        "id":3,
+        "name":"Forgotten Grotto",
+        "bg":"003-Forgotten Grotto",
+        "minFloor":20,
+        "maxFloor":25,
+        "enemyList":[],
+        "appearChance":[],
+        "boss":0
+    },
+    {
+        "id":4,
+        "name":"Demon Temple",
+        "bg":"004-Demon Temple",
+        "minFloor":25,
+        "maxFloor":30,
+        "enemyList":[],
+        "appearChance":[],
+        "boss":0
+    },
+    {
+        "id":5,
+        "name":"Catacomb of Doom",
+        "bg":"005-Catacomb of Doom",
+        "minFloor":30,
+        "maxFloor":35,
+        "enemyList":[],
+        "appearChance":[],
+        "boss":0
+    },
+    {
+        "id":6,
+        "name":"Great Pyramid",
+        "bg":"006-Great Pyramid",
+        "minFloor":35,
+        "maxFloor":40,
+        "enemyList":[],
+        "appearChance":[],
+        "boss":0
+    },
+    {
+        "id":7,
+        "name":"Demon Castle",
+        "bg":"007-Demon Castle",
+        "minFloor":40,
+        "maxFloor":45,
+        "enemyList":[],
+        "appearChance":[],
+        "boss":0
+    }]
+}

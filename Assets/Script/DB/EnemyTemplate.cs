@@ -34,16 +34,19 @@ namespace RPG
         public EntityEnemy toEntity()
         {
             BasicStat stat = new BasicStat(HP, MP, ATK, DEF, MATK, MDEF, AGI, DEX);
-            EntityEnemy entity = new EntityEnemy(name, stat, Resources.Load<Sprite>("Enemy/EN_" + (id + 1)), DropEXP, DropMoney);
+            stat = stat.multiply(Param.difficultyModifier[Game.difficulty]);
+            EntityEnemy entity = new EntityEnemy(name, stat, Resources.Load<Sprite>("Enemy/" + img), DropEXP, DropMoney);
             return entity;
         }
 
         public EntityEnemy toEntity(int strengthLv, float mapAreaStrengthModifier)
         {
             BasicStat stat = new BasicStat(HP, MP, ATK, DEF, MATK, MDEF, AGI, DEX);
-            stat = stat.multiply(mapAreaStrengthModifier);
-            Debug.Log(name + "=" + stat.ToString());
-            EntityEnemy entity = new EntityEnemy(name, stat, Resources.Load<Sprite>("Enemy/EN_" + (id + 1)), DropEXP, DropMoney);
+            stat = stat.multiply(Constant.enemyStrengthModifier[strengthLv]);
+            stat = stat.multiply(1 + mapAreaStrengthModifier);
+            stat = stat.multiply(Param.difficultyModifier[Game.difficulty]);           
+            //Debug.Log(name + "=" + stat.ToString());
+            EntityEnemy entity = new EntityEnemy(name, stat, Resources.Load<Sprite>("Enemy/" + img), DropEXP, DropMoney);
             entity.strengthLv = strengthLv;
             return entity;
         }

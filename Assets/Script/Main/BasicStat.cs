@@ -41,7 +41,7 @@ namespace RPG
 
         public BasicStat multiply(float multiplier)
         {
-            return new BasicStat(hp * (1 + multiplier), mp * (1 + multiplier), atk * (1 + multiplier), def * (1 + multiplier), matk * (1 + multiplier), mdef * (1 + multiplier), agi * (1 + multiplier), dex * (1 + multiplier));
+            return new BasicStat(hp * multiplier, mp * multiplier, atk * multiplier, def * multiplier, matk *  multiplier, mdef * multiplier, agi * multiplier, dex * multiplier);
         }
 
         public override string ToString()

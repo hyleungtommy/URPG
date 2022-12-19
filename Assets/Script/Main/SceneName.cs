@@ -28,5 +28,6 @@ namespace RPG
         public const string Brewing = "Brewing";
         public const string Reinforcing = "Reinforce";
         public const string Enchanting = "Enchant";
+        public const string Difficulty = "Difficulty";
     }
 }

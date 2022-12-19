@@ -16,7 +16,8 @@ namespace RPG
         public static int plotPt = 0;
         public static int selectedCharacterInStatusScene = 0;
         public static CraftSkillManager craftSkillManager;
-
+        public static bool rareEnemyAppeared = false;
+        public static int difficulty = 1;
 
         static Game()
         {
@@ -33,6 +34,7 @@ namespace RPG
             SaveManager.saveValue(SaveKey.currInCity, currInCity);
             SaveManager.saveValue(SaveKey.currLocMapId, currLoc.id);
             SaveManager.saveValue(SaveKey.plot_pt, plotPt);
+            SaveManager.saveValue(SaveKey.difficulty,difficulty);
             //Map Data save format : map1Area|map2Area|...
             List<int> mapAreas = new List<int>();
             foreach (Map m in DB.maps)
@@ -59,6 +61,7 @@ namespace RPG
             currInCity = SaveManager.getBool(SaveKey.currInCity);
             currLoc = DB.maps[SaveManager.getInt(SaveKey.currLocMapId)];
             plotPt = SaveManager.getInt(SaveKey.plot_pt);
+            difficulty = SaveManager.getInt(SaveKey.difficulty);
             //Load map
             string[] mapAreas = SaveManager.getString(SaveKey.map_areas).Split('|');
             int i = 0;

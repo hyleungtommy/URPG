@@ -19,9 +19,24 @@ namespace RPG
         public static float maxMapEnemyModifier = 1.5f;
         public static int equipmentDropRate = 100;
         public static int invSize = 100;
+        public static int rareEnemyAppearChance = 10;
 
         public static int[] characterStartingLv = new int[]{
             1,1,10,20,30,40,50,50
+        };
+
+        public static string[] difficulty = {
+            "Easy",
+            "Normal",
+            "Hard",
+            "Lunatic"
+        };
+
+        public static float[] difficultyModifier = {
+            0.75f,
+            1f,
+            1.25f,
+            2f
         };
 
 

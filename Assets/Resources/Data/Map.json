@@ -13,10 +13,10 @@
             "maxLv": 15,
             "maxArea": 10,
             "enemyList": [
-                0,
                 1,
                 2,
-                3
+                3,
+                4
             ],
             "appearChance": [
                 25,
@@ -24,7 +24,8 @@
                 25,
                 25
             ],
-            "boss": 4
+            "boss": 5,
+            "rareEnemy":0
         },
         {
             "name": "Great Plain",
@@ -40,11 +41,11 @@
             "maxLv": 25,
             "maxArea": 15,
             "enemyList": [
-                5,
                 6,
                 7,
                 8,
-                9
+                9,
+                10
             ],
             "appearChance": [
                 25,
@@ -53,7 +54,8 @@
                 20,
                 10
             ],
-            "boss": 10
+            "boss": 12,
+            "rareEnemy":11
         },
         {
             "name": "Magical Forest",
@@ -69,12 +71,12 @@
             "maxLv": 35,
             "maxArea": 20,
             "enemyList": [
-                11,
-                12,
                 13,
                 14,
                 15,
-                16
+                16,
+                17,
+                18
             ],
             "appearChance": [
                 20,
@@ -84,7 +86,8 @@
                 10,
                 15
             ],
-            "boss": 17
+            "boss": 20,
+            "rareEnemy":19
         },
         {
             "name": "Southern Islands",
@@ -100,7 +103,7 @@
             "maxLv": 45,
             "maxArea": 25,
             "enemyList": [
-                18, 19, 20, 21, 22, 23
+                21, 22, 23, 24, 25, 26
             ],
             "appearChance": [
                 20,
@@ -110,7 +113,8 @@
                 10,
                 15
             ],
-            "boss": 24
+            "boss": 28,
+            "rareEnemy":27
         },
         {
             "name": "Crystal Cave",
@@ -126,7 +130,7 @@
             "maxLv": 55,
             "maxArea": 30,
             "enemyList": [
-                25, 26, 27, 28, 29, 30
+                29, 30, 31, 32, 33, 34
             ],
             "appearChance": [
                 20,
@@ -136,7 +140,8 @@
                 10,
                 15
             ],
-            "boss": 31
+            "boss": 36,
+            "rareEnemy":35
         },
         {
             "name": "Haunted Forest",
@@ -152,18 +157,18 @@
             "maxLv": 60,
             "maxArea": 35,
             "enemyList": [
-                32, 33, 34, 35, 36, 37, 38
+                37, 38, 39, 40, 41, 42
             ],
             "appearChance": [
+                20,
+                20,
+                20,
                 15,
                 15,
-                15,
-                15,
-                15,
-                15,
-                10
+                15
             ],
-            "boss": 39
+            "boss": 44,
+            "rareEnemy":43
         },
         {
             "name": "Burning Desert",
@@ -179,18 +184,18 @@
             "maxLv": 65,
             "maxArea": 40,
             "enemyList": [
-                40, 41, 42, 43, 44, 45, 46
+                45, 46, 47, 48, 49, 50
             ],
             "appearChance": [
+                20,
+                20,
+                20,
                 15,
                 15,
-                15,
-                15,
-                15,
-                15,
-                10
+                15
             ],
-            "boss": 47
+            "boss": 52,
+            "rareEnemy":51
         }, {
             "name": "Vulkan Volcano",
             "desc": "Sample Desc003",
@@ -205,18 +210,18 @@
             "maxLv": 70,
             "maxArea": 45,
             "enemyList": [
-                48, 49, 50, 51, 52, 53, 54
+                53, 54, 55, 56, 57, 58
             ],
             "appearChance": [
+                20,
+                20,
+                20,
                 15,
                 15,
-                15,
-                15,
-                15,
-                15,
-                10
+                15
             ],
-            "boss": 55
+            "boss": 60,
+            "rareEnemy":59
         }
     ]
 }

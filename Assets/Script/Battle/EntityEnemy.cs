@@ -13,6 +13,9 @@ namespace RPG
         public int dropMoney { get; }
         public BattleScene scene { set; get; }
         public int strengthLv { set; get; }
+        public string fullName{get{
+            return Constant.enemyStrengthString[strengthLv] + base.name;
+        }}
         public EntityEnemy(string name, BasicStat stat, Sprite img, int dropEXP, int dropMoney) : base(name, stat, img)
         {
             this.dropEXP = dropEXP;

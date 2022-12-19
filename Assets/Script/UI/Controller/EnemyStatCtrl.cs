@@ -33,7 +33,7 @@ public class EnemyStatCtrl : MonoBehaviour
         {
             enemy.sprite = entity.img;
             hpBar.noAnimationRender(entity.stat.HP, entity.currhp);
-            enemyName.text = entity.name;
+            enemyName.text = entity.fullName;
             buffCtrl.render(entity.buffState);
         }
 

@@ -17,5 +17,6 @@ namespace RPG
         public const string job_i = "job_";
         public const string equip_manager_i = "equip_manager_";
         public const string played_before = "played_before";
+        public const string difficulty = "difficulty";
     }
 }

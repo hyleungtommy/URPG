@@ -74,4 +74,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Enchant.unity
     guid: 7ded57a92cd1faa4e985d19ad586fee4
+  - enabled: 1
+    path: Assets/Scenes/Difficulty.unity
+    guid: df728a6d6f0dd4041b3bc7b9cb3d55da
   m_configObjects: {}
