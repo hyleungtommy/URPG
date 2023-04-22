@@ -36,6 +36,7 @@ namespace RPG
             BasicStat stat = new BasicStat(HP, MP, ATK, DEF, MATK, MDEF, AGI, DEX);
             stat = stat.multiply(Param.difficultyModifier[Game.difficulty]);
             EntityEnemy entity = new EntityEnemy(name, stat, Resources.Load<Sprite>("Enemy/" + img), DropEXP, DropMoney);
+            entity.strengthLv = 2;
             return entity;
         }
 

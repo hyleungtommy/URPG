@@ -41,8 +41,11 @@ namespace RPG
 
         public static int getRequireEXPForLevel(int level)
         {
+            /*
             float expNeed = Mathf.Floor(level + 300 * Mathf.Pow(1.9f, ((float)level / 4))) / 3;
             return Mathf.FloorToInt(expNeed);
+            */
+            return Param.expRequire[level-1];
         }
 
         public static int getFirstDigit(int i)

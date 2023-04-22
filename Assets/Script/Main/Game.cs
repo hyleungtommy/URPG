@@ -7,7 +7,7 @@ namespace RPG
     public static class Game
     {
         public static string playerName = "Tommy";
-        public static int money = 9999999;
+        public static int money = 99999;
         public static Map currLoc = DB.maps[0]; // testing only
         public static int currentMapMode = 0;
         public static Party party;
@@ -18,6 +18,7 @@ namespace RPG
         public static CraftSkillManager craftSkillManager;
         public static bool rareEnemyAppeared = false;
         public static int difficulty = 1;
+        
 
         static Game()
         {

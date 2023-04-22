@@ -71,8 +71,8 @@
       "MDEF": 90,
       "AGI": 23,
       "DEX": 42,
-      "DropEXP": 1500,
-      "DropMoney": 2000,
+      "DropEXP": 250,
+      "DropMoney": 200,
       "img": "005-AngryBull"
     },
     {
@@ -176,8 +176,8 @@
       "MDEF": 165,
       "AGI": 30,
       "DEX": 60,
-      "DropEXP": 2000,
-      "DropMoney": 4000,
+      "DropEXP": 3000,
+      "DropMoney": 2000,
       "img": "012-Oger"
     },
     {
@@ -282,7 +282,7 @@
       "AGI": 35,
       "DEX": 80,
       "DropEXP": 1000,
-      "DropMoney": 2000,
+      "DropMoney": 1500,
       "img": "019-Mother Flower"
     },
     {
@@ -297,129 +297,16 @@
       "AGI": 40,
       "DEX": 95,
       "DropEXP": 5000,
-      "DropMoney": 7500,
+      "DropMoney": 4000,
       "img": "020-Green Dragon"
-    },
-    {
-      "id": 21,
-      "name": "Jellyfish",
-      "HP": 5000,
-      "MP": 1500,
-      "ATK": 650,
-      "DEF": 250,
-      "MATK": 500,
-      "MDEF": 190,
-      "AGI": 42,
-      "DEX": 100,
-      "DropEXP": 350,
-      "DropMoney": 230,
-      "img": "021-Jellyfish"
-    },
-    {
-      "id": 22,
-      "name": "Starfish",
-      "HP": 5500,
-      "MP": 1500,
-      "ATK": 780,
-      "DEF": 260,
-      "MATK": 550,
-      "MDEF": 195,
-      "AGI": 42,
-      "DEX": 105,
-      "DropEXP": 400,
-      "DropMoney": 235,
-      "img": "022-Starfish"
-    },
-    {
-      "id": 23,
-      "name": "Fly Fish",
-      "HP": 6000,
-      "MP": 1500,
-      "ATK": 800,
-      "DEF": 280,
-      "MATK": 550,
-      "MDEF": 205,
-      "AGI": 44,
-      "DEX": 110,
-      "DropEXP": 425,
-      "DropMoney": 240,
-      "img": "023-Fly Fish"
-    },
-    {
-      "id": 24,
-      "name": "Giant Turtle",
-      "HP": 8000,
-      "MP": 2000,
-      "ATK": 825,
-      "DEF": 300,
-      "MATK": 500,
-      "MDEF": 220,
-      "AGI": 45,
-      "DEX": 115,
-      "DropEXP": 450,
-      "DropMoney": 280,
-      "img": "024-Giant Turtle"
-    },
-    {
-      "id": 25,
-      "name": "Sahagin",
-      "HP": 7000,
-      "MP": 2000,
-      "ATK": 815,
-      "DEF": 280,
-      "MATK": 400,
-      "MDEF": 250,
-      "AGI": 45,
-      "DEX": 120,
-      "DropEXP": 450,
-      "DropMoney": 250,
-      "img": "025-Sahagin"
-    },
-    {
-      "id": 26,
-      "name": "Water Spirit",
-      "HP": 6500,
-      "MP": 3000,
-      "ATK": 800,
-      "DEF": 250,
-      "MATK": 800,
-      "MDEF": 300,
-      "AGI": 45,
-      "DEX": 120,
-      "DropEXP": 450,
-      "DropMoney": 280,
-      "img": "026-Water Spirit"
-    },
-    {
-      "id": 27,
-      "name": "Lamia",
-      "HP": 35000,
-      "MP": 3000,
-      "ATK": 800,
-      "DEF": 280,
-      "MATK": 800,
-      "MDEF": 300,
-      "AGI": 48,
-      "DEX": 125,
-      "DropEXP": 2500,
-      "DropMoney": 5000,
-      "img": "027-Lamia"
-    },
-    {
-      "id": 28,
-      "name": "Hydra",
-      "HP": 75000,
-      "MP": 10000,
-      "ATK": 1250,
-      "DEF": 300,
-      "MATK": 750,
-      "MDEF": 250,
-      "AGI": 50,
-      "DEX": 130,
-      "DropEXP": 50000,
-      "DropMoney": 10000,
-      "img": "028-Hydra"
-    },
+    },{"id":21,"name":"Jellyfish","HP":5000,"MP":1500,"ATK":1000,"DEF":300,"MATK":500,"MDEF":250,"AGI":45,"DEX":100,"DropEXP":350,"DropMoney":230,"img":"021-Jellyfish"},
+    {"id":22,"name":"Starfish","HP":5500,"MP":1500,"ATK":1080,"DEF":350,"MATK":550,"MDEF":250,"AGI":45,"DEX":105,"DropEXP":400,"DropMoney":235,"img":"022-Starfish"},
+    {"id":23,"name":"Fly Fish","HP":6000,"MP":1500,"ATK":1100,"DEF":380,"MATK":550,"MDEF":250,"AGI":48,"DEX":110,"DropEXP":425,"DropMoney":240,"img":"023-Fly Fish"},
+    {"id":24,"name":"Giant Turtle","HP":8000,"MP":2000,"ATK":1025,"DEF":400,"MATK":500,"MDEF":270,"AGI":48,"DEX":115,"DropEXP":450,"DropMoney":280,"img":"024-Giant Turtle"},
+    {"id":25,"name":"Sahagin","HP":7000,"MP":2000,"ATK":1015,"DEF":400,"MATK":400,"MDEF":300,"AGI":48,"DEX":120,"DropEXP":450,"DropMoney":250,"img":"025-Sahagin"},
+    {"id":26,"name":"Water Spirit","HP":6500,"MP":3000,"ATK":1000,"DEF":400,"MATK":800,"MDEF":400,"AGI":48,"DEX":120,"DropEXP":450,"DropMoney":280,"img":"026-Water Spirit"},
+    {"id":27,"name":"Lamia","HP":35000,"MP":3000,"ATK":1500,"DEF":500,"MATK":800,"MDEF":400,"AGI":55,"DEX":125,"DropEXP":2500,"DropMoney":5000,"img":"027-Lamia"},
+    {"id":28,"name":"Hydra","HP":100000,"MP":10000,"ATK":2000,"DEF":500,"MATK":750,"MDEF":250,"AGI":55,"DEX":130,"DropEXP":10000,"DropMoney":10000,"img":"028-Hydra"},
     {
       "id": 29,
       "name": "Bat",
@@ -536,7 +423,7 @@
       "MDEF": 325,
       "AGI": 55,
       "DEX": 135,
-      "DropEXP": 150000,
+      "DropEXP": 25000,
       "DropMoney": 25000,
       "img": "036-Minotaur"
     },
@@ -551,7 +438,7 @@
       "MDEF": 350,
       "AGI": 60,
       "DEX": 140,
-      "DropEXP": 2500,
+      "DropEXP": 1500,
       "DropMoney": 900,
       "img": "037-Ghost"
     },
@@ -566,7 +453,7 @@
       "MDEF": 320,
       "AGI": 62,
       "DEX": 142,
-      "DropEXP": 2500,
+      "DropEXP": 1500,
       "DropMoney": 920,
       "img": "038-Zombie"
     },
@@ -581,7 +468,7 @@
       "MDEF": 325,
       "AGI": 62,
       "DEX": 145,
-      "DropEXP": 3000,
+      "DropEXP": 2000,
       "DropMoney": 920,
       "img": "039-Skeleton"
     },
@@ -596,7 +483,7 @@
       "MDEF": 340,
       "AGI": 65,
       "DEX": 150,
-      "DropEXP": 3000,
+      "DropEXP": 2000,
       "DropMoney": 950,
       "img": "040-Lich"
     },
@@ -611,7 +498,7 @@
       "MDEF": 320,
       "AGI": 65,
       "DEX": 150,
-      "DropEXP": 3500,
+      "DropEXP": 2500,
       "DropMoney": 950,
       "img": "041-Dark Knight"
     },
@@ -626,7 +513,7 @@
       "MDEF": 320,
       "AGI": 65,
       "DEX": 160,
-      "DropEXP": 3500,
+      "DropEXP": 2500,
       "DropMoney": 950,
       "img": "042-Vanpire"
     },
@@ -641,7 +528,7 @@
       "MDEF": 350,
       "AGI": 67,
       "DEX": 160,
-      "DropEXP": 4000,
+      "DropEXP": 5000,
       "DropMoney": 975,
       "img": "043-Reaper"
     },
@@ -656,7 +543,7 @@
       "MDEF": 330,
       "AGI": 70,
       "DEX": 165,
-      "DropEXP": 300000,
+      "DropEXP": 50000,
       "DropMoney": 50000,
       "img": "044-Conrad"
     },
@@ -671,7 +558,7 @@
       "MDEF": 400,
       "AGI": 75,
       "DEX": 170,
-      "DropEXP": 7500,
+      "DropEXP": 3500,
       "DropMoney": 1520,
       "img": "045-Sandworm"
     },
@@ -686,7 +573,7 @@
       "MDEF": 420,
       "AGI": 75,
       "DEX": 175,
-      "DropEXP": 8000,
+      "DropEXP": 4000,
       "DropMoney": 1550,
       "img": "046-Desert Thief"
     },
@@ -701,7 +588,7 @@
       "MDEF": 600,
       "AGI": 75,
       "DEX": 180,
-      "DropEXP": 8000,
+      "DropEXP": 4000,
       "DropMoney": 1550,
       "img": "047-Weathered Corpse"
     },
@@ -716,7 +603,7 @@
       "MDEF": 500,
       "AGI": 80,
       "DEX": 190,
-      "DropEXP": 9000,
+      "DropEXP": 4500,
       "DropMoney": 1560,
       "img": "048-Desert Thief"
     },
@@ -731,7 +618,7 @@
       "MDEF": 880,
       "AGI": 75,
       "DEX": 175,
-      "DropEXP": 10000,
+      "DropEXP": 5000,
       "DropMoney": 1600,
       "img": "049-Sand Dragon"
     },
@@ -746,7 +633,7 @@
       "MDEF": 860,
       "AGI": 80,
       "DEX": 190,
-      "DropEXP": 10500,
+      "DropEXP": 5500,
       "DropMoney": 1620,
       "img": "050-Desert Orc"
     },
@@ -761,7 +648,7 @@
       "MDEF": 900,
       "AGI": 85,
       "DEX": 195,
-      "DropEXP": 12000,
+      "DropEXP": 6000,
       "DropMoney": 1620,
       "img": "051-Desert Sacrificer"
     },
@@ -776,7 +663,7 @@
       "MDEF": 900,
       "AGI": 86,
       "DEX": 200,
-      "DropEXP": 80000,
+      "DropEXP": 75000,
       "DropMoney": 25000,
       "img": "052-Fossil Devil"
     },
@@ -791,7 +678,7 @@
       "MDEF": 700,
       "AGI": 88,
       "DEX": 205,
-      "DropEXP": 20000,
+      "DropEXP": 8000,
       "DropMoney": 2000,
       "img": "053-Bomb"
     },
@@ -806,7 +693,7 @@
       "MDEF": 800,
       "AGI": 90,
       "DEX": 210,
-      "DropEXP": 25000,
+      "DropEXP": 8500,
       "DropMoney": 2200,
       "img": "054-Fire Beetle"
     },
@@ -821,7 +708,7 @@
       "MDEF": 950,
       "AGI": 92,
       "DEX": 215,
-      "DropEXP": 27500,
+      "DropEXP": 9000,
       "DropMoney": 2215,
       "img": "055-Fire Spirit"
     },
@@ -836,7 +723,7 @@
       "MDEF": 950,
       "AGI": 92,
       "DEX": 200,
-      "DropEXP": 28000,
+      "DropEXP": 9000,
       "DropMoney": 2250,
       "img": "056-Vulkan Snake"
     },
@@ -851,7 +738,7 @@
       "MDEF": 900,
       "AGI": 95,
       "DEX": 200,
-      "DropEXP": 29000,
+      "DropEXP": 9500,
       "DropMoney": 2500,
       "img": "057-Crimson Wolf"
     },
@@ -866,7 +753,7 @@
       "MDEF": 950,
       "AGI": 95,
       "DEX": 215,
-      "DropEXP": 32000,
+      "DropEXP": 10000,
       "DropMoney": 2500,
       "img": "058-Lava Scorpion"
     },
@@ -896,7 +783,7 @@
       "MDEF": 950,
       "AGI": 100,
       "DEX": 230,
-      "DropEXP": 125000,
+      "DropEXP": 200000,
       "DropMoney": 50000,
       "img": "060-Magma Lord"
     },
@@ -911,7 +798,7 @@
       "MDEF": 1000,
       "AGI": 105,
       "DEX": 235,
-      "DropEXP": 35000,
+      "DropEXP": 15000,
       "DropMoney": 4000,
       "img": "061-Demonic Beast"
     },
@@ -926,7 +813,7 @@
       "MDEF": 1000,
       "AGI": 108,
       "DEX": 258,
-      "DropEXP": 40000,
+      "DropEXP": 15000,
       "DropMoney": 4200,
       "img": "062-Devil Guard"
     },
@@ -941,7 +828,7 @@
       "MDEF": 1500,
       "AGI": 110,
       "DEX": 260,
-      "DropEXP": 40000,
+      "DropEXP": 20000,
       "DropMoney": 4200,
       "img": "063-Devil Mage"
     },
@@ -956,7 +843,7 @@
       "MDEF": 1500,
       "AGI": 112,
       "DEX": 265,
-      "DropEXP": 45000,
+      "DropEXP": 25000,
       "DropMoney": 5000,
       "img": "064-Devil Knight"
     },
@@ -971,7 +858,7 @@
       "MDEF": 1500,
       "AGI": 112,
       "DEX": 265,
-      "DropEXP": 40000,
+      "DropEXP": 20000,
       "DropMoney": 5000,
       "img": "065-Bone Machine"
     },
@@ -986,7 +873,7 @@
       "MDEF": 1500,
       "AGI": 110,
       "DEX": 260,
-      "DropEXP": 40000,
+      "DropEXP": 20000,
       "DropMoney": 5000,
       "img": "066-Corrupted Knight"
     },
@@ -1001,7 +888,7 @@
       "MDEF": 1500,
       "AGI": 110,
       "DEX": 260,
-      "DropEXP": 50000,
+      "DropEXP": 25000,
       "DropMoney": 5000,
       "img": "067-Colossus"
     },
@@ -1016,8 +903,8 @@
       "MDEF": 1500,
       "AGI": 120,
       "DEX": 270,
-      "DropEXP": 5000000,
-      "DropMoney": 9999999,
+      "DropEXP": 500000,
+      "DropMoney": 999999,
       "img": "068-Matius"
     },
     {

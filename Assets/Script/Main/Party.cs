@@ -16,7 +16,7 @@ namespace RPG
                 new BattleCharacter("Anson",Resources.LoadAll<Sprite>("Characters/Dialog Face/Berserker_Face1"),Resources.Load<Sprite>("Characters/Body/Body_Berserker"),DB.jobs[1],true,Param.characterStartingLv[1]),
                 new BattleCharacter("Simon",Resources.LoadAll<Sprite>("Characters/Dialog Face/Knight_Face1"),Resources.Load<Sprite>("Characters/Body/Body_Knight"),DB.jobs[2],false,Param.characterStartingLv[2]),
                 new BattleCharacter("Ivan",Resources.LoadAll<Sprite>("Characters/Dialog Face/Mage_Face1"),Resources.Load<Sprite>("Characters/Body/Body_Mage"),DB.jobs[3],false,Param.characterStartingLv[3]),
-                new BattleCharacter("Jimmy",Resources.LoadAll<Sprite>("Characters/Dialog Face/Priest_Face1"),Resources.Load<Sprite>("Characters/Body/Body_Necromancer"),DB.jobs[4],false,Param.characterStartingLv[4]),
+                new BattleCharacter("Jimmy",Resources.LoadAll<Sprite>("Characters/Dialog Face/Priest_Face1"),Resources.Load<Sprite>("Characters/Body/Body_Priest"),DB.jobs[4],false,Param.characterStartingLv[4]),
                 new BattleCharacter("Andy",Resources.LoadAll<Sprite>("Characters/Dialog Face/Necromancer_Face1"),Resources.Load<Sprite>("Characters/Body/Body_Necromancer"),DB.jobs[5],false,Param.characterStartingLv[5]),
                 new BattleCharacter("Chi Ka",Resources.LoadAll<Sprite>("Characters/Dialog Face/Archer_Face1"),Resources.Load<Sprite>("Characters/Body/Body_Archer"),DB.jobs[6],false,Param.characterStartingLv[6]),
                 new BattleCharacter("Katie",Resources.LoadAll<Sprite>("Characters/Dialog Face/Assassin_Face1"),Resources.Load<Sprite>("Characters/Body/Body_Assassin"),DB.jobs[7],false,Param.characterStartingLv[7]),
