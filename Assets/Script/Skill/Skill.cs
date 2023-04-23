@@ -16,6 +16,7 @@ namespace RPG
         public int reqMp { get; set; }
         public bool aoe { get; set; }
         public bool useOnSelf { get; set; }
+        public GeneralSkill.UseOn useOn {get; set;}
         public Skill(Sprite img) : base(img)
         {
             aoe = false;

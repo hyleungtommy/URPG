@@ -225,24 +225,18 @@ namespace RPG
             {
                 if (selectedSkill.aoe)
                 {
-                    if (actionEntity is EntityPlayer && selectedSkill.isAttackSkill())
+                    if (actionEntity is EntityPlayer && selectedSkill.useOn == GeneralSkill.UseOn.Opponent ||
+                        actionEntity is EntityEnemy && selectedSkill.useOn == GeneralSkill.UseOn.Partner)
                     {
                         playerSelectedEntity = getAllLivingEnemy();
                     }
-                    else if (actionEntity is EntityPlayer && !selectedSkill.isAttackSkill())
+                    else if (actionEntity is EntityPlayer && selectedSkill.useOn == GeneralSkill.UseOn.Partner ||
+                             actionEntity is EntityEnemy && selectedSkill.useOn == GeneralSkill.UseOn.Opponent)
                     {
                         playerSelectedEntity = getAllLivingPlayer();
-                    }
-                    else if (actionEntity is EntityEnemy && selectedSkill.isAttackSkill())
-                    {
-                        playerSelectedEntity = getAllLivingPlayer();
-                    }
-                    else if (actionEntity is EntityEnemy && !selectedSkill.isAttackSkill())
-                    {
-                        playerSelectedEntity = getAllLivingEnemy();
                     }
                 }
-                else if ((selectedSkill is SkillBuff && selectedSkill.useOnSelf) || selectedSkill is SkillDefense)
+                else if (selectedSkill.useOn == GeneralSkill.UseOn.Self)
                 {
                     playerSelectedEntity = new Entity[] { actionEntity };
                 }

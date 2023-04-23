@@ -244,37 +244,34 @@ public class BattleScene : BasicScene
             if (battleCtrl.battleState == BattleCtrl.PLAYER_TURN)
             {
                 battleCtrl.selectedSkill = s;
+                Debug.Log(s.aoe);
                 if (s.aoe)
                 {
-                    if (s.isAttackSkill())
+                    if (s.useOn == GeneralSkill.UseOn.Opponent)
                     {
-                        //Debug.Log(1);
                         battleCtrl.selectionMode = BattleCtrl.SELECTION_SKILL_USE_ON_ENEMY;
                         battleCtrl.useSelectedSpecial();
                     }
                     else
                     {
-                        //Debug.Log(2);
                         battleCtrl.selectionMode = BattleCtrl.SELECTION_SKILL_USE_ON_PARTNER;
                         battleCtrl.useSelectedSpecial();
                     }
                 }
                 else
                 {
-                    if (s.isAttackSkill())
+                    if (s.useOn == GeneralSkill.UseOn.Opponent)
                     {
-                        //Debug.Log(3);
                         battleCtrl.selectionMode = BattleCtrl.SELECTION_SKILL_USE_ON_ENEMY;
                         topBarText.text = Constant.topBarSelectAnEnemy;
                     }
-                    else if ((s is SkillBuff && s.useOnSelf) || s is SkillDefense)
+                    else if (s.useOn == GeneralSkill.UseOn.Self)
                     {
                         battleCtrl.selectionMode = BattleCtrl.SELECTION_SKILL_USE_ON_PARTNER;
                         battleCtrl.useSelectedSpecial();
                     }
                     else
                     {
-                        //Debug.Log(4);
                         battleCtrl.selectionMode = BattleCtrl.SELECTION_SKILL_USE_ON_PARTNER;
                         topBarText.text = Constant.topBarSelectPlayer;
                     }

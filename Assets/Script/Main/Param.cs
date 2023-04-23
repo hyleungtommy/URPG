@@ -13,9 +13,9 @@ namespace RPG
         public const float areaRewardMultiplier = 0.05f;
         public const int upptGainPerLv = 5;
         public const int skillPtsGainPerLv = 2;
-        public static bool learntAllSkill = false;
+        public static bool learntAllSkill = true;
         public const int startLv = 20;
-        public static bool unlockAllCharacter = false;
+        public static bool unlockAllCharacter = true;
         public static float maxMapEnemyModifier = 1.5f;
         public static int equipmentDropRate = 15;
         public static int invSize = 100;

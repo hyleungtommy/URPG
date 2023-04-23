@@ -10,6 +10,8 @@ namespace RPG
         public string name { get; set; }
         public string desc { get; set; }
         public string skillType { get; set; }
+        public bool isAOE {get; set;}
+        public UseOn useOn {get;set;}
         public string animation { get; set; }
         public int maxSkillLv { get; set; }
         public float modifierStart { get; set; }
@@ -75,6 +77,9 @@ namespace RPG
                 return reqLvStart + (reqLvPerLv * (skillLv));
             }
         }
+        public enum UseOn{
+            Opponent,Partner,Self
+        }
         public GeneralSkill(Sprite img) : base(img)
         {
 
@@ -93,6 +98,7 @@ namespace RPG
                 s.name = fullName;
                 s.animation = animation;
                 s.reqMp = reqMp;
+                s.aoe = isAOE;
             }
             return s;
         }
@@ -100,33 +106,28 @@ namespace RPG
         private Skill getSkillType()
         {
             Skill s = null;
-            if (skillType == Constant.attackSkill || skillType == Constant.attackSkillAOE)
+            if (skillType == Constant.attackSkill)
             {
                 s = new SkillAttack(img);
-                if (skillType == Constant.attackSkillAOE) s.aoe = true;
             }
-            else if (skillType == Constant.magicSkill || skillType == Constant.magicSkillAOE)
+            else if (skillType == Constant.magicSkill)
             {
                 s = new SkillMagic(img);
-                if (skillType == Constant.magicSkillAOE) s.aoe = true;
             }
-            else if (skillType == Constant.healSkill || skillType == Constant.healSkillAOE)
+            else if (skillType == Constant.healSkill)
             {
                 s = new SkillHeal(img);
-                if (skillType == Constant.healSkillAOE) s.aoe = true;
             }
-            else if (skillType == Constant.buffSkill || skillType == Constant.buffSelfSkill || skillType == Constant.buffSkillAOE)
+            else if (skillType == Constant.buffSkill || skillType == Constant.buffSelfSkill)
             {
                 s = new SkillBuff(img);
                 (s as SkillBuff).buffList = getBuffList();
                 if (skillType == Constant.buffSelfSkill) s.useOnSelf = true;
-                if (skillType == Constant.buffSkillAOE) s.aoe = true;
             }
-            else if (skillType == Constant.deuffSkill || skillType == Constant.debuffSkillAOE)
+            else if (skillType == Constant.deuffSkill)
             {
                 s = new SkillDebuff(img);
                 (s as SkillDebuff).buffList = getBuffList();
-                if (skillType == Constant.debuffSkillAOE) s.aoe = true;
             }
             else if (skillType == Constant.defenseSkill)
             {
@@ -136,6 +137,10 @@ namespace RPG
             else if (skillType == Constant.SpecialSkill)
             {
                 s = new SkillSpecial(img, name).create();
+            }
+            if(s != null){
+                s.aoe = isAOE;
+                s.useOn = useOn;
             }
             return s;
         }

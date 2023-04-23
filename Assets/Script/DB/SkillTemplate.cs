@@ -11,6 +11,8 @@ namespace RPG
         public string name;
         public string desc;
         public string skillType;
+        public bool isAOE;
+        public string useOn;
         public string img;
         public string animation;
         public int maxSkillLv;
@@ -54,6 +56,16 @@ namespace RPG
             s.skillPtsPerLv = skillPtsPerLv;
             s.skillPtsStart = skillPtsStart;
             s.turn = turn;
+            s.isAOE = isAOE;
+
+            if(useOn.Equals("partner")){
+                s.useOn = GeneralSkill.UseOn.Partner;
+            }else if(useOn.Equals("self")){
+                s.useOn = GeneralSkill.UseOn.Self;
+            }else{
+                s.useOn = GeneralSkill.UseOn.Opponent;
+            }
+
             if (Buffs != null)
             {
                 s.buffList = new List<BuffTemplate>(Buffs);
