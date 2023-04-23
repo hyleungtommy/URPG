@@ -193,7 +193,7 @@
     {
       "id": 11,
       "name": "Strength Potion",
-      "desc": "Increase user's attack power for 10 rounds",
+      "desc": "Increase user's attack power by 50% for 10 rounds",
       "type": "Buff Potion",
       "img": "I010",
       "buyPlace": "Shop",
@@ -202,13 +202,13 @@
       "price": 1000,
       "buff": [
         {
-          "type": "ATK",
-          "modifier": 1.25,
+          "buffId": 26,
+          "modifier": 50,
           "rounds": 10
         },
         {
-          "type": "MATK",
-          "modifier": 1.25,
+          "buffId": 27,
+          "modifier": 50,
           "rounds": 10
         }
       ],
@@ -222,7 +222,7 @@
     {
       "id": 12,
       "name": "High Strength Potion",
-      "desc": "Increase user's attack power for 20 rounds",
+      "desc": "Increase user's attack power by 100% for 20 rounds",
       "type": "Buff Potion",
       "img": "I011",
       "buyPlace": "Shop",
@@ -231,14 +231,14 @@
       "price": 2500,
       "buff": [
         {
-          "type": "ATK",
-          "modifier": 2.0,
-          "rounds": 10
+          "buffId": 26,
+          "modifier": 100,
+          "rounds": 20
         },
         {
-          "type": "MATK",
-          "modifier": 2.0,
-          "rounds": 10
+          "buffId": 27,
+          "modifier": 100,
+          "rounds": 20
         }
       ],
       "craftRecipe": {
@@ -251,7 +251,7 @@
     {
       "id": 13,
       "name": "Defense Potion",
-      "desc": "Increase user's defense power for 10 rounds",
+      "desc": "Increase user's defense power by 50% for 10 rounds",
       "type": "Buff Potion",
       "img": "I012",
       "buyPlace": "Shop",
@@ -260,13 +260,13 @@
       "price": 1000,
       "buff": [
         {
-          "type": "DEF",
-          "modifier": 1.25,
+          "buffId": 28,
+          "modifier": 50,
           "rounds": 10
         },
         {
-          "type": "MDEF",
-          "modifier": 1.25,
+          "buffId": 29,
+          "modifier": 50,
           "rounds": 10
         }
       ],
@@ -280,7 +280,7 @@
     {
       "id": 14,
       "name": "High Defense Potion",
-      "desc": "Increase user's defense power for 20 rounds",
+      "desc": "Increase user's defense power by 100% for 20 rounds",
       "type": "Buff Potion",
       "img": "I013",
       "buyPlace": "Shop",
@@ -289,14 +289,14 @@
       "price": 2500,
       "buff": [
         {
-          "type": "DEF",
-          "modifier": 2.0,
-          "rounds": 10
+          "buffId": 28,
+          "modifier": 100,
+          "rounds": 20
         },
         {
-          "type": "MDEF",
-          "modifier": 2.0,
-          "rounds": 10
+          "buffId": 29,
+          "modifier": 100,
+          "rounds": 20
         }
       ],
       "craftRecipe": {
@@ -309,7 +309,7 @@
     {
       "id": 15,
       "name": "Agility Potion",
-      "desc": "Increase user's agility and dexterity for 10 rounds",
+      "desc": "Increase user's agility and dexterity by 50% for 10 rounds",
       "type": "Buff Potion",
       "img": "I014",
       "buyPlace": "Shop",
@@ -318,13 +318,13 @@
       "price": 1000,
       "buff": [
         {
-          "type": "AGI",
-          "modifier": 1.25,
+          "buffId": 29,
+          "modifier": 50,
           "rounds": 10
         },
         {
-          "type": "DEX",
-          "modifier": 1.25,
+          "buffId": 30,
+          "modifier": 50,
           "rounds": 10
         }
       ],
@@ -347,14 +347,14 @@
       "price": 2500,
       "buff": [
         {
-          "type": "AGI",
-          "modifier": 2.0,
-          "rounds": 10
+          "buffId": 29,
+          "modifier": 100,
+          "rounds": 20
         },
         {
-          "type": "DEX",
-          "modifier": 2.0,
-          "rounds": 10
+          "buffId": 30,
+          "modifier": 100,
+          "rounds": 20
         }
       ],
       "craftRecipe": {
@@ -386,7 +386,7 @@
     {
       "id": 18,
       "name": "Omni Elixir",
-      "desc": "Gives every buff for 25 rounds",
+      "desc": "Gives every buff by 100% for 25 rounds",
       "type": "Buff Potion",
       "img": "I017",
       "buyPlace": "Shop",
@@ -395,33 +395,33 @@
       "price": 50000,
       "buff": [
         {
-          "type": "ATK",
-          "modifier": 2.0,
+          "buffId": 26,
+          "modifier": 100,
           "rounds": 25
         },
         {
-          "type": "DEF",
-          "modifier": 2.0,
+          "buffId": 27,
+          "modifier": 100,
           "rounds": 25
         },
         {
-          "type": "MATK",
-          "modifier": 2.0,
+          "buffId": 28,
+          "modifier": 100,
           "rounds": 25
         },
         {
-          "type": "MDEF",
-          "modifier": 2.0,
+          "buffId": 29,
+          "modifier": 100,
           "rounds": 25
         },
         {
-          "type": "AGI",
-          "modifier": 2.0,
+          "buffId": 30,
+          "modifier": 100,
           "rounds": 25
         },
         {
-          "type": "DEX",
-          "modifier": 2.0,
+          "buffId": 31,
+          "modifier": 100,
           "rounds": 25
         }
       ],
