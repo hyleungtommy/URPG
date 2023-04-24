@@ -7,7 +7,6 @@ namespace RPG
     public class SkillDebuff : Skill
     {
 
-        public List<Buff> buffList { get; set; }
         public SkillDebuff(Sprite img) : base(img)
         {
 
@@ -20,7 +19,6 @@ namespace RPG
             List<BattleMessage> bundle = new List<BattleMessage>();
             foreach (Entity targetEntity in target)
             {
-                int i = 0;
                 foreach (Buff b in buffList)
                 {
 
@@ -34,7 +32,7 @@ namespace RPG
                     message.SkillAnimationName = animation;
                     message.SkillName = name;
                     message.sender = message.receiver = targetEntity;
-                    message.value = (int)b.type;
+                    //message.value = (int)b.type;
                     message.type = BattleMessage.Type.Debuff;
                     message.AOE = aoe;
                     bundle.Add(message);

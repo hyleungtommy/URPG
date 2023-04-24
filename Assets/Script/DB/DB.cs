@@ -11,7 +11,7 @@ namespace RPG
     {
         public static Map[] maps;
         public static ItemTemplate[] items;
-
+        public static BuffTemplate[] buffs;
         public static Job[] jobs = new Job[]{
             new Job ("Adventurer",new int[]{25,25,25,12,23},new int[]{2,2,2,2,2}),
             new Job ("Berserker",new int[]{20,45,15,10,20},new int[]{1,5,1,1,2}),
@@ -57,6 +57,11 @@ namespace RPG
             }
 
             maps = mlist.ToArray();
+
+            //get Buff data
+            TextAsset buffJSON = Resources.Load<TextAsset>("Data/Buff");
+            buffs = JsonHelper.FromJson<BuffTemplate>(buffJSON.text);
+            //Debug.Log(Util.printArray<BuffTemplate>(buffs));
 
             //get Item data
             TextAsset itemJSON = Resources.Load<TextAsset>("Data/Item");

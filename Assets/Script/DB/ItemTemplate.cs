@@ -18,7 +18,7 @@ namespace RPG
         public int sellPrice;
         public float healPercentage;
         public int minHealAmount;
-        public BuffTemplate[] buff;
+        public ApplyBuffTemplate[] buff;
         public CraftRecipeTemplate craftRecipe;
 
         public override string ToString()
@@ -100,9 +100,9 @@ namespace RPG
         {
             List<Buff> b = new List<Buff>();
             //Debug.Log("buff" + buff);
-            foreach (BuffTemplate bu in buff)
+            foreach (ApplyBuffTemplate bu in buff)
             {
-                //Debug.Log(bu.type + "," + bu.modifier + "," + bu.rounds);
+                //Debug.Log("getbuffs=" + bu.toBuff().ToString());
                 b.Add(bu.toBuff());
             }
             return b;

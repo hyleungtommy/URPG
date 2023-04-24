@@ -7,7 +7,6 @@ namespace RPG
     public class SkillBuff : Skill
     {
 
-        public List<Buff> buffList { get; set; }
         public SkillBuff(Sprite img) : base(img)
         {
 
@@ -36,7 +35,7 @@ namespace RPG
                         message.SkillAnimationName = animation;
                         message.SkillName = name;
                         message.sender = message.receiver = targetEntity;
-                        message.value = (int)b.type;
+                        //message.value = (int)b.type;
                         message.type = BattleMessage.Type.Buff;
                         message.AOE = aoe;
                         bundle.Add(message);

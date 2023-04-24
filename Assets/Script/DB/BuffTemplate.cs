@@ -7,37 +7,18 @@ namespace RPG
     [Serializable]
     public class BuffTemplate
     {
+        public int id;
+        public string name;
+        public string[] effects;
         public string type;
-        public float modifier;
-        public int rounds;
-        public int chance;
+        public string img;
+        public int[] replace;
+        public bool stackable;
 
-        public Buff toBuff()
+        public override string ToString()
         {
-            Buff b = new Buff(getType(), modifier, rounds, chance);
-            return b;
+            return "id=" + id + " name=" + name + " effects" + effects + " type=" + type + " img=" + img + " replace=" + replace + " stackable=" + stackable;
         }
-
-        public Buff toBuff(float mod, int turn)
-        {
-            Buff b = new Buff(getType(), mod, turn, chance);
-            return b;
-        }
-
-        public Buff.Type getType()
-        {
-            if (type == "ATK") return Buff.Type.ATK;
-            else if (type == "AGI") return Buff.Type.AGI;
-            else if (type == "DEF") return Buff.Type.DEF;
-            else if (type == "DEX") return Buff.Type.DEX;
-            else if (type == "HP") return Buff.Type.HP;
-            else if (type == "MATK") return Buff.Type.MATK;
-            else if (type == "MDEF") return Buff.Type.MDEF;
-            else return Buff.Type.MP;
-        }
-
-
-
 
     }
 }

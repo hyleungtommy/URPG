@@ -44,7 +44,7 @@ namespace RPG
                 Debug.Log(target[0].name + "buff" + b.type + "round" + b.rounds);
                 BattleMessage message = new BattleMessage();
                 message.sender = message.receiver = target[0];
-                message.value = (int)b.type;
+                //message.value = (int)b.type;
                 message.type = BattleMessage.Type.Buff;
                 bundle.Add(message);
                 //Debug.Log (healAmount);

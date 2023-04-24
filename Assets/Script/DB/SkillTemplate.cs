@@ -29,7 +29,7 @@ namespace RPG
         public int skillPtsStart;
         public int skillPtsPerLv;
         public int[] jobRestriction;
-        public BuffTemplate[] Buffs;
+        public ApplyBuffTemplate[] Buffs;
 
         public override string ToString()
         {
@@ -68,11 +68,11 @@ namespace RPG
 
             if (Buffs != null)
             {
-                s.buffList = new List<BuffTemplate>(Buffs);
+                s.buffList = new List<ApplyBuffTemplate>(Buffs);
             }
             else
             {
-                s.buffList = new List<BuffTemplate>();
+                s.buffList = new List<ApplyBuffTemplate>();
             }
 
             return s;

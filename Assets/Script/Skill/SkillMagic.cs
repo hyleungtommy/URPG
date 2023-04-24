@@ -61,7 +61,7 @@ namespace RPG
 
                         atkMsg.value = attackPower;
 
-                        //applyBuff (user, opponent);
+                        applyDebuff (user, opponent);
 
 
                     }

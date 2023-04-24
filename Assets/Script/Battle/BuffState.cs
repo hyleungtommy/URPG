@@ -1,73 +1,95 @@
 using UnityEngine;
 using System;
+using System.Collections.Generic;
 namespace RPG
 {
     public class BuffState
     {
-
-        private Buff[] buffState;
+        public int Count { get { return buffState.Count; } }
+        private List<Buff> buffState;
         public BuffState()
         {
-            buffState = new Buff[8];
+            buffState = new List<Buff>();
         }
 
         public void passRound(Entity user)
         {
-            if (buffState[0] != null)
-            {
-                user.currhp += user.currhp * (buffState[0].modifier);
-                if (user.currhp > user.stat.HP)
-                    user.currhp = user.stat.HP;
-            }
-            if (buffState[1] != null)
-            {
-                user.currmp += user.currmp * (buffState[1].modifier);
-                if (user.currmp > user.stat.MP)
-                    user.currmp = user.stat.MP;
-            }
+            //handle hp/mp change
+            float[] hpmpChange = getTotalHPMPChange();
+            user.currhp = user.currhp * hpmpChange[0];
+            if (user.currhp > user.stat.HP)
+                user.currhp = user.stat.HP;
+            user.currmp = user.currmp * hpmpChange[1];
+            if (user.currmp > user.stat.MP)
+                user.currmp = user.stat.MP;
 
-
-            //Debug.Log ("pass");
-            for (int i = 0; i < 8; i++)
+            //reduce round by 1 and remove buff when it is expired
+            foreach (Buff buff in buffState.ToArray())
             {
-                if (buffState[i] != null)
+                if (buff.rounds == 0)
                 {
-                    if (buffState[i].rounds == 0)
-                    {
-                        //Debug.Log ("remove " + i);
-                        buffState[i] = null;
-                    }
-                    if (buffState[i] != null)
-                        buffState[i].OnPassingRounds();
+                    buffState.Remove(buff);
+                }
+                else
+                {
+                    buff.OnPassingRounds();
                 }
             }
-
-
-
         }
 
         public BasicStat getBasicStat()
         {
             BasicStat set = new BasicStat(1, 1, 1, 1, 1, 1, 1, 1);
-            for (int i = 0; i < 8; i++)
+            foreach (Buff buff in buffState)
             {
-                if (buffState[i] != null)
-                {
-                    set = set.multiply(buffState[i].getBuffedSet());
-                }
+                set = set.multiply(buff.getBuffedSet());
             }
             //Debug.Log ("Buffed set:" + set.ToString());
             return set;
         }
 
-        public void addBuff(Buff buff)
+        public void addBuff(Buff newBuff)
         {
-            buffState[(int)buff.type] = buff.create();
+            
+            foreach (Buff buff in buffState.ToArray())
+            {
+                //if buff exists, remove old buff and add new buff to refresh the rounds
+                if (buff.id == newBuff.id)
+                {
+                    buffState.Remove(buff);
+                }
+                //replace buff as stated in buff.replace
+                foreach (int replace in buff.replace)
+                {
+                    if (buff.id == replace)
+                    {
+                        buffState.Remove(buff);
+                    }
+                }
+            }
+            buffState.Add(newBuff.create());
         }
 
         public Buff getBuff(int i)
         {
             return buffState[i];
+        }
+
+        private float[] getTotalHPMPChange()
+        {
+            float[] hpmpChange = { 1f, 1f };
+            foreach (Buff buff in buffState)
+            {
+                float[] hpmpChangePerBuff = buff.getHPMPChange();
+                hpmpChange[0] = hpmpChange[0] * hpmpChangePerBuff[0];
+                hpmpChange[1] = hpmpChange[1] * hpmpChangePerBuff[1];
+            }
+            return hpmpChange;
+        }
+
+        public override string ToString()
+        {
+            return Util.printList<Buff>(buffState);
         }
 
     }

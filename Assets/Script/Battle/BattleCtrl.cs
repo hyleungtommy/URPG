@@ -238,7 +238,13 @@ namespace RPG
                 }
                 else if (selectedSkill.useOn == GeneralSkill.UseOn.Self)
                 {
-                    playerSelectedEntity = new Entity[] { actionEntity };
+                    //special handling for decoy skills: it uses on self but take action on all enemies
+                    if(selectedSkill is SkillDecoy){
+                        playerSelectedEntity = getAllLivingEnemy();
+                    }else{
+                        playerSelectedEntity = new Entity[] { actionEntity };
+                    }
+                    
                 }
 
                 playerTakeAction(ACTION_SKILL, selectedSkill);

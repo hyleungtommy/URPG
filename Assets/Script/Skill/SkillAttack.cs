@@ -99,9 +99,7 @@ namespace RPG
                         }
                         */
 
-                        //applyBuff (user, opponent);
-
-
+                        applyDebuff(user, opponent);
                     }
                     msgs.Add(atkMsg);
                 }

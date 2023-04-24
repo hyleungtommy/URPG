@@ -142,6 +142,20 @@ namespace RPG
             else return num.ToString();
         }
 
+        public static string printArray<T>(T[] array){
+            string s = "[";
+            foreach(T item in array){
+                s += item.ToString();
+            }
+            return s + "]";
+        }
 
+        public static string printList<T>(List<T> array){
+            string s = "[";
+            foreach(T item in array){
+                s += item.ToString();
+            }
+            return s + "]";
+        }
     }
 }

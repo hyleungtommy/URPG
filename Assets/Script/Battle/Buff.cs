@@ -6,49 +6,57 @@ namespace RPG
     {
         public enum Type
         {
-            HP = 0, MP = 1, ATK = 2, DEF = 3, MATK = 4, MDEF = 5, AGI = 6, DEX = 7
+            HP = 0, MP = 1, ATK = 2, DEF = 3, MATK = 4, MDEF = 5, AGI = 6, DEX = 7, Stun
         }
-        public Type type { get; set; }
-        public float modifier { get; set; }
+        public int id {get;set;}
+        public string type { get; set; }
+        public string name { get; set; }
+        public Type[] effects { get; set; }
+        public int modifier { get; set; }
         public int rounds { get; set; }
         public int chance { get; set; }
-        public bool isPositive
-        {
-            get
-            {
-                if (type == Type.HP || type == Type.MP)
-                    return modifier < 0.0f;
-                else
-                    return modifier >= 1.0f;
-            }
-        }
-        public Sprite Img
-        {
-            get
-            {
-                if (isPositive)
-                {
-                    //Debug.Log(SpriteManager.buffs[0]);
-                    return SpriteManager.buffs[(int)type];
-                }
-                else
-                    return SpriteManager.debuffs[(int)type];
-            }
-        }
+        public int[] replace { get; set; }
+        public bool stackable { get; set; }
+        public Sprite Img { set; get; }
 
-        public Buff(Type type, float modifier, int rounds)
+        public Buff(int id,string type, string name, Type[]effects, int modifier, int rounds, int[] replace, bool stackable, Sprite img)
         {
+            this.id = id;
             this.type = type;
+            this.name = name;
+            this.effects = effects;
             this.modifier = modifier;
             this.rounds = rounds;
+            this.replace = replace;
+            this.stackable = stackable;
+            this.Img = img;
+            this.chance = -1;
+        }
+        public Buff(int id,string type, string name, string[]effects, int modifier, int rounds, int[] replace, bool stackable, Sprite img)
+        {
+            this.id = id;
+            this.type = type;
+            this.name = name;
+            this.effects = getEffects(effects);
+            this.modifier = modifier;
+            this.rounds = rounds;
+            this.replace = replace;
+            this.stackable = stackable;
+            this.Img = img;
             this.chance = -1;
         }
 
-        public Buff(Type type, float modifier, int rounds, int chance)
+        public Buff(int id,string type, string name, string[]effects, int modifier, int rounds, int[] replace, bool stackable, Sprite img, int chance)
         {
+            this.id = id;
             this.type = type;
+            this.name = name;
+            this.effects = getEffects(effects);
             this.modifier = modifier;
             this.rounds = rounds;
+            this.replace = replace;
+            this.stackable = stackable;
+            this.Img = img;
             this.chance = chance;
         }
 
@@ -60,46 +68,94 @@ namespace RPG
 
         public BasicStat getBuffedSet()
         {
-            float percentage = modifier;
-            if (type == Type.ATK)
+            BasicStat stat = new BasicStat(1, 1, 1, 1, 1, 1, 1, 1);
+            foreach (Type effect in effects)
             {
-                return new BasicStat(1, 1, percentage, 1, 1, 1, 1, 1);
+                float percentage = getPercentageByModifier(type,modifier);
+                if (effect == Type.ATK)
+                {
+                    stat.plus(new BasicStat(1, 1, percentage, 1, 1, 1, 1, 1));
+                }
+                else if (effect == Type.DEF)
+                {
+                    stat.plus(new BasicStat(1, 1, 1, percentage, 1, 1, 1, 1));
+                }
+                else if (effect == Type.MATK)
+                {
+                    stat.plus(new BasicStat(1, 1, 1, 1, percentage, 1, 1, 1));
+                }
+                else if (effect == Type.MDEF)
+                {
+                    stat.plus(new BasicStat(1, 1, 1, 1, 1, percentage, 1, 1));
+                }
+                else if (effect == Type.AGI)
+                {
+                    stat.plus(new BasicStat(1, 1, 1, 1, 1, 1, percentage, 1));
+                }
+                else if (effect == Type.DEX)
+                {
+                    stat.plus(new BasicStat(1, 1, 1, 1, 1, 1, 1, percentage));
+                }
             }
-            else if (type == Type.DEF)
-            {
-                return new BasicStat(1, 1, 1, percentage, 1, 1, 1, 1);
-            }
-            else if (type == Type.MATK)
-            {
-                return new BasicStat(1, 1, 1, 1, percentage, 1, 1, 1);
-            }
-            else if (type == Type.MDEF)
-            {
-                return new BasicStat(1, 1, 1, 1, 1, percentage, 1, 1);
-            }
-            else if (type == Type.AGI)
-            {
-                return new BasicStat(1, 1, 1, 1, 1, 1, percentage, 1);
-            }
-            else if (type == Type.DEX)
-            {
-                return new BasicStat(1, 1, 1, 1, 1, 1, 1, percentage);
-            }
-
-            return new BasicStat(1, 1, 1, 1, 1, 1, 1, 1);
+            return stat;
         }
 
-        public BasicStat getHPMPChange()
+        private float getPercentageByModifier(string type, int modifier)
         {
-            if (type == Type.HP)
+            float percentage = 1;
+            if (type.Equals("Buff"))
             {
-                return new BasicStat(modifier, 1, 1, 1, 1, 1, 1, 1);
+                return percentage + modifier / 100;
             }
-            else if (type == Type.MP)
+            else
             {
-                return new BasicStat(1, modifier, 1, 1, 1, 1, 1, 1);
+                return percentage - modifier / 100;
             }
-            return null;
+        }
+
+        private Type[] getEffects(string[] effects){
+            Type[] effs = new Type[effects.Length];
+            for(int i = 0 ; i < effects.Length ; i++){
+                if(effects[i].Equals("Stun")){
+                    effs[i] = Type.Stun;
+                }else if(effects[i].Equals("HP")){
+                    effs[i] = Type.HP;
+                }else if(effects[i].Equals("MP")){
+                    effs[i] = Type.MP;
+                }else if(effects[i].Equals("ATK")){
+                    effs[i] = Type.ATK;
+                }else if(effects[i].Equals("MATK")){
+                    effs[i] = Type.MATK;
+                }else if(effects[i].Equals("DEF")){
+                    effs[i] = Type.DEF;
+                }else if(effects[i].Equals("MDEF")){
+                    effs[i] = Type.MDEF;
+                }else if(effects[i].Equals("AGI")){
+                    effs[i] = Type.AGI;
+                }else if(effects[i].Equals("DEX")){
+                    effs[i] = Type.DEX;
+                }
+            }
+            return effs;
+        }
+
+        public float[] getHPMPChange()
+        {
+            float[]hpmpChange = {1f,1f};
+            foreach (Type effect in effects)
+            {
+                float percentage = getPercentageByModifier(type,modifier);
+                if (effect == Type.HP)
+                {
+                    hpmpChange[0] = percentage;
+                }
+                else if (effect == Type.MP)
+                {
+                    hpmpChange[1] = percentage;
+                }
+            }
+
+            return hpmpChange;
         }
 
         public float getApplyChance(Entity user, Entity target)
@@ -118,7 +174,12 @@ namespace RPG
 
         public Buff create()
         {
-            return new Buff(type, modifier, rounds);
+            return new Buff(id,type, name, effects, modifier, rounds, replace,stackable,Img);
+        }
+
+        public override string ToString()
+        {
+            return "buff id=" + id + " name=" + name + " modifer=" + modifier + " rounds=" + rounds;
         }
     }
 }

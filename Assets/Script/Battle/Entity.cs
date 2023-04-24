@@ -85,6 +85,8 @@ namespace RPG
         public virtual void passRound()
         {
             buffState.passRound(this);
+            isDefensing = false;
+            reflectiveDefense = false;
             //Debug.Log(name + " pass round");
         }
 

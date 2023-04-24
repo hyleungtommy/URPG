@@ -15,8 +15,7 @@ namespace RPG
         public static Sprite[] floatingTextMpDamage { set; get; }
         public static Sprite[] floatingTextHeal { set; get; }
         public static Sprite[] floatingTextMpHeal { set; get; }
-        public static Sprite[] buffs { set; get; }
-        public static Sprite[] debuffs { set; get; }
+        public static Dictionary<string,Sprite> buffImgs {set; get;}
         static SpriteManager()
         {
             basicBoxSelected = Resources.Load<Sprite>("UI/Frame/item_frame_selected");
@@ -39,15 +38,9 @@ namespace RPG
                 floatingTextMpHeal[i] = allFloatingNumber[i + 40];
             }
             //load buffs
-            buffs = new Sprite[8];
-            debuffs = new Sprite[8];
-            string[] buffImgPathGood = new string[] { "buff_hp", "buff_mp", "buff_atk", "buff_def", "buff_matk", "buff_mdef", "buff_agi", "buff_dex" };
-            string[] buffImgPathBad = new string[] { "debuff_hp", "debuff_mp", "debuff_atk", "debuff_def", "debuff_matk", "debuff_mdef", "debuff_agi", "debuff_dex" };
-            for (int i = 0; i < 8; i++)
-            {
-                buffs[i] = Resources.Load<Sprite>("Buff Icon/" + buffImgPathGood[i]);
-                //Debug.Log(buffs[i]);
-                debuffs[i] = Resources.Load<Sprite>("Buff Icon/" + buffImgPathBad[i]);
+            buffImgs = new Dictionary<string, Sprite>();
+            foreach(BuffTemplate b in DB.buffs){
+                buffImgs.Add(b.img,Resources.Load<Sprite>("Buff Icon/" + b.img));
             }
         }
     }

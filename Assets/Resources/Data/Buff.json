@@ -1,5 +1,5 @@
 {
-    "items": [{
+    "Items": [{
             "id": 1,
             "name": "Stun",
             "effects": ["Stun"],

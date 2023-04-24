@@ -27,7 +27,7 @@ namespace RPG
         public int skillPtsStart { get; set; }
         public int skillPtsPerLv { get; set; }
         public int skillLv { get; set; }//need to save
-        public List<BuffTemplate> buffList { get; set; }
+        public List<ApplyBuffTemplate> buffList { get; set; }
         public int reqMp
         {
             get
@@ -118,21 +118,17 @@ namespace RPG
             {
                 s = new SkillHeal(img);
             }
-            else if (skillType == Constant.buffSkill || skillType == Constant.buffSelfSkill)
+            else if (skillType == Constant.buffSkill)
             {
                 s = new SkillBuff(img);
-                (s as SkillBuff).buffList = getBuffList();
-                if (skillType == Constant.buffSelfSkill) s.useOnSelf = true;
             }
             else if (skillType == Constant.deuffSkill)
             {
                 s = new SkillDebuff(img);
-                (s as SkillDebuff).buffList = getBuffList();
             }
             else if (skillType == Constant.defenseSkill)
             {
                 s = new SkillDefense(img);
-                s.useOnSelf = true;
             }
             else if (skillType == Constant.SpecialSkill)
             {
@@ -141,6 +137,7 @@ namespace RPG
             if(s != null){
                 s.aoe = isAOE;
                 s.useOn = useOn;
+                s.buffList = getBuffList();
             }
             return s;
         }
@@ -149,15 +146,15 @@ namespace RPG
         {
             skillLv++;
         }
-
+        //when it is a buff or debuff skill, 
         private List<Buff> getBuffList()
         {
             List<Buff> newbuffList = new List<Buff>();
             if (buffList != null)
             {
-                foreach (BuffTemplate b in buffList)
+                foreach (ApplyBuffTemplate b in buffList)
                 {
-                    newbuffList.Add(b.toBuff(modifier, turn));
+                    newbuffList.Add(b.toBuff((int)((modifier - 1) * 100), turn));
                 }
             }
             return newbuffList;

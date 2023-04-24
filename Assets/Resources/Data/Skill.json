@@ -83,13 +83,13 @@
                     "buffId":20,
                     "modifier": 0.75,
                     "rounds": 3,
-                    "chance": 100
+                    "chance": 50
                 },
                 {
                     "buffId":21,
                     "modifier": 0.75,
                     "rounds": 3,
-                    "chance": 100
+                    "chance": 50
                 }
             ]
         },
@@ -222,7 +222,12 @@
             "skillPtsPerLv": 1,
             "jobRestriction": [
                 2
-            ]
+            ],
+            "Buffs": [{
+                "buffId":4,
+                "modifier": 1,
+                "rounds": 1
+            }]
         },
         {
             "name": "Healing Defense",
@@ -247,7 +252,12 @@
             "skillPtsPerLv": 1,
             "jobRestriction": [
                 2
-            ]
+            ],
+            "Buffs": [{
+                "buffId":5,
+                "modifier": 10,
+                "rounds": 1
+            }]
         },
         {
             "name": "Reflective Defense",
@@ -272,7 +282,12 @@
             "skillPtsPerLv": 1,
             "jobRestriction": [
                 2
-            ]
+            ],
+            "Buffs": [{
+                "buffId":6,
+                "modifier": 25,
+                "rounds": 1
+            }]
         },
         {
             "name": "Heal",
@@ -435,7 +450,7 @@
                 3
             ],
             "Buffs": [{
-                "buffId":20,
+                "buffId":22,
                 "modifier": 50,
                 "turn": 3,
                 "chance": 100
@@ -587,7 +602,7 @@
             "desc": "Increase all party member's ATK for 5 rounds",
             "img": "022-Bravery AOE",
             "animation": "",
-            "isAOE":false,
+            "isAOE":true,
             "useOn":"partner",
             "maxSkillLv": 5,
             "modifierStart": 1.25,

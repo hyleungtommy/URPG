@@ -16,7 +16,8 @@ namespace RPG
         public int reqMp { get; set; }
         public bool aoe { get; set; }
         public bool useOnSelf { get; set; }
-        public GeneralSkill.UseOn useOn {get; set;}
+        public GeneralSkill.UseOn useOn { get; set; }
+        public List<Buff> buffList { get; set; }
         public Skill(Sprite img) : base(img)
         {
             aoe = false;
@@ -37,6 +38,35 @@ namespace RPG
             //Debug.Log("use skill currCooldown=" + currCooldown);
             return null;
         }
+
+        protected void applyDebuff(Entity user, Entity target)
+        {
+            if (buffList != null)
+            {
+                foreach (Buff buff in buffList)
+                {
+                    float applyChance = ((float)user.stat.MATK / (float)target.stat.MDEF * 2f);
+                    int rnd = UnityEngine.Random.Range(0, (int)applyChance);
+                    if (rnd < applyChance)
+                        target.buffState.addBuff(buff);
+                }
+            }
+
+        }
+
+        protected void applyBuff(Entity target)
+        {
+            if (buffList != null)
+            {
+                foreach (Buff buff in buffList)
+                {
+                    target.buffState.addBuff(buff);
+                }
+            }
+
+        }
+
+        
 
         public abstract bool isAttackSkill();
 

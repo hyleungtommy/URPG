@@ -30,7 +30,7 @@ public class BuffCtrl : MonoBehaviour
         GameObject box;
         for (int i = 0; i < noOfBox; i++)
         {
-            if (buff.getBuff(i) != null)
+            if (buff.Count > i)
             {
                 box = (GameObject)Instantiate(buffPrefab, contentTran);
                 //Debug.Log(buff.getBuff(i).type);

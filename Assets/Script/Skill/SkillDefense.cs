@@ -35,14 +35,28 @@ namespace RPG
             message.value = -1;
             user.isDefensing = true;
             user.defenseModifier = mod;
+            
             if (name.Equals("Healing Defense"))
             {
-                user.buffState.addBuff(new Buff(Buff.Type.HP, 10, 1));
+                user.currhp += user.stat.HP *0.1f;
+                if(user.currhp > user.stat.HP){
+                    user.currhp = user.stat.HP;
+                }
+                BattleMessage healMessage = new BattleMessage();
+                healMessage.SkillAnimationName = animation;
+                healMessage.SkillName = name;
+                healMessage.sender = user;
+                healMessage.receiver = user;
+                healMessage.value = user.stat.HP *0.1f;
+                healMessage.type = BattleMessage.Type.Heal;
+                bundle.Add(message);
             }
             else if (name.Equals("Reflective Defense"))
             {
                 user.reflectiveDefense = true;
             }
+            applyBuff(user);
+            
             bundle.Add(message);
             return bundle;
         }
