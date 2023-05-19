@@ -75,6 +75,28 @@ namespace RPG
             return buffState[i];
         }
 
+        public bool isBuffExists(int buffId){
+            foreach (Buff buff in buffState.ToArray())
+            {
+                if(buff.id == buffId) return true;
+            }
+            return false;
+        }
+
+        public bool isStunned(){
+            foreach (Buff buff in buffState.ToArray())
+            {
+                foreach (Buff.Type effect in buff.effects)
+                {
+                    if (effect == Buff.Type.Stun)
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
         private float[] getTotalHPMPChange()
         {
             float[] hpmpChange = { 1f, 1f };

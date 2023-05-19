@@ -72,6 +72,10 @@ namespace RPG
             return false;
         }
 
+        public bool isStunned(){
+            return buffState.isStunned();
+        }
+
         public virtual void takeAction(IFunctionable functionable)
         {
 
@@ -87,6 +91,7 @@ namespace RPG
             buffState.passRound(this);
             isDefensing = false;
             reflectiveDefense = false;
+            Debug.Log(name + " buffState=" + buffState.ToString());
             //Debug.Log(name + " pass round");
         }
 

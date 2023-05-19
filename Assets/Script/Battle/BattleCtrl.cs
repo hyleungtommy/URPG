@@ -71,6 +71,16 @@ namespace RPG
             }
             virtualInventory = Game.inventory.createVirtualItemInv();
             battleState = BATTLE_RUNNING;
+            /*
+            for (int i = 0; i < playerParty.Length; i++)
+            {
+                if (playerParty[i] != null)
+                {
+                    playerParty[i].buffState.addBuff(new Buff(1, "Debuff", "Stun", new Buff.Type[] { Buff.Type.Stun }, 1, 3, new int[0], false, SpriteManager.buffImgs["debuff_stun"]));
+                }
+
+            }
+            */
         }
         private Entity getFriction(int friction, int index)
         {
@@ -107,17 +117,24 @@ namespace RPG
                     actionEntity.passRound();
                     if (actionEntity.currhp > 0)
                     {
-                        if (actionEntity is EntityPlayer)
+                        if (actionEntity.isStunned())
                         {
-                            battleState = PLAYER_TURN;
-                            scene.onPlayerTurn();
-                            scene.setTopBar(actionEntity.name, actionEntity.img);
+                            actionEntity.curratb = 0;
                         }
                         else
                         {
-                            battleState = ENEMY_TURN;
-                            actionEntity.takeAction(null);
-                            battleState = BATTLE_RUNNING;
+                            if (actionEntity is EntityPlayer)
+                            {
+                                battleState = PLAYER_TURN;
+                                scene.onPlayerTurn();
+                                scene.setTopBar(actionEntity.name, actionEntity.img);
+                            }
+                            else
+                            {
+                                battleState = ENEMY_TURN;
+                                actionEntity.takeAction(null);
+                                battleState = BATTLE_RUNNING;
+                            }
                         }
                     }
                 }
@@ -239,12 +256,15 @@ namespace RPG
                 else if (selectedSkill.useOn == GeneralSkill.UseOn.Self)
                 {
                     //special handling for decoy skills: it uses on self but take action on all enemies
-                    if(selectedSkill is SkillDecoy){
+                    if (selectedSkill is SkillDecoy)
+                    {
                         playerSelectedEntity = getAllLivingEnemy();
-                    }else{
+                    }
+                    else
+                    {
                         playerSelectedEntity = new Entity[] { actionEntity };
                     }
-                    
+
                 }
 
                 playerTakeAction(ACTION_SKILL, selectedSkill);
@@ -317,8 +337,9 @@ namespace RPG
                 }
                 drops = getEnemyDrop();
                 //put into inventory
-                foreach(ItemAndQty item in drops){
-                    Game.inventory.smartInsert(item.item,item.qty);
+                foreach (ItemAndQty item in drops)
+                {
+                    Game.inventory.smartInsert(item.item, item.qty);
                 }
                 //handleEnemyDrops();
                 //Debug.Log("insert drop=" + RPGSystem.inventory.onSave());
@@ -369,27 +390,32 @@ namespace RPG
             return totalMoney;
         }
 
-        public List<ItemAndQty> getEnemyDrop(){
+        public List<ItemAndQty> getEnemyDrop()
+        {
             List<ItemAndQty> drops = new List<ItemAndQty>();
             //global drop
-            if(Random.Range(0,100) < Param.equipmentDropRate){
+            if (Random.Range(0, 100) < Param.equipmentDropRate)
+            {
                 //restrict equipment level to be same level as the map
-                List<int>equipDropList = DB.getEquipmentDropList(Game.currLoc.reqLv);
-                if(equipDropList.Count > 0){
+                List<int> equipDropList = DB.getEquipmentDropList(Game.currLoc.reqLv);
+                if (equipDropList.Count > 0)
+                {
                     //generate equipment with random rein lv and enchantment
                     int rndEquipId = Util.getRandomIndexFrom(equipDropList.ToArray());
-                    int rndRarity = Random.Range(0,5);
+                    int rndRarity = Random.Range(0, 5);
                     Equipment equip = DB.equipments[rndEquipId].toEquipment(rndRarity);
-                    if(equip.reinforceRecipe != null){
-                        int rndReinLv = Random.Range(0,equip.reinforceRecipe.maxReinforceLv + 1);
+                    if (equip.reinforceRecipe != null)
+                    {
+                        int rndReinLv = Random.Range(0, equip.reinforceRecipe.maxReinforceLv + 1);
                         equip.reinforceRecipe.reinforceLv = rndReinLv;
                     }
-                    if(equip.enchantment != null){
+                    if (equip.enchantment != null)
+                    {
                         equip.enchant();
                     }
-                    drops.Add(new ItemAndQty(equip,1));
+                    drops.Add(new ItemAndQty(equip, 1));
                 }
-                
+
             }
             return drops;
         }
