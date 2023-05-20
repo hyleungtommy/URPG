@@ -1256,7 +1256,7 @@
         {
             "name": "Life Absorpation",
             "skillType": "Special",
-            "desc": "Dealing a damage to the enemy, while taking a part of damage to heal self",
+            "desc": "Dealing a damage to the enemy, while taking 5% of dealt damage to heal self",
             "img": "046-Life Absorpation",
             "animation": "S44",
             "isAOE":false,
@@ -1626,31 +1626,6 @@
             ]
         },
         {
-            "name": "Bomb",
-            "skillType": "Attack",
-            "desc": "Denote a bomb to hit all enemies",
-            "img": "059-bomb",
-            "animation": "S17",
-            "isAOE":true,
-            "useOn":"opponent",
-            "maxSkillLv": 3,
-            "modifierStart": 1.25,
-            "modifierPerLv": 0.25,
-            "turn": 3,
-            "cooldown": 3,
-            "reqLvStart": 65,
-            "reqLvPerLv": 10,
-            "reqMpStart": 100,
-            "reqMpPerLv": 50,
-            "priceStart": 2500,
-            "pricePerLv": 1000,
-            "skillPtsStart": 4,
-            "skillPtsPerLv": 2,
-            "jobRestriction": [
-                7
-            ]
-        },
-        {
             "name": "Wind Step",
             "skillType": "Buff",
             "desc": "Increase self AGI and DEX greatly for 3 rounds",
@@ -1684,9 +1659,9 @@
         },
         {
             "name": "Shadow",
-            "skillType": "Buff",
+            "skillType": "Passive",
             "desc": "ATK increase by %mod% when not being hit. This effect stacks for 10 rounds at max",
-            "img": "061-shadow",
+            "img": "089-Concentrate",
             "animation": "",
             "isAOE":false,
             "useOn":"self",
@@ -1702,6 +1677,740 @@
             "priceStart": 2500,
             "pricePerLv": 1000,
             "skillPtsStart": 5,
+            "skillPtsPerLv": 2,
+            "jobRestriction": [
+                7
+            ]
+        },
+        {
+            "name": "Stun Attack",
+            "skillType": "Attack",
+            "desc": "This attack has a chance to stun the enemy",
+            "img": "006-Stun Attack",
+            "animation": "S5",
+			"isAOE": false,
+            "useOn":"opponent",
+            "maxSkillLv": 5,
+            "modifierStart": 1.25,
+            "modifierPerLv": 0.25,
+            "turn": 1,
+            "cooldown": 3,
+            "reqLvStart": 25,
+            "reqLvPerLv": 5,
+            "reqMpStart": 100,
+            "reqMpPerLv": 50,
+            "priceStart": 2500,
+            "pricePerLv": 1000,
+            "skillPtsStart": 4,
+            "skillPtsPerLv": 2,
+            "jobRestriction": [
+                1
+            ],
+            "Buffs": [{
+                "buffId":1,
+                "modifier": 1,
+                "turn": 1,
+                "chance": 15
+            }]
+        },
+        {
+            "name": "Bleeding Attack",
+            "skillType": "Attack",
+            "desc": "This attack has a chance to cause enemy bleed for 3 rounds",
+            "img": "007-Bleeding Attack",
+            "animation": "S5",
+			"isAOE": false,
+            "useOn":"opponent",
+            "maxSkillLv": 5,
+            "modifierStart": 1.25,
+            "modifierPerLv": 0.25,
+            "turn": 1,
+            "cooldown": 3,
+            "reqLvStart": 30,
+            "reqLvPerLv": 5,
+            "reqMpStart": 100,
+            "reqMpPerLv": 50,
+            "priceStart": 2500,
+            "pricePerLv": 1000,
+            "skillPtsStart": 4,
+            "skillPtsPerLv": 2,
+            "jobRestriction": [
+                1
+            ],
+            "Buffs": [{
+                "buffId":15,
+                "modifier": 1,
+                "turn": 3,
+                "chance": 15
+            }]
+        },
+        {
+            "name": "Disarm Attack",
+            "skillType": "Attack",
+            "desc": "This attack has a chance to decrease enemy attack",
+            "img": "008-Disarm Attack",
+            "animation": "S5",
+			"isAOE": false,
+            "useOn":"opponent",
+            "maxSkillLv": 5,
+            "modifierStart": 1.25,
+            "modifierPerLv": 0.25,
+            "turn": 1,
+            "cooldown": 3,
+            "reqLvStart": 35,
+            "reqLvPerLv": 5,
+            "reqMpStart": 100,
+            "reqMpPerLv": 50,
+            "priceStart": 2500,
+            "pricePerLv": 1000,
+            "skillPtsStart": 4,
+            "skillPtsPerLv": 2,
+            "jobRestriction": [
+                1
+            ],
+            "Buffs": [{
+                "buffId":18,
+                "modifier": 1,
+                "turn": 3,
+                "chance": 15
+            }]
+        },
+        {
+            "name": "Beserk Assault",
+            "skillType": "Attack",
+            "desc": "Attack all enemy fiecely, While in beserke mode this attack deals an extra 200% damage",
+            "img": "009-Beserk Assault",
+            "animation": "S8",
+			"isAOE": true,
+            "useOn":"opponent",
+            "maxSkillLv": 3,
+            "modifierStart": 10,
+            "modifierPerLv": 2.5,
+            "turn": 1,
+            "cooldown": 10,
+            "reqLvStart": 40,
+            "reqLvPerLv": 5,
+            "reqMpStart": 100,
+            "reqMpPerLv": 50,
+            "priceStart": 2500,
+            "pricePerLv": 1000,
+            "skillPtsStart": 4,
+            "skillPtsPerLv": 2,
+            "jobRestriction": [
+                1
+            ]
+        },
+        {
+            "name": "Berserking",
+            "skillType": "Buff",
+            "desc": "Enter Berserk mode for 5 round, Increase all attack skill damage by 150% but reduce defense by 50%, Beserk Assault will cause an extra 200% damage on top of that.",
+            "img": "010-Berserking",
+            "animation": "",
+			"isAOE": false,
+            "useOn":"self",
+            "maxSkillLv": 1,
+            "modifierStart": 1.5,
+            "modifierPerLv": 2.5,
+            "turn": 5,
+            "cooldown": 15,
+            "reqLvStart": 50,
+            "reqLvPerLv": 5,
+            "reqMpStart": 100,
+            "reqMpPerLv": 50,
+            "priceStart": 2500,
+            "pricePerLv": 1000,
+            "skillPtsStart": 4,
+            "skillPtsPerLv": 2,
+            "jobRestriction": [
+                1
+            ],
+            "Buffs": [
+                {
+                "buffId":3
+                }
+            ]
+        },
+        {
+            "name": "Last Hope",
+            "skillType": "Special",
+            "desc": "Recover HP to full and Increase Defense and Magic Defense greatly for 5 rounds",
+            "img": "017-Last Hope",
+            "animation": "",
+			"isAOE": false,
+            "useOn":"self",
+            "maxSkillLv": 1,
+            "modifierStart": 2,
+            "modifierPerLv": 2.5,
+            "turn": 5,
+            "cooldown": 10,
+            "reqLvStart": 50,
+            "reqLvPerLv": 5,
+            "reqMpStart": 100,
+            "reqMpPerLv": 50,
+            "priceStart": 2500,
+            "pricePerLv": 1000,
+            "skillPtsStart": 4,
+            "skillPtsPerLv": 2,
+            "jobRestriction": [
+                2
+            ],
+            "Buffs": [
+                {
+                "buffId":28
+                },
+                {
+                    "buffId":29
+                    }
+            ]
+        },
+        {
+            "name": "God's Wrath",
+            "skillType": "Magic",
+            "desc": "Create a thunder storm to strike all enemies twice, Has a small chance to stun enemy",
+            "img": "024-God Wrath",
+            "animation": "S19",
+			"isAOE": true,
+            "useOn":"opponent",
+            "maxSkillLv": 3,
+            "modifierStart": 2,
+            "modifierPerLv": 2.5,
+            "turn": 1,
+            "cooldown": 5,
+            "reqLvStart": 40,
+            "reqLvPerLv": 5,
+            "reqMpStart": 100,
+            "reqMpPerLv": 50,
+            "priceStart": 2500,
+            "pricePerLv": 1000,
+            "skillPtsStart": 4,
+            "skillPtsPerLv": 2,
+            "jobRestriction": [
+                3
+            ],
+            "Buffs": [{
+                "buffId":1,
+                "modifier": 1,
+                "turn": 1,
+                "chance": 15
+            }]
+        },
+        {
+            "name": "Mana Brust",
+            "skillType": "Buff",
+            "desc": "Enter Mana Brust mode for 5 rounds. In this period, every magic attack deals 200% damage and use 150% MP. Metorite and Enternal Frost deals an extra 200% on top of that",
+            "img": "026-Mana Brust",
+            "animation": "",
+			"isAOE": false,
+            "useOn":"self",
+            "maxSkillLv": 1,
+            "modifierStart": 1.5,
+            "modifierPerLv": 2.5,
+            "turn": 5,
+            "cooldown": 15,
+            "reqLvStart": 50,
+            "reqLvPerLv": 5,
+            "reqMpStart": 100,
+            "reqMpPerLv": 50,
+            "priceStart": 2500,
+            "pricePerLv": 1000,
+            "skillPtsStart": 4,
+            "skillPtsPerLv": 2,
+            "jobRestriction": [
+                3
+            ],
+            "Buffs": [
+                {
+                "buffId":8
+                }
+            ]
+        },
+        {
+            "name": "Metorite",
+            "skillType": "Magic",
+            "desc": "Drop huge metorite from skies to elimate all enemy on the map.",
+            "img": "027-Metorite",
+            "animation": "S20",
+			"isAOE": true,
+            "useOn":"opponent",
+            "maxSkillLv": 3,
+            "modifierStart": 10,
+            "modifierPerLv": 2.5,
+            "turn": 1,
+            "cooldown": 20,
+            "reqLvStart": 50,
+            "reqLvPerLv": 5,
+            "reqMpStart": 100,
+            "reqMpPerLv": 50,
+            "priceStart": 2500,
+            "pricePerLv": 1000,
+            "skillPtsStart": 4,
+            "skillPtsPerLv": 2,
+            "jobRestriction": [
+                3
+            ]
+        },
+        {
+            "name": "Eternal Frozen",
+            "skillType": "Magic",
+            "desc": "Cast huge ice storm to froze all enemies in the map.",
+            "img": "028-Enternal Frozen",
+            "animation": "S21",
+			"isAOE": true,
+            "useOn":"opponent",
+            "maxSkillLv": 3,
+            "modifierStart": 7.5,
+            "modifierPerLv": 1,
+            "turn": 1,
+            "cooldown": 20,
+            "reqLvStart": 50,
+            "reqLvPerLv": 5,
+            "reqMpStart": 100,
+            "reqMpPerLv": 50,
+            "priceStart": 2500,
+            "pricePerLv": 1000,
+            "skillPtsStart": 4,
+            "skillPtsPerLv": 2,
+            "jobRestriction": [
+                3
+            ]
+        },
+        {
+            "name": "Mana Recovery",
+            "skillType": "Buff",
+            "desc": "Recover Mana Constantly in 5 rounds",
+            "img": "029-Mana recovery",
+            "animation": "",
+			"isAOE": false,
+            "useOn":"self",
+            "maxSkillLv": 3,
+            "modifierStart": 0.05,
+            "modifierPerLv": 0.01,
+            "turn": 5,
+            "cooldown": 20,
+            "reqLvStart": 50,
+            "reqLvPerLv": 5,
+            "reqMpStart": 100,
+            "reqMpPerLv": 50,
+            "priceStart": 2500,
+            "pricePerLv": 1000,
+            "skillPtsStart": 4,
+            "skillPtsPerLv": 2,
+            "jobRestriction": [
+                3
+            ],
+            "Buffs": [
+                {
+                "buffId":25
+                }
+            ]
+        },
+        {
+            "name": "Holy Smite",
+            "skillType": "Magic",
+            "desc": "Attack enemy with blinding light",
+            "img": "032-Holy Smite",
+            "animation": "S22",
+			"isAOE": false,
+            "useOn":"opponent",
+            "maxSkillLv": 3,
+            "modifierStart": 2,
+            "modifierPerLv": 0.5,
+            "turn": 1,
+            "cooldown": 2,
+            "reqLvStart": 30,
+            "reqLvPerLv": 5,
+            "reqMpStart": 100,
+            "reqMpPerLv": 50,
+            "priceStart": 2500,
+            "pricePerLv": 1000,
+            "skillPtsStart": 4,
+            "skillPtsPerLv": 2,
+            "jobRestriction": [
+                4
+            ]
+        },
+        {
+            "name": "Advance Healing",
+            "skillType": "Magic",
+            "desc": "Heal more than usual healing skill",
+            "img": "033-Advance Healing",
+            "animation": "",
+			"isAOE": false,
+            "useOn":"partner",
+            "maxSkillLv": 5,
+            "modifierStart": 2,
+            "modifierPerLv": 0.5,
+            "turn": 1,
+            "cooldown": 2,
+            "reqLvStart": 30,
+            "reqLvPerLv": 5,
+            "reqMpStart": 100,
+            "reqMpPerLv": 50,
+            "priceStart": 2500,
+            "pricePerLv": 1000,
+            "skillPtsStart": 4,
+            "skillPtsPerLv": 2,
+            "jobRestriction": [
+                4
+            ]
+        },
+        {
+            "name": "Expell Debuff",
+            "skillType": "Special",
+            "desc": "Remove all debuff from one party member",
+            "img": "034-Expell Debuff",
+            "animation": "S23",
+			"isAOE": false,
+            "useOn":"partner",
+            "maxSkillLv": 5,
+            "modifierStart": 2,
+            "modifierPerLv": 0.5,
+            "turn": 1,
+            "cooldown": 2,
+            "reqLvStart": 30,
+            "reqLvPerLv": 5,
+            "reqMpStart": 100,
+            "reqMpPerLv": 50,
+            "priceStart": 2500,
+            "pricePerLv": 1000,
+            "skillPtsStart": 4,
+            "skillPtsPerLv": 2,
+            "jobRestriction": [
+                4
+            ]
+        },
+        {
+            "name": "Healing Aura",
+            "skillType": "Heal",
+            "desc": "Heal all party members",
+            "img": "035-Healing Aura",
+            "animation": "",
+			"isAOE": true,
+            "useOn":"partner",
+            "maxSkillLv": 5,
+            "modifierStart": 2,
+            "modifierPerLv": 0.5,
+            "turn": 1,
+            "cooldown": 2,
+            "reqLvStart": 30,
+            "reqLvPerLv": 5,
+            "reqMpStart": 100,
+            "reqMpPerLv": 50,
+            "priceStart": 2500,
+            "pricePerLv": 1000,
+            "skillPtsStart": 4,
+            "skillPtsPerLv": 2,
+            "jobRestriction": [
+                4
+            ]
+        },
+        {
+            "name": "Summon Zombie",
+            "skillType": "Buff",
+            "desc": "Summon a zombie to protect the caster for 10 rounds. Zombie will reduce incoming damage for 50%. Only 1 summon can exist at the same time",
+            "img": "054-Summon Zombie",
+            "animation": "",
+			"isAOE": false,
+            "useOn":"self",
+            "maxSkillLv": 5,
+            "modifierStart": 2,
+            "modifierPerLv": 0.5,
+            "turn": 1,
+            "cooldown": 2,
+            "reqLvStart": 30,
+            "reqLvPerLv": 5,
+            "reqMpStart": 100,
+            "reqMpPerLv": 50,
+            "priceStart": 2500,
+            "pricePerLv": 1000,
+            "skillPtsStart": 4,
+            "skillPtsPerLv": 2,
+            "jobRestriction": [
+                5
+            ],
+            "Buffs": [
+                {
+                "buffId":25
+                }
+            ]
+        },
+        {
+            "name": "Summon Skeleton Warrior",
+            "skillType": "Buff",
+            "desc": "Summon a skeleton warrior to fight with the caster for 10 rounds. Skeleton warrior attack enemy each round. Only 1 summon can exist at the same time",
+            "img": "055-Summon Skeleton Warrior",
+            "animation": "",
+			"isAOE": false,
+            "useOn":"self",
+            "maxSkillLv": 5,
+            "modifierStart": 2,
+            "modifierPerLv": 0.5,
+            "turn": 1,
+            "cooldown": 2,
+            "reqLvStart": 30,
+            "reqLvPerLv": 5,
+            "reqMpStart": 100,
+            "reqMpPerLv": 50,
+            "priceStart": 2500,
+            "pricePerLv": 1000,
+            "skillPtsStart": 4,
+            "skillPtsPerLv": 2,
+            "jobRestriction": [
+                5
+            ],
+            "Buffs": [
+                {
+                "buffId":25
+                }
+            ]
+        },
+        {
+            "name": "Summon Dark Spirit",
+            "skillType": "Buff",
+            "desc": "Summon a dark spirit to fight with the caster. Dark Spirit will attack enemy with magic each round. Only 1 summon can exist at the same time",
+            "img": "056-Summon Dark Spirit",
+            "animation": "",
+			"isAOE": false,
+            "useOn":"self",
+            "maxSkillLv": 5,
+            "modifierStart": 2,
+            "modifierPerLv": 0.5,
+            "turn": 1,
+            "cooldown": 2,
+            "reqLvStart": 30,
+            "reqLvPerLv": 5,
+            "reqMpStart": 100,
+            "reqMpPerLv": 50,
+            "priceStart": 2500,
+            "pricePerLv": 1000,
+            "skillPtsStart": 4,
+            "skillPtsPerLv": 2,
+            "jobRestriction": [
+                5
+            ],
+            "Buffs": [
+                {
+                "buffId":25
+                }
+            ]
+        },
+        {
+            "name": "Sacrifice Summon",
+            "skillType": "Special",
+            "desc": "Summon a dark spirit to fight with the caster. Dark Spirit will attack enemy with magic each round. Only 1 summon can exist at the same time",
+            "img": "057-Sacrifice Summon",
+            "animation": "",
+			"isAOE": false,
+            "useOn":"opponent",
+            "maxSkillLv": 5,
+            "modifierStart": 2,
+            "modifierPerLv": 0.5,
+            "turn": 1,
+            "cooldown": 2,
+            "reqLvStart": 30,
+            "reqLvPerLv": 5,
+            "reqMpStart": 100,
+            "reqMpPerLv": 50,
+            "priceStart": 2500,
+            "pricePerLv": 1000,
+            "skillPtsStart": 4,
+            "skillPtsPerLv": 2,
+            "jobRestriction": [
+                5
+            ]
+        },
+        {
+            "name": "Thunder Arrow",
+            "skillType": "Attack",
+            "desc": "Shot a thunder-infused arrow, chance to stun enemy",
+            "img": "072-Thunder Arrow",
+            "animation": "S31",
+            "isAOE":false,
+            "useOn":"opponent",
+            "maxSkillLv": 4,
+            "modifierStart": 4,
+            "modifierPerLv": 0.5,
+            "turn": 1,
+            "cooldown": 5,
+            "reqLvStart": 60,
+            "reqLvPerLv": 10,
+            "reqMpStart": 230,
+            "reqMpPerLv": 50,
+            "priceStart": 1000,
+            "pricePerLv": 1000,
+            "skillPtsStart": 5,
+            "skillPtsPerLv": 2,
+            "jobRestriction": [
+                6
+            ],
+            "Buffs": [{
+                "buffId":1,
+                "modifier": 1,
+                "turn": 1,
+                "chance": 15
+            }]
+        },
+        {
+            "name": "Wind Song",
+            "skillType": "Special",
+            "desc": "Recieve blessing of wind, reset all current cooldown to zero",
+            "img": "077-Song of Wind",
+            "animation": "",
+			"isAOE": false,
+            "useOn":"self",
+            "maxSkillLv": 5,
+            "modifierStart": 2,
+            "modifierPerLv": 0.5,
+            "turn": 1,
+            "cooldown": 2,
+            "reqLvStart": 30,
+            "reqLvPerLv": 5,
+            "reqMpStart": 100,
+            "reqMpPerLv": 50,
+            "priceStart": 2500,
+            "pricePerLv": 1000,
+            "skillPtsStart": 4,
+            "skillPtsPerLv": 2,
+            "jobRestriction": [
+                6
+            ]
+        },
+        {
+            "name": "Triple Frozen Attack",
+            "skillType": "Attack",
+            "desc": "Deal three quick frozen attacks on the enemy, chance to decrease enemy speed",
+            "img": "082-Triple Fronzen Attack",
+            "animation": "S45",
+            "isAOE":true,
+            "useOn":"opponent",
+            "maxSkillLv": 4,
+            "modifierStart": 1.25,
+            "modifierPerLv": 0.25,
+            "turn": 3,
+            "cooldown": 3,
+            "reqLvStart": 60,
+            "reqLvPerLv": 10,
+            "reqMpStart": 100,
+            "reqMpPerLv": 50,
+            "priceStart": 2500,
+            "pricePerLv": 1000,
+            "skillPtsStart": 4,
+            "skillPtsPerLv": 2,
+            "jobRestriction": [
+                7
+            ]
+        },
+        {
+            "name": "Smoke Bomb",
+            "skillType": "Debuff",
+            "desc": "Drop a smoke bomb and greatly affect the slight of all enemies",
+            "img": "085-Smoke Bomb",
+            "animation": "S38",
+            "isAOE":true,
+            "useOn":"opponent",
+            "maxSkillLv": 3,
+            "modifierStart": 1.25,
+            "modifierPerLv": 0.25,
+            "turn": 1,
+            "cooldown": 3,
+            "reqLvStart": 65,
+            "reqLvPerLv": 10,
+            "reqMpStart": 100,
+            "reqMpPerLv": 50,
+            "priceStart": 2500,
+            "pricePerLv": 1000,
+            "skillPtsStart": 4,
+            "skillPtsPerLv": 2,
+            "jobRestriction": [
+                7
+            ],
+            "Buffs": [
+                {
+                "buffId":16
+                }
+            ]
+        },
+        {
+            "name": "Poisonous Bomb",
+            "skillType": "Debuff",
+            "desc": "Drop a poisonous bomb to posion all enemies",
+            "img": "086-Poinous Bomb",
+            "animation": "S28",
+            "isAOE":true,
+            "useOn":"opponent",
+            "maxSkillLv": 3,
+            "modifierStart": 1.25,
+            "modifierPerLv": 0.25,
+            "turn": 1,
+            "cooldown": 3,
+            "reqLvStart": 65,
+            "reqLvPerLv": 10,
+            "reqMpStart": 100,
+            "reqMpPerLv": 50,
+            "priceStart": 2500,
+            "pricePerLv": 1000,
+            "skillPtsStart": 4,
+            "skillPtsPerLv": 2,
+            "jobRestriction": [
+                7
+            ],
+            "Buffs": [
+                {
+                "buffId":13
+                }
+            ]
+        },
+        {
+            "name": "Shadow Form",
+            "skillType": "Special",
+            "desc": "Enter Shadow Form, greatly increase self's AGI and DEX for 5 rounds, remove all current skill cooldown and increase damage of Shadow Assult by 200%",
+            "img": "087-Shadow Form",
+            "animation": "S39",
+            "isAOE":true,
+            "useOn":"opponent",
+            "maxSkillLv": 3,
+            "modifierStart": 1.25,
+            "modifierPerLv": 0.25,
+            "turn": 5,
+            "cooldown": 3,
+            "reqLvStart": 65,
+            "reqLvPerLv": 10,
+            "reqMpStart": 100,
+            "reqMpPerLv": 50,
+            "priceStart": 2500,
+            "pricePerLv": 1000,
+            "skillPtsStart": 4,
+            "skillPtsPerLv": 2,
+            "jobRestriction": [
+                7
+            ],
+            "Buffs": [
+                {
+                "buffId":12
+                }
+            ]
+        }
+        ,
+        {
+            "name": "Shadow Assault",
+            "skillType": "Attack",
+            "desc": "Perform assault on all enemies.",
+            "img": "088-Shadow Assault",
+            "animation": "S40",
+            "isAOE":true,
+            "useOn":"opponent",
+            "maxSkillLv": 3,
+            "modifierStart": 1.25,
+            "modifierPerLv": 0.25,
+            "turn": 1,
+            "cooldown": 20,
+            "reqLvStart": 65,
+            "reqLvPerLv": 10,
+            "reqMpStart": 100,
+            "reqMpPerLv": 50,
+            "priceStart": 2500,
+            "pricePerLv": 1000,
+            "skillPtsStart": 4,
             "skillPtsPerLv": 2,
             "jobRestriction": [
                 7

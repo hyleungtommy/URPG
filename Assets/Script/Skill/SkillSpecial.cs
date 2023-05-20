@@ -34,6 +34,10 @@ namespace RPG
             {
                 s = new SkillDeath(img, name);
             }
+            else if (name.Equals("Life Absorpation"))
+            {
+                s = new SkillLifeAbsorpation(img, name);
+            }
             return s;
         }
 

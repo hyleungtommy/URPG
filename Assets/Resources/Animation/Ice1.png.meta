@@ -1,42 +1,39 @@
 fileFormatVersion: 2
-guid: 5ab642dc3e0f3fb42bd9c562b7df9db1
+guid: b659abd8c69bc4c4194a1e768dfa216a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 21300000
-    second: 003-Attack01_0
+      213: -5393695564571693685
+    second: Ice1_0
   - first:
-      213: 21300002
-    second: 003-Attack01_1
+      213: -8328553039907146390
+    second: Ice1_1
   - first:
-      213: 21300004
-    second: 003-Attack01_2
+      213: 5898572996955869040
+    second: Ice1_2
   - first:
-      213: 21300006
-    second: 003-Attack01_3
+      213: -6455908318625179676
+    second: Ice1_3
   - first:
-      213: 21300008
-    second: 003-Attack01_4
+      213: -2074580519204004444
+    second: Ice1_4
   - first:
-      213: 21300010
-    second: 003-Attack01_5
+      213: 7632472851414543242
+    second: Ice1_5
   - first:
-      213: 21300012
-    second: 003-Attack01_6
+      213: -1126757329959696314
+    second: Ice1_6
   - first:
-      213: 21300014
-    second: 003-Attack01_7
+      213: -4150068786444454167
+    second: Ice1_7
   - first:
-      213: 21300016
-    second: 003-Attack01_8
-  - first:
-      213: 21300018
-    second: 003-Attack01_9
+      213: 5179390620183615352
+    second: Ice1_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -50,22 +47,19 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
-  vTOnly: 0
-  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
     filterMode: 1
-    aniso: 16
+    aniso: 1
     mipBias: 0
     wrapU: 1
     wrapV: 1
@@ -87,17 +81,37 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
-  flipbookRows: 1
-  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  ignorePngGamma: 0
-  applyGammaDecoding: 1
-  swizzle: 50462976
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -112,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 003-Attack01_0
+      name: Ice1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,16 +138,16 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 02305410000000000800000000000000
-      internalID: 21300000
+      spriteID: b8daa17067eb525b0800000000000000
+      internalID: -5393695564571693685
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 003-Attack01_1
+      name: Ice1_1
       rect:
         serializedVersion: 2
         x: 192
@@ -145,16 +159,16 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 22305410000000000800000000000000
-      internalID: 21300002
+      spriteID: a65b55303290b6c80800000000000000
+      internalID: -8328553039907146390
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 003-Attack01_2
+      name: Ice1_2
       rect:
         serializedVersion: 2
         x: 384
@@ -166,16 +180,16 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 42305410000000000800000000000000
-      internalID: 21300004
+      spriteID: 07f044583e0fbd150800000000000000
+      internalID: 5898572996955869040
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 003-Attack01_3
+      name: Ice1_3
       rect:
         serializedVersion: 2
         x: 576
@@ -187,16 +201,16 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 62305410000000000800000000000000
-      internalID: 21300006
+      spriteID: 4e75bddc6910866a0800000000000000
+      internalID: -6455908318625179676
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 003-Attack01_4
+      name: Ice1_4
       rect:
         serializedVersion: 2
         x: 768
@@ -208,16 +222,16 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 82305410000000000800000000000000
-      internalID: 21300008
+      spriteID: 4ad56e6620c9533e0800000000000000
+      internalID: -2074580519204004444
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 003-Attack01_5
+      name: Ice1_5
       rect:
         serializedVersion: 2
         x: 0
@@ -229,16 +243,16 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a2305410000000000800000000000000
-      internalID: 21300010
+      spriteID: a8b606aae9dfbe960800000000000000
+      internalID: 7632472851414543242
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 003-Attack01_6
+      name: Ice1_6
       rect:
         serializedVersion: 2
         x: 192
@@ -250,16 +264,16 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c2305410000000000800000000000000
-      internalID: 21300012
+      spriteID: 6484faf9d24fc50f0800000000000000
+      internalID: -1126757329959696314
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 003-Attack01_7
+      name: Ice1_7
       rect:
         serializedVersion: 2
         x: 384
@@ -271,16 +285,16 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e2305410000000000800000000000000
-      internalID: 21300014
+      spriteID: 9e6ba8e3d6ef766c0800000000000000
+      internalID: -4150068786444454167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 003-Attack01_8
+      name: Ice1_8
       rect:
         serializedVersion: 2
         x: 576
@@ -292,31 +306,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 03305410000000000800000000000000
-      internalID: 21300016
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 003-Attack01_9
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 0
-        width: 192
-        height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 23305410000000000800000000000000
-      internalID: 21300018
+      spriteID: 877d805d354e0e740800000000000000
+      internalID: 5179390620183615352
       vertices: []
       indices: 
       edges: []
@@ -324,26 +317,16 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      003-Attack01_9: 21300018
-      003-Attack01_3: 21300006
-      003-Attack01_2: 21300004
-      003-Attack01_1: 21300002
-      003-Attack01_4: 21300008
-      003-Attack01_6: 21300012
-      003-Attack01_8: 21300016
-      003-Attack01_0: 21300000
-      003-Attack01_7: 21300014
-      003-Attack01_5: 21300010
   spritePackingTag: 
   pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
