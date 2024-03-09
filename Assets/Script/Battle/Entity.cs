@@ -106,7 +106,7 @@ namespace RPG
                 atkMsg.sender = this;
                 atkMsg.receiver = opponent[j];
                 atkMsg.SkillAnimationName = "NormalAttack";
-                float attackPower = (this.stat.ATK * 1 * UnityEngine.Random.Range(0.9f, 1.1f)) - (opponent[j].isDefensing ? opponent[j].stat.DEF * opponent[j].defenseModifier : opponent[j].stat.DEF);
+                float attackPower = (this.stat.ATK * 1 * UnityEngine.Random.Range(0.9f, 1.1f)) - (opponent[j].isDefensing ? opponent[j].stat.DEF * opponent[j].defenseModifier : opponent[j].stat.DEF) * ModifierFromBuffHelper.getTargetDefenseModifierFromSpecialBuff(opponent[j]);
 
                 /*
 				if (this is EntityPlayer && (this as EntityPlayer).havePassiveSkill (SkillPassive.BattleWill) && (CurrHP / Stat.HP) <= 1f) {

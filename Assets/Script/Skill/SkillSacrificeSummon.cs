@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 namespace RPG
 {
-    public class SkillMagic : Skill
+    public class SkillSacrificeSummon : SkillSpecial
     {
 
-        public SkillMagic(Sprite img) : base(img)
+        public SkillSacrificeSummon(Sprite img, string name) : base(img, name)
         {
 
 
@@ -17,11 +17,12 @@ namespace RPG
         {
             base.use(user, target);
             List<BattleMessage> msgs = new List<BattleMessage>();
+            user.buffState.removeSummons();
             for (int l = 0; l < target.Length; l++)
             {
                 Entity opponent = target[l];
 
-                for (int i = 0; i < turn + ModifierFromBuffHelper.getExtraTurnFromSummonSkeleton(user); i++)
+                for (int i = 0; i < turn; i++)
                 {
                     BattleMessage atkMsg = new BattleMessage();
                     atkMsg.sender = user;
@@ -62,7 +63,6 @@ namespace RPG
                         atkMsg.value = attackPower;
 
                         applyDebuff (user, opponent);
-
 
                     }
                     msgs.Add(atkMsg);

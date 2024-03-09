@@ -50,7 +50,7 @@ namespace RPG
 
         public void addBuff(Buff newBuff)
         {
-            
+
             foreach (Buff buff in buffState.ToArray())
             {
                 //if buff exists, remove old buff and add new buff to refresh the rounds
@@ -59,7 +59,7 @@ namespace RPG
                     buffState.Remove(buff);
                 }
                 //replace buff as stated in buff.replace
-                foreach (int replace in buff.replace)
+                foreach (int replace in newBuff.replace)
                 {
                     if (buff.id == replace)
                     {
@@ -75,15 +75,17 @@ namespace RPG
             return buffState[i];
         }
 
-        public bool isBuffExists(int buffId){
+        public bool isBuffExists(int buffId)
+        {
             foreach (Buff buff in buffState.ToArray())
             {
-                if(buff.id == buffId) return true;
+                if (buff.id == buffId) return true;
             }
             return false;
         }
 
-        public bool isStunned(){
+        public bool isStunned()
+        {
             foreach (Buff buff in buffState.ToArray())
             {
                 foreach (Buff.Type effect in buff.effects)
@@ -109,10 +111,24 @@ namespace RPG
             return hpmpChange;
         }
 
-        public void removeAllDebuff(){
+        public void removeAllDebuff()
+        {
             foreach (Buff buff in buffState.ToArray())
             {
-                if(buff.type == "Debuff"){
+                if (buff.type == "Debuff")
+                {
+                    buffState.Remove(buff);
+                }
+            }
+        }
+
+        //use for Sacrifice Summon skill
+        public void removeSummons()
+        {
+            foreach (Buff buff in buffState.ToArray())
+            {
+                if (buff.id == 32 || buff.id == 33 || buff.id == 34)
+                {
                     buffState.Remove(buff);
                 }
             }

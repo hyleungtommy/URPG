@@ -6,7 +6,7 @@ namespace RPG
     {
         public enum Type
         {
-            HP = 0, MP = 1, ATK = 2, DEF = 3, MATK = 4, MDEF = 5, AGI = 6, DEX = 7, Stun
+            HP = 0, MP = 1, ATK = 2, DEF = 3, MATK = 4, MDEF = 5, AGI = 6, DEX = 7, Stun, Summon_Zombie, Summon_Skeleton, Summon_Dark_Spirit
         }
         public int id {get;set;}
         public string type { get; set; }

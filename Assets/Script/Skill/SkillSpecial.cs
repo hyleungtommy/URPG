@@ -46,6 +46,10 @@ namespace RPG
             {
                 s = new SkillRemoveAllCooldown(img, name);
             }
+            else if (name.Equals("Sacrifice Summon"))
+            {
+                s = new SkillSacrificeSummon(img, name);
+            }
             return s;
         }
 

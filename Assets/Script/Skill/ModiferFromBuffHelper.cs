@@ -45,5 +45,35 @@ namespace RPG
             return modifier;
         }
 
+        public static float getTargetDefenseModifierFromSpecialBuff(Entity target)
+        {
+            float modifier = 1f;
+            if (target.buffState.isBuffExists(32))
+            {// Summon Zombie
+                modifier = 2f;
+            }
+            return modifier;
+        }
+
+        public static int getExtraTurnFromSummonSkeleton(Entity user)
+        {
+            int turn = 0;
+            if (user.buffState.isBuffExists(33))
+            {
+                turn = 1;
+            }
+            return turn;
+        }
+
+        public static int getExtraDebuffChanceFromSummonDarkSpirit(Entity user)
+        {
+            int chance = 1;
+            if (user.buffState.isBuffExists(34))
+            {
+                chance = 2;
+            }
+            return chance;
+        }
+
     }
 }

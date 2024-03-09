@@ -22,7 +22,7 @@ namespace RPG
                 foreach (Buff b in buffList)
                 {
 
-                    float applyChance = ((float)user.stat.MATK / (float)targetEntity.stat.MDEF * 2f);
+                    float applyChance = ((float)user.stat.MATK / (float)targetEntity.stat.MDEF * 2f) * ModifierFromBuffHelper.getExtraDebuffChanceFromSummonDarkSpirit(user);
                     int rnd = UnityEngine.Random.Range(0, (int)applyChance);
                     if (rnd < applyChance)
                         targetEntity.buffState.addBuff(b);

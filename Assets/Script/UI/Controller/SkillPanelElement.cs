@@ -30,6 +30,14 @@ public class SkillPanelElement : MonoBehaviour
         int requreMP = (int)(item.reqMp * ModifierFromBuffHelper.getMPUseModifierFromBuff(character));
         textSkillInfo.text = item.name + "\n" + (character.currmp < requreMP ? "<color=#ff0000ff>" : "") + "MP:" + requreMP + (character.currmp < requreMP ? "</color>" : "") + (item.currCooldown > 0 ? "\nCooldown:" + item.currCooldown + " round" : "");
         GetComponent<Button>().enabled = (item.currCooldown <= 0 && character.currmp >= requreMP);
+
+        //For Sacrifice Summon skill, only allow when user has summons
+        if(item.name.Contains("Sacrifice Summon")){
+            if(!(character.buffState.isBuffExists(32) || character.buffState.isBuffExists(33) || character.buffState.isBuffExists(34))){
+                GetComponent<Button>().enabled = false;
+                textSkillInfo.text = textSkillInfo.text + "\nNo Summon available";
+            }
+        }
     }
 
 

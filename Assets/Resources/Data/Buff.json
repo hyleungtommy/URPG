@@ -247,6 +247,30 @@
             "img": "buff_dex",
             "replace": [23],
             "stackable":false
+        }, {
+            "id": 32,
+            "name": "Summon Zombie",
+            "effects": ["Summon_Zombie"],
+            "type": "Buff",
+            "img": "054-Summon Zombie",
+            "replace": [33,34],
+            "stackable":false
+        },{
+            "id": 33,
+            "name": "Summon Skeleton",
+            "effects": ["Summon_Skeleton"],
+            "type": "Buff",
+            "img": "055-Summon Skeleton Warrior",
+            "replace": [32,34],
+            "stackable":false
+        },{
+            "id": 34,
+            "name": "Summon Dark Spirit",
+            "effects": ["Summon_Dark_Spirit"],
+            "type": "Buff",
+            "img": "056-Summon Dark Spirit",
+            "replace": [32,33],
+            "stackable":false
         }
     ]
 }

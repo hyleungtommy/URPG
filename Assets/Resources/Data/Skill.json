@@ -2130,14 +2130,14 @@
             ],
             "Buffs": [
                 {
-                "buffId":25
+                "buffId":32
                 }
             ]
         },
         {
             "name": "Summon Skeleton Warrior",
             "skillType": "Buff",
-            "desc": "Summon a skeleton warrior to fight with the caster for 10 rounds. Skeleton warrior attack enemy each round. Only 1 summon can exist at the same time",
+            "desc": "Summon a skeleton warrior to fight with the caster for 10 rounds. Your skeleton warrior will attack when you use attack skills. Only 1 summon can exist at the same time",
             "img": "055-Summon Skeleton Warrior",
             "animation": "",
 			"isAOE": false,
@@ -2160,14 +2160,14 @@
             ],
             "Buffs": [
                 {
-                "buffId":25
+                "buffId":33
                 }
             ]
         },
         {
             "name": "Summon Dark Spirit",
             "skillType": "Buff",
-            "desc": "Summon a dark spirit to fight with the caster. Dark Spirit will attack enemy with magic each round. Only 1 summon can exist at the same time",
+            "desc": "Summon a dark spirit to fight with the caster. Dark Spirit will enchance your debuff chance by 2x. Only 1 summon can exist at the same time",
             "img": "056-Summon Dark Spirit",
             "animation": "",
 			"isAOE": false,
@@ -2190,23 +2190,23 @@
             ],
             "Buffs": [
                 {
-                "buffId":25
+                "buffId":34
                 }
             ]
         },
         {
             "name": "Sacrifice Summon",
             "skillType": "Special",
-            "desc": "Summon a dark spirit to fight with the caster. Dark Spirit will attack enemy with magic each round. Only 1 summon can exist at the same time",
+            "desc": "Sacrifice your Summon to explode on all enemies, creating a big damage",
             "img": "057-Sacrifice Summon",
             "animation": "",
-			"isAOE": false,
+			"isAOE": true,
             "useOn":"opponent",
             "maxSkillLv": 5,
-            "modifierStart": 2,
+            "modifierStart": 5,
             "modifierPerLv": 0.5,
             "turn": 1,
-            "cooldown": 2,
+            "cooldown": 5,
             "reqLvStart": 30,
             "reqLvPerLv": 5,
             "reqMpStart": 100,
