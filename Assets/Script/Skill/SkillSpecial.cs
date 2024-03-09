@@ -38,6 +38,14 @@ namespace RPG
             {
                 s = new SkillLifeAbsorpation(img, name);
             }
+            else if (name.Equals("ExpellBuff"))
+            {
+                s = new SkillExpellBuff(img, name);
+            }
+            else if (name.Equals("Wind Song") || name.Equals("Shadow Form"))
+            {
+                s = new SkillRemoveAllCooldown(img, name);
+            }
             return s;
         }
 

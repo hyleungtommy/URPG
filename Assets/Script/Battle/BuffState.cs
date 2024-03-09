@@ -109,6 +109,15 @@ namespace RPG
             return hpmpChange;
         }
 
+        public void removeAllDebuff(){
+            foreach (Buff buff in buffState.ToArray())
+            {
+                if(buff.type == "Debuff"){
+                    buffState.Remove(buff);
+                }
+            }
+        }
+
         public override string ToString()
         {
             return Util.printList<Buff>(buffState);

@@ -38,6 +38,10 @@ namespace RPG
                     modifier = 2.0f;
                 }
             }
+            if (user.buffState.isBuffExists(12) && skillName.Equals("Shadow Assault"))//Shadow Form
+            {
+                modifier = 2f;
+            }
             return modifier;
         }
 
