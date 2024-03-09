@@ -244,7 +244,6 @@ public class BattleScene : BasicScene
             if (battleCtrl.battleState == BattleCtrl.PLAYER_TURN)
             {
                 battleCtrl.selectedSkill = s;
-                Debug.Log(s.aoe);
                 if (s.aoe)
                 {
                     if (s.useOn == GeneralSkill.UseOn.Opponent)

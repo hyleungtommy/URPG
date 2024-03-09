@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using RPG;
+using System;
 public class SkillPanelElement : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -26,9 +27,11 @@ public class SkillPanelElement : MonoBehaviour
         this.skill = item;
         textSkillInfo.gameObject.SetActive(true);
         box.render(item);
-        textSkillInfo.text = item.name + "\n" + (character.currmp < item.reqMp ? "<color=#ff0000ff>" : "") + "MP:" + item.reqMp + (character.currmp < item.reqMp ? "</color>" : "") + (item.currCooldown > 0 ? "\nCooldown:" + item.currCooldown + " round" : "");
-        GetComponent<Button>().enabled = (item.currCooldown <= 0 && character.currmp >= item.reqMp);
+        int requreMP = (int)(item.reqMp * ModifierFromBuffHelper.getMPUseModifierFromBuff(character));
+        textSkillInfo.text = item.name + "\n" + (character.currmp < requreMP ? "<color=#ff0000ff>" : "") + "MP:" + requreMP + (character.currmp < requreMP ? "</color>" : "") + (item.currCooldown > 0 ? "\nCooldown:" + item.currCooldown + " round" : "");
+        GetComponent<Button>().enabled = (item.currCooldown <= 0 && character.currmp >= requreMP);
     }
+
 
     public void renderEmpty()
     {

@@ -88,10 +88,9 @@ namespace RPG
         public Skill toSkill()
         {
             Skill s = getSkillType();
-            //Debug.Log(skillType);
             if (s != null)
             {
-                s.cooldown = cooldown;
+                s.cooldown = Param.skillNoCooldown ? 0 : cooldown;
                 s.id = id;
                 s.mod = modifier;
                 s.turn = turn;

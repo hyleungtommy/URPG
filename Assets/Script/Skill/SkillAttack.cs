@@ -29,7 +29,7 @@ namespace RPG
                     atkMsg.SkillAnimationName = animation;
                     atkMsg.AOE = aoe;
                     atkMsg.SkillName = name;
-                    int attackPower = (int)((user.stat.ATK * 1 * UnityEngine.Random.Range(0.9f, 1.1f) * mod) - (opponent.isDefensing ? opponent.stat.DEF * opponent.defenseModifier : opponent.stat.DEF));
+                    int attackPower = (int)((user.stat.ATK * 1 * UnityEngine.Random.Range(0.9f, 1.1f) * mod * ModifierFromBuffHelper.getAttackModifierFromSpecialBuff(user, name)) - (opponent.isDefensing ? opponent.stat.DEF * opponent.defenseModifier : opponent.stat.DEF));
                     //if (user is EntityPlayer && (user as EntityPlayer).havePassiveSkill(SkillPassive.BattleWill) && (user.CurrHP / user.Stat.HP) <= 1f)
                     //{
                     //   attackPower += (int)(attackPower * (1f - (user.CurrHP / user.Stat.HP)));

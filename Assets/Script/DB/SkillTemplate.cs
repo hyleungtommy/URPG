@@ -57,6 +57,7 @@ namespace RPG
             s.skillPtsStart = skillPtsStart;
             s.turn = turn;
             s.isAOE = isAOE;
+            s.cooldown = cooldown;
 
             if(useOn.Equals("partner")){
                 s.useOn = GeneralSkill.UseOn.Partner;

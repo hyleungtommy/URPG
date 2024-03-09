@@ -71,16 +71,6 @@ namespace RPG
             }
             virtualInventory = Game.inventory.createVirtualItemInv();
             battleState = BATTLE_RUNNING;
-            /*
-            for (int i = 0; i < playerParty.Length; i++)
-            {
-                if (playerParty[i] != null)
-                {
-                    playerParty[i].buffState.addBuff(new Buff(1, "Debuff", "Stun", new Buff.Type[] { Buff.Type.Stun }, 1, 3, new int[0], false, SpriteManager.buffImgs["debuff_stun"]));
-                }
-
-            }
-            */
         }
         private Entity getFriction(int friction, int index)
         {

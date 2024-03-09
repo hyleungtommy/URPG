@@ -33,7 +33,7 @@ namespace RPG
             //}
             //else
 
-            user.currmp -= reqMp;
+            user.currmp -= reqMp * ModifierFromBuffHelper.getMPUseModifierFromBuff(user);
             currCooldown = cooldown;
             //Debug.Log("use skill currCooldown=" + currCooldown);
             return null;
@@ -65,8 +65,6 @@ namespace RPG
             }
 
         }
-
-        
 
         public abstract bool isAttackSkill();
 
