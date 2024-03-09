@@ -38,9 +38,9 @@ namespace RPG
             {
                 s = new SkillLifeAbsorpation(img, name);
             }
-            else if (name.Equals("ExpellBuff"))
+            else if (name.Equals("Expell Debuff"))
             {
-                s = new SkillExpellBuff(img, name);
+                s = new SkillExpellDebuff(img, name);
             }
             else if (name.Equals("Wind Song") || name.Equals("Shadow Form"))
             {

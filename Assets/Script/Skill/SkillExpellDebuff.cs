@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 namespace RPG
 {
-    public class SkillExpellBuff : SkillSpecial
+    public class SkillExpellDebuff : SkillSpecial
     {
 
-        public SkillExpellBuff(Sprite img, string name) : base(img, name)
+        public SkillExpellDebuff(Sprite img, string name) : base(img, name)
         {
 
 
