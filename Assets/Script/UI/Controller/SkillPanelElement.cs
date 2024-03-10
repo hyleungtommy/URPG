@@ -27,7 +27,7 @@ public class SkillPanelElement : MonoBehaviour
         this.skill = item;
         textSkillInfo.gameObject.SetActive(true);
         box.render(item);
-        int requreMP = (int)(item.reqMp * ModifierFromBuffHelper.getMPUseModifierFromBuff(character));
+        int requreMP = (int)(item.reqMp * ModifierFromBuffHelper.getMPUseModifierFromBuff(character) * ModifierFromBuffHelper.getMPModifierFromPassiveSkill(character));
         textSkillInfo.text = item.name + "\n" + (character.currmp < requreMP ? "<color=#ff0000ff>" : "") + "MP:" + requreMP + (character.currmp < requreMP ? "</color>" : "") + (item.currCooldown > 0 ? "\nCooldown:" + item.currCooldown + " round" : "");
         GetComponent<Button>().enabled = (item.currCooldown <= 0 && character.currmp >= requreMP);
 

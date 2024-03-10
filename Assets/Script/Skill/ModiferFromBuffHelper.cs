@@ -1,3 +1,5 @@
+using UnityEditor;
+
 namespace RPG
 {
     //Skill damage/ mp usage modifier from Special Buffs
@@ -62,17 +64,43 @@ namespace RPG
             {
                 turn = 1;
             }
+            if(user is EntityPlayer && (user as EntityPlayer).hasPassiveSkill("Thousand Blade")){
+                float chance = (user as EntityPlayer).getPassiveSkill("Thousand Blade").mod;
+                int rnd = UnityEngine.Random.Range(0,100);
+                if(chance * 100 >= rnd){
+                    turn += 1;
+                }
+            }
             return turn;
         }
 
-        public static int getExtraDebuffChanceFromSummonDarkSpirit(Entity user)
+        public static float getExtraDebuffChanceFromSummonDarkSpirit(Entity user)
         {
-            int chance = 1;
+            float chance = 1;
             if (user.buffState.isBuffExists(34))
             {
                 chance = 2;
             }
+            if(user is EntityPlayer && (user as EntityPlayer).hasPassiveSkill("Bless of the Dark")){
+                chance = chance + 0.5f;
+            }
             return chance;
+        }
+
+        public static float getMPModifierFromPassiveSkill(EntityPlayer user){
+            float modifier = 1f;
+            if(user.hasPassiveSkill("Mana Reservation")){
+                modifier = modifier - user.getPassiveSkill("Mana Reservation").mod;
+            }
+            return modifier;
+        }
+
+        public static int getCooldownModifier(Entity user){
+            int modifier = 0;
+            if(user is EntityPlayer && (user as EntityPlayer).hasPassiveSkill("Wind Blessing")){
+                modifier = modifier + (int)(user as EntityPlayer).getPassiveSkill("Wind Blessing").mod;
+            }
+            return modifier;
         }
 
     }

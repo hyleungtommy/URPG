@@ -133,6 +133,10 @@ namespace RPG
             {
                 s = new SkillSpecial(img, name).create();
             }
+            else if (skillType == Constant.PassiveSkill)
+            {
+                s = new SkillPassive(img);
+            }
             if(s != null){
                 s.aoe = isAOE;
                 s.useOn = useOn;

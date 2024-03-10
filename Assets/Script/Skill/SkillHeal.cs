@@ -19,7 +19,11 @@ namespace RPG
             List<BattleMessage> bundle = new List<BattleMessage>();
             foreach (Entity e in target)
             {
-                float healAmount = mod * user.stat.MATK;
+                float modifier = mod;
+                if(user is EntityPlayer && (user as EntityPlayer).hasPassiveSkill("Faith of God")){
+                    modifier = mod + (user as EntityPlayer).getPassiveSkill("Faith of God").mod;
+                }
+                float healAmount = modifier * user.stat.MATK;
                 Debug.Log("Heal :" + healAmount + "Mod:" + mod + "user MATK:" + user.stat.MATK);
                 if (healAmount > (float)(e.stat.HP - e.currhp))
                 {
@@ -27,7 +31,7 @@ namespace RPG
                 }
                 if (e.currhp > 0)
                     e.currhp += healAmount;
-                Debug.Log("Heal :" + healAmount + "");
+                //Debug.Log("Heal :" + healAmount + "");
                 BattleMessage message = new BattleMessage();
                 message.SkillAnimationName = animation;
                 message.SkillName = name;

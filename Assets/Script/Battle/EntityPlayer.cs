@@ -29,5 +29,16 @@ namespace RPG
                 if (s != null && s.currCooldown > 0) s.currCooldown -= 1;
             }
         }
+
+        public bool hasPassiveSkill(string name){
+            return skillList.Exists(skill=>skill.name.StartsWith(name));
+        }
+
+        public SkillPassive getPassiveSkill(string name){
+            if(hasPassiveSkill(name)){
+                return skillList.Find(skill=>skill.name.StartsWith(name)) as SkillPassive;
+            }
+            return null;
+        }
     }
 }

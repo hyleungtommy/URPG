@@ -27,14 +27,9 @@ namespace RPG
 
         public virtual List<BattleMessage> use(Entity user, Entity[] target)
         {
-            //if (user is EntityPlayer && (user as EntityPlayer).havePassiveSkill(SkillPassive.Mana_Reservation))
-            //{
-            //    user.CurrMP -= (float)mp * (user as EntityPlayer).getPassiveSkill(SkillPassive.Mana_Reservation).Mod;
-            //}
-            //else
-
-            user.currmp -= reqMp * ModifierFromBuffHelper.getMPUseModifierFromBuff(user);
-            currCooldown = cooldown;
+            user.currmp -= reqMp * ModifierFromBuffHelper.getMPUseModifierFromBuff(user) * (user is EntityPlayer ? ModifierFromBuffHelper.getMPModifierFromPassiveSkill(user as EntityPlayer) : 1f);
+            currCooldown = cooldown - ModifierFromBuffHelper.getCooldownModifier(user);
+            if(currCooldown < 0) currCooldown = 0;
             //Debug.Log("use skill currCooldown=" + currCooldown);
             return null;
         }

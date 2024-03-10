@@ -106,16 +106,16 @@ namespace RPG
                 atkMsg.sender = this;
                 atkMsg.receiver = opponent[j];
                 atkMsg.SkillAnimationName = "NormalAttack";
-                float attackPower = (this.stat.ATK * 1 * UnityEngine.Random.Range(0.9f, 1.1f)) - (opponent[j].isDefensing ? opponent[j].stat.DEF * opponent[j].defenseModifier : opponent[j].stat.DEF) * ModifierFromBuffHelper.getTargetDefenseModifierFromSpecialBuff(opponent[j]);
 
-                /*
-				if (this is EntityPlayer && (this as EntityPlayer).havePassiveSkill (SkillPassive.BattleWill) && (CurrHP / Stat.HP) <= 1f) {
-					attackPower += (int)(attackPower * (this as EntityPlayer).getPassiveSkill (SkillPassive.BattleWill).Mod * (1f - (CurrHP / Stat.HP)));
-					Debug.Log ("Battle Will Power:" + (attackPower * (this as EntityPlayer).getPassiveSkill (SkillPassive.BattleWill).Mod * (1f - (CurrHP / Stat.HP))));
-				}
-				*/
+                float attackModifier = ModifierFromBuffHelper.getAttackModifierFromSpecialBuff(this, name);
+                if(this is EntityPlayer && (this as EntityPlayer).hasPassiveSkill("Battle Will") && (this.currhp/this.stat.HP) <= 0.25f){
+                    SkillPassive passiveSkill = (this as EntityPlayer).getPassiveSkill("Battle Will");
+                    attackModifier = attackModifier + passiveSkill.mod;
+                }
 
-                //				Debug.Log (name + " att power " + attackPower + " " + opponent [j].stat.DEF + " " + opponent [j].name);
+                float attackPower = (this.stat.ATK * 1 * UnityEngine.Random.Range(0.9f, 1.1f) * attackModifier) - (opponent[j].isDefensing ? opponent[j].stat.DEF * opponent[j].defenseModifier : opponent[j].stat.DEF) * ModifierFromBuffHelper.getTargetDefenseModifierFromSpecialBuff(opponent[j]);
+                
+                
                 if (attackPower <= 0f) attackPower = 1f;
                 float hitChance = this.stat.DEX / (opponent[j].stat.AGI * 2f);
                 if (hitChance > 1.0f) hitChance = 1.0f;
@@ -134,6 +134,11 @@ namespace RPG
                         crititcal = true;
                         attackPower *= (this.stat.DEX / opponent[j].stat.DEX) * 2;
                     }
+
+                    if(opponent[j] is EntityPlayer && (opponent[j] as EntityPlayer).hasPassiveSkill("Potentiality") && attackPower >= opponent[j].stat.HP/2 && attackPower >= opponent[j].currhp && opponent[j].currhp > 1f){
+                        attackPower = (int)(opponent[j].currhp - 1);
+                    }
+
                     opponent[j].currhp -= attackPower;
                     opponent[j].onReceiveDamage(this, attackPower);
                     if (crititcal)

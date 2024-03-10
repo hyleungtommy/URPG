@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using RPG;
+using System.Linq;
 public class SkillPanelCtrl : MonoBehaviour
 {
     public SkillPanelElement[] elements;
@@ -28,7 +29,7 @@ public class SkillPanelCtrl : MonoBehaviour
     public void setSkillList(List<Skill> skillList, EntityPlayer player)
     {
         //Debug.Log("skill list:" + skillList.Count + ", ele len=" + elements.Length + " /" + (float)skillList.Count / (float)elements.Length);
-        this.skillList = skillList;
+        this.skillList = skillList.Where(skill => !(skill is SkillPassive)).ToList();
         this.player = player;
         currPage = 0;
         maxPage = (int)Mathf.Floor((float)skillList.Count / (float)elements.Length);

@@ -29,12 +29,16 @@ namespace RPG
                     atkMsg.SkillAnimationName = animation;
                     atkMsg.AOE = aoe;
                     atkMsg.SkillName = name;
-                    int attackPower = (int)((user.stat.ATK * 1 * UnityEngine.Random.Range(0.9f, 1.1f) * mod * ModifierFromBuffHelper.getAttackModifierFromSpecialBuff(user, name)) - (opponent.isDefensing ? opponent.stat.DEF * opponent.defenseModifier : opponent.stat.DEF) * ModifierFromBuffHelper.getTargetDefenseModifierFromSpecialBuff(opponent));
-                    //if (user is EntityPlayer && (user as EntityPlayer).havePassiveSkill(SkillPassive.BattleWill) && (user.CurrHP / user.Stat.HP) <= 1f)
-                    //{
-                    //   attackPower += (int)(attackPower * (1f - (user.CurrHP / user.Stat.HP)));
-                    //    Debug.Log("Battle Will Power:" + (1f - (user.CurrHP / user.Stat.HP)));
-                    //}
+
+                    float attackModifier = mod * ModifierFromBuffHelper.getAttackModifierFromSpecialBuff(user, name);
+                    if(user is EntityPlayer && (user as EntityPlayer).hasPassiveSkill("Battle Will") && (user.currhp/user.stat.HP) <= 0.25f){
+                        SkillPassive passiveSkill = (user as EntityPlayer).getPassiveSkill("Battle Will");
+                        attackModifier = attackModifier + passiveSkill.mod;
+                        Debug.Log("Battle Will Power:" + passiveSkill.mod + " attackModifier=" + attackModifier);
+                    }
+
+                    int attackPower = (int)((user.stat.ATK * 1 * UnityEngine.Random.Range(0.9f, 1.1f) * attackModifier) - (opponent.isDefensing ? opponent.stat.DEF * opponent.defenseModifier : opponent.stat.DEF) * ModifierFromBuffHelper.getTargetDefenseModifierFromSpecialBuff(opponent));
+
                     if (attackPower <= 0)
                         attackPower = 1;
                     float hitChance = user.stat.DEX / (opponent.stat.AGI * 1.4f);
@@ -56,6 +60,11 @@ namespace RPG
                             crititcal = true;
                             attackPower *= (int)((user.stat.DEX / opponent.stat.DEX) * 2);
                         }
+
+                        if(opponent is EntityPlayer && (opponent as EntityPlayer).hasPassiveSkill("Potentiality") && attackPower >= opponent.stat.HP/2 && attackPower >= opponent.currhp && opponent.currhp > 1f){
+                            attackPower = (int)(opponent.currhp - 1);
+                        }
+
                         opponent.currhp -= attackPower;
                         if (crititcal)
                             atkMsg.type = BattleMessage.Type.Critical;
@@ -63,6 +72,8 @@ namespace RPG
                             atkMsg.type = BattleMessage.Type.NormalAttack;
                         if (opponent.currhp < 0)
                             opponent.currhp = 0;
+
+                        
 
                         atkMsg.value = attackPower;
 
@@ -75,29 +86,6 @@ namespace RPG
                             refDefMessage.type = BattleMessage.Type.NormalAttack;
                             msgs.Add(refDefMessage);
                         }
-                        /*
-                        if (user is EntityPlayer && (user as EntityPlayer).havePassiveSkill("Life Absorpation"))
-                        {
-
-                            int healValue = (int)(user.Stat.HP * ((user as EntityPlayer).getPassiveSkill("Life Absorpation").Mod));
-                            if (user.CurrHP + healValue > user.Stat.HP)
-                                healValue = (int)(user.Stat.HP - user.CurrHP);
-                            user.CurrHP += healValue;
-                            Debug.Log("Life :" + healValue);
-                            if (healValue > 0)
-                            {
-                                BattleMessage healMsg = new BattleMessage();
-                                healMsg.sender = user;
-                                healMsg.receiver = user;
-                                healMsg.type = BattleMessage.Type.Heal;
-                                //healMsg.SkillAnimationName = animation;
-                                healMsg.AOE = false;
-                                healMsg.SkillName = "";
-                                healMsg.value = healValue;
-                                msgs.Add(healMsg);
-                            }
-                        }
-                        */
 
                         applyDebuff(user, opponent);
                     }

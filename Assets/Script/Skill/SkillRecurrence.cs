@@ -27,22 +27,19 @@ namespace RPG
         {
             base.use(user, target);
             List<BattleMessage> bundle = new List<BattleMessage>();
-            Debug.Log(target.Length);
             foreach (Entity e in target)
             {
                 if (e.currhp <= 0)
                 {
-
-                    //float healAmount = e.Stat.HP * ((user as EntityPlayer).havePassiveSkill("Angel Will") ? 0.25f + (user as EntityPlayer).getPassiveSkill("Angel Will").Mod : 0.25f);
                     float healAmount = e.stat.HP * 0.25f;
-                    e.currhp = healAmount;
-                    /* 
-                    if ((user as EntityPlayer).havePassiveSkill("Angel Will"))
+                    
+                    if (user is EntityPlayer && (user as EntityPlayer).hasPassiveSkill("Angel Will"))
                     {
-                        e.CurrMP += healAmount;
-                        if (e.CurrMP > e.Stat.MP)
-                            e.CurrMP = e.Stat.MP;
-                    }*/
+                        healAmount = e.stat.HP - e.currhp;
+                        e.currmp = e.stat.MP;
+                    }
+                    
+                    e.currhp = healAmount;
                     BattleMessage message = new BattleMessage();
                     message.SkillAnimationName = animation;
                     message.sender = user;
