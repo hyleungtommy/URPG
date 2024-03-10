@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace RPG
-{
+{    
+    /// <summary>
+    /// Represent a player party character
+    /// </summary>
     public class BattleCharacter : Displayable
     {
         public int id { get; set; }
@@ -57,7 +60,7 @@ namespace RPG
             this.unlocked = unlocked;
             upptAlloc = new int[] { 0, 0, 0, 0, 0 };
             equipmentManager = new EquipmentManager();
-            getBattleCharacterStat();
+            UpdateBattleCharacterStat();
         }
 
         //Save format : lv,currexp,upptEarned,stamina_alloc,strength_alloc,mana_alloc,agi_alloc,dex_alloc,unlocked,listPos,skillPtEarn,skillPtsSpent
@@ -77,7 +80,7 @@ namespace RPG
                 upptAlloc[3] = int.Parse(data[6]);
                 upptAlloc[4] = int.Parse(data[7]);
 
-                getBattleCharacterStat();
+                UpdateBattleCharacterStat();
 
                 unlocked = (int.Parse(data[8]) == 1 ? true : false);
                 listPos = int.Parse(data[9]);
@@ -97,6 +100,10 @@ namespace RPG
             return lv + "|" + currexp + "|" + upptEarned + "|" + upptAlloc[0] + "|" + upptAlloc[1] + "|" + upptAlloc[2] + "|" + upptAlloc[3] + "|" + upptAlloc[4] + "|" + unlock + "|" + listPos + "|" + skillPtsEarned + "|" + skillPtsSpent;
         }
 
+        /// <summary>
+        /// Create a entity object that is used during battle
+        /// </summary>
+        /// <returns>An Entity Player object that represent the character</returns>
         public EntityPlayer toEntity()
         {
             //Debug.Log(name + "=" + stat);
@@ -109,38 +116,50 @@ namespace RPG
             return player;
         }
 
+        /// <summary>
+        /// Increase exp of player character
+        /// </summary>
+        /// <returns>bool to indicate if a player has leveled up</returns>
         public bool assignEXP(int value)
         {
-            //Debug.Log("assignEXP value=" + value);
             currexp += value;
             if (currexp >= expneed)
             {
-                levelUp();
+                HandleLevelUp();
                 return true;
             }
-            //Debug.Log("assignEXP BattleMember=" + ToString());
             return false;
         }
 
+        /// <summary>
+        /// Assign upgrade points to player character
+        /// </summary>
+        /// 
         public void assignUPPT(int[] upptTempAlloc){
             for(int i = 0 ; i < 5 ; i++){
                 upptAlloc[i] += upptTempAlloc[i];
             }
-            getBattleCharacterStat();
+            UpdateBattleCharacterStat();
         }
 
-        private void levelUp()
+        /// <summary>
+        /// Level up character and reset the exp bar
+        /// </summary>
+        private void HandleLevelUp()
         {
             lv++;
             currexp -= expneed;
             upptEarned += Param.upptGainPerLv;
             skillPtsEarned += Param.skillPtsGainPerLv;
             expneed = Util.getRequireEXPForLevel(lv);
-            getBattleCharacterStat();
+            UpdateBattleCharacterStat();
 
         }
 
-        void getBattleCharacterStat()
+        /// <summary>
+        /// update the 5 stat of battle character
+        /// </summary>
+        private void UpdateBattleCharacterStat()
         {
             stat = new BattleCharacterStat();
             stat.stamina = upptAlloc[0] + job.levelUpGain[0] * lv + job.startingStat[0];

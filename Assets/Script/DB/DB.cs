@@ -37,6 +37,10 @@ namespace RPG
 
         static DB()
         {
+            LoadGameData();
+        }
+
+        public static void LoadGameData(){
             for (int i = 0; i < jobs.Length; i++)
             {
                 jobs[i].id = i;
@@ -154,7 +158,6 @@ namespace RPG
             //get enchantment recipe
             TextAsset enchantmentRecipeJSON = Resources.Load<TextAsset>("Data/EnchantRecipe");
             enchantRecipeTemplates = JsonHelper.FromJson<EnchantRecipeTemplate>(enchantmentRecipeJSON.text);
-            
         }
 
         public static Equipment createEquipmentFormSaveStr(string saveStr)

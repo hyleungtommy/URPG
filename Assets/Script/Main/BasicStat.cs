@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace RPG
 {
+    /// <summary>
+    /// A set that contains 8 stat that is used during battle, used by Entity
+    /// </summary>
     public class BasicStat
     {
         private float hp, mp, atk, def, matk, mdef, agi, dex;
@@ -28,17 +31,31 @@ namespace RPG
             this.dex = dex;
         }
 
-        // stat operations
+        /// <summary>
+        /// Do addition with another set
+        /// </summary>
+        /// <param name="set">Another set to be added.</param>
+        /// <returns>The modified set.</returns>
         public BasicStat plus(BasicStat set)
         {
             return new BasicStat(hp + set.hp, mp + set.mp, atk + set.atk, def + set.def, matk + set.matk, mdef + set.mdef, agi + set.agi, dex + set.dex);
         }
 
+        /// <summary>
+        /// Do multiplication with another set
+        /// </summary>
+        /// <param name="set">Another set to be multiply.</param>
+        /// <returns>The modified set.</returns>
         public BasicStat multiply(BasicStat set)
         {
             return new BasicStat(hp * set.hp, mp * set.mp, atk * set.atk, def * set.def, matk * set.matk, mdef * set.mdef, agi * set.agi, dex * set.dex);
         }
 
+        /// <summary>
+        /// multiply all the stat in the set with a multiplier
+        /// </summary>
+        /// <param name="multiplier">A multiply to multiply all set values</param>
+        /// <returns>The modified set.</returns>
         public BasicStat multiply(float multiplier)
         {
             return new BasicStat(hp * multiplier, mp * multiplier, atk * multiplier, def * multiplier, matk *  multiplier, mdef * multiplier, agi * multiplier, dex * multiplier);
