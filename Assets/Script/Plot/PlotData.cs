@@ -2,6 +2,9 @@ using System;
 using UnityEngine;
 namespace RPG
 {
+    /// <summary>
+    /// Represent a plot section defined in Plot.json, created by PlotTemplate.cs
+    /// </summary>
     public class PlotData
     {
         public int triggerPt { get; set; }

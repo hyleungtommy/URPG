@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace RPG
 {
+    /// <summary>
+    /// Contains all unity scenes name of the game
+    /// </summary>
     public static class SceneName
     {
         public const string MainMenu = "MainMenu";

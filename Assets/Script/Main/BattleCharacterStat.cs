@@ -1,5 +1,8 @@
 namespace RPG
 {
+    /// <summary>
+    /// Represent the 5 stat for a character
+    /// </summary>
     public class BattleCharacterStat
     {
         public int strength { get; set; }

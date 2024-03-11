@@ -4,6 +4,9 @@ using System.Linq;
 using UnityEngine;
 namespace RPG
 {
+    /// <summary>
+    /// Represent a dialog section, including text and speaker's info
+    /// </summary>
     public class DialogText
     {
         public string speakerName { get; set; }
@@ -12,7 +15,7 @@ namespace RPG
         Speaker speaker;
         public DialogText(string dialogs)
         {
-
+            //Dialog format: SpeakerName:FaceNumber:dialog
             string[] ds = dialogs.Split(':');
             if (ds.Length == 3)
             {

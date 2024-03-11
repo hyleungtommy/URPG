@@ -7,6 +7,9 @@ using System.Linq;
 
 namespace RPG
 {
+    /// <summary>
+    /// Store all public data loaded from json
+    /// </summary>
     public static class DB
     {
         public static Map[] maps;
@@ -35,11 +38,9 @@ namespace RPG
         public static EnchantEffectTemplate[]enchantmentEffects;
         public static EnchantRecipeTemplate[]enchantRecipeTemplates;
 
-        static DB()
-        {
-            LoadGameData();
-        }
-
+        /// <summary>
+        /// load data from all jsons from Resources/Data
+        /// </summary>
         public static void LoadGameData(){
             for (int i = 0; i < jobs.Length; i++)
             {
@@ -160,6 +161,10 @@ namespace RPG
             enchantRecipeTemplates = JsonHelper.FromJson<EnchantRecipeTemplate>(enchantmentRecipeJSON.text);
         }
 
+        /// <summary>
+        /// create Equipment object from Save string
+        /// </summary>
+        /// <returns>Equipment object loaded from save</returns>
         public static Equipment createEquipmentFormSaveStr(string saveStr)
         {
             string[] data = saveStr.Split('|');
@@ -183,6 +188,10 @@ namespace RPG
             return e;
         }
 
+        /// <summary>
+        /// get a list of available equipment drop for the map
+        /// </summary>
+        /// <returns>Equipment id list indicate the equipment can be dropped in this map</returns>
         public static List<int>getEquipmentDropList(int mapLv){
             List<int>equipmentIds = DB.equipments.Where(e=>e.reqLv == mapLv).Select(e=>e.id).ToList();
             return equipmentIds;

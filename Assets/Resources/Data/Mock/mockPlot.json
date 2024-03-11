@@ -1,0 +1,1052 @@
+{
+    "Items": [{
+            "triggerPt": 0,
+            "scene": "MainMenu",
+            "triggerMap": 0,
+            "bg": "Battle BG/001-Emerald Forest BG",
+            "dialog": [
+                "Anson:6:Hey %playername%, are we going to explore that forest near our village again?",
+                "%playername%:4:Really? We just explored yesterday!",
+                "Anson:6:Yesterday we just stopped near the river! I am sure there are stronger creature across that!",
+                "%playername%:4:Well it is just a small forest, I doubt that there will be any strong creature at all. But… I am free today, so I could come.",
+                "Anson:3:That’s right ! Aren’t we going to join the army? We need to be stronger !",
+                "%playername%:8:…",
+                "Anson:6:Well let’s go!"
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 1,
+            "scene": "Battle",
+            "bg": "Battle BG/001-Emerald Forest BG",
+            "triggerArea": 3,
+            "triggerBeforeBattle": true,
+            "dialog": [
+                "Anson:6:We have reached the river!",
+                "%playername%:6:...It’s strange, we've enountered much less enemies, it seems like they are hiding for …",
+                "Anson:3:Let’s have a bath !",
+                "%playername%:5:Wait ! …I heard some noise.",
+                "Anson:6:Are you having hallucinations my friend ? cuz I can't hear anything strange",
+                "%playername%:6:No, I really heard it, don't you think that the forest is more silent then normal?",
+                "%playername%:5:There, do you hear it? It is a giant footsteping sound",
+                "Anson:4:Damn, sounds like it comes from a large creature ! Let get closer",
+                "%playername%:6:It’s too dangerous, we should go back and report to the guard.",
+                "Anson:3:Hey, why not ? I am sure it is going to be a strong creature ! I am so thrilled.",
+                "Anson:3:If you are afraid of it, you can stay here",
+                "%playername%:4:Fine, I'll go with you"
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 2,
+            "scene": "Battle",
+            "bg": "Battle BG/001-Emerald Forest BG",
+            "triggerArea": 5,
+            "triggerBeforeBattle": true,
+            "dialog": [
+                "Anson:12:Look at those giant traces!",
+                "%playername%:2:Tree and grass have been crashed alongside, it seems to be an giant creature.",
+                "Anson:14:Strange...Normally this kind of creature would not make apperance in this forest.",
+                "%playername%:4:Should we retrieve? It seems like a creature that we can’t handle.",
+                "Anson:16:Of course not! I am a tough warrior! If you afraid, just let me walk in front.",
+                "%playername%:4:Well then, Mr.Warrior, you can walk at the front."
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 3,
+            "scene": "Battle",
+            "bg": "Battle BG/001-Emerald Forest BG",
+            "triggerArea": 10,
+            "triggerBeforeBattle": true,
+            "dialog": [
+                "%playername%:5:Is this the giant monster?",
+                "Anson:4:That’s one huge bull ! We shall fight it! My blood is boilng!",
+                "%playername%:5:maybe we should get back and …",
+                "Anson:5:I think not, it noticed us already! It's coming!",
+                "%playername%:4:OK may be there’s left no choice…",
+                "Anson:5:I will be in front and you will be supporting me!"
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 4,
+            "scene": "Battle",
+            "bg": "Battle BG/001-Emerald Forest BG",
+            "triggerArea": 10,
+            "triggerBeforeBattle": false,
+            "dialog": [
+                "%playername%:3:We did it… Hey are you ok, Anson ?",
+                "Anson:14:No… I think my leg’s broken.",
+                "%playername%:6:Let go back to the town and find the doctor… ",
+                "%playername%:6:Here, you can’t walk, I will carry you back.",
+                "Anson:14:Thanks…",
+                "%playername%:3:Man, you are heaviler than I thought.",
+                "Anson:2:is that my fault?"
+            ],
+            "plotPtIncrement": 1,
+            "startNextPlotAtEnd": true
+        },
+        {
+            "triggerPt": 5,
+            "bg": "VillageBG/001-Emerald Village",
+            "dialog": [
+                "%playername%:1:we are there now",
+                "Villager1:1:OMG, What happen to you two ? Come here, hey doctor !"
+            ],
+            "plotPtIncrement": 1,
+            "startNextPlotAtEnd": true
+        },
+        {
+            "triggerPt": 6,
+            "bg": "VillageBG/001-Emerald Village",
+            "dialog": [
+                "%playername%:1:Hey, How’s your leg?",
+                "Anson:2:Not a big deal now, but… waiting for recovery was so boring, all I could do is to lay on the bed.",
+                "Anson:4:But how come there is such a large monster in the forest?",
+                "%playername%:2:It is a devil’s creature, mayor said that it shouldn’t appears in here.",
+                "%playername%:6:It must have summoned by somebody. Luckily, we manage to get rid of it. The royal army are investigating it, look, they are here",
+                "Conrad:7:Greeting, I am Conrad, A Royal Knight. I was appointed to investigating demon’s summon in this area.",
+                "Anson:2:Hi...Hi",
+                "Conrad:7:Anson, and %playername%, you two have the strength we required. As demons start invading the world once again,I gradually invite you two to join the army.",
+                "%playername%:1:I gradually accept your invitation. Anson, do you want to come with me?",
+                "Anson:12:What are you saying, we are always good bros, how can I leave you alone?",
+                "Conrad:3:Very great, I'll wait for you two at the captial city of Falone Kingdom.",
+                "%playername%:1:If we are ready, we can head to The Great Plain Now.",
+                "%playername%:1:(The Great Plain Unlocked.To switch maps, click the arrow key on the battle page)"
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 7,
+            "scene": "MainMenu",
+            "triggerMap": 1,
+            "bg": "Battle BG/002-The Great Plain BG",
+            "dialog": [
+                "Anson:12:Wow! This plain is massive! I can't even see the end of it!",
+                "%playername%:1:It is the largest plain of the kingdom,  where the Captial City of Falone Kingom locates",
+                "%playername%:1:When we arrive, we better go to the guild first. Conrad said he is waiting for us at there",
+                "Anson:3:Our adventure finally start! I can't wait to defeat the Devil King",
+                "%playername%:5:......",
+                "Anson:4:Oh sorry! I forgot that your parents...",
+                "%playername%:4:Nevermind, let's keep going, if you are still so slow we will have to camp again tonight."
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 8,
+            "scene": "City",
+            "triggerMap": 1,
+            "bg": "VillageBG/002-City of Falone",
+            "dialog": [
+                "Anson:3:Oh Conrad!",
+                "Conrad:6:I have been waiting for you guys. Here is you two’s solider identification.",
+                "Conrad:7:After registered for soliders, you can start accepting quests in here. You will gain various reward if you completed a quest.",
+                "%playername%:1:can we start accepting quests now?",
+                "Conrad:7:Yes, I already issued a quest for you two. There is an ogre in the great plain right now that caused a lot of trouble. I hope you can help us get rid of it.",
+                "Anson:12:Left it to me! I’ll get rid of that!",
+                "%playername%:4:Are you sure?",
+                "Conrad:7:Actually I have found one more helpers to help you to complete this quest.",
+                "%playername%:5:Helper?",
+                "Simon:6:H...Hello, I am Simon",
+                "Conrad:7:Simon is an apprentice knight, I hope you guys can work with Simon to complete the quest.",
+                "Conrad:1:I still have many military works to do, so I am leaving now, good luck.",
+                "Anson:12:Ok! Left it to us! I am the team leader, Anson, and here is my sidekick %playername%",
+                "%playername%:4:Wait, how come you two decided without my acknowledgement, and when did I become your sidekick, Anson…",
+                "Anson:3:Now the team formed, time to head to the plain !",
+                "%playername%:6:Before we go, we should by some equipments and potiions. The monsters at Great Plain are much stronger than our village's forest",
+                "Simon:1:I agree, without sufficient protection we cannot survive thorugh the powerful monsters.",
+                "%playername%:6:(Simon joined the party! Also, please conisder buying equipments for the characters before heading to Great Plain)"
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 9,
+            "scene": "Battle",
+            "bg": "Battle BG/002-The Great Plain BG",
+            "triggerArea": 5,
+            "triggerBeforeBattle": true,
+            "dialog": [
+                "%playername%:4:The strength of monster here is much stronger than those near our town",
+                "Anson:6:Yes, luckily we got Simon to attract most monster’s attention",
+                "Simon:1:I am happy that I can help you guys out, actually I have just became knight for a few months",
+                "%playername%:1:I see, are you going to join the royal knight? I think a lot of new knights want to becomes a part of the royal knight",
+                "Simon:11:I just applied the royal knight a few days ago, but I failed…They said I am too weak for becoming a royal knight",
+                "%playername%:6:Why?Surly you are a beginner, but I think they provide traning to novice knights.",
+                "Simon:4:No, not because of my skills, but my characteristic"
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 10,
+            "scene": "Battle",
+            "bg": "Battle BG/002-The Great Plain BG",
+            "triggerArea": 10,
+            "triggerBeforeBattle": true,
+            "dialog": [
+                "%playername%:4:The strength of monster here is much stronger than those near our town",
+                "Anson:6:Yes, luckily we got Simon to attract most monster’s attention",
+                "Simon:1:I am happy that I can help you guys out, actually I have just became knight for a few months",
+                "%playername%:1:I see, are you going to join the royal knight? I think a lot of new knights want to becomes a part of the royal knight",
+                "Simon:11:I just applied the royal knight a few days ago, but I failed…They said I am too weak for becoming a royal knight",
+                "%playername%:6:Why?Surly you are a beginner, but I think they provide traning to novice knights.",
+                "Simon:4:No, not because of my skills, but my characteristic",
+                "Simon:4:Actually I am very timid and shy, they think that such a weak person could never enter the royal army.",
+                "Anson:3:But you can follow me, the mighty warrior Anson, I will teach you how to become a tough warrior!",
+                "%playername%:4:Do you really think that you are really that mighty…",
+                "Anson:13:Of course I am! I have once beated a bull monster, which is like 10 time of my size…",
+                "Simon:5:Wow! How strong you are!",
+                "%playername%:4:Before you do more bragging, let me remind you that we are getting closer to the Oger’s cave now."
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 11,
+            "scene": "Battle",
+            "bg": "Battle BG/002-The Great Plain BG",
+            "triggerArea": 14,
+            "triggerBeforeBattle": true,
+            "dialog": [
+                "%playername%:6:There we are",
+                "Simon:15:Oh this place is so dark…",
+                "Anson:3:If you are afaid, I can lead for the team",
+                "Simon:12:No... I must stand in front of the team coz I am a knight…and a knight should...should...",
+                "Simon:10:Oh!Help!",
+                "%playername%:4:It's just a bat..."
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 12,
+            "scene": "Battle",
+            "bg": "Battle BG/002-The Great Plain BG",
+            "triggerArea": 15,
+            "triggerBeforeBattle": true,
+            "dialog": [
+                "Anson:4:I heard footsteps! Caution! It’s coming!",
+                "%playername%:2:Simon attract that guy’s attention,Anson attack and I will be aiding!"
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 13,
+            "scene": "Battle",
+            "bg": "Battle BG/002-The Great Plain BG",
+            "triggerArea": 15,
+            "triggerBeforeBattle": false,
+            "dialog": [
+                "%playername%:4:That’s was a tough one…",
+                "Simon:15:Are we done?",
+                "%playername%:1:Yah, now we should report to the guild."
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 14,
+            "scene": "City",
+            "triggerMap": 1,
+            "bg": "VillageBG/002-City of Falone",
+            "dialog": [
+                "Guild Receptionist:1:Well done! Here's your reward.",
+                "Anson:3:Money! I love money!",
+                "%playername%:7:Thank you two, Anson and Simon, without you two the oger cannot be beaten.",
+                "Simon:5:Re...Really?Am I that useful?",
+                "%playername%:1:Sure! You are the defenser, a team cannot form without a defenser.",
+                "Anson:3:Hey!Where should we hang out tonight?",
+                "Anson:3:I know there’s a club down that street, girls there are really hot…",
+                "Simon:8:What...What are you saying!We are too young for this…"
+            ],
+            "plotPtIncrement": 1,
+            "startNextPlotAtEnd": true
+        },
+        {
+            "triggerPt": 15,
+            "bg": "VillageBG/002-City of Falone",
+            "dialog": [
+                "Conrad:1:Hello, %playername%. I've received the report from the guild.",
+                "Conrad:1:Good jobs! You guys are more stronger than I expected!",
+                "%playername%:1:Thank you very much, we certain can’t win without Simon’s help",
+                "Conrad:3:It seems like you guys are getting along as well! I am glad.",
+                "Conrad:1:Sorry for so hurry, but I have another quests to you guys.",
+                "Conrad:1:There is a Magical Forest located west of The Great Plain. It was found that lots of creatures became hostile recently.I hope you guys can go and investigate.",
+                "%playername%:1:No problem, we can go right now.",
+                "Conrad:1:Thank you. Your duty is to help the mage there to inverstigate. It won’t be a very difficult task, that why I think it is suitable for you guys",
+                "Anson:3:Ok! Let go!",
+                "%playername%:1:(Magical Forest Unlocked)"
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 16,
+            "scene": "MainMenu",
+            "triggerMap": 2,
+            "bg": "Battle BG/003-Magical Forest BG",
+            "dialog": [
+                "%playername%:2:So, here is the magical forest",
+                "Anson:4:It’s beautiful…",
+                "Simon:6:It won’t last, the forest is keep being polluted",
+                "Anson:4:Why is that the case?",
+                "Simon:6:The reason is still unknown, but I heard that a research team is sent to here to investigate, we can find their camp",
+                "%playername%:1:We don’t know where the camp locate. But the team may hire people to help them, maybe we should also go to the guild to see if there’s any new quests",
+                "Anson:3:That’s good! Let’s go!"
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 17,
+            "scene": "City",
+            "triggerMap": 2,
+            "bg": "VillageBG/003-Magical Forest Research Camp",
+            "dialog": [
+                "Guild Receptionist:1:Hi! Can I help you?",
+                "%playername%:1:Is there any quests regrding the pollution research team?",
+                "Guild Receptionist:1:Yes, the team are currently finding someone to kill the monster threatening the camp. You can see it on the quest board.",
+                "Ted:8:So, are you folks the party that accpeted my quest?",
+                "Simon:1:Yes, you are...",
+                "Ted:1:I am Ted, the leader of the forest pollution research team",
+                "%playername%:2:What happened to the forest?",
+                "Ted:4:Well, just a month ago creatures in the forest starts to become hostile and attack people.",
+                "Ted:3:We suspect that they have been polluted by some unknown force.",
+                "Ted:2:Currently we need your help to collect some samples from the polluted creatures, do you think you can handle that.",
+                "%playername%:1:Sure!",
+                "Ted:8:To help you folks, I will send one of my student alongside with you.",
+                "Ted:1:Come here, Ivan",
+                "Ivan:1:Yes, teacher.",
+                "Ivan:8:Greeting, I am Ivan, the student of Ted The Great Mage, it is my pleasure to meet you guys",
+                "%playername%:7:Hello.(He is so handsome...)",
+                "Ted:8:My student will help you collect samples, the polluted creature in the forest are not easy to deal with, you will need help",
+                "%playername%:7:Thanks, we will go now."
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 18,
+            "scene": "Battle",
+            "triggerArea": 5,
+            "triggerBeforeBattle": false,
+            "bg": "VillageBG/003-Magical Forest Research Camp",
+            "dialog": [
+                "Ivan:1:Teacher, We’ve obtained the sample",
+                "Ted:8:Great, let me test out the sample",
+                "Ted:2:While I am examing the sample, can you collect more? This time from earth elemental",
+                "Anson:3:No Problem!",
+                "Ivan:2:Teacher, did you found out anything?",
+                "Ted:2:Yes, I think I did...Albeit little, all samples contains the power of demon.",
+                "%playername%:5:Demon?",
+                "Simon:5:The Demon race already invaded here? They should all in frontline, fighting with the army!",
+                "Ted:4:I believe some of them have already sneak pass the frontline, they are conducting experiment in this forest",
+                "Ivan:2:But this forest should be protected by the Green Dragon, he shouldn’t allow the demon to pollute the forest.",
+                "Ted:4:That’s my concern...Since there are no sign of Green Dragon appearing, it means that the Green Dragon may have been polluted as well…",
+                "Ivan:5:!!!",
+                "Ted:4:We have left no choice, Green Dragon will have to be defeated to stop the pollution.",
+                "%playername%:2:We’ll do it"
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 19,
+            "scene": "Battle",
+            "triggerArea": 10,
+            "triggerBeforeBattle": true,
+            "bg": "Battle BG/003-Magical Forest BG",
+            "dialog": [
+                "Ivan:2:Ok...The Green Dragon lives deep inside the forest, she is strong, we have to be well prepared. ",
+                "%playername%:1:(Kill the Green Dragon Boss in the last area of Magical Forest)",
+                "Simon:1:Ivan, you are really skillful at the magical art. Most of the mage in your age aren't as good as you.",
+                "Ivan:8:Thank you. This is because I am a student of Ted. He is one of the most powerful mage in the kingdom",
+                "Ivan:2:I am an orphan. My village was destroyed during the invasion of demon. After that Ted found me and adapted me as his student.",
+                "%playername%:6:I know... Seeing your friends and relatives died in front of you is just...",
+                "Anson:8:%playername%...",
+                "%playername%:6:My village was invaded by demons 10 years ago, and my parents lost their life during the invasion...",
+                "Simon:4:I am really sorry to hear that...",
+                "%playername%:6:No need for apologie. After the tredgy I swore to myself I have to become stronger, so that one day I'll defeat the demon army.",
+                "Ivan:3:......",
+                "%playername%:1:Sorry about the heavy topic, let's move forward"
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 20,
+            "scene": "Battle",
+            "triggerArea": 15,
+            "triggerBeforeBattle": true,
+            "bg": "Battle BG/003-Magical Forest BG",
+            "dialog": [
+                "Ivan:2:We are getting closer to the Green Dragon Nest, Be careful",
+                "Simon:15:I...I never fought a dragon before, are we really doing this...",
+                "Anson:3:If you're scared, I can become stand in the front!",
+                "%playername%:4:No, Anson. Your defense is not as good as Simon, let him be the front.",
+                "Simon:6:I...I guess I'll go to the front",
+                "Ivan:7:I'll support you guys with magic, let's do this!"
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 21,
+            "scene": "Battle",
+            "triggerArea": 20,
+            "triggerBeforeBattle": false,
+            "bg": "Battle BG/003-Magical Forest BG",
+            "dialog": [
+                "Ivan:4:What a tough fight...",
+                "%playername%:4:We got the teeth afterall, let hand it back to Ted."
+            ],
+            "plotPtIncrement": 1,
+            "startNextPlotAtEnd": true
+        },
+        {
+            "triggerPt": 22,
+            "bg": "VillageBG/003-Magical Forest Research Camp",
+            "dialog": [
+                "%playername%:1:This is the Green Dragon’s teeth, the prove of us killing the Dragon",
+                "Ted:8:Great! Now the largest problem is cleared, the forest should return to normal soon",
+                "Ivan:2:But teacher, the demon power…",
+                "Ted:4:Yes I know, this shouldn't happen. I will insepct on what causes the demon to appear in here",
+                "Ted:5:And there is a possibility… that there are traitor in our country",
+                "%playername%:5:!!!",
+                "Ted:4:it is just a hypothesis, I will continue to investigate on this issue",
+                "Ivan:2:teacher, I hava a request",
+                "Ivan:1:I want to join %playername%’s party",
+                "Ted:8:Hoho, go ahead. It's about time for you to go out and have some adventure",
+                "%playername%:1:Welcome to our party!",
+                "Anson:6:Our party is becoming stronger now!",
+                "Anson:3:Now what should we go next?",
+                "Ted:1:I heard that The Southern Island is being attacked by a huge sea monster, may be you guys can go to there",
+                "%playername%:3:Do you think we can handle a sea monster?",
+                "Anson:1:judging that we defeated a dragon, we could handle it no poblem",
+                "%playername%:1:(Southern Island Unlocked)"
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 23,
+            "scene": "MainMenu",
+            "triggerMap": 3,
+            "bg": "Battle BG/004-Southern Islands BG",
+            "dialog": [
+                "%playername%:1:So, we have arrived Southern Islands. Are you ok, Simon?",
+                "Simon:12:Yes, I... I think I am",
+                "Anson:3:You are so vunlerable for long rides! You thrown up so much!",
+                "%playername%:4:Anson, you shoudn't blame Simon, everyone have their weakness",
+                "Ivan:1:There is a Church of Light in the town, asking the church priest should be the best approach.",
+                "%playername%:5:Church of Light? Is it the church of the Godness of Light ?",
+                "Ivan:1:Yes, the church has a big influence in the south coast. They should know about the sea monster."
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 24,
+            "scene": "City",
+            "triggerMap": 3,
+            "bg": "VillageBG/004-Port Arugia",
+            "dialog": [
+                "Anson:3:The street is so different from the capital city. Smell of seas everywhere!",
+                "Ivan:1:Southern Islands Town is famous for fishing, most of the villager here are fisher.",
+                "Anson:6:Hey, shall we eat some seafood after we are done? I heard that the crab in here...",
+                "%playername%:5:Watchout!",
+                "Anson:8:(Bump) Oh I am sorry! Are you ok?",
+                "Jimmy:1:%noname%It's alright, I am fine.",
+                "Ivan:5:!!!",
+                "Ivan:5:Are you... a priest?",
+                "Jimmy:7:Yes, I am a apprentice priest of the Light of Church.I am Jimmy",
+                "%playername%:1:Do you know anything about the sea monster?",
+                "Jimmy:1:Yes! All other priest are talking about it. Many fisherman reported spotted a large shadow under the water.",
+                "Jimmy:4:And the fishing yield has been decreasing sharply since last month. The sea monster is distrbuting the local's marine ecosystem.",
+                "Ivan:2:Do uoy know anything about the sea monster?",
+                "Jimmy:1:Yes! There is a cave near the town. I used to went to there to play when I was young. It's the only cave nearby so I think the sea monster must be living in there.",
+                "%playername%:1:This seems like the way to go, should we go to check out the cave?",
+                "Anson:3:Why not? It doesn't take much time, we have to find the sea monster before other parties found it!",
+                "Jimmy:7:If you guys are going to the sea cave, I can go with you guys as a guide. My healing magic should helps a little when facing the monsters",
+                "%playername%:7:Thank you! Let's go! (Jimmy joined the party)"
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 25,
+            "scene": "Battle",
+            "triggerArea": 10,
+            "triggerBeforeBattle": true,
+            "bg": "Battle BG/004-Southern Islands BG",
+            "dialog": [
+                "%playername%:1:Is this the cave?",
+                "Ivan:2:I can feel the ominous magical energy... It is the same as the energy we encounter in magical forest",
+                "Anson:2:Do you mean the sea monster is also a devil's creatures?",
+                "Ivan:2:It could be the case. No matter what, we have to be careful.",
+                "Jimmy:5:Demons? Aren't they fighting with our soliders at the north frontline? How come they can get to here?",
+                "%playername%:2:someone is helping them passing through the frontline, I suspect.",
+                "Jimmy:5:How come this would be the case! Do you mean there are rebels in the kingdom?",
+                "Ivan:2:This is just our spectulation. Please don't tell anyone. Otherwise we are doomed.",
+                "Jimmy:6:But... why do you tell me this? I mean... we just met for several hours...",
+                "%playername%:1:Because you seems like trustable.",
+                "Jimmy:8:Th...Thank you..."
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 26,
+            "scene": "Battle",
+            "triggerArea": 20,
+            "triggerBeforeBattle": true,
+            "bg": "Battle BG/004-Southern Islands BG",
+            "dialog": [
+                "Simon:3:Can...Can you make the light brighter, Jimmy? It's... so dark in the front",
+                "Jimmy:2:Hey! How come you are so timid! Aren't you a man.",
+                "Anson:12:Simon, how come you are much timid than a girl!",
+                "Jimmy:7:Gir...Girl? I am a ... girl?",
+                "Anson:8:Did...did I said something wrong...?",
+                "Simon:10:Wait... Why the light is off? Help! Don't joke with me!",
+                "%playername%:4:(lit lighter)",
+                "Jimmy:6:I...I am sorry, but I am a guy. Please don't call me a girl.",
+                "Anson:9:But...but your face...",
+                "%playername%:2:Stop it, Anson. I don't want to cause any troble in a cave, especially a cave with a dangerous sea monster.",
+                "Jimmy:4:Alriight...Let's move"
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 27,
+            "scene": "Battle",
+            "triggerArea": 25,
+            "triggerBeforeBattle": true,
+            "bg": "Battle BG/004-Southern Islands BG",
+            "dialog": [
+                "Anson:1:Seems like it is the end of the cave, just a large underground pond",
+                "Ivan:4:Careful, I feel strong magical energy nearby...",
+                "Ivan:5:It's... under the pond!",
+                "%playername%:2:Careful it's coming! Simon get to the front !",
+                "Simon:12:Why me again...",
+                "Ivan:4:It's a Hydra! Careful guys!"
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 28,
+            "scene": "Battle",
+            "triggerArea": 25,
+            "triggerBeforeBattle": false,
+            "bg": "Battle BG/004-Southern Islands BG",
+            "dialog": [
+                "%playername%:6:That was a tough one...Everybody ok?",
+                "Simon:11:Not quite...The Hydra's attack is too strong, I am so tired now...",
+                "Jimmy:6:How come there is a Hydra here... Isn't it an abyss creature?",
+                "Ivan:4:It is.  The abyss creature only appear with demon's army.",
+                "Simon:13:Isn't it means that the demon army already came to here? That would be diasterious! Most military power have been sent to the frontline there is no enough defense power here!",
+                "%playername%:2:We have to report to Conrad immediately.",
+                "Anson:6:Then let's go back to the town first."
+            ],
+            "plotPtIncrement": 1,
+            "startNextPlotAtEnd": true
+        },
+        {
+            "triggerPt": 29,
+            "bg": "VillageBG/004-Port Arugia",
+            "dialog": [
+                "Jimmy:5:Are... Are you guys leaving now?",
+                "%playername%:1:Yes, we have a very important message to bring to the royal knight. Thank you Jimmy. It was a great journey with you.",
+                "Jimmy:6:Actually...can I come with you guys?",
+                "Simon:5:Really? Aren't you a apprentice priest? Can you just leave church like that? ",
+                "Jimmy:4:Actually my dream is to travel around and explore... I don't want to stay at this small town for the entire life like all other priests.",
+                "Jimmy:1:So I have already resigned my apprentice priest job. Please let me join your party!",
+                "%playername%:1:No problem, a prerist is always welocme for an adverturer party",
+                "Anson:7:Cool ! Finally we've got a girl...oh no boy in our party!",
+                "Anson:2:Why...Why are you calling me a girl again!",
+                "Anson:8:What!? I... just spoke too fast...",
+                "Jimmy:6:You...You are so mean!",
+                "%playername%:3:......",
+                "Anson:3:Ok, are we going now?",
+                "Simon:9:Hey guys! There is a royal knight in front of the inn. She wants to see us!"
+            ],
+            "plotPtIncrement": 1,
+            "startNextPlotAtEnd": true
+        },
+        {
+            "triggerPt": 30,
+            "bg": "VillageBG/004-Port Arugia",
+            "dialog": [
+                "Caroline:1:Hello, I am Caroline, royal knight of Falone Kingdom. ",
+                "Anson:6:Hello beaufiul lady! Are you giving us the reward for defeating the sea monster?",
+                "Simon:10:Anson!",
+                "Caroline:3:That's one of the thing.In addition I've brought to you guys another quest from the royal knight",
+                "Caroline:4:I know you guys just defeated the Hydra, but it is a urgent quest.",
+                "Simon:1:Can you tell us the detail of the quest?",
+                "Caroline:7:Of course. A few days ago the Royal Knight received a report about undeads attacking a village. Conrad was appointed to investigate this case",
+                "Caroline:6:But after his team enters the village, we suddenly lost communication with them.",
+                "Simon:5:Do you mean that they went missing ?",
+                "Caroline:6:It is very possible that they encountered something. However, we don't have enough manpower to search for them. Our battle situation with demons are not going well recently.",
+                "Anson:4:Mr. Conrad...",
+                "%playername%:2:Ok, we will accept the quest.",
+                "Caroline:7:Thanks. I am very worried about the situation of Conrad as well, he is a friend of mine... I hope he is OK.",
+                "Anson:6:Conrad is our firend as well, he is the one who invite us to the army. We can't leave him alone.",
+                "%playername%:2:Can you tell us how to get to Oakville village?",
+                "Caroline:1:Yes! I have a map of Oakville village with me. The only road to Oakville was blocked due to a recent earthquake. Now the only way to get to Oakville is through the Crystal Cave",
+                "Caroline:4:Please be careful. There are monster lives in the cave.",
+                "Anson:3:No worry! We are good at killing monsters!",
+                "Caroline:7:Thanks! I want to go search for Conrad as well, but I was appointed to go to the frontline.",
+                "Simon:1:Thank you Mrs Caroline! Hope you safe!",
+                "%playername%:2:If we are ready, let's head to Crystal Cave! (Crystal Cave unlocked)"
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 31,
+            "scene": "MainMenu",
+            "triggerMap": 4,
+            "bg": "Battle BG/005-Crystal Cave BG",
+            "dialog": [
+                "Anson:4:This cave is so beautiful! How come there are crystal all over the cave!",
+                "Simon:1:I've heard of this cave before. It used to be a crystal mine. But due to an accident it was abondanded till now.",
+                "Anson:4:What kind of Incident?",
+                "Simon:6:It is said that the miner has discovered a gate to the Underworld, causing the release of underworld monsters.",
+                "Anson:1:That is horrible! Hopefully we don't need to encounter the monster.",
+                "%playername%:2:Hey! Don't say strange things!",
+                "Jimmy:1:Let's move, we have to reach the village as soon as possible..",
+                "Jimmy:5:This cave is really filled with monster! It just make me think the rumor of underworld gate could be real",
+                "Anson:8:Is it true that there is really underworld monster deep under the cave?",
+                "Simon:12:The rumor may be real. Alought the offical said that it was due to cave collpse.",
+                "Ivan:2:Someone's in there!",
+                "Andy:5:%noname%......",
+                "Anson:12:He ran away...",
+                "Jimmy:5:Will he know something about the village? Should we find him and ask?",
+                "%playername%:6:We don't have that time. Let's go."
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 32,
+            "scene": "Battle",
+            "triggerArea": 10,
+            "triggerBeforeBattle": false,
+            "bg": "Battle BG/005-Crystal Cave BG",
+            "dialog": [
+                "Anson:12:Hey! Is this place we visited before? Who holds the map, let me have a look.",
+                "%playername%:6:Strange, the way we went should be correct.",
+                "Simon:6:Maybe the cave collpse changed the tunnels? Let's go that way instead.",
+                "Jimmy:3:Ivan, can you detect where is the exit?",
+                "Ivan:4:The magic power here is too chaotic. My detection magic is not usable",
+                "%playername%:4:Well, seems like we have to try this way.",
+                "%playername%:6:This place... Is it the exit?",
+                "Anson:9:No it is the enterance... we've went back to the enterance!",
+                "Ivan:2:......",
+                "Simon:10:Ivan, why...why are you keep staring at there... Is there any ghost",
+                "Ivan:1:Come out. Why are you keep stalking us.",
+                "Andy:1:%noname%......",
+                "%playername%:2:Is this your tick to trap us inside this cave?",
+                "Andy:3:%noname%I can help you guys find the exit of this cave.",
+                "Ivan:4:Why do you think I have to listen to such a supcisious person?",
+                "Jimmy:2:Wait, Ivan! Maybe he really can help us!",
+                "Ivan:2:I won't listen to a stranger that appears in a cave... and a necromancer.",
+                "Anson:4:Necromancer!",
+                "Ivan:2:Leader, it's your choice.",
+                "%playername%:4:......",
+                "%playername%:1:Can you help us to find a way to the exit? We will be very thankful.",
+                "Andy:1:Ok, follow me.",
+                "%playername%:1:Thank you! May I ask what is your name",
+                "Andy:1:Andy.(Andy joined the team)"
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 33,
+            "scene": "Battle",
+            "triggerArea": 20,
+            "triggerBeforeBattle": false,
+            "bg": "Battle BG/005-Crystal Cave BG",
+            "dialog": [
+                "%playername%:1:So, do you know what happnened in this cave?",
+                "Andy:1:The Minotaur. Its magical ability is to create a maze that once entered, is impossible to get out.",
+                "Simon:10:So, the tale of underworld is real?",
+                "Andy:4:Yes. The miner did opened the underworld gate and the Minotaur is released.",
+                "Simon:11:Sounds horrible...",
+                "Andy:1:The only way to find the exit is to defeat the Minotaur.",
+                "%playername%:2:Wait! How come Conrad's team can pass through the cave without defeating it?",
+                "Andy:1:Conrad?",
+                "%playername%:6:Yes, a team of knight that passed through serveal dats ago.",
+                "Andy:3:I don't know. Only you guys got into the cave in this few month.",
+                "%playername%:5:That's impossible! If Conrad didn't pass through the cave, how did they get into the village?",
+                "%playername%:5:Andy, how come you wind up in the cave?",
+                "Andy:3:......",
+                "Ivan:4:Hey! The fact that we are following you doesn't mean that we are fully trusting you! You are still supcicous!",
+                "Anson:4:How come Ivan's acting so bad towards the Necromancer",
+                "Jimmy:5:No wonder. Necromancers are considered outcast of mages, they use ominous dark magic and did a lot of bloody experiments",
+                "Andy:8:i don't want to talk about it right now",
+                "Ivan:4:You ....!",
+                "%playername%:2:Ivan and Andy! Clam down!",
+                "Ivan:3:Sorry... I was a bit too raged",
+                "%playername%:1:It was ok, Andy.You can talk about it next time. Let's continue moving."
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 34,
+            "scene": "Battle",
+            "triggerArea": 30,
+            "triggerBeforeBattle": true,
+            "bg": "Battle BG/005-Crystal Cave BG",
+            "dialog": [
+                "Andy:2:It's there!",
+                "%playername%:5:Damn! It's coming! Get ready for a tough fight!"
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 35,
+            "scene": "Battle",
+            "triggerArea": 30,
+            "triggerBeforeBattle": false,
+            "bg": "Battle BG/005-Crystal Cave BG",
+            "dialog": [
+                "%playername%:4:Guys... we did it! Are everybody OK?",
+                "Simon:12:My arms' so strain right now... Can't even lift my shield...",
+                "Jimmy:1:Now the Minotaur is defeated, the cave should return to normal. Can you detect any changes Ivan?",
+                "Ivan:2:No, the magic power here is still chaotic.",
+                "Andy:1:Follow me to the exit.",
+                "Andy:1:Here is the exit.",
+                "Simon:5:I can't believe... defeats the Minotaur really changed back the cave.",
+                "Ivan:1:......",
+                "Ivan:2:I am sorry for... suspecting you...",
+                "Andy:1:Let's leave the cave.",
+                "%playername%:1:OK. Wait, are you coming with us as well?",
+                "Andy:3:Yes, I have something to do at Oakville. I'll follow you guys for a little more.",
+                "%playername%:1:It's time... let see what happened in the village...(Haunted Wood Unlocked)"
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 36,
+            "scene": "MainMenu",
+            "triggerMap": 5,
+            "bg": "Battle BG/006-Haunted Forest BG",
+            "dialog": [
+                "Jimmy:2:What happened with so many undeads in the forest?",
+                "Andy:1:Undeads can only be summoned from corpse using dark magic, with this amount of undeads lots of corpse must be prepared first. ",
+                "Andy:1:Corpse can be digged up from the graveyard, but for conveient sake most necromacner will take another route.",
+                "Simon:5:Are...Are you talking about...",
+                "Andy:3:Yes, to create corpse on the fly.",
+                "Ivan:3:Anyway let's get to the town first, then we can see what's happened there."
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 37,
+            "scene": "Battle",
+            "triggerArea": 10,
+            "triggerBeforeBattle": false,
+            "bg": "Battle BG/006-Haunted Forest BG",
+            "dialog": [
+                "Jimmy:2:Town square is filled with blood...how curel...",
+                "Ivan:2:Let me check the bodies real quick.",
+                "Andy:1:I'll help you as well",
+                "Simon:4:I hope Conrad is still fine...",
+                "Anson:5:Don't say silly things!He won't die so easily!",
+                "%playername%:6:No matter what our searching will still carry on until we found him or his remains.",
+                "Ivan:2:Leader, I've finished the research of the corpses.",
+                "%playername%:4:What conclusion you drew?",
+                "Ivan:1:The people was surely killed by dark mgaic. We found the trace on dark magic on their bodies.",
+                "Andy:1:We also found this.",
+                "%playername%:6:Royal Knight Sign...",
+                "Ivan:1:We don't see any trace of fighting, so we think all people in here are killed by magic rituals.",
+                "%playername%:2:Do you have any idea of where the ringleader will be?",
+                "Ivan:1:I can't sure where the ritual locate, let go around this town to find more evidences."
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 38,
+            "scene": "Battle",
+            "triggerArea": 20,
+            "triggerBeforeBattle": false,
+            "bg": "Battle BG/006-Haunted Forest BG",
+            "dialog": [
+                "%playername%:2:We've circuled the town for one around, did you found anything Ivan?",
+                "Ivan:1:Yes I did. We found that the riutal's sources should be in the town's graveyard. 15 kilo away from the town.",
+                "%playername%:2:OK. Let's have a rest in the town tonight. We'll head to the graveyard tomorrow.",
+                "Simon:10:Are...Are we really going to set up camps in here? I means... look at all those corpse...",
+                "Jimmy:3:Or you want to go to the wild and got attacked by all the undeads?",
+                "%playername%:1:Jimmy is correct. We have shelters and undeads seems not interested in getting in here. We'll set camp in here.",
+                "Jimmy:7:Finally we can have a rest.",
+                "Simon:4:Yeah my tension is so stressed after I came to here.",
+                "Andy:1:I will go to other place to rest",
+                "%playername%:2:Is that OK? It might be unsave out there.",
+                "Andy:3:Don't worry, I'll come back before dawn. You guys won't want to sleep with a stranger right?",
+                "%playername%:4:If you insist, The I guess it's fine.",
+                "Ivan:2:Leader, do you want me to monitor him? Although he helped us before...",
+                "%playername%:1:It's OK, Ivan, let just have a rest together.",
+                "Jimmy:2:%playername%, what do you think about Andy said that he never see Conrad passing the Crystal Cave?",
+                "%playername%:4:But we did found royal knight's bodies in here. So I am sure they went into the town.",
+                "Jimmy:5:This means either Andy is lying to us, or Conrad used other ways to get into the town.",
+                "Ivan:1:Actually , they might be teleported into the town, if Andy is not lying about that.",
+                "Anson:10:Andy...what actually is his identity.",
+                "%playername%:4:......",
+                "%playername%:1:Let's sleep... I have a feeling that we will find the answer out very shortly."
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 39,
+            "scene": "Battle",
+            "triggerArea": 30,
+            "triggerBeforeBattle": false,
+            "bg": "Battle BG/006-Haunted Forest BG",
+            "dialog": [
+                "%playername%:2:Everybody OK now?",
+                "Ivan:1:Yes leader.",
+                "%playername%:6:OK, let's head to the graveyard... to end this all..."
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 40,
+            "scene": "Battle",
+            "triggerArea": 35,
+            "triggerBeforeBattle": true,
+            "bg": "Battle BG/006-Haunted Forest BG",
+            "dialog": [
+                "Anson:5:See! there is a red light growing there!",
+                "Ivan:4:It's the center of the graveyard, let's hurry up!",
+                "Anson:8:This...Could this be the ritual?",
+                "Matius:1:%noname%Yes, that right.",
+                "Anson:5:Who...Who are you !?",
+                "Matius:1:Greeting. I am Matius.",
+                "Andy:2:Matius...I finally found you.",
+                "Matius:9:Oh, isn't it my student Andy? You havn't grown a lot, isn't it?",
+                "Andy:1:My growth is already stopped when you turned me into a necromancer... I can't believe that you are having deals with the demons!",
+                "Anson:5:!!!",
+                "Matius:11:My dear student, you know magician aren't always royal to the country... to seek for power they can go very far...",
+                "Anson:5:Turning self into a necromancer isn't the correct way to seek stronger power !",
+                "Matius:9:There is no right or wrong in the field of magic... Only magical principle is the eternally.",
+                "Matius:11:So, enough chatting, I am very busy. Maybe you kids can play with my minions more, but I have to go...",
+                "Matius:9:I guess you kids will have a good time with him. Come forward, my minion.",
+                "%playername%:5:You... You are...",
+                "Conrad:16:Protect...Ritual...Invader...Execute...",
+                "%playername%:5:Conrad! It's us, what are you doing!",
+                "Ivan:4:Leader, he is already being controlled! He won't be able to listen to us!",
+                "Jimmy:2:He's coming! Everybody prepared!"
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 41,
+            "scene": "Battle",
+            "triggerArea": 35,
+            "triggerBeforeBattle": false,
+            "bg": "Battle BG/006-Haunted Forest BG",
+            "dialog": [
+                "Anson:1:Did...did we stopped him?",
+                "%playername%:5:Conrad...Conrad!",
+                "Conrad:9:Oh... it is %playername% and Anson... You guys looks fine...",
+                "%playername%:2:Jimmy ! Can you help to heal Conrad?",
+                "Jimmy:6:I'll try.",
+                "Conrad:9:Haha...It's good to see you again, %playername% and Anson, Seems like you have found a lot of friends with you...",
+                "%playername%:2:It doesn't matter! Now we have to heal you!",
+                "Conrad:11:I know I am not gonna to make it... But at least I want to tell you something before I go...",
+                "Conrad:13:%playername%, stay strong... don't be fooled by the evils... Always walk the correct path...",
+                "Conrad:13:Trust your partners... they are very impoertant to you in a party...",
+                "Conrad:11:And one last thing... tell Caroline that I am very sorry... that I always make her pay when we drink together...",
+                "%playername%:5:Wait, Conrad...!",
+                "Jimmy:4:......",
+                "Ivan:3:He's gone, leader..."
+            ],
+            "plotPtIncrement": 1,
+            "startNextPlotAtEnd": true
+        },
+        {
+            "triggerPt": 42,
+            "bg": "Battle BG/006-Haunted Forest BG",
+            "dialog": [
+                "%playername%:6:I know...",
+                "Anson:1:The gravestone is done... Although it is just a simple one.",
+                "%playername%:1:Thanks, Anson.",
+                "Jimmy:4:Now what should we do.",
+                "%playername%:2:We will have to report this to Royal Knight and Caroline.",
+                "Andy:1:Sorry... my teacher... I've already chasing him for months.I can't believe that he is doing such kind of things.",
+                "Andy:4:After I entered the crystal cave my teacher summoned the Minotaur from the underworld to lock me up. I havn't been able to defeat the Minotaur by myself.",
+                "%playername%:1:Don't worry, Andy. You've helped us a lot. ",
+                "Andy:1:I think I will go to Buring Desert to search for Matius.",
+                "%playername%:5:Really? Why there?",
+                "Andy:1:I heard that there is a big group of demon hiding in there. Maybe Matius are with them.",
+                "%playername%:1:OK. We will to join you after we report to the Royal Knight.",
+                "Andy:5:Really !? But...but you guys don't need to involve in it, it is just the matters between me and Matius.",
+                "%playername%:1:What are you saying? You are a member of our party now. In a party members should always stay together!",
+                "Andy:5:Really... Thank you.",
+                "%playername%:2:Guys, let's head to the buring desert after we've done our jobs. (Buring Desert unlocked)"
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 43,
+            "scene": "MainMenu",
+            "triggerMap": 6,
+            "bg": "Battle BG/007-Burning Desert BG",
+            "dialog": [
+                "Anson:15:It's really hot out here!",
+                "Jimmy:4:I...I can't walk anymore... Give me some water...",
+                "%playername%:8:You just drunk 5 minutes ago! We have to preserves our water otherwise we are doomed!",
+                "Jimmy:3:No way... Hey Ivan! Why don't you create some water using water magic?",
+                "Ivan:1:The water eleement in this region is too low, I can squeeze maybe one or two drop of water only.",
+                "%playername%:4:30 minutes later and I'll give you another sap, OK? Just hold on for 30 more minutes!",
+                "Ivan:1:How far are we from the City of Anzor?",
+                "%playername%:2:According to the map we still need to walk for 2 days.If we don't speed up it will cost more time",
+                "Ivan:1:The sun is about to set, let's set up camp at this cave on the map.It's just 2 miles away",
+                "Anson:3:Great! We can finally have a rest!"
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 44,
+            "scene": "Battle",
+            "triggerArea": 10,
+            "triggerBeforeBattle": false,
+            "bg": "Battle BG/007-Burning Desert BG",
+            "dialog": [
+                "Anson:1:Is this the cave mapped on the map?",
+                "Ivan:1:It should be, It's a small cave that are fairly used by travlers who are going to Anzor.",
+                "Anson:4:Does it means that there is a chance that other people may occupied this cave already",
+                "Ivan:2:Yes, and it seems like we are in this situation now.",
+                "Ivan:1:Let me handle this",
+                "Ivan:8:Hello, two ladies. Nice to meet you. We are a group of travlers who are finding a shelter to rest. ",
+                "Ivan:1:May I ask if both ladies can share this cave with us?",
+                "Katie:5:%noname%Oh...I have not problem but...",
+                "Chi Ka:3:%noname%Hey Katie! Why do we have to share our cave with these lower form humans!",
+                "Anson:4:Lower form......humans?",
+                "Katie:4:%noname%Stop it, Chi Ka! This cave aren't occupied by us, there are also spare spaces in here as well.",
+                "Katie:4:I am sorry. My firend is a bit...special. Please don't mind what she just said."
+            ],
+            "plotPtIncrement": 1,
+            "startNextPlotAtEnd": true
+        },
+        {
+            "triggerPt": 45,
+            "bg": "Battle BG/007-Burning Desert BG",
+            "dialog": [
+                "Ivan:8:No, we are grateful that you two can share the cave with us.",
+                "%playername%:1:The food is ready, please enjoy.",
+                "Chi Ka:5:Oh this is amazing...! I fell that my body is much more powerful than before, this must be a legendary tier food!",
+                "Simon:1:Actually it is just a normal barbecued sandfish...",
+                "%playername%:1:Oh yes, I forgot to ask about you two's name. I am %playername%, leader of this team. How about yours?",
+                "Katie:1:I am Katie the Archer and she is Chi Ka the Assassin. We are a pair of friends",
+                "Simon:1:I see! It seems like you two aren't human race.",
+                "Katie:1:Yes! I come form the Elves and Chi Ka come from the Ogers ",
+                "Chi Ka:1:Wait!I am not an oger. I come from the Ancient Khajiit races!",
+                "Katie:4:This race doesn't even exist!",
+                "%playername%:2:Chi Ka, but why are you wearing an eyemask? Did you got hurt in a previous battle?",
+                "Chi Ka:1:This eyemask suppress the power of my eye. Once the eyemask is taken of the forbidden power of my eye will be unleashed...",
+                "%playername%:5:Oh!...That's...frightening...",
+                "Katie:4:Chi Ka, How many time I told you not to speaks these nonsense...",
+                "%playername%:1:Haha,that's fine.May I ask if you two are going to Anzor as well? If you don't mind how about we go together tomorrow?",
+                "Katie:7:Sure! It'll be safer this way! (Katie and Chi Ka followed the party)"
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 46,
+            "scene": "City",
+            "triggerMap": 6,
+            "bg": "Battle BG/007-Burning Desert BG",
+            "dialog": [
+                "Anson:3:Shower! I need a shower so bad!",
+                "%playername%:4:Well let us find a place to sattle first.",
+                "Katie:7:This journey was great! Thank you all. Hope to see you all soon!",
+                "Chi Ka:1:Hmmm, you humans' strength are stronger than what I expected. Still very weak compare to us though.",
+                "Anson:16:We'll be much stronger when we meet again! See you!",
+                "Ivan:8:See you, two ladies! It was a great honor to meet you two."
+            ],
+            "plotPtIncrement": 1,
+            "startNextPlotAtEnd": true
+        },
+        {
+            "triggerPt": 47,
+            "scene": "Battle",
+            "triggerArea": 20,
+            "triggerBeforeBattle": false,
+            "bg": "Battle BG/007-Burning Desert BG",
+            "dialog": [
+                "Simon:1:Finally a fluffy bed! I've had enought of sleeping bags!",
+                "%playername%:1:Too bad we couldn't out what is the reason of the two girls coming to Anzor. Will they know anything about Matius?",
+                "Ivan:1:Probably not, Maybe they are just coming to shopping. I know there are many special gourments and souvenir that is only available in here.",
+                "Jimmy:7:Ah! The Buring Desert Kebab right? I want to try it for a long time!",
+                "%playername%:1:Don't worry, we have plently of time to try while staying in Anzor. Our primary misson is to search for Matius.",
+                "%playername%:2:Before that, let's have a rest tonight, we'll start collecting information tomorrow."
+            ],
+            "plotPtIncrement": 1,
+            "startNextPlotAtEnd": true
+        },
+        {
+            "triggerPt": 48,
+            "dialog": [
+                "%playername%:1:Ok,how's everyone's result after a day of gathering?",
+                "Ivan:2:Me and Simon have gone through a lot of pubs. But we didn't find any information that's wroth mentioning.",
+                "%playername%:2:Andy and Jimmy, how about you two?",
+                "Andy:3:......",
+                "Jimmy:4:Actually we went to shop all day, so...",
+                "%playername%:4:Okok...I knew that I shouldn't count on you two...",
+                "%playername%:1:Anyway, me and Anson did found out some info about Matius",
+                "Simon:5:Really? What's that?",
+                "%playername%:2:According to one gate guard,he saw a person with black clove went to the old ruins west of Anzor.",
+                "Jimmy:6:Isn't that the ruin of city of Quza?The ancient desert city that got destroyed due to a sandstorm.",
+                "Ivan:2:This is really supicious, Quza had nothing but dangerous monsters. Why would he go to there?",
+                "%playername%:1:I don't know. Since we have no other info we might as well check out the ruin first."
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 49,
+            "scene": "Battle",
+            "bg": "Battle BG/007-Burning Desert BG",
+            "triggerArea": 30,
+            "triggerBeforeBattle": false,
+            "dialog": [
+                "Chi Ka:2:Here, Matius should be inside this tomb.",
+                "Ivan:2:There is a intense amount of dark magic inside... Be careful",
+                "Chi Ka:3:The smell of blood as well, so it must be that guy",
+                "Chi Ka:4:Finally... It's time for revenage...I won't forgive him!",
+                "%playername%:5:Chi Ka, what is the meaning of revenage? What did he do to you?",
+                "Chi Ka:3:He raided our villages with lots of undeads... I have managed to escape but lots of the villager, including my parents, lose their life due to the raid.",
+                "%playername%:4:I am sorry to hear that, I will assure that Matius will get his payback really soon. ",
+                "%playername%:1:Let's go... careful, everyone."
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 50,
+            "scene": "Battle",
+            "triggerArea": 40,
+            "bg": "Battle BG/007-Burning Desert BG",
+            "triggerBeforeBattle": true,
+            "dialog": [
+                "Ivan:1:Matius!",
+                "Matius:1:Oh everyone, it wasn't long ago and we meet again.Welcome, welcome to my operation base",
+                "Chi Ka:3:I finally found you! Didn't you forgot how you did to Camer Town?",
+                "Matius:1:Oh that little oger town... I see, you come from there, right? I am so sorry about that",
+                "Matius:8:It was totally an accident, I was doing some experiement nearby and my undead army suddenly out of control...",
+                "Katie:2:Shut up you bastard! I'll make you pay for all the lifes you took!",
+                "Matius:1:Well I'd like to settle with you guys today but... Unfortunely I have some other things to do so... You'll have to wait",
+                "Matius:8:Oh yeah I suppose you can play with my pet for a bit, He is my latest work, you guys will have a good time with him.",
+                "Matius:8:And if you guys can survive... Come to Vulkan Valcano to find me. See you later.",
+                "%playername%:5:Wait!",
+                "Simon:4:He's gone, but now just put that aside, we have a more serious problem now...",
+                "Katie:5:This is ... a dragon? Skeletal Dragon?",
+                "Jimmy:2:Carefull, he is coming!"
+            ],
+            "plotPtIncrement": 1
+        },
+        {
+            "triggerPt": 51,
+            "scene": "Battle",
+            "triggerArea": 40,
+            "bg": "Battle BG/007-Burning Desert BG",
+            "triggerBeforeBattle": false,
+            "dialog": [
+                "Anson:2:Finally...",
+                "Jimmy:2:Everybody Ok? I'll come to heal you guys now.",
+                "%playername%:4:So... our next destination is Vulkan Volcano?",
+                "Ivan:2:Seems like it. I don't think he is missleading us.",
+                "Katie:1:Vulkan Volcano... isn't it the battlefield of Demons and the Emprials?",
+                "Simon:2:Yes, I am not sure why Matius has to go to that place...",
+                "%playername%:4:Ok, we'll go as soone as possible, we don't know what his next destination is after Vulkan Volcano.We have to catch him before his move again.",
+                "Katie:7:Me and Chi Ka will come with you guys. We have to see Matius being judged",
+                "%playername%:1:Welcome to our party! Katie and Chi Ka! "
+            ],
+            "plotPtIncrement": 1
+        }
+    ]
+}

@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace RPG
 {
+    /// <summary>
+    /// Contains all public sprite resources
+    /// </summary>
     public static class SpriteManager
     {
         public static Sprite basicBoxSelected { set; get; }

@@ -4,6 +4,9 @@ using UnityEngine;
 using System.Linq;
 namespace RPG
 {
+    /// <summary>
+    /// Represent a player party
+    /// </summary>
     public class Party
     {
         private BattleCharacter[] battleParty;
@@ -37,12 +40,18 @@ namespace RPG
             */
 
         }
-
+        /// <summary>
+        /// Get all player character that is in the first column (will go to battle)
+        /// </summary>
         public BattleCharacter[] getAllBattleCharacter()
         {
             return battleParty.Where(a => (a.unlocked == true) && a.listPos < 4).ToArray();
         }
 
+        /// <summary>
+        /// Get all available characters in the party
+        /// </summary>
+        /// <returns>A list of available character ordered according to predefined position in selection menu</returns>
         public BattleCharacter[] getAllUnlockedCharacter()
         {
             BattleCharacter[] list = new BattleCharacter[8];
@@ -77,6 +86,10 @@ namespace RPG
                     return list;
                 }*/
 
+        /// <summary>
+        /// Create a list of EntityPlayer from the first column of the selection menu
+        /// </summary>
+        /// <returns>A list of EntityPlayer object represent the party member that join the battle</returns>
         public EntityPlayer[] createBattleParty()
         {
 
@@ -92,6 +105,9 @@ namespace RPG
             return elist.ToArray(); ;
         }
 
+        /// <summary>
+        /// Unlock a specific character
+        /// </summary>
         public void unlockCharacter(int pos)
         {
             if (pos > 0 && pos < battleParty.Length)
@@ -146,6 +162,9 @@ namespace RPG
             }
         }
 
+        /// <summary>
+        /// Testing purpose, unlock all member from start
+        /// </summary>
         public void unlockAllMember()
         {
             foreach (BattleCharacter ch in battleParty)
@@ -154,6 +173,9 @@ namespace RPG
             }
         }
 
+        /// <summary>
+        /// Testing purpose, learn all skill from start
+        /// </summary>
         public void learntAllSkill()
         {
             foreach (BattleCharacter ch in battleParty)

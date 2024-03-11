@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace RPG
 {
+    /// <summary>
+    /// Contains all keys that will be used by SaveManager to save player data
+    /// </summary>
     public static class SaveKey
     {
         public const string playerName = "playerName";

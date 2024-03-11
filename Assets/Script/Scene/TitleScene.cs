@@ -23,6 +23,8 @@ public class TitleScene : BasicScene
 
     public void onClickStartGame()
     {
+        DB.LoadGameData();
+        Game.initialize();
         if (SaveManager.getBool(SaveKey.played_before))
         {
             Game.loadGame();

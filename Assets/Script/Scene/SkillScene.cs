@@ -28,7 +28,7 @@ public class SkillScene : BasicScene
     public override void onSelectCharacter(int id, BattleCharacter character)
     {
         this.selectedMemberId = id;
-        skillList = character.job.GetGeneralSkills();
+        skillList = character.job.GetLearntSkills();
         int noOfBox = skillList.Count;
         Transform contentTran = scrollViewContent.transform;
 

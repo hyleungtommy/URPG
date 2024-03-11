@@ -4,6 +4,9 @@ using UnityEngine;
 using System.Linq;
 namespace RPG
 {
+    /// <summary>
+    /// Represent a player class
+    /// </summary>
     public class Job
     {
         public string name { get; set; }
@@ -20,7 +23,11 @@ namespace RPG
             skills = new List<GeneralSkill>();
         }
 
-        public List<Skill> createSkillList()
+        /// <summary>
+        /// Create a skill list when creating an entity
+        /// </summary>
+        /// <returns>A list of skills that the entity player has</returns>
+        public List<Skill> CreateEntityPlayerSkillList()
         {
             List<Skill> slist = new List<Skill>();
             for (int i = 0; i < skills.Count; i++)
@@ -35,11 +42,19 @@ namespace RPG
             return slist;
         }
 
-        public List<GeneralSkill> GetGeneralSkills()
+        /// <summary>
+        /// Get all skills that the character learnt
+        /// </summary>
+        /// <returns>A list of skills that character learnt</returns>
+        public List<GeneralSkill> GetLearntSkills()
         {
             return skills.Where(a => a != null && a.skillLv > 0).ToList();
         }
 
+        /// <summary>
+        /// Get all skills that the character has not yet learn
+        /// </summary>
+        /// <returns>A list of skills that character has not yet learn</returns>
         public List<GeneralSkill> GetLearnableSkills(BattleCharacter ch)
         {
             return skills.Where(a => a != null && a.reqLv <= ch.lv).ToList();

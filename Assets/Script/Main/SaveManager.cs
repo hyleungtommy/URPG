@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace RPG
 {
+    /// <summary>
+    /// A wrapper class on PlayerPrefs to save player data
+    /// </summary>
     public static class SaveManager
     {
         public static void saveValue(string savekey, string value)

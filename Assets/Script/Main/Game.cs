@@ -8,7 +8,7 @@ namespace RPG
     {
         public static string playerName = "Tommy";
         public static int money = 99999;
-        public static Map currLoc = DB.maps[0]; // testing only
+        public static Map currLoc = null; // testing only
         public static int currentMapMode = 0;
         public static Party party;
         public static bool currInCity = false;
@@ -18,13 +18,14 @@ namespace RPG
         public static CraftSkillManager craftSkillManager;
         public static bool rareEnemyAppeared = false;
         public static int difficulty = 1;
-        
 
-        static Game()
-        {
+        public static void initialize(){
             party = new Party();
             inventory = new StorageSystem(Param.invSize);
             craftSkillManager = new CraftSkillManager();
+            if(DB.maps != null){
+                currLoc = DB.maps[0];
+            }
         }
 
         public static void saveGame()
@@ -56,6 +57,7 @@ namespace RPG
 
         public static void loadGame()
         {
+            initialize();
             //Game Info
             playerName = SaveManager.getString(SaveKey.playerName);
             money = SaveManager.getInt(SaveKey.playerMoney);
