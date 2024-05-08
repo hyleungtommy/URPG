@@ -61,7 +61,7 @@ namespace RPG
                 }
 
             }
-            if (Game.currLoc.currArea == Game.currLoc.maxArea)
+            if (Game.currLoc.currZone == Game.currLoc.maxZone)
             {
                 bossFight = true;
             }
@@ -69,7 +69,7 @@ namespace RPG
             {
                 bossFight = false;
             }
-            virtualInventory = Game.inventory.createVirtualItemInv();
+            virtualInventory = Game.inventory.CreateVirtualItemInv();
             battleState = BATTLE_RUNNING;
         }
         private Entity getFriction(int friction, int index)
@@ -366,7 +366,7 @@ namespace RPG
             //Debug.Log(levelPanality);
             int totalEXP = 0;
             for (int i = 0; i < enemyParty.Length; i++)
-                totalEXP += Mathf.FloorToInt((enemyParty[i] as EntityEnemy).dropEXP * levelPanality * Param.expRatio * (1 + Game.currLoc.currArea * Param.areaRewardMultiplier));
+                totalEXP += Mathf.FloorToInt((enemyParty[i] as EntityEnemy).dropEXP * levelPanality * Param.expRatio * (1 + Game.currLoc.currZone * Param.areaRewardMultiplier));
             //Debug.Log("getTotalEXPGain() =" + totalEXP);
             return totalEXP;
         }
@@ -375,7 +375,7 @@ namespace RPG
         {
             int totalMoney = 0;
             for (int i = 0; i < enemyParty.Length; i++)
-                totalMoney += Mathf.FloorToInt((enemyParty[i] as EntityEnemy).dropMoney * (1 + Game.currLoc.currArea * Param.areaRewardMultiplier));
+                totalMoney += Mathf.FloorToInt((enemyParty[i] as EntityEnemy).dropMoney * (1 + Game.currLoc.currZone * Param.areaRewardMultiplier));
             //Debug.Log ("getTotalMoneyGain() =" + totalMoney);
             return totalMoney;
         }

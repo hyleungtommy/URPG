@@ -32,7 +32,7 @@ public class HeaderCtrl : BasicScene
             currAreaPanel.gameObject.SetActive(!Game.currInCity);
             if (!Game.currInCity)
             {
-                currArea.text = (Game.currLoc.currArea.ToString() + "/" + Game.currLoc.maxArea);
+                currArea.text = (Game.currLoc.currZone.ToString() + "/" + Game.currLoc.maxZone);
                 currLoc.text = Game.currLoc.name;
             }
             else

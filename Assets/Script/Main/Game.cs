@@ -41,7 +41,7 @@ namespace RPG
             List<int> mapAreas = new List<int>();
             foreach (Map m in DB.maps)
             {
-                mapAreas.Add(m.currArea);
+                mapAreas.Add(m.currZone);
             }
             string mapAreaSave = string.Join("|", mapAreas);
             Debug.Log(SaveKey.map_areas + ":" + mapAreaSave);
@@ -72,7 +72,7 @@ namespace RPG
             {
                 if (i < mapAreas.Length)
                 {
-                    m.currArea = int.Parse(mapAreas[i]);
+                    m.currZone = int.Parse(mapAreas[i]);
                 }
                 i++;
             }

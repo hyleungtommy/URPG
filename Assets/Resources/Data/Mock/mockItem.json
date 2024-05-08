@@ -1,0 +1,1289 @@
+{
+    "Items": [
+      {
+        "id": 1,
+        "name": "Healing Potion I",
+        "desc": "Recover 10% Max HP, at minimum recover 500 HP",
+        "type": "HP Potion",
+        "img": "I000",
+        "buyPlace": "Shop",
+        "sellPrice": 5,
+        "rarity": 0,
+        "minHealAmount": 500,
+        "healPercentage": 0.1,
+        "price": 50,
+        "craftRecipe": {
+          "requireItem": ["I056"],
+          "requireQty": [1],
+          "requireMoney": 5,
+          "requireLevel": 1
+        }
+      },
+      {
+        "id": 2,
+        "name": "Healing Potion II",
+        "desc": "Recover 20% Max HP, at minimum recover 2000 HP",
+        "type": "HP Potion",
+        "img": "I001",
+        "buyPlace": "Shop",
+        "sellPrice": 20,
+        "rarity": 0,
+        "minHealAmount": 2000,
+        "healPercentage": 0.2,
+        "price": 200,
+        "craftRecipe": {
+          "requireItem": ["I056"],
+          "requireQty": [3],
+          "requireMoney": 10,
+          "requireLevel": 2
+        }
+      },
+      {
+        "id": 3,
+        "name": "Healing Potion III",
+        "desc": "Recover 30% Max HP, at minimum recover 10000 HP",
+        "type": "HP Potion",
+        "img": "I002",
+        "buyPlace": "Shop",
+        "sellPrice": 50,
+        "rarity": 1,
+        "minHealAmount": 10000,
+        "healPercentage": 0.3,
+        "price": 500,
+        "craftRecipe": {
+          "requireItem": ["I056"],
+          "requireQty": [5],
+          "requireMoney": 15,
+          "requireLevel": 3
+        }
+      },
+      {
+        "id": 4,
+        "name": "Healing Potion IV",
+        "desc": "Recover 40% Max HP, at minimum recover 50000 HP",
+        "type": "HP Potion",
+        "img": "I003",
+        "buyPlace": "Shop",
+        "sellPrice": 100,
+        "rarity": 1,
+        "minHealAmount": 50000,
+        "healPercentage": 0.4,
+        "price": 1000,
+        "craftRecipe": {
+          "requireItem": ["I056"],
+          "requireQty": [7],
+          "requireMoney": 20,
+          "requireLevel": 4
+        }
+      },
+      {
+        "id": 5,
+        "name": "Healing Potion V",
+        "desc": "Recover 50% Max HP, at minimum recover 100000 HP",
+        "type": "HP Potion",
+        "img": "I004",
+        "buyPlace": "Shop",
+        "sellPrice": 500,
+        "rarity": 2,
+        "minHealAmount": 100000,
+        "healPercentage": 0.5,
+        "price": 5000,
+        "craftRecipe": {
+          "requireItem": ["I056"],
+          "requireQty": [10],
+          "requireMoney": 25,
+          "requireLevel": 5
+        }
+      },
+      {
+        "id": 6,
+        "name": "MP Potion I",
+        "desc": "Recover 10% Max MP, at minimum recover 500 MP",
+        "type": "MP Potion",
+        "img": "I005",
+        "buyPlace": "Shop",
+        "sellPrice": 5,
+        "rarity": 0,
+        "minHealAmount": 500,
+        "healPercentage": 0.1,
+        "price": 50,
+        "craftRecipe": {
+          "requireItem": ["I057"],
+          "requireQty": [1],
+          "requireMoney": 5,
+          "requireLevel": 1
+        }
+      },
+      {
+        "id": 7,
+        "name": "MP Potion II",
+        "desc": "Recover 20% Max MP, at minimum recover 2000 MP",
+        "type": "MP Potion",
+        "img": "I006",
+        "buyPlace": "Shop",
+        "sellPrice": 20,
+        "rarity": 0,
+        "minHealAmount": 2000,
+        "healPercentage": 0.2,
+        "price": 200,
+        "craftRecipe": {
+          "requireItem": ["I057"],
+          "requireQty": [3],
+          "requireMoney": 10,
+          "requireLevel": 2
+        }
+      },
+      {
+        "id": 8,
+        "name": "MP Potion III",
+        "desc": "Recover 30% Max MP, at minimum recover 10000 MP",
+        "type": "MP Potion",
+        "img": "I007",
+        "buyPlace": "Shop",
+        "sellPrice": 50,
+        "rarity": 1,
+        "minHealAmount": 10000,
+        "healPercentage": 0.3,
+        "price": 500,
+        "craftRecipe": {
+          "requireItem": ["I057"],
+          "requireQty": [5],
+          "requireMoney": 15,
+          "requireLevel": 3
+        }
+      },
+      {
+        "id": 9,
+        "name": "MP Potion IV",
+        "desc": "Recover 40% Max MP, at minimum recover 50000 MP",
+        "type": "MP Potion",
+        "img": "I008",
+        "buyPlace": "Shop",
+        "sellPrice": 100,
+        "rarity": 1,
+        "minHealAmount": 50000,
+        "healPercentage": 0.4,
+        "price": 1000,
+        "craftRecipe": {
+          "requireItem": ["I057"],
+          "requireQty": [7],
+          "requireMoney": 20,
+          "requireLevel": 4
+        }
+      },
+      {
+        "id": 10,
+        "name": "MP Potion V",
+        "desc": "Recover 50% Max MP, at minimum recover 100000 MP",
+        "type": "MP Potion",
+        "img": "I009",
+        "buyPlace": "Shop",
+        "sellPrice": 500,
+        "rarity": 2,
+        "minHealAmount": 100000,
+        "healPercentage": 0.5,
+        "price": 5000,
+        "craftRecipe": {
+          "requireItem": ["I057"],
+          "requireQty": [10],
+          "requireMoney": 25,
+          "requireLevel": 5
+        }
+      },
+      {
+        "id": 11,
+        "name": "Strength Potion",
+        "desc": "Increase user's attack power by 50% for 10 rounds",
+        "type": "Buff Potion",
+        "img": "I010",
+        "buyPlace": "Shop",
+        "sellPrice": 100,
+        "rarity": 1,
+        "price": 1000,
+        "buff": [
+          {
+            "buffId": 26,
+            "modifier": 50,
+            "rounds": 10
+          },
+          {
+            "buffId": 27,
+            "modifier": 50,
+            "rounds": 10
+          }
+        ],
+        "craftRecipe": {
+          "requireItem": ["I059"],
+          "requireQty": [1],
+          "requireMoney": 25,
+          "requireLevel": 3
+        }
+      },
+      {
+        "id": 12,
+        "name": "High Strength Potion",
+        "desc": "Increase user's attack power by 100% for 20 rounds",
+        "type": "Buff Potion",
+        "img": "I011",
+        "buyPlace": "Shop",
+        "sellPrice": 2500,
+        "rarity": 2,
+        "price": 2500,
+        "buff": [
+          {
+            "buffId": 26,
+            "modifier": 100,
+            "rounds": 20
+          },
+          {
+            "buffId": 27,
+            "modifier": 100,
+            "rounds": 20
+          }
+        ],
+        "craftRecipe": {
+          "requireItem": ["I059", "I062"],
+          "requireQty": [3, 1],
+          "requireMoney": 100,
+          "requireLevel": 4
+        }
+      },
+      {
+        "id": 13,
+        "name": "Defense Potion",
+        "desc": "Increase user's defense power by 50% for 10 rounds",
+        "type": "Buff Potion",
+        "img": "I012",
+        "buyPlace": "Shop",
+        "sellPrice": 100,
+        "rarity": 1,
+        "price": 1000,
+        "buff": [
+          {
+            "buffId": 28,
+            "modifier": 50,
+            "rounds": 10
+          },
+          {
+            "buffId": 29,
+            "modifier": 50,
+            "rounds": 10
+          }
+        ],
+        "craftRecipe": {
+          "requireItem": ["I060"],
+          "requireQty": [1],
+          "requireMoney": 25,
+          "requireLevel": 3
+        }
+      },
+      {
+        "id": 14,
+        "name": "High Defense Potion",
+        "desc": "Increase user's defense power by 100% for 20 rounds",
+        "type": "Buff Potion",
+        "img": "I013",
+        "buyPlace": "Shop",
+        "sellPrice": 200,
+        "rarity": 2,
+        "price": 2500,
+        "buff": [
+          {
+            "buffId": 28,
+            "modifier": 100,
+            "rounds": 20
+          },
+          {
+            "buffId": 29,
+            "modifier": 100,
+            "rounds": 20
+          }
+        ],
+        "craftRecipe": {
+          "requireItem": ["I060", "I062"],
+          "requireQty": [3, 1],
+          "requireMoney": 100,
+          "requireLevel": 4
+        }
+      },
+      {
+        "id": 15,
+        "name": "Agility Potion",
+        "desc": "Increase user's agility and dexterity by 50% for 10 rounds",
+        "type": "Buff Potion",
+        "img": "I014",
+        "buyPlace": "Shop",
+        "sellPrice": 100,
+        "rarity": 1,
+        "price": 1000,
+        "buff": [
+          {
+            "buffId": 29,
+            "modifier": 50,
+            "rounds": 10
+          },
+          {
+            "buffId": 30,
+            "modifier": 50,
+            "rounds": 10
+          }
+        ],
+        "craftRecipe": {
+          "requireItem": ["I061"],
+          "requireQty": [1],
+          "requireMoney": 25,
+          "requireLevel": 3
+        }
+      },
+      {
+        "id": 16,
+        "name": "High Agility Potion",
+        "desc": "Increase user's agility and dexterity for 20 rounds",
+        "type": "Buff Potion",
+        "img": "I015",
+        "buyPlace": "Shop",
+        "sellPrice": 200,
+        "rarity": 2,
+        "price": 2500,
+        "buff": [
+          {
+            "buffId": 29,
+            "modifier": 100,
+            "rounds": 20
+          },
+          {
+            "buffId": 30,
+            "modifier": 100,
+            "rounds": 20
+          }
+        ],
+        "craftRecipe": {
+          "requireItem": ["I061", "I062"],
+          "requireQty": [3, 1],
+          "requireMoney": 100,
+          "requireLevel": 4
+        }
+      },
+      {
+        "id": 17,
+        "name": "Elixir of Life",
+        "desc": "Recover all HP",
+        "type": "HP Potion",
+        "img": "I016",
+        "buyPlace": "Shop",
+        "sellPrice": 100,
+        "rarity": 1,
+        "price": 50000,
+        "healPercentage": 1,
+        "minHealAmount": 100000,
+        "craftRecipe": {
+          "requireItem": ["I056", "I058"],
+          "requireQty": [10, 1],
+          "requireMoney": 250,
+          "requireLevel": 5
+        }
+      },
+      {
+        "id": 18,
+        "name": "Omni Elixir",
+        "desc": "Gives every buff by 100% for 25 rounds",
+        "type": "Buff Potion",
+        "img": "I017",
+        "buyPlace": "Shop",
+        "sellPrice": 200,
+        "rarity": 4,
+        "price": 50000,
+        "buff": [
+          {
+            "buffId": 26,
+            "modifier": 100,
+            "rounds": 25
+          },
+          {
+            "buffId": 27,
+            "modifier": 100,
+            "rounds": 25
+          },
+          {
+            "buffId": 28,
+            "modifier": 100,
+            "rounds": 25
+          },
+          {
+            "buffId": 29,
+            "modifier": 100,
+            "rounds": 25
+          },
+          {
+            "buffId": 30,
+            "modifier": 100,
+            "rounds": 25
+          },
+          {
+            "buffId": 31,
+            "modifier": 100,
+            "rounds": 25
+          }
+        ],
+        "craftRecipe": {
+          "requireItem": ["I059", "I060", "I061", "I062"],
+          "requireQty": [5, 5, 5, 5],
+          "requireMoney": 250,
+          "requireLevel": 5
+        }
+      },
+      {
+        "id": 19,
+        "name": "Phoenix Tail",
+        "desc": "Revive 1 death teammate",
+        "type": "Special",
+        "img": "I018",
+        "buyPlace": "Shop",
+        "sellPrice": 100,
+        "rarity": 4,
+        "price": 5000
+      },
+      {
+        "id": 20,
+        "name": "Soul Stone",
+        "desc": "Revive every death teammate",
+        "type": "Special",
+        "img": "I019",
+        "buyPlace": "Shop",
+        "sellPrice": 200,
+        "rarity": 4,
+        "price": 100000
+      },
+      {
+        "id": 21,
+        "name": "Copper",
+        "desc": "A type of common metal",
+        "type": "Resources",
+        "img": "I020",
+        "buyPlace": "None",
+        "sellPrice": 50,
+        "rarity": 0
+      },
+      {
+        "id": 22,
+        "name": "Iron",
+        "desc": "A type of common metal for weapon",
+        "type": "Resources",
+        "img": "I021",
+        "buyPlace": "None",
+        "sellPrice": 100,
+        "rarity": 0
+      },
+      {
+        "id": 23,
+        "name": "Steel",
+        "desc": "An durable metal crafted with iron and coal",
+        "type": "Resources",
+        "img": "I022",
+        "buyPlace": "None",
+        "sellPrice": 200,
+        "rarity": 0
+      },
+      {
+        "id": 24,
+        "name": "Silver",
+        "desc": "A type of rare metal",
+        "type": "Resources",
+        "img": "I023",
+        "buyPlace": "None",
+        "sellPrice": 300,
+        "rarity": 1
+      },
+      {
+        "id": 25,
+        "name": "Mana Steel",
+        "desc": "A type of metal that infused with magical energy",
+        "type": "Resources",
+        "img": "I024",
+        "buyPlace": "None",
+        "sellPrice": 500,
+        "rarity": 1
+      },
+      {
+        "id": 26,
+        "name": "Fiery Gold",
+        "desc": "A  rare metal that is only found near valcano",
+        "type": "Resources",
+        "img": "I025",
+        "buyPlace": "None",
+        "sellPrice": 1000,
+        "rarity": 1
+      },
+      {
+        "id": 27,
+        "name": "Emerald Ingot",
+        "desc": "A type of metal that proceed unimginable strength",
+        "type": "Resources",
+        "img": "I026",
+        "buyPlace": "None",
+        "sellPrice": 2000,
+        "rarity": 1
+      },
+      {
+        "id": 28,
+        "name": "Ancient alloy",
+        "desc": "A type of metal that is made by ancient technology, not reproducable utill this day",
+        "type": "Resources",
+        "img": "I027",
+        "buyPlace": "None",
+        "sellPrice": 3000,
+        "rarity": 1
+      },
+      {
+        "id": 29,
+        "name": "Coal",
+        "desc": "Common coal. Can be used to create steel.",
+        "type": "Resources",
+        "img": "I028",
+        "buyPlace": "None",
+        "sellPrice": 100,
+        "rarity": 0
+      },
+      {
+        "id": 30,
+        "name": "Gold",
+        "desc": "An attractive metal. Sell for good price.",
+        "type": "Resources",
+        "img": "I029",
+        "buyPlace": "None",
+        "sellPrice": 5000,
+        "rarity": 1
+      },
+      {
+        "id": 31,
+        "name": "Diamond",
+        "desc": "An attractive jewelry. Sell for good price.",
+        "type": "Resources",
+        "img": "I030",
+        "buyPlace": "None",
+        "sellPrice": 25000,
+        "rarity": 2
+      },
+      {
+        "id": 32,
+        "name": "Crystal Shard",
+        "desc": "A small crystal fragment",
+        "type": "Resources",
+        "img": "I031",
+        "buyPlace": "None",
+        "sellPrice": 50,
+        "rarity": 0
+      },
+      {
+        "id": 33,
+        "name": "Crystal",
+        "desc": "Common crystal",
+        "type": "Resources",
+        "img": "I032",
+        "buyPlace": "None",
+        "sellPrice": 100,
+        "rarity": 0
+      },
+      {
+        "id": 34,
+        "name": "Mana Crystal",
+        "desc": "A rare crystal that infused with magical energy.",
+        "type": "Resources",
+        "img": "I033",
+        "buyPlace": "None",
+        "sellPrice": 200,
+        "rarity": 0
+      },
+      {
+        "id": 35,
+        "name": "Rich Mana Crystal",
+        "desc": "A rare crystal that infused with rich magical energy.",
+        "type": "Resources",
+        "img": "I034",
+        "buyPlace": "None",
+        "sellPrice": 400,
+        "rarity": 1
+      },
+      {
+        "id": 36,
+        "name": "Pure Mana Crystal",
+        "desc": "A rare crystal that infused with pure magical energy.",
+        "type": "Resources",
+        "img": "I035",
+        "buyPlace": "None",
+        "sellPrice": 1000,
+        "rarity": 1
+      },
+      {
+        "id": 37,
+        "name": "Exquisite Mana Crystal",
+        "desc": "A very rare crystal that infused with vast amount of magical energy.",
+        "type": "Resources",
+        "img": "I036",
+        "buyPlace": "None",
+        "sellPrice": 2000,
+        "rarity": 1
+      },
+      {
+        "id": 38,
+        "name": "Fire Crystal",
+        "desc": "Rare crystal that infused with fiery energy",
+        "type": "Resources",
+        "img": "I037",
+        "buyPlace": "None",
+        "sellPrice": 1000,
+        "rarity": 1
+      },
+      {
+        "id": 39,
+        "name": "Pure Fire Crystal",
+        "desc": "Rare crystal that infused with pure fiery energy",
+        "type": "Resources",
+        "img": "I038",
+        "buyPlace": "None",
+        "sellPrice": 2500,
+        "rarity": 2
+      },
+      {
+        "id": 40,
+        "name": "Earth Crystal",
+        "desc": "Rare crystal that infused with earth energy",
+        "type": "Resources",
+        "img": "I039",
+        "buyPlace": "None",
+        "sellPrice": 1000,
+        "rarity": 1
+      },
+      {
+        "id": 41,
+        "name": "Pure Earth Crystal",
+        "desc": "Rare crystal that infused with pure earth energy",
+        "type": "Resources",
+        "img": "I040",
+        "buyPlace": "None",
+        "sellPrice": 2500,
+        "rarity": 2
+      },
+      {
+        "id": 42,
+        "name": "Ice Crystal",
+        "desc": "Rare crystal that infused with ice energy",
+        "type": "Resources",
+        "img": "I041",
+        "buyPlace": "None",
+        "sellPrice": 1000,
+        "rarity": 1
+      },
+      {
+        "id": 43,
+        "name": "Pure Ice Crystal",
+        "desc": "Rare crystal that infused with pure ice energy",
+        "type": "Resources",
+        "img": "I042",
+        "buyPlace": "None",
+        "sellPrice": 2500,
+        "rarity": 2
+      },
+      {
+        "id": 44,
+        "name": "Wind Crystal",
+        "desc": "Rare crystal that infused with wind energy",
+        "type": "Resources",
+        "img": "I043",
+        "buyPlace": "None",
+        "sellPrice": 1000,
+        "rarity": 1
+      },
+      {
+        "id": 45,
+        "name": "Pure Wind Crystal",
+        "desc": "Rare crystal that infused with pure wind energy",
+        "type": "Resources",
+        "img": "I044",
+        "buyPlace": "None",
+        "sellPrice": 2500,
+        "rarity": 2
+      },
+      {
+        "id": 46,
+        "name": "Dark Crystal",
+        "desc": "Rare crystal that infused with dark energy",
+        "type": "Resources",
+        "img": "I045",
+        "buyPlace": "None",
+        "sellPrice": 1000,
+        "rarity": 1
+      },
+      {
+        "id": 47,
+        "name": "Pure Dark Crystal",
+        "desc": "Rare crystal that infused with pure dark energy",
+        "type": "Resources",
+        "img": "I046",
+        "buyPlace": "None",
+        "sellPrice": 2500,
+        "rarity": 2
+      },
+      {
+        "id": 48,
+        "name": "Rainbow Gem",
+        "desc": "A very rare gem that infused with every kind of energy.",
+        "type": "Resources",
+        "img": "I047",
+        "buyPlace": "None",
+        "sellPrice": 25000,
+        "rarity": 2
+      },
+      {
+        "id": 49,
+        "name": "Pure Rainbow Gem",
+        "desc": "A very rare gem that infused with every kind of pure energy.",
+        "type": "Resources",
+        "img": "I048",
+        "buyPlace": "None",
+        "sellPrice": 70000,
+        "rarity": 3
+      },
+      {
+        "id": 50,
+        "name": "Rotten Wood",
+        "desc": "Low quality wood",
+        "type": "Resources",
+        "img": "I049",
+        "buyPlace": "None",
+        "sellPrice": 50,
+        "rarity": 0
+      },
+      {
+        "id": 51,
+        "name": "Wood",
+        "desc": "Common wood",
+        "type": "Resources",
+        "img": "I050",
+        "buyPlace": "None",
+        "sellPrice": 100,
+        "rarity": 0
+      },
+      {
+        "id": 52,
+        "name": "Hard Wood",
+        "desc": "More durable than normal wood",
+        "type": "Resources",
+        "img": "I051",
+        "buyPlace": "None",
+        "sellPrice": 300,
+        "rarity": 0
+      },
+      {
+        "id": 53,
+        "name": "Iron Wood",
+        "desc": "It’s as hard as iron",
+        "type": "Resources",
+        "img": "I052",
+        "buyPlace": "None",
+        "sellPrice": 500,
+        "rarity": 1
+      },
+      {
+        "id": 54,
+        "name": "Ancient Wood",
+        "desc": "A rare piece of wood that came from ancient tree",
+        "type": "Resources",
+        "img": "I053",
+        "buyPlace": "None",
+        "sellPrice": 1000,
+        "rarity": 1
+      },
+      {
+        "id": 55,
+        "name": "Flaming Wood",
+        "desc": "A strange piece of wood that is flaming but seems never burning up",
+        "type": "Resources",
+        "img": "I054",
+        "buyPlace": "None",
+        "sellPrice": 2000,
+        "rarity": 1
+      },
+      {
+        "id": 56,
+        "name": "Herb",
+        "desc": "Common herbs. Can be used to make HP potions",
+        "type": "Resources",
+        "img": "I055",
+        "buyPlace": "None",
+        "sellPrice": 100,
+        "rarity": 0
+      },
+      {
+        "id": 57,
+        "name": "Mana Herb",
+        "desc": "This kind of herb contains mana in them. Can be used to make MP potions",
+        "type": "Resources",
+        "img": "I056",
+        "buyPlace": "None",
+        "sellPrice": 100,
+        "rarity": 0
+      },
+      {
+        "id": 58,
+        "name": "Flower of Life",
+        "desc": "A rare flower that emit strong life energy. It can be used to strength the effect of HP and MP potion",
+        "type": "Resources",
+        "img": "I057",
+        "buyPlace": "None",
+        "sellPrice": 1000,
+        "rarity": 0
+      },
+      {
+        "id": 59,
+        "name": "Mushroom of Power",
+        "desc": "When eaten, gives user a power boost. Can also be used to make potions",
+        "type": "Resources",
+        "img": "I058",
+        "buyPlace": "None",
+        "sellPrice": 200,
+        "rarity": 0
+      },
+      {
+        "id": 60,
+        "name": "Mushroom of Endurance",
+        "desc": "When eaten, gives user a defense boost. Can also be used to make potions",
+        "type": "Resources",
+        "img": "I059",
+        "buyPlace": "None",
+        "sellPrice": 200,
+        "rarity": 0
+      },
+      {
+        "id": 61,
+        "name": "Mushroom of Agility",
+        "desc": "When eaten, gives user a speed boost. Can also be used to make potions",
+        "type": "Resources",
+        "img": "I060",
+        "buyPlace": "None",
+        "sellPrice": 200,
+        "rarity": 0
+      },
+      {
+        "id": 62,
+        "name": "Catalyst Root",
+        "desc": "General catalyst that used to strengthen the effect of potions.",
+        "type": "Resources",
+        "img": "I061",
+        "buyPlace": "None",
+        "sellPrice": 200,
+        "rarity": 0
+      },
+      {
+        "id": 63,
+        "name": "Maple Leaf",
+        "desc": "A piece of good-looking leaf, have no particular uses but sell for good price",
+        "type": "Resources",
+        "img": "I062",
+        "buyPlace": "None",
+        "sellPrice": 2000,
+        "rarity": 1
+      },
+      {
+        "id": 64,
+        "name": "Four-Leaf Clover",
+        "desc": "A rare variety of common clover. Have no particular uses but sell for good price.",
+        "type": "Resources",
+        "img": "I063",
+        "buyPlace": "None",
+        "sellPrice": 25000,
+        "rarity": 2
+      },
+      {
+        "id": 65,
+        "name": "Animal Fur",
+        "desc": "Common Fur",
+        "type": "Resources",
+        "img": "I064",
+        "buyPlace": "None",
+        "sellPrice": 100,
+        "rarity": 0
+      },
+      {
+        "id": 66,
+        "name": "Quality Fur",
+        "desc": "Fur with better quality",
+        "type": "Resources",
+        "img": "I065",
+        "buyPlace": "None",
+        "sellPrice": 150,
+        "rarity": 0
+      },
+      {
+        "id": 67,
+        "name": "Sand Beast Fur",
+        "desc": "Hard and Sturdy Fur, effective against sandstorm",
+        "type": "Resources",
+        "img": "I066",
+        "buyPlace": "None",
+        "sellPrice": 300,
+        "rarity": 0
+      },
+      {
+        "id": 68,
+        "name": "Golden Beast Fur",
+        "desc": "A piece of fur that belongs to the lengendary golden beast",
+        "type": "Resources",
+        "img": "I067",
+        "buyPlace": "None",
+        "sellPrice": 500,
+        "rarity": 1
+      },
+      {
+        "id": 69,
+        "name": "White Beast Fur",
+        "desc": "A rare piece of fur that belongs to a white beast",
+        "type": "Resources",
+        "img": "I068",
+        "buyPlace": "None",
+        "sellPrice": 1000,
+        "rarity": 1
+      },
+      {
+        "id": 70,
+        "name": "Fiery Beast Fur",
+        "desc": "The fur is Infused with fiery elements",
+        "type": "Resources",
+        "img": "I069",
+        "buyPlace": "None",
+        "sellPrice": 2000,
+        "rarity": 1
+      },
+      {
+        "id": 71,
+        "name": "Animal Feather",
+        "desc": "Common Feather",
+        "type": "Resources",
+        "img": "I070",
+        "buyPlace": "None",
+        "sellPrice": 100,
+        "rarity": 0
+      },
+      {
+        "id": 72,
+        "name": "Quality Feather",
+        "desc": "Good quality feather",
+        "type": "Resources",
+        "img": "I071",
+        "buyPlace": "None",
+        "sellPrice": 150,
+        "rarity": 0
+      },
+      {
+        "id": 73,
+        "name": "Dark Feather",
+        "desc": "Feather from some mysterious creature",
+        "type": "Resources",
+        "img": "I072",
+        "buyPlace": "None",
+        "sellPrice": 300,
+        "rarity": 0
+      },
+      {
+        "id": 74,
+        "name": "Golden Feather",
+        "desc": "Shiny golden feather",
+        "type": "Resources",
+        "img": "I073",
+        "buyPlace": "None",
+        "sellPrice": 500,
+        "rarity": 1
+      },
+      {
+        "id": 75,
+        "name": "Ancient Feather",
+        "desc": "Feather from ancient birds",
+        "type": "Resources",
+        "img": "I074",
+        "buyPlace": "None",
+        "sellPrice": 1000,
+        "rarity": 1
+      },
+      {
+        "id": 76,
+        "name": "Fiery Feather",
+        "desc": "Feather with fiery elements",
+        "type": "Resources",
+        "img": "I075",
+        "buyPlace": "None",
+        "sellPrice": 2000,
+        "rarity": 1
+      },
+      {
+        "id": 77,
+        "name": "Small Horn",
+        "desc": "A very small piece of horn",
+        "type": "Resources",
+        "img": "I076",
+        "buyPlace": "None",
+        "sellPrice": 100,
+        "rarity": 0
+      },
+      {
+        "id": 78,
+        "name": "Horn",
+        "desc": "Hard and Pointy Horn",
+        "type": "Resources",
+        "img": "I077",
+        "buyPlace": "None",
+        "sellPrice": 150,
+        "rarity": 0
+      },
+      {
+        "id": 79,
+        "name": "Sturdy Horn",
+        "desc": "Hard and sturdy horn",
+        "type": "Resources",
+        "img": "I078",
+        "buyPlace": "None",
+        "sellPrice": 300,
+        "rarity": 0
+      },
+      {
+        "id": 80,
+        "name": "Golden Horn",
+        "desc": "Shiny golden horn, sell for good money",
+        "type": "Resources",
+        "img": "I079",
+        "buyPlace": "None",
+        "sellPrice": 500,
+        "rarity": 1
+      },
+      {
+        "id": 81,
+        "name": "Mammal Horn",
+        "desc": "A long piece of horn that belongs to a mammal",
+        "type": "Resources",
+        "img": "I080",
+        "buyPlace": "None",
+        "sellPrice": 1000,
+        "rarity": 1
+      },
+      {
+        "id": 82,
+        "name": "Exotic Horn",
+        "desc": "You have never seen such a strange horn",
+        "type": "Resources",
+        "img": "I081",
+        "buyPlace": "None",
+        "sellPrice": 2000,
+        "rarity": 1
+      },
+      {
+        "id": 83,
+        "name": "Abandoned Mine Dungeon Map",
+        "desc": "This map grant you access to Abandoned Mine (The Great Plain). Consume on enter.",
+        "type": "Resources",
+        "img": "I082",
+        "buyPlace": "None",
+        "sellPrice": 10000,
+        "rarity": 3
+      },
+      {
+        "id": 84,
+        "name": "Lost Cave Dungeon Map",
+        "desc": "This map grant you access to Lost Cave (Magical Forest). Consume on enter.",
+        "type": "Resources",
+        "img": "I082",
+        "buyPlace": "None",
+        "sellPrice": 10000,
+        "rarity": 3
+      },
+      {
+        "id": 85,
+        "name": "Haunted Ship Dungeon Map",
+        "desc": "This map grant you access to Haunted Ship (Southern Island). Consume on enter.",
+        "type": "Resources",
+        "img": "I082",
+        "buyPlace": "None",
+        "sellPrice": 10000,
+        "rarity": 3
+      },
+      {
+        "id": 86,
+        "name": "Ancient Ruin Dungeon Map",
+        "desc": "This map grant you access to Ancient Ruin (Crystal Cave). Consume on enter.",
+        "type": "Resources",
+        "img": "I082",
+        "buyPlace": "None",
+        "sellPrice": 10000,
+        "rarity": 3
+      },
+      {
+        "id": 87,
+        "name": "Forgotten Catacomb Dungeon Map",
+        "desc": "This map grant you access to Forgotten Catacomb (Haunted Forest). Consume on enter.",
+        "type": "Resources",
+        "img": "I082",
+        "buyPlace": "None",
+        "sellPrice": 10000,
+        "rarity": 3
+      },
+      {
+        "id": 88,
+        "name": "Tower of Trial Dungeon Map",
+        "desc": "This map grant you access to Tower of Trial (Burning Desert). Consume on enter.",
+        "type": "Resources",
+        "img": "I082",
+        "buyPlace": "None",
+        "sellPrice": 10000,
+        "rarity": 3
+      },
+      {
+        "id": 89,
+        "name": "Volcano Cave Dungeon Map",
+        "desc": "This map grant you access to Volcano Cave (Vulkan Volcano). Consume on enter.",
+        "type": "Resources",
+        "img": "I082",
+        "buyPlace": "None",
+        "sellPrice": 10000,
+        "rarity": 3
+      },
+      {
+        "id": 90,
+        "name": "Demon Castle Dungeon Map",
+        "desc": "This map grant you access to Demon Castle (Demon Battlefield). Consume on enter.",
+        "type": "Resources",
+        "img": "I082",
+        "buyPlace": "None",
+        "sellPrice": 10000,
+        "rarity": 3
+      },
+      {
+        "id": 91,
+        "name": "2x EXP card",
+        "desc": "This card grant you x2 EXP gain for the next 50 battles",
+        "type": "Special",
+        "img": "I083",
+        "buyPlace": "None",
+        "sellPrice": 10000,
+        "rarity": 4
+      },
+      {
+        "id": 92,
+        "name": "3x EXP card",
+        "desc": "This card grant you x3 EXP gain for the next 50 battles",
+        "type": "Special",
+        "img": "I084",
+        "buyPlace": "None",
+        "sellPrice": 10000,
+        "rarity": 4
+      },
+      {
+        "id": 93,
+        "name": "5x EXP card",
+        "desc": "This card grant you x5 EXP gain for the next 50 battles",
+        "type": "Special",
+        "img": "I085",
+        "buyPlace": "None",
+        "sellPrice": 10000,
+        "rarity": 4
+      },
+      {
+        "id": 94,
+        "name": "10x EXP card",
+        "desc": "This card grant you x10 EXP gain for the next 50 battles",
+        "type": "Special",
+        "img": "I086",
+        "buyPlace": "None",
+        "sellPrice": 10000,
+        "rarity": 4
+      },
+      {
+        "id": 95,
+        "name": "2x Item Drop Card",
+        "desc": "This card grant you x2 Gold gain and Item drop for the next 50 battles",
+        "type": "Special",
+        "img": "I087",
+        "buyPlace": "None",
+        "sellPrice": 10000,
+        "rarity": 4
+      },
+      {
+        "id": 96,
+        "name": "3x Item Drop Card",
+        "desc": "This card grant you x3 Gold gain and Item drop for the next 50 battles",
+        "type": "Special",
+        "img": "I088",
+        "buyPlace": "None",
+        "sellPrice": 10000,
+        "rarity": 4
+      },
+      {
+        "id": 97,
+        "name": "5x Item Drop Card",
+        "desc": "This card grant you x5 Gold gain and Item drop for the next 50 battles",
+        "type": "Special",
+        "img": "I089",
+        "buyPlace": "None",
+        "sellPrice": 10000,
+        "rarity": 4
+      },
+      {
+        "id": 98,
+        "name": "10x Item Drop Card",
+        "desc": "This card grant you x10 Gold gain and Item drop for the next 50 battles",
+        "type": "Special",
+        "img": "I090",
+        "buyPlace": "None",
+        "sellPrice": 10000,
+        "rarity": 4
+      },
+      {
+        "id": 99,
+        "name": "Monster Expell Codex",
+        "desc": "Once used it will greatly increase the chance of weak enemies appear in battle for the next 50 battles",
+        "type": "Special",
+        "img": "I091",
+        "buyPlace": "None",
+        "sellPrice": 10000,
+        "rarity": 4
+      },
+      {
+        "id": 100,
+        "name": "Monster Lure Codex",
+        "desc": "Once used it will greatly increase the chance of tough enemies appear in battle for the next 50 battles",
+        "type": "Special",
+        "img": "I092",
+        "buyPlace": "None",
+        "sellPrice": 10000,
+        "rarity": 4
+      },
+      {
+        "id": 101,
+        "name": "Scroll of Inspiration",
+        "desc": "Grant every memeber 1 upgrade point on use.",
+        "type": "Special",
+        "img": "I093",
+        "buyPlace": "None",
+        "sellPrice": 10000,
+        "rarity": 4
+      },
+      {
+        "id": 102,
+        "name": "Scroll of Knowledge",
+        "desc": "Grant every memeber 5 upgrade points on use.",
+        "type": "Special",
+        "img": "I094",
+        "buyPlace": "None",
+        "sellPrice": 10000,
+        "rarity": 4
+      },
+      {
+        "id": 103,
+        "name": "Scroll of Infinite Potential",
+        "desc": "Grant every memeber 10 upgrade points on use.",
+        "type": "Special",
+        "img": "I095",
+        "buyPlace": "None",
+        "sellPrice": 10000,
+        "rarity": 4
+      }
+    ]
+  }
+  

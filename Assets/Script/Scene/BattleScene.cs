@@ -38,7 +38,7 @@ public class BattleScene : BasicScene
 
     void prepareBattle()
     {
-        PlotData pd = PlotMatcher.matchPlotBattle(Game.currLoc.currArea, true);
+        PlotData pd = PlotMatcher.matchPlotBattle(Game.currLoc.currZone, true);
         if (pd != null)
         {
             Debug.Log("Plot found, pt=" + pd.triggerPt + ", area=" + pd.triggerArea + ",before battle=" + pd.triggerBeforeBattle);
@@ -52,7 +52,7 @@ public class BattleScene : BasicScene
             battleCtrl = new BattleCtrl(Game.currLoc.generateEnemy(), Game.party.createBattleParty(), this);
             if (Game.currentMapMode == Constant.MapModeProgressive)
             {
-                textAreaPanel.text = Game.currLoc.currArea + "/" + Game.currLoc.maxArea;
+                textAreaPanel.text = Game.currLoc.currZone + "/" + Game.currLoc.maxZone;
             }
             areaPanel.gameObject.SetActive(Game.currentMapMode == Constant.MapModeProgressive);
 
@@ -360,12 +360,12 @@ public class BattleScene : BasicScene
 
     public void onClickRewardPanelButton(int id)
     {
-        PlotData pd = PlotMatcher.matchPlotBattle(Game.currLoc.currArea, false);
+        PlotData pd = PlotMatcher.matchPlotBattle(Game.currLoc.currZone, false);
         switch (id)
         {
             case 0:
                 jumpToScene(SceneName.MainMenu);
-                Game.currLoc.resetAreaStatus();
+                Game.currLoc.resetZoneStatus();
                 break;
             case 1:
                 if (pd != null)
@@ -384,7 +384,7 @@ public class BattleScene : BasicScene
             case 2:
                 if (battleCtrl.bossFight)
                 {
-                    Game.currLoc.resetAreaStatus();
+                    Game.currLoc.resetZoneStatus();
                     if (pd != null)
                     {
                         Debug.Log("Plot found, pt=" + pd.triggerPt + ", area=" + pd.triggerArea + ",before battle=" + pd.triggerBeforeBattle);
@@ -399,7 +399,7 @@ public class BattleScene : BasicScene
                 }
                 else
                 {
-                    Game.currLoc.progressArea();
+                    Game.currLoc.progressZone();
                     if (pd != null)
                     {
                         Debug.Log("Plot found, pt=" + pd.triggerPt + ", area=" + pd.triggerArea + ",before battle=" + pd.triggerBeforeBattle);

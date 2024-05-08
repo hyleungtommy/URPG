@@ -1,0 +1,2838 @@
+{
+    "Items": [
+      {
+        "id": 1,
+        "name": "Wood Sword",
+        "desc": "A petty sword made from wood",
+        "type": "Sword",
+        "img": "E001",
+        "reqLv": 1,
+        "power": 25,
+        "magicPower": 10,
+        "price": 100,
+        "buyPlace": "Blacksmith"
+      },
+      {
+        "id": 2,
+        "name": "Rotten Wood Shield",
+        "desc": "You feel like it would break on the next hit",
+        "type": "Shield",
+        "img": "E002",
+        "reqLv": 1,
+        "power": 10,
+        "magicPower": 10,
+        "price": 100,
+        "buyPlace": "Blacksmith"
+      },
+      {
+        "id": 3,
+        "name": "Lumber Axe",
+        "desc": "Just the axe used by the lumber",
+        "type": "Axe",
+        "img": "E003",
+        "reqLv": 1,
+        "power": 55,
+        "magicPower": 10,
+        "price": 200,
+        "buyPlace": "Blacksmith"
+      },
+      {
+        "id": 4,
+        "name": "Simple Armor",
+        "desc": "Crafted by Villager, provide limitied protection",
+        "type": "Heavy Armor",
+        "img": "E004",
+        "reqLv": 1,
+        "power": 20,
+        "magicPower": 10,
+        "price": 100,
+        "buyPlace": "Blacksmith"
+      },
+      {
+        "id": 5,
+        "name": "Iron Sword",
+        "desc": "Basic sword used by newbies ",
+        "type": "Sword",
+        "img": "E005",
+        "reqLv": 10,
+        "power": 100,
+        "magicPower": 50,
+        "price": 500,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 1,
+          "requireItem": ["I021", "I022", "I050"],
+          "requireQty": [5, 1, 3],
+          "requireMoney": 100
+        },
+        "reinforceRecipe": {
+          "maxReinforceLv": 3,
+          "requireItem": [22, 50],
+          "requireQtyStart": [3, 1],
+          "requireMoneyStart": 50,
+          "requireLevel": 1,
+          "requireQtyIncrement": [2, 1],
+          "requireMoneyIncrement": 50,
+          "powerIncrementPerLevel": 10,
+          "magicPowerIncrementPerLevel": 5
+        }
+      },
+      {
+        "id": 6,
+        "name": "Wood Shield",
+        "desc": "Weak shield made by wood",
+        "type": "Shield",
+        "img": "E006",
+        "reqLv": 10,
+        "power": 50,
+        "magicPower": 30,
+        "price": 500,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 1,
+          "requireItem": ["I021", "I050"],
+          "requireQty": [3, 3],
+          "requireMoney": 100
+        },
+        "reinforceRecipe": {
+          "maxReinforceLv": 3,
+          "requireItem": [22, 50],
+          "requireQtyStart": [1, 3],
+          "requireMoneyStart": 50,
+          "requireLevel": 1,
+          "requireQtyIncrement": [1, 2],
+          "requireMoneyIncrement": 50,
+          "powerIncrementPerLevel": 10,
+          "magicPowerIncrementPerLevel": 5
+        }
+      },
+      {
+        "id": 7,
+        "name": "Iron Axe",
+        "desc": "Basic axe used by newbies",
+        "type": "Axe",
+        "img": "E007",
+        "reqLv": 10,
+        "power": 220,
+        "magicPower": 100,
+        "price": 750,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 1,
+          "requireItem": ["I021", "I022", "I050"],
+          "requireQty": [10, 1, 3],
+          "requireMoney": 150
+        },
+        "reinforceRecipe": {
+          "maxReinforceLv": 3,
+          "requireItem": [22, 50],
+          "requireQtyStart": [5, 1],
+          "requireMoneyStart": 100,
+          "requireLevel": 1,
+          "requireQtyIncrement": [3, 1],
+          "requireMoneyIncrement": 50,
+          "powerIncrementPerLevel": 25,
+          "magicPowerIncrementPerLevel": 10
+        }
+      },
+      {
+        "id": 8,
+        "name": "Pratice Wand",
+        "desc": "Wand used by apprentice mages",
+        "type": "Wand",
+        "img": "E008",
+        "reqLv": 10,
+        "power": 50,
+        "magicPower": 100,
+        "price": 500,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 1,
+          "requireItem": ["I050", "I051", "I032"],
+          "requireQty": [5, 1, 3],
+          "requireMoney": 100
+        },
+        "reinforceRecipe": {
+          "maxReinforceLv": 3,
+          "requireItem": [51, 32],
+          "requireQtyStart": [3, 1],
+          "requireMoneyStart": 50,
+          "requireLevel": 1,
+          "requireQtyIncrement": [2, 1],
+          "requireMoneyIncrement": 50,
+          "powerIncrementPerLevel": 10,
+          "magicPowerIncrementPerLevel": 5
+        }
+      },
+      {
+        "id": 9,
+        "name": "Pratice Spellbook",
+        "desc": " Spellbook used by apprentice mages",
+        "type": "Spellbook",
+        "img": "E009",
+        "reqLv": 10,
+        "power": 30,
+        "magicPower": 50,
+        "price": 500,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 1,
+          "requireItem": ["I051", "I032"],
+          "requireQty": [3, 3],
+          "requireMoney": 100
+        },
+        "reinforceRecipe": {
+          "maxReinforceLv": 3,
+          "requireItem": [32],
+          "requireQtyStart": [2],
+          "requireMoneyStart": 50,
+          "requireLevel": 1,
+          "requireQtyIncrement": [1],
+          "requireMoneyIncrement": 50,
+          "powerIncrementPerLevel": 10,
+          "magicPowerIncrementPerLevel": 5
+        }
+      },
+      {
+        "id": 10,
+        "name": "Pratice Staff",
+        "desc": "Large staff used by apprentice mages",
+        "type": "Staff",
+        "img": "E010",
+        "reqLv": 10,
+        "power": 100,
+        "magicPower": 220,
+        "price": 750,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 1,
+          "requireItem": ["I050", "I051", "I032"],
+          "requireQty": [10, 1, 3],
+          "requireMoney": 150
+        },
+        "reinforceRecipe": {
+          "maxReinforceLv": 3,
+          "requireItem": [51, 32],
+          "requireQtyStart": [5, 1],
+          "requireMoneyStart": 100,
+          "requireLevel": 1,
+          "requireQtyIncrement": [3, 1],
+          "requireMoneyIncrement": 50,
+          "powerIncrementPerLevel": 25,
+          "magicPowerIncrementPerLevel": 10
+        }
+      },
+      {
+        "id": 11,
+        "name": "Wood Bow",
+        "desc": "Bow made by just wood",
+        "type": "Bow",
+        "img": "E011",
+        "reqLv": 10,
+        "power": 150,
+        "magicPower": 150,
+        "price": 500,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 1,
+          "requireItem": ["I021", "I050"],
+          "requireQty": [5, 5],
+          "requireMoney": 150
+        },
+        "reinforceRecipe": {
+          "maxReinforceLv": 3,
+          "requireItem": [50],
+          "requireQtyStart": [5],
+          "requireMoneyStart": 100,
+          "requireLevel": 1,
+          "requireQtyIncrement": [3],
+          "requireMoneyIncrement": 50,
+          "powerIncrementPerLevel": 25,
+          "magicPowerIncrementPerLevel": 10
+        }
+      },
+      {
+        "id": 12,
+        "name": "Basic Dagger",
+        "desc": "Dagger used by crappy thief",
+        "type": "Dagger",
+        "img": "E012",
+        "reqLv": 10,
+        "power": 100,
+        "magicPower": 100,
+        "price": 500,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 1,
+          "requireItem": ["I021", "I050"],
+          "requireQty": [7, 2],
+          "requireMoney": 150
+        },
+        "reinforceRecipe": {
+          "maxReinforceLv": 3,
+          "requireItem": [22],
+          "requireQtyStart": [5],
+          "requireMoneyStart": 100,
+          "requireLevel": 1,
+          "requireQtyIncrement": [3],
+          "requireMoneyIncrement": 50,
+          "powerIncrementPerLevel": 25,
+          "magicPowerIncrementPerLevel": 10
+        }
+      },
+      {
+        "id": 13,
+        "name": "Basic Armor",
+        "desc": "Basic Armor for warrior-type classes,provide limited protection",
+        "type": "Heavy Armor",
+        "img": "E013",
+        "reqLv": 10,
+        "power": 90,
+        "magicPower": 50,
+        "price": 500,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 1,
+          "requireItem": ["I021", "I022", "I065", "I071"],
+          "requireQty": [10, 1, 3, 3],
+          "requireMoney": 150
+        },
+        "reinforceRecipe": {
+          "maxReinforceLv": 3,
+          "requireItem": [22],
+          "requireQtyStart": [5],
+          "requireMoneyStart": 100,
+          "requireLevel": 1,
+          "requireQtyIncrement": [3],
+          "requireMoneyIncrement": 50,
+          "powerIncrementPerLevel": 20,
+          "magicPowerIncrementPerLevel": 10
+        }
+      },
+      {
+        "id": 14,
+        "name": "Apprentice Cloth",
+        "desc": "Silk cloth for apprentice mage and priest, do not provide much protection",
+        "type": "Robe Armor",
+        "img": "E014",
+        "reqLv": 10,
+        "power": 50,
+        "magicPower": 90,
+        "price": 500,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 1,
+          "requireItem": ["I071", "I077", "I032"],
+          "requireQty": [10, 5, 3],
+          "requireMoney": 150
+        },
+        "reinforceRecipe": {
+          "maxReinforceLv": 3,
+          "requireItem": [71],
+          "requireQtyStart": [5],
+          "requireMoneyStart": 100,
+          "requireLevel": 1,
+          "requireQtyIncrement": [3],
+          "requireMoneyIncrement": 50,
+          "powerIncrementPerLevel": 10,
+          "magicPowerIncrementPerLevel": 20
+        }
+      },
+      {
+        "id": 15,
+        "name": "Leather Cloth",
+        "desc": "Cloth for archer and assassin",
+        "type": "Light Armor",
+        "img": "E015",
+        "reqLv": 10,
+        "power": 75,
+        "magicPower": 75,
+        "price": 500,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 1,
+          "requireItem": ["I065", "I071", "I077"],
+          "requireQty": [10, 5, 5],
+          "requireMoney": 150
+        },
+        "reinforceRecipe": {
+          "maxReinforceLv": 3,
+          "requireItem": [65],
+          "requireQtyStart": [5],
+          "requireMoneyStart": 100,
+          "requireLevel": 1,
+          "requireQtyIncrement": [3],
+          "requireMoneyIncrement": 50,
+          "powerIncrementPerLevel": 10,
+          "magicPowerIncrementPerLevel": 20
+        }
+      },
+      {
+        "id": 16,
+        "name": "Standard-Issue Sword",
+        "desc": "Standard sword for Falone Solider",
+        "type": "Sword",
+        "img": "E016",
+        "reqLv": 20,
+        "power": 220,
+        "magicPower": 100,
+        "price": 1000,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 2,
+          "requireItem": ["I022", "I023", "I051"],
+          "requireQty": [5, 1, 3],
+          "requireMoney": 200
+        }
+      },
+      {
+        "id": 17,
+        "name": "Iron Shield",
+        "desc": "Standard iron shield for Falone Solider",
+        "type": "Shield",
+        "img": "E017",
+        "reqLv": 20,
+        "power": 80,
+        "magicPower": 50,
+        "price": 1000,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 2,
+          "requireItem": ["I022", "I051"],
+          "requireQty": [3, 3],
+          "requireMoney": 200
+        }
+      },
+      {
+        "id": 18,
+        "name": "Battleaxe",
+        "desc": "Double blade axe for Falone Solider",
+        "type": "Axe",
+        "img": "E018",
+        "reqLv": 20,
+        "power": 450,
+        "magicPower": 200,
+        "price": 1500,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 2,
+          "requireItem": ["I022", "I023", "I051"],
+          "requireQty": [10, 1, 3],
+          "requireMoney": 300
+        }
+      },
+      {
+        "id": 19,
+        "name": "Basic Wand",
+        "desc": "Standard wand used by mages",
+        "type": "Wand",
+        "img": "E019",
+        "reqLv": 20,
+        "power": 100,
+        "magicPower": 250,
+        "price": 1000,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 2,
+          "requireItem": ["I051", "I052", "I033"],
+          "requireQty": [5, 1, 3],
+          "requireMoney": 200
+        }
+      },
+      {
+        "id": 20,
+        "name": "Basic Spellbook",
+        "desc": "A spellbook that includes basic spells only",
+        "type": "Spellbook",
+        "img": "E020",
+        "reqLv": 20,
+        "power": 50,
+        "magicPower": 80,
+        "price": 1000,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 2,
+          "requireItem": ["I052", "I033"],
+          "requireQty": [3, 3],
+          "requireMoney": 200
+        }
+      },
+      {
+        "id": 21,
+        "name": "Basic Staff",
+        "desc": "Big staff used by mages",
+        "type": "Staff",
+        "img": "E021",
+        "reqLv": 20,
+        "power": 120,
+        "magicPower": 450,
+        "price": 1500,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 2,
+          "requireItem": ["I051", "I052", "I033"],
+          "requireQty": [10, 1, 3],
+          "requireMoney": 300
+        }
+      },
+      {
+        "id": 22,
+        "name": "Enchanted Wood Bow",
+        "desc": "A strengthened,more durable wood bow",
+        "type": "Bow",
+        "img": "E022",
+        "reqLv": 20,
+        "power": 350,
+        "magicPower": 350,
+        "price": 1000,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 2,
+          "requireItem": ["I022", "I051"],
+          "requireQty": [5, 5],
+          "requireMoney": 300
+        }
+      },
+      {
+        "id": 23,
+        "name": "Curved Dagger",
+        "desc": "Curved-blade dagger",
+        "type": "Dagger",
+        "img": "E023",
+        "reqLv": 20,
+        "power": 200,
+        "magicPower": 200,
+        "price": 1000,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 2,
+          "requireItem": ["I022", "I051"],
+          "requireQty": [7, 2],
+          "requireMoney": 300
+        }
+      },
+      {
+        "id": 24,
+        "name": "Standard Armor",
+        "desc": "Standard Armor used by Falone Solider",
+        "type": "Heavy Armor",
+        "img": "E024",
+        "reqLv": 20,
+        "power": 175,
+        "magicPower": 100,
+        "price": 1000,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 2,
+          "requireItem": ["I022", "I024", "I066", "I072"],
+          "requireQty": [10, 1, 3, 3],
+          "requireMoney": 300
+        }
+      },
+      {
+        "id": 25,
+        "name": "Mage Robe",
+        "desc": "Silk cloth for mage and priest, provide little more protection",
+        "type": "Robe Armor",
+        "img": "E025",
+        "reqLv": 20,
+        "power": 100,
+        "magicPower": 175,
+        "price": 1000,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 2,
+          "requireItem": ["I072", "I078", "I033"],
+          "requireQty": [10, 5, 3],
+          "requireMoney": 300
+        }
+      },
+      {
+        "id": 26,
+        "name": "Enchanted Cloth",
+        "desc": "Cloth made with stronger leather",
+        "type": "Light Armor",
+        "img": "E026",
+        "reqLv": 20,
+        "power": 150,
+        "magicPower": 150,
+        "price": 1000,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 2,
+          "requireItem": ["I066", "I072", "I078"],
+          "requireQty": [10, 5, 5],
+          "requireMoney": 300
+        }
+      },
+      {
+        "id": 27,
+        "name": "Steel Sword",
+        "desc": "Very durable steel sword, very sharp as well",
+        "type": "Sword",
+        "img": "E027",
+        "reqLv": 30,
+        "power": 410,
+        "magicPower": 180,
+        "price": 2000,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 3,
+          "requireItem": ["I023", "I024", "I052"],
+          "requireQty": [5, 1, 3],
+          "requireMoney": 500
+        }
+      },
+      {
+        "id": 28,
+        "name": "Steel Shield",
+        "desc": "Strong steel shield that provide good protection",
+        "type": "Shield",
+        "img": "E028",
+        "reqLv": 30,
+        "power": 150,
+        "magicPower": 100,
+        "price": 2000,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 3,
+          "requireItem": ["I023", "I052"],
+          "requireQty": [3, 3],
+          "requireMoney": 500
+        }
+      },
+      {
+        "id": 29,
+        "name": "Steel Axe",
+        "desc": "Very sharp steel axe, it can cause very huge damage",
+        "type": "Axe",
+        "img": "E029",
+        "reqLv": 30,
+        "power": 1000,
+        "magicPower": 400,
+        "price": 3000,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 3,
+          "requireItem": ["I023", "I024", "I052"],
+          "requireQty": [10, 1, 3],
+          "requireMoney": 750
+        }
+      },
+      {
+        "id": 30,
+        "name": "Magical Wand",
+        "desc": "A sightly better wand for mages ",
+        "type": "Wand",
+        "img": "E030",
+        "reqLv": 30,
+        "power": 250,
+        "magicPower": 450,
+        "price": 2000,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 3,
+          "requireItem": ["I052", "I053", "I034"],
+          "requireQty": [5, 1, 3],
+          "requireMoney": 500
+        }
+      },
+      {
+        "id": 31,
+        "name": "Advance Spellbook",
+        "desc": "A spellbook that include more advance spells",
+        "type": "Spellbook",
+        "img": "E031",
+        "reqLv": 30,
+        "power": 100,
+        "magicPower": 150,
+        "price": 2000,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 3,
+          "requireItem": ["I053", "I034"],
+          "requireQty": [3, 3],
+          "requireMoney": 500
+        }
+      },
+      {
+        "id": 32,
+        "name": "Magical Staff",
+        "desc": "More powerful than the basic one",
+        "type": "Staff",
+        "img": "E032",
+        "reqLv": 30,
+        "power": 300,
+        "magicPower": 925,
+        "price": 3000,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 3,
+          "requireItem": ["I052", "I053", "I034"],
+          "requireQty": [10, 1, 3],
+          "requireMoney": 750
+        }
+      },
+      {
+        "id": 33,
+        "name": "Reinforce Bow",
+        "desc": "Strengthened steel bow",
+        "type": "Bow",
+        "img": "E033",
+        "reqLv": 30,
+        "power": 650,
+        "magicPower": 650,
+        "price": 2000,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 3,
+          "requireItem": ["I023", "I052"],
+          "requireQty": [5, 5],
+          "requireMoney": 750
+        }
+      },
+      {
+        "id": 34,
+        "name": "Steel Dagger",
+        "desc": "Very strong and durable dagger",
+        "type": "Dagger",
+        "img": "E034",
+        "reqLv": 30,
+        "power": 400,
+        "magicPower": 400,
+        "price": 2000,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 3,
+          "requireItem": ["I023", "I052"],
+          "requireQty": [7, 2],
+          "requireMoney": 750
+        }
+      },
+      {
+        "id": 35,
+        "name": "Enchanted Iron Armor",
+        "desc": "Strengthened armor, provide more protection",
+        "type": "Heavy Armor",
+        "img": "E035",
+        "reqLv": 30,
+        "power": 300,
+        "magicPower": 200,
+        "price": 1500,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 3,
+          "requireItem": ["I023", "I024", "I067", "I073"],
+          "requireQty": [10, 1, 3, 3],
+          "requireMoney": 750
+        }
+      },
+      {
+        "id": 36,
+        "name": "Magical Robe",
+        "desc": "This robe is enchanted with magical power that is able to absorb more damage",
+        "type": "Robe Armor",
+        "img": "E036",
+        "reqLv": 30,
+        "power": 200,
+        "magicPower": 300,
+        "price": 1500,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 3,
+          "requireItem": ["I073", "I079", "I034"],
+          "requireQty": [10, 5, 3],
+          "requireMoney": 750
+        }
+      },
+      {
+        "id": 37,
+        "name": "Robinhood Cloth",
+        "desc": "This cloth is said to be used by the legend archer Robinhood",
+        "type": "Light Armor",
+        "img": "E037",
+        "reqLv": 30,
+        "power": 250,
+        "magicPower": 250,
+        "price": 1500,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 3,
+          "requireItem": ["I067", "I073", "I079"],
+          "requireQty": [10, 5, 5],
+          "requireMoney": 750
+        }
+      },
+      {
+        "id": 38,
+        "name": "Fiery-infused Sword",
+        "desc": "The sword that proceed the element of fire",
+        "type": "Sword",
+        "img": "E038",
+        "reqLv": 30,
+        "power": 700,
+        "magicPower": 180,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 4,
+          "requireItem": ["E027", "I024", "I034", "I038"],
+          "requireQty": [1, 5, 3, 1],
+          "requireMoney": 1000
+        }
+      },
+      {
+        "id": 39,
+        "name": "Frost-infused Sword",
+        "desc": "The sword that proceed the element of ice",
+        "type": "Sword",
+        "img": "E039",
+        "reqLv": 30,
+        "power": 500,
+        "magicPower": 500,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 4,
+          "requireItem": ["E027", "I024", "I034", "I042"],
+          "requireQty": [1, 5, 3, 1],
+          "requireMoney": 1000
+        }
+      },
+      {
+        "id": 40,
+        "name": "Sturdy Steel Shield",
+        "desc": "A reinforced steel shield that provides more defense",
+        "type": "Shield",
+        "img": "E040",
+        "reqLv": 30,
+        "power": 250,
+        "magicPower": 180,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 4,
+          "requireItem": ["E028", "I024", "I042"],
+          "requireQty": [1, 10, 1],
+          "requireMoney": 1000
+        }
+      },
+      {
+        "id": 41,
+        "name": "Magic infused Shield",
+        "desc": "This shield is infused with magic, make it user less vulnerable to magic attack",
+        "type": "Shield",
+        "img": "E041",
+        "reqLv": 30,
+        "power": 180,
+        "magicPower": 250,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 4,
+          "requireItem": ["E028", "I034", "I038"],
+          "requireQty": [1, 10, 1],
+          "requireMoney": 1000
+        }
+      },
+      {
+        "id": 42,
+        "name": "Barberian Axe",
+        "desc": "You can almost taste the blood on this axe",
+        "type": "Axe",
+        "img": "E042",
+        "reqLv": 30,
+        "power": 1600,
+        "magicPower": 400,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 4,
+          "requireItem": ["E029", "I024", "I034", "I040"],
+          "requireQty": [1, 10, 5, 1],
+          "requireMoney": 1500
+        }
+      },
+      {
+        "id": 43,
+        "name": "Golden Axe",
+        "desc": "A fancy axe made by gold",
+        "type": "Axe",
+        "img": "E043",
+        "reqLv": 30,
+        "power": 1150,
+        "magicPower": 900,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 4,
+          "requireItem": ["E029", "I024", "I034", "I040"],
+          "requireQty": [1, 10, 5, 1],
+          "requireMoney": 1500
+        }
+      },
+      {
+        "id": 44,
+        "name": "Rainbow wand",
+        "desc": "A wand made with ranbow gem",
+        "type": "Wand",
+        "img": "E044",
+        "reqLv": 30,
+        "power": 250,
+        "magicPower": 400,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 4,
+          "requireItem": ["E030", "I053", "I034", "I044"],
+          "requireQty": [1, 5, 3, 1],
+          "requireMoney": 1000
+        }
+      },
+      {
+        "id": 45,
+        "name": "Necromancer’s Wand",
+        "desc": "A wand for necromancer",
+        "type": "Wand",
+        "img": "E045",
+        "reqLv": 30,
+        "power": 200,
+        "magicPower": 450,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 4,
+          "requireItem": ["E030", "I053", "I034", "I046"],
+          "requireQty": [1, 5, 3, 1],
+          "requireMoney": 1000
+        }
+      },
+      {
+        "id": 46,
+        "name": "Dark Spellbook",
+        "desc": "This spellbook looks evil",
+        "type": "Spellbook",
+        "img": "E046",
+        "reqLv": 30,
+        "power": 75,
+        "magicPower": 120,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 4,
+          "requireItem": ["E031", "I034", "I046"],
+          "requireQty": [1, 10, 1],
+          "requireMoney": 1000
+        }
+      },
+      {
+        "id": 47,
+        "name": "Ancient Tablet",
+        "desc": "Ancient words inscribed on it",
+        "type": "Spellbook",
+        "img": "E047",
+        "reqLv": 30,
+        "power": 100,
+        "magicPower": 100,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 4,
+          "requireItem": ["E031", "I034", "I040"],
+          "requireQty": [1, 10, 1],
+          "requireMoney": 1000
+        }
+      },
+      {
+        "id": 48,
+        "name": "Ice Staff",
+        "desc": "A staff that suit ice mage",
+        "type": "Staff",
+        "img": "E048",
+        "reqLv": 30,
+        "power": 450,
+        "magicPower": 1000,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 4,
+          "requireItem": ["E032", "I053", "I034", "I042"],
+          "requireQty": [1, 10, 5, 1],
+          "requireMoney": 1500
+        }
+      },
+      {
+        "id": 49,
+        "name": "Fire Staff",
+        "desc": "A staff that suit fire mage",
+        "type": "Staff",
+        "img": "E049",
+        "reqLv": 30,
+        "power": 400,
+        "magicPower": 1100,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 4,
+          "requireItem": ["E032", "I053", "I034", "I038"],
+          "requireQty": [1, 10, 5, 1],
+          "requireMoney": 1500
+        }
+      },
+      {
+        "id": 50,
+        "name": "Flaming Bow",
+        "desc": "A bow that shoot fire arrow",
+        "type": "Bow",
+        "img": "E050",
+        "reqLv": 30,
+        "power": 450,
+        "magicPower": 300,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 4,
+          "requireItem": ["E033", "I053", "I034", "I038"],
+          "requireQty": [1, 10, 5, 1],
+          "requireMoney": 1500
+        }
+      },
+      {
+        "id": 51,
+        "name": "Frozen Bow",
+        "desc": "A bow that shoot frozen arrow",
+        "type": "Bow",
+        "img": "E051",
+        "reqLv": 30,
+        "power": 300,
+        "magicPower": 450,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 4,
+          "requireItem": ["E033", "I053", "I034", "I042"],
+          "requireQty": [1, 10, 5, 1],
+          "requireMoney": 1500
+        }
+      },
+      {
+        "id": 52,
+        "name": "Flaming Dragger",
+        "desc": "A dagger that can light target on fire",
+        "type": "Dagger",
+        "img": "E052",
+        "reqLv": 30,
+        "power": 300,
+        "magicPower": 200,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 4,
+          "requireItem": ["E034", "I024", "I034", "I038"],
+          "requireQty": [1, 10, 5, 1],
+          "requireMoney": 1500
+        }
+      },
+      {
+        "id": 53,
+        "name": "Frozen Dragger",
+        "desc": "A dagger that can freeze target",
+        "type": "Dagger",
+        "img": "E053",
+        "reqLv": 30,
+        "power": 200,
+        "magicPower": 300,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 4,
+          "requireItem": ["E034", "I024", "I034", "I042"],
+          "requireQty": [1, 10, 5, 1],
+          "requireMoney": 1500
+        }
+      },
+      {
+        "id": 54,
+        "name": "Infused Iron Armor",
+        "desc": "A normal iron armor but is infused with mana to make it stronger",
+        "type": "Heavy Armor",
+        "img": "E054",
+        "reqLv": 30,
+        "power": 260,
+        "magicPower": 180,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 4,
+          "requireItem": ["E035", "I024", "I034", "I038"],
+          "requireQty": [1, 10, 5, 1],
+          "requireMoney": 1500
+        }
+      },
+      {
+        "id": 55,
+        "name": "Infused Magical Robe",
+        "desc": "A normal robe but is infused with mana to make it stronger",
+        "type": "Robe Armor",
+        "img": "E055",
+        "reqLv": 30,
+        "power": 180,
+        "magicPower": 260,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 4,
+          "requireItem": ["E036", "I079", "I034", "I042"],
+          "requireQty": [1, 10, 5, 1],
+          "requireMoney": 1500
+        }
+      },
+      {
+        "id": 56,
+        "name": "Infused Robinhood Cloth",
+        "desc": "A normal hood but is infused with mana to make it stronger",
+        "type": "Light Armor",
+        "img": "E056",
+        "reqLv": 30,
+        "power": 200,
+        "magicPower": 200,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 4,
+          "requireItem": ["E037", "I067", "I034", "I044"],
+          "requireQty": [1, 10, 5, 1],
+          "requireMoney": 1500
+        }
+      },
+      {
+        "id": 57,
+        "name": "Elemental Sword",
+        "desc": "A sword made by mana steel, very capable of infusing with magic energy",
+        "type": "Sword",
+        "img": "E057",
+        "reqLv": 40,
+        "power": 800,
+        "magicPower": 250,
+        "price": 3500,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 5,
+          "requireItem": ["I024", "I025", "I053"],
+          "requireQty": [5, 1, 3],
+          "requireMoney": 1000
+        }
+      },
+      {
+        "id": 58,
+        "name": "Hardwood Shield",
+        "desc": "A shield made by extra durable wood",
+        "type": "Shield",
+        "img": "E058",
+        "reqLv": 40,
+        "power": 300,
+        "magicPower": 150,
+        "price": 2500,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 5,
+          "requireItem": ["I024", "I053"],
+          "requireQty": [3, 3],
+          "requireMoney": 1000
+        }
+      },
+      {
+        "id": 59,
+        "name": "Elemental Axe",
+        "desc": "An axe made by mana steel, very capable of infusing with magic energy",
+        "type": "Axe",
+        "img": "E059",
+        "reqLv": 40,
+        "power": 1800,
+        "magicPower": 600,
+        "price": 5000,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 5,
+          "requireItem": ["I024", "I025", "I053"],
+          "requireQty": [10, 1, 3],
+          "requireMoney": 1500
+        }
+      },
+      {
+        "id": 60,
+        "name": "Arcane Wand",
+        "desc": "A wand for greater mage",
+        "type": "Wand",
+        "img": "E060",
+        "reqLv": 40,
+        "power": 85,
+        "magicPower": 520,
+        "price": 3500,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 5,
+          "requireItem": ["I053", "I054", "I035"],
+          "requireQty": [5, 1, 3],
+          "requireMoney": 1000
+        }
+      },
+      {
+        "id": 61,
+        "name": "Adapt Spellbook",
+        "desc": "A spellbook for greater mage",
+        "type": "Spellbook",
+        "img": "E061",
+        "reqLv": 40,
+        "power": 70,
+        "magicPower": 120,
+        "price": 2500,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 5,
+          "requireItem": ["I054", "I035"],
+          "requireQty": [3, 3],
+          "requireMoney": 1000
+        }
+      },
+      {
+        "id": 62,
+        "name": "Arcane Staff",
+        "desc": "A staff for greater mage",
+        "type": "Staff",
+        "img": "E062",
+        "reqLv": 40,
+        "power": 180,
+        "magicPower": 1200,
+        "price": 5000,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 5,
+          "requireItem": ["I053", "I054", "I035"],
+          "requireQty": [10, 1, 3],
+          "requireMoney": 1500
+        }
+      },
+      {
+        "id": 63,
+        "name": "Magicwood Bow",
+        "desc": "A bow made by mana wood, very capable of infusing with magic energy",
+        "type": "Bow",
+        "img": "E063",
+        "reqLv": 40,
+        "power": 700,
+        "magicPower": 700,
+        "price": 3500,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 5,
+          "requireItem": ["I024", "I053"],
+          "requireQty": [5, 5],
+          "requireMoney": 1500
+        }
+      },
+      {
+        "id": 64,
+        "name": "Elemental Dagger",
+        "desc": "A dagger made by mana steel, very capable of infusing with magic energy",
+        "type": "Dagger",
+        "img": "E064",
+        "reqLv": 40,
+        "power": 400,
+        "magicPower": 400,
+        "price": 3500,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 5,
+          "requireItem": ["I024", "I053"],
+          "requireQty": [7, 2],
+          "requireMoney": 1500
+        }
+      },
+      {
+        "id": 65,
+        "name": "Knight's Armor",
+        "desc": "An amror that belongs to a true knight",
+        "type": "Heavy Armor",
+        "img": "E065",
+        "reqLv": 40,
+        "power": 300,
+        "magicPower": 225,
+        "price": 2500,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 5,
+          "requireItem": ["I024", "I025", "I068", "I074"],
+          "requireQty": [10, 1, 3, 3],
+          "requireMoney": 1500
+        }
+      },
+      {
+        "id": 66,
+        "name": "Adapt's Cloth",
+        "desc": "A cloth that belongs to a great mage",
+        "type": "Robe Armor",
+        "img": "E066",
+        "reqLv": 40,
+        "power": 225,
+        "magicPower": 300,
+        "price": 2500,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 5,
+          "requireItem": ["I074", "I080", "I035"],
+          "requireQty": [10, 5, 3],
+          "requireMoney": 1500
+        }
+      },
+      {
+        "id": 67,
+        "name": "Archer's Armor",
+        "desc": "An amror that belongs to a true sniper",
+        "type": "Light Armor",
+        "img": "E067",
+        "reqLv": 40,
+        "power": 250,
+        "magicPower": 250,
+        "price": 2500,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 5,
+          "requireItem": ["I068", "I074", "I080"],
+          "requireQty": [10, 5, 5],
+          "requireMoney": 1500
+        }
+      },
+      {
+        "id": 68,
+        "name": "Sword of Thor",
+        "desc": "A sword that proceed with lighting energy",
+        "type": "Sword",
+        "img": "E068",
+        "reqLv": 40,
+        "power": 1250,
+        "magicPower": 250,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 6,
+          "requireItem": ["E057", "I025", "I035", "I040"],
+          "requireQty": [1, 5, 5, 2],
+          "requireMoney": 3000
+        }
+      },
+      {
+        "id": 69,
+        "name": "Sword of Aya",
+        "desc": "A sword that proceed with wind energy",
+        "type": "Sword",
+        "img": "E069",
+        "reqLv": 40,
+        "power": 900,
+        "magicPower": 900,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 6,
+          "requireItem": ["E057", "I025", "I035", "I044"],
+          "requireQty": [1, 5, 5, 2],
+          "requireMoney": 3000
+        }
+      },
+      {
+        "id": 70,
+        "name": "Bloody Shield",
+        "desc": "A shield that is decrorated with blood",
+        "type": "Shield",
+        "img": "E070",
+        "reqLv": 40,
+        "power": 450,
+        "magicPower": 200,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 6,
+          "requireItem": ["E058", "I025", "I035", "I038"],
+          "requireQty": [1, 5, 5, 2],
+          "requireMoney": 3000
+        }
+      },
+      {
+        "id": 71,
+        "name": "Spiking Shield",
+        "desc": "A shield with a huge spike",
+        "type": "Shield",
+        "img": "E071",
+        "reqLv": 40,
+        "power": 350,
+        "magicPower": 450,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 6,
+          "requireItem": ["E058", "I025", "I035", "I040"],
+          "requireQty": [1, 5, 5, 2],
+          "requireMoney": 3000
+        }
+      },
+      {
+        "id": 72,
+        "name": "Flaming Axe",
+        "desc": "An axe that have fire on its head",
+        "type": "Axe",
+        "img": "E072",
+        "reqLv": 40,
+        "power": 2600,
+        "magicPower": 600,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 6,
+          "requireItem": ["E059", "I025", "I035", "I038"],
+          "requireQty": [1, 10, 5, 2],
+          "requireMoney": 4000
+        }
+      },
+      {
+        "id": 73,
+        "name": "Frozen Axe",
+        "desc": "An axe that have ice on its head",
+        "type": "Axe",
+        "img": "E073",
+        "reqLv": 40,
+        "power": 2000,
+        "magicPower": 1500,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 6,
+          "requireItem": ["E059", "I025", "I035", "I042"],
+          "requireQty": [1, 10, 5, 2],
+          "requireMoney": 4000
+        }
+      },
+      {
+        "id": 74,
+        "name": "Wand of Thor",
+        "desc": "A wand that proceed with lighting energy",
+        "type": "Wand",
+        "img": "E074",
+        "reqLv": 40,
+        "power": 85,
+        "magicPower": 700,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 6,
+          "requireItem": ["E060", "I054", "I035", "I040"],
+          "requireQty": [1, 5, 5, 2],
+          "requireMoney": 3000
+        }
+      },
+      {
+        "id": 75,
+        "name": "Wand of Aya",
+        "desc": "A wand that proceed with wind energy",
+        "type": "Wand",
+        "img": "E075",
+        "reqLv": 40,
+        "power": 120,
+        "magicPower": 675,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 6,
+          "requireItem": ["E060", "I054", "I035", "I044"],
+          "requireQty": [1, 5, 5, 2],
+          "requireMoney": 3000
+        }
+      },
+      {
+        "id": 76,
+        "name": "Noble Spellbook",
+        "desc": "A nice-looking spellbook that suits a noble mage",
+        "type": "Spellbook",
+        "img": "E076",
+        "reqLv": 40,
+        "power": 90,
+        "magicPower": 180,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 6,
+          "requireItem": ["E061", "I035", "I042"],
+          "requireQty": [1, 10, 2],
+          "requireMoney": 3000
+        }
+      },
+      {
+        "id": 77,
+        "name": "Onmis Spellbook",
+        "desc": "A omnious looking spellbook",
+        "type": "Spellbook",
+        "img": "E077",
+        "reqLv": 40,
+        "power": 130,
+        "magicPower": 150,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 6,
+          "requireItem": ["E061", "I035", "I046"],
+          "requireQty": [1, 10, 2],
+          "requireMoney": 3000
+        }
+      },
+      {
+        "id": 78,
+        "name": "Staff of Wind",
+        "desc": "A staff that proceed with wind energy",
+        "type": "Staff",
+        "img": "E078",
+        "reqLv": 40,
+        "power": 180,
+        "magicPower": 1600,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 6,
+          "requireItem": ["E062", "I054", "I035", "I040"],
+          "requireQty": [1, 10, 5, 2],
+          "requireMoney": 4000
+        }
+      },
+      {
+        "id": 79,
+        "name": "Staff of Dark",
+        "desc": "A staff that proceed with dark energy",
+        "type": "Staff",
+        "img": "E079",
+        "reqLv": 40,
+        "power": 250,
+        "magicPower": 1500,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 6,
+          "requireItem": ["E062", "I054", "I035", "I046"],
+          "requireQty": [1, 10, 5, 2],
+          "requireMoney": 4000
+        }
+      },
+      {
+        "id": 80,
+        "name": "Extra Frozen Bow",
+        "desc": "",
+        "type": "Bow",
+        "img": "E080",
+        "reqLv": 40,
+        "power": 950,
+        "magicPower": 800,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 6,
+          "requireItem": ["E063", "I054", "I035", "I042"],
+          "requireQty": [1, 10, 5, 2],
+          "requireMoney": 4000
+        }
+      },
+      {
+        "id": 81,
+        "name": "Extra Windy Bow",
+        "desc": "",
+        "type": "Bow",
+        "img": "E081",
+        "reqLv": 40,
+        "power": 800,
+        "magicPower": 950,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 6,
+          "requireItem": ["E063", "I054", "I035", "I044"],
+          "requireQty": [1, 10, 5, 2],
+          "requireMoney": 4000
+        }
+      },
+      {
+        "id": 82,
+        "name": "Extra Flaming Dragger",
+        "desc": "",
+        "type": "Dagger",
+        "img": "E082",
+        "reqLv": 40,
+        "power": 600,
+        "magicPower": 450,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 6,
+          "requireItem": ["E064", "I025", "I035", "I038"],
+          "requireQty": [1, 10, 5, 2],
+          "requireMoney": 4000
+        }
+      },
+      {
+        "id": 83,
+        "name": "Extra Frozen Dragger",
+        "desc": "",
+        "type": "Dagger",
+        "img": "E083",
+        "reqLv": 40,
+        "power": 450,
+        "magicPower": 600,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 6,
+          "requireItem": ["E064", "I025", "I035", "I042"],
+          "requireQty": [1, 10, 5, 2],
+          "requireMoney": 4000
+        }
+      },
+      {
+        "id": 84,
+        "name": "Elite Knight's Armor",
+        "desc": "",
+        "type": "Heavy Armor",
+        "img": "E084",
+        "reqLv": 40,
+        "power": 450,
+        "magicPower": 350,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 6,
+          "requireItem": ["E065", "I025", "I035", "I040"],
+          "requireQty": [1, 10, 5, 2],
+          "requireMoney": 4000
+        }
+      },
+      {
+        "id": 85,
+        "name": "Flaming Archmage Cloth",
+        "desc": "",
+        "type": "Robe Armor",
+        "img": "E085",
+        "reqLv": 40,
+        "power": 350,
+        "magicPower": 450,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 6,
+          "requireItem": ["E066", "I074", "I034", "I038"],
+          "requireQty": [1, 10, 5, 2],
+          "requireMoney": 4000
+        }
+      },
+      {
+        "id": 86,
+        "name": "Enchanted Archer Armor",
+        "desc": "",
+        "type": "Light Armor",
+        "img": "E086",
+        "reqLv": 40,
+        "power": 375,
+        "magicPower": 375,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 6,
+          "requireItem": ["E067", "I068", "I034", "I044"],
+          "requireQty": [1, 10, 5, 2],
+          "requireMoney": 4000
+        }
+      },
+      {
+        "id": 87,
+        "name": "Runic Sword",
+        "desc": "",
+        "type": "Sword",
+        "img": "E087",
+        "reqLv": 50,
+        "power": 1650,
+        "magicPower": 400,
+        "price": 4500,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 7,
+          "requireItem": ["I025", "I026", "I054"],
+          "requireQty": [5, 1, 3],
+          "requireMoney": 2000
+        }
+      },
+      {
+        "id": 88,
+        "name": "Tower Shield",
+        "desc": "",
+        "type": "Shield",
+        "img": "E088",
+        "reqLv": 50,
+        "power": 600,
+        "magicPower": 250,
+        "price": 3500,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 7,
+          "requireItem": ["I025", "I056"],
+          "requireQty": [3, 3],
+          "requireMoney": 2000
+        }
+      },
+      {
+        "id": 89,
+        "name": "Extreme Elemental Axe",
+        "desc": "",
+        "type": "Axe",
+        "img": "E089",
+        "reqLv": 50,
+        "power": 3400,
+        "magicPower": 800,
+        "price": 6200,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 7,
+          "requireItem": ["I025", "I026", "I054"],
+          "requireQty": [10, 1, 3],
+          "requireMoney": 3000
+        }
+      },
+      {
+        "id": 90,
+        "name": "Golden Flaming Wand",
+        "desc": "",
+        "type": "Wand",
+        "img": "E090",
+        "reqLv": 50,
+        "power": 120,
+        "magicPower": 750,
+        "price": 4500,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 7,
+          "requireItem": ["I054", "I055", "I036"],
+          "requireQty": [5, 1, 3],
+          "requireMoney": 2000
+        }
+      },
+      {
+        "id": 91,
+        "name": "Master Spellbook",
+        "desc": "",
+        "type": "Spellbook",
+        "img": "E091",
+        "reqLv": 50,
+        "power": 100,
+        "magicPower": 175,
+        "price": 3500,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 7,
+          "requireItem": ["I055", "I036"],
+          "requireQty": [3, 3],
+          "requireMoney": 2000
+        }
+      },
+      {
+        "id": 92,
+        "name": "Spiral Staff",
+        "desc": "",
+        "type": "Staff",
+        "img": "E092",
+        "reqLv": 50,
+        "power": 300,
+        "magicPower": 1650,
+        "price": 6200,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 7,
+          "requireItem": ["I054", "I055", "I036"],
+          "requireQty": [10, 1, 3],
+          "requireMoney": 3000
+        }
+      },
+      {
+        "id": 93,
+        "name": "Metallic Crossbow",
+        "desc": "",
+        "type": "Bow",
+        "img": "E093",
+        "reqLv": 50,
+        "power": 900,
+        "magicPower": 900,
+        "price": 4500,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 7,
+          "requireItem": ["I025", "I054"],
+          "requireQty": [5, 5],
+          "requireMoney": 3000
+        }
+      },
+      {
+        "id": 94,
+        "name": "Katana",
+        "desc": "",
+        "type": "Dagger",
+        "img": "E094",
+        "reqLv": 50,
+        "power": 550,
+        "magicPower": 550,
+        "price": 4500,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 7,
+          "requireItem": ["I025", "I054"],
+          "requireQty": [7, 2],
+          "requireMoney": 3000
+        }
+      },
+      {
+        "id": 95,
+        "name": "Royal Knight's Armor",
+        "desc": "",
+        "type": "Heavy Armor",
+        "img": "E095",
+        "reqLv": 50,
+        "power": 420,
+        "magicPower": 350,
+        "price": 4000,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 7,
+          "requireItem": ["I025", "I026", "I069", "I075"],
+          "requireQty": [10, 1, 3, 3],
+          "requireMoney": 3000
+        }
+      },
+      {
+        "id": 96,
+        "name": "Master's Cloth",
+        "desc": "",
+        "type": "Robe Armor",
+        "img": "E096",
+        "reqLv": 50,
+        "power": 350,
+        "magicPower": 420,
+        "price": 4000,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 7,
+          "requireItem": ["I075", "I081", "I036"],
+          "requireQty": [10, 5, 3],
+          "requireMoney": 3000
+        }
+      },
+      {
+        "id": 97,
+        "name": "Royal Archer's Armor",
+        "desc": "",
+        "type": "Light Armor",
+        "img": "E097",
+        "reqLv": 50,
+        "power": 375,
+        "magicPower": 375,
+        "price": 4000,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 7,
+          "requireItem": ["I069", "I075", "I081"],
+          "requireQty": [10, 5, 5],
+          "requireMoney": 3000
+        }
+      },
+      {
+        "id": 98,
+        "name": "Ancient Sword",
+        "desc": "",
+        "type": "Sword",
+        "img": "E098",
+        "reqLv": 50,
+        "power": 2450,
+        "magicPower": 400,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 8,
+          "requireItem": ["E087", "I026", "I036", "I041"],
+          "requireQty": [1, 5, 3, 1],
+          "requireMoney": 5000
+        }
+      },
+      {
+        "id": 99,
+        "name": "Toture Sword",
+        "desc": "",
+        "type": "Sword",
+        "img": "E099",
+        "reqLv": 50,
+        "power": 1900,
+        "magicPower": 1900,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 8,
+          "requireItem": ["E087", "I026", "I036", "I047"],
+          "requireQty": [1, 5, 3, 1],
+          "requireMoney": 5000
+        }
+      },
+      {
+        "id": 100,
+        "name": "Royal Tower Shield",
+        "desc": "",
+        "type": "Shield",
+        "img": "E100",
+        "reqLv": 50,
+        "power": 900,
+        "magicPower": 350,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 8,
+          "requireItem": ["E088", "I026", "I041"],
+          "requireQty": [1, 10, 1],
+          "requireMoney": 5000
+        }
+      },
+      {
+        "id": 101,
+        "name": "Enhanted Tower Shield",
+        "desc": "",
+        "type": "Shield",
+        "img": "E101",
+        "reqLv": 50,
+        "power": 700,
+        "magicPower": 900,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 8,
+          "requireItem": ["E088", "I026", "I045"],
+          "requireQty": [1, 10, 1],
+          "requireMoney": 5000
+        }
+      },
+      {
+        "id": 102,
+        "name": "Extreme Flaming Axe",
+        "desc": "",
+        "type": "Axe",
+        "img": "E102",
+        "reqLv": 50,
+        "power": 5150,
+        "magicPower": 2000,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 8,
+          "requireItem": ["E089", "I026", "I036", "I039"],
+          "requireQty": [1, 10, 5, 1],
+          "requireMoney": 7000
+        }
+      },
+      {
+        "id": 103,
+        "name": "Extreme Frozen Axe",
+        "desc": "",
+        "type": "Axe",
+        "img": "E103",
+        "reqLv": 50,
+        "power": 4100,
+        "magicPower": 4500,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 8,
+          "requireItem": ["E089", "I026", "I036", "I043"],
+          "requireQty": [1, 10, 5, 1],
+          "requireMoney": 7000
+        }
+      },
+      {
+        "id": 104,
+        "name": "Otherworldly Flame",
+        "desc": "",
+        "type": "Wand",
+        "img": "E104",
+        "reqLv": 50,
+        "power": 180,
+        "magicPower": 1050,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 8,
+          "requireItem": ["E090", "I055", "I036", "I043", "I045"],
+          "requireQty": [1, 5, 3, 1, 1],
+          "requireMoney": 5000
+        }
+      },
+      {
+        "id": 105,
+        "name": "Bloody Skull Wand",
+        "desc": "",
+        "type": "Wand",
+        "img": "E105",
+        "reqLv": 50,
+        "power": 250,
+        "magicPower": 900,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 8,
+          "requireItem": ["E090", "I055", "I036", "I041", "I047"],
+          "requireQty": [1, 5, 3, 1, 1],
+          "requireMoney": 5000
+        }
+      },
+      {
+        "id": 106,
+        "name": "Extra Noble Spellbook",
+        "desc": "",
+        "type": "Spellbook",
+        "img": "E106",
+        "reqLv": 50,
+        "power": 150,
+        "magicPower": 350,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 8,
+          "requireItem": ["E091", "I036", "I041", "I048"],
+          "requireQty": [1, 5, 3, 1],
+          "requireMoney": 5000
+        }
+      },
+      {
+        "id": 107,
+        "name": "Extra Onmis Spellbook",
+        "desc": "",
+        "type": "Spellbook",
+        "img": "E107",
+        "reqLv": 50,
+        "power": 250,
+        "magicPower": 300,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 8,
+          "requireItem": ["E091", "I036", "I047", "I048"],
+          "requireQty": [1, 5, 3, 1],
+          "requireMoney": 5000
+        }
+      },
+      {
+        "id": 108,
+        "name": "Windy Spiral",
+        "desc": "",
+        "type": "Staff",
+        "img": "E108",
+        "reqLv": 50,
+        "power": 350,
+        "magicPower": 2500,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 8,
+          "requireItem": ["E092", "I055", "I036", "I045", "I048"],
+          "requireQty": [1, 10, 5, 1, 1],
+          "requireMoney": 7000
+        }
+      },
+      {
+        "id": 109,
+        "name": "Dark Spiral",
+        "desc": "",
+        "type": "Staff",
+        "img": "E109",
+        "reqLv": 50,
+        "power": 800,
+        "magicPower": 2100,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 8,
+          "requireItem": ["E092", "I055", "I036", "I047", "I048"],
+          "requireQty": [1, 10, 5, 1, 1],
+          "requireMoney": 7000
+        }
+      },
+      {
+        "id": 110,
+        "name": "Frozen Crossbow",
+        "desc": "",
+        "type": "Bow",
+        "img": "E110",
+        "reqLv": 50,
+        "power": 1400,
+        "magicPower": 1000,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 8,
+          "requireItem": ["E093", "I026", "I036", "I043"],
+          "requireQty": [1, 10, 5, 1],
+          "requireMoney": 7000
+        }
+      },
+      {
+        "id": 111,
+        "name": "Windy Crossbow",
+        "desc": "",
+        "type": "Bow",
+        "img": "E111",
+        "reqLv": 50,
+        "power": 1000,
+        "magicPower": 1400,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 8,
+          "requireItem": ["E093", "I026", "I036", "I045"],
+          "requireQty": [1, 10, 5, 1],
+          "requireMoney": 7000
+        }
+      },
+      {
+        "id": 112,
+        "name": "Windy Katana",
+        "desc": "",
+        "type": "Dagger",
+        "img": "E112",
+        "reqLv": 50,
+        "power": 750,
+        "magicPower": 600,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 8,
+          "requireItem": ["E094", "I026", "I036", "I045"],
+          "requireQty": [1, 10, 5, 1],
+          "requireMoney": 7000
+        }
+      },
+      {
+        "id": 113,
+        "name": "Thunder Katana",
+        "desc": "",
+        "type": "Dagger",
+        "img": "E113",
+        "reqLv": 50,
+        "power": 600,
+        "magicPower": 750,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 8,
+          "requireItem": ["E094", "I026", "I036", "I041"],
+          "requireQty": [1, 10, 5, 1],
+          "requireMoney": 7000
+        }
+      },
+      {
+        "id": 114,
+        "name": "King Guard's Armor",
+        "desc": "",
+        "type": "Heavy Armor",
+        "img": "E114",
+        "reqLv": 50,
+        "power": 575,
+        "magicPower": 450,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 8,
+          "requireItem": ["E095", "I026", "I039", "I048"],
+          "requireQty": [1, 10, 1, 1],
+          "requireMoney": 7000
+        }
+      },
+      {
+        "id": 115,
+        "name": "Forzen Archmage Cloth",
+        "desc": "",
+        "type": "Robe Armor",
+        "img": "E115",
+        "reqLv": 50,
+        "power": 450,
+        "magicPower": 575,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 8,
+          "requireItem": ["E096", "I069", "I043", "I048"],
+          "requireQty": [1, 10, 1, 1],
+          "requireMoney": 7000
+        }
+      },
+      {
+        "id": 116,
+        "name": "Elite Archer's Armor",
+        "desc": "",
+        "type": "Light Armor",
+        "img": "E116",
+        "reqLv": 50,
+        "power": 525,
+        "magicPower": 525,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 8,
+          "requireItem": ["E097", "I075", "I045", "I048"],
+          "requireQty": [1, 10, 1, 1],
+          "requireMoney": 7000
+        }
+      },
+      {
+        "id": 117,
+        "name": "Hero's Sword",
+        "desc": "",
+        "type": "Sword",
+        "img": "E117",
+        "reqLv": 60,
+        "power": 4000,
+        "magicPower": 2000,
+        "price": 6000,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 9,
+          "requireItem": ["I026", "I027", "I055"],
+          "requireQty": [5, 1, 3],
+          "requireMoney": 5000
+        }
+      },
+      {
+        "id": 118,
+        "name": "Hero's Shield",
+        "desc": "",
+        "type": "Shield",
+        "img": "E118",
+        "reqLv": 60,
+        "power": 1000,
+        "magicPower": 500,
+        "price": 4500,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 9,
+          "requireItem": ["I026", "I057"],
+          "requireQty": [3, 3],
+          "requireMoney": 5000
+        }
+      },
+      {
+        "id": 119,
+        "name": "Machical Axe",
+        "desc": "",
+        "type": "Axe",
+        "img": "E119",
+        "reqLv": 60,
+        "power": 9000,
+        "magicPower": 4000,
+        "price": 8000,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 9,
+          "requireItem": ["I026", "I027", "I055"],
+          "requireQty": [10, 1, 3],
+          "requireMoney": 7500
+        }
+      },
+      {
+        "id": 120,
+        "name": "Double Wand",
+        "desc": "",
+        "type": "Wand",
+        "img": "E120",
+        "reqLv": 60,
+        "power": 180,
+        "magicPower": 925,
+        "price": 6000,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 9,
+          "requireItem": ["I055", "I037"],
+          "requireQty": [5, 3],
+          "requireMoney": 5000
+        }
+      },
+      {
+        "id": 121,
+        "name": "Ancient Spellbook",
+        "desc": "",
+        "type": "Spellbook",
+        "img": "E121",
+        "reqLv": 60,
+        "power": 125,
+        "magicPower": 220,
+        "price": 4500,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 9,
+          "requireItem": ["I055", "I037"],
+          "requireQty": [3, 3],
+          "requireMoney": 5000
+        }
+      },
+      {
+        "id": 122,
+        "name": "Bright Crystal Wand",
+        "desc": "",
+        "type": "Staff",
+        "img": "E122",
+        "reqLv": 60,
+        "power": 400,
+        "magicPower": 2200,
+        "price": 8000,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 9,
+          "requireItem": ["I055", "I056", "I037"],
+          "requireQty": [10, 1, 3],
+          "requireMoney": 7500
+        }
+      },
+      {
+        "id": 123,
+        "name": "Eagle's Bow",
+        "desc": "",
+        "type": "Bow",
+        "img": "E123",
+        "reqLv": 60,
+        "power": 1100,
+        "magicPower": 1100,
+        "price": 6000,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 9,
+          "requireItem": ["I026", "I055"],
+          "requireQty": [5, 5],
+          "requireMoney": 7500
+        }
+      },
+      {
+        "id": 124,
+        "name": "Kunai",
+        "desc": "",
+        "type": "Dagger",
+        "img": "E124",
+        "reqLv": 60,
+        "power": 700,
+        "magicPower": 700,
+        "price": 6000,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 9,
+          "requireItem": ["I026", "I055"],
+          "requireQty": [7, 2],
+          "requireMoney": 7500
+        }
+      },
+      {
+        "id": 125,
+        "name": "Hero's Armor",
+        "desc": "",
+        "type": "Heavy Armor",
+        "img": "E125",
+        "reqLv": 60,
+        "power": 550,
+        "magicPower": 450,
+        "price": 6000,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 9,
+          "requireItem": ["I026", "I027", "I070", "I076"],
+          "requireQty": [10, 1, 3, 3],
+          "requireMoney": 7500
+        }
+      },
+      {
+        "id": 126,
+        "name": "Lab Mem's Cloth",
+        "desc": "",
+        "type": "Robe Armor",
+        "img": "E126",
+        "reqLv": 60,
+        "power": 450,
+        "magicPower": 550,
+        "price": 6000,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 9,
+          "requireItem": ["I076", "I082", "I037"],
+          "requireQty": [10, 5, 3],
+          "requireMoney": 7500
+        }
+      },
+      {
+        "id": 127,
+        "name": "Sniper Armor",
+        "desc": "",
+        "type": "Light Armor",
+        "img": "E127",
+        "reqLv": 60,
+        "power": 500,
+        "magicPower": 500,
+        "price": 6000,
+        "buyPlace": "Blacksmith",
+        "craftRecipe": {
+          "requireLevel": 9,
+          "requireItem": ["I070", "I076", "I082"],
+          "requireQty": [10, 5, 5],
+          "requireMoney": 7500
+        }
+      },
+      {
+        "id": 128,
+        "name": "Magma Lord's Anger",
+        "desc": "",
+        "type": "Sword",
+        "img": "E128",
+        "reqLv": 60,
+        "power": 6500,
+        "magicPower": 1000,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 10,
+          "requireItem": ["E117", "I027", "I037", "I039"],
+          "requireQty": [1, 10, 3, 2],
+          "requireMoney": 10000
+        }
+      },
+      {
+        "id": 129,
+        "name": "Devil's Sight",
+        "desc": "",
+        "type": "Sword",
+        "img": "E129",
+        "reqLv": 60,
+        "power": 5000,
+        "magicPower": 5000,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 10,
+          "requireItem": ["E117", "I027", "I037", "I047"],
+          "requireQty": [1, 10, 3, 2],
+          "requireMoney": 10000
+        }
+      },
+      {
+        "id": 130,
+        "name": "Nature's Protector",
+        "desc": "",
+        "type": "Shield",
+        "img": "E130",
+        "reqLv": 60,
+        "power": 1500,
+        "magicPower": 650,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 10,
+          "requireItem": ["E118", "I027", "I045", "I038"],
+          "requireQty": [1, 5, 2, 1],
+          "requireMoney": 10000
+        }
+      },
+      {
+        "id": 131,
+        "name": "Thunder Protector",
+        "desc": "",
+        "type": "Shield",
+        "img": "E131",
+        "reqLv": 60,
+        "power": 1150,
+        "magicPower": 1500,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 10,
+          "requireItem": ["E118", "I027", "I041", "I038"],
+          "requireQty": [1, 5, 2, 1],
+          "requireMoney": 10000
+        }
+      },
+      {
+        "id": 132,
+        "name": "Robotal Axe",
+        "desc": "",
+        "type": "Axe",
+        "img": "E132",
+        "reqLv": 60,
+        "power": 15000,
+        "magicPower": 6000,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 10,
+          "requireItem": ["E119", "I027", "I037", "I039"],
+          "requireQty": [1, 20, 5, 2],
+          "requireMoney": 12500
+        }
+      },
+      {
+        "id": 133,
+        "name": "Mice of Pain",
+        "desc": "",
+        "type": "Axe",
+        "img": "E133",
+        "reqLv": 60,
+        "power": 11000,
+        "magicPower": 12500,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 10,
+          "requireItem": ["E119", "I027", "I037", "I047"],
+          "requireQty": [1, 20, 5, 2],
+          "requireMoney": 12500
+        }
+      },
+      {
+        "id": 134,
+        "name": "Double Frozen Wand",
+        "desc": "",
+        "type": "Wand",
+        "img": "E134",
+        "reqLv": 60,
+        "power": 250,
+        "magicPower": 1500,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 10,
+          "requireItem": ["E120", "I055", "I037", "I043", "I049"],
+          "requireQty": [1, 10, 3, 2, 1],
+          "requireMoney": 10000
+        }
+      },
+      {
+        "id": 135,
+        "name": "Double Hellish Wand",
+        "desc": "",
+        "type": "Wand",
+        "img": "E135",
+        "reqLv": 60,
+        "power": 500,
+        "magicPower": 1300,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 10,
+          "requireItem": ["E120", "I055", "I037", "I047", "I049"],
+          "requireQty": [1, 10, 3, 2, 1],
+          "requireMoney": 10000
+        }
+      },
+      {
+        "id": 136,
+        "name": "Mini Spellbook",
+        "desc": "",
+        "type": "Spellbook",
+        "img": "E136",
+        "reqLv": 60,
+        "power": 600,
+        "magicPower": 3800,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 10,
+          "requireItem": ["E121", "I037", "I045", "I049"],
+          "requireQty": [1, 5, 2, 1],
+          "requireMoney": 10000
+        }
+      },
+      {
+        "id": 137,
+        "name": "Dark Acrane Art",
+        "desc": "",
+        "type": "Spellbook",
+        "img": "E137",
+        "reqLv": 60,
+        "power": 1050,
+        "magicPower": 3500,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 10,
+          "requireItem": ["E121", "I037", "I047", "I049"],
+          "requireQty": [1, 5, 2, 1],
+          "requireMoney": 10000
+        }
+      },
+      {
+        "id": 138,
+        "name": "Ice Spirit Staff",
+        "desc": "",
+        "type": "Staff",
+        "img": "E138",
+        "reqLv": 60,
+        "power": 160,
+        "magicPower": 400,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 10,
+          "requireItem": ["E122", "I027", "I037", "I043", "I049"],
+          "requireQty": [1, 20, 5, 2, 1],
+          "requireMoney": 12500
+        }
+      },
+      {
+        "id": 139,
+        "name": "Magma Spirit Staff",
+        "desc": "",
+        "type": "Staff",
+        "img": "E139",
+        "reqLv": 60,
+        "power": 275,
+        "magicPower": 325,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 10,
+          "requireItem": ["E122", "I027", "I037", "I039", "I049"],
+          "requireQty": [1, 20, 5, 2, 1],
+          "requireMoney": 12500
+        }
+      },
+      {
+        "id": 140,
+        "name": "Icy Runner",
+        "desc": "",
+        "type": "Bow",
+        "img": "E140",
+        "reqLv": 60,
+        "power": 1900,
+        "magicPower": 1250,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 10,
+          "requireItem": ["E123", "I055", "I037", "I043"],
+          "requireQty": [1, 20, 5, 2],
+          "requireMoney": 12500
+        }
+      },
+      {
+        "id": 141,
+        "name": "Windy Runner",
+        "desc": "",
+        "type": "Bow",
+        "img": "E141",
+        "reqLv": 60,
+        "power": 1250,
+        "magicPower": 1900,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 10,
+          "requireItem": ["E123", "I055", "I037", "I045"],
+          "requireQty": [1, 20, 5, 2],
+          "requireMoney": 12500
+        }
+      },
+      {
+        "id": 142,
+        "name": "Ninjato",
+        "desc": "",
+        "type": "Dagger",
+        "img": "E142",
+        "reqLv": 60,
+        "power": 1200,
+        "magicPower": 900,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 10,
+          "requireItem": ["E124", "I027", "I037", "I045"],
+          "requireQty": [1, 20, 5, 2],
+          "requireMoney": 12500
+        }
+      },
+      {
+        "id": 143,
+        "name": "Cross Knife",
+        "desc": "",
+        "type": "Dagger",
+        "img": "E143",
+        "reqLv": 60,
+        "power": 900,
+        "magicPower": 1200,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 10,
+          "requireItem": ["E124", "I027", "I037", "I041"],
+          "requireQty": [1, 20, 5, 2],
+          "requireMoney": 12500
+        }
+      },
+      {
+        "id": 144,
+        "name": "Ultra Hero's Armor",
+        "desc": "",
+        "type": "Heavy Armor",
+        "img": "E144",
+        "reqLv": 60,
+        "power": 750,
+        "magicPower": 550,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 10,
+          "requireItem": ["E125", "I027", "I037", "I049"],
+          "requireQty": [1, 20, 5, 1],
+          "requireMoney": 12500
+        }
+      },
+      {
+        "id": 145,
+        "name": "Shadow Walker",
+        "desc": "",
+        "type": "Robe Armor",
+        "img": "E145",
+        "reqLv": 60,
+        "power": 550,
+        "magicPower": 750,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 10,
+          "requireItem": ["E126", "I076", "I037", "I049"],
+          "requireQty": [1, 20, 5, 1],
+          "requireMoney": 12500
+        }
+      },
+      {
+        "id": 146,
+        "name": "Heroic Sniper Armor",
+        "desc": "",
+        "type": "Light Armor",
+        "img": "E146",
+        "reqLv": 60,
+        "power": 600,
+        "magicPower": 600,
+        "price": 0,
+        "buyPlace": "Craft",
+        "craftRecipe": {
+          "requireLevel": 10,
+          "requireItem": ["E127", "I070", "I037", "I049"],
+          "requireQty": [1, 20, 5, 1],
+          "requireMoney": 12500
+        }
+      },
+      {
+        "id": 147,
+        "name": "Copper Ring",
+        "desc": "A plain ring made from silver",
+        "type": "Accessory",
+        "img": "E147",
+        "reqLv": 10,
+        "power": 0,
+        "magicPower": 0,
+        "price": 1000,
+        "buyPlace": "JewelCraft",
+        "craftRecipe": {
+          "requireLevel": 1,
+          "requireItem": ["I021", "I032"],
+          "requireQty": [3, 2],
+          "requireMoney": 1000
+        }
+      },
+      {
+        "id": 148,
+        "name": "Iron Earring",
+        "desc": "A necklance made with gold",
+        "type": "Accessory",
+        "img": "E148",
+        "reqLv": 20,
+        "power": 0,
+        "magicPower": 0,
+        "price": 2000,
+        "buyPlace": "JewelCraft",
+        "craftRecipe": {
+          "requireLevel": 2,
+          "requireItem": ["I022", "I033"],
+          "requireQty": [3, 2],
+          "requireMoney": 2000
+        }
+      },
+      {
+        "id": 149,
+        "name": "Fang Necklace",
+        "desc": "A necklace wore by barbarians",
+        "type": "Accessory",
+        "img": "E149",
+        "reqLv": 30,
+        "power": 0,
+        "magicPower": 0,
+        "price": 5000,
+        "buyPlace": "JewelCraft",
+        "craftRecipe": {
+          "requireLevel": 4,
+          "requireItem": ["I023", "I034"],
+          "requireQty": [3, 2],
+          "requireMoney": 5000
+        }
+      },
+      {
+        "id": 150,
+        "name": "Silver Ring",
+        "desc": "A beautiful necklance with an amethyst",
+        "type": "Accessory",
+        "img": "E150",
+        "reqLv": 40,
+        "power": 0,
+        "magicPower": 0,
+        "price": 7500,
+        "buyPlace": "JewelCraft",
+        "craftRecipe": {
+          "requireLevel": 6,
+          "requireItem": ["I024", "I035"],
+          "requireQty": [3, 2],
+          "requireMoney": 7500
+        }
+      },
+      {
+        "id": 151,
+        "name": "Golden Badge",
+        "desc": "A magical badge made with gold",
+        "type": "Accessory",
+        "img": "E151",
+        "reqLv": 50,
+        "power": 0,
+        "magicPower": 0,
+        "price": 10000,
+        "buyPlace": "JewelCraft",
+        "craftRecipe": {
+          "requireLevel": 8,
+          "requireItem": ["I025", "I036", "I030"],
+          "requireQty": [3, 2, 1],
+          "requireMoney": 10000
+        }
+      },
+      {
+        "id": 152,
+        "name": "Royal Brace",
+        "desc": "A brace that is used by the royal knight",
+        "type": "Accessory",
+        "img": "E152",
+        "reqLv": 60,
+        "power": 0,
+        "magicPower": 0,
+        "price": 12500,
+        "buyPlace": "JewelCraft",
+        "craftRecipe": {
+          "requireLevel": 10,
+          "requireItem": ["I026", "I037", "I030"],
+          "requireQty": [3, 2, 1],
+          "requireMoney": 12500
+        }
+      }
+    ]
+  }
+  
