@@ -3,6 +3,9 @@ using System;
 using System.Collections.Generic;
 namespace RPG
 {
+    /// <summary>
+    /// Manage all buffs currently exist in an entity
+    /// </summary>
     public class BuffState
     {
         public int Count { get { return buffState.Count; } }
@@ -12,6 +15,9 @@ namespace RPG
             buffState = new List<Buff>();
         }
 
+        /// <summary>
+        /// cause all buff to take effect on an entity
+        /// </summary>
         public void passRound(Entity user)
         {
             //handle hp/mp change
@@ -26,7 +32,7 @@ namespace RPG
             //reduce round by 1 and remove buff when it is expired
             foreach (Buff buff in buffState.ToArray())
             {
-                if (buff.rounds == 0)
+                if (buff.rounds <= 1)
                 {
                     buffState.Remove(buff);
                 }
@@ -36,7 +42,10 @@ namespace RPG
                 }
             }
         }
-
+        /// <summary>
+        /// get the final stat modifer from all buff that exists in the entity
+        /// </summary>
+        /// <returns>A stat object represent the stat modifier that will apply to the entity</returns>
         public BasicStat getBasicStat()
         {
             BasicStat set = new BasicStat(1, 1, 1, 1, 1, 1, 1, 1);
@@ -48,6 +57,9 @@ namespace RPG
             return set;
         }
 
+        /// <summary>
+        /// add a buff to the eneity, also replace opposite buff
+        /// </summary>
         public void addBuff(Buff newBuff)
         {
 
@@ -75,6 +87,10 @@ namespace RPG
             return buffState[i];
         }
 
+        /// <summary>
+        /// Check if a buff exist
+        /// </summary>
+        /// <returns>Where a buff with buff id exist</returns>
         public bool isBuffExists(int buffId)
         {
             foreach (Buff buff in buffState.ToArray())
@@ -84,6 +100,10 @@ namespace RPG
             return false;
         }
 
+        /// <summary>
+        /// Check if entity is currently stunned
+        /// </summary>
+        /// <returns>Where entity is stunned</returns>
         public bool isStunned()
         {
             foreach (Buff buff in buffState.ToArray())
@@ -122,7 +142,9 @@ namespace RPG
             }
         }
 
-        //use for Sacrifice Summon skill
+        /// <summary>
+        /// remove all buff that is classified as Summon, use for Sacrifice Summon skill
+        /// </summary>
         public void removeSummons()
         {
             foreach (Buff buff in buffState.ToArray())

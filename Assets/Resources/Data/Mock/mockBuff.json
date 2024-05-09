@@ -1,0 +1,276 @@
+{
+    "Items": [{
+            "id": 1,
+            "name": "Stun",
+            "effects": ["Stun"],
+            "type": "Debuff",
+            "img": "debuff_stun",
+            "replace": [],
+            "stackable":false
+        }, {
+            "id": 2,
+            "name": "Hotblooded",
+            "effects": ["ATK"],
+            "type": "Buff",
+            "img": "005-Battle Cry",
+            "replace": [],
+            "stackable":false
+        }, {
+            "id": 3,
+            "name": "Berserk Mode",
+            "effects": ["ATK"],
+            "type": "Buff",
+            "img": "009-Beserk Assault",
+            "replace": [],
+            "stackable":false
+        }, {
+            "id": 4,
+            "name": "Defense",
+            "effects": ["DEF"],
+            "type": "Buff",
+            "img": "013-defense",
+            "replace": [5,6],
+            "stackable":false
+        }, {
+            "id": 5,
+            "name": "Healing Defense",
+            "effects": ["DEF"],
+            "type": "Buff",
+            "img": "014-Healing Defense",
+            "replace": [6,4],
+            "stackable":false
+        }, {
+            "id": 6,
+            "name": "Reflective Defense",
+            "effects": ["DEF"],
+            "type": "Buff",
+            "img": "015-Reflective Defense",
+            "replace": [5,4],
+            "stackable":false
+        }, {
+            "id": 7,
+            "name": "Last Hope",
+            "effects": ["DEF","MDEF"],
+            "type": "Buff",
+            "img": "017-Last Hope",
+            "replace": [],
+            "stackable":false
+        }, {
+            "id": 8,
+            "name": "Mana Burst",
+            "effects": ["MATK"],
+            "type": "Buff",
+            "img": "026-Mana Brust",
+            "replace": [],
+            "stackable":false
+        }, {
+            "id": 9,
+            "name": "Magical Shield",
+            "effects": ["DEF","MDEF"],
+            "type": "Buff",
+            "img": "030-Magical Shield",
+            "replace": [],
+            "stackable":false
+        }, {
+            "id": 10,
+            "name": "Wind Step",
+            "effects": ["AGI"],
+            "type": "Buff",
+            "img": "075-wind step",
+            "replace": [],
+            "stackable":false
+        }, {
+            "id": 11,
+            "name": "Power Stand",
+            "effects": ["ATK"],
+            "type": "Buff",
+            "img": "076-power stand",
+            "replace": [],
+            "stackable":false
+        }, {
+            "id": 12,
+            "name": "Shadow Form",
+            "effects": ["AGI","DEX"],
+            "type": "Buff",
+            "img": "087-Shadow Form",
+            "replace": [],
+            "stackable":false
+        }, {
+            "id": 13,
+            "name": "Poison",
+            "effects": ["HP"],
+            "type": "Debuff",
+            "img": "debuff_poison",
+            "replace": [14,15,24],
+            "stackable":false
+        }, {
+            "id": 14,
+            "name": "Burning",
+            "effects": ["HP"],
+            "type": "Debuff",
+            "img": "debuff_burn",
+            "replace": [13,15,24],
+            "stackable":false
+        }, {
+            "id": 15,
+            "name": "Bleeding",
+            "effects": ["HP"],
+            "type": "Debuff",
+            "img": "debuff_bleed",
+            "replace": [13,14,24],
+            "stackable":false
+        }, {
+            "id": 16,
+            "name": "Blind",
+            "effects": ["DEX"],
+            "type": "Debuff",
+            "img": "debuff_blind",
+            "replace": [23],
+            "stackable":false
+        }, {
+            "id": 17,
+            "name": "MP drain",
+            "effects": ["MP"],
+            "type": "Debuff",
+            "img": "debuff_mpdrain",
+            "replace": [25],
+            "stackable":false
+        }, {
+            "id": 18,
+            "name": "ATK debuff",
+            "effects": ["ATK"],
+            "type": "Debuff",
+            "img": "debuff_atk",
+            "replace": [26],
+            "stackable":false
+        }, {
+            "id": 19,
+            "name": "MATK debuff",
+            "effects": ["MATK"],
+            "type": "Debuff",
+            "img": "debuff_matk",
+            "replace": [27],
+            "stackable":false
+        }, {
+            "id": 20,
+            "name": "DEF debuff",
+            "effects": ["DEF"],
+            "type": "Debuff",
+            "img": "debuff_def",
+            "replace": [28],
+            "stackable":false
+        }, {
+            "id": 21,
+            "name": "MDEF debuff",
+            "effects": ["MDEF"],
+            "type": "Debuff",
+            "img": "debuff_mdef",
+            "replace": [29],
+            "stackable":false
+        }, {
+            "id": 22,
+            "name": "AGI debuff",
+            "effects": ["AGI"],
+            "type": "Debuff",
+            "img": "debuff_agi",
+            "replace": [30],
+            "stackable":false
+        }, {
+            "id": 23,
+            "name": "DEX debuff",
+            "effects": ["DEX"],
+            "type": "Debuff",
+            "img": "debuff_dex",
+            "replace": [31],
+            "stackable":false
+        }, {
+            "id": 24,
+            "name": "Regenerate HP",
+            "effects": ["HP"],
+            "type": "Buff",
+            "img": "buff_regenhp",
+            "replace": [13,14,15],
+            "stackable":false
+        }, {
+            "id": 25,
+            "name": "Regenerate MP",
+            "effects": ["MP"],
+            "type": "Buff",
+            "img": "buff_regenmp",
+            "replace": [17],
+            "stackable":false
+        }, {
+            "id": 26,
+            "name": "ATK buff",
+            "effects": ["ATK"],
+            "type": "Buff",
+            "img": "buff_atk",
+            "replace": [18],
+            "stackable":false
+        }, {
+            "id": 27,
+            "name": "MATK buff",
+            "effects": ["MATK"],
+            "type": "Buff",
+            "img": "buff_matk",
+            "replace": [19],
+            "stackable":false
+        }, {
+            "id": 28,
+            "name": "DEF buff",
+            "effects": ["DEF"],
+            "type": "Buff",
+            "img": "buff_def",
+            "replace": [20],
+            "stackable":false
+        }, {
+            "id": 29,
+            "name": "MDEF buff",
+            "effects": ["MDEF"],
+            "type": "Buff",
+            "img": "buff_mdef",
+            "replace": [21],
+            "stackable":false
+        }, {
+            "id": 30,
+            "name": "AGI buff",
+            "effects": ["AGI"],
+            "type": "Buff",
+            "img": "buff_agi",
+            "replace": [22],
+            "stackable":false
+        }, {
+            "id": 31,
+            "name": "DEX buff",
+            "effects": ["DEX"],
+            "type": "Buff",
+            "img": "buff_dex",
+            "replace": [23],
+            "stackable":false
+        }, {
+            "id": 32,
+            "name": "Summon Zombie",
+            "effects": ["Summon_Zombie"],
+            "type": "Buff",
+            "img": "054-Summon Zombie",
+            "replace": [33,34],
+            "stackable":false
+        },{
+            "id": 33,
+            "name": "Summon Skeleton",
+            "effects": ["Summon_Skeleton"],
+            "type": "Buff",
+            "img": "055-Summon Skeleton Warrior",
+            "replace": [32,34],
+            "stackable":false
+        },{
+            "id": 34,
+            "name": "Summon Dark Spirit",
+            "effects": ["Summon_Dark_Spirit"],
+            "type": "Buff",
+            "img": "056-Summon Dark Spirit",
+            "replace": [32,33],
+            "stackable":false
+        }
+    ]
+}

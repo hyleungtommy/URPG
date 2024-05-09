@@ -2,6 +2,9 @@ using UnityEngine;
 using System;
 namespace RPG
 {
+    /// <summary>
+    /// Represent a buff instance, initalize by ApplyBuffTemplate
+    /// </summary>
     public class Buff
     {
         public enum Type
@@ -60,12 +63,19 @@ namespace RPG
             this.chance = chance;
         }
 
+        /// <summary>
+        /// Reduce the buff round by one
+        /// </summary>
         public void OnPassingRounds()
         {
             if (rounds > 0)
                 rounds--;
         }
 
+        /// <summary>
+        /// calculate the final stat for all effects exists in this buff
+        /// </summary>
+        /// <returns>The final stat object from this buff</returns>
         public BasicStat getBuffedSet()
         {
             BasicStat stat = new BasicStat(1, 1, 1, 1, 1, 1, 1, 1);
@@ -74,27 +84,27 @@ namespace RPG
                 float percentage = getPercentageByModifier(type,modifier);
                 if (effect == Type.ATK)
                 {
-                    stat.plus(new BasicStat(1, 1, percentage, 1, 1, 1, 1, 1));
+                    stat = stat.multiply(new BasicStat(1, 1, percentage, 1, 1, 1, 1, 1));
                 }
                 else if (effect == Type.DEF)
                 {
-                    stat.plus(new BasicStat(1, 1, 1, percentage, 1, 1, 1, 1));
+                    stat = stat.multiply(new BasicStat(1, 1, 1, percentage, 1, 1, 1, 1));
                 }
                 else if (effect == Type.MATK)
                 {
-                    stat.plus(new BasicStat(1, 1, 1, 1, percentage, 1, 1, 1));
+                    stat = stat.multiply(new BasicStat(1, 1, 1, 1, percentage, 1, 1, 1));
                 }
                 else if (effect == Type.MDEF)
                 {
-                    stat.plus(new BasicStat(1, 1, 1, 1, 1, percentage, 1, 1));
+                    stat = stat.multiply(new BasicStat(1, 1, 1, 1, 1, percentage, 1, 1));
                 }
                 else if (effect == Type.AGI)
                 {
-                    stat.plus(new BasicStat(1, 1, 1, 1, 1, 1, percentage, 1));
+                    stat = stat.multiply(new BasicStat(1, 1, 1, 1, 1, 1, percentage, 1));
                 }
                 else if (effect == Type.DEX)
                 {
-                    stat.plus(new BasicStat(1, 1, 1, 1, 1, 1, 1, percentage));
+                    stat = stat.multiply(new BasicStat(1, 1, 1, 1, 1, 1, 1, percentage));
                 }
             }
             return stat;
@@ -102,14 +112,13 @@ namespace RPG
 
         private float getPercentageByModifier(string type, int modifier)
         {
-            float percentage = 1;
             if (type.Equals("Buff"))
             {
-                return percentage + modifier / 100;
+                return 1f + modifier / 100f;
             }
             else
             {
-                return percentage - modifier / 100;
+                return 1f - modifier / 100f;
             }
         }
 
@@ -139,6 +148,10 @@ namespace RPG
             return effs;
         }
 
+        /// <summary>
+        /// calculate the increase/decrease of HP MP percentage from all effects exists in this buff
+        /// </summary>
+        /// <returns>A float array of hp,mp change by percentage</returns>
         public float[] getHPMPChange()
         {
             float[]hpmpChange = {1f,1f};
@@ -158,6 +171,10 @@ namespace RPG
             return hpmpChange;
         }
 
+        /// <summary>
+        /// calculate the chance of applying this buff using user's MATK and opponenet's MDEF
+        /// </summary>
+        /// <returns>chance of applying this buff in percentage</returns>
         public float getApplyChance(Entity user, Entity target)
         {
             if (modifier > 0)
