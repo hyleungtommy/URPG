@@ -41,7 +41,7 @@ namespace RPG
             foreach (Buff b in buffEffects)
             {
                 target[0].buffState.addBuff(b);
-                Debug.Log(target[0].name + "buff" + b.type + "round" + b.rounds);
+                //Debug.Log(target[0].name + "buff" + b.type + "round" + b.rounds);
                 BattleMessage message = new BattleMessage();
                 message.sender = message.receiver = target[0];
                 //message.value = (int)b.type;
