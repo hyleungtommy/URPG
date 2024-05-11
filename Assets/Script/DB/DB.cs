@@ -79,23 +79,7 @@ namespace RPG
             //get skill data
             TextAsset skillJSON = Resources.Load<TextAsset>("Data/Skill");
             SkillTemplate[] skills = JsonHelper.FromJson<SkillTemplate>(skillJSON.text);
-            for (int i = 0; i < skills.Length; i++)
-            {
-                skills[i].id = i;
-                for (int j = 0; j < jobs.Length; j++)
-                {
-                    if (skills[i].jobRestriction.Contains(jobs[j].id))
-                    {
-                        ///Debug.Log(skills[i].name + "," + jobs[j].name);
-                        GeneralSkill s = skills[i].toGeneralSkill();
-                        if (Param.learntAllSkill)
-                        {
-                            s.skillLv = 1;
-                        }
-                        jobs[j].skills.Add(s);
-                    }
-                }
-            }
+            CreateSkillForJobs(skills);
 
             //get equipment data
             TextAsset equipmentJSON = Resources.Load<TextAsset>("Data/Equipment");
@@ -186,6 +170,26 @@ namespace RPG
                 }
             }           
             return e;
+        }
+
+        public static void CreateSkillForJobs(SkillTemplate[] skills){
+            for (int i = 0; i < skills.Length; i++)
+            {
+                skills[i].id = i;
+                for (int j = 0; j < jobs.Length; j++)
+                {
+                    if (skills[i].jobRestriction.Contains(jobs[j].id))
+                    {
+                        ///Debug.Log(skills[i].name + "," + jobs[j].name);
+                        GeneralSkill s = skills[i].toGeneralSkill();
+                        if (Param.learntAllSkill)
+                        {
+                            s.skillLv = 1;
+                        }
+                        jobs[j].skills.Add(s);
+                    }
+                }
+            }
         }
 
         /// <summary>
