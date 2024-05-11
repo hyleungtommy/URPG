@@ -28,7 +28,7 @@ public class TitleScene : BasicScene
         if (SaveManager.getBool(SaveKey.played_before))
         {
             Game.loadGame();
-            jumpToScene(SceneName.MainMenu);
+            jumpToScene(SceneName.Load);
         }
         else
         {
@@ -40,7 +40,7 @@ public class TitleScene : BasicScene
             {
                 SaveManager.saveValue(SaveKey.played_before, true);
                 SaveManager.save();
-                jumpToScene(SceneName.MainMenu);
+                jumpToScene(SceneName.Load);
             }
         }
     }
@@ -57,6 +57,6 @@ public class TitleScene : BasicScene
         }
         SaveManager.saveValue(SaveKey.played_before, true);
         SaveManager.save();
-        jumpToScene(SceneName.MainMenu);
+        jumpToScene(SceneName.Load);
     }
 }
