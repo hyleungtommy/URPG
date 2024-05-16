@@ -7,7 +7,6 @@
 -TODO Features:
     -Daily Quest
     -Side Quest
-    -Upgrade point recommanded allocation
     -Trade Station + Experience card
     -Dungeon
     -Township

@@ -8,6 +8,7 @@ namespace RPG
     {
         public static string playerName = "Tommy";
         public static int money = 99999;
+        public static int platinumCoin = 999;
         public static Map currLoc = null; // testing only
         public static int currentMapMode = 0;
         public static Party party;
