@@ -83,7 +83,7 @@ namespace Editor
         [Test]
         public void shouldRemoveBuffWhenBuffEnds()
         {
-            Job testJob = new Job("Adventurer", new int[] { 25, 25, 25, 12, 23 }, new int[] { 2, 2, 2, 2, 2 });
+            Job testJob = new Job("Adventurer", new int[] { 25, 25, 25, 12, 23 }, new int[] { 2, 2, 2, 2, 2 }, new int[]{});
             Sprite[] sprite = new Sprite[1];
             BattleCharacter character = new BattleCharacter("Tommy", sprite, null, testJob, true, 1);
             EntityPlayer entityPlayer = character.toEntity();

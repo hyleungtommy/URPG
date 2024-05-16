@@ -16,14 +16,14 @@ namespace RPG
         public static ItemTemplate[] items;
         public static BuffTemplate[] buffs;
         public static Job[] jobs = new Job[]{
-            new Job ("Adventurer",new int[]{25,25,25,12,23},new int[]{2,2,2,2,2}),
-            new Job ("Berserker",new int[]{20,45,15,10,20},new int[]{1,5,1,1,2}),
-            new Job("Knight",new int[]{45,20,15,10,20},new int[]{4,2,1,1,2}),
-            new Job("Mage",new int[]{15,10,55,15,25},new int[]{1,1,5,1,2}),
-            new Job("Priest",new int[]{25,10,35,15,15},new int[]{3,1,5,3,3}),
-            new Job("Necromancer",new int[]{10,10,50,15,15},new int[]{1,1,9,2,2}),
-            new Job("Archer",new int[]{15,15,15,25,40},new int[]{2,2,1,5,5}),
-            new Job("Assassin",new int[]{10,20,10,25,45},new int[]{1,2,1,4,7})
+            new Job ("Adventurer",new int[]{25,25,25,12,23},new int[]{2,2,2,2,2}, new int[]{1,1,1,1,1}),
+            new Job ("Berserker",new int[]{20,45,15,10,20},new int[]{1,5,1,1,2}, new int[]{1,2,0,1,1}),
+            new Job("Knight",new int[]{45,20,15,10,20},new int[]{4,2,1,1,2}, new int[]{2,1,0,1,1}),
+            new Job("Mage",new int[]{15,10,55,15,25},new int[]{1,1,5,1,2}, new int[]{1,0,2,1,1}),
+            new Job("Priest",new int[]{25,10,35,15,15},new int[]{3,1,5,3,3}, new int[]{1,0,2,1,1}),
+            new Job("Necromancer",new int[]{10,10,50,15,15},new int[]{1,1,9,2,2}, new int[]{1,0,2,1,1}),
+            new Job("Archer",new int[]{15,15,15,25,40},new int[]{2,2,1,5,5}, new int[]{1,1,0,1,2}),
+            new Job("Assassin",new int[]{10,20,10,25,45},new int[]{1,2,1,4,7}, new int[]{1,1,0,2,1})
         };
 
         public static EnemyTemplate[] enemyTemplates;

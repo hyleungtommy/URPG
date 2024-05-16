@@ -24,6 +24,7 @@ public class GrowthScene : BasicScene
     public Button buttonDexterity;
     public Button buttonConfirm;
     public Button buttonCancel;
+    public Button buttonAutoAllocate;
     public Text textCharName;
     BattleCharacter character;
     int remainingUPPT;
@@ -65,6 +66,7 @@ public class GrowthScene : BasicScene
         buttonMana.gameObject.SetActive(remainingUPPT > 0);
         buttonAgility.gameObject.SetActive(remainingUPPT > 0);
         buttonDexterity.gameObject.SetActive(remainingUPPT > 0);
+        buttonAutoAllocate.gameObject.SetActive(remainingUPPT > 0);
         buttonConfirm.gameObject.SetActive(character.uppt > 0 && (int)Util.getSumOfArray(upptTempAlloc) > 0);
         buttonCancel.gameObject.SetActive(character.uppt > 0 && (int)Util.getSumOfArray(upptTempAlloc) > 0);
     }
@@ -93,5 +95,33 @@ public class GrowthScene : BasicScene
             upptTempAlloc = new int[]{0,0,0,0,0};
             render();
         }
+    }
+
+    public void onClickAutoAllocate(){
+        int[] autoAllocateSchedule = character.job.autoAllocateSchedule;
+        int noOfFullAllocate = character.uppt/5;
+        int leftOverUPPT = character.uppt%5;
+
+        upptTempAlloc = new int[]{
+            autoAllocateSchedule[0] * noOfFullAllocate,
+            autoAllocateSchedule[1] * noOfFullAllocate,
+            autoAllocateSchedule[2] * noOfFullAllocate,
+            autoAllocateSchedule[3] * noOfFullAllocate,
+            autoAllocateSchedule[4] * noOfFullAllocate
+        };
+
+        int i = 0;
+        while(leftOverUPPT > 0){
+            if(leftOverUPPT <= autoAllocateSchedule[i]){
+                upptTempAlloc[i] += leftOverUPPT;
+                leftOverUPPT = 0;
+            }else{
+                upptTempAlloc[i] += autoAllocateSchedule[i];
+                leftOverUPPT -= autoAllocateSchedule[i];
+                i++;
+            }
+        }
+
+        render();
     }
 }

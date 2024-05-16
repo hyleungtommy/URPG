@@ -5,9 +5,17 @@
 - skill can learn exceed max skill lv
 
 -TODO Features:
-    -Daily Quest (2nd play thorugh)
-    -Support Member System
-    -Crafting System (2nd play thorugh)
-    -Equipment Reinforce & Enchant (2nd play thorugh)
+    -Daily Quest
     -Side Quest
-    -Claim Land System (2nd play thorugh)
+    -Upgrade point recommanded allocation
+    -Trade Station + Experience card
+    -Dungeon
+    -Township
+
+-TODO Fixes:
+    -Crafting:
+        -craft ingerident detect
+        -improve craft result dialog
+        -make crafting experience level up
+        -make assessories having multiple enchantments in higher rarity
+        -fix accessories having job restriction

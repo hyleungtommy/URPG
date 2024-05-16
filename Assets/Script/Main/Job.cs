@@ -13,13 +13,15 @@ namespace RPG
         public int id { get; set; }
         public int[] startingStat { get; set; }
         public int[] levelUpGain { get; set; }
+        public int[] autoAllocateSchedule {get; set;}
         public List<GeneralSkill> skills { get; set; }
 
-        public Job(string name, int[] startingStat, int[] levelUpGain)
+        public Job(string name, int[] startingStat, int[] levelUpGain, int[]autoAllocateSchedule)
         {
             this.name = name;
             this.startingStat = startingStat;
             this.levelUpGain = levelUpGain;
+            this.autoAllocateSchedule = autoAllocateSchedule;
             skills = new List<GeneralSkill>();
         }
 
