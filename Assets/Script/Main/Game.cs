@@ -8,7 +8,7 @@ namespace RPG
     {
         public static string playerName = "Tommy";
         public static int money = 99999;
-        public static int platinumCoin = 999;
+        public static int platinumCoin = 99999;
         public static Map currLoc = null; // testing only
         public static int currentMapMode = 0;
         public static Party party;
@@ -19,6 +19,8 @@ namespace RPG
         public static CraftSkillManager craftSkillManager;
         public static bool rareEnemyAppeared = false;
         public static int difficulty = 1;
+        public static bool shouldRefreshTradeList = true;
+        public static List<TradeList> currentTradeList = new List<TradeList>();
 
         public static void initialize(){
             party = new Party();

@@ -80,4 +80,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Load.unity
     guid: a7e34c784305f164eb950b6d094b1946
+  - enabled: 1
+    path: Assets/Scenes/TradeStation.unity
+    guid: 13b5f58b8bbdd5d43ab9124f8339c9fb
   m_configObjects: {}

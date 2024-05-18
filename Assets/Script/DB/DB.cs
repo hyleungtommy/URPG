@@ -37,6 +37,7 @@ namespace RPG
         public static CraftRecipe[]craftRecipeEquipments;
         public static EnchantEffectTemplate[]enchantmentEffects;
         public static EnchantRecipeTemplate[]enchantRecipeTemplates;
+        public static TradeListingTemplate[]tradeListingTemplate;
 
         /// <summary>
         /// load data from all jsons from Resources/Data
@@ -71,10 +72,6 @@ namespace RPG
             //get Item data
             TextAsset itemJSON = Resources.Load<TextAsset>("Data/Item");
             items = JsonHelper.FromJson<ItemTemplate>(itemJSON.text);
-            for (int i = 0; i < items.Length; i++)
-            {
-                items[i].id = i;
-            }
 
             //get skill data
             TextAsset skillJSON = Resources.Load<TextAsset>("Data/Skill");
@@ -143,6 +140,10 @@ namespace RPG
             //get enchantment recipe
             TextAsset enchantmentRecipeJSON = Resources.Load<TextAsset>("Data/EnchantRecipe");
             enchantRecipeTemplates = JsonHelper.FromJson<EnchantRecipeTemplate>(enchantmentRecipeJSON.text);
+
+            //get trade listing data
+            TextAsset tradeListingJSON = Resources.Load<TextAsset>("Data/Trade");
+            tradeListingTemplate = JsonHelper.FromJson<TradeListingTemplate>(tradeListingJSON.text);
         }
 
         /// <summary>

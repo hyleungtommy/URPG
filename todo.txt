@@ -10,6 +10,8 @@
     -Trade Station + Experience card
     -Dungeon
     -Township
+    -Achievement
+    -Warehouse & Warehouse upgrade
 
 -TODO Fixes:
     -Crafting:

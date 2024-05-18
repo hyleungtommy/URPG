@@ -20,6 +20,7 @@ public class CityScene : BasicScene
         buttons[2].gameObject.SetActive(list.Contains("Blacksmith"));
         buttons[3].gameObject.SetActive(list.Contains("Guild"));
         buttons[4].gameObject.SetActive(list.Contains("Camp"));
+        buttons[5].gameObject.SetActive(list.Contains("Trade"));
 
     }
 
@@ -44,6 +45,9 @@ public class CityScene : BasicScene
                 break;
             case 4:
                 jumpToScene(SceneName.ExploreSite);
+                break;
+            case 5:
+                jumpToScene(SceneName.TradeStation);
                 break;
             default:
                 break;

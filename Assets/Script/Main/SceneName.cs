@@ -33,5 +33,6 @@ namespace RPG
         public const string Enchanting = "Enchant";
         public const string Difficulty = "Difficulty";
         public const string Load = "Load";
+        public const string TradeStation = "TradeStation";
     }
 }

@@ -35,7 +35,7 @@
             "townName": "Falone City",
             "townbg": "002-City of Falone",
             "townFacility": [
-                "Shop", "SkillCenter", "Blacksmith", "Guild", "Camp"
+                "Shop", "SkillCenter", "Blacksmith", "Guild", "Camp", "Trade"
             ],
             "reqLv": 10,
             "maxLv": 25,
@@ -65,7 +65,7 @@
             "townName": "Research Camp",
             "townbg": "003-Magical Forest Research Camp",
             "townFacility": [
-                "Shop", "SkillCenter", "Blacksmith", "Guild", "Camp"
+                "Shop", "SkillCenter", "Blacksmith", "Guild", "Camp", "Trade"
             ],
             "reqLv": 20,
             "maxLv": 35,
@@ -97,7 +97,7 @@
             "townName": "Port Arugia",
             "townbg": "004-Port Arugia",
             "townFacility": [
-                "Shop", "SkillCenter", "Blacksmith", "Guild", "Camp"
+                "Shop", "SkillCenter", "Blacksmith", "Guild", "Camp", "Trade"
             ],
             "reqLv": 30,
             "maxLv": 45,
@@ -124,7 +124,7 @@
             "townName": "",
             "townbg": "",
             "townFacility": [
-                "Shop", "SkillCenter", "Blacksmith", "Guild", "Camp"
+                "Shop", "SkillCenter", "Blacksmith", "Guild", "Camp", "Trade"
             ],
             "reqLv": 40,
             "maxLv": 55,
@@ -151,7 +151,7 @@
             "townName": "Miner's Town",
             "townbg": "005-Crystal Town",
             "townFacility": [
-                "Shop", "SkillCenter", "Blacksmith", "Guild", "Camp"
+                "Shop", "SkillCenter", "Blacksmith", "Guild", "Camp", "Trade"
             ],
             "reqLv": 50,
             "maxLv": 60,
@@ -178,7 +178,7 @@
             "townName": "Sakamat",
             "townbg": "007-Tow of Sakamat",
             "townFacility": [
-                "Shop", "SkillCenter", "Blacksmith", "Guild", "Camp"
+                "Shop", "SkillCenter", "Blacksmith", "Guild", "Camp", "Trade"
             ],
             "reqLv": 55,
             "maxLv": 65,
@@ -204,7 +204,7 @@
             "townName": "Emperial Barrack",
             "townbg": "008-Emperial Barrack",
             "townFacility": [
-                "Shop", "SkillCenter", "Blacksmith", "Guild", "Camp"
+                "Shop", "SkillCenter", "Blacksmith", "Guild", "Camp", "Trade"
             ],
             "reqLv": 60,
             "maxLv": 70,

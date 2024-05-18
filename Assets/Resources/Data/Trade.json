@@ -4,221 +4,221 @@
             "type": "buy",
             "require":{
                 "itemId": "platinumCoin",
-                "min": "2",
-                "max": "5"
+                "min": 2,
+                "max": 5
             },
             "receive":{
                 "itemId": "17",
-                "min": "1",
-                "max": "3"
+                "min": 1,
+                "max": 3
             }
         },
         {
             "type": "buy",
             "require":{
                 "itemId": "platinumCoin",
-                "min": "2",
-                "max": "5"
+                "min": 2,
+                "max": 5
             },
             "receive":{
                 "itemId": "18",
-                "min": "1",
-                "max": "3"
+                "min": 1,
+                "max": 3
             }
         },
         {
             "type": "buy",
             "require":{
                 "itemId": "platinumCoin",
-                "min": "2",
-                "max": "5"
+                "min": 2,
+                "max": 5
             },
             "receive":{
                 "itemId": "19",
-                "min": "1",
-                "max": "3"
+                "min": 1,
+                "max": 3
             }
         },
         {
             "type": "buy",
             "require":{
                 "itemId": "platinumCoin",
-                "min": "4",
-                "max": "10"
+                "min": 4,
+                "max": 10
             },
             "receive":{
                 "itemId": "20",
-                "min": "1",
-                "max": "2"
+                "min": 1,
+                "max": 2
             }
         },
         {
             "type": "buy",
             "require":{
                 "itemId": "platinumCoin",
-                "min": "100",
-                "max": "150"
+                "min": 10,
+                "max": 15
             },
             "receive":{
                 "itemId": "91",
-                "min": "1",
-                "max": "2"
+                "min": 1,
+                "max": 2
             }
         },
         {
             "type": "buy",
             "require":{
                 "itemId": "platinumCoin",
-                "min": "200",
-                "max": "300"
+                "min": 20,
+                "max": 30
             },
             "receive":{
                 "itemId": "92",
-                "min": "1",
-                "max": "2"
+                "min": 1,
+                "max": 2
             }
         },
         {
             "type": "buy",
             "require":{
                 "itemId": "platinumCoin",
-                "min": "500",
-                "max": "750"
+                "min": 50,
+                "max": 75
             },
             "receive":{
                 "itemId": "93",
-                "min": "1",
-                "max": "2"
+                "min": 1,
+                "max": 2
             }
         },
         {
             "type": "buy",
             "require":{
                 "itemId": "platinumCoin",
-                "min": "1000",
-                "max": "1500"
+                "min": 100,
+                "max": 150
             },
             "receive":{
                 "itemId": "94",
-                "min": "1",
-                "max": "2"
+                "min": 1,
+                "max": 2
             }
         },
         {
             "type": "buy",
             "require":{
                 "itemId": "platinumCoin",
-                "min": "150",
-                "max": "200"
+                "min": 15,
+                "max": 20
             },
             "receive":{
                 "itemId": "95",
-                "min": "1",
-                "max": "2"
+                "min": 1,
+                "max": 2
             }
         },
         {
             "type": "buy",
             "require":{
                 "itemId": "platinumCoin",
-                "min": "250",
-                "max": "300"
+                "min": 25,
+                "max": 30
             },
             "receive":{
                 "itemId": "96",
-                "min": "1",
-                "max": "2"
+                "min": 1,
+                "max": 2
             }
         },
         {
             "type": "buy",
             "require":{
                 "itemId": "platinumCoin",
-                "min": "550",
-                "max": "800"
+                "min": 55,
+                "max": 80
             },
             "receive":{
                 "itemId": "97",
-                "min": "1",
-                "max": "2"
+                "min": 1,
+                "max": 2
             }
         },
         {
             "type": "buy",
             "require":{
                 "itemId": "platinumCoin",
-                "min": "1500",
-                "max": "2000"
+                "min": 150,
+                "max": 200
             },
             "receive":{
                 "itemId": "98",
-                "min": "1",
-                "max": "2"
+                "min": 1,
+                "max": 2
             }
         },
         {
             "type": "buy",
             "require":{
                 "itemId": "platinumCoin",
-                "min": "100",
-                "max": "150"
+                "min": 10,
+                "max": 15
             },
             "receive":{
                 "itemId": "99",
-                "min": "1",
-                "max": "2"
+                "min": 1,
+                "max": 2
             }
         },
         {
             "type": "buy",
             "require":{
                 "itemId": "platinumCoin",
-                "min": "200",
-                "max": "250"
+                "min": 20,
+                "max": 25
             },
             "receive":{
                 "itemId": "100",
-                "min": "1",
-                "max": "2"
+                "min": 1,
+                "max": 2
             }
         },
         {
             "type": "buy",
             "require":{
                 "itemId": "platinumCoin",
-                "min": "200",
-                "max": "300"
+                "min": 20,
+                "max": 30
             },
             "receive":{
                 "itemId": "101",
-                "min": "1",
-                "max": "2"
+                "min": 1,
+                "max": 2
             }
         },
         {
             "type": "buy",
             "require":{
                 "itemId": "platinumCoin",
-                "min": "500",
-                "max": "750"
+                "min": 50,
+                "max": 75
             },
             "receive":{
                 "itemId": "102",
-                "min": "1",
-                "max": "2"
+                "min": 1,
+                "max": 2
             }
         },
         {
             "type": "buy",
             "require":{
                 "itemId": "platinumCoin",
-                "min": "100",
-                "max": "1750"
+                "min": 100,
+                "max": 175
             },
             "receive":{
                 "itemId": "103",
-                "min": "1",
-                "max": "2"
+                "min": 1,
+                "max": 2
             }
         }
     ]
