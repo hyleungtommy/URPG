@@ -38,6 +38,7 @@ namespace RPG
         public static EnchantEffectTemplate[]enchantmentEffects;
         public static EnchantRecipeTemplate[]enchantRecipeTemplates;
         public static TradeListingTemplate[]tradeListingTemplate;
+        public static GlobalBuffTemplate[] globalBuffTemplates;
 
         /// <summary>
         /// load data from all jsons from Resources/Data
@@ -144,6 +145,11 @@ namespace RPG
             //get trade listing data
             TextAsset tradeListingJSON = Resources.Load<TextAsset>("Data/Trade");
             tradeListingTemplate = JsonHelper.FromJson<TradeListingTemplate>(tradeListingJSON.text);
+
+            //get global buff datat
+            TextAsset globalBuffJSON = Resources.Load<TextAsset>("Data/GlobalBuff");
+            globalBuffTemplates = JsonHelper.FromJson<GlobalBuffTemplate>(globalBuffJSON.text);
+
         }
 
         /// <summary>
@@ -200,6 +206,14 @@ namespace RPG
         public static List<int>getEquipmentDropList(int mapLv){
             List<int>equipmentIds = DB.equipments.Where(e=>e.reqLv == mapLv).Select(e=>e.id).ToList();
             return equipmentIds;
+        }
+
+        public static ItemTemplate QueryItem(int itemId){
+            return items[itemId - 1];
+        }
+
+        public static ItemTemplate QueryItem(String itemId){
+            return items[Int32.Parse(itemId) - 1];
         }
 
     }

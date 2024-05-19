@@ -1,0 +1,74 @@
+{
+    "Items": [
+        {
+            "id": 1,
+            "name":"2x EXP",
+            "type": "EXP",
+            "mod" : 2,
+            "img" : "I083"
+        },
+        {
+            "id": 2,
+            "name":"3x EXP",
+            "type": "EXP",
+            "mod" : 3,
+            "img" : "I084"
+        },
+        {
+            "id": 3,
+            "name":"5x EXP",
+            "type": "EXP",
+            "mod" : 5,
+            "img" : "I085"
+        },
+        {
+            "id": 4,
+            "name":"10x EXP",
+            "type": "EXP",
+            "mod" : 10,
+            "img" : "I086"
+        },
+        {
+            "id": 5,
+            "name":"2x Item Drop",
+            "type": "ItemDrop",
+            "mod" : 2,
+            "img" : "I087"
+        },
+        {
+            "id": 6,
+            "name":"3x Item Drop",
+            "type": "ItemDrop",
+            "mod" : 3,
+            "img" : "I088"
+        },
+        {
+            "id": 7,
+            "name":"5x Item Drop",
+            "type": "ItemDrop",
+            "mod" : 5,
+            "img" : "I089"
+        },
+        {
+            "id": 8,
+            "name":"10x Item Drop",
+            "type": "ItemDrop",
+            "mod" : 10,
+            "img" : "I090"
+        },
+        {
+            "id": 9,
+            "name":"Monster Expell",
+            "type": "Monster",
+            "mod" : -1,
+            "img" : "I091"
+        },
+        {
+            "id": 10,
+            "name":"Monster Lure",
+            "type": "Monster",
+            "mod" : 1,
+            "img" : "I092"
+        }
+    ]
+}

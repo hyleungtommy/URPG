@@ -81,7 +81,15 @@ namespace RPG
 
                     for (int i = 0; i < enemyNum; i++)
                     {
-                        int rndEnemyStrength = UnityEngine.Random.Range(0, 5);
+                        int monsterCodexValue = Game.globalBuffManager.GetMonsterCodexValue();
+                        int rndEnemyStrength = 0;
+                        if(monsterCodexValue == 1){
+                            rndEnemyStrength = UnityEngine.Random.Range(3, 5);
+                        }else if(monsterCodexValue == -1){
+                            rndEnemyStrength = UnityEngine.Random.Range(0, 3);
+                        }else{
+                            rndEnemyStrength = UnityEngine.Random.Range(0, 5);
+                        }
                         EntityEnemy enemy = enemyList[Util.getRandomIndexFrom(appearChance, 100f)].toEntity(rndEnemyStrength, mapEnemyModifier);
                         generatedEnemyList.Add(enemy);
                     }

@@ -436,7 +436,7 @@
       "id": 19,
       "name": "Phoenix Tail",
       "desc": "Revive 1 death teammate",
-      "type": "Special",
+      "type": "Revival",
       "img": "I018",
       "buyPlace": "Shop",
       "sellPrice": 100,
@@ -447,7 +447,7 @@
       "id": 20,
       "name": "Soul Stone",
       "desc": "Revive every death teammate",
-      "type": "Special",
+      "type": "Revival",
       "img": "I019",
       "buyPlace": "Shop",
       "sellPrice": 200,
@@ -1158,107 +1158,147 @@
       "id": 91,
       "name": "2x EXP card",
       "desc": "This card grant you x2 EXP gain for the next 50 battles",
-      "type": "Special",
+      "type": "GlobalBuff",
       "img": "I083",
       "buyPlace": "None",
       "sellPrice": 10000,
-      "rarity": 4
+      "rarity": 4,
+      "globalBuff": {
+        "id" : 1,
+        "rounds" : 50
+      }
     },
     {
       "id": 92,
       "name": "3x EXP card",
       "desc": "This card grant you x3 EXP gain for the next 50 battles",
-      "type": "Special",
+      "type": "GlobalBuff",
       "img": "I084",
       "buyPlace": "None",
       "sellPrice": 10000,
-      "rarity": 4
+      "rarity": 4,
+      "globalBuff": {
+        "id" : 2,
+        "rounds" : 50
+      }
     },
     {
       "id": 93,
       "name": "5x EXP card",
       "desc": "This card grant you x5 EXP gain for the next 50 battles",
-      "type": "Special",
+      "type": "GlobalBuff",
       "img": "I085",
       "buyPlace": "None",
       "sellPrice": 10000,
-      "rarity": 4
+      "rarity": 4,
+      "globalBuff": {
+        "id" : 3,
+        "rounds" : 50
+      }
     },
     {
       "id": 94,
       "name": "10x EXP card",
       "desc": "This card grant you x10 EXP gain for the next 50 battles",
-      "type": "Special",
+      "type": "GlobalBuff",
       "img": "I086",
       "buyPlace": "None",
       "sellPrice": 10000,
-      "rarity": 4
+      "rarity": 4,
+      "globalBuff": {
+        "id" : 4,
+        "rounds" : 50
+      }
     },
     {
       "id": 95,
       "name": "2x Item Drop Card",
       "desc": "This card grant you x2 Gold gain and Item drop for the next 50 battles",
-      "type": "Special",
+      "type": "GlobalBuff",
       "img": "I087",
       "buyPlace": "None",
       "sellPrice": 10000,
-      "rarity": 4
+      "rarity": 4,
+      "globalBuff": {
+        "id" : 5,
+        "rounds" : 50
+      }
     },
     {
       "id": 96,
       "name": "3x Item Drop Card",
       "desc": "This card grant you x3 Gold gain and Item drop for the next 50 battles",
-      "type": "Special",
+      "type": "GlobalBuff",
       "img": "I088",
       "buyPlace": "None",
       "sellPrice": 10000,
-      "rarity": 4
+      "rarity": 4,
+      "globalBuff": {
+        "id" : 6,
+        "rounds" : 50
+      }
     },
     {
       "id": 97,
       "name": "5x Item Drop Card",
       "desc": "This card grant you x5 Gold gain and Item drop for the next 50 battles",
-      "type": "Special",
+      "type": "GlobalBuff",
       "img": "I089",
       "buyPlace": "None",
       "sellPrice": 10000,
-      "rarity": 4
+      "rarity": 4,
+      "globalBuff": {
+        "id" : 7,
+        "rounds" : 50
+      }
     },
     {
       "id": 98,
       "name": "10x Item Drop Card",
       "desc": "This card grant you x10 Gold gain and Item drop for the next 50 battles",
-      "type": "Special",
+      "type": "GlobalBuff",
       "img": "I090",
       "buyPlace": "None",
       "sellPrice": 10000,
-      "rarity": 4
+      "rarity": 4,
+      "globalBuff": {
+        "id" : 8,
+        "rounds" : 50
+      }
     },
     {
       "id": 99,
       "name": "Monster Expell Codex",
       "desc": "Once used it will greatly increase the chance of weak enemies appear in battle for the next 50 battles",
-      "type": "Special",
+      "type": "GlobalBuff",
       "img": "I091",
       "buyPlace": "None",
       "sellPrice": 10000,
-      "rarity": 4
+      "rarity": 4,
+      "globalBuff": {
+        "id" : 9,
+        "rounds" : 50
+      }
     },
     {
       "id": 100,
       "name": "Monster Lure Codex",
       "desc": "Once used it will greatly increase the chance of tough enemies appear in battle for the next 50 battles",
-      "type": "Special",
+      "type": "GlobalBuff",
       "img": "I092",
       "buyPlace": "None",
       "sellPrice": 10000,
-      "rarity": 4
+      "rarity": 4,
+      "globalBuff": {
+        "id" : 10,
+        "rounds" : 50
+      }
     },
     {
       "id": 101,
       "name": "Scroll of Inspiration",
       "desc": "Grant every memeber 1 upgrade point on use.",
-      "type": "Special",
+      "type": "UPPT",
       "img": "I093",
       "buyPlace": "None",
       "sellPrice": 10000,
@@ -1268,7 +1308,7 @@
       "id": 102,
       "name": "Scroll of Knowledge",
       "desc": "Grant every memeber 5 upgrade points on use.",
-      "type": "Special",
+      "type": "UPPT",
       "img": "I094",
       "buyPlace": "None",
       "sellPrice": 10000,
@@ -1278,7 +1318,7 @@
       "id": 103,
       "name": "Scroll of Infinite Potential",
       "desc": "Grant every memeber 10 upgrade points on use.",
-      "type": "Special",
+      "type": "UPPT",
       "img": "I095",
       "buyPlace": "None",
       "sellPrice": 10000,

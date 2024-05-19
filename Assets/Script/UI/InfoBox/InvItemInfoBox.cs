@@ -13,7 +13,9 @@ public class InvItemInfoBox : BasicInfoBox
     public Text textDesc1;
     public ItemBox box;
     public InventoryScene scene;
+    public Button buttonUse;
     StorageSlot slot;
+    private Item item;
     void Start()
     {
 
@@ -32,16 +34,25 @@ public class InvItemInfoBox : BasicInfoBox
 
     protected override void showContent()
     {
-        Item item = slot.getContainment();
+        item = slot.getContainment();
         textHeader.text = item.name;
         textBasicInfo.text = item.getTypeName() + "\n" + "Qty:" + slot.getQty();
         textDesc1.text = item.desc;
         box.render(item);
+        buttonUse.gameObject.SetActive(item is ItemSpecial);
     }
 
     public void onClickDestroyItem()
     {
         slot.clear();
+        Game.saveGame();
+        scene.render();
+        hide();
+    }
+
+    public void onClickUse(){
+        slot.clear();
+        (item as ItemSpecial).OnUse();
         Game.saveGame();
         scene.render();
         hide();

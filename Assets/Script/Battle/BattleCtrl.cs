@@ -214,7 +214,7 @@ namespace RPG
         {
             if (selectionMode == SELECTION_ITEM)
             {
-                FunctionalItem item = DB.items[selectedItemId].toItem() as FunctionalItem;
+                FunctionalItem item = DB.items[selectedItemId - 1].toItem() as FunctionalItem;
                 for (int i = 0; i < virtualInventory.Count; i++)
                 {
                     ItemAndQty a = virtualInventory[i];
@@ -340,6 +340,7 @@ namespace RPG
             {
 
             }
+            Game.globalBuffManager.PassRound();
             scene.showRewardPanel(drops);
 
 
@@ -366,8 +367,9 @@ namespace RPG
             //Debug.Log(levelPanality);
             int totalEXP = 0;
             for (int i = 0; i < enemyParty.Length; i++)
-                totalEXP += Mathf.FloorToInt((enemyParty[i] as EntityEnemy).dropEXP * levelPanality * Param.expRatio * (1 + Game.currLoc.currZone * Param.areaRewardMultiplier));
+                totalEXP += Mathf.FloorToInt((enemyParty[i] as EntityEnemy).dropEXP * levelPanality * Param.expRatio * (1 + Game.currLoc.currZone * Param.areaRewardMultiplier) * Game.globalBuffManager.GetModFromType("EXP"));
             //Debug.Log("getTotalEXPGain() =" + totalEXP);
+            
             return totalEXP;
         }
 
@@ -375,7 +377,7 @@ namespace RPG
         {
             int totalMoney = 0;
             for (int i = 0; i < enemyParty.Length; i++)
-                totalMoney += Mathf.FloorToInt((enemyParty[i] as EntityEnemy).dropMoney * (1 + Game.currLoc.currZone * Param.areaRewardMultiplier));
+                totalMoney += Mathf.FloorToInt((enemyParty[i] as EntityEnemy).dropMoney * (1 + Game.currLoc.currZone * Param.areaRewardMultiplier) * Game.globalBuffManager.GetModFromType("ItemDrop"));
             //Debug.Log ("getTotalMoneyGain() =" + totalMoney);
             return totalMoney;
         }

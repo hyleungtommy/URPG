@@ -186,6 +186,16 @@ namespace RPG
                 }
             }
         }
+
+        /// <summary>
+        /// Add upgrade points to the entire party
+        /// </summary>
+        public void addUPPTForParty(int amount){
+            foreach (BattleCharacter ch in battleParty)
+            {
+                ch.upptEarned += amount;
+            }
+        }
         /*
         public SupportCharacter[] getSupportCharacterList()
         {

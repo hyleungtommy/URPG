@@ -19,6 +19,7 @@ namespace RPG
         public float healPercentage;
         public int minHealAmount;
         public ApplyBuffTemplate[] buff;
+        public ApplyGlobalBuffTemplate globalBuff;
         public CraftRecipeTemplate craftRecipe;
 
         public override string ToString()
@@ -68,9 +69,21 @@ namespace RPG
             {
                 return new ItemMPPotion(sprite);
             }
-            else if (type.Equals("Resources") || type.Equals("Special"))
+            else if (type.Equals("Resources"))
             {
                 return new ItemResources(sprite);
+            }
+            else if (type.Equals("Revival"))
+            {
+                return new ItemRevival(sprite);
+            }
+            else if (type.Equals("GlobalBuff"))
+            {
+                return new ItemGlobalBuff(sprite, globalBuff);
+            }
+            else if (type.Equals("UPPT"))
+            {
+                return new ItemUPPT(sprite);
             }
             else if (type.Equals("Buff Potion"))
             {

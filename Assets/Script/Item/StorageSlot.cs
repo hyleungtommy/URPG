@@ -107,7 +107,7 @@ namespace RPG
                 if (saveStr[0].StartsWith("I"))
                 {
                     if (Int32.Parse(saveStr[0].Split('|')[1]) < 9999)
-                        this.containment = DB.items[Int32.Parse(saveStr[0].Split('|')[1])].toItem();
+                        this.containment = DB.items[Int32.Parse(saveStr[0].Split('|')[1]) - 1].toItem();
                 }
                 else
                 {

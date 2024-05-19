@@ -12,6 +12,7 @@
     -Township
     -Achievement
     -Warehouse & Warehouse upgrade
+    -Item AOE mode
 
 -TODO Fixes:
     -Crafting:

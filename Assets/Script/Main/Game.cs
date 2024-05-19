@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System.Linq;
+using System;
 namespace RPG
 {
     public static class Game
@@ -21,6 +22,7 @@ namespace RPG
         public static int difficulty = 1;
         public static bool shouldRefreshTradeList = true;
         public static List<TradeList> currentTradeList = new List<TradeList>();
+        public static GlobalBuffManager globalBuffManager = new GlobalBuffManager();
 
         public static void initialize(){
             party = new Party();
@@ -47,14 +49,15 @@ namespace RPG
                 mapAreas.Add(m.currZone);
             }
             string mapAreaSave = string.Join("|", mapAreas);
-            Debug.Log(SaveKey.map_areas + ":" + mapAreaSave);
             SaveManager.saveValue(SaveKey.map_areas, mapAreaSave);
             //Party
             party.save();
             //Inventory
             string invSave = Game.inventory.onSave();
-            Debug.Log(SaveKey.inventory + ":" + invSave);
             SaveManager.saveValue(SaveKey.inventory, invSave);
+            SaveManager.saveValue(SaveKey.platinum_coin, platinumCoin);
+            //Global Buff
+            SaveManager.saveValue(SaveKey.global_buffs, globalBuffManager.onSave());
             SaveManager.save();
         }
 
@@ -68,6 +71,7 @@ namespace RPG
             currLoc = DB.maps[SaveManager.getInt(SaveKey.currLocMapId)];
             plotPt = SaveManager.getInt(SaveKey.plot_pt);
             difficulty = SaveManager.getInt(SaveKey.difficulty);
+            platinumCoin = SaveManager.getInt(SaveKey.platinum_coin);
             //Load map
             string[] mapAreas = SaveManager.getString(SaveKey.map_areas).Split('|');
             int i = 0;
@@ -84,6 +88,8 @@ namespace RPG
             //Inventory
             string invSave = SaveManager.getString(SaveKey.inventory);
             inventory.onLoad(invSave);
+            //Global Buff
+            globalBuffManager.onLoad(SaveManager.getString(SaveKey.global_buffs));
         }
 
         public static void resetSave()

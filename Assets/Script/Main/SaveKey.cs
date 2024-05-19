@@ -21,5 +21,7 @@ namespace RPG
         public const string equip_manager_i = "equip_manager_";
         public const string played_before = "played_before";
         public const string difficulty = "difficulty";
+        public const string global_buffs = "global_buffs";
+        public const string platinum_coin = "platinum_coin";
     }
 }
