@@ -147,8 +147,10 @@ namespace RPG
                             e.remove(e.getQty());
                             remaining -= e.getQty();
                         }
-                        else
+                        else{
                             e.remove(remaining);
+                            remaining = 0;
+                        }
                     }
                     else
                         break;

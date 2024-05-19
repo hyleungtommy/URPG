@@ -34,8 +34,7 @@ public class ExploreSiteTemplate
         }
         Item[]obtainableItemList = new Item[obtainableItems.Length];
         for(int i = 0 ; i < obtainableItemList.Length ; i++){
-            ItemTemplate item = DB.items[Int32.Parse(obtainableItems[i].Substring(1,3))-1];
-            obtainableItemList[i] = item.toItem();
+            obtainableItemList[i] = DB.QueryItem(obtainableItems[i].Substring(1,3));
         }
         ExploreSite exploreSite = new ExploreSite(img,name);
         exploreSite.id = id;

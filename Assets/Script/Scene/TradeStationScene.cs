@@ -82,7 +82,7 @@ public class TradeStationScene : BasicScene
         if(tradeList.receive.itemId.Equals("platinumCoin")){
             //todo
         }else{
-            Item received = DB.items.First(item => item.id == Int32.Parse(tradeList.receive.itemId)).toItem();
+            Item received = DB.QueryItem(tradeList.receive.itemId);
             Game.inventory.smartInsert(received, tradeList.receive.amount);   
         }
         Render();

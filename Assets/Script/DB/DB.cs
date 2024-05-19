@@ -208,12 +208,38 @@ namespace RPG
             return equipmentIds;
         }
 
-        public static ItemTemplate QueryItem(int itemId){
-            return items[itemId - 1];
+        public static Item QueryItem(int itemId){
+            if(itemId >= items.Length){
+                Debug.Log("Failed to query item id=" + itemId);
+                return null;
+            }
+            return items[itemId - 1].toItem();
         }
 
-        public static ItemTemplate QueryItem(String itemId){
-            return items[Int32.Parse(itemId) - 1];
+        public static Item QueryItem(String itemId){
+            int parsedId = Int32.Parse(itemId);
+            if(parsedId >= items.Length){
+                Debug.Log("Failed to query item id=" + parsedId);
+                return null;
+            }
+            return items[parsedId - 1].toItem();
+        }
+
+        public static GeneralEquipment QueryEquipment(int id){
+            if(id >=  equipments.Length){
+                Debug.Log("Failed to query equipment id=" + id);
+                return null;
+            }
+            return equipments[id - 1];
+        }
+
+        public static GeneralEquipment QueryEquipment(string id){
+            int parsedId = Int32.Parse(id);
+            if(parsedId >=  equipments.Length){
+                Debug.Log("Failed to query equipment id=" + id);
+                return null;
+            }
+            return equipments[parsedId - 1];
         }
 
     }

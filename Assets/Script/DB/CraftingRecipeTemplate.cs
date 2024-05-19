@@ -14,11 +14,9 @@ public class CraftRecipeTemplate
         Displayable[] requireDisplayable = new Displayable[requireItem.Length];
         for(int i = 0 ; i < requireItem.Length;i++){
             if(requireItem[i].StartsWith("I")){
-                ItemTemplate item = DB.items[Int32.Parse(requireItem[i].Substring(1,3))-1];
-                requireDisplayable[i] = item.toItem();
+                requireDisplayable[i] = DB.QueryItem(requireItem[i].Substring(1,3));
             }else{
-                GeneralEquipment equipment = DB.equipments[Int32.Parse(requireItem[i].Substring(1,3))-1];
-                requireDisplayable[i] = equipment;
+                requireDisplayable[i] = DB.QueryEquipment(requireItem[i].Substring(1,3));
             }
         }
         //Debug.Log("create recipe:" + resultItem);

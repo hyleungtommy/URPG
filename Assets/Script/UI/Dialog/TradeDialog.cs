@@ -36,7 +36,7 @@ public class TradeDialog : MonoBehaviour
         if(tradeList.receive.itemId.Equals("platinumCoin")){
             //todo
         }else{
-            Item received = DB.items.First(item => item.id == Int32.Parse(tradeList.receive.itemId)).toItem();
+            Item received = DB.QueryItem(tradeList.receive.itemId);
             receiveItem.gameObject.SetActive(true);
             receiveItemName.text = received.name;
             receiveItemBox.render(received);

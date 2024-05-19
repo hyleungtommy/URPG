@@ -41,8 +41,7 @@ public class ReinforceRecipe:Displayable
         this.requireQtyIncrement = requireQtyIncrement;
         baseRequirements = new List<Requirement>();
         for(int i = 0 ; i < reqItems.Length;i++){
-            ItemTemplate item = DB.items[reqItems[i] - 1];
-            Requirement requirement = new Requirement(item.toItem(),reqQtyStart[i],Requirement.Type.Item);
+            Requirement requirement = new Requirement(DB.QueryItem(reqItems[i]),reqQtyStart[i],Requirement.Type.Item);
             baseRequirements.Add(requirement);
         }
     }

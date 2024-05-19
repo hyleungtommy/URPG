@@ -106,14 +106,16 @@ namespace RPG
             {
                 if (saveStr[0].StartsWith("I"))
                 {
-                    if (Int32.Parse(saveStr[0].Split('|')[1]) < 9999)
-                        this.containment = DB.items[Int32.Parse(saveStr[0].Split('|')[1]) - 1].toItem();
+                    if (Int32.Parse(saveStr[0].Split('|')[1]) < 9999){
+                        containment = DB.QueryItem(saveStr[0].Split('|')[1]);
+                    }
+                        
                 }
                 else
                 {
-                    this.containment = DB.createEquipmentFormSaveStr(saveStr[0]);
+                    containment = DB.createEquipmentFormSaveStr(saveStr[0]);
                 }
-                this.qty = Int32.Parse(saveStr[1]);
+                qty = Int32.Parse(saveStr[1]);
             }
         }
 

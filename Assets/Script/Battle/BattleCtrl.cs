@@ -214,7 +214,7 @@ namespace RPG
         {
             if (selectionMode == SELECTION_ITEM)
             {
-                FunctionalItem item = DB.items[selectedItemId - 1].toItem() as FunctionalItem;
+                FunctionalItem item = DB.QueryItem(selectedItemId) as FunctionalItem;
                 for (int i = 0; i < virtualInventory.Count; i++)
                 {
                     ItemAndQty a = virtualInventory[i];
@@ -395,7 +395,7 @@ namespace RPG
                     //generate equipment with random rein lv and enchantment
                     int rndEquipId = Util.getRandomIndexFrom(equipDropList.ToArray());
                     int rndRarity = Random.Range(0, 5);
-                    Equipment equip = DB.equipments[rndEquipId].toEquipment(rndRarity);
+                    Equipment equip = DB.QueryEquipment(rndEquipId).toEquipment(rndRarity);
                     if (equip.reinforceRecipe != null)
                     {
                         int rndReinLv = Random.Range(0, equip.reinforceRecipe.maxReinforceLv + 1);

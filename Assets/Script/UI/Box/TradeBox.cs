@@ -29,8 +29,7 @@ public class TradeBox : MonoBehaviour
             //todo
         }else{
             receiveItem.gameObject.SetActive(true);
-            Debug.Log(tradeList.receive.itemId);
-            receiveItemBox.render(DB.items.First(item => item.id == Int32.Parse(tradeList.receive.itemId)).toItem());
+            receiveItemBox.render(DB.QueryItem(tradeList.receive.itemId));
             receiveItemAmount.text = "X " + tradeList.receive.amount;
         }
     }

@@ -13,7 +13,7 @@ namespace RPG{
             EnchantmentData ed = new EnchantmentData();
             List<Requirement>reqs = new List<Requirement>();
             for(int i = 0 ; i < requireItem.Length ; i++){
-                reqs.Add(new Requirement(DB.items[requireItem[i]].toItem(),requireQty[i],Requirement.Type.Item));
+                reqs.Add(new Requirement(DB.QueryItem(requireItem[i]),requireQty[i],Requirement.Type.Item));
             }
             ed.requirements = reqs;
             ed.requireMoney = requireMoney;
