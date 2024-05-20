@@ -25,7 +25,8 @@
                 25
             ],
             "boss": 5,
-            "rareEnemy":0
+            "rareEnemy":0,
+            "platinumCoinGain": 5
         },
         {
             "name": "Great Plain",
@@ -55,7 +56,8 @@
                 10
             ],
             "boss": 12,
-            "rareEnemy":11
+            "rareEnemy":11,
+            "platinumCoinGain": 10
         },
         {
             "name": "Magical Forest",
@@ -87,7 +89,8 @@
                 15
             ],
             "boss": 20,
-            "rareEnemy":19
+            "rareEnemy":19,
+            "platinumCoinGain": 15
         },
         {
             "name": "Southern Islands",
@@ -114,7 +117,8 @@
                 15
             ],
             "boss": 28,
-            "rareEnemy":27
+            "rareEnemy":27,
+            "platinumCoinGain": 20
         },
         {
             "name": "Crystal Cave",
@@ -141,7 +145,8 @@
                 15
             ],
             "boss": 36,
-            "rareEnemy":35
+            "rareEnemy":35,
+            "platinumCoinGain": 30
         },
         {
             "name": "Haunted Forest",
@@ -168,7 +173,8 @@
                 15
             ],
             "boss": 44,
-            "rareEnemy":43
+            "rareEnemy":43,
+            "platinumCoinGain": 50
         },
         {
             "name": "Burning Desert",
@@ -195,7 +201,8 @@
                 15
             ],
             "boss": 52,
-            "rareEnemy":51
+            "rareEnemy":51,
+            "platinumCoinGain": 75
         }, {
             "name": "Vulkan Volcano",
             "desc": "This active volcano is also where the demon lord's kingdom locate",
@@ -221,7 +228,8 @@
                 15
             ],
             "boss": 60,
-            "rareEnemy":59
+            "rareEnemy":59,
+            "platinumCoinGain": 100
         },
         {
             "name": "Ninguan Tundra",
@@ -248,7 +256,8 @@
                 15
             ],
             "boss": 83,
-            "rareEnemy":82
+            "rareEnemy":82,
+            "platinumCoinGain": 200
         },
         {
             "name": "Ancient Battlefield",
@@ -271,7 +280,8 @@
                 15
             ],
             "boss": 91,
-            "rareEnemy":90
+            "rareEnemy":90,
+            "platinumCoinGain": 300
         }
     ]
 }

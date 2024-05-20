@@ -331,6 +331,9 @@ namespace RPG
                 {
                     Game.inventory.smartInsert(item.item, item.qty);
                 }
+                if(Game.currentMapMode == Constant.MapModeProgressive && Game.currLoc.currZone == Game.currLoc.maxZone){
+                    Game.platinumCoin += Game.currLoc.platinumCoinGain;
+                }
                 //handleEnemyDrops();
                 //Debug.Log("insert drop=" + RPGSystem.inventory.onSave());
                 //Debug.Log (playerLevelUp.ToString ());

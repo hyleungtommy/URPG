@@ -7,6 +7,7 @@ public class MainMenuScene : BasicScene
 {
     public HeaderCtrl header;
     public Image bg;
+    public Button buttonToCity;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class MainMenuScene : BasicScene
     {
         header.render();
         bg.sprite = Game.currLoc.bgImg;
+        buttonToCity.gameObject.SetActive(Game.currLoc.townFacility.Length > 0);
     }
 
     public void onClickToCity()

@@ -9,7 +9,7 @@ namespace RPG
     {
         public string name;
         public string img;
-        public int HP;
+        public Int64 HP;
         public int MP;
         public int ATK;
         public int DEF;

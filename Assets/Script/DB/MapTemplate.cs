@@ -22,6 +22,7 @@ namespace RPG
         public string townbg;
         public string[] townFacility;
         public int rareEnemy;
+        public int platinumCoinGain;
         public MapTemplate()
         {
         }
@@ -46,6 +47,8 @@ namespace RPG
             m.townName = townName;
             m.townbg = Resources.Load<Sprite>("Background/VillageBG/" + townbg);
             m.unlocked = true;
+            m.platinumCoinGain = platinumCoinGain;
+
             //if (id == 0) m.unlocked = true;
             //else m.unlocked = false;
             return m;

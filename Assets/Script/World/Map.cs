@@ -26,6 +26,7 @@ namespace RPG
         public Sprite townbg { get; set; }
         public string[] townFacility { get; set; }
         public bool unlocked { get; set; }
+        public int platinumCoinGain {get; set;}
         public Map(int id, string name, string desc, Sprite bgImg, Sprite battleImg, int reqLv, int maxLv, int maxZone, EnemyTemplate[] enemyList, int[] appearChance, EnemyTemplate boss, EnemyTemplate rareEnemy)
         {
             this.id = id;

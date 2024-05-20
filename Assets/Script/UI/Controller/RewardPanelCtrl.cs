@@ -13,6 +13,8 @@ public class RewardPanelCtrl : MonoBehaviour
     public Button btnNextArea;
     public EXPGainCtrl[] expGain;
     public ItemBox[] enemyDropDisplays;
+    public GameObject platinumCoinGain;
+    public Text platinumCoinGainText;
     BattleCtrl battleCtrl;
     BattleScene scene;
     List<ItemAndQty>drops;
@@ -65,6 +67,12 @@ public class RewardPanelCtrl : MonoBehaviour
                     enemyDropDisplays[i].gameObject.SetActive(true);
                     enemyDropDisplays[i].render(drops[i].item);
                 }
+            }
+            if(Game.currentMapMode == Constant.MapModeProgressive && Game.currLoc.currZone == Game.currLoc.maxZone){
+                platinumCoinGain.gameObject.SetActive(true);
+                platinumCoinGainText.text = Game.currLoc.platinumCoinGain.ToString();
+            }else{
+                platinumCoinGain.gameObject.SetActive(false);
             }
         }
         else
