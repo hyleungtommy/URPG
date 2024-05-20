@@ -7,17 +7,20 @@
 -TODO Features:
     -Daily Quest
     -Side Quest
-    -Trade Station + Experience card
     -Dungeon
     -Township
     -Achievement
     -Warehouse & Warehouse upgrade
     -Item AOE mode
+    -Enemy Skill
 
 -TODO Fixes:
     -Crafting:
-        -craft ingerident detect
+        -craft resource check
         -improve craft result dialog
         -make crafting experience level up
         -make assessories having multiple enchantments in higher rarity
         -fix accessories having job restriction
+    -Trade statiom
+        -resource check
+        -more trading options

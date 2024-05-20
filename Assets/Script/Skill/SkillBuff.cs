@@ -22,7 +22,6 @@ namespace RPG
             {
                 if (targetEntity.currhp > 0)
                 {
-                    Debug.Log("use buff skill=" + base.name + " buff list" + buffList);
                     foreach (Buff b in buffList)
                     {
                         //if ((user as EntityPlayer).havePassiveSkill("Faith of God"))
@@ -30,7 +29,7 @@ namespace RPG
                         //    b.Rounds += (int)(user as EntityPlayer).getPassiveSkill("Faith of God").Mod;
                         //}
                         targetEntity.buffState.addBuff(b);
-                        Debug.Log(targetEntity.name + "buff" + b.type + "round" + b.rounds);
+                        //Debug.Log(targetEntity.name + "buff" + b.type + "round" + b.rounds);
                         BattleMessage message = new BattleMessage();
                         message.SkillAnimationName = animation;
                         message.SkillName = name;

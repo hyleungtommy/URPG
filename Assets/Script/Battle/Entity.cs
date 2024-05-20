@@ -91,7 +91,7 @@ namespace RPG
             buffState.passRound(this);
             isDefensing = false;
             reflectiveDefense = false;
-            Debug.Log(name + " buffState=" + buffState.ToString());
+            //Debug.Log(name + " buffState=" + buffState.ToString());
             //Debug.Log(name + " pass round");
         }
 

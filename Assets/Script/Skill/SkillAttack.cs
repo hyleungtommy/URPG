@@ -34,7 +34,6 @@ namespace RPG
                     if(user is EntityPlayer && (user as EntityPlayer).hasPassiveSkill("Battle Will") && (user.currhp/user.stat.HP) <= 0.25f){
                         SkillPassive passiveSkill = (user as EntityPlayer).getPassiveSkill("Battle Will");
                         attackModifier = attackModifier + passiveSkill.mod;
-                        Debug.Log("Battle Will Power:" + passiveSkill.mod + " attackModifier=" + attackModifier);
                     }
 
                     int attackPower = (int)((user.stat.ATK * 1 * UnityEngine.Random.Range(0.9f, 1.1f) * attackModifier) - (opponent.isDefensing ? opponent.stat.DEF * opponent.defenseModifier : opponent.stat.DEF) * ModifierFromBuffHelper.getTargetDefenseModifierFromSpecialBuff(opponent));

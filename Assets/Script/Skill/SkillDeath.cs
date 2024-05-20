@@ -31,7 +31,6 @@ namespace RPG
             b.sender = user;
             b.receiver = target[0];
             b.AOE = false;
-            Debug.Log(target[0]);
             b.type = BattleMessage.Type.NormalAttack;
             b.SkillAnimationName = animation;
             //Debug.Log (target.Length);

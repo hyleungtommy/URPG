@@ -24,7 +24,6 @@ namespace RPG
         }
 
         public TradeList ToTradeList(){
-            Debug.Log(require.itemId);
             int requireItemAmount = UnityEngine.Random.Range(require.min, require.max);
             int receiveItemAmount = UnityEngine.Random.Range(receive.min, receive.max);
             TradeList tradeList = new TradeList(type, require.itemId, receive.itemId, requireItemAmount, receiveItemAmount);
