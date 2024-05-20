@@ -198,7 +198,7 @@
             "rareEnemy":51
         }, {
             "name": "Vulkan Volcano",
-            "desc": "Sample Desc003",
+            "desc": "This active volcano is also where the demon lord's kingdom locate",
             "bgImg": "008-Vulkan Volcano",
             "battleImg": "008-Vulkan Volcano BG",
             "townName": "Emperial Barrack",
@@ -222,6 +222,56 @@
             ],
             "boss": 60,
             "rareEnemy":59
+        },
+        {
+            "name": "Ninguan Tundra",
+            "desc": "This tundra located in the northernmost part of the contient, very few explorer has ever set foot in this frozen land",
+            "bgImg": "009-Ninguan Tundra",
+            "battleImg": "009-Ninguan Tundra BG",
+            "townName": "Expedition Camp",
+            "townbg": "009-Snow Town",
+            "townFacility": [
+                "Shop", "SkillCenter", "Blacksmith", "Guild", "Camp", "Trade"
+            ],
+            "reqLv": 65,
+            "maxLv": 70,
+            "maxArea": 50,
+            "enemyList": [
+                76,77,78,79,80,81
+            ],
+            "appearChance": [
+                20,
+                20,
+                20,
+                15,
+                15,
+                15
+            ],
+            "boss": 83,
+            "rareEnemy":82
+        },
+        {
+            "name": "Ancient Battlefield",
+            "desc": "Once hosted an advanced civilization, the contient of Tira has been destroyed due to war between advanced countries. Nowaday this contient is barren and roaming with ancient war machine",
+            "bgImg": "010-Ancient Battlefield",
+            "battleImg": "010-Ancient Battlefield BG",
+            "townFacility": [],
+            "reqLv": 70,
+            "maxLv": 75,
+            "maxArea": 50,
+            "enemyList": [
+                84,85,86,87,88,89
+            ],
+            "appearChance": [
+                20,
+                20,
+                20,
+                15,
+                15,
+                15
+            ],
+            "boss": 91,
+            "rareEnemy":90
         }
     ]
 }
