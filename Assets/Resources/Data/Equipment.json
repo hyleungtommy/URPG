@@ -2832,6 +2832,204 @@
         "requireQty": [3, 2, 1],
         "requireMoney": 12500
       }
+    },
+    {
+      "id": 153,
+      "name": "Mechanic Saber",
+      "desc": "This saber is pneumatic-powered",
+      "type": "Sword",
+      "img": "E153",
+      "reqLv": 60,
+      "power": 6000,
+      "magicPower": 4000,
+      "price": 8000,
+      "buyPlace": "Blacksmith",
+      "craftRecipe": {
+        "requireLevel": 9,
+        "requireItem": ["I026", "I027", "I055"],
+        "requireQty": [5, 1, 3],
+        "requireMoney": 5000
+      }
+    },
+    {
+      "id": 154,
+      "name": "Crystal Shield",
+      "desc": "This entire shield is made from a single, perfectly cut crystal",
+      "type": "Shield",
+      "img": "E154",
+      "reqLv": 60,
+      "power": 2000,
+      "magicPower": 1000,
+      "price": 4500,
+      "buyPlace": "Blacksmith",
+      "craftRecipe": {
+        "requireLevel": 9,
+        "requireItem": ["I026", "I057"],
+        "requireQty": [3, 3],
+        "requireMoney": 5000
+      }
+    },
+    {
+      "id": 155,
+      "name": "Metallic Axe",
+      "desc": "This axe is a made with machine part from ancient battlefield",
+      "type": "Axe",
+      "img": "E155",
+      "reqLv": 60,
+      "power": 12000,
+      "magicPower": 5000,
+      "price": 12000,
+      "buyPlace": "Blacksmith",
+      "craftRecipe": {
+        "requireLevel": 9,
+        "requireItem": ["I026", "I027", "I055"],
+        "requireQty": [10, 1, 3],
+        "requireMoney": 7500
+      }
+    },
+    {
+      "id": 156,
+      "name": "Tonal Fork",
+      "desc": "This almost doesn't look like a wand, but seems like hit the for itself can generate magical spells",
+      "type": "Wand",
+      "img": "E156",
+      "reqLv": 60,
+      "power": 260,
+      "magicPower": 1500,
+      "price": 8000,
+      "buyPlace": "Blacksmith",
+      "craftRecipe": {
+        "requireLevel": 9,
+        "requireItem": ["I055", "I037"],
+        "requireQty": [5, 3],
+        "requireMoney": 5000
+      }
+    },
+    {
+      "id": 157,
+      "name": "Solider Battle Guide",
+      "desc": "This seems like a guide to teach solider how to deal with machenical constructions. However it is written in a long extincted language that no one understand",
+      "type": "Spellbook",
+      "img": "E157",
+      "reqLv": 60,
+      "power": 250,
+      "magicPower": 400,
+      "price": 4500,
+      "buyPlace": "Blacksmith",
+      "craftRecipe": {
+        "requireLevel": 9,
+        "requireItem": ["I055", "I037"],
+        "requireQty": [3, 3],
+        "requireMoney": 5000
+      }
+    },
+    {
+      "id": 158,
+      "name": "Magnetic Rod",
+      "desc": "An unattractive rod salvaged from the battlefield. But this rod look like it has more then that...",
+      "type": "Staff",
+      "img": "E158",
+      "reqLv": 60,
+      "power": 800,
+      "magicPower": 3800,
+      "price": 8000,
+      "buyPlace": "Blacksmith",
+      "craftRecipe": {
+        "requireLevel": 9,
+        "requireItem": ["I055", "I056", "I037"],
+        "requireQty": [10, 1, 3],
+        "requireMoney": 7500
+      }
+    },
+    {
+      "id": 159,
+      "name": "Pistol",
+      "desc": "This seems to be the 'bow' that the ancient solider use, can you still call it a bow?",
+      "type": "Bow",
+      "img": "E159",
+      "reqLv": 60,
+      "power": 2000,
+      "magicPower": 2000,
+      "price": 12000,
+      "buyPlace": "Blacksmith",
+      "craftRecipe": {
+        "requireLevel": 9,
+        "requireItem": ["I026", "I055"],
+        "requireQty": [5, 5],
+        "requireMoney": 7500
+      }
+    },
+    {
+      "id": 160,
+      "name": "Assault Dagger",
+      "desc": "This pair of weird dagger have a handle to hold",
+      "type": "Dagger",
+      "img": "E160",
+      "reqLv": 60,
+      "power": 1100,
+      "magicPower": 1100,
+      "price": 12000,
+      "buyPlace": "Blacksmith",
+      "craftRecipe": {
+        "requireLevel": 9,
+        "requireItem": ["I026", "I055"],
+        "requireQty": [7, 2],
+        "requireMoney": 7500
+      }
+    },
+    {
+      "id": 161,
+      "name": "Exo Skeleton",
+      "desc": "This heavy armor is programmed to help wearer to swing weapon",
+      "type": "Heavy Armor",
+      "img": "E161",
+      "reqLv": 60,
+      "power": 1000,
+      "magicPower": 800,
+      "price": 8000,
+      "buyPlace": "Blacksmith",
+      "craftRecipe": {
+        "requireLevel": 9,
+        "requireItem": ["I026", "I027", "I070", "I076"],
+        "requireQty": [10, 1, 3, 3],
+        "requireMoney": 7500
+      }
+    },
+    {
+      "id": 162,
+      "name": "Prismatic Cloth",
+      "desc": "This piece of cloth is radiating with prismatic energy",
+      "type": "Robe Armor",
+      "img": "E162",
+      "reqLv": 60,
+      "power": 800,
+      "magicPower": 1000,
+      "price": 8000,
+      "buyPlace": "Blacksmith",
+      "craftRecipe": {
+        "requireLevel": 9,
+        "requireItem": ["I076", "I082", "I037"],
+        "requireQty": [10, 5, 3],
+        "requireMoney": 7500
+      }
+    },
+    {
+      "id": 163,
+      "name": "Invisible Cloth",
+      "desc": "Wearing this cloth and make one invisible!",
+      "type": "Light Armor",
+      "img": "E163",
+      "reqLv": 60,
+      "power": 750,
+      "magicPower": 750,
+      "price": 8000,
+      "buyPlace": "Blacksmith",
+      "craftRecipe": {
+        "requireLevel": 9,
+        "requireItem": ["I070", "I076", "I082"],
+        "requireQty": [10, 5, 5],
+        "requireMoney": 7500
+      }
     }
   ]
 }
