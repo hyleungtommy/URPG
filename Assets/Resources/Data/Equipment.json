@@ -2,8 +2,8 @@
   "Items": [
     {
       "id": 1,
-      "name": "Wood Sword",
-      "desc": "A petty sword made from wood",
+      "name": "Basic Sword",
+      "desc": "Basic sword used by newbies ",
       "type": "Sword",
       "img": "E001",
       "reqLv": 1,
@@ -14,7 +14,7 @@
     },
     {
       "id": 2,
-      "name": "Rotten Wood Shield",
+      "name": "Wood Shield",
       "desc": "You feel like it would break on the next hit",
       "type": "Shield",
       "img": "E002",
@@ -27,7 +27,7 @@
     {
       "id": 3,
       "name": "Lumber Axe",
-      "desc": "Just the axe used by the lumber",
+      "desc": "Good for chopping wood only",
       "type": "Axe",
       "img": "E003",
       "reqLv": 1,
@@ -38,7 +38,7 @@
     },
     {
       "id": 4,
-      "name": "Simple Armor",
+      "name": "Basic Armor",
       "desc": "Crafted by Villager, provide limitied protection",
       "type": "Heavy Armor",
       "img": "E004",
@@ -51,7 +51,7 @@
     {
       "id": 5,
       "name": "Iron Sword",
-      "desc": "Basic sword used by newbies ",
+      "desc": "A common sword made with iron",
       "type": "Sword",
       "img": "E005",
       "reqLv": 10,
@@ -79,8 +79,8 @@
     },
     {
       "id": 6,
-      "name": "Wood Shield",
-      "desc": "Weak shield made by wood",
+      "name": "Reinforced Wood Shield",
+      "desc": "This shield is reinforced with metal to make it more sturdy",
       "type": "Shield",
       "img": "E006",
       "reqLv": 10,
@@ -109,7 +109,7 @@
     {
       "id": 7,
       "name": "Iron Axe",
-      "desc": "Basic axe used by newbies",
+      "desc": "A common axe that provides some more offensive power",
       "type": "Axe",
       "img": "E007",
       "reqLv": 10,
@@ -224,8 +224,8 @@
     },
     {
       "id": 11,
-      "name": "Wood Bow",
-      "desc": "Bow made by just wood",
+      "name": "Basic Bow",
+      "desc": "A simple bow that used by common hunter",
       "type": "Bow",
       "img": "E011",
       "reqLv": 10,
@@ -254,7 +254,7 @@
     {
       "id": 12,
       "name": "Basic Dagger",
-      "desc": "Dagger used by crappy thief",
+      "desc": "A small dagger that provide basic offensive power",
       "type": "Dagger",
       "img": "E012",
       "reqLv": 10,
@@ -282,7 +282,7 @@
     },
     {
       "id": 13,
-      "name": "Basic Armor",
+      "name": "Iron Armor",
       "desc": "Basic Armor for warrior-type classes,provide limited protection",
       "type": "Heavy Armor",
       "img": "E013",
@@ -340,8 +340,8 @@
     },
     {
       "id": 15,
-      "name": "Leather Cloth",
-      "desc": "Cloth for archer and assassin",
+      "name": "Basic Leather Armor",
+      "desc": "Basic Cloth for archer and assassin",
       "type": "Light Armor",
       "img": "E015",
       "reqLv": 10,
@@ -369,8 +369,8 @@
     },
     {
       "id": 16,
-      "name": "Standard-Issue Sword",
-      "desc": "Standard sword for Falone Solider",
+      "name": "Improved Iron Sword",
+      "desc": "This iron sword has been made more sturdy",
       "type": "Sword",
       "img": "E016",
       "reqLv": 20,
@@ -388,7 +388,7 @@
     {
       "id": 17,
       "name": "Iron Shield",
-      "desc": "Standard iron shield for Falone Solider",
+      "desc": "Standard strudy iron shield",
       "type": "Shield",
       "img": "E017",
       "reqLv": 20,
@@ -406,7 +406,7 @@
     {
       "id": 18,
       "name": "Battleaxe",
-      "desc": "Double blade axe for Falone Solider",
+      "desc": "A Double blade axe made with heavy iron",
       "type": "Axe",
       "img": "E018",
       "reqLv": 20,
@@ -423,8 +423,8 @@
     },
     {
       "id": 19,
-      "name": "Basic Wand",
-      "desc": "Standard wand used by mages",
+      "name": "Standard Wand",
+      "desc": "Standard wand used by mage",
       "type": "Wand",
       "img": "E019",
       "reqLv": 20,
@@ -441,7 +441,7 @@
     },
     {
       "id": 20,
-      "name": "Basic Spellbook",
+      "name": "Standard Spellbook",
       "desc": "A spellbook that includes basic spells only",
       "type": "Spellbook",
       "img": "E020",
@@ -459,7 +459,7 @@
     },
     {
       "id": 21,
-      "name": "Basic Staff",
+      "name": "Standard Staff",
       "desc": "Big staff used by mages",
       "type": "Staff",
       "img": "E021",
@@ -495,8 +495,8 @@
     },
     {
       "id": 23,
-      "name": "Curved Dagger",
-      "desc": "Curved-blade dagger",
+      "name": "Iron Dagger",
+      "desc": "A pair of nicely made dagger made with iron",
       "type": "Dagger",
       "img": "E023",
       "reqLv": 20,
@@ -513,8 +513,8 @@
     },
     {
       "id": 24,
-      "name": "Standard Armor",
-      "desc": "Standard Armor used by Falone Solider",
+      "name": "Improved Iron Armor",
+      "desc": "It added more cover thus increasing protection power",
       "type": "Heavy Armor",
       "img": "E024",
       "reqLv": 20,
@@ -549,8 +549,8 @@
     },
     {
       "id": 26,
-      "name": "Enchanted Cloth",
-      "desc": "Cloth made with stronger leather",
+      "name": "Enchanted Leather Armor",
+      "desc": "Leather armor reinforced with metal, making it able to take heavier hits",
       "type": "Light Armor",
       "img": "E026",
       "reqLv": 20,
@@ -765,8 +765,8 @@
     },
     {
       "id": 38,
-      "name": "Fiery-infused Sword",
-      "desc": "The sword that proceed the element of fire",
+      "name": "Assaulter",
+      "desc": "This sword is modified to focus on pure assault power",
       "type": "Sword",
       "img": "E038",
       "reqLv": 30,
@@ -783,8 +783,8 @@
     },
     {
       "id": 39,
-      "name": "Frost-infused Sword",
-      "desc": "The sword that proceed the element of ice",
+      "name": "Steel Boardsword",
+      "desc": "This sword is large and heavy, making it more of a all purpose sword",
       "type": "Sword",
       "img": "E039",
       "reqLv": 30,
@@ -801,8 +801,8 @@
     },
     {
       "id": 40,
-      "name": "Sturdy Steel Shield",
-      "desc": "A reinforced steel shield that provides more defense",
+      "name": "Heavy Steel Shield",
+      "desc": "A big heavy steel shield that is able to block more physical attack",
       "type": "Shield",
       "img": "E040",
       "reqLv": 30,
@@ -819,8 +819,8 @@
     },
     {
       "id": 41,
-      "name": "Magic infused Shield",
-      "desc": "This shield is infused with magic, make it user less vulnerable to magic attack",
+      "name": "Enchanted Steel Shield",
+      "desc": "This shield is enchanted with magical ward to block magical attack",
       "type": "Shield",
       "img": "E041",
       "reqLv": 30,
@@ -873,8 +873,8 @@
     },
     {
       "id": 44,
-      "name": "Rainbow wand",
-      "desc": "A wand made with ranbow gem",
+      "name": "Fire Wand",
+      "desc": "A wand with a fire crystal on top",
       "type": "Wand",
       "img": "E044",
       "reqLv": 30,
@@ -891,8 +891,8 @@
     },
     {
       "id": 45,
-      "name": "Necromancer’s Wand",
-      "desc": "A wand for necromancer",
+      "name": "Ice Wand",
+      "desc": "A wand with a ice crystal on top",
       "type": "Wand",
       "img": "E045",
       "reqLv": 30,
@@ -909,8 +909,8 @@
     },
     {
       "id": 46,
-      "name": "Dark Spellbook",
-      "desc": "This spellbook looks evil",
+      "name": "Book of Earth",
+      "desc": "A spellbook about earth spells",
       "type": "Spellbook",
       "img": "E046",
       "reqLv": 30,
@@ -927,8 +927,8 @@
     },
     {
       "id": 47,
-      "name": "Ancient Tablet",
-      "desc": "Ancient words inscribed on it",
+      "name": "Book of Thunder",
+      "desc": "A spellbook about thunder spells",
       "type": "Spellbook",
       "img": "E047",
       "reqLv": 30,
@@ -981,8 +981,8 @@
     },
     {
       "id": 50,
-      "name": "Flaming Bow",
-      "desc": "A bow that shoot fire arrow",
+      "name": "Glided Wood Bow",
+      "desc": "A fancy wood bow gilded with gold",
       "type": "Bow",
       "img": "E050",
       "reqLv": 30,
@@ -999,8 +999,8 @@
     },
     {
       "id": 51,
-      "name": "Frozen Bow",
-      "desc": "A bow that shoot frozen arrow",
+      "name": "Bone Bow",
+      "desc": "A rudimentary bow made with bone",
       "type": "Bow",
       "img": "E051",
       "reqLv": 30,
@@ -1017,8 +1017,8 @@
     },
     {
       "id": 52,
-      "name": "Flaming Dragger",
-      "desc": "A dagger that can light target on fire",
+      "name": "Curved Dragger",
+      "desc": "A pair of curved-blade dagger",
       "type": "Dagger",
       "img": "E052",
       "reqLv": 30,
@@ -1035,8 +1035,8 @@
     },
     {
       "id": 53,
-      "name": "Frozen Dragger",
-      "desc": "A dagger that can freeze target",
+      "name": "Evil Dragger",
+      "desc": "An evil looking dagger",
       "type": "Dagger",
       "img": "E053",
       "reqLv": 30,
@@ -1125,8 +1125,8 @@
     },
     {
       "id": 58,
-      "name": "Hardwood Shield",
-      "desc": "A shield made by extra durable wood",
+      "name": "Glided Steel Shield",
+      "desc": "A fancy shield made with extra steel",
       "type": "Shield",
       "img": "E058",
       "reqLv": 40,
@@ -1215,8 +1215,8 @@
     },
     {
       "id": 63,
-      "name": "Magicwood Bow",
-      "desc": "A bow made by mana wood, very capable of infusing with magic energy",
+      "name": "Steel Bow",
+      "desc": "A steel bow that is powerful but needs very strong strength to use",
       "type": "Bow",
       "img": "E063",
       "reqLv": 40,
@@ -1305,8 +1305,8 @@
     },
     {
       "id": 68,
-      "name": "Sword of Thor",
-      "desc": "A sword that proceed with lighting energy",
+      "name": "Sword of Fire",
+      "desc": "A sword that imbued with fire element",
       "type": "Sword",
       "img": "E068",
       "reqLv": 40,
@@ -1323,8 +1323,8 @@
     },
     {
       "id": 69,
-      "name": "Sword of Aya",
-      "desc": "A sword that proceed with wind energy",
+      "name": "Sword of Ice",
+      "desc": "A sword that imbued with ice element",
       "type": "Sword",
       "img": "E069",
       "reqLv": 40,
@@ -1341,8 +1341,8 @@
     },
     {
       "id": 70,
-      "name": "Bloody Shield",
-      "desc": "A shield that is decrorated with blood",
+      "name": "Golden Shield",
+      "desc": "A fancy shield that is made entirely by gold",
       "type": "Shield",
       "img": "E070",
       "reqLv": 40,
@@ -1359,8 +1359,8 @@
     },
     {
       "id": 71,
-      "name": "Spiking Shield",
-      "desc": "A shield with a huge spike",
+      "name": "Bone Shield",
+      "desc": "A shield is made by bone from unkown creature",
       "type": "Shield",
       "img": "E071",
       "reqLv": 40,
@@ -1467,7 +1467,7 @@
     },
     {
       "id": 77,
-      "name": "Onmis Spellbook",
+      "name": "Evil Spellbook",
       "desc": "A omnious looking spellbook",
       "type": "Spellbook",
       "img": "E077",
@@ -1521,8 +1521,8 @@
     },
     {
       "id": 80,
-      "name": "Extra Frozen Bow",
-      "desc": "",
+      "name": "Firey Bow",
+      "desc": "A bow that imbued with fire element",
       "type": "Bow",
       "img": "E080",
       "reqLv": 40,
@@ -1539,8 +1539,8 @@
     },
     {
       "id": 81,
-      "name": "Extra Windy Bow",
-      "desc": "",
+      "name": "Frozen Bow",
+      "desc": "A bow that imbued with ice element",
       "type": "Bow",
       "img": "E081",
       "reqLv": 40,
@@ -1557,8 +1557,8 @@
     },
     {
       "id": 82,
-      "name": "Extra Flaming Dragger",
-      "desc": "",
+      "name": "Flaming Dragger",
+      "desc": "A pair of dagger that imbued with fire element",
       "type": "Dagger",
       "img": "E082",
       "reqLv": 40,
@@ -1575,8 +1575,8 @@
     },
     {
       "id": 83,
-      "name": "Extra Frozen Dragger",
-      "desc": "",
+      "name": "Frozen Dragger",
+      "desc": "A pair of dagger that imbued with ice element",
       "type": "Dagger",
       "img": "E083",
       "reqLv": 40,
@@ -1594,7 +1594,7 @@
     {
       "id": 84,
       "name": "Elite Knight's Armor",
-      "desc": "",
+      "desc": "A mighty armor that is used by elite knight",
       "type": "Heavy Armor",
       "img": "E084",
       "reqLv": 40,
@@ -1612,7 +1612,7 @@
     {
       "id": 85,
       "name": "Flaming Archmage Cloth",
-      "desc": "",
+      "desc": "This robe is a replicate of the robe that wore by a famous fire archmage",
       "type": "Robe Armor",
       "img": "E085",
       "reqLv": 40,
@@ -1630,7 +1630,7 @@
     {
       "id": 86,
       "name": "Enchanted Archer Armor",
-      "desc": "",
+      "desc": "This leather amor is made with leather from rare beast",
       "type": "Light Armor",
       "img": "E086",
       "reqLv": 40,
@@ -1648,7 +1648,7 @@
     {
       "id": 87,
       "name": "Runic Sword",
-      "desc": "",
+      "desc": "A reconstruction of an anicent artifact",
       "type": "Sword",
       "img": "E087",
       "reqLv": 50,
@@ -1666,7 +1666,7 @@
     {
       "id": 88,
       "name": "Tower Shield",
-      "desc": "",
+      "desc": "A very heavy and large steel shield",
       "type": "Shield",
       "img": "E088",
       "reqLv": 50,
@@ -1683,8 +1683,8 @@
     },
     {
       "id": 89,
-      "name": "Extreme Elemental Axe",
-      "desc": "",
+      "name": "Mighty Steel Axe",
+      "desc": "This steel axe looks very mighty",
       "type": "Axe",
       "img": "E089",
       "reqLv": 50,
@@ -1702,7 +1702,7 @@
     {
       "id": 90,
       "name": "Golden Flaming Wand",
-      "desc": "",
+      "desc": "The tip of this wand keeps burning with a golden flame",
       "type": "Wand",
       "img": "E090",
       "reqLv": 50,
@@ -1720,7 +1720,7 @@
     {
       "id": 91,
       "name": "Master Spellbook",
-      "desc": "",
+      "desc": "This spellbook is used by a spell master",
       "type": "Spellbook",
       "img": "E091",
       "reqLv": 50,
@@ -1738,7 +1738,7 @@
     {
       "id": 92,
       "name": "Spiral Staff",
-      "desc": "",
+      "desc": "The tip of this staff is a twisted spiral",
       "type": "Staff",
       "img": "E092",
       "reqLv": 50,
@@ -1756,7 +1756,7 @@
     {
       "id": 93,
       "name": "Metallic Crossbow",
-      "desc": "",
+      "desc": "A steel crossbow that can fire powerful shot",
       "type": "Bow",
       "img": "E093",
       "reqLv": 50,
@@ -1774,7 +1774,7 @@
     {
       "id": 94,
       "name": "Katana",
-      "desc": "",
+      "desc": "A mysterious knife that is used by eastern warrior",
       "type": "Dagger",
       "img": "E094",
       "reqLv": 50,
@@ -1792,7 +1792,7 @@
     {
       "id": 95,
       "name": "Royal Knight's Armor",
-      "desc": "",
+      "desc": "A mighty armor that is used by royal knight",
       "type": "Heavy Armor",
       "img": "E095",
       "reqLv": 50,
@@ -1810,7 +1810,7 @@
     {
       "id": 96,
       "name": "Master's Cloth",
-      "desc": "",
+      "desc": "This cloth is only used by spell master",
       "type": "Robe Armor",
       "img": "E096",
       "reqLv": 50,
@@ -1828,7 +1828,7 @@
     {
       "id": 97,
       "name": "Royal Archer's Armor",
-      "desc": "",
+      "desc": "A mighty armor that is used by royal archer",
       "type": "Light Armor",
       "img": "E097",
       "reqLv": 50,
@@ -1846,7 +1846,7 @@
     {
       "id": 98,
       "name": "Ancient Sword",
-      "desc": "",
+      "desc": "This ancient sword is plusing with powerful magic",
       "type": "Sword",
       "img": "E098",
       "reqLv": 50,
@@ -1863,8 +1863,8 @@
     },
     {
       "id": 99,
-      "name": "Toture Sword",
-      "desc": "",
+      "name": "Torture Sword",
+      "desc": "The rune on this sword is pulsing with ominous red light",
       "type": "Sword",
       "img": "E099",
       "reqLv": 50,
@@ -1882,7 +1882,7 @@
     {
       "id": 100,
       "name": "Royal Tower Shield",
-      "desc": "",
+      "desc": "A heavy steel shield used by royal knight",
       "type": "Shield",
       "img": "E100",
       "reqLv": 50,
@@ -1900,7 +1900,7 @@
     {
       "id": 101,
       "name": "Enhanted Tower Shield",
-      "desc": "",
+      "desc": "This tower shield can expand a magic ward when getting hit",
       "type": "Shield",
       "img": "E101",
       "reqLv": 50,
@@ -1917,8 +1917,8 @@
     },
     {
       "id": 102,
-      "name": "Extreme Flaming Axe",
-      "desc": "",
+      "name": "Mighty Flaming Axe",
+      "desc": "A big and heavy axe that is imbued with fire element",
       "type": "Axe",
       "img": "E102",
       "reqLv": 50,
@@ -1935,8 +1935,8 @@
     },
     {
       "id": 103,
-      "name": "Extreme Frozen Axe",
-      "desc": "",
+      "name": "Mighty Frozen Axe",
+      "desc": "A big and heavy axe that is imbued with ice element",
       "type": "Axe",
       "img": "E103",
       "reqLv": 50,
@@ -1954,7 +1954,7 @@
     {
       "id": 104,
       "name": "Otherworldly Flame",
-      "desc": "",
+      "desc": "The flame on this wand doesn't seems to be coming from this world",
       "type": "Wand",
       "img": "E104",
       "reqLv": 50,
@@ -1972,7 +1972,7 @@
     {
       "id": 105,
       "name": "Bloody Skull Wand",
-      "desc": "",
+      "desc": "There is a bloody skull on the wand",
       "type": "Wand",
       "img": "E105",
       "reqLv": 50,
@@ -1989,8 +1989,8 @@
     },
     {
       "id": 106,
-      "name": "Extra Noble Spellbook",
-      "desc": "",
+      "name": "Royal Spellbook",
+      "desc": "This book is used by royal mage",
       "type": "Spellbook",
       "img": "E106",
       "reqLv": 50,
@@ -2007,8 +2007,8 @@
     },
     {
       "id": 107,
-      "name": "Extra Onmis Spellbook",
-      "desc": "",
+      "name": "Necromancer Spellbook",
+      "desc": "This book is used by necromancer",
       "type": "Spellbook",
       "img": "E107",
       "reqLv": 50,
@@ -2026,7 +2026,7 @@
     {
       "id": 108,
       "name": "Windy Spiral",
-      "desc": "",
+      "desc": "This spiral wand is imbued with wind element",
       "type": "Staff",
       "img": "E108",
       "reqLv": 50,
@@ -2044,7 +2044,7 @@
     {
       "id": 109,
       "name": "Dark Spiral",
-      "desc": "",
+      "desc": "This spiral wand is imbued with dark element",
       "type": "Staff",
       "img": "E109",
       "reqLv": 50,
@@ -2062,7 +2062,7 @@
     {
       "id": 110,
       "name": "Frozen Crossbow",
-      "desc": "",
+      "desc": "Catious! This crossbow can freeze your hand",
       "type": "Bow",
       "img": "E110",
       "reqLv": 50,
@@ -2080,7 +2080,7 @@
     {
       "id": 111,
       "name": "Windy Crossbow",
-      "desc": "",
+      "desc": "This crossbow can shot arrow at the speed of wind",
       "type": "Bow",
       "img": "E111",
       "reqLv": 50,
@@ -2098,7 +2098,7 @@
     {
       "id": 112,
       "name": "Windy Katana",
-      "desc": "",
+      "desc": "This kanata is imbued with wind energy, making it very light to swing",
       "type": "Dagger",
       "img": "E112",
       "reqLv": 50,
@@ -2116,7 +2116,7 @@
     {
       "id": 113,
       "name": "Thunder Katana",
-      "desc": "",
+      "desc": "This kanata is imbued with thunder energy, it can electify enemy",
       "type": "Dagger",
       "img": "E113",
       "reqLv": 50,
@@ -2134,7 +2134,7 @@
     {
       "id": 114,
       "name": "King Guard's Armor",
-      "desc": "",
+      "desc": "This armor is only used by king's body guard",
       "type": "Heavy Armor",
       "img": "E114",
       "reqLv": 50,
@@ -2152,7 +2152,7 @@
     {
       "id": 115,
       "name": "Forzen Archmage Cloth",
-      "desc": "",
+      "desc": "This robe looks very warm!",
       "type": "Robe Armor",
       "img": "E115",
       "reqLv": 50,
@@ -2170,7 +2170,7 @@
     {
       "id": 116,
       "name": "Elite Archer's Armor",
-      "desc": "",
+      "desc": "Only the best archer and wear this armor",
       "type": "Light Armor",
       "img": "E116",
       "reqLv": 50,
@@ -2188,7 +2188,7 @@
     {
       "id": 117,
       "name": "Hero's Sword",
-      "desc": "",
+      "desc": "This sword is only gifted to hero of the kingdom",
       "type": "Sword",
       "img": "E117",
       "reqLv": 60,
@@ -2206,7 +2206,7 @@
     {
       "id": 118,
       "name": "Hero's Shield",
-      "desc": "",
+      "desc": "This shield is only gifted to hero of the kingdom",
       "type": "Shield",
       "img": "E118",
       "reqLv": 60,
@@ -2223,8 +2223,8 @@
     },
     {
       "id": 119,
-      "name": "Machical Axe",
-      "desc": "",
+      "name": "Hero's Axe",
+      "desc": "This axe is only gifted to hero of the kingdom",
       "type": "Axe",
       "img": "E119",
       "reqLv": 60,
@@ -2241,8 +2241,8 @@
     },
     {
       "id": 120,
-      "name": "Double Wand",
-      "desc": "",
+      "name": "Holy Wand",
+      "desc": "This wand is imbued with holy energy",
       "type": "Wand",
       "img": "E120",
       "reqLv": 60,
@@ -2259,8 +2259,8 @@
     },
     {
       "id": 121,
-      "name": "Ancient Spellbook",
-      "desc": "",
+      "name": "Ancient Tablet",
+      "desc": "This tablet is inscribed with ancient spells",
       "type": "Spellbook",
       "img": "E121",
       "reqLv": 60,
@@ -2277,8 +2277,8 @@
     },
     {
       "id": 122,
-      "name": "Bright Crystal Wand",
-      "desc": "",
+      "name": "Bright Crystal Staff",
+      "desc": "A powerful Staff with a crystal flowing on the tip",
       "type": "Staff",
       "img": "E122",
       "reqLv": 60,
@@ -2295,8 +2295,8 @@
     },
     {
       "id": 123,
-      "name": "Eagle's Bow",
-      "desc": "",
+      "name": "Hero's Bow",
+      "desc": "This bow is only gifted to hero of the kingdom",
       "type": "Bow",
       "img": "E123",
       "reqLv": 60,
@@ -2314,7 +2314,7 @@
     {
       "id": 124,
       "name": "Kunai",
-      "desc": "",
+      "desc": "This dagger is used by ninja in the east",
       "type": "Dagger",
       "img": "E124",
       "reqLv": 60,
@@ -2332,7 +2332,7 @@
     {
       "id": 125,
       "name": "Hero's Armor",
-      "desc": "",
+      "desc": "This armor is only gifted to hero of the kingdom",
       "type": "Heavy Armor",
       "img": "E125",
       "reqLv": 60,
@@ -2350,7 +2350,7 @@
     {
       "id": 126,
       "name": "Lab Mem's Cloth",
-      "desc": "",
+      "desc": "It is used by lab staff in magical laboratory",
       "type": "Robe Armor",
       "img": "E126",
       "reqLv": 60,
@@ -2368,7 +2368,7 @@
     {
       "id": 127,
       "name": "Sniper Armor",
-      "desc": "",
+      "desc": "This armor is only gifted to the best sniper of the kingdom",
       "type": "Light Armor",
       "img": "E127",
       "reqLv": 60,
@@ -2386,7 +2386,7 @@
     {
       "id": 128,
       "name": "Magma Lord's Anger",
-      "desc": "",
+      "desc": "Magmatic power flow through this sword",
       "type": "Sword",
       "img": "E128",
       "reqLv": 60,
@@ -2403,8 +2403,8 @@
     },
     {
       "id": 129,
-      "name": "Devil's Sight",
-      "desc": "",
+      "name": "Devil's Gaze",
+      "desc": "You feel like this sword is looking to you...",
       "type": "Sword",
       "img": "E129",
       "reqLv": 60,
@@ -2422,7 +2422,7 @@
     {
       "id": 130,
       "name": "Nature's Protector",
-      "desc": "",
+      "desc": "It is said that this shield is gifted from nature to its protector",
       "type": "Shield",
       "img": "E130",
       "reqLv": 60,
@@ -2440,7 +2440,7 @@
     {
       "id": 131,
       "name": "Thunder Protector",
-      "desc": "",
+      "desc": "When hit this shield will spit out thunder",
       "type": "Shield",
       "img": "E131",
       "reqLv": 60,
@@ -2457,8 +2457,8 @@
     },
     {
       "id": 132,
-      "name": "Robotal Axe",
-      "desc": "",
+      "name": "Radiant Axe",
+      "desc": "This fancy axe is imbued with light energy",
       "type": "Axe",
       "img": "E132",
       "reqLv": 60,
@@ -2475,8 +2475,8 @@
     },
     {
       "id": 133,
-      "name": "Mice of Pain",
-      "desc": "",
+      "name": "Blood Lord Axe",
+      "desc": "It is said that the red color of this axe come from the opponent falled to the owner of the axe",
       "type": "Axe",
       "img": "E133",
       "reqLv": 60,
@@ -2493,8 +2493,8 @@
     },
     {
       "id": 134,
-      "name": "Double Frozen Wand",
-      "desc": "",
+      "name": "Red Star Wand",
+      "desc": "Red star is shining on this land",
       "type": "Wand",
       "img": "E134",
       "reqLv": 60,
@@ -2511,8 +2511,8 @@
     },
     {
       "id": 135,
-      "name": "Double Hellish Wand",
-      "desc": "",
+      "name": "Radiant Wand",
+      "desc": "A very powerful wand with immense light energy",
       "type": "Wand",
       "img": "E135",
       "reqLv": 60,
@@ -2530,7 +2530,7 @@
     {
       "id": 136,
       "name": "Mini Spellbook",
-      "desc": "",
+      "desc": "Can you even see the text on this book?",
       "type": "Spellbook",
       "img": "E136",
       "reqLv": 60,
@@ -2547,8 +2547,8 @@
     },
     {
       "id": 137,
-      "name": "Dark Acrane Art",
-      "desc": "",
+      "name": "Forbidden Book",
+      "desc": "It's best no to open this book",
       "type": "Spellbook",
       "img": "E137",
       "reqLv": 60,
@@ -2565,8 +2565,8 @@
     },
     {
       "id": 138,
-      "name": "Ice Spirit Staff",
-      "desc": "",
+      "name": "Glacier Staff",
+      "desc": "This staff is as cold as a glacier",
       "type": "Staff",
       "img": "E138",
       "reqLv": 60,
@@ -2583,8 +2583,8 @@
     },
     {
       "id": 139,
-      "name": "Magma Spirit Staff",
-      "desc": "",
+      "name": "Magma Staff",
+      "desc": "This staff is as hot as magma",
       "type": "Staff",
       "img": "E139",
       "reqLv": 60,
@@ -2601,8 +2601,8 @@
     },
     {
       "id": 140,
-      "name": "Icy Runner",
-      "desc": "",
+      "name": "Glacier Shot",
+      "desc": "The arrow it shot can freeze the enemy completely",
       "type": "Bow",
       "img": "E140",
       "reqLv": 60,
@@ -2619,8 +2619,8 @@
     },
     {
       "id": 141,
-      "name": "Windy Runner",
-      "desc": "",
+      "name": "Tempus Shot",
+      "desc": "The arrow it shot can form a tempus",
       "type": "Bow",
       "img": "E141",
       "reqLv": 60,
@@ -2638,7 +2638,7 @@
     {
       "id": 142,
       "name": "Ninjato",
-      "desc": "",
+      "desc": "This knife is used by ninja from the east",
       "type": "Dagger",
       "img": "E142",
       "reqLv": 60,
@@ -2656,7 +2656,7 @@
     {
       "id": 143,
       "name": "Cross Knife",
-      "desc": "",
+      "desc": "This knife is used by warrior from the east",
       "type": "Dagger",
       "img": "E143",
       "reqLv": 60,
@@ -2673,8 +2673,8 @@
     },
     {
       "id": 144,
-      "name": "Ultra Hero's Armor",
-      "desc": "",
+      "name": "Honored Hero's Armor",
+      "desc": "It properly suit a kingdom's hero",
       "type": "Heavy Armor",
       "img": "E144",
       "reqLv": 60,
@@ -2691,8 +2691,8 @@
     },
     {
       "id": 145,
-      "name": "Shadow Walker",
-      "desc": "",
+      "name": "Archmage's Robe",
+      "desc": "Best fit for an archmage",
       "type": "Robe Armor",
       "img": "E145",
       "reqLv": 60,
@@ -2709,8 +2709,8 @@
     },
     {
       "id": 146,
-      "name": "Heroic Sniper Armor",
-      "desc": "",
+      "name": "Honored Sniper Armor",
+      "desc": "It properly suit a kingdom's hero",
       "type": "Light Armor",
       "img": "E146",
       "reqLv": 60,

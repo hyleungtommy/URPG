@@ -1,7 +1,7 @@
 {
     "Items": [{
             "name": "Emerald Forest",
-            "desc": "Sample Desc",
+            "desc": "A peaceful forest near emerald village, some small monster reside here but it was never a dangerous place",
             "bgImg": "001-Emerald Forest",
             "battleImg": "001-Emerald Forest BG",
             "townName": "Emerald Village",
@@ -10,7 +10,7 @@
                 "Shop"
             ],
             "reqLv": 1,
-            "maxLv": 15,
+            "maxLv": 10,
             "maxArea": 10,
             "enemyList": [
                 1,
@@ -29,7 +29,7 @@
         },
         {
             "name": "Great Plain",
-            "desc": "Sample Desc2",
+            "desc": "Many caravan go through the Great Plain, the capital city of Falone Kingdom sits here",
             "bgImg": "002-The Great Plain",
             "battleImg": "002-The Great Plain BG",
             "townName": "Falone City",
@@ -38,7 +38,7 @@
                 "Shop", "SkillCenter", "Blacksmith", "Guild", "Camp", "Trade"
             ],
             "reqLv": 10,
-            "maxLv": 25,
+            "maxLv": 20,
             "maxArea": 15,
             "enemyList": [
                 6,
@@ -59,7 +59,7 @@
         },
         {
             "name": "Magical Forest",
-            "desc": "Sample Desc003",
+            "desc": "Covered by giant enchanted trees, many magical creature reside in this enchanted forest",
             "bgImg": "003-Magical Forest",
             "battleImg": "003-Magical Forest BG",
             "townName": "Research Camp",
@@ -68,7 +68,7 @@
                 "Shop", "SkillCenter", "Blacksmith", "Guild", "Camp", "Trade"
             ],
             "reqLv": 20,
-            "maxLv": 35,
+            "maxLv": 30,
             "maxArea": 20,
             "enemyList": [
                 13,
@@ -91,7 +91,7 @@
         },
         {
             "name": "Southern Islands",
-            "desc": "Sample Desc003",
+            "desc": "With white sands and clear water, the archipelago of Southern Islands is a popular tourist destination",
             "bgImg": "004-Southern Islands",
             "battleImg": "004-Southern Islands BG",
             "townName": "Port Arugia",
@@ -100,7 +100,7 @@
                 "Shop", "SkillCenter", "Blacksmith", "Guild", "Camp", "Trade"
             ],
             "reqLv": 30,
-            "maxLv": 45,
+            "maxLv": 40,
             "maxArea": 25,
             "enemyList": [
                 21, 22, 23, 24, 25, 26
@@ -118,7 +118,7 @@
         },
         {
             "name": "Crystal Cave",
-            "desc": "Sample Desc003",
+            "desc": "A large, naturally generated cave system filled with growing crystals, while many dangerous creature lurkes in the dark",
             "bgImg": "005-Crystal Cave",
             "battleImg": "005-Crystal Cave BG",
             "townName": "",
@@ -127,7 +127,7 @@
                 "Shop", "SkillCenter", "Blacksmith", "Guild", "Camp", "Trade"
             ],
             "reqLv": 40,
-            "maxLv": 55,
+            "maxLv": 50,
             "maxArea": 30,
             "enemyList": [
                 29, 30, 31, 32, 33, 34
@@ -145,7 +145,7 @@
         },
         {
             "name": "Haunted Forest",
-            "desc": "Sample Desc003",
+            "desc": "This place was once a tranquil forest, now became a paradise of undead due to dark magic",
             "bgImg": "006-Haunted Forest",
             "battleImg": "006-Haunted Forest BG",
             "townName": "Miner's Town",
@@ -154,7 +154,7 @@
                 "Shop", "SkillCenter", "Blacksmith", "Guild", "Camp", "Trade"
             ],
             "reqLv": 50,
-            "maxLv": 60,
+            "maxLv": 55,
             "maxArea": 35,
             "enemyList": [
                 37, 38, 39, 40, 41, 42
@@ -172,7 +172,7 @@
         },
         {
             "name": "Burning Desert",
-            "desc": "Sample Desc003",
+            "desc": "Hot winds growls through this dangerous desert, resided with some of the furious creatures in the contient. Travller must be very prepared if they dare to cross this unforgiving desert",
             "bgImg": "007-Burning Desert",
             "battleImg": "007-Burning Desert BG",
             "townName": "Sakamat",
@@ -181,7 +181,7 @@
                 "Shop", "SkillCenter", "Blacksmith", "Guild", "Camp", "Trade"
             ],
             "reqLv": 55,
-            "maxLv": 65,
+            "maxLv": 60,
             "maxArea": 40,
             "enemyList": [
                 45, 46, 47, 48, 49, 50
@@ -207,7 +207,7 @@
                 "Shop", "SkillCenter", "Blacksmith", "Guild", "Camp", "Trade"
             ],
             "reqLv": 60,
-            "maxLv": 70,
+            "maxLv": 65,
             "maxArea": 45,
             "enemyList": [
                 53, 54, 55, 56, 57, 58
