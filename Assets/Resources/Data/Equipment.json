@@ -2570,8 +2570,8 @@
       "type": "Staff",
       "img": "E138",
       "reqLv": 60,
-      "power": 160,
-      "magicPower": 400,
+      "power": 1600,
+      "magicPower": 4000,
       "price": 0,
       "buyPlace": "Craft",
       "craftRecipe": {
@@ -2588,8 +2588,8 @@
       "type": "Staff",
       "img": "E139",
       "reqLv": 60,
-      "power": 275,
-      "magicPower": 325,
+      "power": 2750,
+      "magicPower": 3250,
       "price": 0,
       "buyPlace": "Craft",
       "craftRecipe": {
@@ -2839,7 +2839,7 @@
       "desc": "This saber is pneumatic-powered",
       "type": "Sword",
       "img": "E153",
-      "reqLv": 60,
+      "reqLv": 70,
       "power": 6000,
       "magicPower": 4000,
       "price": 8000,
@@ -2857,7 +2857,7 @@
       "desc": "This entire shield is made from a single, perfectly cut crystal",
       "type": "Shield",
       "img": "E154",
-      "reqLv": 60,
+      "reqLv": 70,
       "power": 2000,
       "magicPower": 1000,
       "price": 4500,
@@ -2875,7 +2875,7 @@
       "desc": "This axe is a made with machine part from ancient battlefield",
       "type": "Axe",
       "img": "E155",
-      "reqLv": 60,
+      "reqLv": 70,
       "power": 12000,
       "magicPower": 5000,
       "price": 12000,
@@ -2893,7 +2893,7 @@
       "desc": "This almost doesn't look like a wand, but seems like hit the for itself can generate magical spells",
       "type": "Wand",
       "img": "E156",
-      "reqLv": 60,
+      "reqLv": 70,
       "power": 260,
       "magicPower": 1500,
       "price": 8000,
@@ -2911,7 +2911,7 @@
       "desc": "This seems like a guide to teach solider how to deal with machenical constructions. However it is written in a long extincted language that no one understand",
       "type": "Spellbook",
       "img": "E157",
-      "reqLv": 60,
+      "reqLv": 70,
       "power": 250,
       "magicPower": 400,
       "price": 4500,
@@ -2929,7 +2929,7 @@
       "desc": "An unattractive rod salvaged from the battlefield. But this rod look like it has more then that...",
       "type": "Staff",
       "img": "E158",
-      "reqLv": 60,
+      "reqLv": 70,
       "power": 800,
       "magicPower": 3800,
       "price": 8000,
@@ -2947,7 +2947,7 @@
       "desc": "This seems to be the 'bow' that the ancient solider use, can you still call it a bow?",
       "type": "Bow",
       "img": "E159",
-      "reqLv": 60,
+      "reqLv": 70,
       "power": 2000,
       "magicPower": 2000,
       "price": 12000,
@@ -2965,7 +2965,7 @@
       "desc": "This pair of weird dagger have a handle to hold",
       "type": "Dagger",
       "img": "E160",
-      "reqLv": 60,
+      "reqLv": 70,
       "power": 1100,
       "magicPower": 1100,
       "price": 12000,
@@ -2983,7 +2983,7 @@
       "desc": "This heavy armor is programmed to help wearer to swing weapon",
       "type": "Heavy Armor",
       "img": "E161",
-      "reqLv": 60,
+      "reqLv": 70,
       "power": 1000,
       "magicPower": 800,
       "price": 8000,
@@ -3001,7 +3001,7 @@
       "desc": "This piece of cloth is radiating with prismatic energy",
       "type": "Robe Armor",
       "img": "E162",
-      "reqLv": 60,
+      "reqLv": 70,
       "power": 800,
       "magicPower": 1000,
       "price": 8000,
@@ -3019,7 +3019,7 @@
       "desc": "Wearing this cloth and make one invisible!",
       "type": "Light Armor",
       "img": "E163",
-      "reqLv": 60,
+      "reqLv": 70,
       "power": 750,
       "magicPower": 750,
       "price": 8000,
@@ -3029,6 +3029,348 @@
         "requireItem": ["I070", "I076", "I082"],
         "requireQty": [10, 5, 5],
         "requireMoney": 7500
+      }
+    },
+    {
+      "id": 164,
+      "name": "Silver Comet",
+      "desc": "A replica of a famous general's sword",
+      "type": "Sword",
+      "img": "E164",
+      "reqLv": 70,
+      "power": 9000,
+      "magicPower": 2000,
+      "price": 0,
+      "buyPlace": "Craft",
+      "craftRecipe": {
+        "requireLevel": 10,
+        "requireItem": ["E117", "I027", "I037", "I039"],
+        "requireQty": [1, 10, 3, 2],
+        "requireMoney": 10000
+      }
+    },
+    {
+      "id": 165,
+      "name": "Vanquisher",
+      "desc": "This sword once belongs to an demon general",
+      "type": "Sword",
+      "img": "E165",
+      "reqLv": 70,
+      "power": 7500,
+      "magicPower": 7500,
+      "price": 0,
+      "buyPlace": "Craft",
+      "craftRecipe": {
+        "requireLevel": 10,
+        "requireItem": ["E117", "I027", "I037", "I047"],
+        "requireQty": [1, 10, 3, 2],
+        "requireMoney": 10000
+      }
+    },
+    {
+      "id": 166,
+      "name": "Prismatic Shield",
+      "desc": "Prismatic power flow through this crystal shield, provding extra protection",
+      "type": "Shield",
+      "img": "E166",
+      "reqLv": 70,
+      "power": 2500,
+      "magicPower": 650,
+      "price": 0,
+      "buyPlace": "Craft",
+      "craftRecipe": {
+        "requireLevel": 10,
+        "requireItem": ["E118", "I027", "I045", "I038"],
+        "requireQty": [1, 5, 2, 1],
+        "requireMoney": 10000
+      }
+    },
+    {
+      "id": 167,
+      "name": "Energized Shield",
+      "desc": "This shield is energized, and can shock enemy when getting hit",
+      "type": "Shield",
+      "img": "E167",
+      "reqLv": 70,
+      "power": 1500,
+      "magicPower": 2000,
+      "price": 0,
+      "buyPlace": "Craft",
+      "craftRecipe": {
+        "requireLevel": 10,
+        "requireItem": ["E118", "I027", "I041", "I038"],
+        "requireQty": [1, 5, 2, 1],
+        "requireMoney": 10000
+      }
+    },
+    {
+      "id": 168,
+      "name": "Robotic Axe",
+      "desc": "This axe is made of salvaged robot parts",
+      "type": "Axe",
+      "img": "E168",
+      "reqLv": 70,
+      "power": 20000,
+      "magicPower": 8000,
+      "price": 0,
+      "buyPlace": "Craft",
+      "craftRecipe": {
+        "requireLevel": 10,
+        "requireItem": ["E119", "I027", "I037", "I039"],
+        "requireQty": [1, 20, 5, 2],
+        "requireMoney": 12500
+      }
+    },
+    {
+      "id": 169,
+      "name": "Big Wrench",
+      "desc": "A mysterious metal construc called 'wrench'",
+      "type": "Axe",
+      "img": "E169",
+      "reqLv": 70,
+      "power": 15000,
+      "magicPower": 15000,
+      "price": 0,
+      "buyPlace": "Craft",
+      "craftRecipe": {
+        "requireLevel": 10,
+        "requireItem": ["E119", "I027", "I037", "I047"],
+        "requireQty": [1, 20, 5, 2],
+        "requireMoney": 12500
+      }
+    },
+    {
+      "id": 170,
+      "name": "Improved Tonal Fork",
+      "desc": "This improved tonal fork has a better range and precision",
+      "type": "Wand",
+      "img": "E170",
+      "reqLv": 70,
+      "power": 250,
+      "magicPower": 2500,
+      "price": 0,
+      "buyPlace": "Craft",
+      "craftRecipe": {
+        "requireLevel": 10,
+        "requireItem": ["E120", "I055", "I037", "I043", "I049"],
+        "requireQty": [1, 10, 3, 2, 1],
+        "requireMoney": 10000
+      }
+    },
+    {
+      "id": 171,
+      "name": "Wand of Imminent Destruction",
+      "desc": "Whenver the wand points to is where the destruction will occur",
+      "type": "Wand",
+      "img": "E171",
+      "reqLv": 70,
+      "power": 1000,
+      "magicPower": 2300,
+      "price": 0,
+      "buyPlace": "Craft",
+      "craftRecipe": {
+        "requireLevel": 10,
+        "requireItem": ["E120", "I055", "I037", "I047", "I049"],
+        "requireQty": [1, 10, 3, 2, 1],
+        "requireMoney": 10000
+      }
+    },
+    {
+      "id": 172,
+      "name": "Book of Dimension",
+      "desc": "This book mentioned various dimensions outside of our world",
+      "type": "Spellbook",
+      "img": "E172",
+      "reqLv": 70,
+      "power": 800,
+      "magicPower": 4500,
+      "price": 0,
+      "buyPlace": "Craft",
+      "craftRecipe": {
+        "requireLevel": 10,
+        "requireItem": ["E121", "I037", "I045", "I049"],
+        "requireQty": [1, 5, 2, 1],
+        "requireMoney": 10000
+      }
+    },
+    {
+      "id": 173,
+      "name": "Book of Cage",
+      "desc": "Rumor said that whoever read this book will be absorb into the book and imprisoned within",
+      "type": "Spellbook",
+      "img": "E173",
+      "reqLv": 70,
+      "power": 2050,
+      "magicPower": 4000,
+      "price": 0,
+      "buyPlace": "Craft",
+      "craftRecipe": {
+        "requireLevel": 10,
+        "requireItem": ["E121", "I037", "I047", "I049"],
+        "requireQty": [1, 5, 2, 1],
+        "requireMoney": 10000
+      }
+    },
+    {
+      "id": 174,
+      "name": "Metallic Staff",
+      "desc": "This wand iwas used by the ancient mages in Tira",
+      "type": "Staff",
+      "img": "E174",
+      "reqLv": 70,
+      "power": 1600,
+      "magicPower": 4000,
+      "price": 0,
+      "buyPlace": "Craft",
+      "craftRecipe": {
+        "requireLevel": 10,
+        "requireItem": ["E122", "I027", "I037", "I043", "I049"],
+        "requireQty": [1, 20, 5, 2, 1],
+        "requireMoney": 12500
+      }
+    },
+    {
+      "id": 175,
+      "name": "Earth Crusher",
+      "desc": "This looks more like a hammer then a staff",
+      "type": "Staff",
+      "img": "E175",
+      "reqLv": 70,
+      "power": 3000,
+      "magicPower": 3500,
+      "price": 0,
+      "buyPlace": "Craft",
+      "craftRecipe": {
+        "requireLevel": 10,
+        "requireItem": ["E122", "I027", "I037", "I039", "I049"],
+        "requireQty": [1, 20, 5, 2, 1],
+        "requireMoney": 12500
+      }
+    },
+    {
+      "id": 176,
+      "name": "Sniper",
+      "desc": "This 'bow' has a suprising high precision",
+      "type": "Bow",
+      "img": "E176",
+      "reqLv": 70,
+      "power": 2250,
+      "magicPower": 1500,
+      "price": 0,
+      "buyPlace": "Craft",
+      "craftRecipe": {
+        "requireLevel": 10,
+        "requireItem": ["E123", "I055", "I037", "I043"],
+        "requireQty": [1, 20, 5, 2],
+        "requireMoney": 12500
+      }
+    },
+    {
+      "id": 177,
+      "name": "Automatic Rifle",
+      "desc": "This 'bow' can shoot multiple arrow within seconds",
+      "type": "Bow",
+      "img": "E177",
+      "reqLv": 70,
+      "power": 2000,
+      "magicPower": 2500,
+      "price": 0,
+      "buyPlace": "Craft",
+      "craftRecipe": {
+        "requireLevel": 10,
+        "requireItem": ["E123", "I055", "I037", "I045"],
+        "requireQty": [1, 20, 5, 2],
+        "requireMoney": 12500
+      }
+    },
+    {
+      "id": 178,
+      "name": "Tri Assault",
+      "desc": "An improved version of the special dagger fromthe battlefield",
+      "type": "Dagger",
+      "img": "E178",
+      "reqLv": 70,
+      "power": 2000,
+      "magicPower": 1250,
+      "price": 0,
+      "buyPlace": "Craft",
+      "craftRecipe": {
+        "requireLevel": 10,
+        "requireItem": ["E124", "I027", "I037", "I045"],
+        "requireQty": [1, 20, 5, 2],
+        "requireMoney": 12500
+      }
+    },
+    {
+      "id": 179,
+      "name": "Beast Fang",
+      "desc": "The blade looks as sharp as beast's fang",
+      "type": "Dagger",
+      "img": "E179",
+      "reqLv": 70,
+      "power": 1250,
+      "magicPower": 2000,
+      "price": 0,
+      "buyPlace": "Craft",
+      "craftRecipe": {
+        "requireLevel": 10,
+        "requireItem": ["E124", "I027", "I037", "I041"],
+        "requireQty": [1, 20, 5, 2],
+        "requireMoney": 12500
+      }
+    },
+    {
+      "id": 180,
+      "name": "Alloy Armor",
+      "desc": "This Exo-Skeleton armor is padded with more plates, making the user invinsble",
+      "type": "Heavy Armor",
+      "img": "E180",
+      "reqLv": 70,
+      "power": 1050,
+      "magicPower": 750,
+      "price": 0,
+      "buyPlace": "Craft",
+      "craftRecipe": {
+        "requireLevel": 10,
+        "requireItem": ["E125", "I027", "I037", "I049"],
+        "requireQty": [1, 20, 5, 1],
+        "requireMoney": 12500
+      }
+    },
+    {
+      "id": 181,
+      "name": "Prismatic Robe",
+      "desc": "This piece of robe is radiating with prismatic energy",
+      "type": "Robe Armor",
+      "img": "E181",
+      "reqLv": 70,
+      "power": 750,
+      "magicPower": 1050,
+      "price": 0,
+      "buyPlace": "Craft",
+      "craftRecipe": {
+        "requireLevel": 10,
+        "requireItem": ["E126", "I076", "I037", "I049"],
+        "requireQty": [1, 20, 5, 1],
+        "requireMoney": 12500
+      }
+    },
+    {
+      "id": 182,
+      "name": "Shadow Walker",
+      "desc": "Not only can it make the wearer invisible, it can also mute any sound made by the wearer",
+      "type": "Light Armor",
+      "img": "E182",
+      "reqLv": 70,
+      "power": 800,
+      "magicPower": 800,
+      "price": 0,
+      "buyPlace": "Craft",
+      "craftRecipe": {
+        "requireLevel": 10,
+        "requireItem": ["E127", "I070", "I037", "I049"],
+        "requireQty": [1, 20, 5, 1],
+        "requireMoney": 12500
       }
     }
   ]
