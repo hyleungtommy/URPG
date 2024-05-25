@@ -6,47 +6,44 @@ using RPG;
 
 public class RequirementTextGroupCtrl: MonoBehaviour{
     public RequirementTextCtrl[] requirementTexts;
+    public bool allRequirementMatches = true;
     public void render(CraftRecipe craftRecipe){
-        for(int i = 0 ; i < requirementTexts.Length ; i++){
-            if(i < craftRecipe.requirements.Count){
-                requirementTexts[i].gameObject.SetActive(true);
-                requirementTexts[i].render(craftRecipe.requirements[i]);
-            }else{
-                requirementTexts[i].gameObject.SetActive(false);
-            }
-        }
+        RenderTexts(craftRecipe.requirements, 1);
+        CheckEnoughMoney(craftRecipe.requireMoney);
     }
     //for brewing crafting
     public void render(CraftRecipe craftRecipe,int qty){
-        for(int i = 0 ; i < requirementTexts.Length ; i++){
-            if(i < craftRecipe.requirements.Count){
-                requirementTexts[i].gameObject.SetActive(true);
-                requirementTexts[i].render(craftRecipe.requirements[i],qty);
-            }else{
-                requirementTexts[i].gameObject.SetActive(false);
-            }
-        }
+        RenderTexts(craftRecipe.requirements, qty);
+        CheckEnoughMoney(craftRecipe.requireMoney * qty);
     }
     //for reinforcing
     public void render(ReinforceRecipe reinforceRecipe){
+        RenderTexts(reinforceRecipe.requirements, 1);
+        CheckEnoughMoney(reinforceRecipe.requireMoney);
+    }
+    //for enchantment
+    public void render(List<Requirement> requirements){
+        RenderTexts(requirements, 1);
+    }
+
+    void RenderTexts(List<Requirement> requirements, int qty){
+        allRequirementMatches = true;
         for(int i = 0 ; i < requirementTexts.Length ; i++){
-            if(i < reinforceRecipe.requirements.Count){
+            if(i < requirements.Count){
                 requirementTexts[i].gameObject.SetActive(true);
-                requirementTexts[i].render(reinforceRecipe.requirements[i]);
+                requirementTexts[i].Render(requirements[i],qty);
+                if(!requirementTexts[i].requirementFulfilled){
+                    allRequirementMatches = false;
+                }
             }else{
                 requirementTexts[i].gameObject.SetActive(false);
             }
         }
     }
-    //for enchantment
-    public void render(List<Requirement> requirements){
-        for(int i = 0 ; i < requirementTexts.Length ; i++){
-            if(i < requirements.Count){
-                requirementTexts[i].gameObject.SetActive(true);
-                requirementTexts[i].render(requirements[i]);
-            }else{
-                requirementTexts[i].gameObject.SetActive(false);
-            }
+
+    void CheckEnoughMoney(int money){
+        if(Game.money < money){
+            allRequirementMatches = false;
         }
     }
 

@@ -8,6 +8,7 @@ public class RequirementTextCtrl : MonoBehaviour
 {
     public Image imgReqItem;
     public Text textReqQty;
+    public bool requirementFulfilled = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,31 +21,12 @@ public class RequirementTextCtrl : MonoBehaviour
         
     }
 
-    public void render(Requirement requirement){
+    public void Render(Requirement requirement,int multiplier){
         imgReqItem.sprite = requirement.requireItem.img;
         if(requirement.type == Requirement.Type.Enemy){
 
             //textReqQty.text = (requirement.requireItem ).name + ": " + requirement.currentQty + "/" + requirement.requireQty;
         }else if(requirement.type == Requirement.Type.Item){
-            int qty = 0;
-            if(requirement.requireItem is GeneralEquipment){
-                GeneralEquipment equip = requirement.requireItem as GeneralEquipment;
-                qty = Game.inventory.searchTotalQtyOfEquipmentInInventory(equip.id);
-                textReqQty.text = equip.name + ": " + qty + "/" + requirement.requireQty;
-            }else{
-                Item item = requirement.requireItem as Item;
-                qty = Game.inventory.searchTotalQtyOfItemInInventory(item.id);
-                textReqQty.text = item.name + ": " + qty + "/" + requirement.requireQty;
-            }
-            
-        }
-        
-    }
-
-    //only for crafting
-    public void render(Requirement requirement,int multiplier){
-        imgReqItem.sprite = requirement.requireItem.img;
-        if(requirement.type == Requirement.Type.Item){
             int qty = 0;
             if(requirement.requireItem is GeneralEquipment){
                 GeneralEquipment equip = requirement.requireItem as GeneralEquipment;
@@ -55,9 +37,12 @@ public class RequirementTextCtrl : MonoBehaviour
                 qty = Game.inventory.searchTotalQtyOfItemInInventory(item.id);
                 textReqQty.text = item.name + ": " + qty + "/" + requirement.requireQty * multiplier;
             }
-            
+            requirementFulfilled = qty >= (requirement.requireQty * multiplier);
+            if(requirementFulfilled){
+                textReqQty.color = Param.requirementText[0];
+            }else{
+                textReqQty.color = Param.requirementText[1];
+            }
         }
-        
     }
-
 }

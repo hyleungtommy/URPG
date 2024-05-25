@@ -1,3 +1,5 @@
+using UnityEngine;
+
 namespace RPG
 {
     public static class Param
@@ -96,7 +98,22 @@ namespace RPG
             850000,
             900000,
             950000,
-            1000000//Lv.60
+            1000000,//Lv.60
+            1100000,
+            1250000,
+            1500000,
+            1750000,
+            2000000,
+            3000000,
+            4000000,
+            6000000,
+            8000000,
+            10000000,//Lv. 70
+        };
+
+        public static Color32[] requirementText = new Color32[]{
+            new Color32(40,157,29,255),
+            new Color32(239,100,102,255)
         };
 
 

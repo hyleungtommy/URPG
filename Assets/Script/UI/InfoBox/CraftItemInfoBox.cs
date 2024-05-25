@@ -13,6 +13,7 @@ public class CraftItemInfoBox : BasicInfoBox
     public RequirementTextGroupCtrl requirementTextGroupCtrl;
     public Text textBuyQty;
     public BrewingScene scene;
+    public Button buttonCraft;
     CraftRecipe e;
     int qty;
     // Start is called before the first frame update
@@ -39,6 +40,7 @@ public class CraftItemInfoBox : BasicInfoBox
         requirementTextGroupCtrl.render(e,qty);
         textBuyQty.text = qty.ToString();
         textDesc.text = item.desc;
+        buttonCraft.gameObject.SetActive(Param.noCraftRequirement || requirementTextGroupCtrl.allRequirementMatches);
     }
 
     public void onClickChangeQty(int value){
@@ -49,5 +51,6 @@ public class CraftItemInfoBox : BasicInfoBox
         requirementTextGroupCtrl.render(e,qty);
         textPrice.text = (e.requireMoney * qty).ToString();
         scene.setCraftQty(qty);
+        buttonCraft.gameObject.SetActive(Param.noCraftRequirement || requirementTextGroupCtrl.allRequirementMatches);
     }
 }

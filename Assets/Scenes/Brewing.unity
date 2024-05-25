@@ -3092,6 +3092,7 @@ MonoBehaviour:
   requirementTextGroupCtrl: {fileID: 1638582057}
   textBuyQty: {fileID: 2132765547}
   scene: {fileID: 1154061743}
+  buttonCraft: {fileID: 702279591}
 --- !u!114 &1193015954
 MonoBehaviour:
   m_ObjectHideFlags: 0
