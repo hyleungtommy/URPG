@@ -85,7 +85,6 @@ namespace RPG
             List<GeneralEquipment> elist = new List<GeneralEquipment>();
             for (int i = 0; i < equipmentTemplates.Length; i++)
             {
-                equipmentTemplates[i].id = i;
                 elist.Add(equipmentTemplates[i].toGeneralEquipment());
             }
             equipments = elist.ToArray();

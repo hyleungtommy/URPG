@@ -3,15 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using RPG;
+using System.Linq;
+using System;
 public class CheatScene : MonoBehaviour
 {
     public Toggle noCraftRequirement;
     public Toggle unlockAllRecipe;
     public Toggle skillNoCooldown;
     public HeaderCtrl header;
+    public Dropdown allItem;
+    public Dropdown allEquip;
+    public InputField storyPoint;
+    List<Dropdown.OptionData>itemOptions;
+    List<Dropdown.OptionData>equipOptions;
     // Start is called before the first frame update
     void Start()
     {
+        allEquip.ClearOptions();
+        allItem.ClearOptions();
+        List<CustomOptionData>items = DB.items.Select(item => new CustomOptionData(item.id + ":" + item.name, item.id)).ToList();
+        List<CustomOptionData>equips = DB.equipments.Select(equipment => new CustomOptionData(equipment.id + ":" + equipment.name, equipment.id)).ToList();
+        itemOptions = items.Select(item => item as Dropdown.OptionData).ToList();
+        equipOptions = equips.Select(item => item as Dropdown.OptionData).ToList();
+        allItem.AddOptions(itemOptions);
+        allEquip.AddOptions(equipOptions);
+        storyPoint.text = Game.plotPt.ToString();
         Render();
     }
 
@@ -50,5 +66,30 @@ public class CheatScene : MonoBehaviour
         }
         SaveManager.save();
         Render();
+    }
+
+    public void OnClickAddItem(){
+        int id = (itemOptions[allItem.value] as CustomOptionData).id;
+        Item item = DB.QueryItem(id);
+        Game.inventory.smartInsert(item, item.getMaxStack());
+    }
+
+    public void OnClickEquip(){
+        int id = (equipOptions[allEquip.value] as CustomOptionData).id;
+        GeneralEquipment equipment = DB.QueryEquipment(id);
+        Game.inventory.smartInsert(equipment.toEquipment(0), 1);
+    }
+
+    public void OnClickChangeStoryPoint(){
+        Game.plotPt = Int32.Parse(storyPoint.text);
+    }
+
+    public class CustomOptionData : Dropdown.OptionData{
+        public int id;
+
+        public CustomOptionData(string text, int id) : base(text)
+        {
+            this.id = id;
+        }
     }
 }
