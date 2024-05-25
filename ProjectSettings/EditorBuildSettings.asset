@@ -83,4 +83,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TradeStation.unity
     guid: 13b5f58b8bbdd5d43ab9124f8339c9fb
+  - enabled: 1
+    path: Assets/Scenes/Cheat.unity
+    guid: 23619fd971162fe498de6f0b2ab4a57b
   m_configObjects: {}

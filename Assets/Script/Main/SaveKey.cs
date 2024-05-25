@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 namespace RPG
 {
     /// <summary>
@@ -23,5 +19,8 @@ namespace RPG
         public const string difficulty = "difficulty";
         public const string global_buffs = "global_buffs";
         public const string platinum_coin = "platinum_coin";
+        public const string unlock_all_recipe = "unlock_all_recipe";
+        public const string no_craft_requirement = "no_craft_requirement";
+        public const string skill_no_cooldown = "skill_no_cooldown";
     }
 }

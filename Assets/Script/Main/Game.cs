@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using System.Linq;
-using System;
+﻿using System.Collections.Generic;
 namespace RPG
 {
     public static class Game
@@ -90,6 +86,10 @@ namespace RPG
             inventory.onLoad(invSave);
             //Global Buff
             globalBuffManager.onLoad(SaveManager.getString(SaveKey.global_buffs));
+            //Cheats
+            Param.skillNoCooldown = SaveManager.getBool(SaveKey.skill_no_cooldown);
+            Param.noCraftRequirement = SaveManager.getBool(SaveKey.no_craft_requirement);
+            Param.unlockAllRecipe = SaveManager.getBool(SaveKey.unlock_all_recipe);
         }
 
         public static void resetSave()

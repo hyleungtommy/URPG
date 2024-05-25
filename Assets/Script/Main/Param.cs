@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 namespace RPG
 {
     public static class Param
@@ -19,6 +15,8 @@ namespace RPG
         public static int invSize = 100;
         public static int rareEnemyAppearChance = 5;
         public static bool skillNoCooldown = false; //for testing, if true all skill cooldown will be 0
+        public static bool noCraftRequirement = false;
+        public static bool unlockAllRecipe = false;
 
         public static int[] characterStartingLv = new int[]{
             1,1,10,20,30,40,50,50

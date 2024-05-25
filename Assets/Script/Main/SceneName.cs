@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 namespace RPG
 {
     /// <summary>
@@ -34,5 +30,6 @@ namespace RPG
         public const string Difficulty = "Difficulty";
         public const string Load = "Load";
         public const string TradeStation = "TradeStation";
+        public const string Cheat = "Cheat";
     }
 }

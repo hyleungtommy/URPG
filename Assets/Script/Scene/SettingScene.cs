@@ -51,4 +51,8 @@ public class SettingScene : BasicScene
     public void onClickDifficulty(){
         jumpToScene(SceneName.Difficulty);
     }
+
+    public void OnClickCheatScene(){
+        jumpToScene(SceneName.Cheat);
+    }
 }
