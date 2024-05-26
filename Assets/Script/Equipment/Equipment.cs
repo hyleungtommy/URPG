@@ -59,7 +59,7 @@ namespace RPG
         
 
         public TaskCompleteMsg reinforce(){
-            
+            Util.RemoveCraftItem(reinforceRecipe.requirements, reinforceRecipe.requireMoney, 1);
             if(reinforceRecipe.reinforceLv < reinforceRecipe.maxReinforceLv){
                 reinforceRecipe.reinforceLv ++;
             }
@@ -71,6 +71,7 @@ namespace RPG
         }
         //Give equipment a random enchantment with random level
         public TaskCompleteMsg enchant(){
+            Util.RemoveCraftItem(enchantment.requirements, enchantment.requireMoney, 1);
             if(enchantment != null){
                 int rndLevel = Random.Range(1,5);
                 int rndEnchantmentId = Random.Range(0,DB.enchantmentEffects.Length);

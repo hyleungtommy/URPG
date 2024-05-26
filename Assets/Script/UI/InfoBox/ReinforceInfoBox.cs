@@ -11,6 +11,7 @@ public class ReinforceInfoBox : BasicInfoBox
     public ReinforceIncrementText powerText;
     public Text textPrice;
     public RequirementTextGroupCtrl requirementTextGroupCtrl;
+    public Button craftButton;
     Equipment equip;
 
     // Start is called before the first frame update
@@ -34,6 +35,7 @@ public class ReinforceInfoBox : BasicInfoBox
         powerText.render(equip);
         textPrice.text = equip.reinforceRecipe.requireMoney.ToString();
         requirementTextGroupCtrl.render(equip.reinforceRecipe);
+        craftButton.gameObject.SetActive(Param.noCraftRequirement || requirementTextGroupCtrl.allRequirementMatches);
 
     }
 }

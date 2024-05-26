@@ -18,7 +18,7 @@ public class ReinforceScene : BasicScene
     // Start is called before the first frame update
     void Start()
     {
-        
+        reinforceInfoBox.gameObject.SetActive(false);
         renderScrollView();
     }
 

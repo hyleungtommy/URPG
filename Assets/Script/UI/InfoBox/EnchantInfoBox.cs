@@ -11,6 +11,7 @@ public class EnchantInfoBox : BasicInfoBox
     public EquipmentPowerText powerText;
     public Text textPrice;
     public RequirementTextGroupCtrl requirementTextGroupCtrl;
+    public Button craftButton;
     Equipment e;
     // Start is called before the first frame update
     void Start()
@@ -33,5 +34,6 @@ public class EnchantInfoBox : BasicInfoBox
         powerText.render(e);
         textPrice.text = e.enchantment.requireMoney.ToString();
         requirementTextGroupCtrl.render(e.enchantment.requirements);
+        craftButton.gameObject.SetActive(Param.noCraftRequirement || requirementTextGroupCtrl.allRequirementMatches);
     }
 }

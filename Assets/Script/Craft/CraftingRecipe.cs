@@ -21,13 +21,7 @@ public class CraftRecipe:Displayable
 
     public TaskCompleteMsg craftItem(int qty){
         TaskCompleteMsg taskCompleteMsg;
-        if(!Param.noCraftRequirement){
-            foreach(Requirement requirement in requirements){
-                Item item = requirement.requireItem as Item;
-                Game.inventory.smartDelete(item, requirement.requireQty * qty);
-            }
-            Game.money -= requireMoney;
-        }
+        Util.RemoveCraftItem(requirements, requireMoney, qty);
         if(resultItem is GeneralEquipment){
             
             Equipment resultEquipment = (resultItem as GeneralEquipment).toEquipment(Random.Range(0,5));

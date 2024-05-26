@@ -18,6 +18,7 @@ public class EnchantScene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        enchantInfoBox.gameObject.SetActive(false);
         renderScrollView();
     }
 

@@ -171,6 +171,16 @@ namespace RPG
             }
         }
 
+        public static void RemoveCraftItem(List<Requirement>requirements, int requireMoney, int qty){
+            if(!Param.noCraftRequirement){
+                foreach(Requirement requirement in requirements){
+                    Item item = requirement.requireItem as Item;
+                    Game.inventory.smartDelete(item, requirement.requireQty * qty);
+                }
+                Game.money -= requireMoney;
+            }
+        }
+
         
     }
 }
