@@ -1306,9 +1306,9 @@ RectTransform:
   m_Father: {fileID: 1735668797}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 130.03856, y: -14.31703}
   m_SizeDelta: {x: 260.07712, y: 28.63406}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &431911562
@@ -1409,6 +1409,7 @@ RectTransform:
   - {fileID: 1892496159}
   - {fileID: 1057649898}
   - {fileID: 1671172970}
+  - {fileID: 826457121}
   m_Father: {fileID: 2137563977}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2156,6 +2157,84 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 822743503}
   m_CullTransparentMesh: 0
+--- !u!1 &826457118
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 826457121}
+  - component: {fileID: 826457120}
+  - component: {fileID: 826457119}
+  m_Layer: 0
+  m_Name: TextAvailableExploreTeam
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &826457119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826457118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8a5cec056d9fe214182fbbb3b9cb9f38, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 1/3
+--- !u!222 &826457120
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826457118}
+  m_CullTransparentMesh: 0
+--- !u!224 &826457121
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826457118}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 447294619}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 142.56, y: 642.33997}
+  m_SizeDelta: {x: 151.357, y: 19.505493}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &841148512
 GameObject:
   m_ObjectHideFlags: 0
@@ -2271,6 +2350,7 @@ MonoBehaviour:
   tabHunting: {fileID: 900255516}
   exploreSiteInfoBox: {fileID: 1378090008}
   exploreResultDialog: {fileID: 1751801321}
+  availableExploreTeam: {fileID: 826457119}
 --- !u!114 &853945185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2353,9 +2433,9 @@ RectTransform:
   m_Father: {fileID: 1735668797}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 130.03856, y: -128.85327}
   m_SizeDelta: {x: 260.07712, y: 28.63406}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &880555871
@@ -3906,9 +3986,9 @@ RectTransform:
   m_Father: {fileID: 1735668797}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 130.03856, y: -157.48734}
   m_SizeDelta: {x: 260.07712, y: 28.63406}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1285412516
@@ -4142,6 +4222,7 @@ MonoBehaviour:
   textPrice: {fileID: 1611876225}
   imgExploreSite: {fileID: 677238702}
   obtainableGroupCtrl: {fileID: 1587497828}
+  buttonGoExplore: {fileID: 2130006976}
 --- !u!114 &1378090009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5909,7 +5990,7 @@ MonoBehaviour:
 
     Team:
 
-    1/3'
+'
 --- !u!222 &1671172972
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6252,7 +6333,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1751801320
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6474,9 +6555,9 @@ RectTransform:
   m_Father: {fileID: 1735668797}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 130.03856, y: -42.951088}
   m_SizeDelta: {x: 260.07712, y: 28.63406}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1804045489
@@ -7099,9 +7180,9 @@ RectTransform:
   m_Father: {fileID: 1735668797}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 130.03856, y: -71.58515}
   m_SizeDelta: {x: 260.07712, y: 28.63406}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2017255969
@@ -7357,9 +7438,9 @@ RectTransform:
   m_Father: {fileID: 1735668797}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 130.03856, y: -100.21921}
   m_SizeDelta: {x: 260.07712, y: 28.63406}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2135963785

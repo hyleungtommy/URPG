@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 namespace RPG
 {
     public static class Game
@@ -54,6 +57,13 @@ namespace RPG
             SaveManager.saveValue(SaveKey.platinum_coin, platinumCoin);
             //Global Buff
             SaveManager.saveValue(SaveKey.global_buffs, globalBuffManager.onSave());
+            //Crafting
+            SaveManager.saveValue(SaveKey.craft_skill, craftSkillManager.OnSave());
+            //Explore
+            string[] exploreSites = DB.exploreSites.Select(site => site.onSave()).ToArray();
+            Debug.Log(String.Join(";", exploreSites));
+            SaveManager.saveValue(SaveKey.explore_site, String.Join(";", exploreSites));
+
             SaveManager.save();
         }
 
@@ -90,6 +100,16 @@ namespace RPG
             Param.skillNoCooldown = SaveManager.getBool(SaveKey.skill_no_cooldown);
             Param.noCraftRequirement = SaveManager.getBool(SaveKey.no_craft_requirement);
             Param.unlockAllRecipe = SaveManager.getBool(SaveKey.unlock_all_recipe);
+            //Craft
+            craftSkillManager.OnLoad(SaveManager.getString(SaveKey.craft_skill));
+            //Explore
+            string[] exploreSites = SaveManager.getString(SaveKey.explore_site).Split(';');
+            
+            if(exploreSites.Length == DB.exploreSites.Length){
+                for(int j = 0 ; j < DB.exploreSites.Length ;j++){
+                    DB.exploreSites[j].onLoad(exploreSites[j]);
+                }
+            }
         }
 
         public static void resetSave()

@@ -109,7 +109,6 @@ namespace RPG
                     if (Int32.Parse(saveStr[0].Split('|')[1]) < 9999){
                         containment = DB.QueryItem(saveStr[0].Split('|')[1]);
                     }
-                        
                 }
                 else
                 {

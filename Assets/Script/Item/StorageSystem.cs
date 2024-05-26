@@ -399,7 +399,8 @@ namespace RPG
             return content.Where(slot=>slot.getContainment() != null && 
                 slot.getContainment() is Equipment && 
                 (slot.getContainment() as Equipment).reinforceRecipe != null &&
-                (slot.getContainment() as Equipment).canReinforce()
+                (slot.getContainment() as Equipment).canReinforce() &&
+                (Param.unlockAllRecipe || (slot.getContainment() as Equipment).reqLv <= Game.craftSkillManager.reinforcingSkill.lv * 10)
             ).ToList();
         }
 
@@ -410,7 +411,8 @@ namespace RPG
         public List<StorageSlot> searchEquipmentForEnchant(){
             return content.Where(slot => slot.getContainment() != null && 
                 slot.getContainment() is Equipment && 
-                (slot.getContainment() as Equipment).canEnchant()
+                (slot.getContainment() as Equipment).canEnchant() &&
+                (Param.unlockAllRecipe || (slot.getContainment() as Equipment).reqLv <= Game.craftSkillManager.enchantingSkill.lv * 10)
             ).ToList();
         }
     }

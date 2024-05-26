@@ -63,6 +63,7 @@ namespace RPG
             if(reinforceRecipe.reinforceLv < reinforceRecipe.maxReinforceLv){
                 reinforceRecipe.reinforceLv ++;
             }
+            Game.craftSkillManager.addExperience(SkillCraft.Type.reinforcing, reqLv/10);
             List<Item>items = new List<Item>();
             items.Add(this);
             List<int>qty = new List<int>();
@@ -71,12 +72,13 @@ namespace RPG
         }
         //Give equipment a random enchantment with random level
         public TaskCompleteMsg enchant(){
-            Util.RemoveCraftItem(enchantment.requirements, enchantment.requireMoney, 1);
             if(enchantment != null){
+                Util.RemoveCraftItem(enchantment.requirements, enchantment.requireMoney, 1);
                 int rndLevel = Random.Range(1,5);
                 int rndEnchantmentId = Random.Range(0,DB.enchantmentEffects.Length);
                 EnchantmentEffect effect = DB.enchantmentEffects[rndEnchantmentId].toEnchantmentEffect(rndLevel);
                 enchantment.effects.Add(effect);
+                Game.craftSkillManager.addExperience(SkillCraft.Type.enchanting, reqLv/10);
             }
             List<Item>items = new List<Item>();
             items.Add(this);
@@ -86,7 +88,7 @@ namespace RPG
         }
 
         public bool canReinforce(){
-            return (reinforceRecipe.reinforceLv <  reinforceRecipe.maxReinforceLv);
+            return reinforceRecipe.reinforceLv <  reinforceRecipe.maxReinforceLv;
         }
 
         public bool canEnchant(){

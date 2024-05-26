@@ -9,16 +9,16 @@
             "requireLevel":1,
             "requireTime":15,
             "obtainableItems":[
-                "I032","I033","I041"
+                "I021","I029", "I032"
             ],
             "obtainChance":[
-                100,10,30
+                100,30,30
             ],
             "minAmount":[
-                2,1,1
+                3,1,1
             ],
             "maxAmount":[
-                5,3,5
+                6,5,3
             ]
         },
         {
@@ -30,16 +30,16 @@
             "requireLevel":1,
             "requireTime":15,
             "obtainableItems":[
-                "I050","I055","I058","I059","I060"
+                "I050","I056","I057"
             ],
             "obtainChance":[
-                100,10,15,15,15
+                100,50,25
             ],
             "minAmount":[
-                2,1,1,1,1
+                2,1,1
             ],
             "maxAmount":[
-                5,3,2,2,2
+                5, 3,3
             ]
         },
         {
@@ -49,18 +49,333 @@
             "type": "Hunting",
             "requireMoney":100,
             "requireLevel":1,
-            "requireTime":70,
+            "requireTime":15,
             "obtainableItems":[
-                "I064","I069","I014"
+                "I065","I071","I077"
             ],
             "obtainChance":[
-                100,10,15
+                100,50,50
             ],
             "minAmount":[
                 2,1,1
             ],
             "maxAmount":[
-                5,3,2
+                5,3,3
+            ]
+        },
+        {
+			"id":4,
+            "name": "Hill",
+            "desc": "A small hill",
+            "type": "Mining",
+            "requireMoney":200,
+            "requireLevel":2,
+            "requireTime":30,
+            "obtainableItems":[
+                "I022","I029", "I033"
+            ],
+            "obtainChance":[
+                100,30,30
+            ],
+            "minAmount":[
+                4,1,1
+            ],
+            "maxAmount":[
+                8,5,3
+            ]
+        },
+        {
+			"id":5,
+            "name": "Temperate Forest",
+            "desc": "A Nice Forest",
+            "type": "Forging",
+            "requireMoney":200,
+            "requireLevel":2,
+            "requireTime":30,
+            "obtainableItems":[
+                "I051","I056","I057","I059","I060","I061"
+            ],
+            "obtainChance":[
+                100,100,50,10,10,10
+            ],
+            "minAmount":[
+                3,4,2,1,1,1
+            ],
+            "maxAmount":[
+                8,8,5,2,2,2
+            ]
+        },
+        {
+			"id":6,
+            "name": "Pasture",
+            "desc": "A Beautiful Pasture",
+            "type": "Hunting",
+            "requireMoney":200,
+            "requireLevel":2,
+            "requireTime":30,
+            "obtainableItems":[
+                "I065","I066","I071","I072","I077","I078"
+            ],
+            "obtainChance":[
+                100,25,100,26,100,25
+            ],
+            "minAmount":[
+                4,1,3,1,3,1
+            ],
+            "maxAmount":[
+                8,3,5,2,5,3
+            ]
+        },
+        {
+			"id":7,
+            "name": "Deep Cave",
+            "desc": "No one know how deep this cave goes",
+            "type": "Mining",
+            "requireMoney":500,
+            "requireLevel":3,
+            "requireTime":60,
+            "obtainableItems":[
+                "I023","I029", "I030", "I034", "I038", "I040", "I042"
+            ],
+            "obtainChance":[
+                100,30, 30, 10, 10, 10, 10
+            ],
+            "minAmount":[
+                2,1,3,1,1,1,1
+            ],
+            "maxAmount":[
+                5,5,5,2,2,2,2
+            ]
+        },
+        {
+			"id":8,
+            "name": "Magical Forest",
+            "desc": "A Mysitcal Forest",
+            "type": "Forging",
+            "requireMoney":500,
+            "requireLevel":3,
+            "requireTime":60,
+            "obtainableItems":[
+                "I052","I056","I057","I058","I059","I060","I061"
+            ],
+            "obtainChance":[
+                100,100,50,10,25,25,25
+            ],
+            "minAmount":[
+                3,4,2,1,1,1,1
+            ],
+            "maxAmount":[
+                8,8,5,2,2,2,2
+            ]
+        },
+        {
+			"id":9,
+            "name": "Steppe",
+            "desc": "A Large Steppe",
+            "type": "Hunting",
+            "requireMoney":500,
+            "requireLevel":3,
+            "requireTime":60,
+            "obtainableItems":[
+                "I066","I067","I072","I073","I078","I079"
+            ],
+            "obtainChance":[
+                100,25,100,26,100,25
+            ],
+            "minAmount":[
+                4,1,3,1,3,1
+            ],
+            "maxAmount":[
+                8,3,5,2,5,3
+            ]
+        },
+        {
+			"id":10,
+            "name": "Mountain",
+            "desc": "Mountains sometimes has rare minerals, but they are also very hard to explore",
+            "type": "Mining",
+            "requireMoney":1000,
+            "requireLevel":4,
+            "requireTime":120,
+            "obtainableItems":[
+                "I024","I030", "I035", "I044", "I046", "I048"
+            ],
+            "obtainChance":[
+                100,30, 30, 10,10,10
+            ],
+            "minAmount":[
+                2,1,3,1,1,1
+            ],
+            "maxAmount":[
+                5,5,5,2,2,2
+            ]
+        },
+        {
+			"id":11,
+            "name": "Deep Forest",
+            "desc": "Large trees covered the entire forest, darkness lurkes inside",
+            "type": "Forging",
+            "requireMoney":1000,
+            "requireLevel":4,
+            "requireTime":120,
+            "obtainableItems":[
+                "I052","I056","I057","I058","I062","I064"
+            ],
+            "obtainChance":[
+                100,100,50,10,25,25
+            ],
+            "minAmount":[
+                3,4,2,1,1,1
+            ],
+            "maxAmount":[
+                8,8,5,2,2,2
+            ]
+        },
+        {
+			"id":12,
+            "name": "Highland",
+            "desc": "Tough creatures live here",
+            "type": "Hunting",
+            "requireMoney":1000,
+            "requireLevel":4,
+            "requireTime":120,
+            "obtainableItems":[
+                "I067","I068","I073","I074","I079","I080"
+            ],
+            "obtainChance":[
+                100,25,100,26,100,25
+            ],
+            "minAmount":[
+                4,1,3,1,3,1
+            ],
+            "maxAmount":[
+                8,3,5,2,5,3
+            ]
+        },
+        {
+			"id":13,
+            "name": "Volcano",
+            "desc": "Some of the most dangerous place, but is also rich with minerals",
+            "type": "Mining",
+            "requireMoney":2500,
+            "requireLevel":5,
+            "requireTime":300,
+            "obtainableItems":[
+                "I025","I031", "I036", "I039", "I041", "I043"
+            ],
+            "obtainChance":[
+                100,30, 30, 10,10,10
+            ],
+            "minAmount":[
+                2,1,3,1,1,1
+            ],
+            "maxAmount":[
+                5,5,5,2,2,2
+            ]
+        },
+        {
+			"id":14,
+            "name": "Ancient Tree Forest",
+            "desc": "The trees in this forest are over thousand years old",
+            "type": "Forging",
+            "requireMoney":2500,
+            "requireLevel":5,
+            "requireTime":300,
+            "obtainableItems":[
+                "I054","I056","I059","I060","I061","I062", "I063"
+            ],
+            "obtainChance":[
+                100,100,50,10,25,25,10
+            ],
+            "minAmount":[
+                3,4,2,3,3,3,1
+            ],
+            "maxAmount":[
+                8,8,5,5,5,5,2
+            ]
+        },
+        {
+			"id":15,
+            "name": "Desert",
+            "desc": "A very tough place to explore",
+            "type": "Hunting",
+            "requireMoney":2500,
+            "requireLevel":5,
+            "requireTime":300,
+            "obtainableItems":[
+                "I068","I069","I074","I075","I080","I081"
+            ],
+            "obtainChance":[
+                100,25,100,26,100,25
+            ],
+            "minAmount":[
+                4,1,3,1,3,1
+            ],
+            "maxAmount":[
+                8,3,5,2,5,3
+            ]
+        },
+        {
+			"id":16,
+            "name": "Metorite Site",
+            "desc": "These metorite contains rare minerals from oute spaces",
+            "type": "Mining",
+            "requireMoney":5000,
+            "requireLevel":6,
+            "requireTime":600,
+            "obtainableItems":[
+                "I026","I027","I031", "I037", "I045", "I047", "I049"
+            ],
+            "obtainChance":[
+                100,50,30, 30, 10,10,10
+            ],
+            "minAmount":[
+                2,1,1,3,1,1,1
+            ],
+            "maxAmount":[
+                5,3,5,5,2,2,2
+            ]
+        },
+        {
+			"id":17,
+            "name": "Flaming Forest",
+            "desc": "The trees here are all burning!",
+            "type": "Forging",
+            "requireMoney":5000,
+            "requireLevel":6,
+            "requireTime":600,
+            "obtainableItems":[
+                "I055","I058","I059","I060","I061", "I062", "I064"
+            ],
+            "obtainChance":[
+                100,100,50,10,25,25,10
+            ],
+            "minAmount":[
+                3,4,2,3,3,3,1
+            ],
+            "maxAmount":[
+                8,8,5,5,5,5,2
+            ]
+        },
+        {
+			"id":18,
+            "name": "Ancient Fields",
+            "desc": "A very tough place to explore",
+            "type": "Hunting",
+            "requireMoney":5000,
+            "requireLevel":6,
+            "requireTime":600,
+            "obtainableItems":[
+                "I069","I070","I075","I076","I081","I082"
+            ],
+            "obtainChance":[
+                100,25,100,26,100,25
+            ],
+            "minAmount":[
+                4,1,3,1,3,1
+            ],
+            "maxAmount":[
+                8,3,5,2,5,3
             ]
         }
     ]

@@ -8,18 +8,16 @@ public class ExploreSiteScene : BasicScene
 {
     public HeaderCtrl header;
     public GameObject itemBoxPrefab;
-    //public SupportCharacterListCtrl supportMemberList;
     public GameObject scrollViewContent;
     public CraftSkillCtrl supportSkillCtrl;
-    //public TimedTaskCtrl currentTaskCtrl;
     public Button tabMining;
     public Button tabForging;
     public Button tabHunting;
     public ExploreSiteInfoBox exploreSiteInfoBox;
     public ExploreResultDialog exploreResultDialog;
+    public Text availableExploreTeam;
     int selectedSlotId;
     int selectedTabId;
-    //SupportCharacter selectedCharacter;
     List<ExploreSite>miningSites;
     List<ExploreSite>forgingSites;
     List<ExploreSite>huntingSites;
@@ -33,52 +31,15 @@ public class ExploreSiteScene : BasicScene
         forgingSites = new List<ExploreSite>();
         huntingSites = new List<ExploreSite>();
         for(int i = 0 ; i < DB.exploreSites.Length;i++){
-            if(DB.exploreSites[i].type == ExploreSite.Type.Mining) 
+            if(DB.exploreSites[i].type == ExploreSite.Type.Mining && (Param.unlockAllRecipe || DB.exploreSites[i].requireLevel <= Game.craftSkillManager.miningSkill.lv)) 
                 miningSites.Add(DB.exploreSites[i]);
-            else if (DB.exploreSites[i].type == ExploreSite.Type.Forging)
+            else if (DB.exploreSites[i].type == ExploreSite.Type.Forging &&  (Param.unlockAllRecipe || DB.exploreSites[i].requireLevel <= Game.craftSkillManager.gatheringSkill.lv))
                 forgingSites.Add(DB.exploreSites[i]);
-            else
+            else if(DB.exploreSites[i].type == ExploreSite.Type.Hunting &&  (Param.unlockAllRecipe || DB.exploreSites[i].requireLevel <= Game.craftSkillManager.huntingSkill.lv))
                 huntingSites.Add(DB.exploreSites[i]);
         }
         renderScrollView();
-        //StartCoroutine("updateCurrentTaskCtrl");
     }
-    /*
-    public override void onSelectSupportCharacter(int id, SupportCharacter character)
-    {
-        base.onSelectSupportCharacter(id, character);
-        selectedCharacter = character;
-        btnMining.gameObject.SetActive(false);
-        btnForging.gameObject.SetActive(false);
-        btnHunting.gameObject.SetActive(false);
-        foreach(SkillCraft skill in character.craftSkillSet){
-            if(skill.type ==Constant.craftSkillMiningId){
-                btnMining.gameObject.SetActive(true);
-            }else if(skill.type == Constant.craftSkillForgingId){
-                btnForging.gameObject.SetActive(true);
-            }else if(skill.type == Constant.craftSkillHuntingId){
-                btnHunting.gameObject.SetActive(true);
-            }
-        }
-        renderSupportCharacterStatus(character);
-
-    }
-   
-    void renderSupportCharacterStatus(SupportCharacter character){
-        SkillCraft skillCraft = null;
-        foreach(SkillCraft skill in character.craftSkillSet){
-            if(selectedTabId == 0 && skill.type == Constant.craftSkillMiningId){
-                skillCraft = skill;
-            }else if(selectedTabId == 1 && skill.type == Constant.craftSkillForgingId){
-                skillCraft = skill;
-            }else if(selectedTabId == 2 && skill.type == Constant.craftSkillHuntingId){
-                skillCraft = skill;
-            }
-        }
-        supportSkillCtrl.render(skillCraft);
-        currentTaskCtrl.render(character.currentTask);
-    }
-     */
 
     // Update is called once per frame
     void Update()
@@ -86,13 +47,11 @@ public class ExploreSiteScene : BasicScene
         
     }
 
-    void renderScrollView(){
-        StopAllCoroutines();
+    void RenderSupportSkill(){
         if(selectedTabId == 0){
             supportSkillCtrl.render(Game.craftSkillManager.miningSkill);
             displayList = miningSites;
         }
-
         else if (selectedTabId == 1){
             supportSkillCtrl.render(Game.craftSkillManager.gatheringSkill);
             displayList = forgingSites;
@@ -101,6 +60,11 @@ public class ExploreSiteScene : BasicScene
             supportSkillCtrl.render(Game.craftSkillManager.huntingSkill);
             displayList = huntingSites;
         }
+    }
+
+    void renderScrollView(){
+        StopAllCoroutines();
+        RenderSupportSkill();
             
         int noOfBox = displayList.Count;
         Transform contentTran = scrollViewContent.transform;
@@ -126,8 +90,6 @@ public class ExploreSiteScene : BasicScene
         exploreSiteInfoBox.gameObject.SetActive(false);
         exploreResultDialog.gameObject.SetActive(false);
         StartCoroutine("updateCurrentTaskCtrl");
-        //craftEquipmentInfoBox.gameObject.SetActive(false);
-        //craftItemInfoBox.gameObject.SetActive(false);
     }
 
     public void onClickTab(int tabId){
@@ -144,6 +106,7 @@ public class ExploreSiteScene : BasicScene
                 exploreResultDialog.setTaskCompleteMsg(taskCompleteMsg);
                 exploreResultDialog.show();
                 displayList[slotId].exploreTask = null;
+                RenderSupportSkill();
             }
         }else{
             exploreSiteInfoBox.setContent(displayList[slotId]);
@@ -153,11 +116,11 @@ public class ExploreSiteScene : BasicScene
     }
 
     public void onClickExplore(){
-        //selectedCharacter.assignExploreTask(displayList[selectedSlotId]);
-        //renderSupportCharacterStatus(selectedCharacter);
         displayList[selectedSlotId].startExplore();
         Game.craftSkillManager.availableExploreTeam --;
+        Game.money -= displayList[selectedSlotId].requireMoney;
         exploreSiteInfoBox.hide();
+        header.render();
     }
 
 
@@ -167,6 +130,7 @@ public class ExploreSiteScene : BasicScene
             foreach(ExploreSiteBox ctrl in boxList){
                 ctrl.render();
             }
+            availableExploreTeam.text = Game.craftSkillManager.availableExploreTeam + "/" + Param.maximumExploreTeam;
             yield return new WaitForSeconds(1f);
         }
         

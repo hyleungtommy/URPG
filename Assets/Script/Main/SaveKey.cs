@@ -22,5 +22,7 @@ namespace RPG
         public const string unlock_all_recipe = "unlock_all_recipe";
         public const string no_craft_requirement = "no_craft_requirement";
         public const string skill_no_cooldown = "skill_no_cooldown";
+        public const string craft_skill = "craft_skill";
+        public const string explore_site = "explore_site";
     }
 }

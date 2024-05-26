@@ -11,6 +11,7 @@ public class ExploreSiteBox : MonoBehaviour
     public Text textSiteName;
     public Text textReqTime;
     public Text textReqMoney;
+    public Image[] imgResources;
     private ExploreSite exploreSite;
     // Start is called before the first frame update
     void Start()
@@ -29,28 +30,27 @@ public class ExploreSiteBox : MonoBehaviour
     }
 
     public void render(){
-        if(exploreSite.exploreTask != null){
-            render(exploreSite.exploreTask);
-        }else{
-            imgSite.sprite = exploreSite.img;
-            textSiteName.text = exploreSite.name;
-            textReqTime.text = "Require Time:" + new DateTime(new TimeSpan(0,0,exploreSite.requireTime).Ticks).ToString("HH:mm:ss");
-            textReqMoney.text = exploreSite.requireMoney.ToString();
+        imgSite.sprite = exploreSite.img;
+        textSiteName.text = exploreSite.name;
+        textReqMoney.text = exploreSite.requireMoney.ToString();
+        int i = 0;
+        foreach(Image resourceImg in imgResources){
+            if(i < exploreSite.obtainableItems.Length){
+                resourceImg.gameObject.SetActive(true);
+                resourceImg.sprite = exploreSite.obtainableItems[i].img;
+            }else{
+                resourceImg.gameObject.SetActive(false);
+            }
+            i++;
         }
-        
+        if(exploreSite.exploreTask != null){
+            if(exploreSite.exploreTask.getRemainingTimeSecond() <= 0){
+                textReqTime.text = "Done! Click to collect items";
+            }else{
+                textReqTime.text = "Remaining Time:" + exploreSite.exploreTask.getRemainingTimeFormatted();
+            }
+        }else{
+            textReqTime.text = "Require Time:" + new DateTime(new TimeSpan(0,0,exploreSite.requireTime).Ticks).ToString("HH:mm:ss");
+        }
     }
-
-    public void render(ExploreTask exploreTask){
-        imgSite.sprite = exploreTask.exploreSite.img;
-        textSiteName.text = exploreTask.exploreSite.name;
-        textReqTime.text = "Remaining Time:" + exploreTask.getRemainingTimeFormatted();
-        textReqMoney.text = exploreTask.exploreSite.requireMoney.ToString();
-    }
-
-    public void updateTime(){
-        if(exploreSite.exploreTask != null)
-            textReqTime.text = "Remaining Time:" + exploreSite.exploreTask.getRemainingTimeFormatted();
-    }
-
-    
 }

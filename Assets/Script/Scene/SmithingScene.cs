@@ -26,12 +26,19 @@ public class SmithingScene : BasicScene{
         jewelCraftingRecipeList = new List<CraftRecipe>();
         for(int i = 0 ; i < DB.craftRecipeEquipments.Length; i++){
             string equipType = (DB.craftRecipeEquipments[i].resultItem as GeneralEquipment).type;
+            
             if(equipType == "Sword" || equipType == "Axe" || equipType == "Bow" || equipType == "Dagger" || equipType == "Shield" || equipType == "Heavy Armor" || equipType == "Light Armor"){
-                smthingRecipeList.Add(DB.craftRecipeEquipments[i]);
+                if(Param.unlockAllRecipe || DB.craftRecipeEquipments[i].requireLevel <= Game.craftSkillManager.smithingSkill.lv){
+                    smthingRecipeList.Add(DB.craftRecipeEquipments[i]);
+                }
             }else if(equipType == "Staff" || equipType == "Wand" || equipType == "Spellbook" || equipType == "Robe Armor"){
-                arcaneCraftingRecipeList.Add(DB.craftRecipeEquipments[i]);
+                if(Param.unlockAllRecipe || DB.craftRecipeEquipments[i].requireLevel <= Game.craftSkillManager.arcaneCraftingSkill.lv){
+                    arcaneCraftingRecipeList.Add(DB.craftRecipeEquipments[i]);
+                }
             }else if(equipType == "Accessory"){
-                jewelCraftingRecipeList.Add(DB.craftRecipeEquipments[i]);
+                if(Param.unlockAllRecipe || DB.craftRecipeEquipments[i].requireLevel <= Game.craftSkillManager.jewelCraftingSkill.lv){
+                    jewelCraftingRecipeList.Add(DB.craftRecipeEquipments[i]);
+                }
             }
         }
         renderScrollView();
@@ -61,10 +68,6 @@ public class SmithingScene : BasicScene{
             
         int noOfBox = displayList.Count;
 
-        //foreach(CraftRecipe c in displayList){
-        //    Debug.Log(c.resultItem);
-        //}
-        
         Transform contentTran = scrollViewContent.transform;
         boxList = new List<CraftEquipmentBox>();
         foreach (Transform child in contentTran)
@@ -78,7 +81,6 @@ public class SmithingScene : BasicScene{
 
             box = (GameObject)Instantiate(itemBoxPrefab, contentTran);
             CraftEquipmentBox boxCtrl = box.GetComponent<CraftEquipmentBox>();
-            //Debug.Log(displayList[i].resultItem);
             boxCtrl.render(displayList[i].resultItem);
             box.GetComponent<Button>().onClick.AddListener(() => this.onClickItem(j));
             boxList.Add(boxCtrl);
@@ -106,6 +108,7 @@ public class SmithingScene : BasicScene{
         TaskCompleteMsg taskCompleteMsg = displayList[selectedSlotId].craftItem(1);
         craftResultDialog.setTaskCompleteMsg(taskCompleteMsg);
         craftResultDialog.show();
+        renderScrollView();
     }
 
 

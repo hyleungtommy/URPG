@@ -45,7 +45,7 @@ namespace RPG
             float expNeed = Mathf.Floor(level + 300 * Mathf.Pow(1.9f, ((float)level / 4))) / 3;
             return Mathf.FloorToInt(expNeed);
             */
-            return Param.expRequire[level-1];
+            return Param.expRequire[level - 1];
         }
 
         public static int getFirstDigit(int i)
@@ -104,9 +104,11 @@ namespace RPG
             return index;
         }
 
-        public static int calculateProductionSkillEXPNeed(int level)
+        public static int calculateCraftSkillEXPNeed(SkillCraft.Type skilltype, int level)
         {
-            //float expNeed = Mathf.Floor(level + 30 * Mathf.Pow(1.9f, ((float)level / 4))) / 3;
+            if(skilltype == SkillCraft.Type.brewing){
+                return level * 100;
+            }
             return level * 10;
         }
 
@@ -142,17 +144,21 @@ namespace RPG
             else return num.ToString();
         }
 
-        public static string printArray<T>(T[] array){
+        public static string printArray<T>(T[] array)
+        {
             string s = "[";
-            foreach(T item in array){
+            foreach (T item in array)
+            {
                 s += item.ToString();
             }
             return s + "]";
         }
 
-        public static string printList<T>(List<T> array){
+        public static string printList<T>(List<T> array)
+        {
             string s = "[";
-            foreach(T item in array){
+            foreach (T item in array)
+            {
                 s += item.ToString();
             }
             return s + "]";
@@ -171,9 +177,12 @@ namespace RPG
             }
         }
 
-        public static void RemoveCraftItem(List<Requirement>requirements, int requireMoney, int qty){
-            if(!Param.noCraftRequirement){
-                foreach(Requirement requirement in requirements){
+        public static void RemoveCraftItem(List<Requirement> requirements, int requireMoney, int qty)
+        {
+            if (!Param.noCraftRequirement)
+            {
+                foreach (Requirement requirement in requirements)
+                {
                     Item item = requirement.requireItem as Item;
                     Game.inventory.smartDelete(item, requirement.requireQty * qty);
                 }
@@ -181,6 +190,6 @@ namespace RPG
             }
         }
 
-        
+
     }
 }

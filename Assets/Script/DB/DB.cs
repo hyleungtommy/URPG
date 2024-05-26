@@ -166,7 +166,7 @@ namespace RPG
                     int quality = int.Parse(data[2]);
                     int reinLv = int.Parse(data[3]);
                     string enchatmentText = data[4];
-                    e = equipments[id].toEquipment(quality);
+                    e = QueryEquipment(id).toEquipment(quality);
                     if(reinLv > 0 && e.reinforceRecipe != null)
                         e.reinforceRecipe.reinforceLv = reinLv;
                     if(e.enchantment != null)

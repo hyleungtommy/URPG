@@ -116,6 +116,8 @@ namespace RPG
             new Color32(239,100,102,255)
         };
 
+        public static int maximumExploreTeam = 3;
+
 
     }
 }

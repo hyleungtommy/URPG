@@ -12,6 +12,7 @@ public class ExploreSiteInfoBox : BasicInfoBox
     public Text textPrice;
     public Image imgExploreSite;
     public ObtainableGroupCtrl obtainableGroupCtrl;
+    public Button buttonGoExplore;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,8 +32,9 @@ public class ExploreSiteInfoBox : BasicInfoBox
         textHeader.text = exploreSite.name;
         textBasicInfo.text = exploreSite.type.ToString();
         textDesc1.text = exploreSite.desc;
-        textPrice.text = exploreSite.requireTime.ToString();
+        textPrice.text = exploreSite.requireMoney.ToString();
         imgExploreSite.sprite = exploreSite.img;
         obtainableGroupCtrl.render(exploreSite.obtainableItems);
+        buttonGoExplore.gameObject.SetActive(Game.money >= exploreSite.requireMoney && Game.craftSkillManager.availableExploreTeam > 0);
     }
 }

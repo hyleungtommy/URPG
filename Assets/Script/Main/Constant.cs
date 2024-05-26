@@ -84,46 +84,5 @@ namespace RPG
         public static int[] memberUnlockAt = { 0, 0, 8, 17, 24, 32, 45 };
         public static int[] mapUnlockAt = { 0, 6, 15, 23, 30, 35, 42 };
 
-        public static readonly string[] craftSkillTypes = {
-            "Mining","Gathering","Hunting","Smithing","Arcane Crafting","Jewel Crafting","Reinforcing","Enchanting","Brewing"
-        };
-        public const int craftSkillMiningId = 0;
-        public const int craftSkillForgingId = 1;
-        public const int craftSkillHuntingId = 2;
-        public const int craftSkillSmithingId = 3;
-        public const int craftSkillReinforcingId = 4;
-        public const int craftSkillArcaneCraftingId = 5;
-        public const int craftSkillBrewingId = 6;
-        public const int craftSkillEnchantingId = 7;
-        public const int craftSkillCraftingId = 8;
-        public static readonly string[] supportCharacterJobs = {
-            "Gatherer","Crafter","Enchanter"
-        };
-        public const int jobGathererId = 0;
-        public const int jobCrafterId = 1;
-        public const int jobEnchanterId = 2;
-        public static readonly string[] supportCharacterFacesMale = {
-
-        };
-
-        public static readonly string[] supportCharacterBodiesMale = {
-            "Body_Adventurer","Body_Berserker","Body_Knight"
-        };
-
-        public static readonly string[] supportCharacterFacesFemale = {
-
-        };
-
-        public static readonly string[] supportCharacterBodiesFemale = {
-            "Body_Adventurer","Body_Berserker","Body_Knight"
-        };
-
-        public static readonly string[] supportCharacterNamesMale = {
-            "Thomas","Harry","Dickson","Andrew","Jack"
-        };
-
-        public static readonly string[] supportCharacterNamesFemale = {
-            "Kelly","Jane","Angel","Sue","Mary"
-        };
     }
 }

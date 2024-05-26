@@ -23,14 +23,21 @@ public class CraftRecipe:Displayable
         TaskCompleteMsg taskCompleteMsg;
         Util.RemoveCraftItem(requirements, requireMoney, qty);
         if(resultItem is GeneralEquipment){
-            
             Equipment resultEquipment = (resultItem as GeneralEquipment).toEquipment(Random.Range(0,5));
             if(resultEquipment is Accessory){
                 resultEquipment.enchant();
             }
             Game.inventory.smartInsert(resultEquipment,qty);
+            if(resultEquipment.equipmentType == Constant.EquipmentType.Wand || resultEquipment.equipmentType == Constant.EquipmentType.MagicBook || resultEquipment.equipmentType == Constant.EquipmentType.Staff || resultEquipment.equipmentType == Constant.EquipmentType.RobeArmor){
+                Game.craftSkillManager.addExperience(SkillCraft.Type.arcaneCrafting, requireLevel);
+            }else if (resultEquipment.equipmentType == Constant.EquipmentType.Accessory){
+                Game.craftSkillManager.addExperience(SkillCraft.Type.jewelCrafting, requireLevel);
+            }else{
+                Game.craftSkillManager.addExperience(SkillCraft.Type.smithing, requireLevel);
+            }
             taskCompleteMsg = new TaskCompleteMsg(resultEquipment,qty);
         }else{
+            Game.craftSkillManager.addExperience(SkillCraft.Type.brewing, requireLevel);
             Game.inventory.smartInsert(resultItem as Item,qty);
             taskCompleteMsg = new TaskCompleteMsg(resultItem as Item,qty);
         }
