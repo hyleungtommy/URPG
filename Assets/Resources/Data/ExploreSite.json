@@ -377,6 +377,69 @@
             "maxAmount":[
                 8,3,5,2,5,3
             ]
+        },
+        {
+			"id":19,
+            "name": "Mecha Graveyard",
+            "desc": "A graveyard of anicent battle machine, it is possible to salvage rare resources from them",
+            "type": "Mining",
+            "requireMoney":10000,
+            "requireLevel":7,
+            "requireTime":1200,
+            "obtainableItems":[
+                "I028","I031", "I108", "I109", "I110", "I111"
+            ],
+            "obtainChance":[
+                100,50, 30, 10,10,10
+            ],
+            "minAmount":[
+                2,1,3,1,1,1
+            ],
+            "maxAmount":[
+                5,3,5,2,2,2
+            ]
+        },
+        {
+			"id":20,
+            "name": "Petrified Forest",
+            "desc": "All woods here are petrified from high energy weapons from ancient battle machines",
+            "type": "Forging",
+            "requireMoney":10000,
+            "requireLevel":7,
+            "requireTime":1200,
+            "obtainableItems":[
+                "I104","I058","I059","I060","I061", "I062", "I064"
+            ],
+            "obtainChance":[
+                100,100,50,10,25,25,10
+            ],
+            "minAmount":[
+                3,4,2,3,3,3,1
+            ],
+            "maxAmount":[
+                8,8,5,5,5,5,2
+            ]
+        },
+        {
+			"id":21,
+            "name": "Tundra",
+            "desc": "It is rumor that dragons are living in here",
+            "type": "Hunting",
+            "requireMoney":10000,
+            "requireLevel":7,
+            "requireTime":1200,
+            "obtainableItems":[
+                "I070","I105","I076","I106","I082","I107"
+            ],
+            "obtainChance":[
+                100,25,100,26,100,25
+            ],
+            "minAmount":[
+                4,1,3,1,3,1
+            ],
+            "maxAmount":[
+                8,3,5,2,5,3
+            ]
         }
     ]
 }

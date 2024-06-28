@@ -5,6 +5,8 @@ using UnityEngine.UI;
 using RPG;
 using System.Linq;
 using System;
+using System.Text;
+using System.IO;
 public class CheatScene : MonoBehaviour
 {
     public Toggle noCraftRequirement;
@@ -82,6 +84,21 @@ public class CheatScene : MonoBehaviour
 
     public void OnClickChangeStoryPoint(){
         Game.plotPt = Int32.Parse(storyPoint.text);
+    }
+
+    public void OnClickExportCSV(){
+        StringBuilder csvContent = new StringBuilder();
+        csvContent.AppendLine("Id,Name");
+        foreach(ItemTemplate item in DB.items){
+            csvContent.AppendLine(item.id + "," + item.name);
+        }
+        File.WriteAllText("items.csv", csvContent.ToString());
+        csvContent = new StringBuilder();
+        csvContent.AppendLine("Id,Name");
+        foreach(GeneralEquipment item in DB.equipments){
+            csvContent.AppendLine(item.id + "," + item.name);
+        }
+        File.WriteAllText("equips.csv", csvContent.ToString());
     }
 
     public class CustomOptionData : Dropdown.OptionData{

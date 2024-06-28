@@ -1323,6 +1323,116 @@
       "buyPlace": "None",
       "sellPrice": 10000,
       "rarity": 4
+    },
+    {
+      "id": 104,
+      "name": "Petrified Wood",
+      "desc": "This wood has petrified and is hard as steel",
+      "type": "Resources",
+      "img": "I096",
+      "buyPlace": "None",
+      "sellPrice": 10000,
+      "rarity": 2
+    },
+    {
+      "id": 105,
+      "name": "Azure Fur",
+      "desc": "This blue fur is imbued with astonishing amount of magical power",
+      "type": "Resources",
+      "img": "I097",
+      "buyPlace": "None",
+      "sellPrice": 10000,
+      "rarity": 2
+    },
+    {
+      "id": 106,
+      "name": "Crimson Feather",
+      "desc": "This feather seems like it is burning",
+      "type": "Resources",
+      "img": "I098",
+      "buyPlace": "None",
+      "sellPrice": 10000,
+      "rarity": 2
+    },
+    {
+      "id": 107,
+      "name": "Dragon's Teeth",
+      "desc": "This strong teeth once belong to a mighty dragon",
+      "type": "Resources",
+      "img": "I099",
+      "buyPlace": "None",
+      "sellPrice": 10000,
+      "rarity": 2
+    },
+    {
+      "id": 108,
+      "name": "Concentrated Magic Essence",
+      "desc": "A rare clump of pure magical essence",
+      "type": "Resources",
+      "img": "I100",
+      "buyPlace": "None",
+      "sellPrice": 10000,
+      "rarity": 2
+    },
+    {
+      "id": 109,
+      "name": "Exquisite Fire Gem",
+      "desc": "This rare gem contains immense fire elements",
+      "type": "Resources",
+      "img": "I101",
+      "buyPlace": "None",
+      "sellPrice": 10000,
+      "rarity": 4
+    },
+    {
+      "id": 110,
+      "name": "Exquisite Earth Gem",
+      "desc": "This rare gem contains immense earth elements",
+      "type": "Resources",
+      "img": "I102",
+      "buyPlace": "None",
+      "sellPrice": 10000,
+      "rarity": 3
+    },
+    {
+      "id": 111,
+      "name": "Exquisite Ice Gem",
+      "desc": "This rare gem contains immense ice elements",
+      "type": "Resources",
+      "img": "I103",
+      "buyPlace": "None",
+      "sellPrice": 10000,
+      "rarity": 3
+    },
+    {
+      "id": 112,
+      "name": "Exquisite Wind Gem",
+      "desc": "This rare gem contains immense wind elements",
+      "type": "Resources",
+      "img": "I104",
+      "buyPlace": "None",
+      "sellPrice": 10000,
+      "rarity": 3
+    },
+    {
+      "id": 113,
+      "name": "Exquisite Dark Gem",
+      "desc": "This rare gem contains immense dark elements",
+      "type": "Resources",
+      "img": "I105",
+      "buyPlace": "None",
+      "sellPrice": 10000,
+      "rarity": 3
+    },
+    {
+      "id": 113,
+      "name": "Exquisite Rainbow Gem",
+      "desc": "This rare gem contains immense amount of all five elements",
+      "type": "Resources",
+      "img": "I106",
+      "buyPlace": "None",
+      "sellPrice": 10000,
+      "rarity": 3
     }
   ]
 }

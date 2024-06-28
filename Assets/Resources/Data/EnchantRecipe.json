@@ -10,30 +10,36 @@
             "equipmentLv":20,
             "requireItem":[33],
             "requireQty":[2],
-            "requireMoney":50
+            "requireMoney":100
         },
         {
             "equipmentLv":30,
             "requireItem":[34],
             "requireQty":[3],
-            "requireMoney":50
+            "requireMoney":200
         },
         {
             "equipmentLv":40,
             "requireItem":[35],
             "requireQty":[3],
-            "requireMoney":50
+            "requireMoney":500
         },
         {
             "equipmentLv":50,
             "requireItem":[36],
-            "requireQty":[4],
-            "requireMoney":50
+            "requireQty":[3],
+            "requireMoney":1000
         },
         {
             "equipmentLv":60,
             "requireItem":[37],
-            "requireQty":[5],
+            "requireQty":[3],
+            "requireMoney":2000
+        },
+        {
+            "equipmentLv":70,
+            "requireItem":[108],
+            "requireQty":[3],
             "requireMoney":50
         }
     ]

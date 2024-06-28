@@ -383,6 +383,17 @@
         "requireItem": ["I022", "I023", "I051"],
         "requireQty": [5, 1, 3],
         "requireMoney": 200
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [23,51],
+        "requireQtyStart": [3,1],
+        "requireMoneyStart": 100,
+        "requireLevel": 2,
+        "requireQtyIncrement": [1,1],
+        "requireMoneyIncrement": 100,
+        "powerIncrementPerLevel": 40,
+        "magicPowerIncrementPerLevel": 20
       }
     },
     {
@@ -401,6 +412,17 @@
         "requireItem": ["I022", "I051"],
         "requireQty": [3, 3],
         "requireMoney": 200
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [22,51],
+        "requireQtyStart": [3,1],
+        "requireMoneyStart": 100,
+        "requireLevel": 2,
+        "requireQtyIncrement": [1,1],
+        "requireMoneyIncrement": 100,
+        "powerIncrementPerLevel": 30,
+        "magicPowerIncrementPerLevel": 15
       }
     },
     {
@@ -419,6 +441,17 @@
         "requireItem": ["I022", "I023", "I051"],
         "requireQty": [10, 1, 3],
         "requireMoney": 300
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [23,51],
+        "requireQtyStart": [5,2],
+        "requireMoneyStart": 200,
+        "requireLevel": 2,
+        "requireQtyIncrement": [2,2],
+        "requireMoneyIncrement": 200,
+        "powerIncrementPerLevel": 80,
+        "magicPowerIncrementPerLevel": 40
       }
     },
     {
@@ -437,6 +470,17 @@
         "requireItem": ["I051", "I052", "I033"],
         "requireQty": [5, 1, 3],
         "requireMoney": 200
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [52,33],
+        "requireQtyStart": [3,1],
+        "requireMoneyStart": 100,
+        "requireLevel": 2,
+        "requireQtyIncrement": [1,1],
+        "requireMoneyIncrement": 100,
+        "powerIncrementPerLevel": 20,
+        "magicPowerIncrementPerLevel": 40
       }
     },
     {
@@ -455,6 +499,17 @@
         "requireItem": ["I052", "I033"],
         "requireQty": [3, 3],
         "requireMoney": 200
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [52,33],
+        "requireQtyStart": [3,1],
+        "requireMoneyStart": 100,
+        "requireLevel": 2,
+        "requireQtyIncrement": [1,1],
+        "requireMoneyIncrement": 100,
+        "powerIncrementPerLevel": 20,
+        "magicPowerIncrementPerLevel": 40
       }
     },
     {
@@ -473,6 +528,17 @@
         "requireItem": ["I051", "I052", "I033"],
         "requireQty": [10, 1, 3],
         "requireMoney": 300
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [52,33],
+        "requireQtyStart": [6,2],
+        "requireMoneyStart": 200,
+        "requireLevel": 2,
+        "requireQtyIncrement": [1,1],
+        "requireMoneyIncrement": 200,
+        "powerIncrementPerLevel": 40,
+        "magicPowerIncrementPerLevel": 80
       }
     },
     {
@@ -491,6 +557,17 @@
         "requireItem": ["I022", "I051"],
         "requireQty": [5, 5],
         "requireMoney": 300
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [22,51],
+        "requireQtyStart": [3,3],
+        "requireMoneyStart": 100,
+        "requireLevel": 2,
+        "requireQtyIncrement": [2,2],
+        "requireMoneyIncrement": 100,
+        "powerIncrementPerLevel": 40,
+        "magicPowerIncrementPerLevel": 40
       }
     },
     {
@@ -509,6 +586,17 @@
         "requireItem": ["I022", "I051"],
         "requireQty": [7, 2],
         "requireMoney": 300
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [22,51],
+        "requireQtyStart": [3,3],
+        "requireMoneyStart": 100,
+        "requireLevel": 2,
+        "requireQtyIncrement": [1,1],
+        "requireMoneyIncrement": 100,
+        "powerIncrementPerLevel": 30,
+        "magicPowerIncrementPerLevel": 30
       }
     },
     {
@@ -527,6 +615,17 @@
         "requireItem": ["I022", "I024", "I066", "I072"],
         "requireQty": [10, 1, 3, 3],
         "requireMoney": 300
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [24,66],
+        "requireQtyStart": [3,3],
+        "requireMoneyStart": 100,
+        "requireLevel": 2,
+        "requireQtyIncrement": [2,2],
+        "requireMoneyIncrement": 100,
+        "powerIncrementPerLevel": 50,
+        "magicPowerIncrementPerLevel": 25
       }
     },
     {
@@ -545,6 +644,17 @@
         "requireItem": ["I072", "I078", "I033"],
         "requireQty": [10, 5, 3],
         "requireMoney": 300
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [72,33],
+        "requireQtyStart": [3,1],
+        "requireMoneyStart": 100,
+        "requireLevel": 2,
+        "requireQtyIncrement": [1,1],
+        "requireMoneyIncrement": 100,
+        "powerIncrementPerLevel": 25,
+        "magicPowerIncrementPerLevel": 50
       }
     },
     {
@@ -563,6 +673,17 @@
         "requireItem": ["I066", "I072", "I078"],
         "requireQty": [10, 5, 5],
         "requireMoney": 300
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [66,72],
+        "requireQtyStart": [3,1],
+        "requireMoneyStart": 100,
+        "requireLevel": 2,
+        "requireQtyIncrement": [1,1],
+        "requireMoneyIncrement": 100,
+        "powerIncrementPerLevel": 30,
+        "magicPowerIncrementPerLevel": 30
       }
     },
     {
@@ -581,6 +702,17 @@
         "requireItem": ["I023", "I024", "I052"],
         "requireQty": [5, 1, 3],
         "requireMoney": 500
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [24,52],
+        "requireQtyStart": [3,1],
+        "requireMoneyStart": 200,
+        "requireLevel": 3,
+        "requireQtyIncrement": [1,1],
+        "requireMoneyIncrement": 150,
+        "powerIncrementPerLevel": 60,
+        "magicPowerIncrementPerLevel": 30
       }
     },
     {
@@ -599,6 +731,17 @@
         "requireItem": ["I023", "I052"],
         "requireQty": [3, 3],
         "requireMoney": 500
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [23,52],
+        "requireQtyStart": [3,1],
+        "requireMoneyStart": 200,
+        "requireLevel": 3,
+        "requireQtyIncrement": [1,1],
+        "requireMoneyIncrement": 150,
+        "powerIncrementPerLevel": 60,
+        "magicPowerIncrementPerLevel": 30
       }
     },
     {
@@ -617,6 +760,17 @@
         "requireItem": ["I023", "I024", "I052"],
         "requireQty": [10, 1, 3],
         "requireMoney": 750
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [24,52],
+        "requireQtyStart": [6,2],
+        "requireMoneyStart": 400,
+        "requireLevel": 3,
+        "requireQtyIncrement": [2,1],
+        "requireMoneyIncrement": 200,
+        "powerIncrementPerLevel": 120,
+        "magicPowerIncrementPerLevel": 60
       }
     },
     {
@@ -635,6 +789,17 @@
         "requireItem": ["I052", "I053", "I034"],
         "requireQty": [5, 1, 3],
         "requireMoney": 500
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [53,34],
+        "requireQtyStart": [3,1],
+        "requireMoneyStart": 200,
+        "requireLevel": 3,
+        "requireQtyIncrement": [1,1],
+        "requireMoneyIncrement": 150,
+        "powerIncrementPerLevel": 30,
+        "magicPowerIncrementPerLevel": 60
       }
     },
     {
@@ -653,6 +818,17 @@
         "requireItem": ["I053", "I034"],
         "requireQty": [3, 3],
         "requireMoney": 500
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [53,34],
+        "requireQtyStart": [3,1],
+        "requireMoneyStart": 200,
+        "requireLevel": 3,
+        "requireQtyIncrement": [1,1],
+        "requireMoneyIncrement": 150,
+        "powerIncrementPerLevel": 30,
+        "magicPowerIncrementPerLevel": 60
       }
     },
     {
@@ -671,6 +847,17 @@
         "requireItem": ["I052", "I053", "I034"],
         "requireQty": [10, 1, 3],
         "requireMoney": 750
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [53,34],
+        "requireQtyStart": [6,2],
+        "requireMoneyStart": 500,
+        "requireLevel": 3,
+        "requireQtyIncrement": [1,1],
+        "requireMoneyIncrement": 200,
+        "powerIncrementPerLevel": 60,
+        "magicPowerIncrementPerLevel": 120
       }
     },
     {
@@ -689,6 +876,17 @@
         "requireItem": ["I023", "I052"],
         "requireQty": [5, 5],
         "requireMoney": 750
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [23,52],
+        "requireQtyStart": [6,2],
+        "requireMoneyStart": 300,
+        "requireLevel": 3,
+        "requireQtyIncrement": [2,1],
+        "requireMoneyIncrement": 150,
+        "powerIncrementPerLevel": 50,
+        "magicPowerIncrementPerLevel": 50
       }
     },
     {
@@ -707,6 +905,17 @@
         "requireItem": ["I023", "I052"],
         "requireQty": [7, 2],
         "requireMoney": 750
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [23,52],
+        "requireQtyStart": [6,2],
+        "requireMoneyStart": 300,
+        "requireLevel": 3,
+        "requireQtyIncrement": [2,1],
+        "requireMoneyIncrement": 150,
+        "powerIncrementPerLevel": 50,
+        "magicPowerIncrementPerLevel": 50
       }
     },
     {
@@ -725,6 +934,17 @@
         "requireItem": ["I023", "I024", "I067", "I073"],
         "requireQty": [10, 1, 3, 3],
         "requireMoney": 750
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [24,73],
+        "requireQtyStart": [6,2],
+        "requireMoneyStart": 300,
+        "requireLevel": 3,
+        "requireQtyIncrement": [2,1],
+        "requireMoneyIncrement": 150,
+        "powerIncrementPerLevel": 40,
+        "magicPowerIncrementPerLevel": 80
       }
     },
     {
@@ -743,6 +963,17 @@
         "requireItem": ["I073", "I079", "I034"],
         "requireQty": [10, 5, 3],
         "requireMoney": 750
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [73,34],
+        "requireQtyStart": [6,2],
+        "requireMoneyStart": 300,
+        "requireLevel": 3,
+        "requireQtyIncrement": [2,1],
+        "requireMoneyIncrement": 150,
+        "powerIncrementPerLevel": 80,
+        "magicPowerIncrementPerLevel": 40
       }
     },
     {
@@ -761,6 +992,17 @@
         "requireItem": ["I067", "I073", "I079"],
         "requireQty": [10, 5, 5],
         "requireMoney": 750
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [67,73],
+        "requireQtyStart": [6,2],
+        "requireMoneyStart": 300,
+        "requireLevel": 3,
+        "requireQtyIncrement": [2,1],
+        "requireMoneyIncrement": 150,
+        "powerIncrementPerLevel": 60,
+        "magicPowerIncrementPerLevel": 60
       }
     },
     {
@@ -779,6 +1021,17 @@
         "requireItem": ["E027", "I024", "I034", "I038"],
         "requireQty": [1, 5, 3, 1],
         "requireMoney": 1000
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [24,34],
+        "requireQtyStart": [3,1],
+        "requireMoneyStart": 500,
+        "requireLevel": 3,
+        "requireQtyIncrement": [1,1],
+        "requireMoneyIncrement": 250,
+        "powerIncrementPerLevel": 100,
+        "magicPowerIncrementPerLevel": 25
       }
     },
     {
@@ -797,6 +1050,17 @@
         "requireItem": ["E027", "I024", "I034", "I042"],
         "requireQty": [1, 5, 3, 1],
         "requireMoney": 1000
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [24,34],
+        "requireQtyStart": [3,1],
+        "requireMoneyStart": 500,
+        "requireLevel": 3,
+        "requireQtyIncrement": [1,1],
+        "requireMoneyIncrement": 250,
+        "powerIncrementPerLevel": 75,
+        "magicPowerIncrementPerLevel": 75
       }
     },
     {
@@ -815,6 +1079,17 @@
         "requireItem": ["E028", "I024", "I042"],
         "requireQty": [1, 10, 1],
         "requireMoney": 1000
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [24,42],
+        "requireQtyStart": [3,1],
+        "requireMoneyStart": 500,
+        "requireLevel": 3,
+        "requireQtyIncrement": [1,1],
+        "requireMoneyIncrement": 250,
+        "powerIncrementPerLevel": 60,
+        "magicPowerIncrementPerLevel": 25
       }
     },
     {
@@ -833,6 +1108,17 @@
         "requireItem": ["E028", "I034", "I038"],
         "requireQty": [1, 10, 1],
         "requireMoney": 1000
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [34,38],
+        "requireQtyStart": [3,1],
+        "requireMoneyStart": 500,
+        "requireLevel": 3,
+        "requireQtyIncrement": [1,1],
+        "requireMoneyIncrement": 250,
+        "powerIncrementPerLevel": 25,
+        "magicPowerIncrementPerLevel": 60
       }
     },
     {
@@ -851,6 +1137,17 @@
         "requireItem": ["E029", "I024", "I034", "I040"],
         "requireQty": [1, 10, 5, 1],
         "requireMoney": 1500
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [24,34],
+        "requireQtyStart": [6,2],
+        "requireMoneyStart": 1000,
+        "requireLevel": 3,
+        "requireQtyIncrement": [2,1],
+        "requireMoneyIncrement": 500,
+        "powerIncrementPerLevel": 200,
+        "magicPowerIncrementPerLevel": 100
       }
     },
     {
@@ -869,6 +1166,17 @@
         "requireItem": ["E029", "I024", "I034", "I040"],
         "requireQty": [1, 10, 5, 1],
         "requireMoney": 1500
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [24,34],
+        "requireQtyStart": [6,2],
+        "requireMoneyStart": 1000,
+        "requireLevel": 3,
+        "requireQtyIncrement": [2,1],
+        "requireMoneyIncrement": 500,
+        "powerIncrementPerLevel": 150,
+        "magicPowerIncrementPerLevel": 150
       }
     },
     {
@@ -887,6 +1195,17 @@
         "requireItem": ["E030", "I053", "I034", "I044"],
         "requireQty": [1, 5, 3, 1],
         "requireMoney": 1000
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [53,34],
+        "requireQtyStart": [3,1],
+        "requireMoneyStart": 500,
+        "requireLevel": 3,
+        "requireQtyIncrement": [1,1],
+        "requireMoneyIncrement": 250,
+        "powerIncrementPerLevel": 80,
+        "magicPowerIncrementPerLevel": 200
       }
     },
     {
@@ -905,6 +1224,17 @@
         "requireItem": ["E030", "I053", "I034", "I046"],
         "requireQty": [1, 5, 3, 1],
         "requireMoney": 1000
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [53,34],
+        "requireQtyStart": [3,1],
+        "requireMoneyStart": 500,
+        "requireLevel": 3,
+        "requireQtyIncrement": [1,1],
+        "requireMoneyIncrement": 250,
+        "powerIncrementPerLevel": 100,
+        "magicPowerIncrementPerLevel": 150
       }
     },
     {
@@ -923,6 +1253,17 @@
         "requireItem": ["E031", "I034", "I046"],
         "requireQty": [1, 10, 1],
         "requireMoney": 1000
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [34,46],
+        "requireQtyStart": [3,1],
+        "requireMoneyStart": 500,
+        "requireLevel": 3,
+        "requireQtyIncrement": [1,1],
+        "requireMoneyIncrement": 250,
+        "powerIncrementPerLevel": 40,
+        "magicPowerIncrementPerLevel": 70
       }
     },
     {
@@ -941,6 +1282,17 @@
         "requireItem": ["E031", "I034", "I040"],
         "requireQty": [1, 10, 1],
         "requireMoney": 1000
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [34,40],
+        "requireQtyStart": [3,1],
+        "requireMoneyStart": 500,
+        "requireLevel": 3,
+        "requireQtyIncrement": [1,1],
+        "requireMoneyIncrement": 250,
+        "powerIncrementPerLevel": 50,
+        "magicPowerIncrementPerLevel": 50
       }
     },
     {
@@ -959,6 +1311,17 @@
         "requireItem": ["E032", "I053", "I034", "I042"],
         "requireQty": [1, 10, 5, 1],
         "requireMoney": 1500
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [53,34],
+        "requireQtyStart": [6,2],
+        "requireMoneyStart": 1000,
+        "requireLevel": 3,
+        "requireQtyIncrement": [2,1],
+        "requireMoneyIncrement": 500,
+        "powerIncrementPerLevel": 100,
+        "magicPowerIncrementPerLevel": 200
       }
     },
     {
@@ -977,6 +1340,17 @@
         "requireItem": ["E032", "I053", "I034", "I038"],
         "requireQty": [1, 10, 5, 1],
         "requireMoney": 1500
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [53,34],
+        "requireQtyStart": [6,2],
+        "requireMoneyStart": 1000,
+        "requireLevel": 3,
+        "requireQtyIncrement": [2,1],
+        "requireMoneyIncrement": 500,
+        "powerIncrementPerLevel": 150,
+        "magicPowerIncrementPerLevel": 150
       }
     },
     {
@@ -995,6 +1369,17 @@
         "requireItem": ["E033", "I053", "I034", "I038"],
         "requireQty": [1, 10, 5, 1],
         "requireMoney": 1500
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [53,34],
+        "requireQtyStart": [4,4],
+        "requireMoneyStart": 1000,
+        "requireLevel": 3,
+        "requireQtyIncrement": [1,1],
+        "requireMoneyIncrement": 500,
+        "powerIncrementPerLevel": 200,
+        "magicPowerIncrementPerLevel": 100
       }
     },
     {
@@ -1013,6 +1398,17 @@
         "requireItem": ["E033", "I053", "I034", "I042"],
         "requireQty": [1, 10, 5, 1],
         "requireMoney": 1500
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [53,34],
+        "requireQtyStart": [4,4],
+        "requireMoneyStart": 1000,
+        "requireLevel": 3,
+        "requireQtyIncrement": [1,1],
+        "requireMoneyIncrement": 500,
+        "powerIncrementPerLevel": 100,
+        "magicPowerIncrementPerLevel": 200
       }
     },
     {
@@ -1031,6 +1427,17 @@
         "requireItem": ["E034", "I024", "I034", "I038"],
         "requireQty": [1, 10, 5, 1],
         "requireMoney": 1500
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [24,34],
+        "requireQtyStart": [4,4],
+        "requireMoneyStart": 1000,
+        "requireLevel": 3,
+        "requireQtyIncrement": [1,1],
+        "requireMoneyIncrement": 500,
+        "powerIncrementPerLevel": 100,
+        "magicPowerIncrementPerLevel": 50
       }
     },
     {
@@ -1049,6 +1456,17 @@
         "requireItem": ["E034", "I024", "I034", "I042"],
         "requireQty": [1, 10, 5, 1],
         "requireMoney": 1500
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [24,34],
+        "requireQtyStart": [4,4],
+        "requireMoneyStart": 1000,
+        "requireLevel": 3,
+        "requireQtyIncrement": [1,1],
+        "requireMoneyIncrement": 500,
+        "powerIncrementPerLevel": 50,
+        "magicPowerIncrementPerLevel": 100
       }
     },
     {
@@ -1067,6 +1485,17 @@
         "requireItem": ["E035", "I024", "I034", "I038"],
         "requireQty": [1, 10, 5, 1],
         "requireMoney": 1500
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [24,34],
+        "requireQtyStart": [4,4],
+        "requireMoneyStart": 1000,
+        "requireLevel": 3,
+        "requireQtyIncrement": [1,1],
+        "requireMoneyIncrement": 500,
+        "powerIncrementPerLevel": 100,
+        "magicPowerIncrementPerLevel": 60
       }
     },
     {
@@ -1085,6 +1514,17 @@
         "requireItem": ["E036", "I079", "I034", "I042"],
         "requireQty": [1, 10, 5, 1],
         "requireMoney": 1500
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [79,34],
+        "requireQtyStart": [4,4],
+        "requireMoneyStart": 1000,
+        "requireLevel": 3,
+        "requireQtyIncrement": [1,1],
+        "requireMoneyIncrement": 500,
+        "powerIncrementPerLevel": 60,
+        "magicPowerIncrementPerLevel": 100
       }
     },
     {
@@ -1103,6 +1543,17 @@
         "requireItem": ["E037", "I067", "I034", "I044"],
         "requireQty": [1, 10, 5, 1],
         "requireMoney": 1500
+      },
+      "reinforceRecipe": {
+        "maxReinforceLv": 3,
+        "requireItem": [67,34],
+        "requireQtyStart": [4,4],
+        "requireMoneyStart": 1000,
+        "requireLevel": 3,
+        "requireQtyIncrement": [1,1],
+        "requireMoneyIncrement": 500,
+        "powerIncrementPerLevel": 80,
+        "magicPowerIncrementPerLevel": 80
       }
     },
     {
