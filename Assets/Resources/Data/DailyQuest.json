@@ -1,0 +1,74 @@
+{
+    "Items": [
+        {
+            "name": "Wolf Threat",
+            "desc": "The increasing amount of wolf packs in the great plain threatens caravan, please reduce the number of them",
+            "requireLv": "10",
+            "maxLv": "20",
+            "requirement":["E009"],
+            "requiremQty":[5],
+            "rewardMoney":500,
+            "rewardEXP":550
+        },
+        {
+            "name": "Too many bugs",
+            "desc": "I squshed a bug when I am travling on the great plain! Please help me to reduce the number of beetles there",
+            "requireLv": "10",
+            "maxLv": "20",
+            "requirement":["E008"],
+            "requiremQty":[5],
+            "rewardMoney":500,
+            "rewardEXP":550
+        },
+        {
+            "name": "Werewolf danger",
+            "desc": "There are witnesses on werewolf on the plain, please go and defeat them",
+            "requireLv": "10",
+            "maxLv": "20",
+            "requirement":["E011"],
+            "requiremQty":[1],
+            "rewardMoney":1000,
+            "rewardEXP":1000
+        },
+        {
+            "name": "Werewolf and wolf",
+            "desc": "The plain is very dangerous with wolves and werewolves every where, can someone defeat them?",
+            "requireLv": "10",
+            "maxLv": "20",
+            "requirement":["E009","E011"],
+            "requiremQty":[5,1],
+            "rewardMoney":2000,
+            "rewardEXP":2000
+        },
+        {
+            "name": "The boss of plain",
+            "desc": "An oger was witnessed in a certain cave in the plain, oger are extremely dangera and will causes massive threat to caravan. Please defeat it",
+            "requireLv": "10",
+            "maxLv": "20",
+            "requirement":["E012"],
+            "requiremQty":[1],
+            "rewardMoney":2000,
+            "rewardEXP":2000
+        },
+        {
+            "name": "Potion required",
+            "desc": "The royal army demand potions for the wounded, if you have spare potion please consider doante to the army",
+            "requireLv": "10",
+            "maxLv": "20",
+            "requirement":["I001","I002"],
+            "requiremQty":[3,3],
+            "rewardMoney":300,
+            "rewardEXP":400
+        },
+        {
+            "name": "Resources required",
+            "desc": "The royal army demand resources to fortify the city, if you have spare resources please consider doante to the army",
+            "requireLv": "10",
+            "maxLv": "20",
+            "requirement":["I021","I050","I065"],
+            "requiremQty":[3,3,3],
+            "rewardMoney":600,
+            "rewardEXP":600
+        }
+    ]
+}
