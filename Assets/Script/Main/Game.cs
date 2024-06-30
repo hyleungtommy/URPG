@@ -22,6 +22,7 @@ namespace RPG
         public static bool shouldRefreshTradeList = true;
         public static List<TradeList> currentTradeList = new List<TradeList>();
         public static GlobalBuffManager globalBuffManager = new GlobalBuffManager();
+        public static QuestManager questManager = new QuestManager();
 
         public static void initialize(){
             party = new Party();

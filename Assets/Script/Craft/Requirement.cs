@@ -9,6 +9,7 @@ public class Requirement:Displayable
         Enemy,Item
     }
     public Displayable requireItem{set;get;}
+    public EnemyTemplate requireEnemy{set;get;}
     public int requireQty{set;get;}
     public int currentQty{set;get;}
     public Type type{set;get;}
@@ -16,6 +17,13 @@ public class Requirement:Displayable
         this.requireItem = requireItem;
         this.requireQty = requireQty;
         this.type = type;
+        this.currentQty = 0;
+    }
+
+    public Requirement(EnemyTemplate enemyTemplate,int requireQty):base(null){
+        this.requireEnemy = enemyTemplate;
+        this.requireQty = requireQty;
+        this.type = Type.Enemy;
         this.currentQty = 0;
     }
 }
