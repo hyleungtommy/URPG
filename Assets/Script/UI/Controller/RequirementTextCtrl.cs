@@ -12,37 +12,48 @@ public class RequirementTextCtrl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    public void Render(Requirement requirement,int multiplier){
-        if(requirement.type == Requirement.Type.Enemy){
+    public void Render(Requirement requirement, int multiplier)
+    {
+        if (requirement.type == Requirement.Type.Enemy)
+        {
             imgReqItem.sprite = SpriteManager.enemyGenericImage;
             textReqQty.text = requirement.requireEnemy.name + ": " + requirement.currentQty + "/" + requirement.requireQty;
-        }else if(requirement.type == Requirement.Type.Item){
+            requirementFulfilled = requirement.currentQty >= requirement.requireQty;
+        }
+        else if (requirement.type == Requirement.Type.Item)
+        {
             int qty = 0;
             imgReqItem.sprite = requirement.requireItem.img;
-            if(requirement.requireItem is GeneralEquipment){
+            if (requirement.requireItem is GeneralEquipment)
+            {
                 GeneralEquipment equip = requirement.requireItem as GeneralEquipment;
                 qty = Game.inventory.searchTotalQtyOfEquipmentInInventory(equip.id);
                 textReqQty.text = equip.name + ": " + qty + "/" + requirement.requireQty * multiplier;
-            }else{
+            }
+            else
+            {
                 Item item = requirement.requireItem as Item;
                 qty = Game.inventory.searchTotalQtyOfItemInInventory(item.id);
                 textReqQty.text = item.name + ": " + qty + "/" + requirement.requireQty * multiplier;
             }
             requirementFulfilled = qty >= (requirement.requireQty * multiplier);
-            if(requirementFulfilled){
-                textReqQty.color = Param.requirementText[0];
-            }else{
-                textReqQty.color = Param.requirementText[1];
-            }
+        }
+        if (requirementFulfilled)
+        {
+            textReqQty.color = Param.requirementText[0];
+        }
+        else
+        {
+            textReqQty.color = Param.requirementText[1];
         }
     }
 }

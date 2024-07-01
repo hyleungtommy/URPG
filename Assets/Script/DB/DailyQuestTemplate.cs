@@ -24,8 +24,6 @@ namespace RPG
             quest.desc = desc;
             quest.requireLv = requireLv;
             quest.maxLv = maxLv;
-            quest.rewardEXP = rewardEXP;
-            quest.rewardMoney = rewardMoney;
             quest.accepted = false;
             List<Requirement> requirements = new List<Requirement>();
             for(int i = 0 ; i < requirement.Length ; i++){
@@ -38,6 +36,10 @@ namespace RPG
                 }
             }
             quest.requirements = requirements;
+            QuestReward reward = new QuestReward();
+            reward.money = rewardMoney;
+            reward.exp = rewardEXP;
+            quest.reward = reward;
 
             return quest;
         }

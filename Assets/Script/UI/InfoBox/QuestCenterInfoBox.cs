@@ -29,8 +29,8 @@ public class QuestCenterInfoBox : BasicInfoBox
         textHeader.text = quest.name;
         textBasicInfo.text = "Require Lv." + quest.requireLv;
         textDesc.text = quest.desc;
-        rewardMoney.text = quest.rewardMoney.ToString();
-        rewardEXP.text = quest.rewardEXP.ToString();
+        rewardMoney.text = quest.reward.money.ToString();
+        rewardEXP.text = quest.reward.exp.ToString();
         requirementTextGroupCtrl.render(quest.requirements);
     }
 }

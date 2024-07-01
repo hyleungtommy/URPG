@@ -6,13 +6,14 @@ using UnityEngine.UI;
 public class QuestCenterScene : ListScene
 {
     public HeaderCtrl header;
+    List<DailyQuest> dailyQuests;
     void Start()
     {
         header.render();
         UpdateList();
     }
     void UpdateList(){
-        List<DailyQuest> dailyQuests = Game.questManager.getAvailableQuests();
+        dailyQuests = Game.questManager.getAvailableQuests();
         RenderContentView<QuestEntryButtonCtrl>(dailyQuests.ConvertAll<Displayable>(dailQuest => dailQuest));
     }
 
@@ -23,7 +24,8 @@ public class QuestCenterScene : ListScene
     }
 
     public void OnClickAcceptQuest(){
-        Game.questManager.AcceptQuest(selectedId);
+        int questId = dailyQuests[selectedId].questId;
+        Game.questManager.AcceptQuest(questId);
         infoBox.hide();
         UpdateList();
     }

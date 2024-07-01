@@ -334,6 +334,7 @@ namespace RPG
                 if(Game.currentMapMode == Constant.MapModeProgressive && Game.currLoc.currZone == Game.currLoc.maxZone){
                     Game.platinumCoin += Game.currLoc.platinumCoinGain;
                 }
+                Game.questManager.UpdateEnemyCount(enemyParty);
                 //handleEnemyDrops();
                 //Debug.Log("insert drop=" + RPGSystem.inventory.onSave());
                 //Debug.Log (playerLevelUp.ToString ());
