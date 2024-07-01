@@ -803,9 +803,9 @@ RectTransform:
   m_Father: {fileID: 714322892}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 180.47003, y: -44.16591}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 360.94006, y: 29.44394}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &609926565
@@ -1024,9 +1024,6 @@ MonoBehaviour:
   - {fileID: 1811240103}
   - {fileID: 609926565}
   - {fileID: 1139681693}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   allRequirementMatches: 1
 --- !u!114 &714322894
 MonoBehaviour:
@@ -1669,7 +1666,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2050981857}
         m_MethodName: onClickX
         m_Mode: 1
         m_Arguments:
@@ -1748,10 +1745,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e1df3cf97c13d44286566d746d9dc55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  header: {fileID: 871740621}
+  infoBox: {fileID: 2050981857}
   contentView: {fileID: 712567922}
-  questEntryPrefab: {fileID: 676010121646931040, guid: 879cdd93feda12f4e9dbfd2e15b46229,
+  boxPrefab: {fileID: 676010121646931040, guid: 879cdd93feda12f4e9dbfd2e15b46229,
     type: 3}
+  header: {fileID: 871740621}
 --- !u!114 &969219610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2022,9 +2020,9 @@ RectTransform:
   m_Father: {fileID: 714322892}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 180.47003, y: -73.60985}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 360.94006, y: 29.44394}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1139681693
@@ -2642,9 +2640,9 @@ RectTransform:
   m_Father: {fileID: 714322892}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 180.47003, y: -14.72197}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 360.94006, y: 29.44394}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1811240103
@@ -2744,8 +2742,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: onClickCraft
+      - m_Target: {fileID: 969219609}
+        m_MethodName: OnClickAcceptQuest
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3014,7 +3012,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.3665, y: 50.55}
+  m_AnchoredPosition: {x: 1.3665009, y: 50.55}
   m_SizeDelta: {x: -5.5981445, y: -109.35892}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2047847842
@@ -3069,13 +3067,14 @@ GameObject:
   - component: {fileID: 2050981856}
   - component: {fileID: 2050981859}
   - component: {fileID: 2050981858}
+  - component: {fileID: 2050981857}
   m_Layer: 0
   m_Name: InfoBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2050981856
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3102,6 +3101,24 @@ RectTransform:
   m_AnchoredPosition: {x: 1.0997543, y: -10.328124}
   m_SizeDelta: {x: 393.6, y: 591.6}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2050981857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050981855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7000ca1e5735df7428710a898ba5336c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textHeader: {fileID: 1834250027}
+  textBasicInfo: {fileID: 1161520232}
+  textDesc: {fileID: 1284238006}
+  requirementTextGroupCtrl: {fileID: 714322893}
+  rewardMoney: {fileID: 5450753}
+  rewardEXP: {fileID: 169978117}
 --- !u!114 &2050981858
 MonoBehaviour:
   m_ObjectHideFlags: 0

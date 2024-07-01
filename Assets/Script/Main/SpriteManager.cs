@@ -19,12 +19,14 @@ namespace RPG
         public static Sprite[] floatingTextHeal { set; get; }
         public static Sprite[] floatingTextMpHeal { set; get; }
         public static Dictionary<string,Sprite> buffImgs {set; get;}
+        public static Sprite enemyGenericImage {set; get;}
         static SpriteManager()
         {
             basicBoxSelected = Resources.Load<Sprite>("UI/Frame/item_frame_selected");
             basicBoxNormal = Resources.Load<Sprite>("UI/Frame/item_frame");
             youWin = Resources.Load<Sprite>("UI/Text/you win");
             youLose = Resources.Load<Sprite>("UI/Text/you lose");
+            enemyGenericImage = Resources.Load<Sprite>("UI/Icon/UI_Icon_Skull");
             //load floating numbers
             Sprite[] allFloatingNumber = Resources.LoadAll<Sprite>("UI/Text/num");
             floatingTextEnemyDamage = new Sprite[10];

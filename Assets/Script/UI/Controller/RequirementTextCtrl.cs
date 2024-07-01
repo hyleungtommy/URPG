@@ -22,12 +22,12 @@ public class RequirementTextCtrl : MonoBehaviour
     }
 
     public void Render(Requirement requirement,int multiplier){
-        imgReqItem.sprite = requirement.requireItem.img;
         if(requirement.type == Requirement.Type.Enemy){
-
-            //textReqQty.text = (requirement.requireItem ).name + ": " + requirement.currentQty + "/" + requirement.requireQty;
+            imgReqItem.sprite = SpriteManager.enemyGenericImage;
+            textReqQty.text = requirement.requireEnemy.name + ": " + requirement.currentQty + "/" + requirement.requireQty;
         }else if(requirement.type == Requirement.Type.Item){
             int qty = 0;
+            imgReqItem.sprite = requirement.requireItem.img;
             if(requirement.requireItem is GeneralEquipment){
                 GeneralEquipment equip = requirement.requireItem as GeneralEquipment;
                 qty = Game.inventory.searchTotalQtyOfEquipmentInInventory(equip.id);

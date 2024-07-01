@@ -4,7 +4,7 @@ using RPG;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class QuestEntryButtonCtrl : MonoBehaviour
+public class QuestEntryButtonCtrl :MonoBehaviour, Renderable
 {
     public Text textQuestName;
     public Text textRequireLv;
@@ -20,7 +20,8 @@ public class QuestEntryButtonCtrl : MonoBehaviour
         
     }
 
-    public void render(DailyQuest dailyQuest){
+    public void Render(Displayable item){
+        DailyQuest dailyQuest = item as DailyQuest;
         textQuestName.text = dailyQuest.name;
         textRequireLv.text = "Lv." + dailyQuest.requireLv;
     }

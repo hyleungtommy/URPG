@@ -37,6 +37,7 @@ namespace RPG
                     requirements.Add(new Requirement(item,requireQty[i],Requirement.Type.Item));
                 }
             }
+            quest.requirements = requirements;
 
             return quest;
         }

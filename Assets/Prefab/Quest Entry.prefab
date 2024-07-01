@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6351334904202307689}
   - component: {fileID: 8899219721661513373}
   - component: {fileID: 3809194146253560054}
-  - component: {fileID: -2130124318014416956}
+  - component: {fileID: 7419689492472720418}
   m_Layer: 0
   m_Name: Quest Entry
   m_TagString: Untagged
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &-2130124318014416956
+--- !u!114 &7419689492472720418
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

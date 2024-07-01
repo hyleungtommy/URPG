@@ -24,6 +24,14 @@ namespace RPG
             return dailyQuests.FindAll(quest => quest.accepted == false).ToList();
         }
 
+        public void AcceptQuest(int id){
+            dailyQuests[id].accepted = true;
+        }
+
+        public void AbondandQuest(int id){
+            dailyQuests[id].accepted = false;
+        }
+
     }
 
 }

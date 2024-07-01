@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace RPG{
-public class DailyQuest
+public class DailyQuest:Displayable
 {
     public bool accepted {get; set;}
     public int questId {get; set;}
@@ -15,6 +15,9 @@ public class DailyQuest
     public int rewardEXP {get; set;}
     public int rewardMoney {get; set;}
     
+    public DailyQuest():base(null){
+
+    }
 
 
 }
