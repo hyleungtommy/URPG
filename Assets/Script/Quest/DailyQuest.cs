@@ -56,6 +56,26 @@ public class DailyQuest:Displayable
         }
     }
 
+    public string OnSave(){
+        string requirementSaveStr = "";
+        foreach(Requirement requirement in requirements){
+            requirementSaveStr += requirement.OnSave() + "|";
+        }
+        return requirementSaveStr + (accepted ? "1" : "0");
+    }
+
+    public void OnLoad(string saveStr){
+        string[]saveStrList = saveStr.Split('|');
+        if(saveStrList.Length == requirements.Count + 1){
+            int i = 0;
+            foreach(Requirement requirement in requirements){
+                requirement.OnLoad(saveStrList[i]);
+                i++;
+            }
+            accepted = saveStrList[i].Equals("1");
+        }
+    }
+
 
 }
 

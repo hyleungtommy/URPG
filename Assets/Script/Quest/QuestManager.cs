@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -81,6 +82,27 @@ namespace RPG
             Game.money += dailyQuest.reward.money;
             foreach(BattleCharacter battleCharacter in Game.party.getAllUnlockedCharacter()){
                 battleCharacter.assignEXP(dailyQuest.reward.exp);
+            }
+        }
+
+        public string OnSave(){
+            string saveStr = String.Join(";",dailyQuests.Select(quest => quest.OnSave()).ToArray());
+            Debug.Log("daily_quest saveStr=" +saveStr);
+            return saveStr;
+        }
+
+        public void OnLoad(string saveStr){
+            string[]saveStrList = saveStr.Split(';');
+            int i = 0;
+            foreach (DailyQuest dailyQuest in dailyQuests){
+                if(i < saveStrList.Length){
+                    dailyQuest.OnLoad(saveStrList[i]);
+                    i++;
+                }else{
+                    Debug.Log("daily_quest saveStr OutOfBound, str length=" + saveStrList.Length + " daily quest list=" + dailyQuests.Count + " saveStr=" + saveStr);
+                    break;
+                }
+                
             }
         }
 

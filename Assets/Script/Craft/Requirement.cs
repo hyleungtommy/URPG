@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System;
 namespace RPG{
 public class Requirement:Displayable
 {
@@ -25,6 +25,20 @@ public class Requirement:Displayable
         this.requireQty = requireQty;
         this.type = Type.Enemy;
         this.currentQty = 0;
+    }
+
+    //Save and Load are only for enemy kills
+    public string OnSave(){
+        if(type == Type.Item){
+            return "0";
+        }
+        return currentQty.ToString();
+    }
+
+    public void OnLoad(string saveStr){
+        if(type == Type.Enemy){
+            currentQty = Int32.Parse(saveStr);
+        }
     }
 }
 

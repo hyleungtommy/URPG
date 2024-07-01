@@ -64,6 +64,7 @@ namespace RPG
             string[] exploreSites = DB.exploreSites.Select(site => site.onSave()).ToArray();
             Debug.Log(String.Join(";", exploreSites));
             SaveManager.saveValue(SaveKey.explore_site, String.Join(";", exploreSites));
+            SaveManager.saveValue(SaveKey.daily_quest,questManager.OnSave());
 
             SaveManager.save();
         }
@@ -105,6 +106,8 @@ namespace RPG
             craftSkillManager.OnLoad(SaveManager.getString(SaveKey.craft_skill));
             //Explore
             string[] exploreSites = SaveManager.getString(SaveKey.explore_site).Split(';');
+            //Quest
+            questManager.OnLoad(SaveManager.getString(SaveKey.daily_quest));
             
             if(exploreSites.Length == DB.exploreSites.Length){
                 for(int j = 0 ; j < DB.exploreSites.Length ;j++){
