@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,7 +9,6 @@ public class DailyQuest:Displayable
     public enum State{
         Available=0, Accepted=1, Completed=2
     }
-    public bool accepted {get; set;}
     public State state {get; set;}
     public int questId {get; set;}
     public string name {get; set;}
@@ -50,8 +50,8 @@ public class DailyQuest:Displayable
         foreach(Requirement requirement in requirements){
             if(requirement.type == Requirement.Type.Enemy){
                 if(requirement.requireEnemy.name.Equals(enemyName)){
-                    if(requirement.currentQty + noOfEnemy > requirement.requireQty){
-                        requirement.currentQty = noOfEnemy;
+                    if(requirement.currentQty + noOfEnemy >= requirement.requireQty){
+                        requirement.currentQty = requirement.requireQty;
                     }else{
                         requirement.currentQty += noOfEnemy;
                     }
@@ -65,7 +65,7 @@ public class DailyQuest:Displayable
         foreach(Requirement requirement in requirements){
             requirementSaveStr += requirement.OnSave() + "|";
         }
-        return requirementSaveStr + (accepted ? "1" : "0");
+        return requirementSaveStr + (int)state;
     }
 
     public void OnLoad(string saveStr){
@@ -76,7 +76,7 @@ public class DailyQuest:Displayable
                 requirement.OnLoad(saveStrList[i]);
                 i++;
             }
-            accepted = saveStrList[i].Equals("1");
+            state = (State)Int32.Parse(saveStrList[i]);
         }
     }
 

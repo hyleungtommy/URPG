@@ -26,12 +26,12 @@ namespace RPG
 
         public List<DailyQuest> getAvailableQuests()
         {
-            return dailyQuests.FindAll(quest => quest.accepted == false).ToList();
+            return dailyQuests.FindAll(quest => quest.state == DailyQuest.State.Available).ToList();
         }
 
         public List<DailyQuest> GetAcceptedQuests()
         {
-            return dailyQuests.FindAll(quest => quest.accepted == true).ToList();
+            return dailyQuests.FindAll(quest => quest.state == DailyQuest.State.Accepted).ToList();
         }
 
         public void UpdateEnemyCount(EntityEnemy[] entityEnemy)
@@ -51,7 +51,7 @@ namespace RPG
             }
             foreach (DailyQuest dailyQuest in dailyQuests)
             {
-                if (dailyQuest.accepted)
+                if (dailyQuest.state == DailyQuest.State.Accepted)
                 {
                     foreach(KeyValuePair<string,int> pair in enemyCount){
                         dailyQuest.UpdateEnemyCount(pair.Key, pair.Value);
@@ -62,17 +62,17 @@ namespace RPG
 
         public void AcceptQuest(int id)
         {
-            dailyQuests[id - 1].accepted = true;
+            dailyQuests[id - 1].state = DailyQuest.State.Accepted;
         }
 
         public void AbondandQuest(int id)
         {
-            dailyQuests[id - 1].accepted = false;
+            dailyQuests[id - 1].state = DailyQuest.State.Available;
         }
 
         public void CompleteQuest(int id){
             DailyQuest dailyQuest = dailyQuests[id - 1];
-            dailyQuest.accepted = false;
+            dailyQuest.state = DailyQuest.State.Completed;
             foreach(Requirement requirement in dailyQuest.requirements){
                 if(requirement.type == Requirement.Type.Item){
                     Item item = requirement.requireItem as Item;
@@ -83,6 +83,12 @@ namespace RPG
             foreach(BattleCharacter battleCharacter in Game.party.getAllUnlockedCharacter()){
                 battleCharacter.assignEXP(dailyQuest.reward.exp);
             }
+        }
+
+        public void RenewCompletedDailyQuest(){
+            dailyQuests.ForEach(quest => {
+                if(quest.state == DailyQuest.State.Completed) quest.state = DailyQuest.State.Available;
+            });
         }
 
         public string OnSave(){

@@ -108,6 +108,7 @@ namespace RPG
             string[] exploreSites = SaveManager.getString(SaveKey.explore_site).Split(';');
             //Quest
             questManager.OnLoad(SaveManager.getString(SaveKey.daily_quest));
+            questManager.RenewCompletedDailyQuest();//TODO: make it so that it refresh daily
             
             if(exploreSites.Length == DB.exploreSites.Length){
                 for(int j = 0 ; j < DB.exploreSites.Length ;j++){

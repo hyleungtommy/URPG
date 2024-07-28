@@ -24,7 +24,7 @@ namespace RPG
             quest.desc = desc;
             quest.requireLv = requireLv;
             quest.maxLv = maxLv;
-            quest.accepted = false;
+            quest.state = DailyQuest.State.Available;
             List<Requirement> requirements = new List<Requirement>();
             for(int i = 0 ; i < requirement.Length ; i++){
                 if(requirement[i].StartsWith("E")){
