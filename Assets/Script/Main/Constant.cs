@@ -12,6 +12,7 @@ namespace RPG
         public const string topBarSelectAnItem = "Select an item to use";
         public const string topBarSelectASkill = "Select a skill to use";
         public const string topBarSelectPlayer = "Select a player";
+        public const int maxSaves = 3;
         public enum buyPlace
         {
             shop, none, blacksmith

@@ -72,5 +72,5 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 #Customs
-/Resources/Save/*
+/[Aa]ssets/Resources/Save/*
 *.csv

@@ -142,6 +142,54 @@ namespace RPG
 
         }
 
+        public PartySaveData OnSave(){
+            PartySaveData partySaveData = new PartySaveData();
+            List<string>characterSaveData = new List<string>();
+            List<string>equipmentSaveData = new List<string>();
+            List<string>jobSaveData = new List<string>();
+            int i = 0;
+            foreach (BattleCharacter ch in battleParty)
+            {
+                string chSave = ch.onsave();
+                characterSaveData.Add(chSave);
+                string equipManSave = ch.equipmentManager.onSave();
+                equipmentSaveData.Add(equipManSave);
+                i++;
+            }
+            i=0;
+            foreach (Job j in DB.jobs)
+            {
+                string jobSave = j.onSave();
+                jobSaveData.Add(jobSave);
+                i++;
+            }
+            partySaveData.battleCharacters = characterSaveData.ToArray();
+            partySaveData.equipmentManagers = equipmentSaveData.ToArray();
+            partySaveData.jobs = jobSaveData.ToArray();
+            return partySaveData;
+        }
+
+        public void OnLoad(PartySaveData partySaveData){
+            if(partySaveData.battleCharacters.Length == 8 && partySaveData.equipmentManagers.Length == 8 && partySaveData.jobs.Length == 8){
+                int i = 0;
+                foreach (BattleCharacter ch in battleParty)
+                {
+                    string chSave = partySaveData.battleCharacters[i];
+                    ch.onload(chSave);
+                    string equipManSave = partySaveData.equipmentManagers[i];
+                    ch.equipmentManager.onLoad(equipManSave);
+                    i++;
+                }
+                i = 0;
+                foreach (Job j in DB.jobs)
+                {
+                    string jobSave = partySaveData.jobs[i];
+                    j.onLoad(jobSave);
+                    i++;
+                }
+            }
+        }
+
         public void load()
         {
             int i = 0;
