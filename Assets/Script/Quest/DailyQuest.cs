@@ -5,7 +5,11 @@ using UnityEngine;
 namespace RPG{
 public class DailyQuest:Displayable
 {
+    public enum State{
+        Available=0, Accepted=1, Completed=2
+    }
     public bool accepted {get; set;}
+    public State state {get; set;}
     public int questId {get; set;}
     public string name {get; set;}
     public string desc {get; set;}
