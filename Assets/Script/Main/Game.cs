@@ -22,6 +22,7 @@ namespace RPG
         public static bool shouldRefreshTradeList = true;
         public static List<TradeList> currentTradeList = new List<TradeList>();
         public static GlobalBuffManager globalBuffManager = new GlobalBuffManager();
+        public static QuestManager questManager = new QuestManager();
 
         public static void initialize(){
             party = new Party();
@@ -63,6 +64,7 @@ namespace RPG
             string[] exploreSites = DB.exploreSites.Select(site => site.onSave()).ToArray();
             Debug.Log(String.Join(";", exploreSites));
             SaveManager.saveValue(SaveKey.explore_site, String.Join(";", exploreSites));
+            SaveManager.saveValue(SaveKey.daily_quest,questManager.OnSave());
 
             SaveManager.save();
         }
@@ -104,6 +106,9 @@ namespace RPG
             craftSkillManager.OnLoad(SaveManager.getString(SaveKey.craft_skill));
             //Explore
             string[] exploreSites = SaveManager.getString(SaveKey.explore_site).Split(';');
+            //Quest
+            questManager.OnLoad(SaveManager.getString(SaveKey.daily_quest));
+            questManager.RenewCompletedDailyQuest();//TODO: make it so that it refresh daily
             
             if(exploreSites.Length == DB.exploreSites.Length){
                 for(int j = 0 ; j < DB.exploreSites.Length ;j++){

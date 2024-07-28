@@ -39,6 +39,7 @@ namespace RPG
         public static EnchantRecipeTemplate[]enchantRecipeTemplates;
         public static TradeListingTemplate[]tradeListingTemplate;
         public static GlobalBuffTemplate[] globalBuffTemplates;
+        public static DailyQuestTemplate[] dailyQuestTemplates;
 
         /// <summary>
         /// load data from all jsons from Resources/Data
@@ -149,6 +150,12 @@ namespace RPG
             TextAsset globalBuffJSON = Resources.Load<TextAsset>("Data/GlobalBuff");
             globalBuffTemplates = JsonHelper.FromJson<GlobalBuffTemplate>(globalBuffJSON.text);
 
+            //get daily quests
+            TextAsset dailyQuestJSON = Resources.Load<TextAsset>("Data/DailyQuest");
+            dailyQuestTemplates = JsonHelper.FromJson<DailyQuestTemplate>(dailyQuestJSON.text);
+            Game.questManager.loadQuests();
+            
+
         }
 
         /// <summary>
@@ -239,6 +246,23 @@ namespace RPG
                 return null;
             }
             return equipments[parsedId - 1];
+        }
+
+        public static EnemyTemplate QueryEnemy(int id){
+            if(id >=  equipments.Length){
+                Debug.Log("Failed to query equipment id=" + id);
+                return null;
+            }
+            return enemyTemplates[id - 1];
+        }
+
+        public static EnemyTemplate QueryEnemy(string id){
+            int parsedId = Int32.Parse(id);
+            if(parsedId >=  equipments.Length){
+                Debug.Log("Failed to query equipment id=" + id);
+                return null;
+            }
+            return enemyTemplates[parsedId - 1];
         }
 
     }

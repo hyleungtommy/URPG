@@ -205,7 +205,7 @@
             "platinumCoinGain": 75
         }, {
             "name": "Vulkan Volcano",
-            "desc": "This active volcano is also where the demon lord's kingdom locate",
+            "desc": "This active volcano is the only way go toward the demon lord's castle",
             "bgImg": "008-Vulkan Volcano",
             "battleImg": "008-Vulkan Volcano BG",
             "townName": "Emperial Barrack",
@@ -229,6 +229,34 @@
             ],
             "boss": 60,
             "rareEnemy":59,
+            "platinumCoinGain": 100
+        },
+        {
+            "name": "Devil Battlefield",
+            "desc": "Human army are facing Devil army in this battlefield",
+            "bgImg": "010-Demon Battlefield",
+            "battleImg": "010-Demon Battlefield",
+            "townName": "Emperial Barrack",
+            "townbg": "008-Emperial Barrack",
+            "townFacility": [
+                "Shop", "SkillCenter", "Blacksmith", "Guild", "Camp", "Trade"
+            ],
+            "reqLv": 60,
+            "maxLv": 65,
+            "maxArea": 50,
+            "enemyList": [
+                61, 62, 63, 64, 65, 66
+            ],
+            "appearChance": [
+                20,
+                20,
+                20,
+                15,
+                15,
+                15
+            ],
+            "boss": 68,
+            "rareEnemy":67,
             "platinumCoinGain": 100
         },
         {

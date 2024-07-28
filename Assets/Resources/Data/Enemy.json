@@ -579,7 +579,7 @@
     },
     {
       "id": 47,
-      "name": "Weatherd Corpse",
+      "name": "Desert Spirit",
       "HP": 50000,
       "MP": 6000,
       "ATK": 1400,
@@ -639,7 +639,7 @@
     },
     {
       "id": 51,
-      "name": "Desert Sacrificer",
+      "name": "Reanimated Bones",
       "HP": 250000,
       "MP": 5000,
       "ATK": 1700,
@@ -654,7 +654,7 @@
     },
     {
       "id": 52,
-      "name": "Fossil Devil",
+      "name": "Bone Dragon",
       "HP": 500000,
       "MP": 12000,
       "ATK": 1800,
@@ -669,7 +669,7 @@
     },
     {
       "id": 53,
-      "name": "Bomb",
+      "name": "Fire Minions",
       "HP": 55000,
       "MP": 5000,
       "ATK": 1850,
@@ -714,7 +714,7 @@
     },
     {
       "id": 56,
-      "name": "Vulkan Snake",
+      "name": "Volcano Snake",
       "HP": 65000,
       "MP": 5000,
       "ATK": 2000,
@@ -789,7 +789,7 @@
     },
     {
       "id": 61,
-      "name": "Winged Beast",
+      "name": "Chained Beast",
       "HP": 80000,
       "MP": 8000,
       "ATK": 2550,
@@ -804,7 +804,7 @@
     },
     {
       "id": 62,
-      "name": "Devil Guard",
+      "name": "Devil Soldier",
       "HP": 81500,
       "MP": 8000,
       "ATK": 2600,
@@ -819,7 +819,7 @@
     },
     {
       "id": 63,
-      "name": "Devil Mage",
+      "name": "Devil Battle Mage",
       "HP": 75000,
       "MP": 15000,
       "ATK": 2000,
@@ -849,7 +849,7 @@
     },
     {
       "id": 65,
-      "name": "Bone Machine",
+      "name": "Devil Blade Spirit",
       "HP": 85000,
       "MP": 10000,
       "ATK": 2700,
@@ -864,7 +864,7 @@
     },
     {
       "id": 66,
-      "name": "Corrupted Knight",
+      "name": "Devil Elite Knight",
       "HP": 82500,
       "MP": 10000,
       "ATK": 2750,
@@ -879,7 +879,7 @@
     },
     {
       "id": 67,
-      "name": "Colossus",
+      "name": "Devil Colossus",
       "HP": 400000,
       "MP": 10000,
       "ATK": 2800,
@@ -1029,7 +1029,7 @@
     },
     {
       "id": 77,
-      "name": "Gargoyle",
+      "name": "Ice Gargoyle",
       "HP": 600000,
       "MP": 10000,
       "ATK": 3500,
@@ -1134,7 +1134,7 @@
     },
     {
       "id": 84,
-      "name": "All seer",
+      "name": "Scouting Eye",
       "HP": 750000,
       "MP": 10000,
       "ATK": 4200,
