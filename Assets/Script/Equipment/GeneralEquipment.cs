@@ -85,6 +85,7 @@ namespace RPG
                 if (type == "Robe Armor") e.equipmentType = Constant.EquipmentType.RobeArmor;
             }else if(type == "Accessory"){
                 e = new Accessory(img);
+                e.equipmentType = Constant.EquipmentType.Accessory;
             }
             return e;
         }

@@ -41,6 +41,8 @@ public class SmithingScene : BasicScene{
                 }
             }
         }
+        craftEquipmentInfoBox.gameObject.SetActive(false);
+        craftResultDialog.gameObject.SetActive(false);
         renderScrollView();
     }
 
@@ -87,8 +89,6 @@ public class SmithingScene : BasicScene{
             
             
         }
-        craftEquipmentInfoBox.gameObject.SetActive(false);
-        craftResultDialog.gameObject.SetActive(false);
     }
 
     public void onClickTab(int tabId){

@@ -153,24 +153,29 @@ namespace RPG
             saveStr += ";";
             if (armorEquipped != null)
                 saveStr += armorEquipped.onSave();
-            //Debug.Log("Equip Hot Bar :" + saveStr);
+            saveStr += ";";  
+            if (accessoryEquipped != null)
+                saveStr += accessoryEquipped.onSave();
             return saveStr;
         }
 
         public void onLoad(string saveStr)
         {
             string[] saveStrArray = saveStr.Split(';');
-            if (saveStrArray.Length == 3)
+            if (saveStrArray.Length == 4)
             {
                 Equipment weapon = DB.createEquipmentFormSaveStr(saveStrArray[0]);
                 Equipment shield = DB.createEquipmentFormSaveStr(saveStrArray[1]);
                 Equipment armor = DB.createEquipmentFormSaveStr(saveStrArray[2]);
+                Equipment accessory = DB.createEquipmentFormSaveStr(saveStrArray[3]);
                 if(weapon != null)
                     weaponEquipped = weapon as Weapon;
                 if(shield != null)
                     shieldEquipped = shield as Shield;
                 if(armor != null)
                     armorEquipped = armor as Armor;
+                if(accessory != null)
+                    accessoryEquipped = accessory as Accessory;
             }
         }
 
