@@ -1,0 +1,20 @@
+room type:
+0-Empty(No room)
+1-Room with 1 door
+2-Room with 2 doors
+3-Room with 3 doors
+4-Empty Room
+5-Room before boss
+6-Boss Room
+7-Room with Monster (turn to empty room after)
+8-Room with Trap (player take damage, turn to empty room after)
+9-Room with Treasure (turn to empty room after)
+10-Room with Mimic (turn to empty room after)
+11-Room with Treasure and Monster (turn to empty room after)
+12-Room with Transportation Trap (Transport you to a previous explored room, turn to empty room after)
+
+Dungeon generation rule:
+1. Dunegon is generated in tree structure
+2. Each level has max 3 rooms, min 1 room
+3. Each level has exactly 1 room to next level (rm type 1,2,3)
+4. Last 2 level must be room 5 and room 6 
