@@ -7,6 +7,9 @@ namespace RPG
     [Serializable]
     public class SaveData{
         public string playerName;
+        public int playerLv;
+        public string previewMapName;
+        public string previewMapLoc;
         public int playerMoney;
         public string[] battleCharacters;
         public string[] equipmentManagers;

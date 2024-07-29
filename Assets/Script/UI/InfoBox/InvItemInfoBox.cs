@@ -45,7 +45,7 @@ public class InvItemInfoBox : BasicInfoBox
     public void onClickDestroyItem()
     {
         slot.clear();
-        Game.saveGame();
+        Game.SaveGame();
         scene.render();
         hide();
     }
@@ -53,7 +53,7 @@ public class InvItemInfoBox : BasicInfoBox
     public void onClickUse(){
         slot.clear();
         (item as ItemSpecial).OnUse();
-        Game.saveGame();
+        Game.SaveGame();
         scene.render();
         hide();
     }

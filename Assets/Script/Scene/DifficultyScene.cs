@@ -24,7 +24,6 @@ public class DifficultyScene : MonoBehaviour
 
     public void onClickButton(int id){
         Game.difficulty = id;
-        SaveManager.saveValue(SaveKey.difficulty,Game.difficulty);
         render();
     }
 }

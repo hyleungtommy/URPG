@@ -47,7 +47,7 @@ public class BlacksmithInfoBox : BasicInfoBox
         Game.money -= e.price;
         Equipment eq = e.toEquipment(0);
         Game.inventory.smartInsert(eq, 1);
-        Game.saveGame();
+        Game.SaveGame();
         hide();
         scene.render();
     }

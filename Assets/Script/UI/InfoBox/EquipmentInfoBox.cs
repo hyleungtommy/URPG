@@ -88,7 +88,7 @@ public class EquipmentInfoBox : BasicInfoBox
     {
         character.equipmentManager.equip(slot, e);
         hide();
-        Game.saveGame();
+        Game.SaveGame();
         scene.render();
     }
 
@@ -96,7 +96,7 @@ public class EquipmentInfoBox : BasicInfoBox
     {
         character.equipmentManager.unequip(equippedSlotId);
         hide();
-        Game.saveGame();
+        Game.SaveGame();
         scene.render();
     }
 }

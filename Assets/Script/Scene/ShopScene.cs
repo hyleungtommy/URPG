@@ -78,7 +78,7 @@ public class ShopScene : BasicScene
     {
         Game.money -= calculateSum();
         Game.inventory.smartInsert(shopList[selectedSlotId], this.buyQty);
-        Game.saveGame();
+        Game.SaveGame();
         header.render();
     }
 

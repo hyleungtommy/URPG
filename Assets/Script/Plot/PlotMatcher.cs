@@ -47,7 +47,7 @@ namespace RPG
 
             }
             Game.plotPt += pd.plotPtIncrement;
-            Game.saveGame();
+            Game.SaveGame();
             Debug.Log("End. Plot=" + Game.plotPt);
             if (pd.startNextPlotAtEnd)
             {

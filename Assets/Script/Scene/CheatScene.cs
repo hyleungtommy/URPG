@@ -55,18 +55,14 @@ public class CheatScene : MonoBehaviour
         switch (i){
             case 0:
                 Param.noCraftRequirement = noCraftRequirement.isOn;
-                SaveManager.saveValue(SaveKey.no_craft_requirement, Param.noCraftRequirement);
                 break;
             case 1:
                 Param.unlockAllRecipe = unlockAllRecipe.isOn;
-                SaveManager.saveValue(SaveKey.unlock_all_recipe, Param.unlockAllRecipe);
                 break;
             case 2:
                 Param.skillNoCooldown = skillNoCooldown.isOn;
-                SaveManager.saveValue(SaveKey.skill_no_cooldown, Param.skillNoCooldown);
                 break;
         }
-        SaveManager.save();
         Render();
     }
 

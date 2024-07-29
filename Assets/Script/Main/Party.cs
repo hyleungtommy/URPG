@@ -118,29 +118,29 @@ namespace RPG
 
         }
 
-        public void save()
-        {
-            int i = 0;
-            foreach (BattleCharacter ch in battleParty)
-            {
-                string chSave = ch.onsave();
-                Debug.Log(SaveKey.battle_character_i + i + ":" + chSave);
-                SaveManager.saveValue(SaveKey.battle_character_i + i, chSave);
-                string equipManSave = ch.equipmentManager.onSave();
-                Debug.Log(SaveKey.equip_manager_i + i + ":" + equipManSave);
-                SaveManager.saveValue(SaveKey.equip_manager_i + i, equipManSave);
-                i++;
-            }
-            i = 0;
-            foreach (Job j in DB.jobs)
-            {
-                string jobSave = j.onSave();
-                Debug.Log(SaveKey.job_i + i + ":" + jobSave);
-                SaveManager.saveValue(SaveKey.job_i + i, jobSave);
-                i++;
-            }
+        // public void save()
+        // {
+        //     int i = 0;
+        //     foreach (BattleCharacter ch in battleParty)
+        //     {
+        //         string chSave = ch.onsave();
+        //         Debug.Log(SaveKey.battle_character_i + i + ":" + chSave);
+        //         SaveManager.saveValue(SaveKey.battle_character_i + i, chSave);
+        //         string equipManSave = ch.equipmentManager.onSave();
+        //         Debug.Log(SaveKey.equip_manager_i + i + ":" + equipManSave);
+        //         SaveManager.saveValue(SaveKey.equip_manager_i + i, equipManSave);
+        //         i++;
+        //     }
+        //     i = 0;
+        //     foreach (Job j in DB.jobs)
+        //     {
+        //         string jobSave = j.onSave();
+        //         Debug.Log(SaveKey.job_i + i + ":" + jobSave);
+        //         SaveManager.saveValue(SaveKey.job_i + i, jobSave);
+        //         i++;
+        //     }
 
-        }
+        // }
 
         public PartySaveData OnSave(){
             PartySaveData partySaveData = new PartySaveData();
@@ -190,24 +190,28 @@ namespace RPG
             }
         }
 
-        public void load()
-        {
-            int i = 0;
-            foreach (BattleCharacter ch in battleParty)
-            {
-                string chSave = SaveManager.getString(SaveKey.battle_character_i + i);
-                ch.onload(chSave);
-                string equipManSave = SaveManager.getString(SaveKey.equip_manager_i + i);
-                ch.equipmentManager.onLoad(equipManSave);
-                i++;
-            }
-            i = 0;
-            foreach (Job j in DB.jobs)
-            {
-                string jobSave = SaveManager.getString(SaveKey.job_i + i);
-                j.onLoad(jobSave);
-                i++;
-            }
+        // public void load()
+        // {
+        //     int i = 0;
+        //     foreach (BattleCharacter ch in battleParty)
+        //     {
+        //         string chSave = SaveManager.getString(SaveKey.battle_character_i + i);
+        //         ch.onload(chSave);
+        //         string equipManSave = SaveManager.getString(SaveKey.equip_manager_i + i);
+        //         ch.equipmentManager.onLoad(equipManSave);
+        //         i++;
+        //     }
+        //     i = 0;
+        //     foreach (Job j in DB.jobs)
+        //     {
+        //         string jobSave = SaveManager.getString(SaveKey.job_i + i);
+        //         j.onLoad(jobSave);
+        //         i++;
+        //     }
+        // }
+
+        public int GetMainCharacterLv(){
+            return battleParty[0].lv;
         }
 
         /// <summary>

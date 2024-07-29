@@ -69,7 +69,7 @@ public class PartyManagementScene : BasicScene
                 boxes[i].setSelected(false);
             }
             selectedCharacter = null;
-            Game.saveGame();
+            Game.SaveGame();
         }
         render();
     }

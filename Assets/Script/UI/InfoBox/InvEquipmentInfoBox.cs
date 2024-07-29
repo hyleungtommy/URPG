@@ -54,7 +54,7 @@ public class InvEquipmentInfoBox : BasicInfoBox
     public void onClickDestroyItem()
     {
         slot.clear();
-        Game.saveGame();
+        Game.SaveGame();
         scene.render();
         hide();
     }

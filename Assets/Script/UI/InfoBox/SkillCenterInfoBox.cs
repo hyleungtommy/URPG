@@ -58,7 +58,7 @@ public class SkillCenterInfoBox : BasicInfoBox
         Game.money -= skill.price;
         character.skillPtsSpent += skill.skillPts;
         scene.onLearn();
-        Game.saveGame();
+        Game.SaveGame();
         hide();
     }
 

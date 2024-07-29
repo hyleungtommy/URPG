@@ -55,6 +55,6 @@ public class MainMenuScene : BasicScene
     void OnApplicationQuit()
     {
         Debug.Log("Save Game start");
-        Game.saveGame();
+        Game.SaveGame();
     }
 }

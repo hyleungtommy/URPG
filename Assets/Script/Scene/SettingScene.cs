@@ -27,12 +27,12 @@ public class SettingScene : BasicScene
 
     public void onClickSaveGame()
     {
-        Game.saveGame();
+        Game.SaveGame();
     }
 
     public void onClickQuitGame()
     {
-        Game.saveGame();
+        Game.SaveGame();
         Application.Quit();
     }
 

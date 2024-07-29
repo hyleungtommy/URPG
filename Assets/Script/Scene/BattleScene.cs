@@ -353,7 +353,7 @@ public class BattleScene : BasicScene
             rewardPanel.setBattleCtrl(this, this.battleCtrl);
             rewardPanel.setEnemyDrop(drops);
             rewardPanel.show();
-            Game.saveGame();
+            Game.SaveGame();
             //RPGSystem.saveGame();
         }
 
