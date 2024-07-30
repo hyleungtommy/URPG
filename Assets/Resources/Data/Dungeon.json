@@ -62,8 +62,18 @@
     },
     {
         "id":7,
+        "name":"Magma Cave",
+        "bg":"007-Magma Cave",
+        "minFloor":40,
+        "maxFloor":45,
+        "enemyList":[],
+        "appearChance":[],
+        "boss":0
+    },
+    {
+        "id":7,
         "name":"Demon Castle",
-        "bg":"007-Demon Castle",
+        "bg":"008-Demon Castle",
         "minFloor":40,
         "maxFloor":45,
         "enemyList":[],
