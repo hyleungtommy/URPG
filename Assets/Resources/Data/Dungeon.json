@@ -3,81 +3,95 @@
         "id":1,
         "name":"Abandoned Mine",
         "bg":"001-Abandoned Mine",
-        "minFloor":10,
-        "maxFloor":15,
+        "minFloor":7,
+        "maxFloor":10,
         "enemyList":[69,70,71,72,73],
         "appearChance":[20,20,20,20,20],
         "boss":75,
-        "rareEnemy":74
+        "availableRoomType":[0,1,2,3,4,5,6,9]
     },
     {
         "id":2,
         "name":"Deep Wood",
         "bg":"002-Deep Wood",
-        "minFloor":15,
-        "maxFloor":20,
-        "enemyList":[],
-        "appearChance":[],
-        "boss":0
+        "minFloor":10,
+        "maxFloor":15,
+        "enemyList":[92,93,94,95,96],
+        "appearChance":[20,20,20,20,20],
+        "boss":97,
+        "mimic":134,
+        "availableRoomType":[0,1,2,3,4,5,6,7,9,10]
     },
     {
         "id":3,
         "name":"Forgotten Grotto",
         "bg":"003-Forgotten Grotto",
-        "minFloor":20,
-        "maxFloor":25,
-        "enemyList":[],
-        "appearChance":[],
-        "boss":0
+        "minFloor":10,
+        "maxFloor":20,
+        "enemyList":[98,99,100,101,102],
+        "appearChance":[20,20,20,20,20],
+        "boss":103,
+        "mimic":134,
+        "availableRoomType":[0,1,2,3,4,5,6,7,8,9,10]
     },
     {
         "id":4,
         "name":"Demon Temple",
         "bg":"004-Demon Temple",
-        "minFloor":25,
-        "maxFloor":30,
-        "enemyList":[],
-        "appearChance":[],
-        "boss":0
+        "minFloor":10,
+        "maxFloor":25,
+        "enemyList":[104,105,106,107,108],
+        "appearChance":[20,20,20,20,20],
+        "boss":109,
+        "mimic":135,
+        "availableRoomType":[0,1,2,3,4,5,6,7,8,9,10,11]
     },
     {
         "id":5,
         "name":"Catacomb of Doom",
         "bg":"005-Catacomb of Doom",
-        "minFloor":30,
-        "maxFloor":35,
-        "enemyList":[],
-        "appearChance":[],
-        "boss":0
+        "minFloor":15,
+        "maxFloor":25,
+        "enemyList":[110,111,112,113,114],
+        "appearChance":[20,20,20,20,20],
+        "boss":115,
+        "mimic":135,
+        "availableRoomType":[0,1,2,3,4,5,6,7,8,9,10,11]
     },
     {
         "id":6,
         "name":"Great Pyramid",
         "bg":"006-Great Pyramid",
-        "minFloor":35,
-        "maxFloor":40,
-        "enemyList":[],
-        "appearChance":[],
-        "boss":0
+        "minFloor":15,
+        "maxFloor":30,
+        "enemyList":[116,117,118,119,120],
+        "appearChance":[20,20,20,20,20],
+        "boss":121,
+        "mimic":136,
+        "availableRoomType":[0,1,2,3,4,5,6,7,8,9,10,11,12]
     },
     {
         "id":7,
         "name":"Magma Cave",
         "bg":"007-Magma Cave",
-        "minFloor":40,
-        "maxFloor":45,
-        "enemyList":[],
-        "appearChance":[],
-        "boss":0
+        "minFloor":15,
+        "maxFloor":30,
+        "enemyList":[122,123,124,125,126],
+        "appearChance":[20,20,20,20,20],
+        "boss":127,
+        "mimic":136,
+        "availableRoomType":[0,1,2,3,4,5,6,7,8,9,10,11,12]
     },
     {
         "id":7,
         "name":"Demon Castle",
         "bg":"008-Demon Castle",
-        "minFloor":40,
-        "maxFloor":45,
-        "enemyList":[],
-        "appearChance":[],
-        "boss":0
+        "minFloor":15,
+        "maxFloor":30,
+        "enemyList":[128,129,130,131,132],
+        "appearChance":[20,20,20,20,20],
+        "boss":133,
+        "mimic":136,
+        "availableRoomType":[0,1,2,3,4,5,6,7,8,9,10,11,12]
     }]
 }

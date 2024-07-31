@@ -4,7 +4,6 @@
 - skill can learn exceed max skill lv
 
 -TODO Features:
-    -Save using JSON & multiple saves
     -Dungeon
         -New enemies
         -New Daily Quests
