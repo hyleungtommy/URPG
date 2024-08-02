@@ -40,6 +40,7 @@ namespace RPG
         public static TradeListingTemplate[]tradeListingTemplate;
         public static GlobalBuffTemplate[] globalBuffTemplates;
         public static DailyQuestTemplate[] dailyQuestTemplates;
+        public static DungeonTemplate[] dunegonTemplates;
 
         /// <summary>
         /// load data from all jsons from Resources/Data
@@ -154,7 +155,12 @@ namespace RPG
             TextAsset dailyQuestJSON = Resources.Load<TextAsset>("Data/DailyQuest");
             dailyQuestTemplates = JsonHelper.FromJson<DailyQuestTemplate>(dailyQuestJSON.text);
             Game.questManager.loadQuests();
+
+            //Dunegon
+            TextAsset dunegonTemplateJSON = Resources.Load<TextAsset>("Data/Dungeon");
+            dunegonTemplates = JsonHelper.FromJson<DungeonTemplate>(dunegonTemplateJSON.text);
             
+            DungeonGenerator.GenerateDungeon(0);
 
         }
 
