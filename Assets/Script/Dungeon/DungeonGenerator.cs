@@ -7,13 +7,13 @@ namespace RPG{
     // 3. Each level has exactly 1 room to next level (rm type 1,2,3)
     // 4. Last 2 level must be room 5 and room 6
         public static int[,] GenerateDungeon(int dungeonId){
-            DungeonTemplate dungeonTemplate = DB.dunegonTemplates[dungeonId];
+            DungeonTemplate dungeonTemplate = DB.QueryDungeon(dungeonId);
             int rndFloor = Random.Range(dungeonTemplate.minFloor, dungeonTemplate.maxFloor + 1);
             int[,] dungeon = new int[rndFloor,3];
             int[] rmNoForEachFloor = new int[rndFloor];
             //generate floors
-            for(int i = 1 ; i < rndFloor - 2 ; i++){
-                int rndTotalRmNo = Random.Range(1,3) + 1;
+            for(int i = 1 ; i < rndFloor - 1 ; i++){
+                int rndTotalRmNo = Random.Range(0,3) + 1;
                 rmNoForEachFloor[i] = rndTotalRmNo;
                 //generate rooms
                 for(int j = 0 ; j < rndTotalRmNo; j++){
@@ -27,7 +27,10 @@ namespace RPG{
             //replace one room with door room
             for(int i = 0 ; i < rndFloor - 2 ; i++){
                 int rmNoForNextFloor = rmNoForEachFloor[i + 1];
-                int rndPosition = Random.Range(0,rmNoForNextFloor);
+                int rndPosition = 0;
+                if(i > 0){
+                    rndPosition = Random.Range(0,rmNoForEachFloor[i]);
+                }
                 int rmType;
                 if(rmNoForNextFloor == 1){
                     rmType = (int)RoomType.ONE_DOOR;
@@ -39,6 +42,7 @@ namespace RPG{
                 dungeon[i,rndPosition] = rmType;
             }
             Print2DArray(dungeon);
+            //Debug.Log(Util.printArray<int>(rmNoForEachFloor));
             return dungeon;
         }
 
@@ -54,7 +58,7 @@ namespace RPG{
                 {
                    str += array[i, j] + ",";
                 }
-                Debug.Log("Floor " + i + " : [" + str + "]");
+                Debug.Log("Floor " + (i + 1) + " : [" + str + "]");
             }
         }
     }

@@ -24,6 +24,7 @@ namespace RPG
         public static List<TradeList> currentTradeList = new List<TradeList>();
         public static GlobalBuffManager globalBuffManager = new GlobalBuffManager();
         public static QuestManager questManager = new QuestManager();
+        public static Dungeon currentDungeon;
 
         public static void initialize(){
             party = new Party();

@@ -5,8 +5,8 @@
 
 -TODO Features:
     -Dungeon
-        -New enemies
         -New Daily Quests
+        -Dungeon Map
     -Trade station more trading options
     -Warehouse & Warehouse upgrade
     -Township

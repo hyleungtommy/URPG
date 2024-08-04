@@ -18,7 +18,7 @@ namespace Editor
             EnemyTemplate[]enemyList = new EnemyTemplate[5];
             Array.Copy(enemyTemplates,enemyList,5);
             int[] appearChance = {100,0,0,0,0};
-            map = new Map(0,"test map","",null,null,1,10,20,enemyList,appearChance,enemyList[4],enemyList[2]);
+            map = new Map(0,"test map","",null,null,1,10,20,enemyList,appearChance,enemyList[4],enemyList[2],0);
             Game.currLoc = map;
         }
 

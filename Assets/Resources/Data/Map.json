@@ -57,7 +57,8 @@
             ],
             "boss": 12,
             "rareEnemy":11,
-            "platinumCoinGain": 10
+            "platinumCoinGain": 10,
+            "dungeonId": 1
         },
         {
             "name": "Magical Forest",
@@ -90,7 +91,8 @@
             ],
             "boss": 20,
             "rareEnemy":19,
-            "platinumCoinGain": 15
+            "platinumCoinGain": 15,
+            "dungeonId": 2
         },
         {
             "name": "Southern Islands",
@@ -118,7 +120,8 @@
             ],
             "boss": 28,
             "rareEnemy":27,
-            "platinumCoinGain": 20
+            "platinumCoinGain": 20,
+            "dungeonId": 3
         },
         {
             "name": "Crystal Cave",
@@ -146,7 +149,8 @@
             ],
             "boss": 36,
             "rareEnemy":35,
-            "platinumCoinGain": 30
+            "platinumCoinGain": 30,
+            "dungeonId": 4
         },
         {
             "name": "Haunted Forest",
@@ -174,7 +178,8 @@
             ],
             "boss": 44,
             "rareEnemy":43,
-            "platinumCoinGain": 50
+            "platinumCoinGain": 50,
+            "dungeonId": 5
         },
         {
             "name": "Burning Desert",
@@ -202,7 +207,8 @@
             ],
             "boss": 52,
             "rareEnemy":51,
-            "platinumCoinGain": 75
+            "platinumCoinGain": 75,
+            "dungeonId": 6
         }, {
             "name": "Vulkan Volcano",
             "desc": "This active volcano is the only way go toward the demon lord's castle",
@@ -229,7 +235,8 @@
             ],
             "boss": 60,
             "rareEnemy":59,
-            "platinumCoinGain": 100
+            "platinumCoinGain": 100,
+            "dungeonId": 7
         },
         {
             "name": "Devil Battlefield",
@@ -257,7 +264,8 @@
             ],
             "boss": 68,
             "rareEnemy":67,
-            "platinumCoinGain": 100
+            "platinumCoinGain": 100,
+            "dungeonId": 8
         },
         {
             "name": "Ninguan Tundra",

@@ -89,7 +89,8 @@ public class RewardPanelCtrl : MonoBehaviour
             }
         }
         btnRebattle.gameObject.SetActive(Game.currentMapMode == Constant.MapModeExplore);
-        btnNextArea.gameObject.SetActive(Game.currentMapMode == Constant.MapModeProgressive && battleCtrl.battleState == BattleCtrl.PLAYER_WIN);
+        btnNextArea.gameObject.SetActive((Game.currentMapMode == Constant.MapModeProgressive || Game.currentMapMode == Constant.MapModeDungeon) 
+                                        && battleCtrl.battleState == BattleCtrl.PLAYER_WIN);
 
     }
 

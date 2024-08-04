@@ -20,6 +20,7 @@ namespace RPG
         public static Sprite[] floatingTextMpHeal { set; get; }
         public static Dictionary<string,Sprite> buffImgs {set; get;}
         public static Sprite enemyGenericImage {set; get;}
+        public static Sprite[] dungeonSprite {set; get;}
         static SpriteManager()
         {
             basicBoxSelected = Resources.Load<Sprite>("UI/Frame/item_frame_selected");
@@ -47,6 +48,16 @@ namespace RPG
             foreach(BuffTemplate b in DB.buffs){
                 buffImgs.Add(b.img,Resources.Load<Sprite>("Buff Icon/" + b.img));
             }
+            //load dungeon
+            dungeonSprite = new Sprite[8];
+            dungeonSprite[0] = Resources.Load<Sprite>("Background/Dungeon/before_boss_room");
+            dungeonSprite[1] = Resources.Load<Sprite>("Background/Dungeon/boss_room");
+            dungeonSprite[2] = Resources.Load<Sprite>("Background/Dungeon/empty_room");
+            dungeonSprite[3] = Resources.Load<Sprite>("Background/Dungeon/hallway");
+            dungeonSprite[4] = Resources.Load<Sprite>("Background/Dungeon/magic_room");
+            dungeonSprite[5] = Resources.Load<Sprite>("Background/Dungeon/monster_room");
+            dungeonSprite[6] = Resources.Load<Sprite>("Background/Dungeon/trap_room");
+            dungeonSprite[7] = Resources.Load<Sprite>("Background/Dungeon/treasure_room");
         }
     }
 }

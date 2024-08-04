@@ -159,9 +159,6 @@ namespace RPG
             //Dunegon
             TextAsset dunegonTemplateJSON = Resources.Load<TextAsset>("Data/Dungeon");
             dunegonTemplates = JsonHelper.FromJson<DungeonTemplate>(dunegonTemplateJSON.text);
-            
-            DungeonGenerator.GenerateDungeon(0);
-
         }
 
         /// <summary>
@@ -255,8 +252,8 @@ namespace RPG
         }
 
         public static EnemyTemplate QueryEnemy(int id){
-            if(id >=  equipments.Length){
-                Debug.Log("Failed to query equipment id=" + id);
+            if(id < 1 || id >=  equipments.Length){
+                Debug.Log("Failed to query enemy id=" + id);
                 return null;
             }
             return enemyTemplates[id - 1];
@@ -265,10 +262,18 @@ namespace RPG
         public static EnemyTemplate QueryEnemy(string id){
             int parsedId = Int32.Parse(id);
             if(parsedId >=  equipments.Length){
-                Debug.Log("Failed to query equipment id=" + id);
+                Debug.Log("Failed to query enemy id=" + id);
                 return null;
             }
             return enemyTemplates[parsedId - 1];
+        }
+
+        public static DungeonTemplate QueryDungeon(int id){
+            if(id >= dunegonTemplates.Length){
+                Debug.Log("Failed to query dungeon id=" + id);
+                return null;
+            }
+            return dunegonTemplates[id - 1];
         }
 
     }

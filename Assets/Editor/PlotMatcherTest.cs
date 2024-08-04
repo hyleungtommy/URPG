@@ -23,7 +23,7 @@ namespace Editor
         public void ShouldTriggerPlotWhenGoToMainMenu()
         {
             Game.plotPt = 0;
-            Game.currLoc = new Map(0,"name","",null,null,10,10,10,null,null,null,null);
+            Game.currLoc = new Map(0,"name","",null,null,10,10,10,null,null,null,null,0);
             PlotData pd = PlotMatcher.matchPlot("MainMenu");
             Assert.IsNotNull(pd);
             Assert.AreEqual(0,pd.triggerPt);
@@ -33,7 +33,7 @@ namespace Editor
         public void ShouldNotTriggerPlotWhenGoToOtherScreen()
         {
             Game.plotPt = 0;
-            Game.currLoc = new Map(0,"name","",null,null,10,10,10,null,null,null,null);
+            Game.currLoc = new Map(0,"name","",null,null,10,10,10,null,null,null,null,0);
             PlotData pd = PlotMatcher.matchPlot("Map");
             Assert.IsNull(pd);
         }
@@ -42,7 +42,7 @@ namespace Editor
         public void ShouldNotTriggerPlotWhenInOtherMap()
         {
             Game.plotPt = 0;
-            Game.currLoc = new Map(1,"name","",null,null,10,10,10,null,null,null,null);
+            Game.currLoc = new Map(1,"name","",null,null,10,10,10,null,null,null,null,0);
             PlotData pd = PlotMatcher.matchPlot("Map");
             Assert.IsNull(pd);
         }
@@ -51,7 +51,7 @@ namespace Editor
         public void ShouldTriggerPlotWhenInBattle()
         {
             Game.plotPt = 1;
-            Game.currLoc = new Map(1,"name","",null,null,10,10,10,null,null,null,null);
+            Game.currLoc = new Map(1,"name","",null,null,10,10,10,null,null,null,null,0);
             PlotData pd = PlotMatcher.matchPlotBattle(3,true);
             Assert.IsNotNull(pd);
             Assert.AreEqual(1,pd.triggerPt);
@@ -61,7 +61,7 @@ namespace Editor
         public void ShouldNotTriggerPlotWhenAreaNotMatch()
         {
             Game.plotPt = 1;
-            Game.currLoc = new Map(1,"name","",null,null,10,10,10,null,null,null,null);
+            Game.currLoc = new Map(1,"name","",null,null,10,10,10,null,null,null,null,0);
             PlotData pd = PlotMatcher.matchPlotBattle(1,true);
             Assert.IsNull(pd);
         }
@@ -70,7 +70,7 @@ namespace Editor
         public void ShouldNotTriggerPlotAfterBattle()
         {
             Game.plotPt = 1;
-            Game.currLoc = new Map(1,"name","",null,null,10,10,10,null,null,null,null);
+            Game.currLoc = new Map(1,"name","",null,null,10,10,10,null,null,null,null,0);
             PlotData pd = PlotMatcher.matchPlotBattle(3,false);
             Assert.IsNull(pd);
         }

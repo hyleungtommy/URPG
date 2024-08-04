@@ -23,6 +23,7 @@ namespace RPG
         public string[] townFacility;
         public int rareEnemy;
         public int platinumCoinGain;
+        public int dungeonId;
         public MapTemplate()
         {
         }
@@ -42,7 +43,7 @@ namespace RPG
             }
             EnemyTemplate boss = enemyTemplates[this.boss - 1];
             EnemyTemplate rareEnemy = (this.rareEnemy == 0 ? null : enemyTemplates[this.rareEnemy - 1]);
-            Map m = new Map(id, name, desc, Resources.Load<Sprite>("Background/Map BG/" + bgImg), Resources.Load<Sprite>("Background/Battle BG/" + battleImg), reqLv, maxLv, maxArea, list.ToArray(), appearChance, boss,rareEnemy);
+            Map m = new Map(id, name, desc, Resources.Load<Sprite>("Background/Map BG/" + bgImg), Resources.Load<Sprite>("Background/Battle BG/" + battleImg), reqLv, maxLv, maxArea, list.ToArray(), appearChance, boss,rareEnemy, dungeonId);
             m.townFacility = townFacility;
             m.townName = townName;
             m.townbg = Resources.Load<Sprite>("Background/VillageBG/" + townbg);

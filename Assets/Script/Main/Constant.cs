@@ -8,6 +8,7 @@ namespace RPG
     {
         public const int MapModeProgressive = 0;
         public const int MapModeExplore = 1;
+        public const int MapModeDungeon = 3;
         public const string topBarSelectAnEnemy = "Select an enemy";
         public const string topBarSelectAnItem = "Select an item to use";
         public const string topBarSelectASkill = "Select a skill to use";

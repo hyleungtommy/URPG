@@ -32,5 +32,6 @@ namespace RPG
         public const string TradeStation = "TradeStation";
         public const string Cheat = "Cheat";
         public const string QuestCenter = "QuestCenter";
+        public const string Dungeon = "Dungeon";
     }
 }

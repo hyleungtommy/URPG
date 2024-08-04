@@ -24,7 +24,7 @@ namespace RPG
         /// <returns>PlotData if a plot shall be triggered, null otherwise</returns>
         public static PlotData matchPlotBattle(int currArea, bool beforeBattle)
         {
-            return Array.Find(DB.plots, s => s.triggerPt == Game.plotPt && s.triggerArea == currArea && s.triggerBeforeBattle == beforeBattle);
+            return Array.Find(DB.plots, s => s.triggerPt == Game.plotPt && s.triggerArea == currArea && s.triggerMap == Game.currLoc.id && s.triggerBeforeBattle == beforeBattle);
         }
         /// <summary>
         /// Check if a next plot shall be triggered immediately after the current one ends

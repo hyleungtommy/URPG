@@ -27,7 +27,8 @@ namespace RPG
         public string[] townFacility { get; set; }
         public bool unlocked { get; set; }
         public int platinumCoinGain {get; set;}
-        public Map(int id, string name, string desc, Sprite bgImg, Sprite battleImg, int reqLv, int maxLv, int maxZone, EnemyTemplate[] enemyList, int[] appearChance, EnemyTemplate boss, EnemyTemplate rareEnemy)
+        public int dungeonId {get; set;}
+        public Map(int id, string name, string desc, Sprite bgImg, Sprite battleImg, int reqLv, int maxLv, int maxZone, EnemyTemplate[] enemyList, int[] appearChance, EnemyTemplate boss, EnemyTemplate rareEnemy, int dungeonId)
         {
             this.id = id;
             this.name = name;
@@ -42,6 +43,7 @@ namespace RPG
             this.boss = boss;
             this.currZone = 1;
             this.rareEnemy = rareEnemy;
+            this.dungeonId = dungeonId;
         }
 
         public override string ToString()

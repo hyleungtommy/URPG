@@ -12,5 +12,9 @@ namespace RPG{
         public int boss;
         public int mimic;
         public int[] availableRoomType;
+        public int equipmentDropLv;
+        public int[] lootItemId;
+        public int[] lootMaxAmount;
+        public int []lootMinAmount;
     }
 }

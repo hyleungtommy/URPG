@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using System.Linq;
 
 namespace RPG
 {
@@ -78,6 +79,12 @@ namespace RPG
                 rnd -= a[i];
             }
             return index;
+        }
+
+        public static List<int> GetMultipleNumFromRandomList(List<int> originalList, int n)
+        {
+            System.Random rnd = new System.Random();
+            return originalList.OrderBy(x => rnd.Next()).Take(n).ToList();
         }
 
         public static float calculateSum(int[] a)

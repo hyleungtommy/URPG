@@ -61,7 +61,7 @@ namespace RPG
                 }
 
             }
-            if (Game.currLoc.currZone == Game.currLoc.maxZone)
+            if ((Game.currentMapMode == Constant.MapModeDungeon && Game.currentDungeon.IsBossFight()) || Game.currLoc.currZone == Game.currLoc.maxZone)
             {
                 bossFight = true;
             }

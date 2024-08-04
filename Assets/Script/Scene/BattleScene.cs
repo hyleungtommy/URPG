@@ -49,8 +49,14 @@ public class BattleScene : BasicScene
         }
         else
         {
-            battleBG.sprite = Game.currLoc.battleImg;
-            battleCtrl = new BattleCtrl(Game.currLoc.generateEnemy(), Game.party.createBattleParty(), this);
+            if(Game.currentMapMode == Constant.MapModeDungeon){
+                battleCtrl = new BattleCtrl(Game.currentDungeon.GenerateEnemy(), Game.party.createBattleParty(), this);
+                battleBG.sprite = Game.currentDungeon.battleImg;
+            }else{
+                battleCtrl = new BattleCtrl(Game.currLoc.generateEnemy(), Game.party.createBattleParty(), this);
+                battleBG.sprite = Game.currLoc.battleImg;
+            }
+            
             if (Game.currentMapMode == Constant.MapModeProgressive)
             {
                 textAreaPanel.text = Game.currLoc.currZone + "/" + Game.currLoc.maxZone;
@@ -364,11 +370,11 @@ public class BattleScene : BasicScene
         PlotData pd = PlotMatcher.matchPlotBattle(Game.currLoc.currZone, false);
         switch (id)
         {
-            case 0:
+            case 0: //Back to Main Menu
                 jumpToScene(SceneName.MainMenu);
                 Game.currLoc.resetZoneStatus();
                 break;
-            case 1:
+            case 1: // Retry Battle
                 if (pd != null)
                 {
                     Debug.Log("Plot found, pt=" + pd.triggerPt + ", area=" + pd.triggerArea + ",before battle=" + pd.triggerBeforeBattle);
@@ -382,7 +388,7 @@ public class BattleScene : BasicScene
                 }
 
                 break;
-            case 2:
+            case 2:// Next Battle
                 if (battleCtrl.bossFight)
                 {
                     Game.currLoc.resetZoneStatus();
@@ -397,6 +403,9 @@ public class BattleScene : BasicScene
                     {
                         jumpToScene(SceneName.MainMenu);
                     }
+                }
+                else if(Game.currentMapMode == Constant.MapModeDungeon){
+                    jumpToScene(SceneName.Dungeon);
                 }
                 else
                 {
@@ -414,6 +423,7 @@ public class BattleScene : BasicScene
                     }
                 }
                 break;
+
         }
     }
 
