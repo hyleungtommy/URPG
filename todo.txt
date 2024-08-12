@@ -5,7 +5,6 @@
 
 -TODO Features:
     -Dungeon
-        -New Daily Quests
         -Dungeon Map
     -Trade station more trading options
     -Warehouse & Warehouse upgrade
@@ -13,6 +12,9 @@
     -Achievement
     -Item AOE mode
     -Enemy Skill
+    -Elemental Damage
+    -Casino
+    
 
 -TODO Fixes:
     -Crafting:

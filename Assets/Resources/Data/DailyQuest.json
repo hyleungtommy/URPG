@@ -637,6 +637,94 @@
             "requireQty":[1,1],
             "rewardMoney":250000,
             "rewardEXP":250000
+        },
+        {
+            "id": 56, 
+            "name": "Clear Abandoned Mine",
+            "desc": "A group of necromancer occupied an abandoned mine on the Great Plain. Defeat the leader of the group",
+            "requireLv": 20,
+            "maxLv": 30,
+            "requirement":["E075"],
+            "requireQty":[1],
+            "rewardMoney":10000,
+            "rewardEXP":10000
+        },
+        {
+            "id": 57, 
+            "name": "Clear Deep Wood",
+            "desc": "A mutated green dragon has taken home in the deep wood. Banish it to restore peace to the region",
+            "requireLv": 30,
+            "maxLv": 40,
+            "requirement":["E097"],
+            "requireQty":[1],
+            "rewardMoney":20000,
+            "rewardEXP":20000
+        },
+        {
+            "id": 58, 
+            "name": "Clear Forgotten Grotto",
+            "desc": "A siren has taken home in Forgotten Grotto and use it songs to lure ships to it. Defeat the siren to ensure safety of ships",
+            "requireLv": 40,
+            "maxLv": 50,
+            "requirement":["E103"],
+            "requireQty":[1],
+            "rewardMoney":40000,
+            "rewardEXP":40000
+        },
+        {
+            "id": 59, 
+            "name": "Clear Demon Temple",
+            "desc": "A group of demon cultists have gathered into an adondanded temple in order to resurrect the anicent beast. Defeat them before they got any chance",
+            "requireLv": 50,
+            "maxLv": 60,
+            "requirement":["E109"],
+            "requireQty":[1],
+            "rewardMoney":80000,
+            "rewardEXP":80000
+        },
+        {
+            "id": 60, 
+            "name": "Clear Catacomb of Doom",
+            "desc": "A long forgotten catacomb has been discovered recently, search and destory any threats that lurk inside",
+            "requireLv": 50,
+            "maxLv": 60,
+            "requirement":["E115"],
+            "requireQty":[1],
+            "rewardMoney":160000,
+            "rewardEXP":160000
+        },
+        {
+            "id": 61, 
+            "name": "Clear Great Pyramid",
+            "desc": "The great pyramid houses countless history of the ancient desert empire, but the guardians there are preventing us to unearth it. Please clear out the pyramid guardians",
+            "requireLv": 50,
+            "maxLv": 60,
+            "requirement":["E121"],
+            "requireQty":[1],
+            "rewardMoney":320000,
+            "rewardEXP":320000
+        },
+        {
+            "id": 62, 
+            "name": "Clear Magma Cave",
+            "desc": "A huge magam cave system is dicovered under volcano with countless guardian, defeat them to ensure safety of other adventurers",
+            "requireLv": 60,
+            "maxLv": 70,
+            "requirement":["E127"],
+            "requireQty":[1],
+            "rewardMoney":320000,
+            "rewardEXP":320000
+        },
+        {
+            "id": 63, 
+            "name": "Clear Demon Castle",
+            "desc": "The demon lord resides in his castle, at last, defeating him will bring the end of this demon war...",
+            "requireLv": 60,
+            "maxLv": 70,
+            "requirement":["E133"],
+            "requireQty":[1],
+            "rewardMoney":640000,
+            "rewardEXP":640000
         }
     ]
 }
