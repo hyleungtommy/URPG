@@ -30,6 +30,9 @@ namespace RPG
                     atkMsg.AOE = aoe;
                     atkMsg.SkillName = name;
                     int attackPower = (int)((user.stat.MATK * 1 * UnityEngine.Random.Range(0.5f, 1.5f) * mod * ModifierFromBuffHelper.getMagicModifierFromSpecialBuff(user, name)) - opponent.stat.MDEF * ModifierFromBuffHelper.getTargetDefenseModifierFromSpecialBuff(opponent));
+                    int elementalAttackPower = Util.CalculateElementalDamage(elementDamage, opponent.elementResistance, attackPower);
+                    attackPower += elementalAttackPower;
+                    
                     if (attackPower <= 0)
                         attackPower = 1;
                     float hitChance = user.stat.DEX / (opponent.stat.AGI * 2);

@@ -15,6 +15,7 @@ public class SkillCenterInfoBox : BasicInfoBox
     public Button btnLearn;
     public SkillCenterScene scene;
     public BattleCharacter character { get; set; }
+    public ElementalDisplayPanelCtrl elementalDisplayPanel;
     private GeneralSkill skill;
     // Start is called before the first frame update
     void Start()
@@ -42,6 +43,9 @@ public class SkillCenterInfoBox : BasicInfoBox
         (s.skillPts > character.skillPtsAvailable ? getRedString(s.skillPts.ToString()) : s.skillPts.ToString()) + "\n" +
         (s.price > Game.money ? getRedString(s.price.ToString()) : s.price.ToString());
         btnLearn.gameObject.SetActive(canLearn());
+        if(s.elementDamage != null){
+            elementalDisplayPanel.Render(s.elementDamage);
+        }
     }
 
     public bool canLearn()

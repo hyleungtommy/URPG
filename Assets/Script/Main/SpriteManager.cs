@@ -21,6 +21,7 @@ namespace RPG
         public static Dictionary<string,Sprite> buffImgs {set; get;}
         public static Sprite enemyGenericImage {set; get;}
         public static Sprite[] dungeonSprite {set; get;}
+        public static Sprite[] elementIcons {set; get;}
         static SpriteManager()
         {
             basicBoxSelected = Resources.Load<Sprite>("UI/Frame/item_frame_selected");
@@ -58,6 +59,15 @@ namespace RPG
             dungeonSprite[5] = Resources.Load<Sprite>("Background/Dungeon/monster_room");
             dungeonSprite[6] = Resources.Load<Sprite>("Background/Dungeon/trap_room");
             dungeonSprite[7] = Resources.Load<Sprite>("Background/Dungeon/treasure_room");
+            //load element icons
+            elementIcons = new Sprite[7];
+            elementIcons[0] = Resources.Load<Sprite>("UI/Icon/element-fire");
+            elementIcons[1] = Resources.Load<Sprite>("UI/Icon/element-ice");
+            elementIcons[2] = Resources.Load<Sprite>("UI/Icon/element-lighting");
+            elementIcons[3] = Resources.Load<Sprite>("UI/Icon/element-earth");
+            elementIcons[4] = Resources.Load<Sprite>("UI/Icon/element-wind");
+            elementIcons[5] = Resources.Load<Sprite>("UI/Icon/element-light");
+            elementIcons[6] = Resources.Load<Sprite>("UI/Icon/element-dark");
         }
     }
 }

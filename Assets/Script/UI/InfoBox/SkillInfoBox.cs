@@ -10,6 +10,7 @@ public class SkillInfoBox : BasicInfoBox
     public Text textDesc1;
     public Text textDesc2;
     public BasicBox box;
+    public ElementalDisplayPanelCtrl elementalDisplayPanel;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,5 +31,8 @@ public class SkillInfoBox : BasicInfoBox
         textBasicInfo.text = s.skillType + "\n" + "Lv.:" + s.skillLv;
         textDesc1.text = s.desc;
         textDesc2.text = s.modifier + "\n" + s.turn + "\n" + s.reqMp + "\n" + s.cooldown;
+        if(s.elementDamage != null){
+            elementalDisplayPanel.Render(s.elementDamage);
+        }
     }
 }

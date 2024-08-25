@@ -367,7 +367,7 @@
                 3
             ],
             "elementDamage":{
-                "fire":50,
+                "fire":15,
                 "ice":0,
                 "lighting":0,
                 "earth":0,
@@ -409,7 +409,7 @@
             }],
             "elementDamage":{
                 "fire":0,
-                "ice":50,
+                "ice":15,
                 "lighting":0,
                 "earth":0,
                 "wind":0,
@@ -445,7 +445,7 @@
             "elementDamage":{
                 "fire":0,
                 "ice":0,
-                "lighting":50,
+                "lighting":15,
                 "earth":0,
                 "wind":0,
                 "light":0,
@@ -486,7 +486,7 @@
                 "fire":0,
                 "ice":0,
                 "lighting":0,
-                "earth":25,
+                "earth":15,
                 "wind":0,
                 "light":0,
                 "dark":0
@@ -517,7 +517,7 @@
                 3
             ],
             "elementDamage":{
-                "fire":75,
+                "fire":25,
                 "ice":0,
                 "lighting":0,
                 "earth":0,
@@ -558,7 +558,7 @@
             }],
             "elementDamage":{
                 "fire":0,
-                "ice":75,
+                "ice":25,
                 "lighting":0,
                 "earth":0,
                 "wind":0,
@@ -1263,7 +1263,7 @@
                 "earth":0,
                 "wind":0,
                 "light":0,
-                "dark":50
+                "dark":15
             }
         },
         {
@@ -1297,7 +1297,7 @@
                 "earth":0,
                 "wind":0,
                 "light":0,
-                "dark":75
+                "dark":25
             }
         },
         {
@@ -1331,7 +1331,7 @@
                 "earth":0,
                 "wind":0,
                 "light":0,
-                "dark":100
+                "dark":50
             }
         },
         {
@@ -1434,7 +1434,7 @@
                 6
             ],
             "elementDamage":{
-                "fire":50,
+                "fire":15,
                 "ice":0,
                 "lighting":0,
                 "earth":0,
@@ -1475,7 +1475,7 @@
             }],
             "elementDamage":{
                 "fire":0,
-                "ice":50,
+                "ice":15,
                 "lighting":0,
                 "earth":0,
                 "wind":0,
@@ -1539,7 +1539,7 @@
                 6
             ],
             "elementDamage":{
-                "fire":50,
+                "fire":20,
                 "ice":0,
                 "lighting":0,
                 "earth":0,
@@ -2004,7 +2004,7 @@
             "elementDamage":{
                 "fire":0,
                 "ice":0,
-                "lighting":100,
+                "lighting":50,
                 "earth":0,
                 "wind":0,
                 "light":0,
@@ -2066,7 +2066,7 @@
                 3
             ],
             "elementDamage":{
-                "fire":100,
+                "fire":50,
                 "ice":0,
                 "lighting":0,
                 "earth":0,
@@ -2101,7 +2101,7 @@
             ],
             "elementDamage":{
                 "fire":0,
-                "ice":100,
+                "ice":50,
                 "lighting":0,
                 "earth":0,
                 "wind":0,
@@ -2169,7 +2169,7 @@
                 "lighting":0,
                 "earth":0,
                 "wind":0,
-                "light":50,
+                "light":25,
                 "dark":0
             }
         },
@@ -2396,7 +2396,7 @@
             "elementDamage":{
                 "fire":0,
                 "ice":0,
-                "lighting":50,
+                "lighting":20,
                 "earth":0,
                 "wind":0,
                 "light":0,
@@ -2454,7 +2454,7 @@
             ],
             "elementDamage":{
                 "fire":0,
-                "ice":25,
+                "ice":20,
                 "lighting":0,
                 "earth":0,
                 "wind":0,
@@ -2584,7 +2584,7 @@
                 "earth":0,
                 "wind":0,
                 "light":0,
-                "dark":25
+                "dark":20
             }
         }
     ]

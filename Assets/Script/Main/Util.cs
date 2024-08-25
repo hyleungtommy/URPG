@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.Linq;
+using UnityEditor;
 
 namespace RPG
 {
@@ -195,6 +196,38 @@ namespace RPG
                 }
                 Game.money -= requireMoney;
             }
+        }
+
+        public static int CalculateElementalDamage(ElementalTemplate elementalDamage, ElementalTemplate elementalResistance, int atkPower){
+            if(elementalDamage != null && elementalResistance != null){
+                int[] elementalDamageFlatten = FlattenElementalMatrix(elementalDamage);
+                int[] elementalResistanceFlatten = FlattenElementalMatrix(elementalResistance);
+                int elementAttackPower = 0;
+                for(int i = 0 ; i < 7 ; i++){
+                    if(elementalDamageFlatten[i] > 0){
+                        double elementAttackUnresisted = elementalDamageFlatten[i] * atkPower * 0.01;
+                        double elementAttackResisted = elementAttackUnresisted * (100 - elementalResistanceFlatten[i]) * 0.01;
+                        elementAttackPower += (int)elementAttackResisted;
+                        //Debug.Log("elementAttackUnresisted" + elementAttackUnresisted + " elementAttackResisted=" + elementAttackResisted);
+                    }
+                }
+                //Debug.Log("atkPower=" + atkPower + " elementAttackPower=" + elementAttackPower);
+                return elementAttackPower;
+            }else{
+                return 0;
+            }
+        }
+
+        public static int[] FlattenElementalMatrix(ElementalTemplate elementalTemplate){
+            int[]elementValues = new int[7];
+            elementValues[0] = elementalTemplate.fire;
+            elementValues[1] = elementalTemplate.ice;
+            elementValues[2] = elementalTemplate.lighting;
+            elementValues[3] = elementalTemplate.wind;
+            elementValues[4] = elementalTemplate.earth;
+            elementValues[5] = elementalTemplate.light;
+            elementValues[6] = elementalTemplate.dark;
+            return elementValues;
         }
 
 

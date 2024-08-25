@@ -37,6 +37,8 @@ namespace RPG
                     }
 
                     int attackPower = (int)((user.stat.ATK * 1 * UnityEngine.Random.Range(0.9f, 1.1f) * attackModifier) - (opponent.isDefensing ? opponent.stat.DEF * opponent.defenseModifier : opponent.stat.DEF) * ModifierFromBuffHelper.getTargetDefenseModifierFromSpecialBuff(opponent));
+                    int elementalAttackPower = Util.CalculateElementalDamage(elementDamage, opponent.elementResistance, attackPower);
+                    attackPower += elementalAttackPower;
 
                     if (attackPower <= 0)
                         attackPower = 1;
