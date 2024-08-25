@@ -27,6 +27,7 @@ namespace RPG
         public int skillPtsStart { get; set; }
         public int skillPtsPerLv { get; set; }
         public int skillLv { get; set; }//need to save
+        public ElementalTemplate elementDamage {get; set;}
         public List<ApplyBuffTemplate> buffList { get; set; }
         public int reqMp
         {
@@ -98,6 +99,7 @@ namespace RPG
                 s.animation = animation;
                 s.reqMp = reqMp;
                 s.aoe = isAOE;
+                s.elementDamage = elementDamage;
             }
             return s;
         }

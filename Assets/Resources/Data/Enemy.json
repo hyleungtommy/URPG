@@ -13,7 +13,16 @@
       "DEX": 12,
       "DropEXP": 15,
       "DropMoney": 12,
-      "img": "001-Slime"
+      "img": "001-Slime",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":50,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 2,
@@ -28,7 +37,16 @@
       "DEX": 20,
       "DropEXP": 25,
       "DropMoney": 15,
-      "img": "002-Bee"
+      "img": "002-Bee",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":50,
+        "wind":50,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 3,
@@ -43,7 +61,16 @@
       "DEX": 26,
       "DropEXP": 30,
       "DropMoney": 24,
-      "img": "003-Bird"
+      "img": "003-Bird",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":50,
+        "wind":50,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 4,
@@ -58,7 +85,16 @@
       "DEX": 30,
       "DropEXP": 30,
       "DropMoney": 20,
-      "img": "004-Wisp"
+      "img": "004-Wisp",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":50,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 5,
@@ -73,7 +109,16 @@
       "DEX": 42,
       "DropEXP": 250,
       "DropMoney": 200,
-      "img": "005-AngryBull"
+      "img": "005-AngryBull",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":50,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 6,
@@ -88,7 +133,16 @@
       "DEX": 45,
       "DropEXP": 50,
       "DropMoney": 30,
-      "img": "006-BlueAthlon"
+      "img": "006-BlueAthlon",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 7,
@@ -103,7 +157,16 @@
       "DEX": 42,
       "DropEXP": 60,
       "DropMoney": 36,
-      "img": "007-Cow"
+      "img": "007-Cow",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 8,
@@ -118,7 +181,16 @@
       "DEX": 48,
       "DropEXP": 80,
       "DropMoney": 42,
-      "img": "008-Flying Bites"
+      "img": "008-Flying Bites",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 9,
@@ -133,7 +205,16 @@
       "DEX": 52,
       "DropEXP": 85,
       "DropMoney": 54,
-      "img": "009-Wolf"
+      "img": "009-Wolf",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 10,
@@ -148,7 +229,16 @@
       "DEX": 42,
       "DropEXP": 60,
       "DropMoney": 36,
-      "img": "010-Chicken"
+      "img": "010-Chicken",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 11,
@@ -163,7 +253,16 @@
       "DEX": 55,
       "DropEXP": 500,
       "DropMoney": 1000,
-      "img": "011-Werewolf"
+      "img": "011-Werewolf",
+      "elementResistance":{
+        "fire":-50,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 12,
@@ -178,7 +277,16 @@
       "DEX": 60,
       "DropEXP": 3000,
       "DropMoney": 2000,
-      "img": "012-Oger"
+      "img": "012-Oger",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":50,
+        "wind":-50,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 13,
@@ -193,7 +301,16 @@
       "DEX": 80,
       "DropEXP": 125,
       "DropMoney": 80,
-      "img": "013-Flower"
+      "img": "013-Flower",
+      "elementResistance":{
+        "fire":-25,
+        "ice":0,
+        "lighting":0,
+        "earth":50,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 14,
@@ -208,7 +325,16 @@
       "DEX": 85,
       "DropEXP": 140,
       "DropMoney": 90,
-      "img": "014-Wood Fairy"
+      "img": "014-Wood Fairy",
+      "elementResistance":{
+        "fire":-25,
+        "ice":0,
+        "lighting":0,
+        "earth":50,
+        "wind":50,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 15,
@@ -223,7 +349,16 @@
       "DEX": 85,
       "DropEXP": 162,
       "DropMoney": 103,
-      "img": "015-Daisy"
+      "img": "015-Daisy",
+      "elementResistance":{
+        "fire":-25,
+        "ice":0,
+        "lighting":0,
+        "earth":50,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 16,
@@ -238,7 +373,16 @@
       "DEX": 90,
       "DropEXP": 180,
       "DropMoney": 108,
-      "img": "016-Yellow Shroom"
+      "img": "016-Yellow Shroom",
+      "elementResistance":{
+        "fire":-25,
+        "ice":0,
+        "lighting":0,
+        "earth":50,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 17,
@@ -253,7 +397,16 @@
       "DEX": 75,
       "DropEXP": 215,
       "DropMoney": 115,
-      "img": "017-Earth Elemental"
+      "img": "017-Earth Elemental",
+      "elementResistance":{
+        "fire":-25,
+        "ice":-25,
+        "lighting":0,
+        "earth":100,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 18,
@@ -268,7 +421,16 @@
       "DEX": 80,
       "DropEXP": 245,
       "DropMoney": 123,
-      "img": "018-Inc"
+      "img": "018-Inc",
+      "elementResistance":{
+        "fire":-25,
+        "ice":0,
+        "lighting":0,
+        "earth":50,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 19,
@@ -283,7 +445,16 @@
       "DEX": 80,
       "DropEXP": 1000,
       "DropMoney": 1500,
-      "img": "019-Mother Flower"
+      "img": "019-Mother Flower",
+      "elementResistance":{
+        "fire":-25,
+        "ice":0,
+        "lighting":0,
+        "earth":50,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 20,
@@ -298,7 +469,16 @@
       "DEX": 95,
       "DropEXP": 5000,
       "DropMoney": 4000,
-      "img": "020-Green Dragon"
+      "img": "020-Green Dragon",
+      "elementResistance":{
+        "fire":50,
+        "ice":-25,
+        "lighting":-25,
+        "earth":50,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 21,
@@ -313,7 +493,16 @@
       "DEX": 100,
       "DropEXP": 350,
       "DropMoney": 230,
-      "img": "021-Jellyfish"
+      "img": "021-Jellyfish",
+      "elementResistance":{
+        "fire":-25,
+        "ice":50,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 22,
@@ -328,7 +517,16 @@
       "DEX": 105,
       "DropEXP": 400,
       "DropMoney": 235,
-      "img": "022-Starfish"
+      "img": "022-Starfish",
+      "elementResistance":{
+        "fire":-25,
+        "ice":50,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 23,
@@ -343,7 +541,16 @@
       "DEX": 110,
       "DropEXP": 425,
       "DropMoney": 240,
-      "img": "023-Fly Fish"
+      "img": "023-Fly Fish",
+      "elementResistance":{
+        "fire":-25,
+        "ice":50,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 24,
@@ -358,7 +565,16 @@
       "DEX": 115,
       "DropEXP": 450,
       "DropMoney": 280,
-      "img": "024-Giant Turtle"
+      "img": "024-Giant Turtle",
+      "elementResistance":{
+        "fire":-25,
+        "ice":50,
+        "lighting":0,
+        "earth":50,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 25,
@@ -373,7 +589,16 @@
       "DEX": 120,
       "DropEXP": 450,
       "DropMoney": 250,
-      "img": "025-Sahagin"
+      "img": "025-Sahagin",
+      "elementResistance":{
+        "fire":-25,
+        "ice":50,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 26,
@@ -388,7 +613,16 @@
       "DEX": 120,
       "DropEXP": 450,
       "DropMoney": 280,
-      "img": "026-Water Spirit"
+      "img": "026-Water Spirit",
+      "elementResistance":{
+        "fire":-50,
+        "ice":100,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 27,
@@ -403,7 +637,16 @@
       "DEX": 125,
       "DropEXP": 2500,
       "DropMoney": 5000,
-      "img": "027-Lamia"
+      "img": "027-Lamia",
+      "elementResistance":{
+        "fire":-25,
+        "ice":50,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 28,
@@ -418,7 +661,16 @@
       "DEX": 130,
       "DropEXP": 10000,
       "DropMoney": 10000,
-      "img": "028-Hydra"
+      "img": "028-Hydra",
+      "elementResistance":{
+        "fire":-50,
+        "ice":100,
+        "lighting":0,
+        "earth":50,
+        "wind":-25,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 29,
@@ -433,7 +685,16 @@
       "DEX": 132,
       "DropEXP": 1000,
       "DropMoney": 505,
-      "img": "029-Bat"
+      "img": "029-Bat",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":-25,
+        "earth":50,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 30,
@@ -448,7 +709,16 @@
       "DEX": 135,
       "DropEXP": 1015,
       "DropMoney": 516,
-      "img": "030-Imp"
+      "img": "030-Imp",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":-25,
+        "earth":50,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 31,
@@ -463,7 +733,16 @@
       "DEX": 135,
       "DropEXP": 1050,
       "DropMoney": 525,
-      "img": "031-Goblin"
+      "img": "031-Goblin",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":-25,
+        "earth":50,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 32,
@@ -478,7 +757,16 @@
       "DEX": 140,
       "DropEXP": 1155,
       "DropMoney": 530,
-      "img": "032-Troll"
+      "img": "032-Troll",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":-25,
+        "earth":50,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 33,
@@ -493,7 +781,16 @@
       "DEX": 135,
       "DropEXP": 1150,
       "DropMoney": 550,
-      "img": "033-Rocky Snake"
+      "img": "033-Rocky Snake",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":-25,
+        "earth":50,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 34,
@@ -508,7 +805,16 @@
       "DEX": 135,
       "DropEXP": 1180,
       "DropMoney": 560,
-      "img": "034-Zombie Miner"
+      "img": "034-Zombie Miner",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":-25,
+        "earth":50,
+        "wind":0,
+        "light":-50,
+        "dark":25
+      }
     },
     {
       "id": 35,
@@ -523,7 +829,16 @@
       "DEX": 120,
       "DropEXP": 1180,
       "DropMoney": 560,
-      "img": "035-Cave Giant"
+      "img": "035-Cave Giant",
+      "elementResistance":{
+        "fire":25,
+        "ice":25,
+        "lighting":-25,
+        "earth":100,
+        "wind":-25,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 36,
@@ -538,7 +853,16 @@
       "DEX": 135,
       "DropEXP": 25000,
       "DropMoney": 25000,
-      "img": "036-Minotaur"
+      "img": "036-Minotaur",
+      "elementResistance":{
+        "fire":25,
+        "ice":25,
+        "lighting":-25,
+        "earth":100,
+        "wind":-25,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 37,
@@ -553,7 +877,16 @@
       "DEX": 140,
       "DropEXP": 1500,
       "DropMoney": 900,
-      "img": "037-Ghost"
+      "img": "037-Ghost",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 38,
@@ -568,7 +901,16 @@
       "DEX": 142,
       "DropEXP": 1500,
       "DropMoney": 920,
-      "img": "038-Zombie"
+      "img": "038-Zombie",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 39,
@@ -583,7 +925,16 @@
       "DEX": 145,
       "DropEXP": 2000,
       "DropMoney": 920,
-      "img": "039-Skeleton"
+      "img": "039-Skeleton",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 40,
@@ -598,7 +949,16 @@
       "DEX": 150,
       "DropEXP": 2000,
       "DropMoney": 950,
-      "img": "040-Lich"
+      "img": "040-Lich",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 41,
@@ -613,7 +973,16 @@
       "DEX": 150,
       "DropEXP": 2500,
       "DropMoney": 950,
-      "img": "041-Dark Knight"
+      "img": "041-Dark Knight",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 42,
@@ -628,7 +997,16 @@
       "DEX": 160,
       "DropEXP": 2500,
       "DropMoney": 950,
-      "img": "042-Vanpire"
+      "img": "042-Vanpire",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 43,
@@ -643,7 +1021,16 @@
       "DEX": 160,
       "DropEXP": 5000,
       "DropMoney": 975,
-      "img": "043-Reaper"
+      "img": "043-Reaper",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 44,
@@ -658,7 +1045,16 @@
       "DEX": 165,
       "DropEXP": 50000,
       "DropMoney": 50000,
-      "img": "044-Conrad"
+      "img": "044-Conrad",
+      "elementResistance":{
+        "fire":25,
+        "ice":25,
+        "lighting":25,
+        "earth":25,
+        "wind":25,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 45,
@@ -673,7 +1069,16 @@
       "DEX": 170,
       "DropEXP": 3500,
       "DropMoney": 1520,
-      "img": "045-Sandworm"
+      "img": "045-Sandworm",
+      "elementResistance":{
+        "fire":0,
+        "ice":-50,
+        "lighting":0,
+        "earth":50,
+        "wind":50,
+        "light":-25,
+        "dark":50
+      }
     },
     {
       "id": 46,
@@ -688,7 +1093,16 @@
       "DEX": 175,
       "DropEXP": 4000,
       "DropMoney": 1550,
-      "img": "046-Desert Thief"
+      "img": "046-Desert Thief",
+      "elementResistance":{
+        "fire":0,
+        "ice":-50,
+        "lighting":0,
+        "earth":50,
+        "wind":50,
+        "light":-25,
+        "dark":50
+      }
     },
     {
       "id": 47,
@@ -703,7 +1117,16 @@
       "DEX": 180,
       "DropEXP": 4000,
       "DropMoney": 1550,
-      "img": "047-Weathered Corpse"
+      "img": "047-Weathered Corpse",
+      "elementResistance":{
+        "fire":0,
+        "ice":-50,
+        "lighting":0,
+        "earth":50,
+        "wind":50,
+        "light":-25,
+        "dark":50
+      }
     },
     {
       "id": 48,
@@ -718,7 +1141,16 @@
       "DEX": 190,
       "DropEXP": 4500,
       "DropMoney": 1560,
-      "img": "048-Desert Thief"
+      "img": "048-Desert Thief",
+      "elementResistance":{
+        "fire":0,
+        "ice":-50,
+        "lighting":0,
+        "earth":50,
+        "wind":50,
+        "light":-25,
+        "dark":50
+      }
     },
     {
       "id": 49,
@@ -733,7 +1165,16 @@
       "DEX": 175,
       "DropEXP": 5000,
       "DropMoney": 1600,
-      "img": "049-Sand Dragon"
+      "img": "049-Sand Dragon",
+      "elementResistance":{
+        "fire":50,
+        "ice":-50,
+        "lighting":0,
+        "earth":50,
+        "wind":50,
+        "light":-25,
+        "dark":50
+      }
     },
     {
       "id": 50,
@@ -748,7 +1189,16 @@
       "DEX": 190,
       "DropEXP": 5500,
       "DropMoney": 1620,
-      "img": "050-Desert Orc"
+      "img": "050-Desert Orc",
+      "elementResistance":{
+        "fire":0,
+        "ice":-50,
+        "lighting":0,
+        "earth":50,
+        "wind":50,
+        "light":-25,
+        "dark":50
+      }
     },
     {
       "id": 51,
@@ -763,7 +1213,16 @@
       "DEX": 195,
       "DropEXP": 6000,
       "DropMoney": 1620,
-      "img": "051-Desert Sacrificer"
+      "img": "051-Desert Sacrificer",
+      "elementResistance":{
+        "fire":0,
+        "ice":-50,
+        "lighting":0,
+        "earth":50,
+        "wind":50,
+        "light":-25,
+        "dark":50
+      }
     },
     {
       "id": 52,
@@ -778,7 +1237,16 @@
       "DEX": 200,
       "DropEXP": 75000,
       "DropMoney": 25000,
-      "img": "052-Fossil Devil"
+      "img": "052-Fossil Devil",
+      "elementResistance":{
+        "fire":50,
+        "ice":-50,
+        "lighting":0,
+        "earth":50,
+        "wind":50,
+        "light":-50,
+        "dark":100
+      }
     },
     {
       "id": 53,
@@ -793,7 +1261,16 @@
       "DEX": 205,
       "DropEXP": 8000,
       "DropMoney": 2000,
-      "img": "053-Bomb"
+      "img": "053-Bomb",
+      "elementResistance":{
+        "fire":50,
+        "ice":-50,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 54,
@@ -808,7 +1285,16 @@
       "DEX": 210,
       "DropEXP": 8500,
       "DropMoney": 2200,
-      "img": "054-Fire Beetle"
+      "img": "054-Fire Beetle",
+      "elementResistance":{
+        "fire":50,
+        "ice":-50,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 55,
@@ -823,7 +1309,16 @@
       "DEX": 215,
       "DropEXP": 9000,
       "DropMoney": 2215,
-      "img": "055-Fire Spirit"
+      "img": "055-Fire Spirit",
+      "elementResistance":{
+        "fire":100,
+        "ice":-50,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 56,
@@ -838,7 +1333,16 @@
       "DEX": 200,
       "DropEXP": 9000,
       "DropMoney": 2250,
-      "img": "056-Vulkan Snake"
+      "img": "056-Vulkan Snake",
+      "elementResistance":{
+        "fire":50,
+        "ice":-50,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 57,
@@ -853,7 +1357,16 @@
       "DEX": 200,
       "DropEXP": 9500,
       "DropMoney": 2500,
-      "img": "057-Crimson Wolf"
+      "img": "057-Crimson Wolf",
+      "elementResistance":{
+        "fire":50,
+        "ice":-50,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 58,
@@ -868,7 +1381,16 @@
       "DEX": 215,
       "DropEXP": 10000,
       "DropMoney": 2500,
-      "img": "058-Lava Scorpion"
+      "img": "058-Lava Scorpion",
+      "elementResistance":{
+        "fire":50,
+        "ice":-50,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 59,
@@ -883,7 +1405,16 @@
       "DEX": 225,
       "DropEXP": 80000,
       "DropMoney": 30000,
-      "img": "059-Crimson Bird"
+      "img": "059-Crimson Bird",
+      "elementResistance":{
+        "fire":50,
+        "ice":-50,
+        "lighting":0,
+        "earth":-50,
+        "wind":50,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 60,
@@ -898,7 +1429,16 @@
       "DEX": 230,
       "DropEXP": 200000,
       "DropMoney": 50000,
-      "img": "060-Magma Lord"
+      "img": "060-Magma Lord",
+      "elementResistance":{
+        "fire":100,
+        "ice":-50,
+        "lighting":25,
+        "earth":25,
+        "wind":25,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 61,
@@ -913,7 +1453,16 @@
       "DEX": 235,
       "DropEXP": 15000,
       "DropMoney": 4000,
-      "img": "061-Demonic Beast"
+      "img": "061-Demonic Beast",
+      "elementResistance":{
+        "fire":-25,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 62,
@@ -928,7 +1477,16 @@
       "DEX": 258,
       "DropEXP": 15000,
       "DropMoney": 4200,
-      "img": "062-Devil Guard"
+      "img": "062-Devil Guard",
+      "elementResistance":{
+        "fire":-25,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 63,
@@ -943,7 +1501,16 @@
       "DEX": 260,
       "DropEXP": 20000,
       "DropMoney": 4200,
-      "img": "063-Devil Mage"
+      "img": "063-Devil Mage",
+      "elementResistance":{
+        "fire":-25,
+        "ice":25,
+        "lighting":25,
+        "earth":25,
+        "wind":25,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 64,
@@ -958,7 +1525,16 @@
       "DEX": 265,
       "DropEXP": 25000,
       "DropMoney": 5000,
-      "img": "064-Devil Knight"
+      "img": "064-Devil Knight",
+      "elementResistance":{
+        "fire":-25,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 65,
@@ -973,7 +1549,16 @@
       "DEX": 265,
       "DropEXP": 20000,
       "DropMoney": 5000,
-      "img": "065-Bone Machine"
+      "img": "065-Bone Machine",
+      "elementResistance":{
+        "fire":-25,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 66,
@@ -988,7 +1573,16 @@
       "DEX": 260,
       "DropEXP": 20000,
       "DropMoney": 5000,
-      "img": "066-Corrupted Knight"
+      "img": "066-Corrupted Knight",
+      "elementResistance":{
+        "fire":-25,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 67,
@@ -1003,7 +1597,16 @@
       "DEX": 260,
       "DropEXP": 25000,
       "DropMoney": 5000,
-      "img": "067-Colossus"
+      "img": "067-Colossus",
+      "elementResistance":{
+        "fire":-25,
+        "ice":0,
+        "lighting":0,
+        "earth":50,
+        "wind":0,
+        "light":0,
+        "dark":50
+      }
     },
     {
       "id": 68,
@@ -1018,7 +1621,16 @@
       "DEX": 270,
       "DropEXP": 500000,
       "DropMoney": 999999,
-      "img": "068-Matius"
+      "img": "068-Matius",
+      "elementResistance":{
+        "fire":50,
+        "ice":25,
+        "lighting":25,
+        "earth":25,
+        "wind":25,
+        "light":-50,
+        "dark":100
+      }
     },
     {
       "id": 69,
@@ -1033,7 +1645,16 @@
       "DEX": 65,
       "DropEXP": 125,
       "DropMoney": 80,
-      "img": "069-Rotten Zombie"
+      "img": "069-Rotten Zombie",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":50,
+        "wind":-25,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 70,
@@ -1048,7 +1669,16 @@
       "DEX": 70,
       "DropEXP": 140,
       "DropMoney": 90,
-      "img": "070-Tonberry"
+      "img": "070-Tonberry",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":50,
+        "wind":-25,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 71,
@@ -1063,7 +1693,16 @@
       "DEX": 70,
       "DropEXP": 162,
       "DropMoney": 103,
-      "img": "071-Toxic Bat"
+      "img": "071-Toxic Bat",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":50,
+        "wind":-25,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 72,
@@ -1078,7 +1717,16 @@
       "DEX": 65,
       "DropEXP": 180,
       "DropMoney": 108,
-      "img": "072-Small Ghost"
+      "img": "072-Small Ghost",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":50,
+        "wind":-25,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 73,
@@ -1093,7 +1741,16 @@
       "DEX": 70,
       "DropEXP": 215,
       "DropMoney": 115,
-      "img": "073-Skeleton Miner"
+      "img": "073-Skeleton Miner",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":50,
+        "wind":-25,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 74,
@@ -1108,7 +1765,16 @@
       "DEX": 70,
       "DropEXP": 1000,
       "DropMoney": 2000,
-      "img": "074-Necromanic Creature"
+      "img": "074-Necromanic Creature",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":50,
+        "wind":-25,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 75,
@@ -1123,7 +1789,16 @@
       "DEX": 80,
       "DropEXP": 5000,
       "DropMoney": 7500,
-      "img": "075-Necromancer Master"
+      "img": "075-Necromancer Master",
+      "elementResistance":{
+        "fire":25,
+        "ice":25,
+        "lighting":25,
+        "earth":50,
+        "wind":-25,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 76,
@@ -1138,7 +1813,16 @@
       "DEX": 260,
       "DropEXP": 25000,
       "DropMoney": 5000,
-      "img": "076-Snow Spirit"
+      "img": "076-Snow Spirit",
+      "elementResistance":{
+        "fire":-50,
+        "ice":50,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 77,
@@ -1153,7 +1837,16 @@
       "DEX": 265,
       "DropEXP": 27500,
       "DropMoney": 5100,
-      "img": "077-Gargoyle"
+      "img": "077-Gargoyle",
+      "elementResistance":{
+        "fire":-50,
+        "ice":50,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 78,
@@ -1168,7 +1861,16 @@
       "DEX": 270,
       "DropEXP": 29500,
       "DropMoney": 5500,
-      "img": "078-Great Winter Spirit"
+      "img": "078-Great Winter Spirit",
+      "elementResistance":{
+        "fire":-50,
+        "ice":100,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 79,
@@ -1183,7 +1885,16 @@
       "DEX": 280,
       "DropEXP": 29500,
       "DropMoney": 5500,
-      "img": "079-Glacier Bird"
+      "img": "079-Glacier Bird",
+      "elementResistance":{
+        "fire":-50,
+        "ice":50,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 80,
@@ -1198,7 +1909,16 @@
       "DEX": 270,
       "DropEXP": 29500,
       "DropMoney": 5650,
-      "img": "080-Mutated Crab"
+      "img": "080-Mutated Crab",
+      "elementResistance":{
+        "fire":-50,
+        "ice":50,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 81,
@@ -1213,7 +1933,16 @@
       "DEX": 290,
       "DropEXP": 30000,
       "DropMoney": 5500,
-      "img": "081-Frozen Wolf"
+      "img": "081-Frozen Wolf",
+      "elementResistance":{
+        "fire":-50,
+        "ice":50,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 82,
@@ -1228,7 +1957,16 @@
       "DEX": 290,
       "DropEXP": 100000,
       "DropMoney": 20000,
-      "img": "082-Ice Lady"
+      "img": "082-Ice Lady",
+      "elementResistance":{
+        "fire":-50,
+        "ice":100,
+        "lighting":25,
+        "earth":25,
+        "wind":25,
+        "light":25,
+        "dark":25
+      }
     },
     {
       "id": 83,
@@ -1243,7 +1981,16 @@
       "DEX": 300,
       "DropEXP": 750000,
       "DropMoney": 50000,
-      "img": "083-Portal Keeper"
+      "img": "083-Portal Keeper",
+      "elementResistance":{
+        "fire":50,
+        "ice":50,
+        "lighting":50,
+        "earth":50,
+        "wind":50,
+        "light":50,
+        "dark":-50
+      }
     },
     {
       "id": 84,
@@ -1258,7 +2005,16 @@
       "DEX": 320,
       "DropEXP": 35000,
       "DropMoney": 6000,
-      "img": "084-All seer"
+      "img": "084-All seer",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":50,
+        "dark":-50
+      }
     },
     {
       "id": 85,
@@ -1273,7 +2029,16 @@
       "DEX": 325,
       "DropEXP": 36000,
       "DropMoney": 6500,
-      "img": "085-Spider Transporter"
+      "img": "085-Spider Transporter",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":50,
+        "dark":-50
+      }
     },
     {
       "id": 86,
@@ -1288,7 +2053,16 @@
       "DEX": 325,
       "DropEXP": 36000,
       "DropMoney": 6500,
-      "img": "086-Predator MX 200"
+      "img": "086-Predator MX 200",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":50,
+        "dark":-50
+      }
     },
     {
       "id": 87,
@@ -1303,7 +2077,16 @@
       "DEX": 330,
       "DropEXP": 36000,
       "DropMoney": 6500,
-      "img": "087-Chimera Type OX 750"
+      "img": "087-Chimera Type OX 750",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":50,
+        "dark":-50
+      }
     },
     {
       "id": 88,
@@ -1318,7 +2101,16 @@
       "DEX": 330,
       "DropEXP": 36000,
       "DropMoney": 6500,
-      "img": "088-Scyther SC 650"
+      "img": "088-Scyther SC 650",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":50,
+        "dark":-50
+      }
     },
     {
       "id": 89,
@@ -1333,7 +2125,16 @@
       "DEX": 330,
       "DropEXP": 37000,
       "DropMoney": 6600,
-      "img": "089-Processor PY 120"
+      "img": "089-Processor PY 120",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":50,
+        "dark":-50
+      }
     },
     {
       "id": 90,
@@ -1348,7 +2149,16 @@
       "DEX": 335,
       "DropEXP": 120000,
       "DropMoney": 12500,
-      "img": "090-War Centurion"
+      "img": "090-War Centurion",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":50,
+        "dark":-50
+      }
     },
     {
       "id": 91,
@@ -1363,7 +2173,16 @@
       "DEX": 350,
       "DropEXP": 800000,
       "DropMoney": 25000,
-      "img": "091-PortalKeeper MK II"
+      "img": "091-PortalKeeper MK II",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":100,
+        "dark":-50
+      }
     },
     {
       "id": 92,
@@ -1378,7 +2197,16 @@
       "DEX": 100,
       "DropEXP": 2500,
       "DropMoney": 1500,
-      "img": "092-Evil Rose"
+      "img": "092-Evil Rose",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":-50,
+        "earth":50,
+        "wind":50,
+        "light":-25,
+        "dark":50
+      }
     },
     {
       "id": 93,
@@ -1393,7 +2221,16 @@
       "DEX": 90,
       "DropEXP": 400,
       "DropMoney": 200,
-      "img": "093-Twisted Shroom"
+      "img": "093-Twisted Shroom",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":-50,
+        "earth":50,
+        "wind":50,
+        "light":-25,
+        "dark":50
+      }
     },
     {
       "id": 94,
@@ -1408,7 +2245,16 @@
       "DEX": 100,
       "DropEXP": 600,
       "DropMoney": 250,
-      "img": "094-Giant Dragonfly"
+      "img": "094-Giant Dragonfly",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":-50,
+        "earth":50,
+        "wind":50,
+        "light":-25,
+        "dark":50
+      }
     },
     {
       "id": 95,
@@ -1423,7 +2269,16 @@
       "DEX": 80,
       "DropEXP": 700,
       "DropMoney": 300,
-      "img": "095-Mossy Stone Golem"
+      "img": "095-Mossy Stone Golem",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":-50,
+        "earth":50,
+        "wind":50,
+        "light":-25,
+        "dark":50
+      }
     },
     {
       "id": 96,
@@ -1438,7 +2293,16 @@
       "DEX": 85,
       "DropEXP": 700,
       "DropMoney": 300,
-      "img": "096-Twisted Nature Guardian"
+      "img": "096-Twisted Nature Guardian",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":-50,
+        "earth":50,
+        "wind":50,
+        "light":-25,
+        "dark":50
+      }
     },
     {
       "id": 97,
@@ -1453,7 +2317,16 @@
       "DEX": 90,
       "DropEXP": 9000,
       "DropMoney": 4000,
-      "img": "097-Mutated Green Dragon"
+      "img": "097-Mutated Green Dragon",
+      "elementResistance":{
+        "fire":100,
+        "ice":0,
+        "lighting":-50,
+        "earth":50,
+        "wind":50,
+        "light":-25,
+        "dark":50
+      }
     },
     {
       "id": 98,
@@ -1468,7 +2341,16 @@
       "DEX": 120,
       "DropEXP": 600,
       "DropMoney": 300,
-      "img": "098-Water Snake"
+      "img": "098-Water Snake",
+      "elementResistance":{
+        "fire":-25,
+        "ice":50,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 99,
@@ -1483,7 +2365,16 @@
       "DEX": 120,
       "DropEXP": 600,
       "DropMoney": 300,
-      "img": "099-Furious Water Spirit"
+      "img": "099-Furious Water Spirit",
+      "elementResistance":{
+        "fire":-25,
+        "ice":100,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 100,
@@ -1498,7 +2389,16 @@
       "DEX": 130,
       "DropEXP": 600,
       "DropMoney": 300,
-      "img": "100-Charmed Rouge"
+      "img": "100-Charmed Rouge",
+      "elementResistance":{
+        "fire":-25,
+        "ice":50,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 101,
@@ -1513,7 +2413,16 @@
       "DEX": 110,
       "DropEXP": 600,
       "DropMoney": 300,
-      "img": "101-Charmed Warrior"
+      "img": "101-Charmed Warrior",
+      "elementResistance":{
+        "fire":-25,
+        "ice":50,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 102,
@@ -1528,7 +2437,16 @@
       "DEX": 120,
       "DropEXP": 600,
       "DropMoney": 300,
-      "img": "102-Charmed Priest"
+      "img": "102-Charmed Priest",
+      "elementResistance":{
+        "fire":-25,
+        "ice":50,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 103,
@@ -1543,7 +2461,16 @@
       "DEX": 130,
       "DropEXP": 7000,
       "DropMoney": 3000,
-      "img": "103-Banshee"
+      "img": "103-Banshee",
+      "elementResistance":{
+        "fire":-25,
+        "ice":100,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 104,
@@ -1558,7 +2485,16 @@
       "DEX": 140,
       "DropEXP": 1500,
       "DropMoney": 800,
-      "img": "104-kerberos"
+      "img": "104-kerberos",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 105,
@@ -1573,7 +2509,16 @@
       "DEX": 150,
       "DropEXP": 1600,
       "DropMoney": 900,
-      "img": "105-Devil Priest"
+      "img": "105-Devil Priest",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 106,
@@ -1588,7 +2533,16 @@
       "DEX": 150,
       "DropEXP": 1600,
       "DropMoney": 900,
-      "img": "106-Devil Cultist"
+      "img": "106-Devil Cultist",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 107,
@@ -1603,7 +2557,16 @@
       "DEX": 150,
       "DropEXP": 1600,
       "DropMoney": 900,
-      "img": "107-Wandering Spirit"
+      "img": "107-Wandering Spirit",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 108,
@@ -1618,7 +2581,16 @@
       "DEX": 155,
       "DropEXP": 1800,
       "DropMoney": 950,
-      "img": "108-Horned Beast"
+      "img": "108-Horned Beast",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 109,
@@ -1633,7 +2605,16 @@
       "DEX": 155,
       "DropEXP": 20000,
       "DropMoney": 5000,
-      "img": "109-Demon Dragon"
+      "img": "109-Demon Dragon",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 110,
@@ -1648,7 +2629,16 @@
       "DEX": 150,
       "DropEXP": 2000,
       "DropMoney": 800,
-      "img": "110-Giant Catacomb Spider"
+      "img": "110-Giant Catacomb Spider",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 111,
@@ -1663,7 +2653,16 @@
       "DEX": 150,
       "DropEXP": 2500,
       "DropMoney": 1200,
-      "img": "111-Catacomb Werewolf"
+      "img": "111-Catacomb Werewolf",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 112,
@@ -1678,7 +2677,16 @@
       "DEX": 150,
       "DropEXP": 2000,
       "DropMoney": 800,
-      "img": "112-Screaming Shadow"
+      "img": "112-Screaming Shadow",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 113,
@@ -1693,7 +2701,16 @@
       "DEX": 160,
       "DropEXP": 2500,
       "DropMoney": 1200,
-      "img": "113-Catacomb Snake"
+      "img": "113-Catacomb Snake",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 114,
@@ -1708,7 +2725,16 @@
       "DEX": 160,
       "DropEXP": 2500,
       "DropMoney": 1200,
-      "img": "114-Spider Mother"
+      "img": "114-Spider Mother",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 115,
@@ -1723,7 +2749,16 @@
       "DEX": 170,
       "DropEXP": 30000,
       "DropMoney": 12500,
-      "img": "115-Death Lord"
+      "img": "115-Death Lord",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":-50,
+        "dark":50
+      }
     },
     {
       "id": 116,
@@ -1738,7 +2773,16 @@
       "DEX": 200,
       "DropEXP": 6000,
       "DropMoney": 2000,
-      "img": "116-Pyramid Scout"
+      "img": "116-Pyramid Scout",
+      "elementResistance":{
+        "fire":-25,
+        "ice":0,
+        "lighting":-25,
+        "earth":50,
+        "wind":50,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 117,
@@ -1753,7 +2797,16 @@
       "DEX": 200,
       "DropEXP": 7500,
       "DropMoney": 2000,
-      "img": "117-Undead Guardian"
+      "img": "117-Undead Guardian",
+      "elementResistance":{
+        "fire":-25,
+        "ice":0,
+        "lighting":-25,
+        "earth":50,
+        "wind":50,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 118,
@@ -1768,7 +2821,16 @@
       "DEX": 200,
       "DropEXP": 7500,
       "DropMoney": 2000,
-      "img": "118-Winged Priest"
+      "img": "118-Winged Priest",
+      "elementResistance":{
+        "fire":-25,
+        "ice":0,
+        "lighting":-25,
+        "earth":50,
+        "wind":50,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 119,
@@ -1783,7 +2845,16 @@
       "DEX": 200,
       "DropEXP": 7500,
       "DropMoney": 2000,
-      "img": "119-Priest of Death"
+      "img": "119-Priest of Death",
+      "elementResistance":{
+        "fire":-25,
+        "ice":0,
+        "lighting":-25,
+        "earth":50,
+        "wind":50,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 120,
@@ -1798,7 +2869,16 @@
       "DEX": 210,
       "DropEXP": 8000,
       "DropMoney": 2500,
-      "img": "120-Lion Warrior"
+      "img": "120-Lion Warrior",
+      "elementResistance":{
+        "fire":-25,
+        "ice":0,
+        "lighting":-25,
+        "earth":50,
+        "wind":50,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 121,
@@ -1813,7 +2893,16 @@
       "DEX": 230,
       "DropEXP": 50000,
       "DropMoney": 20000,
-      "img": "121-asura"
+      "img": "121-asura",
+      "elementResistance":{
+        "fire":-25,
+        "ice":0,
+        "lighting":-25,
+        "earth":50,
+        "wind":50,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 122,
@@ -1828,7 +2917,16 @@
       "DEX": 210,
       "DropEXP": 10000,
       "DropMoney": 2500,
-      "img": "122-Furious Fire spirit"
+      "img": "122-Furious Fire spirit",
+      "elementResistance":{
+        "fire":50,
+        "ice":-50,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 123,
@@ -1843,7 +2941,16 @@
       "DEX": 210,
       "DropEXP": 11000,
       "DropMoney": 4000,
-      "img": "123-Fire Guardian"
+      "img": "123-Fire Guardian",
+      "elementResistance":{
+        "fire":50,
+        "ice":-50,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 124,
@@ -1858,7 +2965,16 @@
       "DEX": 220,
       "DropEXP": 11000,
       "DropMoney": 4000,
-      "img": "124-Fire Servant"
+      "img": "124-Fire Servant",
+      "elementResistance":{
+        "fire":50,
+        "ice":-50,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 125,
@@ -1873,7 +2989,16 @@
       "DEX": 220,
       "DropEXP": 12000,
       "DropMoney": 4500,
-      "img": "125-Fire Monk"
+      "img": "125-Fire Monk",
+      "elementResistance":{
+        "fire":50,
+        "ice":-50,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 126,
@@ -1888,7 +3013,16 @@
       "DEX": 225,
       "DropEXP": 12000,
       "DropMoney": 4500,
-      "img": "126-Elder Fire Spirit"
+      "img": "126-Elder Fire Spirit",
+      "elementResistance":{
+        "fire":100,
+        "ice":-50,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 127,
@@ -1903,7 +3037,16 @@
       "DEX": 225,
       "DropEXP": 100000,
       "DropMoney": 25000,
-      "img": "127-Ifrit"
+      "img": "127-Ifrit",
+      "elementResistance":{
+        "fire":100,
+        "ice":-50,
+        "lighting":25,
+        "earth":25,
+        "wind":25,
+        "light":-25,
+        "dark":25
+      }
     },
     {
       "id": 128,
@@ -1918,7 +3061,16 @@
       "DEX": 300,
       "DropEXP": 25000,
       "DropMoney": 8000,
-      "img": "128-Devil Chariot"
+      "img": "128-Devil Chariot",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":-25,
+        "dark":50
+      }
     },
     {
       "id": 129,
@@ -1933,7 +3085,16 @@
       "DEX": 300,
       "DropEXP": 25000,
       "DropMoney": 8000,
-      "img": "129-Devil Scyther"
+      "img": "129-Devil Scyther",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":-25,
+        "dark":50
+      }
     },
     {
       "id": 130,
@@ -1948,7 +3109,16 @@
       "DEX": 300,
       "DropEXP": 27000,
       "DropMoney": 9000,
-      "img": "130-Death Knight"
+      "img": "130-Death Knight",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":-25,
+        "dark":50
+      }
     },
     {
       "id": 131,
@@ -1963,7 +3133,16 @@
       "DEX": 300,
       "DropEXP": 30000,
       "DropMoney": 10000,
-      "img": "131-Devil General"
+      "img": "131-Devil General",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":-25,
+        "dark":50
+      }
     },
     {
       "id": 132,
@@ -1978,7 +3157,16 @@
       "DEX": 300,
       "DropEXP": 30000,
       "DropMoney": 10000,
-      "img": "132-Devil Blade Master"
+      "img": "132-Devil Blade Master",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":-25,
+        "dark":50
+      }
     },
     {
       "id": 133,
@@ -1993,7 +3181,16 @@
       "DEX": 400,
       "DropEXP": 100000,
       "DropMoney": 50000,
-      "img": "133-Demon Lord"
+      "img": "133-Demon Lord",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":-25,
+        "dark":50
+      }
     },
     {
       "id": 134,
@@ -2008,7 +3205,16 @@
       "DEX": 80,
       "DropEXP": 1000,
       "DropMoney": 5000,
-      "img": "134-Common Mimic"
+      "img": "134-Common Mimic",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 135,
@@ -2023,7 +3229,16 @@
       "DEX": 120,
       "DropEXP": 5000,
       "DropMoney": 12500,
-      "img": "135-Rare Mimic"
+      "img": "135-Rare Mimic",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     },
     {
       "id": 136,
@@ -2038,7 +3253,16 @@
       "DEX": 200,
       "DropEXP": 25000,
       "DropMoney": 80000,
-      "img": "136-devil mimic"
+      "img": "136-devil mimic",
+      "elementResistance":{
+        "fire":0,
+        "ice":0,
+        "lighting":0,
+        "earth":0,
+        "wind":0,
+        "light":0,
+        "dark":0
+      }
     }
 
   ]

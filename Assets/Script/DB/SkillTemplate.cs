@@ -30,6 +30,7 @@ namespace RPG
         public int skillPtsPerLv;
         public int[] jobRestriction;
         public ApplyBuffTemplate[] Buffs;
+        public ElementalTemplate elementDamage;
 
         public override string ToString()
         {
@@ -58,6 +59,8 @@ namespace RPG
             s.turn = turn;
             s.isAOE = isAOE;
             s.cooldown = cooldown;
+            s.elementDamage = elementDamage == null ? new ElementalTemplate() : elementDamage;
+            
 
             if(useOn.Equals("partner")){
                 s.useOn = GeneralSkill.UseOn.Partner;

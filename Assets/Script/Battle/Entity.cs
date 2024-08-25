@@ -30,6 +30,7 @@ namespace RPG
         public bool reflectiveDefense { get; set; }
         public float defenseModifier { get; set; }
         public BuffState buffState { get; set; }
+        public ElementalTemplate elementResistance {get; set;}
         public Entity(string name, BasicStat stat, Sprite img)
         {
             this.name = name;
@@ -42,6 +43,7 @@ namespace RPG
             isDefensing = false;
             defenseModifier = 1.0f;
             buffState = new BuffState();
+            elementResistance = new ElementalTemplate();
         }
 
         public void setOpponent(Entity entity)

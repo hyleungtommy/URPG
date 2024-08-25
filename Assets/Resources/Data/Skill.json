@@ -365,7 +365,16 @@
             "jobRestriction": [
                 0,
                 3
-            ]
+            ],
+            "elementDamage":{
+                "fire":50,
+                "ice":0,
+                "lighting":0,
+                "earth":0,
+                "wind":0,
+                "light":0,
+                "dark":0
+            }
         },
         {
             "name": "Ice Shard",
@@ -397,7 +406,16 @@
                 "modifier": 10,
                 "turn": 3,
                 "chance": 20
-            }]
+            }],
+            "elementDamage":{
+                "fire":0,
+                "ice":50,
+                "lighting":0,
+                "earth":0,
+                "wind":0,
+                "light":0,
+                "dark":0
+            }
         },
         {
             "name": "Thunder",
@@ -423,7 +441,16 @@
             "jobRestriction": [
                 0,
                 3
-            ]
+            ],
+            "elementDamage":{
+                "fire":0,
+                "ice":0,
+                "lighting":50,
+                "earth":0,
+                "wind":0,
+                "light":0,
+                "dark":0
+            }
         },
         {
             "name": "Tangle",
@@ -454,7 +481,16 @@
                 "modifier": 50,
                 "turn": 3,
                 "chance": 100
-            }]
+            }],
+            "elementDamage":{
+                "fire":0,
+                "ice":0,
+                "lighting":0,
+                "earth":25,
+                "wind":0,
+                "light":0,
+                "dark":0
+            }
         },
         {
             "name": "Explosion",
@@ -479,7 +515,16 @@
             "skillPtsPerLv": 2,
             "jobRestriction": [
                 3
-            ]
+            ],
+            "elementDamage":{
+                "fire":75,
+                "ice":0,
+                "lighting":0,
+                "earth":0,
+                "wind":0,
+                "light":0,
+                "dark":0
+            }
         },
         {
             "name": "Ice Rain",
@@ -510,7 +555,16 @@
                 "modifier": 10,
                 "turn": 3,
                 "chance": 20
-            }]
+            }],
+            "elementDamage":{
+                "fire":0,
+                "ice":75,
+                "lighting":0,
+                "earth":0,
+                "wind":0,
+                "light":0,
+                "dark":0
+            }
         },
         {
             "name": "Magical Shield",
@@ -1201,7 +1255,16 @@
             "skillPtsPerLv": 1,
             "jobRestriction": [
                 5
-            ]
+            ],
+            "elementDamage":{
+                "fire":0,
+                "ice":0,
+                "lighting":0,
+                "earth":0,
+                "wind":0,
+                "light":0,
+                "dark":50
+            }
         },
         {
             "name": "Negative Burst",
@@ -1226,7 +1289,16 @@
             "skillPtsPerLv": 2,
             "jobRestriction": [
                 5
-            ]
+            ],
+            "elementDamage":{
+                "fire":0,
+                "ice":0,
+                "lighting":0,
+                "earth":0,
+                "wind":0,
+                "light":0,
+                "dark":75
+            }
         },
         {
             "name": "Death",
@@ -1251,7 +1323,16 @@
             "skillPtsPerLv": 2,
             "jobRestriction": [
                 5
-            ]
+            ],
+            "elementDamage":{
+                "fire":0,
+                "ice":0,
+                "lighting":0,
+                "earth":0,
+                "wind":0,
+                "light":0,
+                "dark":100
+            }
         },
         {
             "name": "Life Absorpation",
@@ -1351,7 +1432,16 @@
             "skillPtsPerLv": 2,
             "jobRestriction": [
                 6
-            ]
+            ],
+            "elementDamage":{
+                "fire":50,
+                "ice":0,
+                "lighting":0,
+                "earth":0,
+                "wind":0,
+                "light":0,
+                "dark":0
+            }
         },
         {
             "name": "Icy Shot",
@@ -1382,7 +1472,16 @@
                 "modifier": 10,
                 "turn": 3,
                 "chance": 100
-            }]
+            }],
+            "elementDamage":{
+                "fire":0,
+                "ice":50,
+                "lighting":0,
+                "earth":0,
+                "wind":0,
+                "light":0,
+                "dark":0
+            }
         },
         {
             "name": "Poison Shot",
@@ -1438,7 +1537,16 @@
             "skillPtsPerLv": 2,
             "jobRestriction": [
                 6
-            ]
+            ],
+            "elementDamage":{
+                "fire":50,
+                "ice":0,
+                "lighting":0,
+                "earth":0,
+                "wind":0,
+                "light":0,
+                "dark":0
+            }
         },
         {
             "name": "Arrow Rain",
@@ -1892,7 +2000,16 @@
                 "modifier": 1,
                 "turn": 1,
                 "chance": 15
-            }]
+            }],
+            "elementDamage":{
+                "fire":0,
+                "ice":0,
+                "lighting":100,
+                "earth":0,
+                "wind":0,
+                "light":0,
+                "dark":0
+            }
         },
         {
             "name": "Mana Brust",
@@ -1947,7 +2064,16 @@
             "skillPtsPerLv": 2,
             "jobRestriction": [
                 3
-            ]
+            ],
+            "elementDamage":{
+                "fire":100,
+                "ice":0,
+                "lighting":0,
+                "earth":0,
+                "wind":0,
+                "light":0,
+                "dark":0
+            }
         },
         {
             "name": "Eternal Frozen",
@@ -1972,7 +2098,16 @@
             "skillPtsPerLv": 2,
             "jobRestriction": [
                 3
-            ]
+            ],
+            "elementDamage":{
+                "fire":0,
+                "ice":100,
+                "lighting":0,
+                "earth":0,
+                "wind":0,
+                "light":0,
+                "dark":0
+            }
         },
         {
             "name": "Mana Recovery",
@@ -2027,7 +2162,16 @@
             "skillPtsPerLv": 2,
             "jobRestriction": [
                 4
-            ]
+            ],
+            "elementDamage":{
+                "fire":0,
+                "ice":0,
+                "lighting":0,
+                "earth":0,
+                "wind":0,
+                "light":50,
+                "dark":0
+            }
         },
         {
             "name": "Advance Healing",
@@ -2248,7 +2392,16 @@
                 "modifier": 1,
                 "turn": 1,
                 "chance": 15
-            }]
+            }],
+            "elementDamage":{
+                "fire":0,
+                "ice":0,
+                "lighting":50,
+                "earth":0,
+                "wind":0,
+                "light":0,
+                "dark":0
+            }
         },
         {
             "name": "Wind Song",
@@ -2298,7 +2451,16 @@
             "skillPtsPerLv": 2,
             "jobRestriction": [
                 7
-            ]
+            ],
+            "elementDamage":{
+                "fire":0,
+                "ice":25,
+                "lighting":0,
+                "earth":0,
+                "wind":0,
+                "light":0,
+                "dark":0
+            }
         },
         {
             "name": "Smoke Bomb",
@@ -2414,7 +2576,16 @@
             "skillPtsPerLv": 2,
             "jobRestriction": [
                 7
-            ]
+            ],
+            "elementDamage":{
+                "fire":0,
+                "ice":0,
+                "lighting":0,
+                "earth":0,
+                "wind":0,
+                "light":0,
+                "dark":25
+            }
         }
     ]
 }

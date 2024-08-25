@@ -18,6 +18,7 @@ namespace RPG
         public bool useOnSelf { get; set; }
         public GeneralSkill.UseOn useOn { get; set; }
         public List<Buff> buffList { get; set; }
+        public ElementalTemplate elementDamage {get; set;}
         public Skill(Sprite img) : base(img)
         {
             aoe = false;

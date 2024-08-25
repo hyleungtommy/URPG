@@ -20,6 +20,7 @@ namespace RPG
         public int DropEXP;
         public int id;
         public int DropMoney;
+        public ElementalTemplate elementResistance;
 
         public EnemyTemplate()
         {
@@ -37,6 +38,9 @@ namespace RPG
             stat = stat.multiply(Param.difficultyModifier[Game.difficulty]);
             EntityEnemy entity = new EntityEnemy(name, stat, Resources.Load<Sprite>("Enemy/" + img), DropEXP, DropMoney);
             entity.strengthLv = 2;
+            if(elementResistance != null){
+                entity.elementResistance = elementResistance;
+            }
             return entity;
         }
 
@@ -49,6 +53,9 @@ namespace RPG
             //Debug.Log(name + "=" + stat.ToString());
             EntityEnemy entity = new EntityEnemy(name, stat, Resources.Load<Sprite>("Enemy/" + img), DropEXP, DropMoney);
             entity.strengthLv = strengthLv;
+            if(elementResistance != null){
+                entity.elementResistance = elementResistance;
+            }
             return entity;
         }
     }
