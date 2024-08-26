@@ -36,8 +36,9 @@ namespace RPG
                         attackModifier = attackModifier + passiveSkill.mod;
                     }
 
-                    int attackPower = (int)((user.stat.ATK * 1 * UnityEngine.Random.Range(0.9f, 1.1f) * attackModifier) - (opponent.isDefensing ? opponent.stat.DEF * opponent.defenseModifier : opponent.stat.DEF) * ModifierFromBuffHelper.getTargetDefenseModifierFromSpecialBuff(opponent));
-                    int elementalAttackPower = Util.CalculateElementalDamage(elementDamage, opponent.elementResistance, attackPower);
+                    float attackPower = (int)((user.stat.ATK * 1 * UnityEngine.Random.Range(0.9f, 1.1f) * attackModifier) - (opponent.isDefensing ? opponent.stat.DEF * opponent.defenseModifier : opponent.stat.DEF) * ModifierFromBuffHelper.getTargetDefenseModifierFromSpecialBuff(opponent));
+                    ElementalTemplate combinedElementDamage = elementDamage.plus(user.elementalDamage);
+                    int elementalAttackPower = Util.CalculateElementalDamage(combinedElementDamage, opponent.elementResistance, attackPower);
                     attackPower += elementalAttackPower;
 
                     if (attackPower <= 0)

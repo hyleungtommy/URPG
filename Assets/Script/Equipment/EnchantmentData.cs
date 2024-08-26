@@ -21,6 +21,24 @@ namespace RPG{
             return new BasicStat(matrix[0],matrix[1],matrix[2],matrix[3],matrix[4],matrix[5],matrix[6],matrix[7]);
         }
 
+        public ElementalTemplate GetElementalDamageMatrix(){
+            ElementalTemplate elemental = new ElementalTemplate();
+            foreach(EnchantmentEffect effect in effects){
+                if(effect.id >= 9 && effect.id <= 15)
+                    elemental = elemental.plus(effect.GetElementalMatrix());
+            }
+            return elemental;
+        }
+
+        public ElementalTemplate GetElementalResistanceMatrix(){
+            ElementalTemplate elemental = new ElementalTemplate();
+            foreach(EnchantmentEffect effect in effects){
+                if(effect.id >= 16 && effect.id <= 22)
+                    elemental = elemental.plus(effect.GetElementalMatrix());
+            }
+            return elemental;
+        }
+
         public string onSave(){
             string saveStr = "";
             foreach(EnchantmentEffect effect in effects){
@@ -34,9 +52,10 @@ namespace RPG{
                 //Debug.Log("enchant save str=" + saveStr);
                 string[]saveArr = saveStr.Split('!');
                 foreach(string s in saveArr){
-                    if(s.Length == 3){
-                        int enchantId = Int32.Parse(s.Split('\'')[0]);
-                        int enchantLv = Int32.Parse(s.Split('\'')[1]);
+                    string[] splited = s.Split('\'');
+                    if(splited.Length == 2){
+                        int enchantId = Int32.Parse(splited[0]);
+                        int enchantLv = Int32.Parse(splited[1]);
                         EnchantmentEffect effect = DB.enchantmentEffects[enchantId - 1].toEnchantmentEffect(enchantLv);
                         effects.Add(effect);
                     }

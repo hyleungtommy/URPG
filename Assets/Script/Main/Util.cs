@@ -198,7 +198,7 @@ namespace RPG
             }
         }
 
-        public static int CalculateElementalDamage(ElementalTemplate elementalDamage, ElementalTemplate elementalResistance, int atkPower){
+        public static int CalculateElementalDamage(ElementalTemplate elementalDamage, ElementalTemplate elementalResistance, float atkPower){
             if(elementalDamage != null && elementalResistance != null){
                 int[] elementalDamageFlatten = FlattenElementalMatrix(elementalDamage);
                 int[] elementalResistanceFlatten = FlattenElementalMatrix(elementalResistance);

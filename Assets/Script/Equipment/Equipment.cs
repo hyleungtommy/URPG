@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace RPG
 {
@@ -13,7 +14,7 @@ namespace RPG
         public int power { get { return (int)(basePower * Constant.equipmentRarityPowerModifier[rarity] + getReinforcePower()); } }
         public int magicPower { get { return (int)(baseMagicPower * Constant.equipmentRarityPowerModifier[rarity] + getReinforceMagicPower()); } }
 
-        public string fullName { get { return Constant.equipmentRarityPrefix[rarity] + " " + name + getReinforceLevelString(); } }
+        public string fullName { get { return Constant.equipmentRarityPrefix[rarity] + " " + name + GetFirstEnchantmentName() + getReinforceLevelString(); } }
         public ReinforceRecipe reinforceRecipe {get; set;}
         public EnchantmentData enchantment {get; set;}
 
@@ -75,8 +76,9 @@ namespace RPG
             if(enchantment != null){
                 Util.RemoveCraftItem(enchantment.requirements, enchantment.requireMoney, 1);
                 int rndLevel = Random.Range(1,5);
-                int rndEnchantmentId = Random.Range(0,DB.enchantmentEffects.Length);
-                EnchantmentEffect effect = DB.enchantmentEffects[rndEnchantmentId].toEnchantmentEffect(rndLevel);
+                EnchantEffectTemplate[] availableEnchantEffects = FilterEnchantEffect();
+                int rndEnchantmentId = Random.Range(0,availableEnchantEffects.Length);
+                EnchantmentEffect effect = availableEnchantEffects[rndEnchantmentId].toEnchantmentEffect(rndLevel);
                 enchantment.effects.Add(effect);
                 Game.craftSkillManager.addExperience(SkillCraft.Type.enchanting, reqLv/10);
             }
@@ -116,12 +118,45 @@ namespace RPG
             }
             return 0;
         }
+
+        private string GetFirstEnchantmentName(){
+            if(enchantment != null && enchantment.effects.Count > 0){
+                return " of " + enchantment.effects[0].name;
+            }
+            return "";
+        }
+
+        private EnchantEffectTemplate[] FilterEnchantEffect(){
+            int equipmentSlot = 0;
+            if(this is Shield){
+                equipmentSlot = 1;
+            }else if(this is Armor){
+                equipmentSlot = 2;
+            }else if(this is Accessory){
+                equipmentSlot = 3;
+            }
+            return DB.enchantmentEffects.Where(e => e.equipTypeWhiteList[equipmentSlot] == true).ToArray();
+        }
         
         public BasicStat getEnchantmentMatrix(){
             if(enchantment != null && enchantment.effects.Count > 0){
                 return enchantment.getEnchantmentMatrix();
             }
             return new BasicStat(0f,0f,0f,0f,0f,0f,0f,0f);
+        }
+
+        public ElementalTemplate GetElementalDamageMatrix(){
+            if(enchantment != null && enchantment.effects.Count > 0){
+                return enchantment.GetElementalDamageMatrix();
+            }
+            return new ElementalTemplate();
+        }
+
+        public ElementalTemplate GetElementalResistanceMatrix(){
+            if(enchantment != null && enchantment.effects.Count > 0){
+                return enchantment.GetElementalResistanceMatrix();
+            }
+            return new ElementalTemplate();
         }
 
     }

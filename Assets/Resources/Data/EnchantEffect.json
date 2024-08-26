@@ -6,7 +6,8 @@
             "desc":"Increase HP by %m %",
             "maxLv":5,
             "modifierStart":0.1,
-            "modifierIncrement":0.05
+            "modifierIncrement":0.05,
+            "equipTypeWhiteList":[false, true, true, true]
         },
         {
             "id":2,
@@ -14,7 +15,8 @@
             "desc":"Increase MP by %m %",
             "maxLv":5,
             "modifierStart":0.1,
-            "modifierIncrement":0.05
+            "modifierIncrement":0.05,
+            "equipTypeWhiteList":[false, true, true, true]
         },
         {
             "id":3,
@@ -22,7 +24,8 @@
             "desc":"Increase ATK by %m %",
             "maxLv":5,
             "modifierStart":0.05,
-            "modifierIncrement":0.05
+            "modifierIncrement":0.05,
+            "equipTypeWhiteList":[true, false, false, true]
         },
         {
             "id":4,
@@ -30,7 +33,8 @@
             "desc":"Increase DEF by %m %",
             "maxLv":5,
             "modifierStart":0.05,
-            "modifierIncrement":0.05
+            "modifierIncrement":0.05,
+            "equipTypeWhiteList":[false, true, true, true]
         },
         {
             "id":5,
@@ -38,7 +42,8 @@
             "desc":"Increase MATK by %m %",
             "maxLv":5,
             "modifierStart":0.05,
-            "modifierIncrement":0.05
+            "modifierIncrement":0.05,
+            "equipTypeWhiteList":[true, false, false, true]
         },
         {
             "id":6,
@@ -46,7 +51,8 @@
             "desc":"Increase MDEF by %m %",
             "maxLv":5,
             "modifierStart":0.05,
-            "modifierIncrement":0.05
+            "modifierIncrement":0.05,
+            "equipTypeWhiteList":[false, true, true, true]
         },
         {
             "id":7,
@@ -54,7 +60,8 @@
             "desc":"Increase AGI by %m %",
             "maxLv":5,
             "modifierStart":0.05,
-            "modifierIncrement":0.05
+            "modifierIncrement":0.05,
+            "equipTypeWhiteList":[false, true, true, true]
         },
         {
             "id":8,
@@ -62,7 +69,134 @@
             "desc":"Increase DEX by %m %",
             "maxLv":5,
             "modifierStart":0.05,
-            "modifierIncrement":0.05
+            "modifierIncrement":0.05,
+            "equipTypeWhiteList":[false, true, true, true]
+        },
+        {
+            "id":9,
+            "name":"Flame",
+            "desc":"Increase Fire Elemental Damage by %m %",
+            "maxLv":5,
+            "modifierStart":0.05,
+            "modifierIncrement":0.01,
+            "equipTypeWhiteList":[true, false, false, true]
+        },
+        {
+            "id":10,
+            "name":"Frost",
+            "desc":"Increase Ice Elemental Damage by %m %",
+            "maxLv":5,
+            "modifierStart":0.05,
+            "modifierIncrement":0.01,
+            "equipTypeWhiteList":[true, false, false, true]
+        },
+        {
+            "id":11,
+            "name":"Thunder",
+            "desc":"Increase Lightning Elemental Damage by %m %",
+            "maxLv":5,
+            "modifierStart":0.05,
+            "modifierIncrement":0.01,
+            "equipTypeWhiteList":[true, false, false, true]
+        },
+        {
+            "id":12,
+            "name":"Earth",
+            "desc":"Increase Earth Elemental Damage by %m %",
+            "maxLv":5,
+            "modifierStart":0.05,
+            "modifierIncrement":0.01,
+            "equipTypeWhiteList":[true, false, false, true]
+        },
+        {
+            "id":13,
+            "name":"Tempest",
+            "desc":"Increase Wind Elemental Damage by %m %",
+            "maxLv":5,
+            "modifierStart":0.05,
+            "modifierIncrement":0.01,
+            "equipTypeWhiteList":[true, false, false, true]
+        },
+        {
+            "id":14,
+            "name":"Light",
+            "desc":"Increase Light Elemental Damage by %m %",
+            "maxLv":5,
+            "modifierStart":0.05,
+            "modifierIncrement":0.01,
+            "equipTypeWhiteList":[true, false, false, true]
+        },
+        {
+            "id":15,
+            "name":"Darkness",
+            "desc":"Increase Dark Elemental Damage by %m %",
+            "maxLv":5,
+            "modifierStart":0.05,
+            "modifierIncrement":0.01,
+            "equipTypeWhiteList":[true, false, false, true]
+        },
+        {
+            "id":16,
+            "name":"Fire Resistance",
+            "desc":"Increase Fire Resistance by %m %",
+            "maxLv":5,
+            "modifierStart":0.1,
+            "modifierIncrement":0.05,
+            "equipTypeWhiteList":[false, true, true, true]
+        },
+        {
+            "id":17,
+            "name":"Ice Resistance",
+            "desc":"Increase Ice Resistance by %m %",
+            "maxLv":5,
+            "modifierStart":0.1,
+            "modifierIncrement":0.05,
+            "equipTypeWhiteList":[false, true, true, true]
+        },
+        {
+            "id":18,
+            "name":"Lightning Resistance",
+            "desc":"Increase Lightning Resistance by %m %",
+            "maxLv":5,
+            "modifierStart":0.1,
+            "modifierIncrement":0.05,
+            "equipTypeWhiteList":[false, true, true, true]
+        },
+        {
+            "id":19,
+            "name":"Earth Resistance",
+            "desc":"Increase Earth Resistance by %m %",
+            "maxLv":5,
+            "modifierStart":0.1,
+            "modifierIncrement":0.05,
+            "equipTypeWhiteList":[false, true, true, true]
+        },
+        {
+            "id":20,
+            "name":"Wind Resistance",
+            "desc":"Increase Wind Resistance by %m %",
+            "maxLv":5,
+            "modifierStart":0.1,
+            "modifierIncrement":0.05,
+            "equipTypeWhiteList":[false, true, true, true]
+        },
+        {
+            "id":21,
+            "name":"Light Resistance",
+            "desc":"Increase Light Resistance by %m %",
+            "maxLv":5,
+            "modifierStart":0.1,
+            "modifierIncrement":0.05,
+            "equipTypeWhiteList":[false, true, true, true]
+        },
+        {
+            "id":22,
+            "name":"Dark Resistance",
+            "desc":"Increase Dark Resistance by %m %",
+            "maxLv":5,
+            "modifierStart":0.1,
+            "modifierIncrement":0.05,
+            "equipTypeWhiteList":[false, true, true, true]
         }
     ]
 }

@@ -56,6 +56,33 @@ namespace RPG
             return equipStat;
         }
 
+        public ElementalTemplate GetEquipmentElementalDamage(){
+            ElementalTemplate elementalDamage = new ElementalTemplate();
+            if (weaponEquipped != null){
+                elementalDamage = elementalDamage.plus(weaponEquipped.GetElementalDamageMatrix());
+            }
+            if(accessoryEquipped != null){
+                elementalDamage = elementalDamage.plus(accessoryEquipped.GetElementalDamageMatrix());
+            }
+            return elementalDamage;
+        }
+
+        public ElementalTemplate GetEquipmentElementalResistance(){
+            ElementalTemplate elementalDamage = new ElementalTemplate();
+            if (shieldEquipped != null){
+                elementalDamage = elementalDamage.plus(shieldEquipped.GetElementalResistanceMatrix());
+            }
+                
+            if (armorEquipped != null){
+                elementalDamage = elementalDamage.plus(armorEquipped.GetElementalResistanceMatrix());
+            }
+
+            if(accessoryEquipped != null){
+                elementalDamage = elementalDamage.plus(accessoryEquipped.GetElementalResistanceMatrix());
+            }
+            return elementalDamage;
+        }
+
         public void equip(StorageSlot slot, Equipment equipment)
         {
             if (equipment is Weapon)

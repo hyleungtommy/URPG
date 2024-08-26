@@ -31,6 +31,7 @@ namespace RPG
         public float defenseModifier { get; set; }
         public BuffState buffState { get; set; }
         public ElementalTemplate elementResistance {get; set;}
+        public ElementalTemplate elementalDamage {get; set;}
         public Entity(string name, BasicStat stat, Sprite img)
         {
             this.name = name;
@@ -44,6 +45,7 @@ namespace RPG
             defenseModifier = 1.0f;
             buffState = new BuffState();
             elementResistance = new ElementalTemplate();
+            elementalDamage = new ElementalTemplate();
         }
 
         public void setOpponent(Entity entity)
@@ -116,7 +118,8 @@ namespace RPG
                 }
 
                 float attackPower = (this.stat.ATK * 1 * UnityEngine.Random.Range(0.9f, 1.1f) * attackModifier) - (opponent[j].isDefensing ? opponent[j].stat.DEF * opponent[j].defenseModifier : opponent[j].stat.DEF) * ModifierFromBuffHelper.getTargetDefenseModifierFromSpecialBuff(opponent[j]);
-                
+                int elementalAttackPower = Util.CalculateElementalDamage(this.elementalDamage, opponent[j].elementResistance, attackPower);
+                attackPower += elementalAttackPower;
                 
                 if (attackPower <= 0f) attackPower = 1f;
                 float hitChance = this.stat.DEX / (opponent[j].stat.AGI * 2f);

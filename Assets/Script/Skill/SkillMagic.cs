@@ -29,8 +29,9 @@ namespace RPG
                     atkMsg.SkillAnimationName = animation;
                     atkMsg.AOE = aoe;
                     atkMsg.SkillName = name;
-                    int attackPower = (int)((user.stat.MATK * 1 * UnityEngine.Random.Range(0.5f, 1.5f) * mod * ModifierFromBuffHelper.getMagicModifierFromSpecialBuff(user, name)) - opponent.stat.MDEF * ModifierFromBuffHelper.getTargetDefenseModifierFromSpecialBuff(opponent));
-                    int elementalAttackPower = Util.CalculateElementalDamage(elementDamage, opponent.elementResistance, attackPower);
+                    float attackPower = (int)((user.stat.MATK * 1 * UnityEngine.Random.Range(0.5f, 1.5f) * mod * ModifierFromBuffHelper.getMagicModifierFromSpecialBuff(user, name)) - opponent.stat.MDEF * ModifierFromBuffHelper.getTargetDefenseModifierFromSpecialBuff(opponent));
+                    ElementalTemplate combinedElementDamage = elementDamage.plus(user.elementalDamage);
+                    int elementalAttackPower = Util.CalculateElementalDamage(combinedElementDamage, opponent.elementResistance, attackPower);
                     attackPower += elementalAttackPower;
                     
                     if (attackPower <= 0)

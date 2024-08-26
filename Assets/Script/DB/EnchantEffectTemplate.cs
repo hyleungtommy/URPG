@@ -8,6 +8,7 @@ namespace RPG{
         public int maxLv;
         public float modifierStart;
         public float modifierIncrement;
+        public bool[] equipTypeWhiteList;
         public EnchantmentEffect toEnchantmentEffect(int level){
             EnchantmentEffect effect = new EnchantmentEffect();
             effect.id = id;
@@ -15,6 +16,7 @@ namespace RPG{
             effect.name = name;
             effect.modifier = modifierStart + modifierIncrement * (level-1);
             effect.desc = desc.Replace("%m", (effect.modifier * 100).ToString());
+            effect.equipTypeWhiteList = equipTypeWhiteList;
             return effect;
         }
     }

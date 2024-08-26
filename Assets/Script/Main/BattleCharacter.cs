@@ -106,12 +106,19 @@ namespace RPG
         /// <returns>An Entity Player object that represent the character</returns>
         public EntityPlayer toEntity()
         {
-            BasicStat statt = this.stat.toBasicStat();
-            statt = statt.plus(equipmentManager.getEquipmentStat());
-            statt = statt.multiply(equipmentManager.getEquipmentEnchantmentStat());
+            BasicStat combinedStat = this.stat.toBasicStat();
+            combinedStat = combinedStat.plus(equipmentManager.getEquipmentStat());
+            combinedStat = combinedStat.multiply(equipmentManager.getEquipmentEnchantmentStat());
+
+            ElementalTemplate combinedElementalDamage = equipmentManager.GetEquipmentElementalDamage();
+            ElementalTemplate combinedElementalResistance = equipmentManager.GetEquipmentElementalResistance();
             
-            Debug.Log(name + " stat:" + statt.ToString() + " equip stat: " + equipmentManager.getEquipmentStat().ToString() + " enchant stat=" + equipmentManager.getEquipmentEnchantmentStat().ToString());
-            EntityPlayer player = new EntityPlayer(name, statt, faceImg[0], job.CreateEntityPlayerSkillList());
+            
+            Debug.Log(name + " stat:" + combinedStat.ToString() + " equip stat: " + equipmentManager.getEquipmentStat().ToString() + " enchant stat=" + equipmentManager.getEquipmentEnchantmentStat().ToString() + " elementalDamage=" + combinedElementalDamage.ToString() + " elementalResistance=" + combinedElementalResistance.ToString());
+            
+            EntityPlayer player = new EntityPlayer(name, combinedStat, faceImg[0], job.CreateEntityPlayerSkillList());
+            player.elementResistance = combinedElementalResistance;
+            player.elementalDamage = combinedElementalDamage;
             return player;
         }
 
