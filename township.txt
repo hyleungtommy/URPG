@@ -1,0 +1,31 @@
+Resources:
+    Food
+    Wood
+    Stone
+    Metal
+    Population
+    Magic (not in first version)
+Resources Building
+    Farm
+    Lumberman Hut
+    Quarry
+    Mine
+    Botanic Garden (not in first version)
+    Deep Mine (not in first version)
+    Beast Farm (not in first version)
+Main Building
+    Town Hall
+    House
+    Warehouse
+    Library (not in first version)
+    Mage Tower (not in first version)
+Military Building (not in first version)
+    Barrack
+    Archer Barrack
+    ...
+
+Roadmap
+    1. Basic Resource Gen & Warehouse
+    2. Upgarde System
+    3. Magic & Resource Gen
+    4. Military
