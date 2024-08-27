@@ -19,6 +19,7 @@ Main Building
     Warehouse
     Library (not in first version)
     Mage Tower (not in first version)
+    Temple (not in first version)
 Military Building (not in first version)
     Barrack
     Archer Barrack
@@ -29,3 +30,4 @@ Roadmap
     2. Upgarde System
     3. Magic & Resource Gen
     4. Military
+    5. Temple

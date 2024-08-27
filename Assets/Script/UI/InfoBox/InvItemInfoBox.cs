@@ -14,6 +14,8 @@ public class InvItemInfoBox : BasicInfoBox
     public ItemBox box;
     public InventoryScene scene;
     public Button buttonUse;
+    public Button sendToWarehouse;
+    public Button sendToInventory;
     StorageSlot slot;
     private Item item;
     void Start()

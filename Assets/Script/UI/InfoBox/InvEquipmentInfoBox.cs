@@ -13,6 +13,8 @@ public class InvEquipmentInfoBox : BasicInfoBox
     public ItemBox box;
     public EquipmentPowerText powerText;
     public InventoryScene scene;
+    public Button sendToWarehouse;
+    public Button sendToInventory;
     StorageSlot slot;
 
     // Start is called before the first frame update

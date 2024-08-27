@@ -1,0 +1,99 @@
+{
+    "Items":[
+        {
+            "name": "Town Hall",
+            "desc": "The main building of your town",
+            "img": "icon-townhall",
+            "type": "main",
+            "requireMoneyStart":"1000",
+            "requireMoneyInc":"500",
+            "requireWoodStart":"100",
+            "requireStoneStart": "100",
+            "requireWoodInc": "50",
+            "requireStoneInc": "50",
+            "requireTime":"60"
+        },
+        {
+            "name": "House",
+            "desc": "House your population",
+            "img": "icon-house",
+            "type": "main",
+            "requireMoneyStart":"500",
+            "requireMoneyInc":"250",
+            "requireWoodStart":"50",
+            "requireStoneStart": "25",
+            "requireWoodInc": "50",
+            "requireStoneInc": "25",
+            "requireTime":"30"
+        },
+        {
+            "name": "Warehouse",
+            "desc": "Store your resources as well as items",
+            "img": "icon-warehouse",
+            "type": "main",
+            "requireMoneyStart":"500",
+            "requireMoneyInc":"250",
+            "requireWoodStart":"100",
+            "requireStoneStart": "100",
+            "requireWoodInc": "25",
+            "requireStoneInc": "50",
+            "requireTime":"30"
+        },
+        {
+            "name": "Farm",
+            "desc": "Produce foods for your town",
+            "img": "icon-wheat",
+            "type": "resource",
+            "requireMoneyStart":"500",
+            "requireMoneyInc":"250",
+            "requireWoodStart":"50",
+            "requireStoneStart": "50",
+            "requireWoodInc": "25",
+            "requireStoneInc": "25",
+            "requirePopulation":"5",
+            "requireTime":"30"
+        },
+        {
+            "name": "Lumberman Hut",
+            "desc": "Produce woods for your town",
+            "img": "icon-forest",
+            "type": "resource",
+            "requireMoneyStart":"500",
+            "requireMoneyInc":"250",
+            "requireWoodStart":"50",
+            "requireStoneStart": "25",
+            "requireWoodInc": "50",
+            "requireStoneInc": "25",
+            "requirePopulation":"5",
+            "requireTime":"30"
+        },
+        {
+            "name": "Quarry",
+            "desc": "Produce stone for your town",
+            "img": "icon-quarry",
+            "type": "resource",
+            "requireMoneyStart":"500",
+            "requireMoneyInc":"250",
+            "requireWoodStart":"25",
+            "requireStoneStart": "50",
+            "requireWoodInc": "25",
+            "requireStoneInc": "50",
+            "requirePopulation":"5",
+            "requireTime":"30"
+        },
+        {
+            "name": "Mine",
+            "desc": "Produce metal for your town",
+            "img": "icon-gold-mine",
+            "type": "resource",
+            "requireMoneyStart":"500",
+            "requireMoneyInc":"250",
+            "requireWoodStart":"100",
+            "requireStoneStart": "100",
+            "requireWoodInc": "50",
+            "requireStoneInc": "50",
+            "requirePopulation":"5",
+            "requireTime":"30"
+        }
+    ]
+}
