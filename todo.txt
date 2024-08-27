@@ -12,7 +12,9 @@
     -Achievement
     -Item AOE mode
     -Enemy Skill
-    -Elemental Damage
+    -Buff
+        -elemental resistance Buff
+        -buff lv show on screen
     -Casino
     
 
