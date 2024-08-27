@@ -84,6 +84,12 @@ namespace RPG
 
         public static int[] memberUnlockAt = { 0, 0, 8, 17, 24, 32, 45 };
         public static int[] mapUnlockAt = { 0, 6, 15, 23, 30, 35, 42 };
+        //Township
+        public const int TownhallMaxLv = 50;
+        public const int WarehouseResourceCapacityStart=1000;
+        public const int WarehouseResourceCapacityIncrement=500;
+        public const int WarehouseStorageSlotStart=50;
+        public const int WarehouseStorageSlotIncrement=5;
 
     }
 }
