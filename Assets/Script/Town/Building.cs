@@ -11,25 +11,30 @@ namespace RPG
         public string Desc {set; get;}
         public string Type {set; get;}
         public int Lv {set; get;} //save
-        public int RequireMoney {get{
-            return RequireMoneyStart + (Lv - 1)* RequireMoneyInc;
-        }}
-        public int RequireWood {get{
-            return RequireWood + (Lv - 1)* RequireWoodInc;
-        }}
-        public int RequireStone{get{
-            return RequireStoneStart + (Lv - 1)* RequireStoneInc;
-        }}
-        public int RequireMoneyStart {set; get;}
-        public int RequireMoneyInc {set; get;}
-        public int RequireWoodStart {set; get;}
-        public int RequireStoneStart {set; get;}
-        public int RequireWoodInc {set; get;}
-        public int RequireStoneInc {set; get;}
-        public int RequirePopulation {set; get;}
-        public int RequireTime {set; get;}
+        public BuildingRequirement Requirement {set; get;}
         public Building(Sprite img):base(img){
 
+        }
+
+        public string CanUpgrade(){
+            string errorMsg = "";
+            if(Game.money < Requirement.RequireMoney){
+                errorMsg = "Not enough money";
+            }else if(Game.town.Resources.Wood < Requirement.RequireWood){
+                errorMsg = "Not enough wood";
+            }else if(Game.town.Resources.Stone < Requirement.RequireStone){
+                errorMsg = "Not enough stone";
+            }else if(Game.town.MaxPopulation - Game.town.Population < Requirement.RequirePopulation){
+                errorMsg = "Not enough population, build more house";
+            }
+            return errorMsg;
+        }
+
+        public void UpgradeBuilding(){
+            Game.money -= Requirement.RequireMoney;
+            Game.town.Resources.Wood -= Requirement.RequireWood;
+            Game.town.Resources.Stone -= Requirement.RequireStone;
+            Lv ++;
         }
 
     }

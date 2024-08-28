@@ -41,6 +41,7 @@ namespace RPG
         public static GlobalBuffTemplate[] globalBuffTemplates;
         public static DailyQuestTemplate[] dailyQuestTemplates;
         public static DungeonTemplate[] dunegonTemplates;
+        public static BuildingTemplate[] buildingTemplates;
 
         /// <summary>
         /// load data from all jsons from Resources/Data
@@ -159,6 +160,10 @@ namespace RPG
             //Dunegon
             TextAsset dunegonTemplateJSON = Resources.Load<TextAsset>("Data/Dungeon");
             dunegonTemplates = JsonHelper.FromJson<DungeonTemplate>(dunegonTemplateJSON.text);
+
+            //Building
+            TextAsset buildingTemplateJSON = Resources.Load<TextAsset>("Data/Building");
+            buildingTemplates = JsonHelper.FromJson<BuildingTemplate>(buildingTemplateJSON.text);
         }
 
         /// <summary>

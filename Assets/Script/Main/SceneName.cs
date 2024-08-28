@@ -33,5 +33,7 @@ namespace RPG
         public const string Cheat = "Cheat";
         public const string QuestCenter = "QuestCenter";
         public const string Dungeon = "Dungeon";
+        public const string Townhall = "Townhall";
+        public const string Township = "Township";
     }
 }

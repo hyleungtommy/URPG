@@ -230,6 +230,11 @@ namespace RPG
             return elementValues;
         }
 
+        public static string FormatTime(int taskTime){
+            TimeSpan time = TimeSpan.FromSeconds(taskTime);
+            return time.ToString(@"hh\:mm\:ss");
+        }
+
 
     }
 }

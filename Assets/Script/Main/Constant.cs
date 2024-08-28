@@ -90,6 +90,9 @@ namespace RPG
         public const int WarehouseResourceCapacityIncrement=500;
         public const int WarehouseStorageSlotStart=50;
         public const int WarehouseStorageSlotIncrement=5;
-
+        public static int[] BasicResourceGenerateRateStart = {20,20,20,10};
+        public static int[] BasicResourceGenerateRateInc = {10,10,10,5};
+        public const int PopulationStart = 20;
+        public const int PopulationPerHouseLv = 10;
     }
 }

@@ -25,6 +25,7 @@ namespace RPG
         public static GlobalBuffManager globalBuffManager = new GlobalBuffManager();
         public static QuestManager questManager = new QuestManager();
         public static Dungeon currentDungeon;
+        public static Town town;
 
         public static void initialize(){
             party = new Party();
@@ -132,6 +133,8 @@ namespace RPG
                 //Quest
                 questManager.OnLoad(save.dailQuests);
                 questManager.RenewCompletedDailyQuest();//TODO: make it so that it refresh daily
+                //Town
+                town = new Town();
             }
 
         }

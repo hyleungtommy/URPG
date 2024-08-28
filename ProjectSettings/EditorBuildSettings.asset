@@ -92,4 +92,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Dungeon.unity
     guid: f526d0614abe7a048985be76961afe58
+  - enabled: 1
+    path: Assets/Scenes/Township.unity
+    guid: d4ee49f1a7b91364cb936819982b56de
+  - enabled: 1
+    path: Assets/Scenes/Townhall.unity
+    guid: eed8bab62d1568e4bb44ed81e8f923a0
   m_configObjects: {}

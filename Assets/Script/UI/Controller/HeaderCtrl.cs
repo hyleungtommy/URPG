@@ -11,6 +11,13 @@ public class HeaderCtrl : BasicScene
     public Text currArea;
     public Text currLoc;
     public GameObject currAreaPanel;
+    public Text textResourceWood;
+    public Text textResourceFood;
+    public Text textResourceStone;
+    public Text textResourceMetal;
+    public Text textPopulation;
+    public GameObject townInfoRow;
+    public bool enableTownInfoRow;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +32,7 @@ public class HeaderCtrl : BasicScene
 
     public void render()
     {
+        townInfoRow.gameObject.SetActive(enableTownInfoRow);
         playerName.text = Game.playerName;
         money.text = Game.money.ToString();
         if (Game.currLoc != null)
@@ -45,6 +53,13 @@ public class HeaderCtrl : BasicScene
         {
             currLoc.text = "no map";
             currArea.text = "na";
+        }
+        if(enableTownInfoRow){
+            textResourceFood.text = Game.town.Resources.Food.ToString();
+            textResourceWood.text = Game.town.Resources.Wood.ToString();
+            textResourceStone.text = Game.town.Resources.Stone.ToString();
+            textResourceMetal.text = Game.town.Resources.Metal.ToString();
+            textPopulation.text = Game.town.Population + "/" + Game.town.MaxPopulation;
         }
 
     }
@@ -80,6 +95,9 @@ public class HeaderCtrl : BasicScene
                 break;
             case 6:
                 jumpToScene(SceneName.Setting);
+                break;
+            case 7:
+                jumpToScene(SceneName.Township);
                 break;
             default:
                 break;

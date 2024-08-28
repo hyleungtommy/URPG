@@ -21,20 +21,47 @@ namespace RPG
         public int requirePopulation;
         public int requireTime;
 
-        public Building toBuilding(){
+        public Building ToBuilding(){
             Building building = new Building(Resources.Load<Sprite>("UI/Icon/" + img));
             building.Id = id;
             building.Name = name;
             building.Desc = desc;
             building.Type = type;
-            building.RequireMoneyStart = requireMoneyStart;
-            building.RequireMoneyInc = requireMoneyInc;
-            building.RequireStoneStart = requireStoneStart;
-            building.RequireStoneInc = requireStoneInc;
-            building.RequireWoodStart = requireStoneStart;
-            building.RequireWoodInc = requireWoodInc;
-            building.RequireTime = requireTime;
-            building.RequirePopulation = requirePopulation;
+            BuildingRequirement buildingRequirement = new BuildingRequirement(
+                building,requireMoneyStart,requireMoneyInc,requireWoodStart,requireWoodInc,requireStoneStart,requireStoneInc,requirePopulation, requireTime
+            );
+            building.Requirement = buildingRequirement;
+            return building;
+        }
+
+        public ResourceBuilding ToResourceBuilding(TownResources.Type type){
+            ResourceBuilding building = new ResourceBuilding(
+                Resources.Load<Sprite>("UI/Icon/" + img),
+                type,
+                Constant.BasicResourceGenerateRateStart[(int)type],
+                Constant.BasicResourceGenerateRateInc[(int)type]
+            );
+            building.Id = id;
+            building.Name = name;
+            building.Desc = desc;
+            building.Type = this.type;
+            BuildingRequirement buildingRequirement = new BuildingRequirement(
+                building,requireMoneyStart,requireMoneyInc,requireWoodStart,requireWoodInc,requireStoneStart,requireStoneInc,requirePopulation, requireTime
+            );
+            building.Requirement = buildingRequirement;
+            return building;
+        }
+
+        public Warehouse ToWarehouse(){
+            Warehouse building = new Warehouse(Resources.Load<Sprite>("UI/Icon/" + img));
+            building.Id = id;
+            building.Name = name;
+            building.Desc = desc;
+            building.Type = this.type;
+            BuildingRequirement buildingRequirement = new BuildingRequirement(
+                building,requireMoneyStart,requireMoneyInc,requireWoodStart,requireWoodInc,requireStoneStart,requireStoneInc,requirePopulation, requireTime
+            );
+            building.Requirement = buildingRequirement;
             return building;
         }
 
