@@ -37,7 +37,7 @@ namespace RPG
 
         public string onSave(){
             if(exploreTask != null){
-                return exploreTask.startTime.ToString("yyyy-MM-dd-HH-mm-ss");
+                return Util.ToDateTimeSaveString(exploreTask.startTime);
             }else{
                 return "";
             }
@@ -47,7 +47,7 @@ namespace RPG
             try{
                 if(saveStr.Length > 0){
                     exploreTask = new ExploreTask(this);
-                    exploreTask.startTime = DateTime.ParseExact(saveStr,"yyyy-MM-dd-HH-mm-ss",CultureInfo.InvariantCulture);
+                    exploreTask.startTime = Util.GetDateTimeFromLoadSave(saveStr);
                 }
             }catch(Exception e){
                 Debug.Log("date conversion error:" + saveStr);

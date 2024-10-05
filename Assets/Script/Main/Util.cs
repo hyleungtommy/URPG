@@ -4,7 +4,7 @@ using UnityEngine;
 using System;
 using System.Linq;
 using UnityEditor;
-
+using System.Globalization;
 namespace RPG
 {
     public static class Util
@@ -233,6 +233,14 @@ namespace RPG
         public static string FormatTime(int taskTime){
             TimeSpan time = TimeSpan.FromSeconds(taskTime);
             return time.ToString(@"hh\:mm\:ss");
+        }
+
+        public static DateTime GetDateTimeFromLoadSave(string saveStr){
+            return DateTime.ParseExact(saveStr,"yyyy-MM-dd-HH-mm-ss",CultureInfo.InvariantCulture);
+        }
+
+        public static string ToDateTimeSaveString(DateTime dateTime){
+            return dateTime.ToString("yyyy-MM-dd-HH-mm-ss");
         }
 
 

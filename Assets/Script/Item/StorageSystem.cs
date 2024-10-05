@@ -285,6 +285,7 @@ namespace RPG
         public virtual void onLoad(string save)
         {
             //Debug.Log ("inv save str : "  +save);
+            if(save == null) return;
             if (save.Length > 0)
             {
                 string[] saveStr = save.Split(';');

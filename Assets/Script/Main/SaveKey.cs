@@ -26,5 +26,6 @@ namespace RPG
         // public const string explore_site = "explore_site";
         // public const string daily_quest = "daily_quest";
         public const string current_save_slot = "current_save_slot";
+        public const string last_town_timestamp = "last_town_timestamp";
     }
 }

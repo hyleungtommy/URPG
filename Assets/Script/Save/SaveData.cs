@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using JetBrains.Annotations;
 namespace RPG
 {
     [Serializable]
@@ -29,6 +30,8 @@ namespace RPG
         public bool unlockAllRecipe;
         public bool noCraftRequirement;
         public bool skillNoCooldown;
+        public string township;
+        public string warehouseStorage;
         
     }
 }

@@ -37,5 +37,13 @@ namespace RPG
             Lv ++;
         }
 
+        public string OnSave(){
+            return Lv.ToString();
+        }
+
+        public void OnLoad(string saveStr){
+            Lv = int.Parse(saveStr);
+        }
+
     }
 }

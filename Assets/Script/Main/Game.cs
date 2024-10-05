@@ -26,6 +26,7 @@ namespace RPG
         public static QuestManager questManager = new QuestManager();
         public static Dungeon currentDungeon;
         public static Town town;
+        public static string inventorySceneType = "invenotry";
 
         public static void initialize(){
             party = new Party();
@@ -71,7 +72,9 @@ namespace RPG
                 noCraftRequirement = Param.noCraftRequirement,
                 unlockAllRecipe = Param.unlockAllRecipe,
                 skillNoCooldown = Param.skillNoCooldown,
-                jobs = partySaveData.jobs
+                jobs = partySaveData.jobs,
+                township = Game.town.OnSave(),
+                warehouseStorage = Game.town.Warehouse.ItemStorage.onSave()
             };
 
             string json = JsonUtility.ToJson(saveData);
@@ -135,6 +138,8 @@ namespace RPG
                 questManager.RenewCompletedDailyQuest();//TODO: make it so that it refresh daily
                 //Town
                 town = new Town();
+                town.OnLoad(save.township);
+                town.Warehouse.ItemStorage.onLoad(save.warehouseStorage);
             }
 
         }

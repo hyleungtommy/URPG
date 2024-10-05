@@ -42,6 +42,8 @@ public class InvItemInfoBox : BasicInfoBox
         textDesc1.text = item.desc;
         box.render(item);
         buttonUse.gameObject.SetActive(item is ItemSpecial);
+        sendToInventory.gameObject.SetActive(Game.inventorySceneType.Equals("warehouse"));
+        sendToWarehouse.gameObject.SetActive(Game.inventorySceneType.Equals("inventory"));
     }
 
     public void onClickDestroyItem()
@@ -56,6 +58,16 @@ public class InvItemInfoBox : BasicInfoBox
         slot.clear();
         (item as ItemSpecial).OnUse();
         Game.SaveGame();
+        scene.render();
+        hide();
+    }
+
+    public void OnClickTransferItem(){
+        if(Game.inventorySceneType.Equals("inventory")){
+            Game.inventory.transferTo(Game.town.Warehouse.ItemStorage, slot.getId());
+        }else{
+            Game.town.Warehouse.ItemStorage.transferTo(Game.inventory, slot.getId());
+        }
         scene.render();
         hide();
     }

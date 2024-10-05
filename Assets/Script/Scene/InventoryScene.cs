@@ -11,16 +11,22 @@ public class InventoryScene : BasicScene
     public HeaderCtrl header;
     public InvItemInfoBox itemInfoBox;
     public InvEquipmentInfoBox equipmentInfoBox;
+    private StorageSystem storageSystem;
     // Start is called before the first frame update
     void Start()
     {
+        if(Game.inventorySceneType.Equals("warehouse")){
+            storageSystem = Game.town.Warehouse.ItemStorage;
+        }else{
+            storageSystem = Game.inventory;
+        }
         header.render();
         render();
     }
 
     public void render()
     {
-        int noOfBox = Game.inventory.getSize();
+        int noOfBox = storageSystem.getSize();
         Transform contentTran = invContent.transform;
         GameObject invBox;
         foreach (Transform child in contentTran)
@@ -32,7 +38,7 @@ public class InventoryScene : BasicScene
             int j = i;
             invBox = (GameObject)Instantiate(invBoxPrefab, contentTran);
             InvBox invBoxCtrl = invBox.GetComponent<InvBox>();
-            invBoxCtrl.setStorageSlot(Game.inventory.getSlot(i));
+            invBoxCtrl.setStorageSlot(storageSystem.getSlot(i));
             invBoxCtrl.render();
             invBox.GetComponent<Button>().onClick.AddListener(() => this.onClickItem(j));
         }
@@ -49,13 +55,13 @@ public class InventoryScene : BasicScene
     public void onClickItem(int slotId)
     {
         //Debug.Log(Game.inventory.getSlot(slotId).getContainment());
-        if (Game.inventory.getSlot(slotId) != null && Game.inventory.getSlot(slotId).getContainment() != null)
+        if (storageSystem.getSlot(slotId) != null && storageSystem.getSlot(slotId).getContainment() != null)
         {
-            if(Game.inventory.getSlot(slotId).getContainment() is Equipment){
-                equipmentInfoBox.setStoageSlot(Game.inventory.getSlot(slotId));
+            if(storageSystem.getSlot(slotId).getContainment() is Equipment){
+                equipmentInfoBox.setStoageSlot(storageSystem.getSlot(slotId));
                 equipmentInfoBox.show();
             }else{
-                itemInfoBox.setStoageSlot(Game.inventory.getSlot(slotId));
+                itemInfoBox.setStoageSlot(storageSystem.getSlot(slotId));
                 itemInfoBox.show();
             }
         }

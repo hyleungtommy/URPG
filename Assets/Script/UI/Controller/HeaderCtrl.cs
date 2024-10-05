@@ -85,6 +85,7 @@ public class HeaderCtrl : BasicScene
                 jumpToScene(SceneName.Status);
                 break;
             case 3:
+                Game.inventorySceneType = "inventory";
                 jumpToScene(SceneName.Inventory);
                 break;
             case 4:

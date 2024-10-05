@@ -51,12 +51,24 @@ public class InvEquipmentInfoBox : BasicInfoBox
             textDesc2.text = "";
         }
         powerText.render(e);
+        sendToInventory.gameObject.SetActive(Game.inventorySceneType.Equals("warehouse"));
+        sendToWarehouse.gameObject.SetActive(Game.inventorySceneType.Equals("inventory"));
     }
 
     public void onClickDestroyItem()
     {
         slot.clear();
         Game.SaveGame();
+        scene.render();
+        hide();
+    }
+
+    public void OnClickTransferItem(){
+        if(Game.inventorySceneType.Equals("inventory")){
+            Game.inventory.transferTo(Game.town.Warehouse.ItemStorage, slot.getId());
+        }else{
+            Game.town.Warehouse.ItemStorage.transferTo(Game.inventory, slot.getId());
+        }
         scene.render();
         hide();
     }
